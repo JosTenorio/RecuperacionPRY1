@@ -7,11 +7,17 @@
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+def menu():
+    while True:
+        print("Menú \n0 -> Salir")
+        action = input("Acción a realizar: ")
+        if(action=="0"):
+            break
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print("Hola Roo")
     print_hi('PyCharm')
+    menu()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
