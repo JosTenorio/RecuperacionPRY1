@@ -38,12 +38,8 @@ def test_clean_xml():
         return
     dics = []
     glob_dict = {}
-    inicio = time.time()
     for document in documents:
         dics.append(clean_xml(open_file(document).read(),stopwords,glob_dict))
-
-   
-    print(f'Duración fue de {time.time()-inicio}')
     print(len(glob_dict))
 
 if __name__ == '__main__':
