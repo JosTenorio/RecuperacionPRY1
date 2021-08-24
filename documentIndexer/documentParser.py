@@ -24,8 +24,16 @@ def normalize_word(word):
 
     return word
 
+def insert_glob_dict(word,globalDict):
+    if word in globalDict:
+        globalDict[word] += 1
+    else:
+        globalDict[word] = 1
+    return
+
 # Retrieves every word in a document that is not a xml tag or in the stopwords list
-def clean_xml(lines,stopwords):
+def clean_xml(lines,stopwords,globalDict):
+
     words_dict = {}
     # For now it grabs words separated with "-" as one word
     lines = re.sub(tag_pattern,"",lines)
@@ -39,6 +47,7 @@ def clean_xml(lines,stopwords):
                 words_dict[word] += 1
             else:
                 words_dict[word] = 1
+            insert_glob_dict(word,globalDict)
             total_word_count += 1
     print(f'Total count {total_word_count}')
     print(f'Number of different words {len(words_dict)}')

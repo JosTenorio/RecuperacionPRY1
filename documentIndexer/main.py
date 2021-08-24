@@ -1,5 +1,7 @@
 from documentParser import clean_xml,load_stopwords
-
+import glob
+import time
+from multiprocessing import Pool
 # Receives a path to a file and returns the content if it match certain criteria
 def open_file(path):
     try:
@@ -13,9 +15,10 @@ def open_file(path):
     except FileNotFoundError:
         return 0
 
-def get_files_in_folder(directory):
-    # TODO: Todo xd
-    pass
+def load_directory_files(path):
+    return glob.glob(path+"/**/*.xml",recursive=True)
+
+
 # Standard menu function
 def menu():
     while True:
@@ -29,15 +32,22 @@ def test_clean_xml():
     path="D:\\Development\\RecuperacionPRY1\\documentIndexer\\stopWords\\stopWords1.txt"
     file = open_file(path)
     stopwords = load_stopwords(file.read())
-    path = "D:\\Development\\RecuperacionPRY1\\Archivos de prueba\\xml-es\\apx-authors.xml"
-    file = open_file(path)
-    if file==0:
-        print("No se encontró el archivo")
+    documents = load_directory_files("D:\\Development\\RecuperacionPRY1\\Archivos de prueba\\xml-es")
+    if len(documents) == 0:
+        print("No existen documentos para indexar en este directorio")
         return
-    words = clean_xml(file.read(),stopwords)
+    dics = []
+    glob_dict = {}
+    inicio = time.time()
+    for document in documents:
+        dics.append(clean_xml(open_file(document).read(),stopwords,glob_dict))
+
+   
+    print(f'Duración fue de {time.time()-inicio}')
+    print(len(glob_dict))
 
 if __name__ == '__main__':
 
-    test_clean_xml()
+     test_clean_xml()
     # menu()
 
