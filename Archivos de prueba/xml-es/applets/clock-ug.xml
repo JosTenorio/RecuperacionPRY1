@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<SECT2 ID="anotherclock">  <TITLE>Otro Reloj</TITLE>
+  <PARA>   El Aplique <APPLICATION>Otro reloj</APPLICATION>,  <XREF LINKEND="anotherclock-applet">, es un reloj analógico similar al que existe
+   en el panel de CDE Entorno común de escritorio, uno de los primeros entornos de escritorio de UNIX).
+   Para añadir al <INTERFACE>Panel</INTERFACE>, puede pulsar el botón derecho de su ratón en una zona
+   vacía del <INTERFACE>Panel</INTERFACE> y seguir la secuencia: 
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Apliques</GUISUBMENU>
+    <GUISUBMENU>Relojes</GUISUBMENU>
+    <GUIMENUITEM>Otro Reloj</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="anotherclock-applet">    <TITLE>Aplique Otro Reloj</TITLE>
+    <SCREENSHOT>      <SCREENINFO>Aplique Otro Reloj</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="figures/anotherclock-applet" SRCCREDIT="Eric Baudais">      </GRAPHIC>
+    </SCREENSHOT>
+  </FIGURE>
+  
+  
+  <SECT3 ID="anotherclock-usage">    <TITLE>Uso</TITLE>
+    <PARA>	No se necesita hacer nada especial para correr este aplique. Sólo se
+	coloca en el <INTERFACE>Panel</INTERFACE> y te indica la hora.
+    </PARA>
+    
+    <ITEMIZEDLIST>      
+      <LISTITEM>	<PARA>	  <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+	  abre el diálogo de <LINK LINKEND="anotherclock-prefs">	  <GUILABEL>Propiedades</GUILABEL></LINK>.
+	</PARA>
+      </LISTITEM>
+      
+      <LISTITEM>	<PARA>	  <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+		muestra este documento. 
+	</PARA>
+      </LISTITEM>
+      
+      <LISTITEM>	<PARA>	  <GUIMENUITEM>Acerca</GUIMENUITEM> 
+	  muestra información básica sobre el aplique <APPLICATION>Otro Reloj
+	  </APPLICATION>, incluyendo la versión y el nombre del autor. 
+	</PARA>
+      </LISTITEM>
+
+    </ITEMIZEDLIST>
+
+   </SECT3>
+
+
+  
+   <SECT3 ID="anotherclock-prefs">    <TITLE>Preferencias</TITLE>
+    <PARA>     Tu puedes personalizar el aplique <APPLICATION>Otro Reloj</APPLICATION> 
+      pulsando sobre el y eligiendo 
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Esto abrirá la ventana de
+	diálogo de 
+      <INTERFACE>Propiedades</INTERFACE> (vista en  <XREF LINKEND="anotherclock-settings-fig">), la cual permite hacer varios
+	cambios en la configuración.
+    </XREF></PARA>
+
+
+    <FIGURE ID="anotherclock-settings-fig">      <TITLE>Diálogo de Propiedades</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/anotherclock-properties" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>	Las propiedades son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        Color del reloj  Actualmente no está disponible, pero en el futuro será posible
+	ajustar el color de la esfera del reloj. 
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Color de la aguja de las horas  Puede configurar el color que se
+        desea usar en la aguja de las horas del reloj.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Color de la aguja de los minutos  Puede configurar el color que
+        se desea usar en la aguja de los minutos del reloj.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Color de la aguja de los segundos  Puede configurar el color que
+	se desea usar en la aguja de los segundos del reloj.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Mostrar aguja de los segundos  Pulsando sobre esta selección se
+        le permitirá elegir si la aguja de los segundos se muestra o no. La opción por
+        defecto será mostrarla. 
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA> 
+      Despues que todos los cambios estan hechos, presione en  
+      <GUIBUTTON>OK</GUIBUTTON> para aplicar los cambios y cerrar el 
+      diálogo de <INTERFACE>Propiedades</INTERFACE>. Para cancelar los cambios
+      y volver a los valores anteriores, presione sobre el botón de
+      <GUIBUTTON>Cancelar</GUIBUTTON>.
+    </PARA>
+  </SECT3>
+
+
+  
+  
+   <SECT3 ID="anotherclock-bugs">    <TITLE>Errores Conocidos y Limitaciones</TITLE>
+    <ORDEREDLIST>     <LISTITEM>      <PARA>	Si ajusta la hora del sistema hacia atrás (la atrasa) usando el comando <COMMAND>date</COMMAND>,
+        el reloj se parará hasta que la hora del sistema alcance a la hora que el reloj muestra.
+	Entonces comenzará a funcionar normalmente. 
+      </PARA>
+     </LISTITEM>
+    </ORDEREDLIST>
+   </SECT3>
+
+</SECT2>

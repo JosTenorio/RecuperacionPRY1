@@ -1,0 +1,864 @@
+<?xml version="1.0"?>
+<SECT1 ID="gnome-utils-utilities">    <TITLE>Utilidades</TITLE>
+    <PARA>La categoría <GUIMENUITEM>Utilidades</GUIMENUITEM> del paquete
+    <FILENAME>gnome-utils</FILENAME> es un conjunto de aplicaciones
+    misceláneas para ayudarle a realizar sus tareas. Para lanzar
+    cualquiera de estas aplicaciones, accione en el <GUIMENU>Menú
+    Principal</GUIMENU> y seleccione el submenú <GUIMENUITEM>    Utilidades</GUIMENUITEM>.</PARA>
+
+
+
+    <SECT2 ID="gfontsel-intro">      <TITLE>Selector de fuentes GNOME</TITLE>
+      <PARA>	El <APPLICATION>Selector de fuentes GNOME</APPLICATION> es
+	una utilidad sencilla para escoger la fuente de letras de la
+	ventana (esto es, el entorno de ventanas X).
+
+      </PARA>
+      <PARA>	El <APPLICATION>Selector de fuentes GNOME</APPLICATION>
+	es normalmente ejecutado cuando se cambia la fuente de una
+	aplicación en el diálogo de <INTERFACE>Configuración</INTERFACE>
+	o en el diálogo de <INTERFACE>Preferencias</INTERFACE>. También
+	puede ser ejecutado desde el menú principal
+	seleccionando el elemento <GUIMENUITEM>Selector de
+	fuentes</GUIMENUITEM> en el submenú
+	<GUIMENU>Utilidades</GUIMENU> del menú <GUIMENU>Menú
+	Principal</GUIMENU> o desde la linea de comandos ejecutando
+	la orden <COMMAND>gfontsel</COMMAND>.
+      </PARA>
+
+      <PARA> Es importante saber que en el entorno de ventanas X,
+	cada fuente tiene una serie de atributos, como familia
+	(Helvética, Times, Courier), tamaño, ancho, inclinación,
+	etc., y dos fuentes se consideran diferentes aunque solamente
+	difieran en una de sus propiedades, como tamaño o ancho:
+	<GUILABEL>Helvética 10 puntos</GUILABEL>, <GUILABEL>Helvética
+	12 puntos</GUILABEL>, y <GUILABEL>Helvética 10 puntos
+	negrita</GUILABEL> son consideradas como diferentes fuentes.
+	Cada fuente tiene un nombre único (oficialmente conocido como
+	<EMPHASIS>Descripción de fuente lógica X</EMPHASIS> o XLFD
+	, del inglés "X Logical Font Description"), que incluye los
+	valores descriptivos de las fuentes del entorno de ventanas
+	X, y por necesidad, el nombre es muy largo. La descripción
+	detallada de las fuentes del entorno de ventanas X, sus
+	atributos y sus nombres se pueden encontrar en
+	<XREF LINKEND="gfontsel-xlfd">.
+      </XREF></PARA>
+      <SECT3 ID="gfontsel-mainwin">      <TITLE>Selector de fuentes GNOME - Ventana principal</TITLE>
+      <PARA>	Esta ventana (llamada <GUILABEL>Fuente</GUILABEL> es la ventana
+	principal que se usa para escoger la fuente. Se puede ver en
+	<XREF LINKEND="gfontsel-mainshot">.
+	</XREF></PARA>
+      <FIGURE ID="gfontsel-mainshot">	<TITLE>Ventana principal del <APPLICATION>Selector de fuentes GNOME</APPLICATION></TITLE>
+	<SCREENSHOT>	  <SCREENINFO> Selector de fuentes GNOME - Ventana Principal</SCREENINFO>
+	  <GRAPHIC FILEREF="./figs/gfontsel-mainshot" FORMAT="png" SRCCREDIT="sasha">	    </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+      </SECT3>
+
+      <SECT3 ID="gfontsel-mainwin-basic">	<TITLE>Uso básico del Selector de fuentes</TITLE>
+	<PARA>	Para escoger una fuente de letras, debe seleccionar la familia
+	de fuentes (por ejemplo, <GUILABEL>courier</GUILABEL>) en la
+	columna izquierda, después debe seleccionar el estilo de
+	fuenteeso es, ancho e inclinación (por ejemplo,
+	<GUILABEL>negrita cursiva</GUILABEL>), y finalmente, tamaño de
+	la fuente.
+      </PARA>
+      <PARA> La ventana de <GUILABEL>Previsualización</GUILABEL> le
+	mostrará como queda la fuente que ha seleccionado. Por defecto,
+	las letras de la muestra son del alfabeto latino;
+	por supuesto puede escribir cualquier texto que desee en la
+	ventana y se mostrará con la fuente de letras que ha seleccionado.
+      </PARA> 
+      <PARA>	Para encontrar más información sobre la fuente seleccionada, puede
+	acceder a la ventana de <LINK LINKEND="gfontsel-fontinfo">	<GUILABEL>Información sobre la fuente</GUILABEL></LINK>.
+      </PARA> 
+      <PARA>	Si la utilidad de selección de fuentes es ejecutada por alguna
+	aplicación, una como el diálogo de preferencias, tendrá los
+	botones <GUIBUTTON>Aceptar</GUIBUTTON> y
+	<GUIBUTTON>Cancelar</GUIBUTTON> en la parte inferior de la
+	ventana. Cuando esté satisfecho con la fuente seleccionada,
+	apriete <GUIBUTTON>Aceptar</GUIBUTTON> y el nombre de la
+	fuente de letras seleccionada será devuelta a la aplicación que
+	llamo al selector de fuentes.
+      </PARA>
+      <PARA>	Si la utilidad de selección de fuentes es llamada desde el menú
+	o desde la linea de comandos, tendrá los botones
+	<GUIBUTTON>Aplicar</GUIBUTTON> y <GUIBUTTON>Cerrar</GUIBUTTON>.
+	Accionando el botón <GUIBUTTON>Aplicar</GUIBUTTON> copiará el
+	nombre completo (XLFD) de la fuente seleccionada al portapapeles,
+	que puede ser pegada en cualquier otra área de la ventana con
+	sólo accionar el botón central del ratón. Accionando el botón
+	<GUIBUTTON>Aplicar</GUIBUTTON> también muestra el nombre de la
+	fuente seleccionada en el campo <GUILABEL>Selección</GUILABEL>
+	en la parte superior de la pantalla.
+      </PARA>
+      </SECT3>
+
+      <SECT3 ID="gfontsel-mainwin-fine">	<TITLE>Detalles</TITLE>
+	<PARA> Si hay varias fuentes de letra con el mismo nombre de
+	familia, el creador de la fuente (normalmente el nombre del
+	vendedor) será mostrado en el campo izquierdo, por ejemplo:
+	<GUILABEL>courier(adobe)</GUILABEL>,
+	<GUILABEL>courier(bitstream)</GUILABEL>.
+      </PARA>
+      <PARA>	El campo <GUILABEL>Estilo de la fuente</GUILABEL> muestra más
+	información que sólo el tamaño y la inclinación. Mediante
+	etiquetas, también muestra el espaciado de la fuente, que puede
+	ser espaciado fijo (<GUILABEL>[M]</GUILABEL>), tamaño constante
+	(<GUILABEL>)[C]</GUILABEL>), o proporcional (sin etiqueta).
+	En las fuentes de espacio fijo o tamaño constante, cada
+	carácter tiene el mismo ancho; en cambio en fuentes
+	proporcionales, el ancho de los caracteres varía, por lo que
+	normalmente mejora la presentación.  
+
+	<WARNING>	<TITLE>Aviso</TITLE>
+
+	  <PARA> Desafortunadamente, los programas de emulación de terminales
+	  (incluyendo <APPLICATION>xterm</APPLICATION> y
+	  <APPLICATION>gnome-terminal</APPLICATION> y muchos otros
+	  programas diseñados inicialmente para trabajar en un terminal
+	  (como el editor <APPLICATION>emacs</APPLICATION>) sólo pueden
+	  mostrar adecuadamente fuentes de espacio fijo o de
+	  tamaño constante; no use fuentes proporcionales en estos
+	  casos porque las fuentes proporcionales no agradan a la mayoría.
+	  </PARA>
+	</WARNING> 
+      </PARA>
+      <PARA>
+	Para terminar, el campo <GUILABEL>Estilo de la fuente</GUILABEL>
+	también muestra todos los posibles juegos de caracteres de una
+	fuente determinada (si hay más de una). Es decir, el juego de
+	caracteres describe los símbolos de qué alfabeto son mostrados
+	en dicha fuente de letra. El juego de caracteres más común es
+	<LITERAL>iso8859-1</LITERAL>, que incluye todas las letras
+	latinas, signos de puntuación, números y suficientes letras
+	acentuadas para cubrir la mayoría de los idiomas de Europa
+	Occidental. Encontrará más información en <XREF LINKEND="gfontsel-xlfd">.
+      </XREF></PARA>
+
+	<PARA> También habrá notado que en el campo <GUILABEL>Tamaño
+	</GUILABEL>, algunos de los tamaños de las fuentes de letras
+        están señalados con asteriscos. Estos son tamaños de fuentes
+	de letras hechos con dibujos ("bitmap") no redimensionados;
+	normalmente se ven mejor que otros tipos de fuentes (de
+	dibujos escalables o escalados)  consulte <XREF LINKEND="gfontsel-filter">.  
+	</XREF></PARA>
+      
+	<PARA> Puede configurar el diálogo selector de fuentes para
+	que enseñe solamente aquellas fuentes que cumplan ciertas
+	condiciones. Esto se hace en la ventana <LINK LINKEND="gfontsel-filter"><GUILABEL>Filtro</GUILABEL></LINK>. Si usted
+	posteriormente decide que quiere volver a ver todas las fuentes,
+	simplemente debe apretar el botón <GUIBUTTON>Reiniciar 
+	Filtro</GUIBUTTON> que se encuentra tanto en la ventana principal
+	como en la ventana filtro.
+	</PARA>
+      </SECT3>	
+
+      <SECT3 ID="gfontsel-fontinfo">      <TITLE>Selector de fuentes GNOME - ventana Información sobre la fuente</TITLE>
+      <PARA>	Esta ventana muestra la información de la fuente seleccionada,
+	tanto los valores que usted ha seleccionado como los valores
+	actuales. Esto es útil si desea comprobar los valores de alguno
+	de los parámetros de la fuente que no puede especificar en la
+	ventana principal, como la resolución de la pantalla. Esta ventana
+	también muestra el nombre completo de la fuente (<LINK LINKEND="gfontsel-xlfd">XLFD</LINK>), que contiene la misma
+	información.
+      </PARA>
+      </SECT3>
+
+      <SECT3 ID="gfontsel-filter">      <TITLE>Selector de fuentes GNOME - Ventana Filtro</TITLE>
+      <PARA>	En esta ventana, usted puede hacer que el selector de fuentes
+	solamente muestre aquellas fuentes que cumplan algunas condiciones.
+	Puede especificar valores para el creador de la fuente (vendedor),
+	peso, conjunto de caracteres, inclinación, ancho y espaciado,
+	(consulte <XREF LINKEND="gfontsel-xlfd"> para una descripción de estos
+	parámetros). Puede seleccionar <KEYSYM>*</KEYSYM>, que significa
+	"cualquier valor"; también puede seleccionar varios valores en el
+	mismo campo: simplemente apriete en varios de ellos con el botón
+	izquierdo del ratón (no necesita mantener apretado
+	<KEYCAP>SHIFT</KEYCAP> o <KEYCAP>CTRL</KEYCAP>).
+      </XREF></PARA>
+
+      <FIGURE ID="gfontsel-filtershot">	<TITLE>Ventana Filtro del <APPLICATION>Selector de fuentes GNOME</APPLICATION></TITLE>
+	<SCREENSHOT>	  <SCREENINFO> Selector de fuentes GNOME - Ventana Filtro</SCREENINFO>
+	  <GRAPHIC FILEREF="./figs/gfontsel-filterwin" FORMAT="png" SRCCREDIT="sasha">	    </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+
+      <PARA> Puede también especificar los tipos de fuentes permitidos,
+	usando las casillas que se encuentran en la parte superior de la
+	ventana. Los tipos posibles son fuentes "bitmap", fuentes
+	escalables y fuentes "bitmap" redimensionadas. El tipo de fuentes
+	más común son las fuentes "bitmap"; las fuentes escalables
+	(TrueType y Type 1 PostScript) normalmente tienen la misma calidad,
+	pero no todas las implementaciones del entorno de ventanas X son
+	capaces de usarlas.
+      </PARA>
+      <PARA> 
+	Como su mismo nombre indica, las fuentes escalables pueden ser
+	escaladas, es decir, redimensionadas, a cualquier tamaño sin
+	perdida de calidad. Aunque si es posible redimensionar también
+	fuentes "bitmap", la calidad de las fuentes "bitmap" redimensionadas
+	es desastrosa. Por esta razón, el selector de fuentes no muestra
+	las fuentes "bitmap" redimensionadas por defecto. 
+      </PARA>
+      <PARA>	Después de haber seleccionado su filtro, puede volver a la <LINK LINKEND="gfontsel-mainwin"><INTERFACE>Ventana Principal</INTERFACE>
+	</LINK> (no apriete <GUIBUTTON>Aceptar</GUIBUTTON> o
+	<GUIBUTTON>Aplicar</GUIBUTTON>  simplemente seleccione la
+	pestaña <GUILABEL>Fuente</GUILABEL>), la cuál ahora solamente
+	mostrará las fuentes que cumplan las condiciones del filtro.
+	Para recordárselo, la ventana principal mostrará el texto
+	<GUILABEL>Filtro aplicado</GUILABEL>. 
+      </PARA>
+      <PARA>	Para volver al filtro por defecto (esto es, mostrar todas las
+	fuentes posibles excepto las fuentes "bitmap" redimensionadas),
+	apriete <GUIBUTTON>Reiniciar Filtro</GUIBUTTON> que se encuentra
+	tanto en la <INTERFACE>Ventana filtro</INTERFACE> como en la
+	<INTERFACE>Ventana Principal</INTERFACE>.
+      </PARA>
+      </SECT3>
+      <SECT3 ID="gfontsel-xlfd">      <TITLE> Atributos de las fuentes en el entorno de ventanas X y XLFD</TITLE>
+      <PARA>	Como se dice anteriormente, en el entorno de ventanas X cada fuente
+	tiene un número de atributos y un nombre completo, conocido como
+	Descripción de fuente lógica X (XLFD del inglés "X Logical Font
+	Description), que recoge todos estos valores y por tanto es bastante
+	largo. Un nombre completo de fuente típico es este
+	<PROGRAMLISTING>	  -adobe-courier-medium-r-normal--12-120-75-75-m-70-iso8859-1
+	</PROGRAMLISTING>
+      </PARA>
+      <PARA>	Este nombre consta de 14 campos, mostrando los valores de los 14
+	atributos de la fuente, separados por guiones.
+      </PARA>
+      <PARA>	A pesar que este tipo de nombres dan una información completa
+	acerca de la fuente, es algo exagerado, especialmente si tenemos
+	en cuenta que no todos los parámetros son útiles en la actualidad.
+	Para hacer la vida un poco más fácil, puede usar comodines
+	<KEYSYM>*</KEYSYM> en el nombre de la fuente; por ejemplo, nos
+	podemos referir a la fuente anterior como 
+	<PROGRAMLISTING>	  -adobe-courier-medium-r-*-*-12-*-*-*-*-*-*-*
+	</PROGRAMLISTING>
+	Como de costumbre, <KEYSYM>*</KEYSYM> sustituye a cualquier valor;
+	si hay varias fuentes que correspondan con el nombre dado, el
+	sistema cogerá la primera que se corresponda. En este ejemplo
+	particular, lo más probable es que haya solo una fuente
+	que se corresponda con este nombre, por lo tanto este nombre no
+	es ambiguo.
+      </PARA>
+      <PARA> 
+	A continuación se muestra una lista de los 14 atributos de las
+	fuentes que actualmente se usan:
+	<ITEMIZEDLIST MARK="bull">	  <LISTITEM><PARA> 
+              <GUILABEL>Creador</GUILABEL>  creador de la fuente,
+	      la compañía o individuo que creó la fuente (en nuestro
+	      ejemplo, <LITERAL>adobe</LITERAL>) 
+          </PARA></LISTITEM>
+
+	  <LISTITEM><PARA> 
+	      <GUILABEL>familia</GUILABEL>  familia
+	      de la fuente, el alias popular de la fuente (en nuestro
+	      ejemplo, <LITERAL>courier</LITERAL>) 
+          </PARA></LISTITEM>
+
+	  <LISTITEM><PARA> 
+              <GUILABEL>peso</GUILABEL>  peso de la fuente
+	      (en nuestro ejemplo, <LITERAL>medio</LITERAL>.  
+	      Valores posibles: bold (negrita), medium (normal), etc. 
+	  </PARA></LISTITEM>
+
+	  <LISTITEM><PARA> 
+	      <GUILABEL>Inclinación</GUILABEL>  Inclinación de
+	      la fuente (en nuestro ejemplo, <LITERAL>(r)omana</LITERAL>,
+	      esto es sin inclinación). Valores posibles: (i)tálica,
+	      (o)blícua, (r)omana, etc. 
+          </PARA></LISTITEM>
+
+	  <LISTITEM><PARA> 
+	      <GUILABEL>Tamaño pixels</GUILABEL>  
+	      el número de puntos ("pixels") verticales en un carácter
+	      (en nuestro ejemplo, 12)
+	  </PARA></LISTITEM>
+
+	  <LISTITEM><PARA> 
+	      <GUILABEL>Tamaño en puntos</GUILABEL> 
+	      aproximadamente el tamaño en puntos de la fuente, medido
+	      en décimas de punto. (En nuestro ejemplo, el tamaño en
+	      puntos es 12, eso es, 12 pixels). Un punto equivale a
+	      1/72 de pulgada (aproximadamente 0,35 mm), que es el
+	      estándar en los tipos de letra ingleses y americanos.
+	  </PARA></LISTITEM>
+
+	  <LISTITEM><PARA>	      <GUILABEL>Resolución</GUILABEL> vertical y horizontal en
+	      puntos por pulgadas  en nuestro ejemplo, ambos son
+	      75 dpi (puntos por pulgadas).
+	    </PARA>
+	    <PARA>	      Observe que el tamaño en puntos, el tamaño en pixels, y la
+	      resolución vertical están relacionados: para fuentes con
+	      una resolución de 75 dpi, el tamaño en puntos es
+	      aproximadamente igual a (tamaño en pixels)*10; para fuentes
+	      con una resolución de 100 dpi el tamaño en puntos es
+	      aproximadamente igual a (tamaño en pixels)*7.
+	  </PARA></LISTITEM>
+
+	  <LISTITEM><PARA>	      <GUILABEL>Espaciado</GUILABEL> 
+	      Describe la variación del tamaño de los caracteres en la
+	      fuente. Los valores posibles son (M) espacio fijo, (C)
+	      tamaño constante (en los dos casos, todos los caracteres
+	      tienen el mismo ancho) y proporcional (los caracteres tienen
+	      tamaños variables). Las fuentes proporcionales normalmente
+	      tienen mejor presencia. 
+          </PARA></LISTITEM>
+
+	  <LISTITEM><PARA> 
+	      <GUILABEL>Codificación</GUILABEL> y <GUILABEL>Registro</GUILABEL>
+	      del juego de caracteres  estos dos parámetros,
+	      habitualmente conocidos como <GUILABEL>conjunto de
+	      caracteres</GUILABEL> o <GUILABEL>juego de caracteres</GUILABEL>,
+	      describen que conjunto de símbolos (o que alfabeto)
+	      representa esta fuente. Hay un buen número de juegos
+	      posibles. Algunos de los más populares son:
+	      <ITEMIZEDLIST>		<LISTITEM>		  <PARA>		    <EMPHASIS>iso8859-1</EMPHASIS>, también conocida
+	            como Latin 1  este conjunto de caracteres
+	            incluye todos los símbolos que se encuentran en el
+	            teclado, esto es letras latinas, signos de puntuación,
+	            números, símbolos como @ o $. Y también incluye
+	            algunos símbolos especiales como el signo de derechos
+	            de autor y un buen número de letras acentuadas,
+	            las que cubren las necesidades de la mayoría de los
+	            idiomas de Europa Occidental (para ser precisos,
+	            africano, alemán, vasco, catalán, danés, holandés,
+	            inglés, escocés, español, "faeroese", finlandés,
+	            francés, gallego, islandés, irlandés, italiano,
+	            noruego, portugués y sueco). 
+		  </PARA>
+		</LISTITEM>
+		<LISTITEM><PARA>		    <EMPHASIS>iso8859-7</EMPHASIS> 
+	            incluye los alfabetos latino y griego
+		  </PARA></LISTITEM> 
+		<LISTITEM><PARA>		    <EMPHASIS>iso8859-8</EMPHASIS> 
+	            incluye los alfabetos latino y hebreo
+		  </PARA></LISTITEM>
+		<LISTITEM><PARA>		    <EMPHASIS>koi8-r</EMPHASIS> 
+	            incluye los alfabetos latino y cirílico (ruso)
+		  </PARA></LISTITEM>
+		<LISTITEM><PARA>		    <EMPHASIS>big5.eten.3.10-1</EMPHASIS> 
+	            Chino (codificación Big5)
+		  </PARA></LISTITEM>
+
+		<LISTITEM><PARA>	            <EMPHASIS>gb2312.1980-0</EMPHASIS> 
+	            Chino (codificación GB) 
+		</PARA></LISTITEM>
+
+	      <LISTITEM><PARA> 
+                    <EMPHASIS>jisx0208.1983-0</EMPHASIS> 
+	            Japonés
+		</PARA></LISTITEM>
+	      </ITEMIZEDLIST>
+
+
+	    </PARA></LISTITEM>
+	</ITEMIZEDLIST>
+      </PARA>
+      <PARA>	Los atributos de fuentes restantes (<GUILABEL>Fijar el
+	ancho</GUILABEL>, <GUILABEL>Estilos adicionales</GUILABEL>, y
+	<GUILABEL>Ancho promedio</GUILABEL> se usan en raras ocasiones y
+	por este motivo se omite su descripción.
+      </PARA>
+      <PARA>	La especificación completa de XLFD están incluidas en la
+	documentación técnica del entorno de ventanas X y se puede
+	encontrar en línea en <ULINK URL="ftp://ftp.x.org/pub/R6.4/xc/doc/hardcopy/XLFD" TYPE="ftp">    
+	  ftp://ftp.x.org/pub/R6.4/xc/doc/hardcopy/XLFD</ULINK>;
+	Lo más probable, es que nunca la necesite.
+      </PARA>
+
+      </SECT3>
+    </SECT2>
+
+   
+
+
+    <SECT2 ID="gcalc">      <TITLE>Calculadora</TITLE>
+      <PARA><APPLICATION>Gcalc</APPLICATION> es una calculadora con
+	muchas opciones (calculadora científica).
+        <FIGURE ID="gcalcfig">	  <TITLE>Calculadora</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Calculadora</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gcalcfig" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+      </PARA>
+
+      <PARA>La <APPLICATION>Calculadora</APPLICATION> puede ser ejecutada
+	seleccionando <GUIMENUITEM>Calculadora</GUIMENUITEM> en el
+	submenú <GUISUBMENU>Utilidades</GUISUBMENU> del <GUIMENU>Menú
+	Principal</GUIMENU>, o ejecutando la orden
+	<COMMAND>gcalc</COMMAND> en la línea de comandos.
+      </PARA>
+
+    </SECT2>
+
+
+    <SECT2 ID="gcolorsel-intro">      <TITLE>Visualizador de Colores GNOME - Uso</TITLE>
+      <PARA>	El <APPLICATION>Visualizador de Colores GNOME</APPLICATION> es una
+	utilidad para seleccionar los colores de la pantalla (esto es,
+	del entorno de ventanas X). El entorno de ventanas X viene con
+	una varios colores predefinidos, desde "AliceBlue" a "Pale
+	Goldenrod" o a "Yellow Green". El <APPLICATION>Visualizador de
+	Colores GNOME</APPLICATION> le permite visualizar estos colores
+	y seleccionar uno de ellos para utilizarlo en una aplicación.
+	También le permite definir su propia colección de colores
+	favoritos, o encontrar un color predeterminado lo más parecido
+	posible a uno determinado.	
+      </PARA>
+      <PARA>	Para ejecutar el <APPLICATION>Visualizador de Colores
+	GNOME</APPLICATION> seleccione <GUIMENUITEM>Paleta</GUIMENUITEM>
+	del submenú <GUISUBMENU>Utilidades</GUISUBMENU> del
+	<GUIMENU>Menú Principal</GUIMENU>, o ejecute la orden
+	<COMMAND>gcolorsel</COMMAND> en la línea de comandos.
+      </PARA>
+
+      <SECT3 ID="gcolorsel-usage">      <TITLE>Visualizador de Colores GNOME - Uso</TITLE>
+      <PARA>	El <APPLICATION>Visualizador de Colores GNOME</APPLICATION> es
+	usado para seleccionar un color de pantalla para utilizarlo en
+	una aplicación, la principal ventaja del <APPLICATION>Visualizador
+	de Colores GNOME</APPLICATION> es que permite escoger un color
+	de la lista de los ya definidos, por eso se llama "visualizador
+	de colores". Le permite visualizar la lista de todos los colores
+	predefinidos del sistema (consulte <XREF LINKEND="gcolorsel-simple">),
+	o definirse sus propios colores "favoritos" (consulte
+	<XREF LINKEND="gcolorsel-favorites">). También muestra que colores
+	de estas listas son los que más se parecen a uno determinado
+	(consulte <XREF LINKEND="gcolorsel-search">).
+      </XREF></XREF></XREF></PARA> 
+
+      <PARA>	Una vez ha encontrado un color que quiere, hay dos formas
+	para poder usar este color en una aplicación. El camino más
+	sencillo es utilizar "arrastrar y dejar": todos los rectángulos
+	de colores que ve en la ventana del <APPLICATION>Visualizador
+	de Colores GNOME</APPLICATION> pueden ser arrastrados y pegados
+	dentro de cualquier componente GNOME que permita configurar los
+	colores. Por ejemplo puede arrastrar un color al
+	<INTERFACE>Panel GNOME</INTERFACE> para cambiar el color de
+	fondo del Panel o al terminal GNOME para cambiar su fondo.
+      </PARA>
+
+      <PARA>	También puede utilizar el color con muchas aplicaciones
+	del entorno de ventanas X que no son aplicaciones GNOME, por
+	ejemplo el editor <APPLICATION>emacs</APPLICATION>. La mayoría
+	de las aplicaciones del entorno de ventanas X aceptan las opciones
+	<COMMAND>-bg <REPLACEABLE>COLOR</REPLACEABLE></COMMAND> y
+	<COMMAND>-fg <REPLACEABLE>COLOR</REPLACEABLE></COMMAND> en
+	la línea de comandos para especificar el color de fondo y el
+	color del texto respectivamente. <REPLACEABLE>COLOR</REPLACEABLE>
+	puede ser tanto el nombre del color, tal y como se ve en el
+	<APPLICATION>Visualizador de Colores GNOME</APPLICATION> o
+	su descripción mediante la tripleta de números, rojo (Red),
+	verde (Green), y azul (Blue), que se llama RGB. Por ejemplo,
+	la orden
+	  <PROGRAMLISTING>	  <COMMAND>emacs -bg lightblue -fg darkgreen</COMMAND>
+	  </PROGRAMLISTING>
+	ejecutará el programa <APPLICATION>emacs</APPLICATION> con el
+	color azul claro ("lightblue") para el fondo y el color
+	verde oscuro ("darkgreen") para el texto. Observe que al contrario
+	de las convenciones UNIX más comunes, los nombres de los colores
+	son indiferentes a mayúsculas o minúsculas.
+	Más información acerca de los colores en el entorno de ventanas X,
+	profundidad de color, valores RGB, se encuentra en
+	<XREF LINKEND="gcolorsel-xcolors">.
+      </XREF></PARA>
+      <PARA>	Observe que el <APPLICATION>Visualizador de Colores
+	GNOME</APPLICATION> solamente le permite escoger uno de los
+	colores que el programa conoce (colores predefinidos del sistema
+	o los favoritos); no puede usar el programa para "crear" nuevos
+	colores. Por ejemplo, no le permite escoger un color introduciendo
+	sus valores rojo, verde y azul (RGB). En su lugar, le proporciona
+	una lista de los colores conocidos que más se parecen a los
+	valores RGB introducidos (consulte <XREF LINKEND="gcolorsel-search"> para más detalles).
+      </XREF></PARA> 
+
+      </SECT3>
+
+      <SECT3 ID="gcolorsel-menubar">      <TITLE>Selector de Colores GNOME - Menús</TITLE>
+      <PARA>	La barra de menú, que se encuentra en la parte superior de la
+	ventana del <APPLICATION>Visualizador de Colores GNOME</APPLICATION>,
+	contiene los siguientes menús: 
+      </PARA>
+
+	<VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENU>Archivo</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>	        Este menú solamente contiene un comando,
+                <MENUCHOICE>		  <SHORTCUT>		    <KEYSYM>Ctrl-Q</KEYSYM>
+		  </SHORTCUT>
+		  <GUIMENUITEM>Salir</GUIMENUITEM>
+		</MENUCHOICE>.        
+	      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENU>Configuración</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>	        Este menú contiene los comandos para configurar o
+	        modificar las preferencias del <APPLICATION>Visualizador
+	        de Colores GNOME</APPLICATION>: 
+	        <ITEMIZEDLIST>		  <LISTITEM>		    <PARA>                      <GUIMENUITEM>Formato</GUIMENUITEM> 
+	              esta opción permite cambiar el formato usado por el
+	              <APPLICATION>Visualizador de Colores GNOME</APPLICATION>
+	              para mostrar los valores rojo, verde y azul (RGB) para
+	              cada color (más detalles en <XREF LINKEND="gcolorsel-xcolors">). Si desconoce lo que
+	              está haciendo, es mejor que use el formato por defecto
+	              (decimal de 8 bits).
+                    </XREF></PARA>
+                  </LISTITEM>
+                  <LISTITEM>                    <PARA>                      <GUIMENUITEM>Actualizar búsqueda</GUIMENUITEM>
+	               este comando está explicado en <XREF LINKEND="gcolorsel-search">.
+	            </XREF></PARA>
+	          </LISTITEM>
+	          <LISTITEM>	            <PARA>	              <GUIMENUITEM>Buscar en</GUIMENUITEM>
+	               este comando está descrito en <XREF LINKEND="gcolorsel-search">.
+	            </XREF></PARA>
+	          </LISTITEM>
+	          <LISTITEM>	            <PARA>	              <GUIMENUITEM>Al Dejar</GUIMENUITEM>
+	               este comando le permite escoger la acción por
+	              defecto a ejecutarse cuando usted deje en el
+	              <APPLICATION>Visualizador de Colores GNOME</APPLICATION>
+	              un color procedente de otra fuente, como del
+	              selector de colores GNOME por defecto. Las posibles
+	              opciones son <GUILABEL>Buscar en</GUILABEL>, esto es
+	              conmutar automáticamente con la ventana
+	              <GUILABEL>Buscar</GUILABEL> y mostrar los colores
+	              más parecidos al color dejado entre los colores de
+	              sistema predefinidos y los favoritos, o
+	              <GUILABEL>Añadir a favoritos</GUILABEL>, esto es
+	              añadir el color dejado a la lista de colores favoritos.
+	            </PARA>
+	          </LISTITEM>
+	        </ITEMIZEDLIST>
+	      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENU>Ayuda</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>	        Este menú contiene:
+	        <ITEMIZEDLIST>	          <LISTITEM>	            <PARA>	              <GUIMENUITEM>Manual</GUIMENUITEM> 
+	              Enseña este manual.
+	            </PARA>
+	          </LISTITEM>
+
+	          <LISTITEM>	            <PARA>	              <GUIMENUITEM>Acerca de</GUIMENUITEM> 
+	              Muestra la información básica acerca del
+	              <APPLICATION>Visualizador de Colores GNOME</APPLICATION>,
+	              como son el nombre del autor y el número de versión de
+	              la aplicación.
+	            </PARA>
+	          </LISTITEM>
+	        </ITEMIZEDLIST>
+	      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </SECT3>
+
+      <SECT3 ID="gcolorsel-toolbar"> 
+      <TITLE>Selector de Colores GNOME - Barra de herramientas</TITLE>
+      <PARA>	La barra de herramientas contiene tres botones:
+	<GUIBUTTON>Salir</GUIBUTTON>, que cierra el programa,
+	<GUIBUTTON>Acerca de</GUIBUTTON>, que muestra la información
+	básica acerca de <APPLICATION>Visualizador de Colores
+	GNOME</APPLICATION>, como son el nombre del autor y el número de
+	versión de la aplicación y <GUIBUTTON>Coger</GUIBUTTON>, que se
+	utiliza para coger el color de un punto cualquiera de la pantalla,
+	su uso está explicado en <XREF LINKEND="gcolorsel-search">.
+     </XREF></PARA>
+     </SECT3> 
+
+     <SECT3 ID="gcolorsel-simple">     <TITLE>Selector de Colores GNOME - Visualización Simple</TITLE>
+     <PARA>	Esta ventana, llamada <GUILABEL>Simple</GUILABEL>, le muestra
+	todos los colores de sistema predefinidos con nombre, como se ve
+	en <XREF LINKEND="gcolorsel-simplefig">. Para cada color, se
+	enseña una muestra, los valores rojo, verde y azul (RGB), y el
+	nombre del color. Estos colores no pueden ser cambiados por el
+	usuario (para usuarios avanzados, se hace notar que estos colores
+	están definidos en un archivo de configuración especial,
+	<FILENAME>rgb.txt</FILENAME>, localizado en el directorio de
+	librerías del entorno de ventanas X (X11), normalmente
+	<FILENAME CLASS="directory">/usr/lib/X11R6/lib/X11</FILENAME>). 
+      </XREF></PARA> 
+
+      <FIGURE ID="gcolorsel-simplefig">      <TITLE><APPLICATION>Selector de Colores GNOME</APPLICATION> Ventana Principal</TITLE>
+        <SCREENSHOT>        <SCREENINFO>Visualizador de colores GNOME - Ventana Principal</SCREENINFO>
+          <GRAPHIC FILEREF="./figs/gcolorsel-simple" FORMAT="png" SRCCREDIT="sasha">          </GRAPHIC>
+        </SCREENSHOT>
+      </FIGURE>
+
+      <PARA>	Tal como se menciona anteriormente, puede arrastrar cualquier
+	rectángulo de color al Panel GNOME, al Terminal GNOME, o a
+	cualquier otra aplicación de ventanas GNOME para cambiar sus
+	colores de fondo. 
+      </PARA>
+      <PARA>	Por defecto, los colores son mostrados ordenados alfabéticamente
+	por el nombre, lo que se indica por un triángulo que mira hacia
+	abajo al lado de la etiqueta <GUILABEL>Nombre</GUILABEL>. Como en
+	todas las aplicaciones GNOME, se puede invertir el orden apretando
+	en la palabra <GUILABEL>Nombre</GUILABEL> una vez. También puede
+	ordenar la lista por los valores RGB, apretando en la palabra
+	<GUILABEL>Valor</GUILABEL>, aunque parece que es de escaso uso. 
+      </PARA> 
+      <PARA>	Puede cambiar el ancho por defecto de los campos
+	<GUILABEL>Color</GUILABEL>, <GUILABEL>Buscar</GUILABEL> y de
+	<GUILABEL>Nombre</GUILABEL> arrastrando el separador que hay entre
+	estos campos con el botón izquierdo del ratón.
+      </PARA>
+    </SECT3> 
+
+    <SECT3 ID="gcolorsel-search">      <TITLE>Selector de Colores GNOME - Buscar</TITLE>
+      <PARA>	Esta ventana, llamada <GUILABEL>Buscar</GUILABEL>, se utiliza para
+	encontrar un color de sistema lo más parecido a uno determinado.
+	Puede buscar el color para comparar de varias formas:
+	explícitamente introduciendo los valores RGB mediante los deslizadores,
+	arrastrando y dejando el color de otra fuente de colores, como
+	el selector de colores GNOME por defecto (si usted ha seleccionado
+	la opción
+	  <MENUCHOICE><GUISUBMENU>Al Dejar</GUISUBMENU>
+	    <GUIMENUITEM>Buscar</GUIMENUITEM>
+	</MENUCHOICE> en el menú <GUIMENU>Configuración</GUIMENU>, o
+	cogiendo el color de cualquier punto de la pantalla. Para utilizar
+	este último método apriete en el <GUIBUTTON>Coger</GUIBUTTON>
+	de la barra de herramientas. El cursor del ratón se convertirá
+	en una cruz (parecida al signo "+"). Sitúe esta cruz sobre
+	cualquier punto de la pantalla y accione el botón del ratón.
+	el <APPLICATION>Visualizador de Colores GNOME</APPLICATION>
+	analizará el color de este punto, determinando sus valores RGB,
+	y mostrándolo (color y valores RGB) en la ventana
+	<GUILABEL>Buscar</GUILABEL>. Y mostrará también los colores
+	de sistema que más se parezcan a éste. 
+      </PARA>
+
+      <FIGURE ID="gcolorsel-searchfig">        <TITLE>Selector de Colores GNOME - Ventana Búsqueda</TITLE>
+        <SCREENSHOT>          <SCREENINFO><APPLICATION>Visualizador de colores GNOME</APPLICATION> Ventana Búsqueda</SCREENINFO>
+          <GRAPHIC FILEREF="./figs/gcolorsel-search" FORMAT="png" SRCCREDIT="sasha">          </GRAPHIC>
+        </SCREENSHOT>
+      </FIGURE>
+
+      <PARA>	El <APPLICATION>Visualizador de Colores GNOME</APPLICATION>
+	muestra solamente aquellos colores que se parecen "lo suficiente",
+	y los ordena por el parecido, por lo que los más parecidos son
+	mostrados primero. Puede ajustar la tolerancia de comparación
+	con el deslizador <GUILABEL>Tolerancia</GUILABEL>: valores
+	pequeños hacen que el <APPLICATION>Visualizador de Colores
+	GNOME</APPLICATION> sea más selectivo, entonces solo los colores
+	muy parecidos serán mostrados. Poniendo el valor de la tolerancia
+	a 0 solo mostrará el color exacto; poniendo la tolerancia a 100
+	mostrará todos los colores.
+      </PARA> 
+      <PARA>	Por defecto, el <APPLICATION>Visualizador de Colores
+	GNOME</APPLICATION> solamente compara colores con los colores
+	de sistema ("simples"). Esto se puede cambiar en
+	<GUIMENUITEM>Buscar en...</GUIMENUITEM> en el menú
+	<GUIMENU>Configuración</GUIMENU>, que le permite activar o
+	desactivar la búsqueda en colores de sistema ("simples") o en
+	colores "favoritos" (personal) independientemente.
+      </PARA>
+      <PARA>	Otra opción configurable es el modo de actualización. Por defecto,
+	actualiza los colores parecidos cuando usted cambia de color
+	(por ejemplo, usando los deslizadores RGB) . Si encuentra
+	que este método es lento en su sistema, puede utilizar
+	<MENUCHOICE><GUIMENU>Configuración</GUIMENU>
+	  <GUIMENUITEM>Actualización de búsqueda</GUIMENUITEM>
+	</MENUCHOICE> para cambiar el modo de actualización a
+	<GUILABEL>Discontinuo</GUILABEL> (el <APPLICATION>Visualizador
+	de Colores GNOME</APPLICATION> le actualizará los colores
+	parecidos solamente después de soltar el deslizador) o
+	<GUILABEL>Demorado</GUILABEL> (el <APPLICATION>Visualizador
+	de Colores GNOME</APPLICATION> actualizará los colores parecidos
+	con un retraso de aproximadamente 1/2 segundo). 
+      </PARA>
+
+      </SECT3>
+
+      <SECT3 ID="gcolorsel-favorites">      <TITLE>Selector de Colores GNOME - Favoritos</TITLE>
+      <PARA>	En adición a los colores de sistema, que están definidos
+	en un extenso archivo de configuración y son mostrados en la
+	ventana del <LINK LINKEND="gcolorsel-simple">Visualizador</LINK>
+	la aplicación también le permite definirse sus colores favoritos
+	personales. Puede visualizar estos colores en la ventana
+	<GUILABEL>Favoritos</GUILABEL>, vealo en
+	<XREF LINKEND="gcolorsel-favoritesfig">. Puede utilizar estos
+	colores de la misma forma que los colores de sistema, arrastrándolos
+	a la aplicación GNOME como el Panel GNOME o el Terminal GNOME
+	para cambiar el color de fondo.
+      </XREF></PARA>
+
+      <FIGURE ID="gcolorsel-favoritesfig">	<TITLE><APPLICATION>Selector de Colores GNOME</APPLICATION> Ventana Favoritos</TITLE>
+          <SCREENSHOT>          <SCREENINFO>Visualizador de Colores GNOME - Ventana Favoritos</SCREENINFO>
+          <GRAPHIC FILEREF="./figs/gcolorsel-favorites" FORMAT="png" SRCCREDIT="sasha">          </GRAPHIC>
+          </SCREENSHOT>
+      </FIGURE>
+
+      <PARA>	Puede añadir un color a la lista de favoritos de varias formas.
+	La primera, puede apretar el botón derecho del ratón en cualquiera
+	de los colores de sistema en las ventanas <GUILABEL>Simple</GUILABEL>
+	o <GUILABEL>Buscar</GUILABEL> y seleccionar <GUIMENUITEM>Añadir
+	a favoritos</GUIMENUITEM> del menú <GUIMENU>desplegable</GUIMENU>.
+	la segunda, puede utilizar arrastrar y dejar: si usted ha
+	seleccionado la opción
+	  <MENUCHOICE><GUISUBMENU>Al dejar</GUISUBMENU>
+	    <GUIMENUITEM>Añadir a favoritos</GUIMENUITEM>
+	  </MENUCHOICE>
+	en el menú <GUIMENU>Configuración</GUIMENU>, entonces arrastre
+	un color de una fuente GNOME, como el selector de colores GNOME
+	por defecto, en la ventana del <APPLICATION>Visualizador de
+	Colores GNOME</APPLICATION> y automáticamente añade este color
+	en la lista de favoritos. Finalmente, puede también especificar
+	explícitamente los valores RGB para el color en la ventana de
+	<GUILABEL>Buscar</GUILABEL>, entonces apriete el botón derecho
+	del ratón en el rectángulo que muestra este color (a la derecha
+	de los deslizadores RGB) y seleccione <GUIMENUITEM>Añadir a
+	favoritos</GUIMENUITEM> del menú <GUIMENU>desplegable</GUIMENU>.
+	De la misma forma, puede también añadir un color que haya
+	cogido de la pantalla utilizando el botón
+	<GUIBUTTON>Coger</GUIBUTTON> en la barra de herramientas.
+      </PARA>
+      <PARA>	Apretando el botón derecho del ratón en cualquier color en la
+	ventana <GUILABEL>Favoritos</GUILABEL> aparece un menú
+	<GUIMENU>desplegable</GUIMENU>, que le permite renombrar
+	o eliminar el color.
+      </PARA>
+      </SECT3>
+  
+      <SECT3 ID="gcolorsel-xcolors">      <TITLE>Colores en el entorno de ventanas X</TITLE> 
+
+      <PARA>	En el entorno de ventanas X, cada color es descrito mediante
+	tres números, describiendo el contenido de rojo, verde y azul
+	(como es conocido, cada color se puede obtener por combinación
+	de estos tres colores primarios). Estos 3 valores son comúnmente
+	llamados los valores RGB. Normalmente cada uno tiene un rango
+	de valores de 0 a 255; por ejemplo, tripleta (0,0,0) es
+	negro, (255,0,0) es rojo puro, y (255,255,255) es blanco.
+      </PARA> 
+      <PARA>	El número total de posibles colores es por tanto
+	256256256=2<SUPERSCRIPT>24</SUPERSCRIPT>=16,777,216.
+	Por supuesto, el que su sistema sea capaz o no de mostrar todos
+	estos diferentes colores depende de la configuración del entorno
+	de ventanas X, que está limitado por las posibilidades de
+	su placa de vídeo. Las más modernas placas de vídeo son capaces
+	de mostrar todos estos colores; algunas placas más antiguas
+	serán capaces de utilizar 2<SUPERSCRIPT>16</SUPERSCRIPT>=64,536
+	colores (profundidad de color 16 bits) o incluso
+	2<SUPERSCRIPT>8</SUPERSCRIPT>=256 colores (profundidad de color
+	8 bits). En este caso, el entorno de ventanas X aún utilizará
+	tripletas como (234, 112, 243) para describir valores RGB, pero
+	algunas de estas tripletas producirán colores idénticos.
+	Más información acerca de los colores se puede encontrar en las
+	páginas del manual del entorno de ventanas X.
+      </PARA>
+      </SECT3>
+    </SECT2>
+
+   
+    <SECT2 ID="gless">      <TITLE>Visor de archivos de texto</TITLE>
+      <PARA>	<APPLICATION>Gless</APPLICATION> es un programa para visualizar,
+	pero no para modificar, archivos de textos. Es similar al programa
+	GNU <APPLICATION>less</APPLICATION>.
+
+        <FIGURE ID="glessfig">	  <TITLE>Visor de archivos de texto</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Visor de archivos de texto</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/glessfig" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+      </PARA>
+
+      <PARA>	El <APPLICATION>Visor de archivos de texto</APPLICATION> puede ser
+	ejecutado seleccionando <GUIMENUITEM>gless</GUIMENUITEM> del
+	submenú <GUISUBMENU>Utilidades</GUISUBMENU> del <GUIMENU>Menú
+	Principal</GUIMENU>, o ejecutando la orden
+	<COMMAND>gless</COMMAND> en la línea de comandos.
+      </PARA>
+
+      <SECT3 ID="gless-menubar">      <TITLE> Menús</TITLE>
+      <PARA>	La barra de menú, localizada en la parte superior de la
+	<INTERFACE>Ventana Principal</INTERFACE>, aporta los comandos
+	siguientes:
+      </PARA>
+
+      
+      <VARIABLELIST>	<VARLISTENTRY> <TERM><GUIMENU>Archivo</GUIMENU></TERM>
+          <LISTITEM><PARA> Este menú contiene los comandos
+              <MENUCHOICE>	        <SHORTCUT><KEYSYM>Alt-N</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Nueva Ventana</GUIMENUITEM>
+	      </MENUCHOICE>, 
+
+              <MENUCHOICE>	        <SHORTCUT><KEYSYM>Alt-A, F3</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Abrir</GUIMENUITEM>
+	      </MENUCHOICE>, 
+
+	      <MENUCHOICE>	        <SHORTCUT><KEYSYM>Alt-O</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Guardar como</GUIMENUITEM>
+	      </MENUCHOICE>,
+ 
+              <MENUCHOICE>	        <SHORTCUT><KEYSYM>Alt-W</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Cerrar</GUIMENUITEM>
+	      </MENUCHOICE> 
+	      y
+	      <MENUCHOICE>	        <SHORTCUT><KEYSYM>Alt-Q</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Salir</GUIMENUITEM>
+	      </MENUCHOICE>
+	      Todas se explican ellas mismas.
+	    </PARA>
+	  </LISTITEM> 
+	</VARLISTENTRY> 
+
+	<VARLISTENTRY> 
+	  <TERM><GUIMENU>Editar</GUIMENU></TERM>
+	  <LISTITEM><PARA>	      Este menú contiene
+              <MENUCHOICE>	        <SHORTCUT><KEYSYM>Alt-B, F6</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Buscar</GUIMENUITEM>
+	      </MENUCHOICE>, que abre una ventana de diálogo que le
+	        permite introducir la palabra a buscar, y
+              <MENUCHOICE>	        <SHORTCUT><KEYSYM>Alt-N, Shift-F6</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Buscar de nuevo</GUIMENUITEM>
+	      </MENUCHOICE>, que busca la próxima aparición de la misma
+	        palabra.</PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+	<VARLISTENTRY> 
+	  <TERM><GUIMENU>Configuración</GUIMENU></TERM>
+	  <LISTITEM><PARA>	      Este menú solamente contiene un comando,
+              <MENUCHOICE>		<SHORTCUT>		  <KEYSYM>Alt-C, Ctl-F</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Fuente constante</GUIMENUITEM>
+	      </MENUCHOICE>, que conmuta la fuente de letras con que se
+	        visualiza el archivo entre fuente de ancho constate o
+	        fuente proporcional.
+	      </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+	<VARLISTENTRY>	  <TERM><GUIMENU>Ayuda</GUIMENU></TERM>
+	  <LISTITEM><PARA>	      Este menú contiene los comandos
+	      <ITEMIZEDLIST>		<LISTITEM>		  <PARA><GUIMENUITEM>Manual</GUIMENUITEM> 
+		    enseña este manual
+		  </PARA>
+		</LISTITEM>
+
+		<LISTITEM>		  <PARA><GUIMENUITEM>Acerca de</GUIMENUITEM> 
+	            muestra información básica acerca de
+		    <APPLICATION>Gless</APPLICATION>, como
+	            nombre del autor y número de versión.
+		  </PARA>
+		</LISTITEM>
+	      </ITEMIZEDLIST>
+
+	      </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+      </VARIABLELIST>
+      
+
+    </SECT3>
+
+    </SECT2>
+</SECT1>

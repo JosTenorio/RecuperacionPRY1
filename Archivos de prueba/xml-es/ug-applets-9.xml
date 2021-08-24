@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+<SECT1 ID="clock-applets">  <TITLE>Apliques de reloj</TITLE>
+  <SECT2 ID="anotherclock">   <TITLE>Otro reloj</TITLE>
+   <PARA>     El aplique <APPLICATION>Otro Reloj</APPLICATION> es un reloj analógico
+     similar al que existe en el panel de CDE (Entorno común de escritorio,
+     uno de los primeros entornos de escritorio de UNIX). En su estado por
+     defecto presenta la pequeña esfera de un reloj analógico sin ningún fondo
+     rodeándola. Era parte del paquete principal de Gnome (gnome-core) hasta 
+     el GNOME de Octubre (gnome-core-1.0.53). Ahora se distribuye en el paquete
+     de apliques (gnome-applets). Esta guía describe la versión distribuida en
+     el paquete de apliques gnome-applets-1.1.2.
+   </PARA>
+
+   <PARA>     Para añadir <APPLICATION>Otro Reloj</APPLICATION> a su panel,
+     puede pulsar el botón <MOUSEBUTTON>derecho</MOUSEBUTTON> de su
+     ratón en una zona vacía del <INTERFACE>panel</INTERFACE> y seguir la secuencia:
+    <MENUCHOICE>      <GUIMENU>Panel</GUIMENU>
+      <GUISUBMENU>Añadir al panel</GUISUBMENU>
+      <GUIMENU>Apliques</GUIMENU>
+      <GUISUBMENU>Relojes</GUISUBMENU>
+      <GUIMENUITEM>Otro reloj</GUIMENUITEM>
+    </MENUCHOICE>
+    o puede teclear el siguiente comando en la línea de comandos:
+    <COMMAND>another_clock_applet --activate-goad-server another_clock_applet</COMMAND>
+  </PARA>
+
+  <FIGURE ID="anotherclock-applet">    <TITLE>Aplique Otro reloj</TITLE>
+    <SCREENSHOT>      <SCREENINFO>Aplique Otro Reloj</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/anotherclock-applet" SRCCREDIT="Eric Baudais">      </GRAPHIC>
+    </SCREENSHOT>
+  </FIGURE>
+  
+  <SECT3 ID="anotherclock-usage">    <TITLE>Uso</TITLE>
+    <PARA>      No tendrá que hacer nada especial con este reloj. Se situará
+      en su panel y le porporcionará la hora.
+    </PARA>
+    
+    <ITEMIZEDLIST>      
+      <LISTITEM>	<PARA>          <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+          abre el cuadro de diálogo <LINK LINKEND="anotherclock-prefs">          <GUILABEL>Propiedades</GUILABEL></LINK>.
+	</PARA>
+      </LISTITEM>
+      
+      <LISTITEM>	<PARA>	  <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+	  muestra este documento.
+	</PARA>
+      </LISTITEM>
+      
+      <LISTITEM>	<PARA>	  <GUIMENUITEM>Sobre</GUIMENUITEM> 
+          muestra información básica sobre el aplique <APPLICATION>Otro reloj</APPLICATION>,
+          incluyendo la versión y el nombre del autor.
+	</PARA>
+      </LISTITEM>
+
+    </ITEMIZEDLIST>
+
+   </SECT3>
+
+   <SECT3 ID="anotherclock-prefs">    <TITLE>Preferencias</TITLE>
+    <PARA>      La <INTERFACE>caja de diálogo preferencias</INTERFACE> (que se
+      llama a sí misma "Ajustes del reloj" en lugar de preferencias)
+      es muy simple. Hay cuatro colores que pueden cambiarse y hay un
+      <GUIBUTTON>control de comprobación</GUIBUTTON>.
+    </PARA>
+
+    <FIGURE ID="anotherclock-settings-fig">      <TITLE>Diálogo de Propiedades</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="./figs/anotherclock-properties" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Color del reloj</TERM>
+      <LISTITEM>       <PARA>         Actualmente no está disponible, pero en el futuro será
+         posible ajustar el color de la esfera del reloj.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Color de la aguja de las horas</TERM>
+      <LISTITEM>       <PARA>         Pulsando sobre la <GUIBUTTON>caja</GUIBUTTON> que contiene el color,
+         se lanzará la <APPLICATION>rueda de colores de GNOME</APPLICATION>,
+         la cual le permitirá cambiar el color de la aguja de las horas. El
+         color por defecto es un gris muy pálido.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Color de la aguja de los minutos</TERM>
+      <LISTITEM>      <PARA>         Pulsando sobre la <GUIBUTTON>caja</GUIBUTTON> que contiene el color,
+         se lanzará la <APPLICATION>rueda de colores de GNOME</APPLICATION>,
+         la cual le permitirá cambiar el color de la aguja de los minutos. El
+         color por defecto es un gris muy pálido.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Color de la aguja de los segundos</TERM>
+      <LISTITEM>       <PARA>         Pulsando sobre la <GUIBUTTON>caja</GUIBUTTON> que contiene el color,
+         se lanzará la <APPLICATION>rueda de colores de GNOME</APPLICATION>,
+         la cual le permitirá cambiar el color de la aguja de los segundos. El
+         color por defecto es rojo.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Mostrar aguja de los segundos</TERM>
+      <LISTITEM>       <PARA>         Pulsando sobre esta <GUIBUTTON>selección</GUIBUTTON> se le
+         permitirá elegir si la aguja de los segundos se muestra o no.
+         La opción por defecto será mostrarla.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+
+   <SECT3 ID="anotherclock-bugs">    <TITLE>Errores Conocidos y Limitaciones</TITLE>
+    <ORDEREDLIST>     <LISTITEM>      <PARA>        Si ajusta la hora del sistema hacia atrás (la atrasa) usando
+        el comando <COMMAND>date</COMMAND>, el reloj se parará hasta
+        que la hora del sistema alcance a la hora que el reloj muestra.
+        Entonces comenzará a funcionar normalmente.
+      </PARA>
+     </LISTITEM>
+    </ORDEREDLIST>
+   </SECT3>
+ </SECT2>
+
+
+ <SECT2 ID="asclock">  <TITLE>Aplique del Reloj AfterStep</TITLE>
+
+   <PARA>   El aplique <APPLICATION>Reloj AfterStep</APPLICATION>, mostrado en <XREF LINKEND="asclock-applet-fig">, es un aplique que le proporcionará la hora
+   además del día de la semana y la fecha. Está basado en el aspecto del reloj
+   de NeXTStep. Este documento describe la versión 2.1.10 del
+   <APPLICATION>Reloj AfterStep</APPLICATION>.
+  </XREF></PARA>
+  <PARA>  
+   Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>,
+   pulse el botón derecho del ratón sobre el <INTERFACE>Panel</INTERFACE> 
+   y elija
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Apliques</GUISUBMENU>
+    <GUISUBMENU>Relojes</GUISUBMENU>
+    <GUIMENUITEM>Reloj AfterStep</GUIMENUITEM>
+   </MENUCHOICE>.
+  </PARA>
+
+  <FIGURE ID="asclock-applet-fig">   <TITLE>Aplique Reloj AfterStep</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique Reloj AfterStep</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/asclock_applet" SRCCREDIT="Aaron Weber">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="asclock-usage">   <TITLE>Uso</TITLE>
+   <PARA>    No tendrá que hacer nada especial con este reloj. Se situará
+    en su panel y le porporcionará la hora y la fecha.
+   </PARA>
+
+   <PARA>    Si pulsa el botón derecho del ratón sobre el aplique, se desplegará
+    un menú que contiene los siguientes elementos:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+       abre el cuadro de diálogo <LINK LINKEND="asclock-prefs">       <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Sobre</GUIMENUITEM> 
+       muestra información básica sobre el aplique <APPLICATION>Reloj AfterStep</APPLICATION>,
+       incluyendo la versión del aplique y el nombre del autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="asclock-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>      Puede personalizar el aplique <APPLICATION>Reloj AfterStep</APPLICATION>
+      pulsando el botón derecho del ratón sobre él y eligiendo
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Esto abrirá
+      el cuadro de diálogo <INTERFACE>Propiedades</INTERFACE> (mostrado
+      en<XREF LINKEND="asclock-settings-fig">), que le permite ajustar
+      diversas opciones.
+    </XREF></PARA>
+
+    <FIGURE ID="asclock-settings-fig">     <TITLE>Cuadro de diálogo Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Cuadro de diálogo Propiedades</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/asclock_settings" SRCCREDIT="Aaron Weber">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+  <PARA>    Las propiedades en la pestaña <GUILABEL>General</GUILABEL> son:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       Mostrar la hora en formato de 12 horas (AM/PM) Seleccionándolo
+       se mostrará la hora en formato de 12 horas. El estado por defecto
+       es no seleccionado, por tanto, usa un reloj con formato de 24 horas.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Elementos parpadeantes en el reloj  Cuando el aplique
+       <APPLICATION>Reloj AfterStep</APPLICATION> se inicia, por defecto
+       muestra un símbolo de dos puntos entre la hora y los minutos.
+       Quitando la selección de este elemento, se evita este parpadeo.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Tema del reloj  El aplique <APPLICATION>Reloj AfterStep</APPLICATION>
+       puede tomar varias apariencias. Seleccione el tema (o apariencia)
+       en esta lista.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+
+
+   <PARA>    La pestaña <GUILABEL>Huso horario</GUILABEL> se usa para especificar
+    cuál es su huso horario. Seleccione el continente y la ciudad en
+    la cual está o una próxima a usted.
+    to.
+   </PARA>
+
+    <PARA> 
+      Después de realizar los cambios que desee, pulse sobre el botón
+      <GUIBUTTON>Aceptar</GUIBUTTON> para aplicar los cambios y cerrar
+      el cuadro de diálogo <INTERFACE>Propiedades</INTERFACE>. Para
+      cancelar los cambios y volver a los valores previos, pulse el
+      botón <GUIBUTTON>Cancelar</GUIBUTTON>.
+    </PARA>
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="asclock-bugs">   <TITLE>Errores Conocidos y Limitaciones</TITLE>
+     <PARA>         No puede cambiar la hora mediante las propiedades del reloj.
+         Esto no es realmente un error; se debe a que debe de ser el
+         administrador del sistema para alterar la hora de todo el
+         sistema, usando el comando <COMMAND>date</COMMAND>.
+     </PARA>
+     <PARA>        Si ajusta la hora del sistema hacia atrás (la atrasa) usando
+        el comando <COMMAND>date</COMMAND>, el reloj se parará hasta
+        que la hora del sistema alcance a la hora que el reloj muestra.
+        Entonces comenzará a funcionar normalmente.
+     </PARA>
+     <PARA>        Cambiar entre multitud de temas o husos horarios parece
+        provocar el uso de cantidades desorbitadas de memoria.
+      </PARA>
+   </SECT3>
+ </SECT2>
+
+
+ <SECT2 ID="clock">  <TITLE>Aplique Reloj</TITLE>
+
+   <PARA>   El aplique <APPLICATION>Reloj</APPLICATION>, mostrado en <XREF LINKEND="clockapplet-fig">, es un sencillo aplique que muestra
+   la hora (opcionalmente también la fecha) en alguno de varios
+   posibles formatos. Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>, 
+   pulse el botón derecho del ratón sobre el <INTERFACE>Panel</INTERFACE>
+   y elija:
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Apliques</GUISUBMENU>
+    <GUISUBMENU>Relojes</GUISUBMENU>
+    <GUIMENUITEM>Reloj</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="clockapplet-fig">   <TITLE>Aplique Reloj</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique Reloj</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/clock_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="clock-usage">   <TITLE>Uso</TITLE>
+   <PARA>    El aplique <APPLICATION>Reloj</APPLICATION> no requiere
+    ninguna entrada del usuario. Puede configurarlo opcionalmente,
+    como se describe más abajo.
+   </PARA>
+
+   <PARA>    Si pulsa el botón derecho del ratón sobre el aplique, se desplegará
+    un menú que contiene los siguientes elementos:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+
+       abre el cuadro de diálogo <LINK LINKEND="clock-prefs">       <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Sobre</GUIMENUITEM> 
+       muestra información básica sobre el aplique <APPLICATION>Reloj AfterStep</APPLICATION>,
+       incluyendo la versión del aplique y el nombre del autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="clock-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>      Puede personalizar el aplique <APPLICATION>Reloj</APPLICATION>
+      pulsando el botón derecho del ratón sobre él y eligiendo
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Esto abrirá
+      el cuadro de diálogo <INTERFACE>Propiedades</INTERFACE> (mostrado
+      en<XREF LINKEND="clock-settings-fig">), que le permite ajustar
+      diversas opciones.
+    </XREF></PARA>
+
+    <FIGURE ID="clock-settings-fig">     <TITLE>Cuadro de diálogo Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Cuadro de diálogo Propiedades</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/clock_settings" SRCCREDIT="muet">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>     Las propiedades son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        Formato de la hora  Seleccione entre el formato
+        <GUILABEL>12 horas</GUILABEL> para el formato del tipo
+        <QUOTE>AM/PM</QUOTE>, o <GUILABEL>24 horas</GUILABEL>
+        para un reloj del tipo 24 horas.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Mostrar la fecha en el aplique  Seleccione este
+        elemento para mostrar la fecha dentro del aplique.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Mostrar la fecha en la etiqueta  Seleccione este
+        elemento para mostrar la fecha en la etiqueta que aparece
+        cuando el puntero del ratón se sitúa un cierto tiempo
+        sobre el aplique.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Usar GMT  Seleccione este elemento para mostrar
+        la hora del Meridiano de Greenwich en lugar de la hora
+        local.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Hora Unix  Seleccione este elemento para mostrar
+        el tiempo, en segundos, que ha pasado desde el 1 de Enero
+        de 1970.
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA> 
+      Después de realizar los cambios que desee, pulse sobre el botón
+      <GUIBUTTON>Aceptar</GUIBUTTON> para aplicar los cambios y cerrar
+      el cuadro de diálogo <INTERFACE>Propiedades</INTERFACE>. Para
+      cancelar los cambios y volver a los valores previos, pulse el
+      botón <GUIBUTTON>Cancelar</GUIBUTTON>.
+    </PARA>
+
+   <NOTE>    <TITLE>NOTA</TITLE>
+    <PARA>     El aplique <APPLICATION>Reloj</APPLICATION> únicamente muestra
+     la hora; no le permite establecer la hora. Para establecer la
+     hora en un sistema Unix o Linux, debe utilizar el comando <COMMAND>     date</COMMAND>. Por ejemplo, para establecer la hora en las
+     11:43:01PM y la fecha en 4 de Abril, use <COMMAND>date --set="Apr
+     4 23:43:01"</COMMAND>. Observe que debe haber entrado en el sistema
+     como administrador para establecer la hora. Para aprender más
+     acerca del comando <COMMAND>date</COMMAND>, teclee <COMMAND>man date</COMMAND>
+     en un símbolo de sistema de un terminal. En algunas distribuciones
+     de Linux, puede establecer su  huso horario mediante los comandos
+     <COMMAND>timeconfig</COMMAND> o <COMMAND>tzselect</COMMAND>.
+    </PARA>
+   </NOTE>
+
+  </SECT3>
+
+  
+  
+  <SECT3 ID="clock-bugs">   <TITLE>Errores conocidos y Limitaciones</TITLE>
+   <PARA>    Este aplique no tiene errores conocidos.
+   </PARA>
+  </SECT3>
+ </SECT2>
+
+
+ <SECT2 ID="clockmail">  <TITLE>Aplique Reloj y Buzón</TITLE>
+
+   <PARA>   El aplique <APPLICATION>Aplique Reloj y Buzón</APPLICATION>,
+   mostrado en <XREF LINKEND="clockmailapplet-fig">, presenta la hora actual y
+   cuánto correo hay en su buzón de correo. También le notifica cuando llega
+   nuevo correo parpadeando. Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>,
+   pulse el botón derecho del ratón sobre el <INTERFACE>Panel</INTERFACE>
+   y elija:
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Apliques</GUISUBMENU>
+    <GUISUBMENU>Relojes</GUISUBMENU>
+    <GUIMENUITEM>Reloj y Buzón</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="clockmailapplet-fig">   <TITLE>Aplique Reloj y Buzón</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique Reloj y Buzón</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/clockmail_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+
+  
+  <SECT3 ID="clockmail-usage">   <TITLE>Uso</TITLE>
+   <PARA>    Vea la hora y el número de mensajes en su buzón de correo en
+    el frontal del aplique. El sobre parpadeará cuando llegue nuevo
+    correo.
+   </PARA>
+
+   <PARA>    Si pulsa el botón derecho del ratón sobre el aplique, se desplegará
+    un menú que contiene los siguientes elementos:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+       abre el cuadro de diálogo <LINK LINKEND="clockmail-prefs">       <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Sobre</GUIMENUITEM> 
+       muestra información básica sobre el aplique <APPLICATION>Reloj y Buzón</APPLICATION>,
+       incluyendo la versión del aplique y el nombre del autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="clockmail-prefs">    <TITLE>Customization</TITLE>
+    <PARA>      Puede personalizar el aplique <APPLICATION>Reloj y Buzón</APPLICATION>
+      pulsando el botón derecho del ratón sobre él y eligiendo <GUIMENUITEM>      Propiedades</GUIMENUITEM>.
+      Esto abrirá el cuadro de diálogo <INTERFACE>Propiedades</INTERFACE> (mostrado
+      en<XREF LINKEND="clockmail-settings-fig">), que le permite ajustar
+      diversas opciones.
+    </XREF></PARA>
+
+    <FIGURE ID="clockmail-settings-fig">     <TITLE>Cuadro de diálogo Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Cuadro de diálogo Propiedades</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/clockmail-prefs-general" SRCCREDIT="Eric Baudais">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>     El cuadro de diálogo <INTERFACE>Propiedades</INTERFACE> está
+     dividido en dos secciones, una para opciones generales y otra
+     para temas.
+    </PARA>
+
+    <PARA>     Las propiedades en la pestaña <GUILABEL>General</GUILABEL> son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        Afichar en formato 12 horas (AM/PM)  Seleccione
+        este botón para presentar la hora en formato de 12 horas.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Muestra la hora GMT(Hora del Meridiano Greenwich) 
+        Esta opción le permite cambiar el huso horario que usa el 
+        <APPLICATION>Aplique Reloj y Chequeador de Correo</APPLICATION>.
+        La hora puede ser cualquiera desde doce horas antes del GMT hasta
+        doce horas depués. Recuerde seleccionar la <GUIBUTTON>opción</GUIBUTTON>,
+        para usar el nuevo huso horario. Observe que únicamente puede alterar
+        la hora mediante un número entero de horas.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Archivo de correo   Introduzca el archivo de buzón de entrada
+        correo de correo que debe ser chequeado para el correo nuevo. Normalmente,
+        será <FILENAME>/var/spool/mail/sunombredeusuario</FILENAME>
+        o algo similar. Únicamente puede introducir un archivo.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Cuando llega nuevo correo, lanzar...  Es posible
+        ejecutar comandos cuando llega correo nuevo.
+        Por ejemplo, es común reproducir un archivo de sonido
+        cuando llega correo. Puede escribir el comando que lanzar
+        y el archivo en este espacio y asegurarse de que la opción
+        está seleccionada para que ocurra.
+        Si tiene más de un comando, puede separarlos por un punto y
+        coma. Por ejemplo,
+        <ITEMIZEDLIST>         <LISTITEM>          <PARA>           <COMMAND>esdplay /ruta/completa/al/archivo.wav</COMMAND>
+          </PARA>
+         </LISTITEM>
+         <LISTITEM>          <PARA>           <COMMAND>cd /ruta/al/directorio ; esdplay archivo.wav</COMMAND>
+          </PARA>
+         </LISTITEM>
+        </ITEMIZEDLIST>
+        Estos dos tendrán el mismo efecto. Necesitará la ruta completa,
+        sin atajos como <COMMAND>cd ~</COMMAND>.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Parpadea siempre que hay correo en espera  Si selecciona
+        esta <GUIBUTTON>opción</GUIBUTTON>, el sobre rojo parpadeará
+        hasta que lea el correo no leído. Normalmente está desconectada,
+        y el parpadeo dura sólo unos pocos segundos.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Cantidad de mensajes para considerar la casilla llena  
+        Seleccione el número de mensajes que debe contener su buzón
+        para ser considerado <QUOTE>lleno</QUOTE>. Algunos temas mostrarán
+        un símbolo especial indicando que el buzón está lleno.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Al cliquear, lanzar...  Cuando está seleccionda,
+        pulsar el botón izquierdo del ratón sobre el aplique lanzará
+        un programa. Por defecto, se lanza el cliente de correo
+        <APPLICATION>Balsa</APPLICATION>. (Si 
+<APPLICATION>Balsa</APPLICATION>
+        no está instalado no ocurrirá nada). Introduzca aquí su
+        programa de correo favorito.
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA>     Las propiedades de la pestaña <GUILABEL>Theme</GUILABEL> le
+     permitirán ajustar la apariencia del aplique <APPLICATION>     Aplique Reloj y Buzón</APPLICATION>. El aplique <APPLICATION>     Aplique Reloj y Buzón</APPLICATION> viene con varios temas que
+     están almacenados en <FILENAME>$PREFIX/clockmail/</FILENAME>.
+     Por defecto, no usa ningún tema. Observe que no todos los temas
+     muestran la hora y el estado de su buzón de correo.
+    </PARA>
+
+    <FIGURE ID="clockmail-settings-theme-fig">     <TITLE>Cuadro de diálogo de Propiedades mostrando la pestaña de temas</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Cuadro de diálogo de Propiedades mostrando la pestaña de temas</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/clockmail-prefs-theme" SRCCREDIT="Eric Baudais">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA> 
+      Después de realizar los cambios que desee, pulse sobre el botón
+      <GUIBUTTON>Aceptar</GUIBUTTON> para aplicar los cambios y cerrar
+      el cuadro de diálogo <INTERFACE>Propiedades</INTERFACE>. Para
+      cancelar los cambios y volver a los valores previos, pulse el
+      botón <GUIBUTTON>Cancelar</GUIBUTTON>.
+    </PARA>
+  </SECT3>
+
+  
+  
+  <SECT3 ID="clockmail-bugs">   <TITLE>Errores conocidos y Limitaciones</TITLE>
+    <ORDEREDLIST>     <LISTITEM>     <PARA>         No puede cambiar la hora mediante las propiedades del reloj.
+         Esto no es realmente un error; se debe a que debe de ser el
+         administrador del sistema para alterar la hora de todo el
+         sistema, usando el comando <COMMAND>date</COMMAND>.
+     </PARA>
+     </LISTITEM>
+     <LISTITEM>     <PARA>        Si ajusta la hora del sistema hacia atrás (la atrasa) usando
+        el comando <COMMAND>date</COMMAND>, el reloj se parará hasta
+        que la hora del sistema alcance a la hora que el reloj muestra.
+        Entonces comenzará a funcionar normalmente.
+     </PARA>
+     </LISTITEM>
+     <LISTITEM>      <PARA>        El tema contador de correo no proporciona el número correcto
+        de mensajes en el buzón de correo.
+      </PARA>
+     </LISTITEM>
+     <LISTITEM>      <PARA>        Algunos temas no cambian al tamaño del panel vertical y fuerzan
+        al panel a ser más ancho.
+      </PARA>       
+     </LISTITEM>
+     <LISTITEM>      <PARA>        No maneja múltiples buzones de correo.
+      </PARA>
+     </LISTITEM>
+    </ORDEREDLIST>
+  </SECT3>
+ </SECT2>
+
+
+ <SECT2 ID="jbc">  <TITLE>El Aplique JBC Reloj Binario</TITLE>
+
+  <PARA>   El aplique <APPLICATION>JBC Reloj Binario</APPLICATION>, mostrado en<XREF LINKEND="jbcapplet-fig">, muestra la hora en una forma inusual: en código
+   BCD (esto es, cada decimal codificado en binario). Tiene veinticuatro diodos
+   LED que representan las horas, minutos y segundos iluminando los diodos
+   apropiados.  Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>,
+   pulse el botón derecho del ratón sobre el <INTERFACE>Panel</INTERFACE>
+   y elija:
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Apliques</GUISUBMENU>
+    <GUISUBMENU>Relojes</GUISUBMENU>
+    <GUIMENUITEM>JBC Reloj Binario</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="jbcapplet-fig">   <TITLE>El Aplique JBC Reloj Binario</TITLE>
+   <SCREENSHOT>    <SCREENINFO>El Aplique JBC Reloj Binario</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/jbc_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="APPLET-usage">   <TITLE>Uso</TITLE>
+   <PARA>    No necesita hacer nada especial con este reloj. Únicamente
+    se sitúa ahí y hace brillar luces para usted.
+   </PARA>
+
+   <PARA>    Si pulsa el botón derecho del ratón sobre el aplique, se desplegará
+    un menú que contiene los siguientes elementos:
+    <ITEMIZEDLIST>     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Sobre</GUIMENUITEM> 
+       muestra información básica sobre el aplique <APPLICATION>JBC Reloj Binario</APPLICATION>,
+       incluyendo la versión del aplique y el nombre del autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="jbc-deciphering">   <TITLE>Descifrando las luces</TITLE>
+    <PARA>      BCD es el acrónimo de Binary-Coded Decimal, una manera de
+      representar la década normal de números (0,1,2,3,4,5,6,7,8,9)
+      a la que los programadores llaman un conjunto de números
+      binarios de cuatro bits, quitando los números A a F. Si
+      esto no tiene sentido para usted, piense que este reloj es
+      solo un divertimento para programadores, y no tiene un propósito
+      realmente útil.
+    </PARA>
+    <PARA>      ¡El leer el reloj al revés ayuda! Comience en la parte inferior
+      y lea hacia arriba.
+    </PARA>
+    <PARA>      La pareja de columnas a la derecha muestra los dos dígitos de los
+      segundos: las unidades a la derecha, las decenas a la izquierda.
+      El par de columnas centrales muestra los dos dígitos de los minutos.
+      La pareja de columnas a la izquierda muestra los dos dígitos de las
+      horas.
+    </PARA>
+    <PARA>      Sume los valores de los diodos iluminados en cada columna.
+      Obtendrá un número entre cero y nueve cada cada columna. Y
+      estos números indicarán la hora.
+    </PARA>
+    <ORDEREDLIST>     <LISTITEM>      <PARA>         El diodo inferior representa 1 cuando está iluminado.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>         El siguiente diodo representa 2 cuando está iluminado.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>         El siguiente diodo representa 4 cuando está iluminado.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>         El diodo superior representa 8 cuando está iluminado.
+      </PARA>
+     </LISTITEM>
+    </ORDEREDLIST>
+
+    <PARA>      Es probablemente más sencillo descifrar las horas y minutos
+      primero, antes de intentarlo con los segundos, que siempre
+      están cambiando.
+    </PARA>
+
+    <PARA>     Como ejemplo, podemos leer la hora en <XREF LINKEND="jbcapplet-fig">. Comencemos con la hora. La primera
+     columna tiene solamente un diodo encendido, en la segunda posición
+     más baja, esto nos da <QUOTE>2</QUOTE> para el primer dígito de
+     la hora. La segunda columna no tiene diodos encendidos, así que
+     tenemos un <QUOTE>0</QUOTE> para el segundo dígito de la hora.
+     Así que la hora es <QUOTE>20</QUOTE>, u 8PM para quien prefiera
+     la notación AM/PM. Mirando a los minutos, tenemos <QUOTE>0</QUOTE>
+     para el primer dígito, y <QUOTE>1</QUOTE> para el segundo dígito,
+     ya que únicamente el diodo más inferior está encendido. Esto nos
+     da "20:01" hasta aquí. Por último, tenemos los segundos. Para el
+     primer dígito, tenemos los dos diodos más bajos encendidos. Éstos
+     tienen los valores 1 (para el inferior) y 2 (el segundo inferior)
+     que da un total de <QUOTE>3</QUOTE>. Y la segunda columna de
+     segundos tiene el diodo superior encendido, con un valor de <QUOTE>     8</QUOTE>. Así, la hora es <QUOTE>20:01:38</QUOTE>, o <QUOTE>     8:01:38PM</QUOTE>.
+    </XREF></PARA>
+
+  </SECT3>
+
+  
+  
+  <SECT3 ID="jbc-bugs">   <TITLE>Errores conocidos y Limitaciones</TITLE>
+   <PARA>    Si añade el aplique a un panel vertical, tiene un tamaño adecuado.
+    Si entonces lo mueve a un panel horizontal, cambia el tamaño al del
+    panel horizontal. Si lo vuelve a mover al panel vertical, no volverá
+    a cambiar de tamaño, y forzará al panel a cambiar el suyo.
+   </PARA>
+  </SECT3>
+ </SECT2>
+ </SECT1>

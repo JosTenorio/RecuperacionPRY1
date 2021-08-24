@@ -1,0 +1,762 @@
+<?xml version="1.0"?>
+<CHAPTER ID="gnome-applets">  <TITLE>Apliques GNOME</TITLE> 
+  
+  
+  <SECT1 ID="gnome-applets-intro">    <TITLE>Lo básico de los apliques</TITLE> 
+    
+    
+    <SECT2 ID="applets-what-are">      <TITLE>¿Qué son los apliques?</TITLE> 
+      <PARA>Los apliques son uno de los más populares y útiles objetos que puede añadir
+al <INTERFACE>Panel</INTERFACE> para personalizar el escritorio. Un aplique
+es una pequeña aplicación que se ejecuta en un área pequeña del 
+<INTERFACE>Panel</INTERFACE>. Se han escrito apliques para un amplio rango de
+propósitos. Algunos son muy poderosas herramientas interactivas, como el 
+aplique <APPLICATION>lista de tareas</APPLICATION> que permite controlar de
+forma sencilla todas las aplicaciones principales. Otros son simples 
+monitores del sistema, mostrando información de la cantidad de energía
+que queda en la batería del portátil (véase  <APPLICATION>monitor
+ de carga de la batería</APPLICATION> o información del tiempo (véase 
+ <APPLICATION>El clima según GNOME</APPLICATION>. Algunos son simples
+entretenimientos (véase <APPLICATION>Pez</APPLICATION>).
+      </PARA>
+      
+      <PARA>Los apliques se parecen a las aplicaciones reducidas en que ambas residen en el
+<INTERFACE>Panel</INTERFACE>. Sin embargo las aplicaciones reducidas son en general
+aplicaciones no diseñadas para correr en el <INTERFACE>Panel</INTERFACE>.
+Típicamente se reducirá una aplicación que ya exista en el área del
+<INTERFACE>escritorio</INTERFACE> principal, llevándola dentro del <INTERFACE>Panel</INTERFACE>.
+La aplicación continuara ejecutándose en el <INTERFACE>Panel</INTERFACE> hasta que se 
+cierre o se devuelva a su tamaño natural, situándola de nuevo en el área principal
+del escritorio cuando se la necesite.
+      </PARA>
+      
+      <PARA>	<FIGURE ID="example-applets-fig">	  <TITLE>Ejemplos de apliques</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Ejemplos de apliques</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/example_applets" FORMAT="png" SRCCREDIT="muet">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+En <XREF LINKEND="example-applets-fig"> se muestran varios ejemplos de apliques. De izquierda
+a derecha, tenemos: 
+(1)Aplique <APPLICATION>aplique mezclador de sonido</APPLICATION>, que permite activar o desactivar el sonido y
+controlar su volumen pulsando en el aplique.
+(2)Aplique<APPLICATION>Monitor de sonido</APPLICATION>, que muestra el volumen actual del sonido
+interpretado y permite controlar varias de sus características. 
+(3)Aplique <APPLICATION>GTCD</APPLICATION>, un lector de CD con todos sus controles disponibles
+desde le aplique y con visualización de la pista y tiempo.
+(4)Aplique <APPLICATION>montador de discos</APPLICATION>, usado para montar  y desmontar 
+dispositivos con una simple pulsación de ratón.
+(5)<APPLICATION>Mapa del escritorio</APPLICATION> que permite ver y controlar las múltiples
+pantallas virtuales.
+(6)Aplique <APPLICATION>Lista de tareas</APPLICATION> que permite controlar las distintas ventanas y
+aplicaciones.
+      </XREF></PARA>
+      <PARA>Hay muchos otros apliques entre los que escoger. En el resto de esté capitulo se dará la
+información básica para permitirle empezar a añadir, mover, y eliminar apliques de los
+<INTERFACE>paneles</INTERFACE> y a hacer uso de ellos. Los siguientes capítulos recorren
+cada uno de los apliques estándar de GNOME describiéndolos en detalle. Hay además apliques
+adicionales que podrá descargar de la Web. Véase en  
+<ULINK TYPE="http" URL="http://www.gnome.org/applist/list-martin.phtml">el mapa de software
+GNOME </ULINK> la lista de aplicaciones y apliques adicionales de GNOME.
+      </PARA>
+      <PARA>Según lea el resto de este capitulo, debería probar a añadir y eliminar apliques del
+<INTERFACE>panel</INTERFACE> y experimentar con ellos libremente.
+      </PARA>
+    </SECT2>
+
+    
+    <SECT2 ID="applet-add-move-replace">      <TITLE>Añadir, mover, y eliminar apliques</TITLE>
+      
+      <SECT3 ID="adding-applets">   
+	<TITLE>Añadir apliques al panel</TITLE>
+	<PARA>Para añadir un aplique al <INTERFACE>panel</INTERFACE>, pulse el botón derecho sobre el
+<INTERFACE>panel</INTERFACE> y seleccione <MENUCHOICE><GUIMENU>Panel</GUIMENU><GUISUBMENU>Añadir al panel</GUISUBMENU>
+ <GUISUBMENU>Aplique</GUISUBMENU></MENUCHOICE>. Esto mostrara un menú con todos los apliques del sistema,
+divididos en categorías. Al escoger cualquier aplique de este menú se añadirá al 
+<INTERFACE>panel</INTERFACE>.
+	</PARA>
+      </SECT3>
+
+      <SECT3 ID="moving-applets">	<TITLE>Mover apliques en o entre paneles</TITLE>
+	<PARA>Es fácil mover apliques en un <INTERFACE>panel</INTERFACE> o entre dos 
+<INTERFACE>paneles</INTERFACE>. Si se tiene un ratón de tres botones, mueva simplemente el ratón sobre el
+aplique, arrastre el el aplique hasta su nueva posición manteniendo pulsado el botón central del ratón, y finalmente
+suelte el botón central del ratón. Observe que puede arrastrar de esta manera apliques dentro de un 
+<INTERFACE>panel</INTERFACE> o entre dos <INTERFACE>paneles</INTERFACE>. Si no se dispone de un ratón de tres botones,
+pulse simplemente el botón derecho sobre el aplique y elija <GUIMENUITEM>Mover</GUIMENUITEM>. El cursor se transformara
+en una cruz y el aplique se moverá siguiendo al ratón hasta que se pulse cualquier botón del ratón para indicar el
+fin del desplazamiento.
+Si, en el transcurso del movimiento, esta sobre otro objeto, el comportamiento dependerá de las preferencias globales
+fijadas para los <INTERFACE>paneles</INTERFACE> en el <APPLICATION>centro de control GNOME</APPLICATION>: el aplique
+que se esta moviendo puede intercambiar su posición con otros objetos, "empujar" todos los objetos que encuentre a su
+paso, o "saltar" sobre todos los demás objetos sin alterarlos. Se puede también obviar el comportamiento por defecto
+manteniendo pulsada la tecla <KEYCAP>Shift</KEYCAP> (para el modo "empujar"), <KEYCAP>Ctrl</KEYCAP> (para el modo
+"intercambiar"), o <KEYCAP>Alt</KEYCAP> (para el modo "libre", esto es saltando sobre otros objetos sin alterarlos)
+mientras lo arrastra.
+	</PARA>
+	<PARA>Para cambiar las propiedades globales del panel, pulse el botón derecho sobre cualquier aplique o sobre le
+<INTERFACE>Panel</INTERFACE> y elija 
+	  <MENUCHOICE>	    <GUIMENU>panel</GUIMENU>
+	    <GUIMENUITEM>Propiedades globales...</GUIMENUITEM>
+	  </MENUCHOICE>.
+El <GUILABEL>movimiento por defecto</GUILABEL> esta debajo de la solapa <GUILABEL>objetos del panel</GUILABEL>.
+	</PARA>
+      </SECT3>
+      
+      <SECT3 ID="removing-applets">	<TITLE>Eliminar apliques del panel</TITLE> 
+	<PARA>  
+Para eliminar un aplique del <INTERFACE>panel</INTERFACE>, pulse el botón derecho sobre el aplique y
+elija <GUIMENUITEM>Quitar del panel...</GUIMENUITEM>.
+	</PARA>
+      </SECT3>
+    </SECT2>
+    
+    
+    
+    <SECT2 ID="right-click-pop-up-menu">      <TITLE>El menú desplegable del botón derecho</TITLE>
+      <PARA>Pulsando el botón derecho del ratón sobre cualquier aplique dispara un <GUIMENU>menú desplegable</GUIMENU>.
+Este menú siempre contiene ciertos elementos de menú estándar y a menudo tiene ítem adicionales que varían
+dependiendo del aplique particular.
+      </PARA>
+      <SECT3 ID="standard-right-click-items"> 
+	<TITLE>Ítem estándar del menú desplegable</TITLE>
+	<PARA>Todos los apliques tienen los siguientes ítem en su <GUIMENU>menú desplegable</GUIMENU> del botón derecho:
+	  <VARIABLELIST>	    <VARLISTENTRY>	      <TERM>Quitar del panel</TERM>
+	      <LISTITEM>		<PARA>El ítem de menú <GUIMENUITEM>Quitar del panel</GUIMENUITEM> elimina este aplique del
+<INTERFACE>panel</INTERFACE>.
+		</PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    
+	    <VARLISTENTRY>	      <TERM>Mover</TERM>
+	      <LISTITEM>		<PARA>Después de eligir <GUIMENUITEM>Mover</GUIMENUITEM>, el puntero del ratón cambiara de apariencia (generalmente
+a una cruz con flechas en cada dirección). Según se mueva el ratón, el aplique le seguirá. Cuando se termine
+el desplazamiento del aplique, pulse cualquier botón del ratón y el aplique se quedara en su posición actual.
+Observe que los apliques pueden moverse de esta manera entre <INTERFACE>paneles</INTERFACE>.
+		</PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    
+	    <VARLISTENTRY>	      <TERM>panel</TERM>
+	      <LISTITEM>		<PARA>El submenú <GUISUBMENU>panel</GUISUBMENU> contiene varios ítem y submenús para añadir y eliminar 
+<GUISUBMENU>paneles</GUISUBMENU> y apliques y para cambiar la configuración. 
+		</PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    
+	    <VARLISTENTRY>	      <TERM>Ayuda</TERM>
+	      <LISTITEM>		<PARA>El ítem de menú <GUIMENUITEM>Ayuda</GUIMENUITEM> presenta el manual de ayuda del aplique.
+		</PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    
+	    <VARLISTENTRY>	      <TERM>Acerca</TERM>
+	      <LISTITEM>		<PARA>El ítem de menú <GUIMENUITEM>Acerca...</GUIMENUITEM> presenta un cajetín de texto con diversa 
+información acerca del aplique, típicamente se incluye el nombre del aplique, la versión, el 
+autor, los derechos de autor, la licencia y su descripción. 
+		</PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    
+	  </VARIABLELIST>
+	</PARA>
+      </SECT3>
+
+      <SECT3 ID="common-right-click-items"> 
+	<TITLE>Otros ítem comunes del menú desplegable</TITLE>
+	<PARA>Muchos apliques tienen también otros ítem en los menús desplegables del botón derecho. Algunos de
+los mas comunes son:
+	  <VARIABLELIST>	    <VARLISTENTRY>	      <TERM>Propiedades...</TERM>
+	      <LISTITEM>		<PARA>El ítem de menú <GUIMENUITEM>Propiedades...</GUIMENUITEM> abre el formulario propiedades 
+(véase <XREF LINKEND="applet-properties-dialog">) del aplique. Muchos aplique tienen formularios de
+propiedades, que permiten configurar el comportamiento y la apariencia del aplique.
+		</XREF></PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>  
+	    <VARLISTENTRY>	      <TERM>Lanzar...</TERM>
+	      <LISTITEM>		<PARA>El ítem de menú <GUIMENUITEM>Lanzar...</GUIMENUITEM> generalmente invoca un programa
+relacionado de alguna manera con el aplique pero que se ejecuta en su propia ventana
+en vez de hacerlo en el panel. Por ejemplo:
+		</PARA>
+		<ORDEREDLIST>		  <LISTITEM>		    <PARA>El aplique <APPLICATION>Carga de la CPU</APPLICATION>, que monitoriza los programas en
+ejecución, tiene el ítem de menú <GUIMENUITEM>Lanzar gtop...</GUIMENUITEM>. Al seleccionar 
+este ítem de menú arranca <APPLICATION>GTop</APPLICATION>, que permite ver y controlar
+los programas en ejecución.
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>El aplique <APPLICATION>Lector de CD</APPLICATION> tiene el ítem de menú 
+<GUIMENUITEM>Lanzar gtcd...</GUIMENUITEM> que arranca el <APPLICATION>Lector de CD</APPLICATION>
+de GNOME cuando se selecciona, y que tiene mas funciones que el aplique. 
+		    </PARA>
+		  </LISTITEM>
+		</ORDEREDLIST>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	  </VARIABLELIST>
+	</PARA>
+      </SECT3>
+
+      <SECT3 ID="applet-properties-dialog"> 
+	<TITLE>Formulario de propiedades del aplique</TITLE>
+	<PARA>Muchos apliques tienen propiedades personalizables. Estos aplique dispondrán de un
+ítem de menú <GUIMENUITEM>Propiedades...</GUIMENUITEM> en el <GUIMENU>menú desplegable</GUIMENU>
+del botón derecho que presentara el formulario <INTERFACE>Propiedades</INTERFACE> donde
+se podrá alterar la apariencia y comportamiento del aplique.
+	  <FIGURE ID="example-props-dialog-fig">	    <TITLE>Un ejemplo de formulario de propiedades de aplique</TITLE>
+	    <SCREENSHOT>	      <SCREENINFO>Un ejemplo de formulario de propiedades de aplique</SCREENINFO>
+	      <GRAPHIC FILEREF="./figs/applet_props_dialog" FORMAT="png" SRCCREDIT="muet">	      </GRAPHIC>
+	    </SCREENSHOT>
+	  </FIGURE>
+Todos los formularios <INTERFACE>propiedades</INTERFACE> disponen de los siguientes
+botones de dialogo:
+	  <ITEMIZEDLIST>	    <LISTITEM>	      <PARA>		<GUIBUTTON>Aceptar</GUIBUTTON> 
+Al pulsar <GUIBUTTON>Aceptar</GUIBUTTON> se activara cualquier cambio en las
+propiedades que se haya realizado y se cerrara el formulario <INTERFACE>Propiedades</INTERFACE>.
+	      </PARA>
+	    </LISTITEM>
+	    <LISTITEM>	      <PARA>		<GUIBUTTON>Aplicar</GUIBUTTON> 
+Al pulsar en cualquier momento <GUIBUTTON>Aplicar</GUIBUTTON> se activaran los cambios sin cerrar
+el formulario <INTERFACE>Propiedades</INTERFACE>. Esto resulta útil si se quiere probar los efectos
+de los cambios realizados, pero se quiere continuar cambiado propiedades. 
+	      </PARA>
+	    </LISTITEM>
+	    <LISTITEM>	      <PARA>		<GUIBUTTON>Cerrar</GUIBUTTON> 
+Al pulsar <GUIBUTTON>Cerrar</GUIBUTTON> se cerrara el formulario <INTERFACE>Propiedades</INTERFACE>. 
+Únicamente las propiedades aplicadas previamente con el botón <GUIBUTTON>Aplicar</GUIBUTTON> permanecerán
+activas. Los otros cambios no se activaran.
+	      </PARA>
+	    </LISTITEM>
+	    <LISTITEM>	      <PARA>		<GUIBUTTON>Ayuda</GUIBUTTON> 
+Al pulsar <GUIBUTTON>Ayuda</GUIBUTTON> se presentara el manual de la aplicación, 
+abriéndose en la pagina que describe el formulario <INTERFACE>Propiedades</INTERFACE>. 
+	      </PARA>
+	    </LISTITEM>
+	  </ITEMIZEDLIST>
+	</PARA>
+      </SECT3>
+    </SECT2>
+
+
+    
+  </SECT1>
+
+
+
+
+
+
+ 
+
+  <SECT1 ID="Amusements">    <TITLE>Apliques de entretenimiento</TITLE>
+
+ 
+    <SECT2 ID="fifteen">      <TITLE>Aplique Quince</TITLE>
+      <PARA>El aplique <APPLICATION>Quince</APPLICATION>, mostrado en <XREF LINKEND="fifteenapplet-fig">,
+es una versión del antiguo juego de mover cuadros a lo largo de una rejilla para ponerlos en
+orden numerico. 
+Para añadir este aplique a un <INTERFACE>panel</INTERFACE>, pulse el botón 
+derecho sobre el <INTERFACE>panel</INTERFACE> y elija
+	<MENUCHOICE>	    <GUIMENU>Panel</GUIMENU>
+	    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+	    <GUISUBMENU>Aplique</GUISUBMENU>
+	    <GUISUBMENU>Divertimientos</GUISUBMENU>
+	    <GUIMENUITEM>Quince</GUIMENUITEM>
+	  </MENUCHOICE>.
+      </XREF></PARA>
+
+      <FIGURE ID="fifteenapplet-fig">	<TITLE>Aplique Quince</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>Aplique Quince</SCREENINFO>
+	  <GRAPHIC FILEREF="./figs/fifteen_applet" FORMAT="png" SRCCREDIT="muet">	  </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+      
+      
+      <SECT3 ID="fifteen-usage">	<TITLE>Uso</TITLE>
+	<PARA>El aplique arranca con las piezas en su orden correcto: este es el orden en el que debera
+volverlas a colocar. Paraempezar un nuevo juego, pulse el boton derecho sobre el aplique y
+elija <GUIMENUITEM>Mezclar</GUIMENUITEM>. Mueva las piezas pulsando sobre ellas con el boton
+izquierdo del raton hasta que las haya devuelto a sus posiciónes originales. Cuando lo haya
+conseguido, se presentara un cajetin con el texto <GUILABEL>¡Gano!</GUILABEL> 
+	</PARA>
+	
+	<PARA>Al pulsar el boton derecho sobre el aplique se presenta un menu con los siguientes items:
+	  <ITEMIZEDLIST>	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Mezclar</GUIMENUITEM> 
+coloca de forma aleatoria la posicion del mosaico. Usela para iniciar un nuevo juego.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Ayuda</GUIMENUITEM> 
+Presenta este documento.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Acerca</GUIMENUITEM> 
+Muestra informacion basica acerca del aplique <APPLICATION>Quince</APPLICATION>, incluyendo
+la version del aplique y el nombre del autor. 
+	      </PARA>
+	    </LISTITEM>
+	    
+	  </ITEMIZEDLIST>
+	</PARA>
+      </SECT3>
+      
+      
+      
+      
+      <SECT3 ID="fifteen-bugs">	<TITLE>Errores y limitaciones conocidos</TITLE>
+	<PARA>Este aplique no tienen errores conocidos.
+	</PARA>
+      </SECT3>
+
+    </SECT2>
+
+
+
+    <SECT2 ID="fish">      <TITLE>Aplique Pez</TITLE>
+      
+      <PARA>El aplique <APPLICATION>Pez</APPLICATION>, mostrado en <XREF LINKEND="fishapplet-fig">,
+muestra un pequeño pez en el <INTERFACE>panel</INTERFACE> y , si se le pide, recitara
+(con suerte) ingeniosas citas usando la base de datos «fortune». 
+Para añadir este aplique a un <INTERFACE>panel</INTERFACE>, pulse el botón 
+derecho sobre el <INTERFACE>panel</INTERFACE> y elija
+	<MENUCHOICE>	    <GUIMENU>Panel</GUIMENU>
+	    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+	    <GUISUBMENU>Aplique</GUISUBMENU>
+	    <GUISUBMENU>Divertimientos</GUISUBMENU>
+	    <GUIMENUITEM>Pez</GUIMENUITEM>
+	  </MENUCHOICE>.
+      </XREF></PARA>
+
+      <FIGURE ID="fishapplet-fig">	<TITLE>Aplique Pez</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>Aplique Pez</SCREENINFO>
+	  <GRAPHIC FILEREF="./figs/fish_applet" FORMAT="png" SRCCREDIT="muet">	  </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+
+
+      
+      <SECT3 ID="fish-usage">	<TITLE>Uso</TITLE>
+	<PARA>Al contrario que otros peces, este pez requiere pocos cuidados y no precisa limpiar la pecera.
+Nada alegremente en su pecera. Si se le pregunta, nos contara interesantes reflexiones. Para
+preguntarle, pulse simplemente sobre el pez con el boton izquierdo del raton; se puede preguntar
+de forma reiterada pulsando repetidas veces.
+	</PARA>
+	
+	<PARA>Al pulsar el boton derecho sobre el aplique se presenta un menu con los siguientes items:
+	  <ITEMIZEDLIST>	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Propiedades</GUIMENUITEM> 
+abre el formulario <LINK LINKEND="fish-prefs">Propiedades</LINK>.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Ayuda</GUIMENUITEM> 
+		muestra este documento.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Acerca</GUIMENUITEM>  
+Muestra informacion basica acerca del aplique <APPLICATION>Pez</APPLICATION>, incluyendo
+la version del aplique y el nombre del autor. 
+	      </PARA>
+	    </LISTITEM>
+	    
+	  </ITEMIZEDLIST>
+	</PARA>
+      </SECT3>
+
+
+  
+      <SECT3 ID="fish-prefs">	<TITLE>Personalización</TITLE>
+	<PARA>Se puede personaizar el aplique <APPLICATION>Pez</APPLICATION> pulsando el 
+boton derecho sobre el y eligiendo <GUIMENUITEM>Propiedades</GUIMENUITEM>.
+Esto abrira en formulario <INTERFACE>Propiedades</INTERFACE> (mostrado en <XREF LINKEND="fish-settings-fig">), qeu permite cambiar varios parametros.
+	</XREF></PARA>
+	
+	<FIGURE ID="fish-settings-fig">	  <TITLE>Formulario de propiedades</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Formulario de propiedades</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/fish_settings" FORMAT="png" SRCCREDIT="muet">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+
+	<PARA>Las propiedades son:
+	  <ITEMIZEDLIST>	    
+	    <LISTITEM>	      <PARA>El nombre del pez Gnome  puede cambiar aqui el nombre del pez. Por defecto su
+nombre es Wanda.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>El nombre del fichero con la animacion  Puede seleccionar aqui un juego de dibujos
+direntes.. Por defecto, la lista de figuras esta en <FILENAME>$PREFIX/pixmaps/fish/</FILENAME>,
+directorio que puede hojear y del que puede elegir. Puede tambien poner otro camino en el que
+buscar sus propios dibujos.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>Fotogramas en la animaciom  El numero de fotogramas en la animacion. Por defecto son
+tres, pero el rango va de 1 a 255.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>Pausa entre fotogramas (s)  El preriodo en segundos antes de actualizar el dibujo. Por
+defecto vale un segundo, pero el rango va de 0.10 a 10 segundos.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>Rotacion en los paneles verticales  Esta casilla se usa para los paneles verticales, y
+si esta marcada, el pez aparecera nadando boca abajo en los paneles verticales. Si no esta marcada,
+aparecera de la misma forma que en lo paneles horizontales, lo que forzara al panel vertical a 
+ensancharse para acomodarlo.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    
+	  </ITEMIZEDLIST>
+	</PARA>
+	
+	<PARA> 
+Despues de realizar todos los cambios deseados, pulse <GUIBUTTON>Aceptar</GUIBUTTON> para
+aplicarlos y cerrar el formulario <INTERFACE>Propiedades</INTERFACE>. Para cancelar los cambios
+y volver a los valores previos, pulse el boton <GUIBUTTON>Cancelar</GUIBUTTON>.
+	</PARA>
+      </SECT3>
+      
+
+      
+      
+      <SECT3 ID="fish-bugs">    <TITLE>Errores y limitaciones conocidos</TITLE>
+    <PARA>Este aplique no tiene errores conocidos.
+	</PARA>
+      </SECT3>
+
+      
+    </SECT2>
+    <SECT2 ID="geyes">      <TITLE>Aplique ojos G</TITLE>
+      
+      <PARA>El aplique <APPLICATION>ojos G</APPLICATION>, mostrado en <XREF LINKEND="geyesapplet-fig">,
+es un par de ojos que siguen al puntero del raton por el escritorio.
+Para añadir este aplique a un <INTERFACE>panel</INTERFACE>, pulse el botón 
+derecho sobre el <INTERFACE>panel</INTERFACE> y elija
+	<MENUCHOICE>	    <GUIMENU>Panel</GUIMENU>
+	    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+	    <GUISUBMENU>Aplique</GUISUBMENU>
+	    <GUISUBMENU>Divertimientos</GUISUBMENU>
+	    <GUIMENUITEM>Ojos G</GUIMENUITEM>
+	  </MENUCHOICE>.
+      </XREF></PARA>
+      
+      <FIGURE ID="geyesapplet-fig">	<TITLE>Aplique ojos G</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>Aplique ojos G</SCREENINFO>
+	  <GRAPHIC FILEREF="./figs/geyes_applet" FORMAT="png" SRCCREDIT="arjan">	  </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+
+      
+      <SECT3 ID="geyes-usage">	<TITLE>Uso</TITLE>
+	<PARA>Vigila los ojos que vigilan el raton.
+	</PARA>
+
+	<PARA>Al pulsar el boton derecho se presenta un menu con los siguiente item:
+	  <ITEMIZEDLIST>
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Propiedades</GUIMENUITEM> 
+		opens the <LINK LINKEND="geyes-prefs">		  Formulario <GUILABEL>Propiedades</GUILABEL></LINK>.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>	    <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+Muestra este documento.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Acerca</GUIMENUITEM> 
+Muestra informcacion basica acerca del aplique <APPLICATION>Ojos</APPLICATION>, incluyendo
+la version del aplique y el nombre del autor. 
+	      </PARA>
+	    </LISTITEM>
+	    
+	  </ITEMIZEDLIST>
+	</PARA>
+      </SECT3>
+      
+
+      
+      <SECT3 ID="geyes-prefs">	<TITLE>Personalizacion</TITLE>
+	<PARA>Se puede personalizar el aplique <APPLICATION>ojos G</APPLICATION> pulsando el
+boton derecho sobre el y seleccionando <GUIMENUITEM>Propieades</GUIMENUITEM>.
+Se abrira el formulario <INTERFACE>Propiedades</INTERFACE> (mostrado <XREF LINKEND="geyes-settings-fig">),
+que permite cambiar el tema.
+	</XREF></PARA>
+	
+	<FIGURE ID="geyes-settings-fig">	  <TITLE>Formulario propiedades</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Formulario propiedades</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/geyes_settings" FORMAT="png" SRCCREDIT="arjan">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+	
+	<PARA>En esta ventana se muestra una lista de los temas (apariencias) actualmente instalados para
+<APPLICATION>ojos G</APPLICATION>. Elija el tema que le gustaria usar.
+	</PARA>
+	
+	<PARA> 
+Despues de seleccionar el nuevo tema, pulse el boton <GUIBUTTON>Aceptar</GUIBUTTON>
+para aplicar los cambios y cerra el formulario de <INTERFACE>Propiedades</INTERFACE>.
+	</PARA>
+      </SECT3>
+      
+      
+      
+      <SECT3 ID="geyes-bugs">    <TITLE>Errores y limitaciones conocidos</TITLE>
+    <PARA>Con la excepcion de «Default-tiny», la mayoria de los temas son demasiado grandes para
+algunos tamaños de <INTERFACE>panel</INTERFACE> y fuerzan el cambio de dimensiones del 
+<INTERFACE>panel</INTERFACE>.
+    </PARA>
+      </SECT3>
+      
+
+    </SECT2>
+    <SECT2 ID="lifeapplet">      <TITLE>El aplique juego de la vida</TITLE>
+      <PARA>El panel <APPLICATION>vida</APPLICATION> Gnome es un aplique que
+ejecuta el <QUOTE>juego de la vida</QUOTE> segun las reglas de Conway's en una 
+pequeña rejilla en el panel, con los organismos y el color de fondo cambiando 
+constantemente. Forma parte del paquete gnome-applets.
+      </PARA>
+      <PARA>Para añadir este aplique a un <INTERFACE>panel</INTERFACE>, pulse el botón 
+derecho sobre el <INTERFACE>panel</INTERFACE> y elija
+	<MENUCHOICE>	    <GUIMENU>Panel</GUIMENU>
+	    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+	    <GUISUBMENU>Aplique</GUISUBMENU>
+	    <GUISUBMENU>Divertimientos</GUISUBMENU>
+	    <GUIMENUITEM>El juego de la vida</GUIMENUITEM>
+	  </MENUCHOICE>.
+o puede teclear este comando en la linea de comandos:
+	<COMMAND>life_applet --activate-goad-server=life_applet  </COMMAND>
+      </PARA>
+      
+      <FIGURE ID="life-applet-fig">	<TITLE>El aplique juego de la vida</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>El aplique juego de la vida</SCREENINFO>
+	  <GRAPHIC FILEREF="./figs/life-applet" FORMAT="png" SRCCREDIT="Eric Baudais">	  </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+      
+      <SECT3 ID="lifeapplet-usage">	<TITLE>Uso</TITLE>
+	<PARA>Una vez presente, no necesita hacer nada con el aplique juego de la vida.
+Se ejecutara alegremente a su aire.
+	</PARA>
+	
+	<PARA>Al pulsar el boton derecho se presenta un menu con los siguiente item:
+	  <ITEMIZEDLIST>	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Al azar</GUIMENUITEM> 
+Cambia el juego al azar. Esto terminara con la ejecucion repetida de los mismos
+aburridos patrones. 
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>	    <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+Muestra este documento.
+	      </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA>		<GUIMENUITEM>Acerca</GUIMENUITEM> 
+Muestra informcacion basica acerca del aplique <APPLICATION>Juego de la vida</APPLICATION>, incluyendo
+la version del aplique y el nombre del autor. 
+	      </PARA>
+	    </LISTITEM>
+	    
+	  </ITEMIZEDLIST>
+	</PARA>
+      </SECT3>
+      
+      <SECT3 ID="lifeapplet-rules">	<TITLE>Reglas</TITLE>
+	<PARA>El juego de la vida fue descrito por Conway en 1970 con las siuientes reglas:
+	</PARA>
+	<ITEMIZEDLIST>	  <LISTITEM>	    <PARA>Se empieza con un rejilla (normalmente un sencillo cuadrado) de cuadros. Se rellena una
+porcion de ellos con celulas, situadas al azar. Esta es la primera generacion.
+	    </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA>Cualquier celula con dos o tres vecinas sobrevive a la siguiente generacion.
+	    </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA>En cualquier cuadro sin celula y con tres vecinas, nace una nueva celula. En cualquier
+otro cuadro, no nacen nuevas celulas. 
+	    </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA>Repetir para las siuientes generaciones.
+	    </PARA>
+	  </LISTITEM>
+	</ITEMIZEDLIST>
+	
+     <PARA>El juego podra eventualmente terminar en alguna de las siguientes maneras:
+     </PARA>
+
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>La muerte de todas las celulas (teorico, pero improbable en el aplique vida).
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>Un equilibrio fijo con todas las restantes celulas sobreviviendo pero sin
+la creacion de nuevas celulas.
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>Un equilibrio dimamico donde el juego repite de forma constinua una secuencia
+particular de patrones.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+
+     <PARA>Para conseguir valores interesantes, la rejilla actual del aplique juego de la vida es
+de 78 por 78 y la proporcion de cuadros rellenados con celulas es del 50%.  
+     </PARA>
+    </SECT3>
+
+    <SECT3 ID="lifeapplet-bugs">    <TITLE>Errores y limitaciones conocidos</TITLE>
+    <PARA>Ninguno conocido.
+     </PARA>
+    </SECT3>
+
+      </SECT2>
+
+
+
+<SECT2 ID="odometer">  <TITLE>Aplique odometro</TITLE>
+  
+  <PARA>El aplique <APPLICATION>Odometro</APPLICATION> de Gnome, mostrado en <XREF LINKEND="odometer-applet-fig">,
+es un aplique que registra y mide los movimientos del puntero del raton a lo largo del escritorio. Forma
+parte del paquete gnome-applets.
+Para añadir este aplique a un <INTERFACE>panel</INTERFACE>, pulse el botón 
+derecho sobre el <INTERFACE>panel</INTERFACE> y elija
+	<MENUCHOICE>	    <GUIMENU>Panel</GUIMENU>
+	    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+	    <GUISUBMENU>Aplique</GUISUBMENU>
+	    <GUISUBMENU>Divertimientos</GUISUBMENU>
+	    <GUIMENUITEM>Odometro</GUIMENUITEM>
+	  </MENUCHOICE>.
+      </XREF></PARA>
+
+  <FIGURE ID="odometer-applet-fig">    <TITLE>Aplique Odometro</TITLE>
+    <SCREENSHOT>      <SCREENINFO>Aplique Odometro</SCREENINFO>
+      <GRAPHIC FILEREF="./figs/odometer_applet" FORMAT="png" SRCCREDIT="acscherp">      </GRAPHIC>
+    </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="odometer-usage">    <TITLE>Uso</TITLE>
+    <PARA>Una vez presente, no necesita hacer nada con el odometro. Se situa silenciosamente en el panel y registra todos
+los movimientos del raton. Ademas, al mover el puntero del raton sobre el odometro se muestra un
+<GUILABEL>letrero de ayuda</GUILABEL> indcando la distancia recorrida.
+    </PARA>
+
+    <PARA>Al pulsar el boton derecho se presenta un menu con los siguiente item:
+      <ITEMIZEDLIST>
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Reinicio</GUIMENUITEM> 
+Reinicia el aplique odometro de nuevo a cero.
+	  </PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+abre el formulario <LINK LINKEND="odometer-prefs">Propiedades</LINK>.
+	  </PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+Muestra este documento.
+	  </PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Acercat</GUIMENUITEM> 
+Muestra informacion basica acerca del aplique <APPLICATION>Quince</APPLICATION>, incluyendo
+la version del aplique y el nombre del autor. 
+	  </PARA>
+	</LISTITEM>
+
+      </ITEMIZEDLIST>
+    </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="odometer-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>Puede personalizar el aplique <APPLICATION>odometro</APPLICATION> pulsando el boton 
+derecho y seleccionado <GUIMENUITEM>Propiedades</GUIMENUITEM>.
+Esto abrira el formulario <INTERFACE>Propiedades</INTERFACE> (mostrado en <XREF LINKEND="odometer-settings-fig">), que permite cambiar varios parametros.
+    </XREF></PARA>
+
+    <PARA>El <INTERFACE>formulario propiedades</INTERFACE> (que se llama a si mismo
+Parametros del Odometro en vez de propiedades) esta dividido en dos
+secciones, una para las opciones generales, y otro para los temas.
+      
+      <VARIABLELIST>	<VARLISTENTRY>	  <TERM>General</TERM>
+	  <LISTITEM>
+	    <FIGURE ID="odometer-settings-fig">	      <TITLE>Formulario de propiedades (Carpeta preferencias generales)</TITLE>
+	      <SCREENSHOT>		<SCREENINFO>Carpeta preferencias generales</SCREENINFO>
+		<GRAPHIC FILEREF="./figs/odometer_settings" FORMAT="png" SRCCREDIT="accscherp">		</GRAPHIC>
+	      </SCREENSHOT>
+	    </FIGURE>
+
+	    <PARA>	      La <GUILABEL>carpeta preferencias generales</GUILABEL>, mostradad  en<XREF LINKEND="odometer-settings-fig">, tiene cuatro opciones:
+	    </XREF></PARA>
+	    <VARIABLELIST>	      <VARLISTENTRY>		<TERM>Usar sistema metrico</TERM>
+		<LISTITEM>		  <PARA>Si la casilla <GUIBUTTON>Usar sistema metrico</GUIBUTTON> esta marcada, la distancia recorrida por el
+puntero del raton se muestra en metros. Si no lo esta, la distancia recorrida se muestra en pies. Al mover
+el puntero sobre le Odometro se mostrara un <GUILABEL>letrero de ayuda</GUILABEL> indicando si se estan
+indicado metros o pies.
+		  </PARA>
+		</LISTITEM>
+	      </VARLISTENTRY>
+	      <VARLISTENTRY>		<TERM>Auto reinicio</TERM>
+		<LISTITEM>		  <PARA>Si la casilla <GUIBUTTON>auto reinicio</GUIBUTTON> esta marcada, los contadores del odometro volveran a cero.
+		  </PARA>
+		</LISTITEM>
+	      </VARLISTENTRY>
+	      <VARLISTENTRY>		<TERM>Actualizacion activada</TERM>
+		<LISTITEM>		  <PARA>Si la casilla <GUIBUTTON>actualizaciona activada</GUIBUTTON> esta marcada, entonces el Odometro
+llevara la cuenta de cuanto se mueve el puntero. Si no, los contadores volveran a cero hasta
+que lo vuelva a activar.
+		  </PARA>
+		</LISTITEM>
+	      </VARLISTENTRY>
+	      <VARLISTENTRY>		<TERM>Numero de digitos</TERM>
+		<LISTITEM>		  <PARA>El <GUIBUTTON>numero de digitos del campo</GUIBUTTON> determna cuantos digitos presenta el
+Odometro. El valor por defecto es cuatro, y el rango va de 1 a 10.
+		  </PARA>
+		</LISTITEM>
+	      </VARLISTENTRY>
+	    </VARIABLELIST>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+	<VARLISTENTRY>	  <TERM>Temas</TERM>
+	  <LISTITEM>
+	    <FIGURE ID="odometer-themes-fig">	      <TITLE>Foemulario de propiedades (Carpeta temas)</TITLE>
+	      <SCREENSHOT>		<SCREENINFO>Carpeta temas</SCREENINFO>
+		<GRAPHIC FILEREF="./figs/odometer_themes" FORMAT="png" SRCCREDIT="accscherp">		</GRAPHIC>
+	      </SCREENSHOT>
+	    </FIGURE>
+
+	    <PARA>La <GUILABEL>carpeta temas</GUILABEL>, mostrada en <XREF LINKEND="odometer-themes-fig">, tiene unos cuantos temas entre los que elegir. Se encuentran
+por defecto en <FILENAME>$PREFIX/odometer/</FILENAME>.
+	    </XREF></PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+      </VARIABLELIST>
+    </PARA>
+    
+    <PARA> 
+Despues de realizar todos los cambios deseados, pulse <GUIBUTTON>Aceptar</GUIBUTTON> para
+aplicarlos y cerrar el formulario <INTERFACE>Propiedades</INTERFACE>. Para cancelar los cambios
+y volver a los valores previos, pulse el boton <GUIBUTTON>Cancelar</GUIBUTTON>.
+    </PARA>
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="odometer-bugs">    <TITLE>Errores y limitaciones conocidos</TITLE>
+    <PARA>Este aplique no tiene errores conocidos.
+    </PARA>
+  </SECT3>
+
+ </SECT2>
+
+ </SECT1>
+
+
+
+
+</CHAPTER>

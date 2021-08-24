@@ -1,0 +1,5462 @@
+<?xml version="1.0"?>
+<BOOK ID="index" LANG="es"><TITLE>
+Gua de usuario GNOME
+</TITLE>
+<BOOKINFO><AUTHORGROUP><AUTHOR><FIRSTNAME>
+Guia de usuario GNOME
+</FIRSTNAME>
+<SURNAME>
+Equipo de documentacin
+</SURNAME>
+<AUTHORBLURB><PARA><XREF LINKEND="authors"></XREF></PARA></AUTHORBLURB></AUTHOR></AUTHORGROUP>
+<GRAPHIC FILEREF="./figs/gnome-logo-large" FORMAT="png"></GRAPHIC>
+<RELEASEINFO>
+Esta es la versin oficial 1.0 de la 
+
+
+gua de usuario GNOME.
+</RELEASEINFO>
+<REVHISTORY><REVISION><REVNUMBER>
+1.0.6 - 
+</REVNUMBER>
+<DATE>
+- 9.8.1999
+</DATE></REVISION></REVHISTORY>
+<COPYRIGHT><YEAR>
+1999
+</YEAR>
+<HOLDER>
+Red Hat Software y David A. Wheeler
+</HOLDER></COPYRIGHT>
+<COPYRIGHT><YEAR>
+1999
+</YEAR>
+<HOLDER>
+Manuel de Vega y equipo Linux Landia (
+Traduccin al castellano).
+</HOLDER></COPYRIGHT>
+<LEGALNOTICE><PARA>
+Este documento puede redistribuirse libremente de acuerdo con los 
+
+
+trminos de la licencia 
+
+
+pblica general GNU.
+Vase 
+</PARA></LEGALNOTICE></BOOKINFO>
+<CHAPTER ID="intro"><TITLE>
+Introduccin a GNOME
+</TITLE>
+<SECT1 ID="What-is-GNOME"><TITLE>
+¿Qu es GNOME?
+</TITLE>
+<PARA>
+GNOME es un 
+
+
+entorno grfico (escritorio de trabajo) amigable que permite a los usuarios
+usar y configurar sus ordenadores de una forma sencilla.
+GNOME incluye un panel (para arrancar aplicaciones y presentar el estado de
+funcionamiento), un escritorio ( donde se pueden situar los datos y las 
+aplicaciones), un conjunto estndar de aplicaciones y herramientas de 
+escritorio, y un conjunto de convenciones que facilitan la operacin y 
+consistencia de las aplicaciones entre s. Los usuarios de otros sistemas
+operativos y entornos se sentirn como en casa cuando usen el potente entorno
+grfico que proporciona GNOME.
+</PARA>
+<PARA>
+GNOME es en su totalidad 
+
+
+cdigo abierto (software libre), con el cdigo fuente
+disponible libremente y desarrollado por cientos de programadores 
+
+
+en todo el
+mundo. Si quiere saber ms 
+
+
+sobre el proyecto GNOME puede visitar la pgina web de GNOME en 
+
+<ULINK URL="http://www.gnome.org" TYPE="http">
+http://www.gnome.org
+</ULINK>
+
+.
+</PARA>
+<PARA>
+GNOME tiene una serie de ventajas para los usuarios.
+GNOME facilita el uso y la configuracin de aplicaciones sin usar
+interfaces puramente textuales 
+
+
+(console).
+</PARA>
+<PARA>
+GNOME es altamente configurable, permitindole ajustar su escritorio con
+el aspecto que desee. El gestor de sesiones de GNOME recuerda la configuracin
+previa, de manera que una vez que haya configurado las cosas a su gusto, las
+mantendr as. GNOME soporta muchos idiomas, y puede aadir ms sin
+cambiar el software. GNOME soporta incluso varios protocolos de arrastrar y 
+soltar 
+
+
+(drag and drop DD) para una mxima interoperabilidad con aplicaciones que no sean
+compatibles con GNOME.
+</PARA>
+<PARA>
+GNOME tiene tambin una serie de ventajas para los programadores que
+indirectamente benefician tambin a los usuarios. Los programadores no 
+necesitan comprar 
+
+
+una cara licencia de software para hacer compatibles sus 
+aplicaciones comerciales. De hecho, GNOME es independiente de cualquier
+compaa - ningn componente del interfaz esta controlado nicamente por
+una compaa o tiene restringidas la modificacin o redistribucin.
+Las aplicaciones GNOME pueden desarrollarse en 
+
+
+una gran variedad de lenguajes de 
+programacin, 
+
+
+por lo que el programador no se ve limitado a un solo lenguaje de programacin.
+GNOME usa la arquitectura universal de agentes de peticin de objetos (CORBA)
+para permitir que los componentes software interacten 'sin costuras', 
+independientemente del lenguaje en el que estn implementados, o incluso
+de la mquina en la que se estn ejecutando. Finalmente, GNOME funciona en 
+numerosos sistemas operativos de tipo Unix, incluido Linux.
+</PARA>
+<PARA>
+GNOME es un acrnimo de 'GNU 
+
+
+Network Object Model Environment', entorno de trabajo
+en red orientado a objetos, por lo que GNOME forma parte del ms amplio
+proyecto GNU. El proyecto GNU naci en 1984 con el objetivo de desarrollar un
+sistema operativo tipo Unix completamente libre. Si te interesa saber ms 
+acerca del Proyecto GNU, puedes leer acerca de l en
+
+<ULINK URL="http://www.gnu.org" TYPE="http">
+http://www.gnu.org
+</ULINK>
+
+.
+</PARA></SECT1>
+<SECT1 ID="aboutug"><TITLE>
+Acerca de esta Gua
+</TITLE>
+<PARA>
+Esta gua de usuario se dise para ayudarle a defenderse con soltura
+usando GNOME. Tanto los novatos como los usuarios con experiencia en 
+ordenadores se beneficiaran de esta gua. Si 
+
+
+GNOME o incluso los ordenadores son algo nuevo
+para usted, se har una idea de como usar su escritorio. Si es un usuario
+avanzado de Linux, podr usar consejos para expertos que le ayudarn a 
+familiarizarse con GNOME.
+</PARA>
+<PARA>
+Aunque 
+
+
+esta gua escribi originalmente en 
+
+
+ingles, hay muchas traducciones ya disponibles o a punto de aparecer. Si te interesa obtener esta
+gua en otra lengua deberas comprobar tu distribucin de Linux o visitar la 
+
+<ULINK URL="http://www.gnome.org" TYPE="http">
+pgina web de GNOME
+</ULINK>
+
+para encontrar ms informacin sobre las traducciones.
+</PARA></SECT1>
+<SECT1 ID="traduccion"><TITLE>
+Acerca de la traduccin
+</TITLE>
+<SECT2><TITLE>
+Breve historia
+</TITLE>
+<PARA>
+La traduccin de la 
+
+
+'Gua de usuario GNOME' se empez con la idea de que GNOME
+dispusiera desde su primera versin de documentacin de usuario en castellano.
+Los trabajos se iniciaron a primeros de Enero de 1999 usando la versin 1.7
+del repositorio cvs de GNOME. A finales de Marzo, con la aparicin de la 
+versin oficial inglesa 1.0, el grupo se puso manos a la obra con la versin
+definitiva.
+Este grupo de voluntarios ha realizado un notable esfuerzo durante
+estos meses, fruto del cual es esta primera versin 
+
+
+BETA que ahora tienes en tus manos. 
+</PARA>
+<PARA>
+Cuando leas el manual ten en cuenta que, aunque hemos intentado no descuidar
+la calidad del trabajo, ninguno de nosotros es traductor profesional y esta es
+una de las primeras versiones del documento. As que si encuentras errores, 
+imprecisiones e incluso faltas de ortografa, no dudes
+en enviarnos un mensaje con tus correcciones y comentarios.
+</PARA></SECT2>
+<SECT2><TITLE>
+El equipo
+</TITLE>
+<PARA>
+Formaron parte del grupo de traduccin :
+
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Manuel de Vega Barreiro
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Rodolfo Pilas
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Joaqun Cuenca
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Aguilar Bravo
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Agustn Ros
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Vctor Robles
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Arnold Hennig
+</PARA></LISTITEM></ITEMIZEDLIST></PARA>
+<PARA>
+Tambin colaboraron con sus revisiones, comentarios y capturas de pantallas :
+
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Carlos Garca
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Mauricio Jos
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Javier  (LNR)
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Pablo Saratxaga
+</PARA></LISTITEM></ITEMIZEDLIST></PARA></SECT2>
+<SECT2><TITLE>
+Ultimas revisiones
+</TITLE>
+<PARA>
+Puedes encontrar la ultima versin de la traduccin 
+
+
+castellana en la pgina oficial
+del proyecto:
+</PARA>
+<PARA><ULINK URL="http://www.croftj.net/~barreiro/spanish/gnome-es/guia_usuario/index.html" TYPE="http">
+http://www.croftj.net/~barreiro/spanish/gnome-es/guia_usuario/index.html
+</ULINK></PARA>
+<PARA>
+Tambin encontraras copias en las siguientes direcciones:
+</PARA>
+<PARA>
+Si tienes una copia de la traduccin en tu servidor y quieres que
+incluya un enlace, indcamelo. De esta forma podr avisarte cuando aparezcan
+nuevas versiones.
+</PARA>
+<PARA><ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Revisin 0.7, 15 de Febrero de 1999, basada en la versin 1.7 cvs .
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 0.8, 28 de Febrero de 1999, basada en la versin 1.0 (1.24 cvs).
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 0.9, 31 de Marzo de 1999, basada en la versin 1.0 (1.24 cvs).
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 1.0, 15 de Abril de 1999, basada en la versin 1.0 (1.24 cvs).
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 1.0.5a, 13 de Junio de 1999, basada en la versin 1.0.5 (1.32 cvs).
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 1.0.5b, 26 de Junio de 1999, basada en la versin 1.0.5 (1.32 cvs).
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 1.0.5c, 23 de Agosto de 1999, basada en la versin 1.0.5 (1.32 cvs).
+Primera Beta.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 1.0.5d, 3 de Septiembre de 1999, basada en la versin 1.0.5 (1.32 cvs).
+Segunda Beta.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 1.0.5e, 20 de Septiembre de 1999, basada en la versin 1.0.5 (1.32 cvs).
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Revisin 1.0.6, 25 de Marzo de 2000, basada en la versin 1.0.6 (1.38 cvs).
+</PARA></LISTITEM></ITEMIZEDLIST></PARA></SECT2>
+<SECT2><TITLE>
+Agradecimientos
+</TITLE>
+<PARA>
+Al grupo de desarrollo de GNOME.
+</PARA>
+<PARA>
+A Linus y todos los que han hecho posible el sistema operativo Linux.
+</PARA>
+<PARA>
+A Red Hat y otras empresas que apostaron fuerte por el desde el principio.
+</PARA>
+<PARA>
+A Joe de Croftj Internet Services por el espacio en su servidor.
+</PARA>
+<PARA>
+Manuel de Vega Barreiro.
+</PARA></SECT2></SECT1></CHAPTER>
+<CHAPTER ID="quickstart"><TITLE>
+Inicio rpido de GNOME
+</TITLE>
+<SECT1 ID="quick"><TITLE>
+Primera visita a GNOME
+</TITLE>
+<PARA>
+La figura 2-1 muestra un ejemplo de GNOME ejecutndose. GNOME es muy configurable, as que tu pantalla puede tener un aspecto muy diferente.
+</PARA>
+<FIGURE><TITLE>
+Muestra de pantalla de GNOME.
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Muestra de pantalla de GNOME.
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/full" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA><INDEXTERM ID="idx-a1"><PRIMARY>
+Inicio rpido
+</PRIMARY></INDEXTERM>
+
+La barra larga de la parte baja de la 
+
+<EMPHASIS>
+Figura 2-1
+</EMPHASIS>
+
+es un Panel de GNOME que contiene un conjunto de 
+
+
+tiles apliques de panel [panel applets] y mens.
+Los apliques de panel son pequeos programas diseados para ser colocados en un panel; por ejemplo, el aplique de reloj situado en el extremo derecho muestra la hora.
+Las flechas de los lados del panel ocultan (y despliegan) el panel.
+</PARA>
+<PARA>
+El botn del panel que muestra la huella de un pie es el Botn del Men Principal. Simplemente pulsa sobre el Botn del Men Principal y vers un men de aplicaciones y acciones precargadas, incluyendo un comando de salida.
+</PARA>
+<PARA>
+El resto del espacio de la pantalla se llama "Escritorio". Coloca en tu escritorio los elementos que uses 
+
+
+habitualmente y podrs usar uno de dichos elementos pulsando dos veces (doble clic) sobre l con el botn izquierdo del ratn:
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Si el elemento es un programa, ste se 
+
+
+ejecutar.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Si son datos, se arrancar el programa adecuado con estos datos cargados.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Si es un directorio, el administrador de archivos se iniciar y mostrar el contenido de ese directorio. 
+Tu escritorio tendr, probablemente, un icono 
+
+
+con forma de carpeta llamando "Directorio personal" o "Home directory". 
+Pulsando dos veces sobre l se iniciar un administrador de archivos desde el directorio inicial de tu cuenta personal.
+</PARA></LISTITEM></ITEMIZEDLIST>
+<PARA>
+El administrador de archivos te permite 
+
+
+manejar tus 
+
+
+archivos (ficheros). 
+La parte izquierda de su ventana muestra los directorios, mientras que el derecho muestra el contenido del directorio seleccionado:
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Para mover 
+
+
+un fichero o directorio, simplemente arrstralo y sultalo.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Para copiar un fichero, mantn pulsada la tecla 
+
+<KEYCAP>
+CTRL
+</KEYCAP>
+
+mientras lo arrastras.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Para ejecutar un programa o editar un archivo de datos, pulsa dos veces sobre l.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Para realizar otras operaciones sobre un fichero (como renombrar o borrar), seleccinalo usando el botn derecho del ratn.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Para seleccionar ms de un elemento a la vez, pulsa sobre los elementos, despus de seleccionar el primero, mientras mantienes pulsada la tecla MAYSCULAS.
+</PARA></LISTITEM></ITEMIZEDLIST>
+<PARA>
+Puedes mover o copiar ficheros entre directorios, fcilmente, arrancando dos administradores de archivos, mostrando cada uno un directorio distinto. Si quieres colocar un fichero en tu escritorio, simplemente arrstralo desde el administrador de archivos hasta all. De hecho, en GNOME, arrastrar y soltar elementos sobre otros elementos, por lo general, "realiza la accin correcta", haciendo fcil llevar a cabo el trabajo.
+</PARA>
+<PARA>
+GNOME es muy configurable; por ejemplo, puedes tener mltiples paneles (horizontal y verticalmente), escoger qu va en ellos y hacer que se oculten automticamente. Hay multitud de apliques de panel que puedes incluir en tu panel. Tambin puedes cambiar el aspecto de la pantalla como se explicar en posteriores apartados.
+</PARA>
+<PARA>
+GNOME sigue varias convenciones de UNIX 
+
+
+que debes tener en cuenta. El botn izquierdo del ratn se usa para seleccionar y arrastrar elementos. El botn derecho 
+
+
+hace aparecer un men para el objeto seleccionado (si puede aplicarse uno). La mayora de los ratones UNIX tienen 3 botones y el botn del centro se usa para pegar texto (en un rea de texto) o para mover cosas. Si slo tienes dos botones, presiona ambos simultneamente para simular el botn del centro. Para copiar texto, mantn presionado el botn izquierdo mientras arrastras el cursor por el texto que deseas copiar, desplaza el cursor al lugar donde quieras que est el texto y presiona el botn del centro.
+</PARA>
+<PARA>
+Cuando se muestra una ventana de aplicacin, aparecen algunos botones en la barra de ttulo para controlar la ventana 
+
+
+como pueden ser: minimizar, maximizar y cerrar la ventana. Se puede configurar su apariencia y se controla a travs de un componente llamado "gestor de ventana"
+</PARA>
+<PARA>
+Dos ejemplos de estilos de barra de ttulo son el estilo Limpio (Clean) (
+
+<EMPHASIS>
+Figura
+2-2
+</EMPHASIS>
+
+) y el  estilo TMPANO (ICE) (
+
+<EMPHASIS>
+Figura
+2-3
+</EMPHASIS>
+
+): 
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+En el estilo de barra Limpio, el guin bajo significa minimizar; el cuadrado, maximizar (usar toda la pantalla) y el botn X cierra la ventana.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+En el estilo TMPANO, el botn X cerrar la ventana. Pulsando la flecha con el botn izquierdo del ratn se minimizar la ventana, mientras que si se emplea el botn derecho aparecer un men con otras opcines.
+</PARA></LISTITEM></ITEMIZEDLIST>
+<FIGURE><TITLE>
+Estilo de Barra Limpio
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Estilo de Barra Limpio
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/border1" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<FIGURE><TITLE>
+Estilo de barra TMPANO
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Estilo de barra TMPANO
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/border2" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Si ests usando una instalacin por defecto de GNOME puedes 
+
+
+observar que minimizar una ventana, en realidad, 
+
+
+hace que la ventana desaparezca de tu escritorio. Para volver a obtener esa ventana puedes usar el paginador GNOME que se encuentra en el Panel. El paginador mostrar qu tareas 
+
+
+se estn ejecutando y dnde se encuentran dentro de tus escritorios. Encontrars 
+
+
+la aplicacin que minimizaste en la lista de tareas, en el lado derecho del paginador GNOME. Pulsa el botn de esa aplicacin y volver a tu escritorio.
+</PARA>
+<FIGURE><TITLE>
+El paginador GNOME
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El paginador GNOME
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gnome-pager" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Puedes leer ms sobre el paginador GNOME en 
+
+<XREF LINKEND="appletspager">
+.
+</XREF></PARA>
+<PARA>
+Las siguientes secciones entran en ms detalle, describiendo cada componente del sistema.
+</PARA></SECT1></CHAPTER>
+<CHAPTER ID="wm"><TITLE>
+GNOME y los gestores de ventanas
+</TITLE>
+<SECT1 ID="wmabout"><TITLE>
+Acerca de los gestores de ventanas
+</TITLE>
+<PARA>
+El gestor de ventanas es la parte del software que controla las
+ventanas en el 'Entorno de ventanas X'. La posicin, bordes, y 
+
+
+estilo
+de cualquier ventana la maneja el gestor de ventanas. Esto es muy
+distinto en muchos otros sistemas operativos, y la forma en que GNOME
+dialoga con los gestores de ventanas es diferente de la de otros entornos
+de escritorio.
+</PARA>
+<PARA>
+Como se indic anteriormente en esta gua, GNOME no depende de ningn
+gestor de ventanas. Esto significa que la mayor parte de su entorno de
+escritorio no cambiar si decide cambiar de gestor de ventanas. GNOME
+trabaja con el gestor de ventanas para proporcionarle el entorno de trabajo
+ms amigable
+
+
+posible. 
+GNOME no se preocupa de la colocacin de las ventanas, 
+
+
+sino que obtiene informacin sobre su posicin del gestor de ventanas. 
+El paginador («Pager») slo funcionar con gestores de ventanas compatibles con GNOME,
+al igual que arrastrar y soltar en el escritorio.
+</PARA>
+<PARA>
+Al cierre de esta edicin de la 'Gua de usuario GNOME', el gestor de 
+ventanas 'Enlightenment' era el nico gestor de ventanas 100% compatible con GNOME.
+Hay muchos otros gestores de ventanas parcialmente compatibles o 
+
+
+en los que se est
+trabajando para que lleguen a serlo.
+</PARA>
+<PARA>
+Algunos de los gestores de ventanas parcial o totalmente compatibles en
+el momento de redactar esta versin de la 'Gua de usuario GNOME' eran:
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Enlightenment - 
+
+<ULINK URL="http://www.enlightenment.org" TYPE="http">
+http://www.enlightenment.org
+</ULINK></PARA></LISTITEM>
+<LISTITEM><PARA>
+Sawmill - 
+
+<ULINK URL="http://www.dcs.warwick.ac.uk/~john/sw/sawmill/index.html" TYPE="http">
+http://www.dcs.warwick.ac.uk/~john/sw/sawmill/index.html
+</ULINK></PARA></LISTITEM>
+<LISTITEM><PARA>
+Window Maker - 
+
+<ULINK URL="http://www.windowmaker.org" TYPE="http">
+http://www.windowmaker.org
+</ULINK></PARA></LISTITEM>
+<LISTITEM><PARA>
+Icewm -  
+
+<ULINK URL="http://www.kiss.uni-lj.si/~k4fr0235/icewm/" TYPE="http">
+http://www.kiss.uni-lj.si/~k4fr0235/icewm/
+</ULINK></PARA></LISTITEM>
+<LISTITEM><PARA>
+AfterStep - 
+
+<ULINK URL="http://www.afterstep.org/" TYPE="http">
+http://www.afterstep.org/
+</ULINK></PARA></LISTITEM>
+<LISTITEM><PARA>
+FVWM -  
+
+<ULINK URL="http://www.fvwm.org/" TYPE="http">
+http://www.fvwm.org/
+</ULINK></PARA></LISTITEM></ITEMIZEDLIST>
+<PARA>
+Existen muchos nuevos gestores de ventanas en desarrollo que funcionarn con
+GNOME. Encontrara algunos de estos gestores en
+
+<ULINK URL="http://www.gnome.org/applist/">
+ndice de software GNOME
+</ULINK>
+
+.
+</PARA></SECT1>
+<SECT1 ID="wmchange"><TITLE>
+Cambiando de gestor de ventanas
+</TITLE>
+<PARA>
+Cada vez que quiera cambiar de gestor de ventanas, deber usar el
+aplique C del gestor de ventanas en el Centro de Control. Puede
+leer ms acerca de este aplique C en
+
+<XREF LINKEND="gccwm "></XREF></PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Tenga 
+
+
+siempre presente que el gestor de ventanas que decida usar puede
+no ser compatible con GNOME, 
+
+
+e impedirle beneficiarse de algunas de las funcionalidades de GNOME en caso de usarlo.
+</PARA></IMPORTANT></SECT1></CHAPTER>
+<CHAPTER ID="paneluse"><TITLE>
+Uso del panel de GNOME
+</TITLE>
+<SECT1><TITLE>
+Introduccin
+</TITLE>
+<PARA><INDEXTERM ID="idx-a2"><PRIMARY>
+panel
+</PRIMARY></INDEXTERM>
+
+El panel es el corazn de la interfaz GNOME y acta como un depsito
+para todas las aplicaciones de su sistema, los apliques y el men
+principal.  El panel est tambin diseado para ser altamente
+configurable.  El panel es el lugar que alberga los mens y las
+aplicaciones que desea tener ms a mano.
+</PARA></SECT1>
+<SECT1 ID="panelbasic"><TITLE>
+Lo bsico
+</TITLE>
+<PARA>
+El uso del panel de GNOME es muy simple y se vuelve fcil para todo
+aquel que ha usado un sistema operativo basado en una interfaz
+grfica. Es posible agregar nuevos paneles, agregar aplicaciones al
+panel, y agregar varios apliques. Todas estas funciones y otras ms
+se describen en esta seccin.
+</PARA>
+<SECT2 ID="panelmenu"><TITLE>
+Uso del men principal
+</TITLE>
+<PARA><INDEXTERM ID="idx-a3"><PRIMARY>
+Men principal
+</PRIMARY></INDEXTERM>
+
+Para comenzar a usar cualquier aplicacin ya instalada presione el
+
+<GUIBUTTON>
+Botn del men principal
+</GUIBUTTON>
+
+. El men principal
+tiene un dibujo de un pie estilizado y cuando lo
+utiliza por primera vez se ubica en el ngulo inferior izquierdo de
+su pantalla. Debe soltar el botn del ratn luego de presionar el
+botn del 
+
+<GUIBUTTON>
+men principal
+</GUIBUTTON>
+
+y entonces dispondr
+de las otras ventajas del men principal activadas usando el ratn, como la 
+posibilidad de
+pulsar el botn derecho del ratn o tambin arrastrar y pegar desde el
+men.
+
+<FIGURE><TITLE>
+El botn del men principal
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El botn del men principal
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/mm-button" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+El men principal es el punto de partida para todas las aplicaciones
+de su sistema. Ms adelante en este manual aprender como personalizar
+el men principal para adaptarlo a su ambiente de trabajo, pero por el
+momento podr utilizar el men tal cual ha sido configurado por GNOME.
+El men principal trabaja como cualquier otro men que haya utilizado
+en otro ambiente de escritorio grfico. Simplemente presione el botn del
+
+<GUIBUTTON>
+men principal
+</GUIBUTTON>
+
+y realice su seleccin en el men que
+se desplegar hacia arriba desde la parte inferior.
+</PARA></SECT2>
+<SECT2 ID="panelhide"><TITLE>
+Ocultando el panel
+</TITLE>
+<PARA><INDEXTERM ID="idx-a4"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Botones para ocultar
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a5"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Ocultar
+</SECONDARY></INDEXTERM>
+
+En cualquier momento podr ocultar el panel de GNOME pulsando el 
+
+<GUIBUTTON>
+Botn de ocultar
+</GUIBUTTON>
+<FIGURE><TITLE>
+El Botn de ocultar
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El Botn de ocultar
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/hide-button" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+Este ocultar el panel de GNOME en la direccin de la flecha que
+est sobre el 
+
+<GUIBUTTON>
+Botn de ocultar
+</GUIBUTTON>
+
+. Existen
+botones de ocultar en ambos extremos del panel, por lo que lo
+puede ocultar hacia ambas direcciones.
+</PARA>
+<PARA><INDEXTERM ID="idx-a6"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Ocultacin automtica
+</SECONDARY></INDEXTERM>
+
+Podr hacer que el panel se oculte sobre si mismo cuando no lo est
+utilizando. Esta es una caracterstica muy til si no est corriendo
+su sistema con una alta resolucin en la pantalla. Podr aprender como
+hacer que el panel se auto-oculte en 
+
+<XREF LINKEND="confpanel">
+.
+</XREF></PARA></SECT2></SECT1>
+<SECT1 ID="panelmove"><TITLE>
+Moviendo y agregando paneles
+</TITLE>
+<PARA><INDEXTERM ID="idx-a7"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+moviendo
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a8"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+aadiendo nuevos
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a9"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+lado
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a10"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+esquina
+</SECONDARY></INDEXTERM>
+
+Cualquier panel que se encuentre en su escritorio puede ser trasladado
+usando el botn del medio de su ratn, o pulsando simultneamente los
+botones izquierdo y derecho de su ratn, y llevando el cursor del ratn
+hasta el borde deseado de su pantalla. Si no tiene botn del medio en su
+ratn o no ha configurado su ratn para emular el botn del medio,
+tambin podr mover el panel cambiando su ubicacin en el dilogo de
+Propiedades del panel. Podr conocer ms en la seccin
+
+<XREF LINKEND="confpanel">
+de este documento.
+</XREF></PARA>
+<PARA>
+Tambin podr agregar un nuevo panel a su escritorio seleccionando
+la opcin 
+
+<GUIMENUITEM>
+Crear un nuevo panel
+</GUIMENUITEM>
+
+en el
+
+<GUIMENU>
+men principal
+</GUIMENU>
+
+|  men 
+
+<GUIMENUITEM>
+panel
+</GUIMENUITEM>
+
+.
+Se le presentar las opcines panel de lado o de esquina. Ambos tipos
+de panel se describen ms abajo.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+panel de lado - Un panel de lado es exactamente igual al panel
+principal que arranca con GNOME. Seleccionando este tipo de panel
+podr agregar un nuevo panel en otro borde o lado de su pantalla para
+obtener una mayor funcionalidad.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+panel de esquina - El panel de esquina es un pequeo panel que
+no se extender a lo largo del borde completo de la pantalla.
+El panel
+de esquina tendr, sin embargo, el largo de los iconos y apliques
+que contenga.  Los botones de ocultar tienen un funcionamiento algo
+diferente en los paneles de esquina.  El botn de ocultar junto
+al borde de la pantalla ocultar el panel de la forma usual, pero
+el otro botn de ocultar mover todo el panel al lado opuesto de
+la pantalla. Entonces, cuando sucede esto ltimo, el panel no se
+ocultar, ya que fue movido al lado opuesto de la pantalla. Si lo
+que desea es ocultarlo deber volver a presionar el botn de
+ocultar una vez ms.
+</PARA></LISTITEM></ITEMIZEDLIST>
+<PARA><INDEXTERM ID="idx-a11"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+convertir a panel de lado
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a12"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Convertir a panel de esquina
+</SECONDARY></INDEXTERM>
+
+En cualquier momento podr cambiar el panel actual al tipo opuesto
+seleccionando tanto sea 
+
+<GUIMENUITEM>
+Convertir a panel de
+lado
+</GUIMENUITEM>
+
+o 
+
+<GUIMENUITEM>
+Convertir a panel de
+esquina
+</GUIMENUITEM>
+
+en el men emergente. La opcin que tendr
+disponible depender del tipo de panel sobre el cual pulse con el
+botn derecho del ratn. La opcin que aparecer ser del tipo
+opuesto al panel actual.
+</PARA></SECT1>
+<SECT1 ID="paneladd"><TITLE>
+Aadir aplicaciones y apliques al panel
+</TITLE>
+<SECT2 ID="panelapplaunch"><TITLE>
+Aadir nuevos lanzadores de aplicaciones
+</TITLE>
+<PARA><INDEXTERM ID="idx-a13"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+aadiendole aplicaciones
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a14"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+lanzadores
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a15"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+aadiendo apliques a
+</SECONDARY>
+<SEE>
+"Applets"
+</SEE></INDEXTERM>
+
+Si desea aadir un lanzador de una aplicacin (un icono que inicia
+una determinada aplicacin) al panel, pulse con el botn derecho
+del ratn sobre el panel y seleccione 
+
+<GUIMENUITEM>
+Aadir un nuevo lanzador
+</GUIMENUITEM>
+
+en el
+
+<GUIMENU>
+men emergente
+</GUIMENU></PARA>
+<PARA>
+Despus de seleccionar la opcin
+
+<GUIMENUITEM>
+Aadir un nuevo lanzador
+</GUIMENUITEM>
+
+aparecer un dilogo que le permitir configurar las propiedades
+del lanzador de aplicaciones que desea agregar.
+
+<FIGURE><TITLE>
+Dilogo para crear un Lanzador
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Dilogo para crear un Lanzador de programas
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/launcher-props" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA><INDEXTERM ID="idx-a16"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+creando nuevos lanzadores
+</SECONDARY></INDEXTERM>
+
+En el dilogo para crear un lanzador de aplicaciones o programas podr colocar
+el nombre de su lanzador, un comentario, la lnea de comandos que
+arrancan su aplicacin y definir el tipo de la aplicacin. Tambin
+podr presionar sobre el botn del icono para elegir uno que
+representar la aplicacin. Si no elige ningn icono ser utilizado
+el icono por defecto.
+</PARA>
+<PARA>
+Otro mtodo rpido para agregar un lanzador de aplicacin al panel
+es estando dentro del men principal y presionar el botn derecho
+del ratn sobre la opcin de men de la aplicacin. Emerger un 
+men que contendr la opcin 
+
+<GUIMENUITEM>
+Aadir este lanzador al
+panel
+</GUIMENUITEM>
+
+.  Si selecciona esta opcin del men se
+agregar automticamente un lanzador para esa aplicacin al panel.
+Seguidamente podr pulsar con el botn derecho del ratn sobre
+el lanzador y elegir 
+
+<GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+para cambiar los parmetros que desee del lanzador.
+</PARA></SECT2>
+<SECT2 ID="drawers"><TITLE>
+Agrupando elementos en cajones
+</TITLE>
+<PARA><INDEXTERM ID="idx-a17"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+cajones
+</SECONDARY>
+<SEE>
+Cajones
+</SEE></INDEXTERM>
+<INDEXTERM ID="idx-a18"><PRIMARY>
+Cajones
+</PRIMARY>
+<SECONDARY>
+aadiendo nuevos
+</SECONDARY></INDEXTERM>
+
+Si desea mantener un conjunto de aplicaciones juntas podr utilizar
+un cajn.  Un cajn es simplemente un pequeo botn semejante a un men
+que se coloca en su panel y que agrupa lanzadores de aplicaciones
+en un mismo lugar. Una vez que ha colocado un cajn sobre el panel
+podr pulsar sobre l para desplegar el men de aplicaciones y
+pulsar nuevamente para ocultarlo.
+
+<FIGURE><TITLE>
+Un cajn abierto
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Un cajn abierto
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/drawer" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+Hay dos formas de colocar un cajn sobre su panel. Primero
+podr pulsar con el botn derecho del ratn sobre el panel y
+seleccionar la opcin 
+
+<GUIMENUITEM>
+Aadir cajn
+</GUIMENUITEM>
+
+en el 
+
+<GUIMENU>
+men emergente
+</GUIMENU>
+
+.  En segundo lugar, si
+desea que un grupo de elementos de men del Men Principal se
+conviertan en un cajn, podr pulsar el botn derecho del ratn
+en la barra del ttulo de dicho men y elegir la opcin 
+
+<GUIMENUITEM>
+Agregar este cajn en el panel
+</GUIMENUITEM>
+
+en el
+
+<GUIMENU>
+men emergente
+</GUIMENU>
+
+.
+</PARA>
+<PARA>
+Podr agregar mens a su panel en la misma forma que agrega
+cajones.  Los mens son muy similares a los cajones excepto que
+no tienen los grandes iconos de las aplicaciones, en su lugar
+usan un estilo similar al men principal.  Podr agregar un men
+pulsando con el botn derecho del ratn sobre la barra del ttulo
+del men y seleccionando 
+
+<GUIMENUITEM>
+Aadir este men al panel
+</GUIMENUITEM>
+
+en el 
+
+<GUIMENU>
+men emergente
+</GUIMENU>
+
+.  Tambin podr agregar
+directorios de su sistema al panel como un men arrastrando un
+directorio desde el administrador de archivos de GNOME y soltndolo
+sobre el panel.
+</PARA></SECT2>
+<SECT2 ID="panelapplets"><TITLE>
+Aadiendo apliques
+</TITLE>
+<PARA><INDEXTERM ID="idx-a19"><PRIMARY>
+Apliques
+</PRIMARY>
+<SECONDARY>
+aadiendo al panel
+</SECONDARY></INDEXTERM>
+
+Existe un gran nmero de apliques que tambin puede agregar al
+panel.  Los apliques son pequeas aplicaciones que pueden realizar
+sus tareas dentro del propio panel.  Existen muchos apliques que
+puede aadir al panel y estn descriptos en detalle en 
+
+<XREF LINKEND="panelapps">
+de este manual. Por ejemplo, puede
+aadir otro aplique de reloj en su panel. Para aadir
+un aplique de reloj a su panel:
+</XREF></PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Pulse botn derecho del ratn
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+En el 
+
+<GUIMENU>
+men emergente
+</GUIMENU>
+
+elija la opcin
+
+<GUIMENUITEM>
+Aadir aplique
+</GUIMENUITEM>
+
+.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Esto abrir ms niveles en el 
+
+<GUIMENU>
+men emergente
+</GUIMENU>
+
+.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Elija 
+
+<GUIMENUITEM>
+Utilidades
+</GUIMENUITEM>
+
+| 
+
+<GUIMENUITEM>
+Reloj
+</GUIMENUITEM>
+
+.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+El Reloj ser agregado a su panel
+</PARA></LISTITEM></ITEMIZEDLIST>
+<FIGURE><TITLE>
+El Aplique reloj
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Aplique reloj
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/clock" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Para quitar el aplique reloj que ha agregado puede pulsar con el
+botn derecho del ratn sobre el reloj y seleccionar 
+
+<GUIMENUITEM>
+Quitar del panel
+</GUIMENUITEM>
+
+en el 
+
+<GUIMENUITEM>
+men emergente
+</GUIMENUITEM>
+
+.
+</PARA></SECT2></SECT1>
+<SECT1 ID="runapps"><TITLE>
+Ejecutando aplicaciones
+</TITLE>
+<PARA><INDEXTERM ID="idx-a20"><PRIMARY>
+Aplicaciones
+</PRIMARY>
+<SECONDARY>
+Lanzamiento
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a21"><PRIMARY>
+Aplicaciones
+</PRIMARY>
+<SECONDARY>
+Ejecucin
+</SECONDARY></INDEXTERM>
+
+Existen varios caminos para arrancar una aplicacin con GNOME. Recuerde
+que uno de los puntos fuertes de GNOME es que puede iniciar y controlar
+aplicaciones usando unicamente una interfaz amigable. Existen varios caminos
+para arrancar aplicaciones que puede utilizar:
+</PARA>
+<PARA>
+Como se ha visto en las secciones previas puede usar el men principal
+para buscar aplicaciones que estn pre-configuradas o que Usted ha
+colocado all utilizando el editor de mens. Puede leer ms sobre
+el editor de mens en 
+
+<XREF LINKEND="mainmenu">
+.
+</XREF></PARA>
+<PARA>
+Tambin puede aadir un lanzador de la aplicacin al panel como
+se ha descripto en 
+
+<XREF LINKEND="panelapplaunch">
+.
+</XREF></PARA>
+<PARA>
+Si esta usando el administrador de archivos de GNOME puede pulsar
+dos veces sobre el archivo ejecutable que desea correr.
+</PARA>
+<PARA><INDEXTERM ID="idx-a22"><PRIMARY>
+Aplicaciones
+</PRIMARY>
+<SECONDARY>
+Ejecucin de programas
+</SECONDARY></INDEXTERM>
+
+Tambin puede usar el dilogo para ejecutar de GNOME y arrancar
+cualquier aplicacin.  Para usarlo, elija el men
+
+<GUIMENUITEM>
+Ejecutar
+</GUIMENUITEM>
+
+dentro del
+
+<GUIMENU>
+Men principal
+</GUIMENU>
+
+.  Esto har que se despliegue
+un simple dilogo que le permitir escribir el comando que
+lanza la aplicacin.  Por ejemplo, si desea lanzar el editor
+
+<APPLICATION>
+Emacs
+</APPLICATION>
+
+y no se encuentra dentro de
+las opcines de un men o en su panel, puede usar el dilogo
+ejecutar y escribir 
+
+<COMMAND>
+emacs
+</COMMAND>
+
+en la caja de texto
+que aparece en el dilogo.
+</PARA></SECT1>
+<SECT1 ID="logout"><TITLE>
+Terminar GNOME
+</TITLE>
+<PARA><INDEXTERM ID="idx-a23"><PRIMARY>
+Terminar
+</PRIMARY>
+<SEE>
+Terminar
+</SEE></INDEXTERM>
+<INDEXTERM ID="idx-a24"><PRIMARY>
+Terminar
+</PRIMARY></INDEXTERM>
+
+GNOME tiene un par de tiles mtodos para terminar su ejecucin. Puede usar
+tanto la opcin 
+
+<GUIMENUITEM>
+Terminar sesin
+</GUIMENUITEM>
+
+del men como
+el botn 
+
+<GUIBUTTON>
+Salir del entorno GNOME
+</GUIBUTTON>
+
+.
+</PARA>
+<PARA><INDEXTERM ID="idx-a25"><PRIMARY>
+Terminar
+</PRIMARY>
+<SECONDARY>
+desde el men
+</SECONDARY></INDEXTERM>
+
+La opcin 
+
+<GUIMENUITEM>
+Terminar sesin
+</GUIMENUITEM>
+
+es la primera
+opcin de men que encontrar en el 
+
+<GUIMENU>
+Men principal
+</GUIMENU>
+
+.
+Simplemente elija la opcin 
+
+<GUIMENUITEM>
+Terminar sesin
+</GUIMENUITEM>
+
+en el
+men y se le preguntar si desea salir o no. Confirme
+
+<GUIBUTTON>
+Si
+</GUIBUTTON>
+
+y GNOME terminar la sesin.
+</PARA>
+<PARA><INDEXTERM ID="idx-a26"><PRIMARY>
+Terminar
+</PRIMARY>
+<SECONDARY>
+con un botn salir del entorno GNOME
+</SECONDARY></INDEXTERM>
+
+Si desea, podr agregar un botn 
+
+<GUIBUTTON>
+Salir del entorno GNOME
+</GUIBUTTON>
+
+al
+panel. Este es solamente otro mtodo para salir, y no le proveer
+ninguna otra funcionalidad adicional a la opcin de men
+
+<GUIMENUITEM>
+Terminar sesin
+</GUIMENUITEM>
+
+, que no sea un lindo botn.
+Para agregar un botn 
+
+<GUIBUTTON>
+Salir del entorno GNOME
+</GUIBUTTON>
+
+al panel pulse
+con el botn derecho del ratn sobre el panel y elija 
+
+<GUIMENUITEM>
+Aadir botn de salida de sesin
+</GUIMENUITEM>
+
+en el 
+
+<GUIMENU>
+men emergente
+</GUIMENU>
+
+. Cuando disponga del botn podr
+presionarlo para salir.
+</PARA>
+<NOTE><TITLE>
+NOTA
+</TITLE>
+<PARA>
+Si est corriendo un administrador de ventanas que sea compatible
+con GNOME la opcin de salir o terminar har que finalice su administrador
+de ventanas y tambin GNOME. Si no est corriendo un administrador de
+ventanas de este tipo, deber finalizarlo Usted mismo.
+</PARA></NOTE>
+<PARA>
+Un dialogo de salida se desplegara cuando salga de GNOME. Este
+dialogo le preguntara si realmente desea salir o no. Tambin dispondr
+de varios mtodos para terminar GNOME.
+</PARA>
+<PARA>
+Dispondr de tres opcines para salir de GNOME. Podr
+
+<GUILABEL>
+Salir
+</GUILABEL>
+
+y simplemente desembocar en una terminal
+
+<GUILABEL>
+Detener
+</GUILABEL>
+
+y parar completamente su sistema, o
+
+<GUILABEL>
+Reiniciar
+</GUILABEL>
+
+con lo que su sistema se reiniciar
+</PARA>
+<PARA>
+Si no desea salir, podr presionar el botn
+
+<GUIBUTTON>
+No
+</GUIBUTTON>
+
+y volver a la sesin de GNOME
+</PARA>
+<FIGURE><TITLE>
+El Dilogo de Salida
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Salir
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/logout-screen" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Dentro del Dilogo de Salida existe una opcin que podr elegir
+antes de salir de GNOME
+</PARA>
+<PARA>
+Si desea guardar su actual configuracin deber seleccionar
+
+<GUILABEL>
+Guardar la actual configuracin
+</GUILABEL>
+
+en la caja de confirmacin. Esto guardar los programas que tenga
+abiertos y la configuracin de su panel.
+</PARA></SECT1></CHAPTER>
+<CHAPTER ID="desk"><TITLE>
+El Escritorio GNOME
+</TITLE>
+<SECT1><TITLE>
+Introduccin
+</TITLE>
+<PARA><INDEXTERM ID="idx-a27"><PRIMARY>
+Escritorio GNOME
+</PRIMARY></INDEXTERM>
+
+El escritorio GNOME le proporciona la funcionalidad de un
+escritorio tradicional de un sistema operativo. Puede arrastrar
+ficheros, programas y directorios al escritorio; tambin puede
+arrastrar estos elementos de vuelta a aplicaciones GNOME.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+El escritorio GNOME actualmente viene proporcionado por un
+proceso de fondo del Administrador de ficheros de GNOME. Si, por
+cualquier razn, el proceso de fondo ha dejado de ejecutarse, puede
+volver a ejecutar el Administrador de ficheros de GNOME y el
+escritorio volver a funcionar. Incluso si tiene que hacer esto recuerde que
+no hay necesidad de mantener la ventana del administrador de ficheros
+abierta para que el escritorio funcione. 
+</PARA></IMPORTANT></SECT1>
+<SECT1 ID="deskuse"><TITLE>
+Utilizando el escritorio
+</TITLE>
+<PARA>
+Utilizar el escritorio es algo tan sencillo como arrastrar todo
+aquello que desee utilizar rutinariamente al escritorio. El escritorio
+por defecto incluir una carpeta con su directorio hogar
+(/home/[nombre usuario]). Por defecto aparecer la ventana del
+administrador de ficheros de GNOME para permitirle acceder a otras
+zonas de su sistema. 
+</PARA>
+<PARA>
+Para utilizar el arrastrar y soltar necesita utilizar una
+aplicacin GNOME o una aplicacin Motif. GNOME es compatible con el
+arrastrar y soltar de Motif, por lo que ver que funciona con muchas
+de las aplicaciones que tiene instaladas.
+</PARA>
+<PARA>
+Todo lo que tiene en el escritorio est almacenado en el directorio: 
+
+<PROGRAMLISTING><PROMPT>
+$
+</PROMPT>
+
+/home/[nombre usuario]/.gnome-desktop/
+</PROGRAMLISTING>
+
+Le ser til recordarlo cuando quiera que su escritorio contenga algn elemento
+y no
+pueda ponerlo mediante arrastrar y soltar.
+</PARA>
+<PARA><INDEXTERM ID="idx-a28"><PRIMARY>
+Escritorio GNOME
+</PRIMARY>
+<SECONDARY>
+Dispositivos de las unidades
+</SECONDARY></INDEXTERM>
+
+Una vez haya entrado en GNOME podr observar que todos los
+dispositivos que tenga conectados a su sistema aparecen en su
+escritorio con los iconos apropiados. Puede montar y acceder a estos
+dispositivos utilizando estos iconos.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Debe tener permiso para montar los dispositivos que aparecen en su
+escritorio antes de poder utilizar estos iconos. 
+Si no dispone de permiso para montarlos, alguien con acceso a la cuenta
+«root», como el administrador del sistema, puede darselo tal y como se
+indica a continuacin.
+</PARA>
+<PARA><INDEXTERM ID="idx-a29"><PRIMARY>
+Montar unidades
+</PRIMARY></INDEXTERM>
+
+Puede fcilmente otorgar el permiso para montar unidades a
+usuarios normales si
+tiene 
+
+<APPLICATION><EMPHASIS>
+linuxconf
+</EMPHASIS></APPLICATION>
+
+instalado en su ordenador. Slo tiene que seleccionar la unidad a
+la que quiere acceder en la seccin 
+
+<GUILABEL>
+Acceso a unidades locales
+</GUILABEL>
+
+(acceso a las unidades locales). Debe seleccionar la
+opcin 
+
+<GUILABEL>
+Montable por el usuario
+</GUILABEL>
+
+(montable por el
+usuario) dentro de la etiqueta 
+
+<GUILABEL>
+Opciones
+</GUILABEL>
+
+. Ahora los usuarios normales podrn montar unidades.
+</PARA>
+<PARA>
+Si no tiene
+
+<APPLICATION><EMPHASIS>
+linuxconf
+</EMPHASIS></APPLICATION>
+
+alguin con acceso a la cuenta «root» deber
+editar el fichero 
+
+<EMPHASIS>
+/etc/fstab
+</EMPHASIS>
+
+para aadir
+acceso a los usuarios. Esto se consigue aadiendo el
+atributo de usuario a la unidad. Por ejemplo:
+</PARA>
+<PARA>
+Si en su fichero fstab aparece algo as:
+
+<PROGRAMLISTING>
+/dev/cdrom /mnt/cdrom iso9660 exec,dev,ro,noauto 0 0
+</PROGRAMLISTING>
+
+Aada ``user'' a la cuarta columna:
+
+<PROGRAMLISTING>
+/dev/cdrom /mnt/cdrom iso9660 user,exec,dev,ro,noauto 0 0
+</PROGRAMLISTING></PARA>
+<PARA>
+Esto puede implicar ciertos problemas de seguridad,
+dependiendo de su sistema y de su entorno de trabajo. Por favor,
+consulte a su administrador de sistema antes de permitir montar unidades
+a los usuarios.
+</PARA></IMPORTANT>
+<PARA>
+Una vez haya conseguido el permiso para montar una unidad puede
+pulsar con el botn derecho del ratn en el icono representativo
+de la unidad que hay en su escritorio. Aparecer un pequeo
+men desplegable.
+</PARA>
+<PARA>
+Puede seleccionar 
+
+<GUIMENUITEM>
+Mount device (montar dispositivo)
+</GUIMENUITEM>
+
+para
+montarlo y 
+
+<GUIMENUITEM>
+Eject device (expulsar dispositivo)
+</GUIMENUITEM>
+
+para
+expulsarlo. Una vez lo haya montado puede hacer doble click con el
+ratn o elegir 
+
+<GUIMENUITEM>
+Abrir
+</GUIMENUITEM>
+
+del men
+desplegable para abrir una ventana del administrador de ficheros GNOME
+para ver los contenidos de la unidad.
+</PARA>
+<PARA>
+Si hay alguna unidad que no aparece en el escritorio y que est
+en su mquina, puede pulsar con el botn derecho del ratn en
+un lugar vaco del escritorio y escoger la opcin
+
+<GUIMENUITEM>
+Actualizar dispositivos del sistema
+</GUIMENUITEM>
+
+del
+men 
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+.
+</PARA></SECT1>
+<SECT1 ID="deskareas"><TITLE>
+reas del escritorio
+</TITLE>
+<PARA><INDEXTERM ID="idx-a30"><PRIMARY>
+reas del escritorio
+</PRIMARY></INDEXTERM>
+<INDEXTERM ID="idx-a31"><PRIMARY>
+Mltiples escritorios
+</PRIMARY></INDEXTERM>
+
+Las reas del escritorio le permitirn mantener un sistema bien
+organizado mientras realiza varias tareas simultneamente. Es como
+aadir otra mesa cuando tiene demasiadas cosas para ponerlas en una sola, 
+las reas
+del escritorio le permitirn moverse a otra rea para lanzar ms
+programas.
+</PARA>
+<PARA>
+GNOME es capaz de utilizar las reas del escritorio aunque stas
+estn controladas por otro programa llamado el `administrador de
+ventanas'. Puede decir la cantidad de reas de escritorio que quiere
+mediante la configuracin del administrador de ventanas que est
+utilizando. Si est utilizando el administrador de ventanas que
+viene por defecto o su administrador de ventanas tiene una herramienta
+grfica de configuracin, entonces debera ser capaz de
+lanzar dicha herramienta desde el aplique C administrador de
+ventanas. Puede leer ms acerca de este aplique en 
+
+<XREF LINKEND="gccwm"></XREF></PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Muchos administradores de ventanas le darn la posibilidad de
+tener escritorios mltiples, que es distinto a tener distintas reas
+de escritorio. Las reas de escritorio son, virtualmente, una
+extensin de un escritorio, mientras que los escritorios mltiples son
+distintos escritorios separados. 
+</PARA>
+<PARA>
+En la instalacin por defecto de GNOME se utilizan las reas de
+escritorio con slo un escritorio. La razn es que puede que el
+usuario experimente problemas con el arrastrar y soltar entre
+escritorios con algunas aplicaciones, como por ejemplo aquellas
+programadas con Motif.
+</PARA></IMPORTANT></SECT1>
+<SECT1 ID="deskmenus"><TITLE>
+Otros mens de escritorio
+</TITLE>
+<PARA><INDEXTERM ID="idx-a32"><PRIMARY>
+Escritorio GNOME
+</PRIMARY>
+<SECONDARY>
+Mens del escritorio
+</SECONDARY></INDEXTERM>
+
+Hay unos cuantos mens de escritorio que podr utilizar
+desde GNOME. A estos mens se accede pulsando con el botn
+derecho del ratn en cualquier lugar vaco del
+escritorio. Aparecer un men 
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+con las siguientes opcines:
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Terminal
+</GUIMENUITEM>
+
+- Esta opcin
+lanzar una ventana del Terminal de GNOME utilizando el
+directorio ~/.gnome-desktop.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Directorio
+</GUIMENUITEM>
+
+- Esta opcin
+crea un nuevo directorio en el escritorio, en el que podr colocar ficheros: 
+una manera eficaz de mantener ordenado el escritorio.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Lanzador
+</GUIMENUITEM>
+
+- Esta opcin le
+permite colocar un nuevo lanzador de aplicaciones en el
+escritorio. Cuando seleccione esta opcin aparecer el
+cuadro de dilogo 
+
+<GUIMENUITEM>
+Lanzador de
+aplicaciones
+</GUIMENUITEM>
+
+que le permitir especificar la
+aplicacin y sus propiedades.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | [aplicacin]
+</GUIMENUITEM>
+
+- Algunas
+aplicaciones pueden incluir aqu algunas opcines. Por
+ejemplo, la hoja de clculo Gnumeric pondr una opcin
+
+<GUIMENUITEM>
+Nueva hoja de clculo Gnumeric
+</GUIMENUITEM>
+
+dentro del men 
+
+<GUIMENU>
+Nuevo
+</GUIMENU>
+
+para que as
+puede comenzar rpidamente la creacin de una nueva hoja
+de clculo.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Alinear iconos
+</GUIMENUITEM>
+
+- Esta opcin
+alinear automticamente los iconos de su escritorio.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Crear nueva ventana
+</GUIMENUITEM>
+
+- Esta opcin
+lanzar una nueva ventana del administrador de ficheros GNOME
+mostrando su directorio hogar.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Actualizar dispositivos del sistema
+</GUIMENUITEM>
+
+-
+Esta opcin actualizar en pantalla (mostrando un icono)
+cada uno de los nuevos dispositivos que encuentre en su sistema. Actualiza
+tambin cualquier elemento del escritorio que su distribucin coloque
+por omisin  en el.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Actualizar escritorio
+</GUIMENUITEM>
+
+- Esta
+opcin actualizar los ficheros contenidos en el
+directorio ~/.gnome-desktop. Se colocarn los iconos correspondientes a 
+cualquier nuevo fichero.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT1></CHAPTER>
+<CHAPTER ID="gmc"><TITLE>
+Gestor de ficheros GNOME
+</TITLE>
+<SECT1><TITLE>
+Introduccin
+</TITLE>
+<PARA><INDEXTERM ID="idx-a33"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY></INDEXTERM>
+<INDEXTERM ID="idx-a34"><PRIMARY>
+GMC
+</PRIMARY>
+<SEE>
+Gestor de ficheros GNOME
+</SEE></INDEXTERM>
+<INDEXTERM ID="idx-a35"><PRIMARY>
+«GNU Midnight Commander»
+</PRIMARY>
+<SEE>
+Gestor de ficheros GNOME
+</SEE></INDEXTERM>
+
+GNOME incluye un gestor de ficheros que permite manipular los ficheros de
+su sistema en un entorno grfico confortable y potente. El gestor de ficheros
+es conocido como GMC «GNU Midnight Commander». GMC se basa en el gestor
+de ficheros «Midnight Commander» que puede ejecutarse en modo terminal. 
+</PARA>
+<PARA>
+«Midnight Commander» era conocido hace tiempo por su potencia y facilidad de
+uso. GMC ha heredado la potencia y facilidad de uso de MC y le ha aadido
+la interfaz grfica de GNOME.
+</PARA>
+<PARA>
+Como se mencion en el captulo anterior, el gestor de ficheros de GNOME
+proporciona a GNOME la funcionalidad de escritorio. El gestor de ficheros 
+de GNOME tambin proporciona un lugar para manipular ficheros usando la 
+ventana del gestor de ficheros.
+
+<FIGURE><TITLE>
+«GNU Midnight Commander» - El gestor de ficheros de GNOME
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+GMC
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gmc1" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+Existen dos ventanas principales dentro del gestor de ficheros.
+A la izquierda tenemos la representacin del rbol de directorios de
+nuestro ordenador, ordenados jerrquicamente. Y a la derecha tenemos la ventana
+de contenido, la cual nos mostrar el contenido del directorio que hayamos
+seleccionado en la ventana de la izquierda.  
+</PARA>
+<PARA>
+Para seleccionar un directorio en el rbol pulse una vez con el ratn.
+Esto cambiar la vista de la ventana de contenido, mostrando los ficheros del
+directorio que hemos elegido. Si hay directorios contenidos dentro de
+otros, se puede pulsar sobre el signo ms en la ventana de rbol para
+expandir el directorio. En ese momento el signo ser sustituido por un signo
+menos.  Si pulsa en el signo menos, los subdirectorios se ocultaran de nuevo
+en el rbol y el signo ms aparecer de nuevo.
+</PARA>
+<PARA><INDEXTERM ID="idx-a36"><PRIMARY>
+Gestor de ficheros de GNOME
+</PRIMARY>
+<SECONDARY>
+Visualizacin de ficheros
+</SECONDARY></INDEXTERM>
+
+La ventana de directorios dispone de varias vistas opcionales a las que
+podra sacar partido: la vista de iconos y la vista de arboles, breve,
+detallada y personalizada.
+</PARA>
+<PARA>
+Ver iconos es la opcin
+por defecto y muestra los ficheros, representndolos con grandes iconos.
+La vista breve muestra los ficheros y directorios en una lista pero sin 
+mostrar informacin adicional alguna. La vista detallada mostrar una lista 
+con los ficheros del directorio ampliando la lista con informacin sobre estos. La vista personalizada
+es una lista en la que  podremos elegir la informacin deseada de los
+ficheros. 
+</PARA>
+<PARA>
+En las vistas breve, detallada y personalizada, si se pulsa en uno de los
+ttulos informativos de la parte superior de la ventana, se ordenaran 
+los ficheros de acuerdo con dicha informacin. 
+Por ejemplo, si quisiera encontrar el fichero ms grande del directorio
+no tiene ms que pulsar sobre la etiqueta Tamao y los ficheros se ordenarn
+desde el ms grande al ms pequeo. Y otra pulsacin ms en Tamao cambiar
+la ordenacin desde el ms pequeo al ms grande.
+</PARA></SECT1>
+<SECT1 ID="gmcnav"><TITLE>
+Movindonos por el Gestor de Ficheros GNOME
+</TITLE>
+<PARA><INDEXTERM ID="idx-a37"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Movindonos por el Gestor de Ficheros GNOME
+</SECONDARY></INDEXTERM>
+
+Encima de las ventanas principales tenemos la caja de texto Direccin.
+</PARA>
+<PARA>
+En esta caja podemos introducir la ruta del directorio que deseamos
+ver en la ventana principal.
+</PARA>
+<PARA><INDEXTERM ID="idx-a38"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+FTP
+</SECONDARY></INDEXTERM>
+
+El gestor de ficheros GNOME tambin esta equipado para mostrar ficheros
+va ftp. Para ver un servidor ftp necesitaremos estar conectados a Internet,
+bien a travs de una cuenta en cualquier servidor o a travs de un red.
+Escriba la direccin del servidor ftp la caja de Direccin y el gestor de
+ficheros GNOME realizar  la conexin con el servidor.
+</PARA>
+<PARA>
+Asegrese de escribir las direcciones ftp de la siguiente manera:
+
+<PROGRAMLISTING>
+ftp://[site address]
+</PROGRAMLISTING></PARA>
+<PARA>
+Encima de  la caja de texto Direccin estn los botones de navegacin,
+cuyo uso puede resultarle interesante.
+Estos botones presentados como flechas,
+le permiten moverse dentro de los directorios adyacentes al que est.
+El botn de la izquierda le llevar al directorio previo en el que estuvo,
+el botn central le permitir subir un nivel en la jerarqua de directorios,
+y el botn de la derecha le llevara al siguiente directorio si se ha acabado
+de mover hacia atrs.
+</PARA>
+<TIP><TITLE>
+Truco
+</TITLE>
+<PARA>
+Un truco para moverse por el gestor de ficheros GNOME es que puede
+abrir un segunda ventana usando el botn central del ratn en cualquier
+directorio. Pulse el botn central del ratn (o el botn derecho e 
+izquierdo a la vez, si usa la emulacin) en un directorio de la ventana principal
+y una ventana nueva se abrir mostrndonos los contenidos del directorio que
+puls.
+</PARA></TIP></SECT1>
+<SECT1 ID="gmcselect"><TITLE>
+Seleccin de Ficheros
+</TITLE>
+<PARA><INDEXTERM ID="idx-a39"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Seleccin de Ficheros
+</SECONDARY></INDEXTERM>
+
+La seleccin de ficheros se realiza con el ratn, pulsando sobre el
+fichero o los ficheros que queremos seleccionar. El fichero que est
+seleccionado aparecer marcado para mostrarnos que ha sido seleccionado.
+</PARA>
+<PARA><INDEXTERM ID="idx-a40"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Seleccin de mltiples ficheros
+</SECONDARY></INDEXTERM>
+
+Existen varias formas para seleccionar ms de un fichero.
+Una de ellas es usar banda elstica [rubber band] para seleccionar 
+arrastrando el ratn
+sobre algunos ficheros.
+Esta accin producir una pequea
+lnea de puntos, la banda eltica, para mostrarnos el rea en la cual los
+ficheros sern seleccionados. Si desea ser ms selectivo en los ficheros
+que elige, o los ficheros que necesita no estn juntos, puede usar la
+tecla CTRL para mantener los archivos que ha seleccionado mientras
+sigue seleccionando ms. Esto se realiza seleccionando un fichero,
+pulsando la tecla CTRL y mantenindola pulsada y seleccionamos otro fichero
+. Mientras la tecla CTRL este pulsada puede aadir ficheros a la
+lista de ficheros seleccionados. Y una vez que ha seleccionado mltiples
+ficheros por cualquiera de los mtodos, puede copiar o mover los ficheros
+como indicamos a continuacin.
+</PARA>
+<FIGURE><TITLE>
+Seleccin mediante banda elstica
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Seleccin mediante banda elstica
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/rubberband" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Si quiere ser ms selectivo con los ficheros que esta eligiendo, o si los ficheros
+que necesita no estn uno al lado del otro, puede usar la tecla
+
+<KEYCAP>
+CTRL
+</KEYCAP>
+
+para conservar los ficheros ya elegidos mientras elige alguno ms. Esto
+funciona seleccionando un fichero, pulsando y manteniendo pulsada la tecla
+
+<KEYCAP>
+CTRL
+</KEYCAP>
+
+y seleccionando otro fichero. Mientras la tecla
+
+<KEYCAP>
+CTRL
+</KEYCAP>
+
+se mantenga pulsada podrs aadir a la lista de ficheros ya seleccionados. Una
+vez que haya seleccionado mltiples ficheros por cualquiera de los mtodos
+anteriores, podr copiarlos o moverlos.
+</PARA>
+<PARA>
+Tambin puede seleccionar todos los ficheros de un directorio
+seleccionando 
+
+<GUIMENUITEM>
+Seleccionar Todo 
+</GUIMENUITEM>
+
+del men
+
+<GUIMENU>
+Edicin
+</GUIMENU>
+
+.
+</PARA>
+<PARA><INDEXTERM ID="idx-a41"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+filtrando
+</SECONDARY></INDEXTERM>
+
+Tambin puede filtrar su seleccin usando la opcin de men
+
+<GUIMENUITEM>
+Seleccionar Ficheros
+</GUIMENUITEM>
+
+del men
+
+<GUIMENU>
+Edicin
+</GUIMENU>
+
+. Esto nos mostrar una ventana de dialogo
+que le permitir escribir el criterio de su seleccin. 
+En este campo, el smbolo
+
+<KEYCAP>
+*
+</KEYCAP>
+
+se interpreta como un comodn, esto es, representa cualquier cadena de 
+caracteres. 
+Por ejemplo,
+si usted quisiera seleccionar todos los ficheros del directorio que
+comienzan con la letra 
+
+<KEYCAP>
+D
+</KEYCAP>
+
+, puede escribir 
+
+<KEYCAP>
+D*
+</KEYCAP>
+
+(tenga en cuenta que Unix diferencia maysculas y minsculas).
+</PARA></SECT1>
+<SECT1 ID="gmccopy"><TITLE>
+Copiar y mover ficheros
+</TITLE>
+<PARA><INDEXTERM ID="idx-a42"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Copia de ficheros
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a43"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Movimiento de ficheros
+</SECONDARY></INDEXTERM>
+
+La accin por defecto al arrastrar ficheros desde el gestor de ficheros GNOME
+hacia el escritorio es moverlos.
+Pero tambin puede usar arrastrar ficheros para copiar 
+un fichero pulsando la tecla 
+
+<KEYCAP>
+SHIFT 
+</KEYCAP>
+
+mientras arrastramos el/los fichero/s.
+Tambin puede arrastar ficheros desde el gestor de ficheros hacia otro
+directorio. Selecciones el fichero en la ventana principal y arrastrelo hasta
+el directorio deseado en el rbol de directorios.
+Segn arrastra el fichero hacia el arbol de directorio, 
+ver aparecer un signo menos para recordarle que se va a copiar el fichero.
+Puede tambin usar arrastrar y pegar para copiar directorios de la misma
+forma que para los ficheros. Observe de nuevo el signo ms, indicandole que
+el directorio no se mueve, sino que se copia.
+</PARA>
+<PARA><INDEXTERM ID="idx-a44"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Enlace de ficheros
+</SECONDARY></INDEXTERM>
+
+Tambin puede elegir de un men que accin desea realizar al arrastrar
+ficheros, usando el botn central del ratn para arrastrar ficheros.
+Una vez que libere el botn central del ratn, aparecer un men pop-up
+que contiene las opcines Copiar, Mover.
+Tambin puede disparar un men para decidir la accin que se realizara al
+arrastrar el fichero, usando el botn central del ratn para arrstralo
+o pulsando la tecla
+
+<KEYCAP>
+ALT
+</KEYCAP>
+
+mientras arrastra el fichero.
+Una vez que lo suelte, observara un men de cortinilla con las opcines copiar,
+mover, enlazar y cancelar arrastre.
+</PARA>
+
+<PARA><FIGURE><TITLE>
+Formulario mover
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Ventana de dialogo Mover
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gmc_move" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<INDEXTERM ID="idx-a45"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Movimiento de ficheros
+</SECONDARY></INDEXTERM>
+
+Simplemente debe escribir la ruta hacia donde quiera mover el archivo.
+Si lo que quiere es cambiar el nombre del fichero, simplemente escriba
+el nuevo nombre del fichero. La ventana de dialogo Copiar es y funciona
+exactamente igual que la ventana de dialogo Mover.
+</PARA>
+<PARA>
+Si el fichero que est moviendo es un enlace simblico  , que es un enlace
+virtual al punto donde esta realmenete radicado el fichero (conocidos como accesos directos en otros sistemas operativos )  , 
+puede seleccionar la pestaa de 
+
+<GUILABEL>
+Opciones avanzadas
+</GUILABEL>
+
+y seleccionar
+
+<GUILABEL>
+Conservar enlaces simblicos. 
+</GUILABEL>
+
+Haciendo esto se asegurara que el enlace se conserva
+a pesar de mover el fichero. 
+</PARA>
+<PARA>
+Se recomienda usar este mtodo si desea mover
+un enlace simblico.
+</PARA></SECT1>
+<SECT1 ID="gmcrename"><TITLE>
+Renombrar ficheros
+</TITLE>
+<PARA><INDEXTERM ID="idx-a46-a"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Renombrar ficheros
+</SECONDARY></INDEXTERM>
+
+Renombrar ficheros en el gestor de ficheros GNOME o en el escritorio
+se puede abordar de dos formas. 
+</PARA>
+<PARA>
+Un forma de renombrar ficheros es pulsar el botn derecho del ratn sobre
+el y escoger la opcin 
+
+<GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+en el men
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+. En el campo de tipo texto nombre de fichero del formulario puede
+teclear el nuevo nombre tal y como quieras que aparezca.
+</PARA>
+<FIGURE><TITLE>
+Propiedades del fichero
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Propiedades del fichero
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/fileprops" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Un atajo para renombrar un fichero es pulsar lentamente dos veces sobre
+el nombre fichero en la vista de iconos o en el escritorio. Asegrase de hacerlo lentamente para no lanzar la ejecucin
+del fichero, sino simplemente seleccionarlo y pulsar de nuevo. En este
+momento el nombre del fichero pasara a modo edicin, el cursor del ratn
+cambiara a edicin de lnea, y podr teclear el nuevo nombre. Una vez tecleado
+el nombre elegido debera pulsar
+
+<KEYCAP>
+Intro
+</KEYCAP>
+
+para finalizar la edicin.
+</PARA></SECT1>
+<SECT1 ID="gmclaunch"><TITLE>
+Ejecutar aplicaciones desde el gestor de ficheros GNOME
+</TITLE>
+<PARA><INDEXTERM ID="idx-a46"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Ejecutar aplicaciones desde el gestor de ficheros GNOME
+</SECONDARY></INDEXTERM>
+
+El Gestor de Ficheros GNOME le permite ejecutar aplicaciones desde la
+ventana principal pulsando dos veces con el ratn sobre un fichero,
+que a su vez tiene asociada un aplicacin. 
+Para cambiar la forma en que se gestionan los ficheros, puede leer la seccin
+
+<XREF LINKEND="gccmime"></XREF></PARA>
+<PARA><INDEXTERM ID="idx-a47"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Abrir con
+</SECONDARY></INDEXTERM>
+
+Si este fichero no tuviera ninguna
+aplicacin asociada, puede pulsar con el botn derecho del ratn sobre
+el fichero y seleccionar 
+
+<GUIMENUITEM>
+Abrir con
+</GUIMENUITEM>
+
+del men
+
+<GUIMENUITEM>
+desplegable
+</GUIMENUITEM>
+
+. Esto abrir una ventana de dialogo,
+donde indicaremos que aplicacin queremos que ejecute el fichero.
+Por ejemplo, si quisiera editar mis nombres de ficheros prueba.txt
+con 
+
+<APPLICATION>
+Emacs
+</APPLICATION>
+
+(un popular editor de texto) puede pulsar sobre el fichero con el
+botn derecho del ratn y elegir 
+
+<GUIMENUITEM>
+Abrir con
+</GUIMENUITEM>
+
+.
+Cuando aparezca la ventana de dialogo Abrir simplemente escriba emacs
+en frente del fichero prueba.txt. Y cuando pulse 
+
+<GUIBUTTON>
+OK
+</GUIBUTTON>
+<APPLICATION>
+Emacs
+</APPLICATION>
+
+abrir el fichero.
+</PARA>
+<FIGURE><TITLE>
+Formulario abrir con
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Formulario abrir con
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/open_with" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT1>
+<SECT1 ID="gmcfileprops"><TITLE>
+Propiedades y acciones de los ficheros
+</TITLE>
+<PARA><INDEXTERM ID="idx-a48"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Propiedades de los ficheros
+</SECONDARY></INDEXTERM>
+
+Puedes pulsar el botn derecho del ratn sobre cualquier fichero en la 
+ventana principal de ficheros y seleccionar entre sus diversas propiedades 
+y acciones desde el men
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+:
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Abrir
+</GUIMENUITEM>
+
+- Esta opcin abrir el fichero con la aplicacin apropiada asociada con el.
+Puede leer mas acerca de estas asociaciones en 
+
+<XREF LINKEND="gccmime">
+.
+</XREF></PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Abrir con
+</GUIMENUITEM>
+
+- Puede abrir un fichero con cualquier aplicacin usando esta opcin del
+men. Puede leer mas sobre este tema en
+
+<XREF LINKEND="gmclaunch">
+.
+</XREF></PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Ver
+</GUIMENUITEM>
+
+- Esta opcin mostrara el fichero con un visualizador de texto bsico.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Editar
+</GUIMENUITEM>
+
+- Esta opcin arrancara un editor para editar el fichero. El editor 
+ejecutado se determina gracias a la aplicacin asociada con este tipo
+de fichero. Puede leer mas sobre la modificacin de esa asociacin en
+
+<XREF LINKEND="gccmime">
+.
+</XREF></PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Copiar
+</GUIMENUITEM>
+
+- Con esta opcin se copia el fichero al portapapeles de forma que pueda
+pegarse en otra parte.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Borrar
+</GUIMENUITEM>
+
+- Con esta opcin se borrar el fichero.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Mover
+</GUIMENUITEM>
+
+- Esta opcin abrir el formulario 
+
+<GUILABEL>
+Mover
+</GUILABEL>
+
+que nos permite mover el fichero. Puede leer mas sobre este formulario y
+el movimiento de ficheros en
+
+<XREF LINKEND="gmccopy">
+.
+</XREF></PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Enlaces simblicos
+</GUIMENUITEM>
+
+- Los enlaces simblicos le permiten crear un enlace simblico apuntando al
+fichero elegido en otro directorio. Cuando selecciona la opcin de enlaces 
+simblicos, aparecera un formulario en el que podr escribir el directorio
+y el nombre del fichero al que apuntar el enlace simblico. El enlace ser
+un atajo al fichero elegido.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+- La opcin de propiedades del men abrir el formulario de propiedades.
+El formulario de propiedades permite editar y ver las propiedades de los 
+ficheros seleccionados.
+</PARA>
+<PARA>
+El formulario de propiedades tiene tres apartados, estadsticas,
+opcines, y permisos.
+</PARA>
+<FIGURE><TITLE>
+Propiedades del fichero
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Propiedades del fichero
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/fileprops" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Estadsticas
+</GUILABEL>
+
+- Este apartado muestra informacin sobre el fichero incluyendo nombre,
+tipo, tamao, e historial. Puede cambiar el nombre del fichero en la
+casilla de texto
+
+<GUILABEL>
+Nombre del fichero
+</GUILABEL>
+
+.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Opciones
+</GUILABEL>
+
+- Este apartado permite cambiar las opcines de accin para este fichero.
+Puede definir como abrir, ver, y editar el fichero. Si necesita abrirlo en
+una ventana de terminal puede marcar la casilla
+
+<GUILABEL>
+Necesita un terminal para funcionar
+</GUILABEL>
+
+.
+</PARA>
+<NOTE><TITLE>
+NOTA
+</TITLE>
+<PARA>
+Si abre el formulario de propiedades desde un icono situado en el 
+escritorio, ser capaz de cambiar el icono de este fichero en el
+apartado de 
+
+<GUILABEL>
+Opciones
+</GUILABEL>
+
+.
+</PARA></NOTE></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Permisos
+</GUILABEL>
+
+- Este apartado permite cambiar los permisos y el propietario de un fichero
+si esta autorizado para hacerlo. Puede seleccionar los permisos de 
+lectura, escritura y ejecucin para el usuario, grupo, y el resto. Puede
+adems determinar el UID, GID y «Sticky», as como determinar el propietario
+del fichero.
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST></SECT1>
+<SECT1 ID="gmcprefs"><TITLE>
+Cambio de las preferencias en el gestor de ficheros
+</TITLE>
+<PARA><INDEXTERM ID="idx-a49"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Preferencias
+</SECONDARY></INDEXTERM>
+
+Hay muchos parmetros del gestor de ficheros GNOME que se pueden configurar. 
+</PARA>
+<PARA>
+A estos parmetros se accede a travs del formulario 
+
+<GUILABEL>
+Preferencias GMC
+</GUILABEL>
+
+. Puede abrir este formulario eligiendo la opcin 
+
+<GUIMENUITEM>
+Preferencias
+</GUIMENUITEM>
+
+en el men
+
+<GUIMENU>
+Editar
+</GUIMENU>
+
+.
+</PARA>
+<PARA>
+El formulario 
+
+<GUILABEL>
+Preferencias GMC
+</GUILABEL>
+
+se divide en cinco secciones principales:
+
+<GUILABEL>
+Mostrar archivo
+</GUILABEL>
+
+,
+
+<GUILABEL>
+Confirmacin
+</GUILABEL>
+
+,                
+
+<GUILABEL>
+VFS
+</GUILABEL>
+
+,  
+
+<GUILABEL>
+Guardando en cache
+</GUILABEL>
+
+, 
+
+<GUILABEL>
+Escritorio
+</GUILABEL>
+
+y,
+
+<GUILABEL>
+Vista personalizada
+</GUILABEL>
+
+.
+</PARA>
+<SECT2 ID="gmcprefs-file"><TITLE>
+Mostrar archivo
+</TITLE>
+<FIGURE><TITLE>
+Preferencias de mostrar archivo
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Preferencias de mostrar archivo
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gmcprops1" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><INDEXTERM ID="idx-a50"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Mostrar
+</SECONDARY></INDEXTERM>
+
+La seccin
+
+<GUILABEL>
+Mostrar archivo
+</GUILABEL>
+
+permite cambiar la forma en que se presentan los ficheros en GMC.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Mostrar los ficheros de respaldo
+</GUILABEL>
+
+- Mostrara las copias de respaldo de cualquier fichero
+que pueda haber en su sistema.
+</PARA></LISTITEM>
+<LISTITEM><PARA><INDEXTERM ID="idx-a51"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Ficheros ocultos
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a52"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Mostrar ficheros ocultos
+</SECONDARY></INDEXTERM>
+<GUILABEL>
+Mostrar ficheros ocultos
+</GUILABEL>
+
+- Mostrara todos los ficheros punto, ficheros que comienzan con un punto.
+Entre estos ficheros se incluyen tpicamente los de configuracin y los
+directorios.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Mezclar ficheros y directorios
+</GUILABEL>
+
+- Mostrara los ficheros y directorios en el orden en que los ordenes,
+en vez de mostrar siempre los directorios antes que los ficheros.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Usar patrones «shell» en vez de expresiones regulares.
+</GUILABEL>
+
+- Esta opcin se reserva para usuarios expertos. Si no esta familiarizado
+con las expresiones regulares, no debera usar esta opcin. Si esta
+familiarizado con la creacin de expresiones regulares puede elegir esta
+opcin para usarlas en sus ordenaciones y filtrados.
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="gmcprefs-confirm"><TITLE>
+Confirmacin
+</TITLE>
+<FIGURE><TITLE>
+Preferencias en las confirmaciones
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Preferencias en las confirmaciones
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gmcprops2" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><INDEXTERM ID="idx-a-53"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Confirmaciones
+</SECONDARY></INDEXTERM>
+
+Esta seccin permite cambiar las operaciones que piden confirmacin antes
+de continuar.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Confirmar antes de borrar ficheros
+</GUILABEL>
+
+- Mostrara un formulario de confirmacin antes de borrar un fichero.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Confirmar antes de sobreescribir ficheros
+</GUILABEL>
+
+- Mostrara un formulario de confirmacin antes de sobreescribir un fichero.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Confirmar la ejecucin de ficheros
+</GUILABEL>
+
+- Mostrara un formulario de confirmacin antes de ejecutar un fichero.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Mostrar indicadores de progreso de la operaciones
+</GUILABEL>
+
+- Mostrara un indicador de progreso durante la ejecucin de ciertas
+operaciones, tales que copias, movimientos, borrados, etc.
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="gmcprefs-VFS"><TITLE>
+VFS
+</TITLE>
+<FIGURE><TITLE>
+Preferencias VFS
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Preferencias VFS
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gmcprops3" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><INDEXTERM ID="idx-a-54"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+VFS
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a55"><PRIMARY>
+Sistemas de ficheros virtual
+</PRIMARY>
+<SEE>
+Gestor de ficheros GNOME - VFS
+</SEE></INDEXTERM>
+
+Esta seccin permite configurar las opcines del sistema
+de ficheros virtual.
+</PARA>
+<PARA>
+El sistema de ficheros virtual permite manipular ficheros que no estn
+radicados en su sistema de ficheros local. Hay varias versiones de VFS
+incluyendo ftpfs y tarfs. Ftpfs permite trabajar con servidores ftp mientras
+que tarfs le facilita el acceso al contenido de ficheros .tar.
+</PARA>
+<NOTE><TITLE>
+NOTA
+</TITLE>
+<PARA>
+Tar es el formato de archivo estndar UNIX.
+</PARA></NOTE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Temporizador VFS
+</GUILABEL>
+
+- Permite determinar cuanto tiempo se estar conectado a cualquier VFS
+sin actividad. El temporizador se mide en segundos.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Clave para ftp annimo
+</GUILABEL>
+
+- Permite asignar una clave para presentarse en servidores ftp annimos.
+Generalmente elegir asignar su direccin de correo electrnico.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Usar siempre «proxy» para ftp
+</GUILABEL>
+
+- Si necesita usar un «proxy» para conectar a los servidores ftp, deber
+habilitar esta opcin.
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="gmcprefs-cache"><TITLE>
+Cache
+</TITLE>
+<FIGURE><TITLE>
+Preferencias cach
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Preferencias cach
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gmcprops4" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Esta seccin permite configurar opcines que mejoraran la velocidad de
+GMC usando cach.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Recarga rpida de directorios
+</GUILABEL>
+
+- Con esta opcin se guardara informacin de los directorios en la cach
+de forma que se carguen mas rpido.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Si habilita la
+
+<GUILABEL>
+Recarga rpida de directorios
+</GUILABEL>
+
+puede tener problemas al no ver nuevos ficheros que se hayan
+aadido a los directorios.
+</PARA></IMPORTANT></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Calcular totales antes de copiar ficheros
+</GUILABEL>
+
+- Con esta opcin GMC determina el numero de ficheros que esta
+copiando antes de realizar la operacin, de forma que puede informarle 
+sobre el proceso segn se desarrolla.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Descartar el cach de ftpfs tras
+</GUILABEL>
+
+- Con esta opcin se mantendr en cach, durante el tiempo especificado,
+la informacin de los servidores ftp visitados recientemente. El tiempo
+se mide en segundos.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Permitir iconos personalizados en la vista de iconos
+</GUILABEL>
+
+- Esta opcin permite cambiar los iconos en la vista de iconos, pulsando
+sobre ellos el botn derecho y seleccionando en el men la opcin 
+
+<GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+. Siempre puede cambiar los iconos de los tem que estn en su escritorio,
+pero solo puede cambiar los iconos en la vista de iconos con esta opcin
+habilitada.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Habilitar la opcin
+
+<GUILABEL>
+Permitir iconos personalizados en la vista de iconos
+</GUILABEL>
+
+puede provocar que el sistema funcione ms lentamente.
+</PARA></IMPORTANT></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="gmcprefs-desk"><TITLE>
+Escritorio
+</TITLE>
+<PARA><INDEXTERM ID="idx-a55a"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Escritorio
+</SECONDARY></INDEXTERM>
+
+Como ha aprendido anteriormente, el escritorio de GNOME se controla 
+mediante el gestor de ficheros GNOME. El formulario Escritorio le 
+permite cambiar los parmetros del escritorio. 
+</PARA>
+<FIGURE><TITLE>
+El formulario escritorio
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El formulario escritorio
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gmcprops5" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA><GUILABEL>
+Posicionamiento de Iconos
+</GUILABEL>
+
+- Esta pequea ventana le permite determinar donde se situarn los 
+iconos del escritorio inicialmente. Para cambiar la posicin de los 
+iconos simplemente haga click con el botn de su ratn en la ventana 
+prxima al borde en el que le gustara que se encontraran sus iconos. 
+El ejemplo de pequeos iconos se mover cuando haga clic con el ratn 
+mostrandole donde se situarn inicialmente.
+</PARA>
+<PARA><GUILABEL>
+Uso de iconos determinados
+</GUILABEL>
+
+Esta opcin inicialmente est activada. Si por alguna razn tiene una 
+pantalla antigua, unos valores iniciales de un servidor X desconocido, 
+o algn problema con la pantalla grfica, deber seleccionar esta 
+opcin para que los iconos del escritorio no sean transparentes.  
+</PARA>
+<PARA><GUILABEL>
+Uso de texto determinado
+</GUILABEL>
+
+- Esta opcin inicialmente se encuentra activada. Como con los iconos 
+determinados vistos anteriormente puede optar por tener el texto de 
+etiquetado de sus iconos que no sea transparente.
+</PARA>
+<PARA><GUILABEL>
+Autoposicionamiento de iconos
+</GUILABEL>
+
+- Esta opcin le permite ordenar automticamente los iconos de su 
+escritorio. Si prefiriera situar los iconos manualmente esta opcin
+debera estar desactivada. 
+</PARA>
+<PARA><GUILABEL>
+Mantener iconos alineados
+</GUILABEL>
+
+- Esta opcin mantendr todos sus iconos en linea cuando los mueva 
+manteniendo un escritorio limpio. Esto crea una reja en la que los 
+iconos sern movidos automticamente despus de arrastrar el icono a 
+la posicion de destino deseada.  
+</PARA></SECT2>
+<SECT2 ID="gmcprefs-custom"><TITLE>
+Vista personalizada
+</TITLE>
+<PARA><INDEXTERM ID="idx-a56"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+Vista personalizada
+</SECONDARY></INDEXTERM>
+
+El formulario vista personalizada permite definir la presentacin
+de la vista personalizada en el gestor de ficheros GNOME.
+</PARA>
+<FIGURE><TITLE>
+Formulario vista personalizada
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Formulario vista personalizada
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/custom-view" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Hay dos columnas principales en la
+
+<GUILABEL>
+Vista personalizada
+</GUILABEL>
+
+, Las 
+
+<GUILABEL>
+Columnas Posibles
+</GUILABEL>
+
+y las
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+.
+</PARA>
+<PARA>
+La lista de  
+
+<GUILABEL>
+Columnas posibles
+</GUILABEL>
+
+incluye todos los tipos de informacin que pueden mostrarse. 
+Si quiere incluir alguno debe pulsar el botn
+
+<GUIBUTTON>
+Aadir
+</GUIBUTTON>
+
+y se aadir a la lista de 
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+.
+</PARA>
+<PARA>
+La lista de 
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+muestra los tipos actuales de informacin que se incluirn en la vista
+personalizada. Si quiere eliminar alguno pulse el botn
+
+<GUIBUTTON>
+Quitar
+</GUIBUTTON>
+
+.
+</PARA>
+<PARA>
+Si quieres reordenar los tem en la lista de 
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+puede arrastrarlos a la posicin deseada con el ratn.
+</PARA></SECT2></SECT1>
+<SECT1 ID="gmcmenus"><TITLE>
+Gua del men del gestor de ficheros GNOME
+</TITLE>
+<PARA><INDEXTERM ID="idx-a57"><PRIMARY>
+Gestor de ficheros GNOME
+</PRIMARY>
+<SECONDARY>
+mens
+</SECONDARY></INDEXTERM>
+
+En esta seccin se describirn cada uno de los elementos de men en el gestor
+de ficheros GNOME.
+</PARA>
+<TIP><TITLE>
+Truco
+</TITLE>
+<PARA>
+Todos los mens en el gestor de ficheros GNOME estn habilitados con
+la caracterstica men flotante [tear-away]. Si desea que cualquier men
+flote en el escritorio dentro de su propia ventana, simplemente seleccione 
+la lnea perforada en la parte superior del men.
+</PARA></TIP>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENU>
+Fichero
+</GUIMENU>
+
+-  El men fichero o archivo contiene elementos asociados con ficheros y
+actividades de ms alto nivel.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Crear nueva ventana
+</GUIMENUITEM>
+
+- Esta opcin abrir una nueva ventana.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Terminal
+</GUIMENUITEM>
+
+- Esta opcin lanza una nueva ventana Terminal GNOME en la que podr 
+navegar automticamente por el directorio mostrado en la vista de la 
+ventana principal.  
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Directorio
+</GUIMENUITEM>
+
+- Esta crea un nuevo directorio en el directorio mostrado en la vista de
+la ventana principal.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nueva | [aplicacin]
+</GUIMENUITEM>
+
+- Algunas aplicaciones te permiten poner artculos en el men 
+
+<GUIMENU>
+Nuevo 
+</GUIMENU>
+
+. Por ejemplo, la hoja de clculo Gnumeric pondr un artculo de men 
+
+<GUIMENUITEM>
+Nueva hoja de clculo Gnumeric
+</GUIMENUITEM>
+
+en el 
+
+<GUIMENU>
+Nuevo 
+</GUIMENU>
+
+menu as que usted podr crear una nueva hoja de calculo en el 
+directorio mostrado en la vista de la ventana principal.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Abrir
+</GUIMENUITEM>
+
+- Esta opcin abrir el fichero seleccionado con el cursor del ratn.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Copiar
+</GUIMENUITEM>
+
+- Esta lanzar la ventana de dialogo Copiar, que le permite
+copiar el fichero seleccionado en el destino que elija.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Borrar
+</GUIMENUITEM>
+
+- Esta borrar el fichero que haya seleccionado.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Mover
+</GUIMENUITEM>
+
+- Esta lanzar la ventana de dialogo Mover/Renombrar, que le
+permite renombrar o mover el fichero seleccionado al destino que elija.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Mostrar tamao de directorios
+</GUIMENUITEM>
+
+- Esta opcin determinar el tamao de sus directorios y le mostrar
+este en las vistas Detallada o Personalizada. Dependiendo del tamao de 
+sus directorios, podr tomar un tiempo considerable hasta que se muestre 
+e incluso aumentarlo ms cuando visualice directorios grandes en su sistema. 
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Cerrar esta ventana
+</GUIMENUITEM>
+
+- Esta cerrar la ventana del gestor de ficheros GNOME que est ejecurando.
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENU>
+Editar
+</GUIMENU>
+
+-  El men Edicin contiene elementos que estn asociados a la
+edicin y seleccin de ficheros.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Seleccionar todo
+</GUIMENUITEM>
+
+- Selecciona todos los ficheros de la ventana principal.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Selecionar ficheros
+</GUIMENUITEM>
+
+- Esta opcin abrir un sencillo formulario donde podr especificar una
+plantilla de seleccin de ficheros. Por ejemplo, si quiere seleccionar todos
+los ficheros que empiecen con la letra D, puede simplemente teclear
+D* y pulsar OK.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Invertir Seleccin
+</GUIMENUITEM>
+
+- Esta opcin invertir la seleccin actual. Por ejemplo, si tiene 7 ficheros
+seleccionados en un directorio con 10 ficheros, pulsando invertir
+seleccin seleccionaremos los tres ficheros restantes y descartaremos
+los 7 ficheros que tenamos previamente seleccionados. 
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Buscar
+</GUIMENUITEM>
+
+- Esta opcin se utiliza para la "realizacin" de busquedas en el 
+Gestor de Ficheros.  Una vez puesto en marcha aparece la palabra "Buscar:"
+en la parte baja de la de la barra de estado y le permite empezar ha 
+teclear. Si est buscando un fichero llamado "GNU" en el directorio que 
+se muestra en la ventana principal, tecleando la letra "G" se desplazar
+la barra de cursor al primer fichero o directorio que empiece por "G".  
+Tecleando "GN" mover la barra de cursor al primer fichero que empiece 
+por "GN", y asi sucesivamente. Puede utilizar tambin esta 
+caracterstica pulsando
+
+<KEYCOMBO><KEYCAP>
+CTRL
+</KEYCAP>
+<KEYCAP>
+S
+</KEYCAP></KEYCOMBO>
+
+.  Para finalizar la busqueda deber selecionar el fichero o el directorio
+o simplemente moverse fuera del fichero con las teclas de movimiento o 
+con su ratn.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Actualizar directorio
+</GUIMENUITEM>
+
+- Esta actualiza el directorio actual en caso de
+que los ficheros del directorio hubieran cambiado.
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENU>
+Configuracin
+</GUIMENU>
+
+- Contiene el artculo de Men Preferencias.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Preferencias
+</GUIMENUITEM>
+
+- Esta lanzar la ventana de dialogo Preferencias, donde
+puede configurar el gestor de ficheros GNOME.
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENU>
+Presentacin
+</GUIMENU>
+
+- Este men contiene elementos asociados a las opcines de
+visualizacin de los ficheros en el gestor de ficheros GNOME.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Ordenar por
+</GUIMENUITEM>
+
+- Esta opcin lanzar una ventana de dialogo, que le permitir
+seleccionar como quiere ordenar los ficheros en el directorio actual.
+Los puede ordenar por una de las siguientes formas:
+</PARA>
+<ITEMIZEDLIST MARK="none"><LISTITEM><PARA>
+Nombre
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Tipo de fichero
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Tamao
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Ultimo acceso
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Ultima modificacin
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Ultimo cambio
+</PARA></LISTITEM></ITEMIZEDLIST></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Vista filtrada
+</GUIMENUITEM>
+
+- Esta opcin lanzar una ventana de dialogo que le permitir
+ver slo ficheros segn un plantilla determinada. Por ejemplo, si desea ver slo
+los ficheros del directorio que comienzan con la letra D, puede escribir
+d* en la caja de texto y pulsar OK. Si desea ver de nuevo todos los ficheros
+necesitar abrir ver filtrado de nuevo y borrar la seleccin anterior o
+escribir *.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Vista de iconos
+</GUIMENUITEM>
+
+- Esta mostrar los ficheros en la vista principal,
+representados por iconos grandes.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Vista breve
+</GUIMENUITEM>
+
+-  Esta mostrar los ficheros en la vista principal,
+como una lista con solo los nombres de los ficheros.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Vista detallada
+</GUIMENUITEM>
+
+- Esta mostrar los ficheros en la vista principal, como una
+lista con toda la informacin de los ficheros.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Vista personalizada
+</GUIMENUITEM>
+
+- La 
+
+<GUIMENUITEM>
+Vista personalizada
+</GUIMENUITEM>
+
+cambia la presentacin por la vista personalizada que es una 
+vista tipo lista con la informacin que especifique acerca de sus ficheros.
+Para personalizar la vista personalizada deber usar el
+
+<GUILABEL>
+Editor de vistas personalizadas
+</GUILABEL>
+
+en el formulario de 
+
+<GUILABEL>
+Preferencias
+</GUILABEL>
+
+. Puede leer mas acerca del formulario de
+
+<GUILABEL>
+Preferencias
+</GUILABEL>
+
+en
+
+<XREF LINKEND="gmcprefs">
+.
+</XREF></PARA></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENU>
+Comandos
+</GUIMENU>
+
+- El men comandos contiene comandos que se ejecutan sobre los ficheros
+del gestor de ficheros GNOME.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Buscar ficheros
+</GUIMENUITEM>
+
+- Buscar ficheros abre un formulario que le permite localizar determinados 
+ficheros en su sistema.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Editar tipos mime
+</GUIMENUITEM>
+
+- Esta opcin ejecuta el aplique C del centro de control GNOME que permite
+editar tipos mime en GNOME. Los tipos mime determinan, entre otras cosas,
+que aplicacin manejara un tipo particular de fichero. Puede leer mas acerca
+de este tema en
+
+<XREF LINKEND="gccmime"></XREF></PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Ejecutar comando
+</GUIMENUITEM>
+
+- Esta opcin de men permite ejecutar un comando desde el GMC
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Ejecutar comando en el panel
+</GUIMENUITEM>
+
+- Esta opcin de men ejecuta comandos predeterminados o los comandos
+que especifiques en el directorio actual. Estos comandos pueden localizar 
+programas SUID o SGID, etc.
+</PARA></LISTITEM>
+
+<LISTITEM><PARA><GUIMENUITEM>
+Salir
+</GUIMENUITEM>
+
+- Esta opcin permite salir del gestor de ficheros GNOME.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Esto har que se cierren todos los procesos del gestor de ficheros GNOME,
+incluyendo el escritorio GNOME. Si lo hace perder toda la funcionalidad del
+escritorio GNOME. No se recomienda usar esta opcin.
+Si desea cerrar la ventana actual use el botn
+
+<GUIMENUITEM>
+Fichero/Cerrar
+</GUIMENUITEM></PARA></IMPORTANT></LISTITEM></ITEMIZEDLIST></LISTITEM></ITEMIZEDLIST></SECT1>
+<SECT1 ID="dragtour"><TITLE>
+Una breve visita a la funcin arrastrar y soltar de GNOME
+</TITLE>
+<PARA><INDEXTERM ID="idx-a58"><PRIMARY>
+GNOME
+</PRIMARY>
+<SECONDARY>
+Arrastrar y soltar
+</SECONDARY></INDEXTERM>
+
+Hay muchos trucos y atajos en el escritorio GNOME. La funcionalidad arrastrar
+y soltar se extiende a lo largo de muchas reas de GNOME, haciendo fcil 
+interconectar GNOME de muchas formas interesantes. A continuacin se citan
+una serie de trucos y atajos para usar la funcionalidad arrastrar y soltar 
+de GNOME. Esta es una visita completa a GNOME y le mostrara como utilizar
+GNOME en toda su dimensin.
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Arrastrar un color sobre el panel - All donde se presente un selector de
+colores, puede arrastrar un color desde la barra de color sobre el panel y
+el panel cambiara a este color.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Arrastrar un «Pixmap» al selector de fondos - Si desea cambiar la imagen
+del fondo, puede arrastrar esa imagen desde el gestor de ficheros GNOME sobre
+la imagen del monitor en el  aplique C fondo del centro de control y cambiara
+a esta imagen.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Arrastrar sobre una aplicacin - Muchas aplicaciones compatibles con
+GNOME aceptan la funcionalidad arrastrar y soltar. Si desea abrir un fichero
+con Gnuneric, una hoja de calculo compatible con GNOME, puede simplemente
+arrastrar el fichero desde el gestor de ficheros GNOME sobre Gnumeric y
+esta abrir el ficheros. Esto tambin funciona con aplicaciones diseadas
+utilizando Motif. Puede arrastrar una URL guardada sobre Netscape 4x y
+abrir la URL. Esto puede ser muy til si esta trabajando en el gestor
+de ficheros GNOME y desea abrir rpidamente un fichero.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Aadir un lanzador de aplicacin al panel - Si quiere aadir un lanzador de 
+aplicacin al panel, puede arrastrar y soltar cualquier fichero ejecutable
+desde el gestor de ficheros GNOME, o desde el escritorio, sobre el panel.
+Se abrir el formulario de creacin de lanzador, permitindole elegir un 
+nombre y un icono para este lanzador.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Arrastrando Ficheros - Existen muchas formas de usar arrastrar y
+soltar para ayudarnos a manejar el sistema. Puede abrir dos ventanas
+del Gestor de Ficheros GNOME seleccionando dos directorios diferentes 
+y arrastrar
+ficheros de una ventana a otra para copiar, mover, o crear enlaces.
+Puede arrastrar ficheros desde el Gestor de Ficheros hacia el escritorio
+para hacerlomas accesibles. Use el botn central o el derecho e izquierdo
+del ratn simultaneamente y arrastre un directorio al Escritorio.
+Elija la opcin enlace del men desplegable para crear un enlace en el 
+escritorio.
+Esto le proporcionar una va fcil para ejecutar el gestor de ficheros y
+ver ese directorio.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Arrastrando Directorios - Usted puede arrastrar un directorio fuera del
+gestor de ficheros y colocarlo en el panel. Creando as un nuevo men, que le
+permitir acceder rpidamente a los ficheros de ese directorio.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Puede arrastrar cualquier submen desde el Men Principal hacia el
+panel y un nuevo men lanzador es aadido al panel.
+Esto permite acceder ms fcilmente a ese conjunto de sub-menus.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT1></CHAPTER>
+<CHAPTER ID="confpanel"><TITLE>
+Configuracin del panel
+</TITLE>
+<SECT1><TITLE>
+Introduccin
+</TITLE>
+<PARA><INDEXTERM ID="idx-a59"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Configuracin
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a60"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Personalizacin
+</SECONDARY></INDEXTERM>
+
+El panel GNOME es altamente configurable y viene equipado con muchas
+herramientas grficas para ayudarle en su configuracin. En esta seccin
+aprender como configurar cualquier panel GNOME de la manera que le guste.
+</PARA></SECT1>
+<SECT1 ID="confglobal"><TITLE>
+Propiedades globales del panel
+</TITLE>
+<PARA><INDEXTERM ID="idx-a61"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Propiedades globales del panel
+</SECONDARY></INDEXTERM>
+
+Para comenzar la configuracin del panel GNOME pulse el botn derecho
+en el panel y elija el tem de men 
+
+<GUIMENUITEM>
+Propiedades globales
+</GUIMENUITEM>
+
+. Puede tambin pulsar el botn 
+
+<GUIBUTTON>
+Men principal
+</GUIBUTTON>
+
+y elegir los tem de men 
+
+<GUIMENU>
+Panel
+</GUIMENU>
+
+|
+
+<GUIMENUITEM>
+Propiedades globales
+</GUIMENUITEM>
+
+.
+</PARA>
+<PARA>
+Esto abrir el formulario de configuracin global del panel.
+Con esta ventana de dialogo podr fijar las propiedades de todos
+los paneles que use y cualquier panel que aada en el futuro.
+
+<FIGURE><TITLE>
+El formulario de configuracin global del panel
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El formulario de configuracin global del panel
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/global-config" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+El formulario de configuracin global del panel contiene seis
+carpetas («tabs») que le ayudaran a configurar las 
+propiedades globales del panel GNOME:
+animacin, icono del lanzador, icono del cajn, icono del men, icono de fin
+de sesin, y varios. Cada una de estas carpetas se describe a continuacin.
+</PARA>
+<SECT2 ID="animtab"><TITLE>
+Carpeta de animacin
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Activar las animaciones
+</GUILABEL>
+
+-  
+Hace visibles los parmetros de animacin configurables de esta 
+carpeta. Las animaciones deben estar activas para usar el resto de la 
+funcionalidad de esta carpeta. La posicin por defecto es activa.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Velocidad de la animacin del auto-escondido
+</GUILABEL>
+
+- 
+Controla cuanto tarda en ocultarse el panel si tiene activada su ocultacin 
+automtica.
+.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Velocidad de la animacin de escondido manual
+</GUILABEL>
+
+-
+Controla la velocidad de ocultacin cuando se pulsa el botn de ocultacin del
+panel
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Velocidad de la animacin del cajn
+</GUILABEL>
+
+-  
+Controla la velocidad de aparicin del men de cajn si usa un panel de cajn. 
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Tiempo de minimizacin del auto-escondido (ms)
+</GUILABEL>
+
+- 
+Permite controlar cuanto tiempo pasa antes de que se oculte el panel si 
+lo tiene configurado para hacerlo automticamente. El tiempo comenzara a contar
+una vez que el ratn ya no este sobre el panel. Aparecer de nuevo cuando el ratn
+se desplace sobre la porcin del panel que queda visible.
+Este periodo se mide en milisegundos.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Tamao de minimizacin (puntos, «pixels») del auto-escondido
+</GUILABEL>
+
+- 
+Determina el numero de puntos que se mostraran mientras el panel este
+oculto si el panel se oculta automticamente.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="launchtab"><TITLE>
+Carpeta del icono del lanzador
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Dibujo de fondo activado
+</GUILABEL>
+
+-  
+Este conmutador activara el dibujo de fondo para todos los iconos 
+del panel.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo de fondo (sin pulsar)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino («path») del fichero con el dibujo 
+que se usara en
+el fondo en posicin sin pulsar (inactivo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo de fondo (pulsado)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino del fichero con el dibujo que se usara en
+el fondo en posicin pulsado (activo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Espesor del borde (solo fondo)
+</GUILABEL>
+
+- 
+Determina el ancho del borde alrededor del icono. Es muy til si tienes un
+icono que normalmente tapa todo el dibujo del fondo. Puede fijar el borde a 
+un tamao menor y continuar siendo capaz de ver el dibujo del fondo.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Profundidad (desplazamiento al pulsar)
+</GUILABEL>
+
+- 
+Determina la profundidad en el desplazamiento del icono cuando se pulsa. Los
+dibujos de fondo deben estar activos para acceder a esta opcin.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="drawertab"><TITLE>
+Carpeta del icono del cajn
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Fondo activado
+</GUILABEL>
+
+-  
+Este conmutador activara los dibujos de fondo para todos los cajones 
+del panel.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo de fondo (sin pulsar)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino del fichero con el dibujo que se usara en
+el fondo en posicin sin pulsar (inactivo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+de cajn deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo de fondo (pulsado)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino del fichero con el dibujo que se usara en
+el fondo en posicin pulsado (activo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+de cajn deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Espesor del borde (solo fondo)
+</GUILABEL>
+
+- 
+Determina el ancho del borde alrededor del fondo.  Los
+dibujos de fondo de cajn deben estar activos para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Profundidad (desplazamiento al pulsar)
+</GUILABEL>
+
+- 
+Determina la profundidad en el desplazamiento del icono cuando se pulsa. Los
+dibujos de fondo deben estar activos para acceder a esta opcin.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="menutab"><TITLE>
+Carpeta del icono del men
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Dibujo de fondo activado
+</GUILABEL>
+
+-  
+Este conmutador activara los dibujos de fondo para 
+el botn del 
+
+<GUIBUTTON>
+Men principal
+</GUIBUTTON>
+
+en el panel.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo fondo (sin pulsar)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino del fichero con el dibujo que se usara en
+el fondo en posicin sin pulsar (inactivo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+de men deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo fondo (pulsado)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino del fichero con el dibujo que se usara en
+el fondo en posicin pulsado (activo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Espesor del borde (solo fondo)
+</GUILABEL>
+
+- 
+Determina el ancho del borde alrededor del icono. Los fondos 
+deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Profundidad (desplazamiento al pulsar)
+</GUILABEL>
+
+- 
+Determina la profundidad en el desplazamiento del icono cuando se pulsa. Los
+dibujos de fondo deben estar activos para acceder a esta opcin.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="logouttab"><TITLE>
+Carpeta del icono de fin de sesin
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Dibujo de fondo activado
+</GUILABEL>
+
+-  
+Este conmutador activara el dibujo de fondo para todos los cajones 
+del panel.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo de fondo (sin pulsar)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino del fichero con el dibujo que se usara en
+el fondo en posicin sin pulsar (inactivo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+de cajn deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Nombre del archivo fondo (pulsado)
+</GUILABEL>
+
+-  
+Este es el nombre y el camino del fichero con el dibujo que se usara en
+el fondo en posicin pulsado (activo). Puede pulsar el botn
+
+<GUIBUTTON>
+Bsqueda
+</GUIBUTTON>
+
+para localizar los ficheros. Los fondos 
+de cajn deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Espesor del borde (solo fondo)
+</GUILABEL>
+
+- 
+Determina el ancho del borde alrededor del icono. Los fondos 
+deben estar activados para acceder a esta opcin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Espesor del borde (solo fondo)
+</GUILABEL>
+
+- 
+Determina la profundidad en el desplazamiento del icono cuando se pulsa. Los
+dibujos de fondo deben estar activos para acceder a esta opcin.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="misctab"><TITLE>
+Carpeta de miscelneos
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Recordatorios activados
+</GUILABEL>
+
+- 
+Activa los recordatorios («tips») para los elementos del panel. Los recordatorios son 
+cajetines desplegables
+de ayuda que aparecen cuando el ratn esta sobre un elemento del panel.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Muestra iconos pequeos
+</GUILABEL>
+
+- 
+Muestra iconos pequeos en el men principal.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Mostrar botones con puntos suspensivos
+</GUILABEL>
+
+- 
+Activa la aparicin de puntos suspensivos en los tem del men principal
+que despliegan formularios.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Mostrar mens desplegables fuera de los paneles
+</GUILABEL>
+
+- 
+Permite cuando esta activo la aparicin de mens desplegables mas all del 
+panel. Cuando pasa a inactivo los mens desplegables aparecen sobre el panel.
+Esto puede ser til en pantallas pequeas y escritorios abarrotados.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Mantener los mens en memoria
+</GUILABEL>
+
+- 
+Permite mantener los mens en memoria de forma que no se examinan de nuevo en
+busca de nuevos tem. Esto puede incrementar la velocidad de GNOME pero puede
+tambin provocar la falta de nuevos tem aadidos a su men. 
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Movimiento alternado
+</GUILABEL>
+
+- 
+Permite que los botones de aplicaciones del panel intercambien sus posiciones
+con otros iconos cuando los movemos. 
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Movimiento libre (no afecta a los otros apliques)
+</GUILABEL>
+
+-
+Esta funcionalidad bloquea la disposicin de los iconos en el panel (a excepcin
+del que se est moviendo). Es una
+funcionalidad prctica si esta a gusto con la disposicin actual de los iconos.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Preguntar antes de salir
+</GUILABEL>
+
+- 
+Despliega un formulario que pide la confirmacin antes de abandonar la sesin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Primer plano para paneles sobrevolados por el ratn
+</GUILABEL>
+
+- 
+Si esta usando un gestor de ventanas no compatible con GNOME, puede no 
+entenderse con el panel. Esto puede provocar que las aplicaciones tapen
+el panel. Si activa esta funcionalidad puede lograr que el panel se site en
+primer plano cuando el ratn este sobre el.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Panel detrs de las ventanas
+</GUILABEL>
+
+- 
+Si esta usando GNOME con un gestor de ventanas compatible, se entender
+con el panel. Si activa esta funcionalidad el gestor de ventanas y GNOME
+permitirn a las aplicaciones aparecer sobre el panel. Esto puede resultar
+til en pantallas pequeas.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Cerrar un cajn al accionar uno de sus lanzadores
+</GUILABEL>
+
+- 
+Por defecto los cajones permanecern abiertos cuando elige uno de sus tem.
+Esto puede resultar incomodo ya que el cajn permanecer abierto hasta que lo
+cierre con una pulsacin de ratn. Con esta opcin los cajones indicados se
+cerraran automticamente cuando elija uno de sus tem.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Espacio entre apliques
+</GUILABEL>
+
+- 
+Cambia el espacio (relleno) entre iconos y apliques.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2></SECT1>
+<SECT1 ID="confthis"><TITLE>
+Propiedades de este panel
+</TITLE>
+<PARA><INDEXTERM ID="idx-a62"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Propiedades de este panel
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a63"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Propiedades
+</SECONDARY></INDEXTERM>
+
+Las propiedades de cada panel pueden configurarse de forma individual.
+Para cambiar la configuracin del panel activo, pulsa el botn derecho
+en el panel y elija el tem 
+
+<GUIMENUITEM>
+Propiedades de este panel
+</GUIMENUITEM>
+
+del men 
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+. Puede tambin
+pulsar el botn 
+
+<GUIBUTTON>
+Men principal
+</GUIBUTTON>
+
+y elegir los tem
+
+<GUIMENU>
+Panel
+</GUIMENU>
+
+|      
+
+<GUIMENUITEM>
+Propiedades de este
+panel
+</GUIMENUITEM>
+
+del men.
+</PARA>
+<PARA>
+Se desplegara el formulario de propiedades del panel. En este formulario
+podr cambiar las propiedades del panel activo.
+</PARA>
+<FIGURE><TITLE>
+Formulario de propiedades de este panel
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Formulario de propiedades de este panel
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/thispanel" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+El formulario de propiedades de panel contiene dos carpetas para ayudarle a
+configurar las propiedades del panel activo: panel de lado y fondo.
+Estas dos carpetas se describen a continuacin.
+Si ha convertido el panel a uno de esquina, transformacin que se puede realizar
+seleccionando dicha iopcin en el men principal, una carpeta etiquetadada como
+panel de esquina sustituir la carpeta panel de lado.
+</PARA>
+<SECT2 ID="edgetab"><TITLE>
+Carpeta panel de fondo
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Posicin
+</GUILABEL>
+
+- 
+Cambia la posicin del panel en la pantalla. Puede elegir bien superior, 
+derecha, izquierda o bien inferior. El panel cambiara de posicin una vez
+que pulse el botn 
+
+<GUIBUTTON>
+Aplicar
+</GUIBUTTON>
+
+.
+</PARA></LISTITEM>
+<LISTITEM><PARA><INDEXTERM ID="idx-a64"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Ocultacin automtica
+</SECONDARY></INDEXTERM>
+<GUILABEL>
+Opciones de minimizacin
+</GUILABEL>
+
+- 
+Estas opcines le permitirn bien ocultar usted mismo el panel usando los 
+botones de ocultacin o que se oculte automticamente cuando el ratn no esta
+sobre el. Si elige la ocultacin automtica puede querer deshabilitar los 
+botones de ocultacin aqu mismo. Puede tambin deshabilitar las flechas de
+los botones de ocultacin del panel.  
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="panelbacktab"><TITLE>
+Carpeta de fondo
+</TITLE>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><INDEXTERM ID="idx-a65"><PRIMARY>
+Panel
+</PRIMARY>
+<SECONDARY>
+Fondo
+</SECONDARY></INDEXTERM>
+<GUILABEL>
+Fondo
+</GUILABEL>
+
+- 
+Estas opcines le permiten cambiar el fondo del panel mismo. Puede elegir,
+si lo desea, tener el fondo estndar, mapa de puntos, o de color. La imagen
+estndar para el panel la determina el tema GTK que este ejecutando en ese
+momento. La opcin mapa de puntos permite escoger una imagen para 
+el panel (de fondo o escalada). La opcin de color permite 
+especificar un determinado color para el panel. 
+</PARA></LISTITEM></ITEMIZEDLIST>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Una forma sencilla de cambiar el fondo de su panel es arrastrar y soltar un
+fichero de imagen desde el gestor de fichero GNOME hasta el panel. Esto 
+cambiara automticamente el fondo del panel a esta imagen.
+</PARA></IMPORTANT>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Fichero de imagen
+</GUILABEL>
+
+- 
+Si desea usar un mapa de puntos para el fondo de su panel, aqu se le
+permitir elegir que imagen usar. Si pulsa el botn 
+
+<GUIBUTTON>
+Buscar
+</GUIBUTTON>
+
+podr buscar el fichero que desee usar.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Escalar la imagen para llenar el panel
+</GUILABEL>
+
+-  
+Escala una imagen de fondo al tamao del panel. Si no esta pulsado la imagen
+formar un fondo en el panel.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Color de fondo
+</GUILABEL>
+
+- 
+Si elige usar un color de fondo en el panel este botn desplegara un formulario
+para permitirle elegir el color usado.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2></SECT1></CHAPTER>
+<CHAPTER ID="mainmenu"><TITLE>
+Edicin del men principal
+</TITLE>
+<SECT1><TITLE>
+Introduccin
+</TITLE>
+<PARA><INDEXTERM ID="idx-a66"><PRIMARY>
+Men principal
+</PRIMARY>
+<SECONDARY>
+Edicin
+</SECONDARY></INDEXTERM>
+
+El men principal es un repositorio para sus aplicaciones y podra localizarlo
+en el panel. El men principal se carga conjuntamente con GNOME pero puede
+configurarse para adaptarse a sus hbitos de trabajo. El men principal se 
+divide en dos subdirectorios principales: los mens de sistema y los mens
+de usuario. Dispone del editor de men para aadir nuevas aplicaciones al
+men principal pero no podr aadir aplicaciones al men de sistemas a no
+ser que sea el administrador del sistema («root»). En esta seccin aprender
+como configurar el men principal con las aplicaciones que desee utilizar
+a diario.  
+</PARA>
+<SECT2 ID="menuconf"><TITLE>
+Configuracin del men principal
+</TITLE>
+<PARA><INDEXTERM ID="idx-a67"><PRIMARY>
+Men principal
+</PRIMARY>
+<SECONDARY>
+Configuracin
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a68"><PRIMARY>
+Men principal
+</PRIMARY>
+<SECONDARY>
+Propiedades
+</SECONDARY></INDEXTERM>
+
+Si quiere cambiar las propiedades del men principal o de cualquier
+otro men que tenga en su panel, puede pulsar el botn derecho sobre
+el icono y elegir
+
+<GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+. Se desplegara el formulario
+
+<GUILABEL>
+de propiedades del men.
+</GUILABEL></PARA>
+<FIGURE><TITLE>
+Formulario de propiedades del men
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Formulario de propiedades del men
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/menu-props" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+El primer tem del formulario de
+
+<GUILABEL>
+propiedades de men
+</GUILABEL>
+
+es el 
+
+<GUILABEL>
+tipo de men
+</GUILABEL>
+
+. Permite elegir para cada elemento si debe estar directamente en el 
+men principal, debe moverse a un submen del men principal, o
+debe eliminarse completamente del men principal.
+</PARA>
+<PARA>
+Las dems opcines en el formulario
+
+<GUILABEL>
+de propiedades de men
+</GUILABEL>
+
+son opcines de sub-men para los mens principales. Estas opcines
+le permiten escoger las cosas que tendr en el men principal, en
+un sub-men, o que no se presentarn: 
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Mens de sistema - Este es el men con las aplicaciones
+entregadas por defecto con GNOME.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Men de usuario - Contiene cualquier tem de men aadido usando
+el editor de mens desde su cuenta de usuario.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Otros niveles de men - Si usa una distribucin Red Hat Linux
+aqu esta el conjunto de aplicaciones que se suministran por defecto
+con esta distribucin.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Men KDE - Si usa el entorno de escritorio KDE puede decidir incluir
+las aplicaciones incluidas en los mens KDE.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Men Deban - Si usa una distribucin Deban Linux aqu esta el 
+conjunto de aplicaciones que se suministran por defecto con esta
+distribucin.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT2>
+<SECT2 ID="menueditor"><TITLE>
+Uso del editor de mens
+</TITLE>
+<PARA>
+El editor de mens es una herramienta destinada al men principal. Es muy
+til para adaptar el sistema a sus necesidades. El editor de mens se 
+arranca pulsando en el men principal de aplicaciones y seleccionando 
+
+<GUIMENUITEM>
+Sistema
+</GUIMENUITEM>
+
+| 
+
+<GUIMENUITEM>
+Editor de men 
+</GUIMENUITEM>
+
+en el 
+
+<GUIMENU>
+Men principal
+</GUIMENU>
+
+.
+</PARA>
+<PARA>
+Esto arrancara el editor de mens.
+
+<FIGURE><TITLE>
+El editor de mens
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El editor de mens
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/menueditor" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+El editor de mens se divide en dos secciones principales. La parte
+izquierda contiene el men tal y como se muestra actualmente. La parte
+derecha contiene un formulario tabulado que permite aadir nuevas 
+aplicaciones al men.
+</PARA>
+<PARA>
+En el lado izquierdo en el rbol de mens podrs apreciar la existencia
+de dos listas principales de mens, una para mens de usuario y otra para
+mens de sistema.  Los mens de usuario son los del usuario actual y los
+mens de sistema estn definidos para todos los usuarios del sistema. 
+las aplicaciones
+incluidas de serie se encuentran todas en los mens de sistema. 
+</PARA>
+<PARA>
+Mientras se encuentre en la lista de mens del lado izquierdo podr
+abrir y cerrar carpetas y ver lo que hay en el men actual pulsando en el
+pequeo smbolo ms al lado de los mens.
+</PARA></SECT2>
+<SECT2 ID="menuadd"><TITLE>
+Aadir un nuevo elemento al men
+</TITLE>
+<PARA><INDEXTERM ID="idx-a69"><PRIMARY>
+Men principal
+</PRIMARY>
+<SECONDARY>
+Aadir un nuevo elemento al men
+</SECONDARY></INDEXTERM>
+
+Si quiere aadir un nuevo elemento al men pulse el botn 
+
+<GUIBUTTON>
+Nuevo elemento
+</GUIBUTTON>
+
+en la barra de elementos.
+Un nuevo tem de men se aadira all donde el men este resaltado.
+Si no tiene ningn men seleccionado, se colocara en la parte superior
+del rbol de mens. Seleccione el nuevo tem y complete la informacin del
+elemento en el formulario de la derecha. Una vez que complete la informacin
+pulse el botn 
+
+<GUIBUTTON>
+Guardar
+</GUIBUTTON>
+
+y el nuevo elemento se insertara
+en la posicin resaltada del rbol de mens de la derecha. Puede entonces
+moverlo pulsando los botones 'hacia arriba' y 'hacia abajo' en la
+barra de  herramientas. Tambin puede moverse un tem de men arrastrndolo
+con el botn izquierdo del ratn.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Tenga en cuenta que no puede cambiar los mens de sistema a no ser que este
+presentado como «root». Un usuario normal solo podr aadir, borrar  , y editar,
+los mens de usuario.
+</PARA></IMPORTANT></SECT2>
+<SECT2 ID="menudrag"><TITLE>
+Arrastrar y soltar en el men principal
+</TITLE>
+<PARA>
+En el editor de men - El editor de mens soporta la funcionalidad de 
+arrastrar y soltar que har ms fcil su trabajo. Puede arrastrar aplicaciones
+hasta las carpetas donde quiera que residan o reorganizar sus carpetas
+completamente.
+</PARA>
+<PARA>
+Hasta el panel - Si quiere colocar un tem de men en el panel, puede arrastrar
+y soltar desde el men hasta el panel y colocara all un lanzador con todas
+la propiedades necesarias. Si prefiere no usar la funcin arrastrar y soltar
+puede tambin pulsar el botn derecho en el tem de men y elegir del men
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+la opcin
+
+<GUIMENUITEM>
+Aadir este lanzador al panel
+</GUIMENUITEM></PARA></SECT2></SECT1></CHAPTER>
+<CHAPTER ID="gcc"><TITLE>
+El centro de control de GNOME
+</TITLE>
+<SECT1><TITLE>
+Introduccin
+</TITLE>
+<PARA><INDEXTERM ID="idx-a71"><PRIMARY>
+El centro de control de GNOME
+</PRIMARY></INDEXTERM>
+<INDEXTERM><PRIMARY>
+Apliques C
+</PRIMARY>
+<SEE>
+El centro de control de GNOME
+</SEE></INDEXTERM>
+
+El centro de control de GNOME permite configurar varias partes de su sistema
+usando una coleccin de herramientas llamadas apliques C, «apliques».
+Estos apliques C pueden asociarse con el conjunto central de las aplicaciones
+GNOME o con otras aplicaciones para las que los programadores hayan escrito
+apliques C.
+</PARA>
+<PARA>
+El centro de control puede contener mas apliques de las aqu documentadas
+dependiendo de las aplicaciones instaladas en su sistema.
+</PARA>
+<PARA>
+El centro de control se divide en dos secciones principales, el men de
+apliques de configuracin y el espacio de trabajo principal.
+</PARA>
+<PARA>
+Trabajar con el centro de control requiere simplemente la eleccin de un
+aplique del men izquierdo y la doble pulsacin sobre el. Una vez hecho
+esto, el espacio de trabajo cambiara, permitindole configurar el tem elegido.
+</PARA>
+<PARA><FIGURE><TITLE>
+El centro de control de GNOME
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El centro de control de GNOME
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/control-center" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+Puede arrancar el centro de control de dos maneras. Para lanzar el
+centro de control sin ningn aplique concreto seleccione en el
+submen de 
+
+<GUIMENUITEM>
+Caractersticas
+</GUIMENUITEM>
+
+del
+
+<GUIMENU>
+men principal
+</GUIMENU>
+
+.
+</PARA>
+<PARA>
+Si sabe que aplique quiere utilizar puede arrancarlo seleccionando el
+oportuno tem en el men del
+
+<GUIMENU>
+centro de control
+</GUIMENU>
+
+.
+</PARA></SECT1>
+<SECT1 ID="gccdesktop"><TITLE>
+apliques C del escritorio
+</TITLE>
+<SECT2 ID="gccback"><TITLE>
+El  aplique C de propiedades del fondo
+</TITLE>
+<PARA><INDEXTERM ID="idx-a72"><PRIMARY>
+El centro de control de GNOME
+</PRIMARY>
+<SECONDARY>
+Escritorio
+</SECONDARY></INDEXTERM>
+
+Las propiedades de la imagen del fondo pueden fijarse desde aqu bien 
+eligiendo un color o una imagen. Si elige un color tiene la opcin de 
+usar un color slido o un degradado. Si elige un degradado puede elegir
+entre un degradado horizontal o vertical y escoger el segundo color
+en el que termina el degradado.
+</PARA>
+<PARA>
+Si decide usar una imagen como fondo puede buscar la imagen que desee usar.
+Una vez que haya encontrado la imagen debera decidir si quiere que 
+forme un mosaico a toda pantalla, este centrada, se redimensione conservando su aspecto,
+o simplemente se redimensione para ocupar toda la pantalla. Una que haya cambiado las propiedades del
+tapiz puede pulsar el botn 
+
+<GUIBUTTON>
+Prueba
+</GUIBUTTON>
+
+en la parte
+inferior del centro de control para realizar los cambios.
+</PARA>
+<PARA>
+Si quiere configurar el fondo de cualquier otra forma, puede deshabilitar
+este aplique seleccionando 
+
+<GUILABEL>
+Desactivar la seleccion del fondo
+</GUILABEL>
+
+.
+
+<FIGURE><TITLE>
+El aplique de propiedades del fondo
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique de propiedades del fondo
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/bg-aplique" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA></SECT2>
+<SECT2 ID="gccscreen"><TITLE>
+El aplique propiedades del protege pantallas 
+</TITLE>
+<PARA><INDEXTERM ID="idx-a73"><PRIMARY>
+El centro de control de GNOME
+</PRIMARY>
+<SECONDARY>
+Salva pantallas
+</SECONDARY></INDEXTERM>
+
+En este aplique puede cambiar las propiedades del salva pantallas. Este
+aplique contiene una lista de los salva pantallas disponibles para su 
+eleccin y una ventana de demostracin. Debajo de estas ventanas de dialogo
+pueden verse un conjunto de herramientas que le permiten cambiar los valores
+de las propiedades globales de los salva pantallas. Si el salva pantallas que 
+ha escogido tiene parmetros particulares puede cambiarlos pulsando el botn
+
+<GUIBUTTON>
+Parmetros
+</GUIBUTTON>
+
+que aparece debajo de la lista de salva
+pantallas.
+</PARA>
+<PARA>
+Configuracin del salva pantallas - En esta seccin del aplique puede cambiar 
+los valores del temporizador, la necesidad de clave, el
+uso del gestor de consumo. Puede decidir cuanto tiempo quiere que espere
+el salva pantallas antes de arrancar tecleando el numero de minutos en la
+casilla de texto 
+
+<GUILABEL>
+Activar despus de
+</GUILABEL>
+
+. Si desea una clave
+para volver al escritorio pulse el conmutador 
+
+<GUIBUTTON>
+Clave obligatoria
+</GUIBUTTON>
+
+. La clave de su cuenta de acceso
+es la clave solicitada por el salva pantallas. 
+</PARA>
+<PARA>
+Dispone tambin de la opcin de usar el gestor de consumo -- si su monitor
+esta preparado para ello. Puede fijar el tiempo de espera antes de apagar el
+monitor tecleando el valor en la casilla de texto 
+
+<GUILABEL>
+Apagar el monitor
+</GUILABEL>
+
+.
+
+<FIGURE><TITLE>
+El aplique propiedades del salva pantallas
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique propiedades del salva pantallas
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/screensave-aplique" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA></SECT2>
+<SECT2 ID="gcctheme"><TITLE>
+Selector de temas
+</TITLE>
+<PARA><INDEXTERM ID="idx-a74"><PRIMARY>
+El centro de control de GNOME
+</PRIMARY>
+<SECONDARY>
+Selector de temas
+</SECONDARY></INDEXTERM>
+
+El aplique temas contiene el selector de temas que permite elegir
+que tema GTK desea ejecutar.
+</PARA>
+<PARA>
+Los temas GTK permiten cambiar el aspecto de grupos de «widget» GTK.
+El conjunto de «widget» es el grupo de herramientas que proporciona
+los botones, barras de deslizamiento, casillas, etc. de las aplicaciones.
+Las aplicaciones compatibles GNOME usan ese grupo de herramientas GTK de 
+que la mayora de las aplicaciones GNOME cambiaran su aspecto si cambia
+el tema GTK.
+</PARA>
+<PARA>
+Para cambiar el tema GTK elija un tema de la lista de temas disponibles 
+en el lado izquierdo del espacio principal de trabajo. Si tiene activado
+la vista previa automtica podr ver el aspecto del tema en la ventana de 
+visualizacin previa inferior. Si le gusta el tema pulse el botn 
+
+<GUIBUTTON>
+Probar
+</GUIBUTTON>
+
+en la parte inferior del centro de control
+GNOME para instalarlo.
+</PARA>
+<PARA>
+Algunos temas GTK vienen ya cargados con GNOME al instalarlo. Si quiere
+mas temas puedes buscarlos en sitios de Internet como 
+
+<ULINK URL="http://gtk.themes.org" TYPE="http">
+http://gtk.themes.org
+</ULINK>
+
+.
+Una vez que haya localizado y copiado un tema de su gusto, pulse el botn
+
+<GUIBUTTON>
+Instalar un nuevo tema
+</GUIBUTTON>
+
+. 
+Esto arrancara un buscador de  ficheros que le permitir localizar el tema
+que acaba de copiar de la red. los ficheros del tema deberan estar en formato
+
+<COMMAND>
+tar.gz
+</COMMAND>
+
+o 
+
+<COMMAND>
+.tgz
+</COMMAND>
+
+(tambin conocido como
+un «tarball», bala de paja). Una vez que haya localizado el fichero pulse
+el botn 
+
+<GUIBUTTON>
+Ok
+</GUIBUTTON>
+
+y GNOME instalara el tema automticamente.
+Puede ahora buscar en la lista de temas disponibles el tema que acaba de
+instalar. 
+</PARA>
+<PARA>
+Una vez que el tema se haya desempaquetado en el directorio .themes, 
+aparecer en la ventana de temas disponibles la siguiente vez que arranque
+el centro de control GNOME.
+
+<FIGURE><TITLE>
+El aplique selector de temas
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique selector de temas
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/theme-select" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA>
+<PARA>
+Si quiere cambiar la tipografa usada por el tema actual puede hacerlo
+seleccionando la casilla  
+
+<GUILABEL>
+Use una tipografa personalizada
+</GUILABEL>
+
+y eligiendo la tipografa en el botn de tipografas debajo de esta casilla.
+Esto abrir un formulario de seleccin de tipografas que le permitir
+la eleccin de una tipografa, su estilo, y tamao.
+</PARA></SECT2>
+<SECT2 ID="gccwm"><TITLE>
+Aplique gestor de ventanas
+</TITLE>
+<PARA><INDEXTERM ID="idx-a75"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Gestor de ventanas
+</SECONDARY>
+<SEEALSO>
+Gestor de ventanas
+</SEEALSO></INDEXTERM>
+
+Dado que GNOME no depende de ningn gestor de ventanas, este aplique
+le permite elegir el gestor de ventanas que desee usar. El aplique del
+gestor de ventanas no determina que gestores de ventanas estn disponibles,
+sino que le permite definir cuales lo estn y donde encontrarlos. 
+</PARA>
+<FIGURE><TITLE>
+Aplique gestor de ventanas
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Aplique gestor de ventanas
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/wm-main" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+El aplique gestor de ventanas tiene una lista de los gestores de
+ventanas que puede elegir. El gestor de ventanas activo se indica con
+la palabra activo. 
+</PARA>
+<PARA>
+Si quiere aadir un nuevo gestor de ventanas a la lista principal,
+debe pulsar el botn
+
+<GUIBUTTON>
+Aadir
+</GUIBUTTON>
+
+. Se desplegara el formulario
+
+<GUILABEL>
+Aadir un nuevo gestor de ventanas
+</GUILABEL>
+
+.
+</PARA>
+<FIGURE><TITLE>
+Aadir un nuevo gestor de ventanas
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Aadir un nuevo gestor de ventanas
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/wm-add" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+En el formulario
+
+<GUILABEL>
+Aadir un nuevo gestor de ventanas
+</GUILABEL>
+
+puede especificar el nombre que quiera darle al gestor de ventanas,
+el comando para arrancar este gestor de ventanas, y el comando para
+arrancar cualquier herramienta de configuracin que pueda estar 
+disponible para este gestor de ventanas. 
+</PARA>
+<PARA>
+Si sabe que el gestor de ventanas es totalmente compatible con GNOME
+y pueden controlarse sus sesiones de trabajo, puede seleccionar
+el botn
+
+<GUILABEL>
+Gestor de ventanas con sesiones de trabajo controladas
+</GUILABEL>
+
+Si no esta seguro, consulte la documentacin de su gestor de ventanas.
+</PARA>
+<PARA>
+Pulse
+
+<GUIBUTTON>
+OK
+</GUIBUTTON>
+
+cuando todo este listo.
+</PARA>
+<PARA>
+Una vez que haya terminado de aadir el gestor de ventanas, vera como aparece
+en la lista principal de gestores de ventanas. Si necesita modificar 
+cualquiera de las caractersticas indicadas en el formulario
+
+<GUILABEL>
+Aadir un nuevo gestor de ventanas
+</GUILABEL>
+
+, puede seleccionar el gestor de ventanas en la lista principal usando
+el ratn y pulsar el botn
+
+<GUIBUTTON>
+Editar
+</GUIBUTTON>
+
+. 
+</PARA>
+<PARA>
+Tambin puede eliminar cualquier gestor de ventanas de la lista
+principal, seleccionndolo con el ratn y pulsando el botn 
+
+<GUIBUTTON>
+Borrar
+</GUIBUTTON>
+
+.
+</PARA>
+<PARA>
+Si esta listo para cambiar el gestor de ventanas actual, puede 
+seleccionar el gestor que quiera ejecutar de la lista principal
+y pulsar el botn
+
+<GUIBUTTON>
+Prueba
+</GUIBUTTON>
+
+. Si quiere ejecutar la herramienta de configuracin 
+, asegrese de seleccionar el gestor que desee configurar y pulse
+el botn
+
+<GUIBUTTON>
+Ejecutar la herramienta de configuracin para [gestor de ventanas]
+</GUIBUTTON>
+
+.
+</PARA></SECT2></SECT1>
+<SECT1 ID="gccedit"><TITLE>
+Editor por defecto 
+</TITLE>
+<PARA><INDEXTERM ID="idx-a76"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Editor por defecto
+</SECONDARY></INDEXTERM>
+
+El aplique-c editor por defecto permite seleccionar cual ser
+el editor por defecto durante el uso de GNOME. Esto permitir a  
+aplicaciones como el gestor de ficheros de GNOME arrancar el editor correcto
+cuando intente abrir ficheros asociados con la edicin. Todos los editores
+populares disponibles estn incluidos en la lista de seleccin.
+Este aplique es muy similar al aplique tipos Mime, pero se usa en
+asociacin con algunas aplicaciones.
+</PARA>
+<FIGURE><TITLE>
+Editor por defecto 
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Editor por defecto
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gccedit" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT1>
+<SECT1 ID="gccmime"><TITLE>
+Tipos Mime GNOME
+</TITLE>
+<PARA><INDEXTERM ID="idx-a77"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Tipos Mime GNOME
+</SECONDARY></INDEXTERM>
+
+El aplique tipos Mime permite determinar como quiere manejar 
+algunos tipos de ficheros, o tipos Mime. Mime significa extensiones
+multiproposito para correo internet, «Multipurpose Internet Mail Extensions»,
+y se desarrollaron originalmente para permitir que el correo electrnico
+transportara varios tipos de datos. En GNOME puede definir la forma en que
+desea manejar algunos tipos Mime. Por ejemplo, si usa a menudo ficheros 
+.sgml y quiere usar siempre Emacs para editarlos, puede configurar el tipo
+Mime .sgml para que siempre lo maneje Emacs. Esto significa que cualquier
+programa que vaya a presentarle ese tipo Mime, deber utilizar
+Emacs. Esto incluye el doble click sobre el fichero en el 
+gestor de ficheros GNOME.
+</PARA>
+<FIGURE><TITLE>
+Los Tipos Mime en GNOME
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Los Tipos Mime en GNOME
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gccmime" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE>
+<PARA>
+Para aadir un nuevo tipo mime pulse el botn
+
+<GUIBUTTON>
+Aadir
+</GUIBUTTON>
+
+. Esto desplegara el formulario 
+
+<GUILABEL>
+Aadir un nuevo tipo Mime
+</GUILABEL>
+
+en el que podr definir nuevos tipos Mime.
+</PARA>
+<PARA>
+Para editar un tipo Mime ya existente, puede seleccionarlo con el
+cursor del ratn y pulsar el botn de edicin. Se desplegara el
+formulario 
+
+<GUILABEL>
+Asignar acciones a...
+</GUILABEL>
+
+. Puede definir el icono usado para cada tipo Mime,
+en las siguientes acciones:  
+
+<GUILABEL>
+Abrir
+</GUILABEL>
+
+,
+
+<GUILABEL>
+Ver
+</GUILABEL>
+
+y 
+
+<GUILABEL>
+Editar
+</GUILABEL>
+
+.
+</PARA></SECT1>
+<SECT1 ID="gccmm"><TITLE>
+Los apliques multimedia
+</TITLE>
+<SECT2 ID="gcc-keybell"><TITLE>
+Alarma de teclado
+</TITLE>
+<PARA><INDEXTERM ID="idx-a78"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Multimedia
+</SECONDARY></INDEXTERM>
+<INDEXTERM ID="idx-a79"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Alarma de teclado
+</SECONDARY></INDEXTERM>
+
+El aplique de la alarma de teclado permite cambiar el sonido
+de campana que produce el altavoz de su ordenador cuando se produce
+un error tecleando o se recibe un aviso.
+</PARA>
+<PARA>
+Volumen, cambia el volumen actual de la alarma.
+</PARA>
+<PARA>
+El indicador de tono cambia el tono de la nota emitida. Por defecto 
+es de 440 Hz, o la nota Do («A above middle C»). 
+</PARA>
+<PARA>
+Duracin, cambia el intervalo de tiempo durante el cual se emite la
+nota.
+</PARA>
+<PARA>
+El botn de  
+
+<GUIBUTTON>
+Prueba
+</GUIBUTTON>
+
+le permitir escuchar el ajuste actual de la alarma del teclado.
+</PARA>
+<FIGURE><TITLE>
+El aplique alarma del teclado
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique alarma del teclado
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/keybell" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT2>
+<SECT2 ID="gccsound"><TITLE>
+El aplique propiedades de sonido
+</TITLE>
+<PARA><INDEXTERM ID="idx-a80"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Sonido
+</SECONDARY></INDEXTERM>
+
+El aplique propiedades de sonido permite fijar los sonidos de su sesin GNOME.
+Hay dos carpetas seleccionables en el aplique propiedades de sonido:
+General y eventos de sonido.
+</PARA>
+<PARA><GUILABEL>
+Carpeta general
+</GUILABEL>
+
+- 
+De momento dispone de dos opcines entre las que escoger en la
+carpeta general, activar los sonidos para GNOME y para los eventos.
+Si selecciona 
+
+<GUILABEL>
+Activar el soporte de sonido GNOME
+</GUILABEL>
+
+deber asegurarse
+que el dispositivo de sonido GNOME (ESD) arranca en cada sesin
+GNOME. 
+
+<GUILABEL>
+Activar sonidos para los eventos
+</GUILABEL>
+
+har sonar cualquier fichero de sonido que haya activado en la carpeta
+
+<GUILABEL>
+Eventos de sonido
+</GUILABEL>
+
+cuando estos eventos ocurran. Con estos
+dos tem activos podr utilizar el gestor de sesiones que recordara sus
+opcines de sonido cada vez que entre o salga del panel.
+</PARA>
+<PARA><GUILABEL>
+Carpeta eventos de sonido
+</GUILABEL>
+
+- 
+Esta carpeta le permite navegar por los eventos de sonido en GNOME y 
+cambiarlos.
+</PARA>
+<PARA>
+Para cambiar un sonido asociado con un evento GNOME, escoja el evento en la
+lista jerrquica de la izquierda y pulse el botn 
+
+<GUIBUTTON>
+Buscar
+</GUIBUTTON>
+
+para localizar un fichero de sonido en su sistema que pueda asociarse a ese
+evento. Una vez que haya localizado un fichero de sonido puede pulsar el 
+botn 
+
+<GUIBUTTON>
+Escuchar
+</GUIBUTTON>
+
+para probarlo y ver si le gusta lo
+suficiente para escucharlo cada vez que ocurra el evento.
+
+<FIGURE><TITLE>
+El aplique propiedades de sonido
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique propiedades de sonido
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/sound-aplique" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA></SECT2></SECT1>
+<SECT1 ID="gccperiph"><TITLE>
+Perifricos
+</TITLE>
+<PARA><INDEXTERM ID="idx-a81"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Perifricos
+</SECONDARY></INDEXTERM>
+
+El aplique de esta seccin del centro de control la ayudara a configurar
+los dispositivos hardware de entrada, incluyendo el teclado, y el 
+comportamiento del ratn.
+</PARA>
+<SECT2 ID="gcckey"><TITLE>
+El aplique propiedades de teclado
+</TITLE>
+<PARA><INDEXTERM ID="idx-a82"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Teclado
+</SECONDARY></INDEXTERM>
+
+En la actualidad hay dos caractersticas del teclado en esta carpeta.
+Puede cambiar las propiedades de la 
+
+<GUILABEL>
+Repeticin automtica
+</GUILABEL>
+
+y las
+del  
+
+<GUILABEL>
+Clic del teclado
+</GUILABEL>
+
+.
+</PARA>
+<PARA><GUILABEL>
+Repeticin automtica
+</GUILABEL>
+
+permite 
+obtener la repeticin del carcter a la velocidad y con el retardo 
+fijados en este aplique al 
+mantener pulsada una tecla.
+
+<GUILABEL>
+Clic teclado
+</GUILABEL>
+
+activa un
+suave sonido clic cada vez que se pulsa una tecla.
+
+<FIGURE><TITLE>
+El aplique propiedades de teclado
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique propiedades de teclado
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/keyboard-aplique" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA></SECT2>
+<SECT2 ID="gccmouse"><TITLE>
+El aplique propiedades del ratn
+</TITLE>
+<PARA><INDEXTERM ID="idx-a83"><PRIMARY>
+Centro de control GNOME
+</PRIMARY>
+<SECONDARY>
+Ratn
+</SECONDARY></INDEXTERM>
+
+el aplique propiedades del ratn permite intercambiar la funcin de 
+los botones izquierdo y derecho del ratn y definir las propiedades de 
+
+<GUILABEL>
+Aceleracin
+</GUILABEL>
+
+y de 
+
+<GUILABEL>
+sensibilidad
+</GUILABEL>
+
+.
+</PARA>
+<PARA>
+El valor de la 
+
+<GUILABEL>
+Aceleracin
+</GUILABEL>
+
+permite cambiar la relacin
+entre la velocidad con la que mueve el ratn en la pantalla y el movimiento
+del ratn en la alfombrilla. El valor de la 
+
+<GUILABEL>
+sensibilidad
+</GUILABEL>
+
+permite fijar la velocidad a la que debe mover el ratn antes de que entre en
+juego la aceleracin que haya definido en el parmetro de 
+
+<GUILABEL>
+Aceleracin
+</GUILABEL>
+
+. 
+
+<FIGURE><TITLE>
+El aplique propiedades del ratn
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique propiedades del ratn
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/mouse-aplique" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></PARA></SECT2></SECT1>
+
+<SECT1 ID="gccsession"><TITLE>
+Gestor de sesiones
+</TITLE>
+<PARA><INDEXTERM ID="idx-a84"><PRIMARY>
+Centro de Control GNOME
+</PRIMARY>
+<SECONDARY>
+Gestor de sesiones
+</SECONDARY></INDEXTERM>
+
+El aplique gestor de sesiones le permite controlar la gestin de
+sesiones de GNOME. Esto incluye que programas arrancar al abrir una sesin, 
+icuando salvar automticamnete la 
+configuracin de GNOME, y cuando pedir confirmacin del cierre de la sesin. Puede leer mas sobre
+la gestin de sesiones en 
+
+<XREF LINKEND="session">
+. 
+</XREF></PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUILABEL>
+Formulario antes de cerrar la sesin
+</GUILABEL>
+
+- Esta primera opcin le permite deshabilitar el formulario presentado
+antes de cerrar la sesin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Salvado automtico de los cambios en la sesin
+</GUILABEL>
+
+- El gestor de sesiones salvara siempre los cambios realizados en la sesin
+cuando la cierre. Si esta opcin no esta activa, podr tambin salvar los
+cambios realizados en la sesin de trabajo, marcando la casilla apropiada en
+el formulario de cierre de sesin.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Arranque de programas no manejados por el gestor de sesiones.
+</GUILABEL>
+
+- Permite el arranque de aplicaciones no manejadas por el gestor de sesiones
+cada vez que arranque una sesin GNOME.
+</PARA>
+<NOTE><TITLE>
+NOTA
+</TITLE>
+<PARA>
+El gestor de sesiones no maneja los programas que no sean compatibles 
+con GNOME, as que no arrrancarn de nuevo si no aparecen en este listado.
+No necesita poner aqu las aplicaciones compatibles GNOME, 
+deber simplemente dejarlas arrancadas y salvar la sesin actual
+al cerrar la sesin.
+</PARA></NOTE>
+<PARA>
+Si desea aadir un nuevo programa en el
+
+<GUILABEL>
+Arranque de programas no manejados por el gestor de sesiones.
+</GUILABEL>
+
+pulse el botn
+
+<GUIBUTTON>
+Aadir
+</GUIBUTTON>
+
+. Esto desplegara un sencillo formulario  que le permitir especificar
+el comando para arrancar la aplicacin y la prioridad que se le debe
+asignar.
+</PARA>
+<PARA>
+La prioridad de la mayora de la aplicaciones que
+desee arrancar es de 50. Si tiene una aplicacin que necesite arrancar antes
+que las dems, tal que el gestor de ventanas, deber asignarle un numero
+de prioridad mas bajo. 
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Esta opcin es para usuarios expertos. A no ser que este familiarizado con
+los valores de las prioridades debera ejecutar las aplicaciones con
+prioridad 50.
+</PARA></IMPORTANT></LISTITEM>
+<LISTITEM><PARA><GUILABEL>
+Hojear los programas en ejecucin
+</GUILABEL>
+
+- Le permite ver las aplicaciones que se estn ejecutando en ese
+momento. Puede cerrarlas si lo desea y esas aplicaciones se eliminaran
+de su sesin GNOME. Las aplicaciones de esta lista son las de mayor prioridad
+y no debera cerrarlas. De todas formas, si hay partes de GNOME que no desea
+ejecutar, como el panel, es aqu donde deber cerrarlas para la sesin
+actual y para futuras sesiones de GNOME.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Esta opcin es para usuarios expertos. No debera cerrar aplicaciones
+que desee usar la prxima vez que arranque GNOME.
+</PARA></IMPORTANT></LISTITEM></ITEMIZEDLIST>
+<FIGURE><TITLE>
+El aplique gestor de sesiones
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+El aplique gestor de sesiones
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gcc-session" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT1>
+<SECT1 ID="gccui"><TITLE>
+User Interface Options
+</TITLE>
+<PARA><INDEXTERM ID="idx-a85"><PRIMARY>
+GNOME Control Center
+</PRIMARY>
+<SECONDARY>
+User Interface Options
+</SECONDARY></INDEXTERM>
+
+The  User Interface  Options allows  you to  change the  appearance of
+applications  that  are   GNOME-compliant.  You  may  recognize  these
+applications as  ones that are  pre-installed with GNOME or  ones that
+say they are built with GTK(the GIMP Toolkit).
+</PARA>
+<SECT2 ID="gccappdefaults"><TITLE>
+Application Defaults
+</TITLE>
+<PARA><INDEXTERM ID="idx-a86"><PRIMARY>
+GNOME Control Center
+</PRIMARY>
+<SECONDARY>
+Application Defaults
+</SECONDARY></INDEXTERM>
+
+The  Application Defaults  capplet allow  you to  change  certain user
+interface aspects of your GNOME compliant applications.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANT
+</TITLE>
+<PARA>
+Although this capplet  gives you great control over  the look and feel
+of your applications you should  consider these tools for advanced use
+only.
+</PARA></IMPORTANT>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+Can  detach  and  move  menubars   -  By  default  menubars  in  GNOME
+applications  may be  dragged  from their  usual  location and  placed
+anywhere within the application or desktop.  If you do not wish to use
+this feature you may turn it off.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Menus  have  relieved borders  -  By  default  menubars have  relieved
+borders. If you do not like this look you may turn this feature off.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Submenus  can be  torn off  -  This allows  the submenus  to have  the
+perforated line which allows you to  "tear" them off an have them as a
+small movable window.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Menu  items have icons  - Some  menu items  in applications  will have
+icons. If  you wish not  to see these  icons in applications  that use
+them you may turn off this feature.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Statusbar in  interactive when possible  - Some applications  can have
+the status bar at the bottom  become separated into its own window. If
+you would like to have those applications separate the status bar into
+another window you may turn on this option.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Statusbar progress  meter on right  - Some applications  have progress
+meters in  their statusbars. By  default these progress meters  are on
+the right side  of the statusbar. If  you wish them to be  on the left
+you may turn off this feature.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Can  detach  and  move  toolbars   -  By  default  toolbars  in  GNOME
+applications  may be  dragged  from their  usual  location and  placed
+anywhere within the application or desktop.  If you do not wish to use
+this feature, you may turn it off.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Toolbars  have relieved  border -  By default  toolbars  have relieved
+borders. If you do not like this look you may turn this feature off.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Toolbar buttons have  relieved border - By default  toolbar buttons do
+not have  relieved borders in  their natural state. They  do, however,
+change when the mouse is over them. If you wish them to be relieved at
+all times you may turn on this feature.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Toolbars have line separators -  By default toolbar buttons have small
+line separators  between them.  If you  so not wish  to have  the line
+separators you may turn this feature off.
+</PARA></LISTITEM>
+<LISTITEM><PARA>
+Toolbars have text labels - By default toolbar buttons have images and
+text to identify them. If you are familiar with the buttons and do not
+need the text you may turn on this feature.
+</PARA></LISTITEM></ITEMIZEDLIST>
+<FIGURE><TITLE>
+Applications Defaults Capplet
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Dialog Capplet
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gccappdef" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT2>
+<SECT2 ID="gccdialogs"><TITLE>
+Dialogs
+</TITLE>
+<PARA><INDEXTERM ID="idx-a87"><PRIMARY>
+GNOME Control Center
+</PRIMARY>
+<SECONDARY>
+Dialogs
+</SECONDARY></INDEXTERM>
+
+The Dialogs Capplet will allow  you to change the default settings for
+dialog  boxes in  GNOME compliant  applications.   A dialog  box is  a
+window  that is  launched by  an application  to help  perform  a task
+needed by  that application.  An example  of a dialog  box is  a Print
+dialog which appears when you  press a print button. The dialog allows
+you to  set print  options and start  the print process.   The Dialogs
+capplet will allow you to change the following options:
+</PARA>
+<PARA>
+Dialog  buttons -  Choose to  use  the default  buttons, buttons  more
+spread out, put buttons on the edges, put the buttons on the left with
+left-justify, and put buttons on the right with right-justify.
+</PARA>
+<PARA>
+Dialog buttons have icons - Some dialog buttons (for example "OK") can
+have icons  on them.  By default the  applications which  provide this
+have the icons turned on. If you wish not to see them you may turn off
+this feature.
+</PARA>
+<PARA>
+Use  statusbar  instead  of  dialog  when  possible  -  You  may  tell
+applications  to  use  the  statusbar  instead  of  a  dialog  if  the
+application  will allow  it. This  will  only work  with dialogs  that
+provide  information not  one that  require some  interaction  on your
+part.
+</PARA>
+<PARA>
+Dialog position - This will let you choose how the dialogs appear when
+launched. You  can let the window  manager decide for you  (or how you
+have  defined it  in  the window  manager  configuration), center  the
+dialogs on  the screen, or drop  them where the mouse  pointer is when
+they are launched.
+</PARA>
+<PARA>
+Dialog hints  - This will  let you change  the behavior of  the dialog
+hints  which are the  tooltips that  appear when  you move  your mouse
+button over  a button or part of  the dialog.  You may  choose to have
+hints handled like other windows, or let the window manager decide how
+to display them.
+</PARA>
+<PARA>
+Place dialogs over  application window when possible -  You may choose
+to place  dialog over the  applications when possible which  will help
+you keep  your windows  organized on your  screen If you  are familiar
+with other  operating systems  you may wish  to keep this  selected as
+this is how most operating systems handle dialogs.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANT
+</TITLE>
+<PARA>
+Although this capplet  gives you great control over  the look and feel
+of your applications you should  consider these tools for advanced use
+only.
+</PARA></IMPORTANT>
+<FIGURE><TITLE>
+Dialog Capplet
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Dialog Capplet
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gccdialog" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT2>
+<SECT2 ID="gccmdi"><TITLE>
+MDI
+</TITLE>
+<PARA><INDEXTERM ID="idx-a88"><PRIMARY>
+GNOME Control Center
+</PRIMARY>
+<SECONDARY>
+MDI
+</SECONDARY></INDEXTERM>
+
+The  MDI  capplet  allows  you  to  change  the  MDI  mode  for  GNOME
+applications.  MDI  stands for Multiple Document  Interface and refers
+to the how more than one document is displayed in GNOME applications.
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANT
+</TITLE>
+<PARA>
+Although this capplet  gives you great control over  the look and feel
+of your applications you should  consider these tools for advanced use
+only.
+</PARA></IMPORTANT>
+<PARA>
+The default  style in GNOME-compliant applications for  MDI is usually
+tabs or "notebooks" If you do not  like the tab look you may change it
+here.
+</PARA>
+<PARA>
+Default MDI  Mode - In addition  to Notebook, you  will find, Toplevel
+and Modal.  Notebook is the  default tab look, Toplevel  displays only
+the active document  on the top view until it is  closed and Modal has
+only one  toplevel which can contain  any of the documents  at any one
+time, however only one can be displayed. If you have ever used
+
+<APPLICATION>
+Emacs
+</APPLICATION>
+
+Modal is very similar to the way
+
+<APPLICATION>
+Emacs
+</APPLICATION>
+
+handles buffers.
+</PARA>
+<PARA>
+MDI notebook  tab position - If  you choose to use  the Notebook style
+you  may  then decide  where  you  want the  tabs  to  appear in  your
+applications. You may have them at  the top, left, right, or bottom of
+your  application.  Keep  in  mind  that  these  choices  will  affect
+applications that are GNOME compliant.
+</PARA>
+<FIGURE><TITLE>
+MDI Capplet
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+MDI Capplet
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/gccmdi" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT2></SECT1></CHAPTER>
+<CHAPTER ID="session"><TITLE>
+Unas palabras sobre el gestor de sesiones
+</TITLE>
+<SECT1 ID="session-intro"><TITLE>
+Introduccin
+</TITLE>
+<PARA>
+Ha podido entrever algunas cosas sobre la gestin de sesiones mientras lea 
+acerca de GNOME. El gestor de sesiones puede resultarle una herramienta
+muy til cuando use GNOME y las aplicaciones GNOME.
+</PARA>
+<PARA>
+La idea principal de la gestin de sesiones es que su trabajo se salvara
+cada vez que salga de GNOME. Su sesin GNOME se salva actualmente cuando
+sale, sin embargo usted no es consciente de que esto sucede.
+</PARA>
+<PARA>
+Probablemente una de las funciones mas tiles del gestor de sesiones es la
+capacidad de arrancar las aplicaciones que tenia abiertas cuando sali de
+GNOME. Esto se demuestra fcilmente cuando sale de GNOME y entra de nuevo.
+Vera como las aplicaciones aparecen de nuevo en el mismo estado dentro
+del escritorio, tal y como estaban cuando cerro  la sesin.
+</PARA>
+<PARA>
+Si quiere que ciertas aplicaciones arranquen cada vez se presente al sistema,
+aunque no estuvieran abiertas cuando se salvo la ultima sesin, deber 
+aadirlas usando el aplique C de gestin de sesiones sobre el que podrs 
+leer ms en  
+
+<XREF LINKEND="gccsession">
+.
+</XREF></PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Si ha odo algo acerca de datos de aplicacin gestionados a nivel de sesin,
+ha odo cosas relacionadas con el futuro de GNOME. Para que los datos de las
+aplicaciones se salven correctamente deber usar aplicaciones totalmente
+compatibles con GNOME. En el momento de publicar este manual no existe 
+ninguna aplicacin que ofrezca una gestin completa de sus datos, as que
+hasta que exista alguna y conozcas sus capacidades no debera confiar en el
+gestor de sesiones para salvar los datos de sus aplicaciones.
+</PARA></IMPORTANT></SECT1>
+<SECT1 ID="reset-session"><TITLE>
+Recuperacin de una sesin GNOME
+</TITLE>
+<PARA>
+Una de las caractersticas avanzadas del gestor de sesiones GNOME es su
+capacidad de recuperar una `sesin virgen', en el caso de que algo deje de
+funcionar correctamente. Para lograrlo se debe pulsar simultneamente las
+teclas
+
+<KEYCAP>
+CTRL
+</KEYCAP>
+
+y
+
+<KEYCAP>
+SHIFT
+</KEYCAP>
+
+al iniciar una sesin GNOME.
+</PARA>
+<PARA>
+Se presentara entonces un formulario con dos formas distintas de recuperar
+su sesin GNOME.
+</PARA>
+<PARA>
+La primera opcin permite
+
+<GUILABEL>
+Arrancar con los programas por defecto
+</GUILABEL>
+
+. Esta opcin eliminara todos los parmetros de configuracin de la
+sesin que afecten a las aplicaciones. Solo se borraran los datos de la
+sesin GNOME relativos a las aplicaciones que se ejecutaban en la
+ultima vez que cerro una sesin, no se cambiara la configuracin fijada
+usando el alique C del gestor de sesiones en el centro de control GNOME.
+</PARA>
+<PARA>
+La segunda opcin 
+
+<GUILABEL>
+Restaurar todos los parmetros de usuario
+</GUILABEL>
+
+. Esto restaurara la configuracin original de todas las aplicaciones
+GNOME, y todos los datos de configuracin del ncleo GNOME. Esta opcin
+destruir cualquier configuracin aplicada al panel, al gestor de
+ficheros GNOME, al apliqye C del gestor de sesiones, y a cualquier
+aplicacin GNOME. Esta opcin no elimina ficheros de su escritorio. 
+</PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Estas opcines se destinan a usuarios avanzados y solo deberan usarse
+en caso de problemas con la sesin GNOME. Puede perder datos de muchas
+aplicaciones si utiliza la funcionalidad que proporcionan estas 
+opcines.
+</PARA></IMPORTANT>
+<FIGURE><TITLE>
+Formulario de acceso para restaurar una sesin GNOME
+</TITLE>
+<SCREENSHOT><SCREENINFO>
+Formulario de acceso para restaurar una sesin GNOME
+</SCREENINFO>
+<GRAPHIC FILEREF="./figs/login" FORMAT="png" SRCCREDIT="dcm"></GRAPHIC></SCREENSHOT></FIGURE></SECT1></CHAPTER>
+
+
+
+<APPENDIX ID="authors" LABEL="B"><TITLE>
+Equipo de documentación de la guía de usuario GNOME</TITLE>
+<PARA>Esta guía de usuario fue escrita por los siguientes autores </PARA>
+
+<FORMALPARA ID="writers"><TITLE>
+Autores
+</TITLE>
+<PARA></PARA></FORMALPARA>
+<PARA>
+David C. Mason
+</PARA>
+<PARA>
+David A. Wheeler
+</PARA>
+
+  <PARA>    Alexander Kirillov 
+  </PARA>
+  <PARA>    Dan Mueth
+  </PARA>
+  <PARA>    Telsa Gwynne
+  </PARA>
+  <PARA>    Eric Baudais
+  </PARA>
+  <PARA>    John Fleck
+  </PARA>
+  <PARA>    Aaron Weber
+  </PARA>
+  <PARA>    Kenny Graunke
+  </PARA>
+  <PARA>    John Kodis
+  </PARA>
+  <PARA>    Havoc Pennington
+  </PARA>
+  <PARA>    Spiros Papadimitriou
+  </PARA>
+  <PARA>    Oliver Maruhn
+  </PARA>
+  <PARA>    Chris Lyttle
+  </PARA>  
+  <PARA>    James Cope
+  </PARA>
+  <PARA>    Michael Hall
+  </PARA>
+  <PARA>    Tom Gilbert
+  </PARA> 
+  <PARA>    John Kodis
+  </PARA> 
+  <PARA>    Gregory Leblanc
+  </PARA></APPENDIX>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</BOOK>

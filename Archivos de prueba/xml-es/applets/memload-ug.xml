@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<SECT2 ID="memload-applet">   <TITLE>El aplique de carga de memoria</TITLE> 
+
+   <PARA> 
+     El <APPLICATION>aplique de carga de memoria</APPLICATION> es un pequeño aplique monitor que reside en su panel y le dice cuanta memoria está siendo usada.
+   </PARA>
+  
+   <SECT3 ID="memload-usage">    <TITLE>Uso</TITLE>
+    <PARA>      No es necesario hacer nada a este aplique. Se situará y ejecutará  en su panel. Existen varias opciones para modificar su aspecto.
+    </PARA>
+
+    <FIGURE ID="memload-applet-fig">      <TITLE>Aplique de Carga de Memoria</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Aplique de Carga de Memoria</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/memload-applet" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      El aplique muestra cuatro usos diferentes de memoria:
+    </PARA>
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Libre</TERM>
+      <LISTITEM>       <PARA>         La memoria libre es la que no está siendo usada por ningún programa. El color por defecto es el verde.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Buffers</TERM>
+      <LISTITEM>       <PARA>Los búferes contienen datos que todavía no han sido escritos a disco. También contienen datos que han sido leídos de disco recientemente, y que se mantienen por si acaso son necesitados de nuevo. El color por defecto es el gris.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Memoria compartida</TERM>
+      <LISTITEM>       <PARA>La memoria compartida es la que está siendo usada por más de un programa. Esto es muy común en sistemas UNIX. Muchos programas GNOME usan un montón de memoria compartida, reduciendo así la cantidad total de memoria usada. El color por defecto es el amarillo.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Otro</TERM>
+      <LISTITEM>       <PARA>La memoria que está siendo usada de otra manera se muestra en esta categoría. El color por defecto es amarillo verdoso.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+
+   <SECT3 ID="memload-right-click">    <TITLE>Opciones de Menú desplegables con botón derecho</TITLE>
+    <PARA> 
+     A parte de las opciones de menú estándar, el menú desplegable contiene las siguientes opciones: 
+    </PARA>   
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Propiedades por omisión...</TERM>
+      <LISTITEM>       <PARA>         Abre el <GUILABEL>cuadro de diálogo del aplique multicarga</GUILABEL>
+         <LINK LINKEND="memload-properties">descrito más adelante</LINK> que le permite modificar las propiedades por defecto de este aplique monitor y otros apliques relacionados.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Propiedades...</TERM>
+      <LISTITEM>       <PARA>         Abre el <GUILABEL>cuadro de diálogo del aplique multicarga</GUILABEL>
+         <LINK LINKEND="memload-properties">descrito más adelante</LINK> que afecta sólo a las propiedades del <APPLICATION>aplique de carga de memoria</APPLICATION>.
+         </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Ejecutar gtop...</TERM>
+      <LISTITEM>       <PARA>         Esta opción ejecutará <COMMAND>gtop</COMMAND> que arranca el Monitor del Sistema de GNOME. <APPLICATION>gtop</APPLICATION> proporciona una visión mucho más detallada del sistema y de lo que en él ocurre.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="memload-properties">    <TITLE>Propiedades</TITLE>
+
+    <FIGURE ID="memload-default-fig">      <TITLE>Diálogo de Propiedades por Omisión</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades por Omisión del Aplique de Carga de Memoria</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/memload-applet-default" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>Al igual que varios de los aplique monitores, el
+      <APPLICATION>aplique de carga de la CPU</APPLICATION> tiene dos modos de seleccionar preferencias. Puede hacer cambios que afectan a todo este grupo 
+      (<APPLICATION>aplique de carga CPU</APPLICATION>, <APPLICATION>aplique de carga de memoria</APPLICATION>,
+      <APPLICATION>aplique de carga swap</APPLICATION>, <APPLICATION>aplique de carga de la red</APPLICATION>
+      y <APPLICATION>aplique de carga promedio</APPLICATION>) en un amplio cuadro de diálogo. Esto es útil si ejecuta uno o más de ellos. Estos son los valores por defecto. Se llega a ellos desde la opción del menú 
+      <GUIMENUITEM>Propiedades por omisión...</GUIMENUITEM>
+    </PARA>
+    
+    <FIGURE ID="memload-greyed-fig">      <TITLE>Diálogo de propiedades deshabilitado</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de propiedades deshabilitado del Aplique de Carga de Memoria</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/memload-applet-greyed" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      O puede cambiar sólo las propiedades para el 
+      <APPLICATION>aplique de carga de memoria</APPLICATION>. Esto es útil cuando sólo utiliza el <APPLICATION>aplique de carga de memoria</APPLICATION> o cuando quiere probar nuevas combinaciones. Se llega a él desde la opción del menú  
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>.
+    </PARA>
+    <NOTE>     <PARA>      Si usa la opción del menú <GUIMENUITEM>Propiedades...</GUIMENUITEM>
+      y edita las preferencias para sólo este aplique, debe deshabilitar la casilla  <GUIBUTTON>Usar propiedades por omisión</GUIBUTTON> antes de cambiar la configuración.
+     </PARA>
+    </NOTE>
+
+    <FIGURE ID="memload-properties-fig">      <TITLE>Diálogo de Propiedades de Carga de Memoria</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades del Aplique de Carga de Memoria</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/memload-applet-properties" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Los cambios que puede hacer a las propiedades son tres:
+    </PARA>
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Colores</TERM>
+      <LISTITEM>       <PARA>         Puede cambiar los colores usados para las diferentes formas de uso de CPU mostrados pulsando en las cajas de colores. Esto invoca la rueda de colores de GNOME.
+        </PARA>
+       </LISTITEM> 
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Velocidad</TERM>
+       <LISTITEM>        <PARA>          Puede alterar la velocidad de actualización del gráfico.
+         Se mide en milisegundos. El valor por omisión es 500.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Tamaño</TERM>
+       <LISTITEM>        <PARA>          Puede cambiar el tamaño del aplique. La medida es en píxeles. El valor por defecto es 40, y el rango abarca desde 1 pixel hasta donde quiera. En un panel vertical, este valor hace referencia a la altura. En uno horizontal, a la anchura.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+     </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="memload-bugs">    <TITLE> Errores Conocidos y Limitaciones</TITLE>
+    <PARA>      Cambiar el tamaño del aplique y su orientación puede causar todavía problemas intermitentes, aunque ahora se corrigen por sí mismos al cabo de un corto período de tiempo.
+    </PARA>
+   </SECT3>
+
+</SECT2>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<APPENDIX ID="bugs">   
+    <TITLE>Errores y limitaciones conocidas</TITLE>
+    <ABSTRACT>    <PARA>     Este apéndice describe errores y limitaciones conocidas de
+    <APPLICATION>Evolution</APPLICATION>.  Por favor use la
+    <APPLICATION>Herramienta de reporte de fallos</APPLICATION> de GNOME
+    (<COMMAND>bug-buddy</COMMAND> en la línea de comandos) si encuentra
+    algún error que no este en esta lista.
+    </PARA>
+    </ABSTRACT>
+
+    <PARA>      Evolution todavía es software en fase beta, así que el seguimiento
+      de errores es mejor dejárselo al sistema bugzilla y a los 
+      programadores.  Eso sí, hay cierto número de limitaciones que
+      no serán corregidas antes de la versión 1.0. Las más notables son: 
+      Importación de los archivos .pst de Microsoft Outlook, y la
+      compatibilidad con el protocolo de Microsoft Exchange.
+    </PARA>
+  </APPENDIX>

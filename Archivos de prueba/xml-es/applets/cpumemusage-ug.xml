@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<SECT2 ID="cpumemusage-applet">  <TITLE>El aplique de utilización de la memoria y CPU</TITLE> 
+
+  <PARA> 
+    El <APPLICATION>cpumemusage_applet</APPLICATION> es un pequeño aplique monitor que se ubica en su panel y le informa sobre la utilización de la CPU, memoria y memoria de intercambio (swap) de su ordenador. Para añadir este applet a su  <INTERFACE>Panel</INTERFACE> y pulse el botón derecho en el  <INTERFACE>Panel</INTERFACE> y seleccione 
+    <MENUCHOICE>      <GUIMENU>Panel</GUIMENU>
+      <GUISUBMENU>Añadir al panel</GUISUBMENU>
+      <GUISUBMENU>Aplique</GUISUBMENU>
+      <GUISUBMENU>Monitores</GUISUBMENU>
+      <GUIMENUITEM>Utilización de la CPU/MEM </GUIMENUITEM>
+    </MENUCHOICE>. 
+  </PARA>  
+ 
+   <SECT3 ID="cpumemusage-usage">    <TITLE>Utilización</TITLE>
+    <PARA>      No necesita nada más. Se colocará y ejecutará  en su panel.
+    </PARA>
+    <PARA>      El aplique muestra tres cartas de barras, para la CPU, memoria y espacio de intercambio. Si su panel es horizontal, la barra superior es la CPU, el del medio es la memoria, y el inferior es el espacio de intercambio. Si su panel es vertical, el izquierdo es el de la CPU, el central la memoria, y el derecho el del intercambio.
+    </PARA>
+
+    <FIGURE ID="cpumemusage-applet-fig">      <TITLE>Aplique CPU/MEM</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Aplique CPU/MEM </SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="cpumemusage-applet" SRCCREDIT="Eric Baudais">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+  
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>CPU</TERM>
+      <LISTITEM>       <PARA>         Se utilizan tres colores. Amarillo para la actividad de la CPU que realiza el kernel. Gris para la actividad de los programas que se comunican con el kernel (habitualmente, muchas E/S tales como mover datos entre memoria y disco). El negro es el fondo y representa la memoria no utilizada.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+     <VARLISTENTRY>      <TERM>Memoria</TERM>
+      <LISTITEM>       <PARA>         Se utilizan cuatro colores. Amarillo para la memoria compartida (memoria que es utilizada por más de un programa). Gris para el uso del 'buffer' (memoria que contiene datos que aún no han sido escritos en el disco).  El amarillo grisáceo para otra utilización de memoria. El verde representa la memoria sin utilizar.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+     <VARLISTENTRY>      <TERM>Intercambio</TERM>
+      <LISTITEM>       <PARA>         Se emplean dos colores. Rojo para el espacio de intercambio utilizado. Verde para el no utilizado. El espacio de intercambio es una parte del disco duro en la cual el kernel coloca partes de los programas que no se están utilizando actualmente así puede fácilmente acceder a ellos cuando lo necesite.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="cpumemusage-bugs">    <TITLE>Errores y Limitaciones conocidas</TITLE>
+    <PARA>      No existen errores o limitaciones conocidas para este aplique.
+    </PARA>
+   </SECT3>
+</SECT2>

@@ -1,0 +1,1094 @@
+<?xml version="1.0"?>
+<CHAPTER ID="menuref">  <TITLE>Referencias de los Menús</TITLE>
+  <PARA>    Los menús de <APPLICATION>Evolution</APPLICATION> puede que no tengan el
+    secreto de la felicidad, pero lo que contienen son todas las
+    posibilidades de <APPLICATION>Evolution</APPLICATION>. Esta sección
+    servirá como referencia de todos esos menús, y las posibilidades que le
+    ofrecen.
+  </PARA>
+  <PARA>    Ademas, las herramientas de edición de mensajes, citas, y
+    contactos todas tienen barras de herramientas propias. De izquierda a
+    derecha, los menús que tiene disponible cuando está leyendo el correo
+    son: <GUIMENU>Archivo</GUIMENU>, <GUIMENU>Editar</GUIMENU>,
+    <GUIMENU>Vista</GUIMENU>, <GUIMENU>Configuración</GUIMENU>,
+    <GUIMENU>Mensaje</GUIMENU>, <GUIMENU>Carpeta</GUIMENU>and
+    <GUIMENU>Ayuda</GUIMENU>.
+
+  </PARA>
+  <PARA>    Los menús en <APPLICATION>Evolution</APPLICATION> son sensitivos al
+    contexto, lo que significa que varian dependiendo de lo que esté
+    haciendo.  Si está leyendo su correo, tendrá menús relacionados con el
+    correo; para su calendario, tendrá opciones relacionadas con
+    calendarios.  Algunos menús, naturalmente, como
+    <GUIMENU>Ayuda</GUIMENU> y <GUIMENU>Archivo</GUIMENU> no cambian mucho,
+    si es que lo hacen, porque son funciones más universales.  Pero usted
+    nunca marcará una tarjeta de dirección como "leidao", o pondra
+    recurrencia a un mensaje que ha recivido. Dependiendo de si esta mirando
+    el correo, los contactos, o la información del calendario. 
+  </PARA>
+
+
+
+  <SECT1 ID="menuref-universal">    <TITLE>Menús que son iguales en todas partes</TITLE>
+    <PARA>      Los menús <GUIMENU>Archivo</GUIMENU> y <GUIMENU>Ayuda</GUIMENU> de la
+      ventana principal de <APPLICATION>Evolution</APPLICATION> no cambian,
+      porque se refieren a elementos globales.  Otros menús tienen
+      contenidos que cambian dependiendo del contexto.
+    </PARA>
+   
+ <SECT2 ID="menuref-universal-file">      <TITLE>Menú Archivo</TITLE>
+      <PARA>	<VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM><GUISUBMENU>Nuevo...</GUISUBMENU> Submenu</TERM>
+	    <LISTITEM><PARA>		<ITEMIZEDLIST>		  <LISTITEM><PARA>		      <GUIMENUITEM>Carpeta</GUIMENUITEM> 
+		       Crear una nueva carpeta. Vea <XREF LINKEND="usage-mainwindow-folderbar">		       para más información acerca de las carpetas.
+		    </XREF></PARA></LISTITEM>
+		  <LISTITEM><PARA>		      <GUIMENUITEM>Atajo</GUIMENUITEM> 
+		       Crear un nuevo Atajo en la Barra de Atajos.
+		    </PARA></LISTITEM>
+		  <LISTITEM><PARA>		      <GUIMENUITEM>Mensaje de Correo</GUIMENUITEM> 
+		       Escribir un nuevo mensaje de correo. Cubierto en
+		       <XREF LINKEND="usage-mail-getnsend-send">.
+		    </XREF></PARA></LISTITEM>
+		  <LISTITEM><PARA>		      <GUIMENUITEM>Cita</GUIMENUITEM> 
+		       Concertar una nueva cita en su calendario. Vea <XREF LINKEND="usage-calendar-apts-basic"> para más información.
+		    </XREF></PARA></LISTITEM>
+		  <LISTITEM><PARA>		      <GUIMENUITEM>Tarea</GUIMENUITEM> 
+		       Escriba un nuevo elemento para-hacer en su lista de tareas.
+		       Cubierto en 
+		       <XREF LINKEND="usage-calendar-todo">.
+		    </XREF></PARA></LISTITEM>
+		</ITEMIZEDLIST>
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Ir a Carpeta</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Ver los elementos de una carpeta en particular.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Crear Nueva Carpeta</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>		 Este elemento ya no pertenece aquí.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Imprimir Mensaje</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>		 Imprime el mensaje actual.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Salir</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>		 Parar de usar <APPLICATION>Evolution</APPLICATION>.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+       </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-universal-help">      <TITLE>El Menú Ayuda</TITLE>
+      <PARA>      <VARIABLELIST>	<VARLISTENTRY>	  <TERM><GUIMENUITEM>Índice de la Ayuda</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Muestra la tabla de contenidos de este documento.
+           </PARA></LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUIMENUITEM>Comenzando</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>              Una vista rápida, y un resumen de las cosas que
+              <APPLICATION>Evolution</APPLICATION> puede hacer por usted.
+           </PARA></LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUIMENUITEM>Usando el Correo</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>              Una vista en profundidad del correo de <APPLICATION>Evolution</APPLICATION>.
+           </PARA></LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUIMENUITEM>Usando el Calendario</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Una guía paso a paso sobre como usar el calendario.
+           </PARA></LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUIMENUITEM>Usando el Administrador de Contactos</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>            Manejese con el administrador de contactos.
+           </PARA></LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUIMENUITEM>Enviar Reportes de Fallo</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Si usted no se los dice, no podrán arreglarlos.  Selececion esta opción para hacer saber a
+             los desarrolladores lo que falla.
+           </PARA></LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUIMENUITEM>Acerca de Evolution</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>              Muestra una ventana con información sobre la aplicación y sus autores.
+              Tiene la misma información que <XREF LINKEND="authors">.
+           </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+       </PARA>
+    </SECT2>
+  </SECT1>
+
+
+  <SECT1 ID="menuref-mail">    <TITLE>Menús del Correo</TITLE>
+    <PARA>       El Correo de <APPLICATION>Evolution</APPLICATION> tiene más menús
+       especializados, y más opciones de menú especializadas, que cualquier
+       otra parte de la aplicación.
+    </PARA>
+   
+    <SECT2 ID="menuref-mail-edit">      <TITLE>El Menú Edición</TITLE>
+      <PARA>        Este menú está actualmente vacio.
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-mail-view">      <TITLE>El Menú Ver del Correo</TITLE>
+      <PARA>        Este menú le permite controlar el modo en que
+        <APPLICATION>Evolution</APPLICATION> le muestra su información.
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mostrar Barra de Atajos</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Active y desactive la barra de atajos con esta opción.       
+            </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mostrar Barra de Carpetas</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Active y desactive la barra de carpetas con esta opción. 
+             Vea <XREF LINKEND="usage-mainwindow-folderbar"> para 
+             más información acerca de la barra de carpetas.           
+            </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Lista de Mensajes Encadenados</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Esta opción controla si la lista de sus mensajes se muestra siguiendo la cadena de la discusión 
+               o por otro criterio.  La ordenación por defecto es por fecha.
+               Vea <XREF LINKEND="usage-mail-listorder"> para más
+información acerca de 
+               como ordenar la lista de mensajes.
+            </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-mail-tools">      <TITLE>El Menú Configuración del Correo</TITLE>
+      <PARA>      <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Filtros de Correo</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Edite aqui sus filtros de correo.  
+             Vea <XREF LINKEND="usage-mail-organize-filters">             para más información acerca de los filtrar correo.
+           </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Editor de Carpetas Virtuales</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Cree, edite, y borre carpetas virtuales (<GLOSSTERM>vFolders</GLOSSTERM>)
+               con esta herramienta. 
+              Para aprender acerca de como usar carpetas virtuales con su 
+              correo, vea <XREF LINKEND="usage-mail-organize-vfolders">.
+           </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Configuración del Correo</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA> 
+               Herramientas para configurar las preferencias de sus cuentas de correo.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Administrar Suscripciones</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Herramientas para suscribirse a grupos de noticias y para las carpetas IMAP.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Olvidar Contraseña</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Esta opción hara que <APPLICATION>Evolution</APPLICATION>
+	      olvide sus contraseñas.
+            </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	  
+	</VARIABLELIST>
+       </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-mail-folder">      <TITLE>El Menú Carpetas del Correo</TITLE>
+      <PARA>          Estos elementos de este menú se refieren a las carpetas de 
+          correo de <APPLICATION>Evolution</APPLICATION>.
+      </PARA>
+      <PARA>          Usted puede:
+          <VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Marcar todos como Leídos</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	      <APPLICATION>Evolution</APPLICATION> se acuerda de que mensajes ha 
+	      leído;  para marcar todos los mensajes de una carpeta como leídos elija esta opción.
+	      Puede marcar un solo mensaje como leído pulsando con el botón derecho en la barra de mensajes.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Borrar Todos</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	      Esta es la opción favorita de todo aquel con demasiado correo basura: un click, y borra 
+	      todos los mensajes de la carpeta actual. 
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Comprimir</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>                 Vacia la carpeta de la papelera, borrando los mensajes permanentemente. 
+                 Un vez que ha echo esto, son eliminados para siempre.
+	       </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Configurar Carpeta</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Use esta opción para seleccionar el formato de archivo en el
+              que <APPLICATION>Evolution</APPLICATION> guarda el correo.
+              Puede elegir entre archivos tipo
+              <SYSTEMITEM><FILENAME>mbox</FILENAME></SYSTEMITEM> estandar
+              al estilo UNIX, o el formato
+              <SYSTEMITEM><FILENAME>mh</FILENAME></SYSTEMITEM>.
+              Convertir buzones grandes tarda mucho tiempo, y es una buena
+              idea tener una copia de seguridad antes de la conversión.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	</VARIABLELIST>
+       </PARA>
+    </SECT2>
+
+  <SECT2 ID="menuref-mail-message">      <TITLE>El Menú Mensajes del Correo</TITLE>
+      <PARA>          Las opciones de este menú se refieren a los mensajes de correo de
+          <APPLICATION>Evolution</APPLICATION>. La mayoría de ellos
+          requieren que haya un mensaje seleccionado, y están tambien
+          disponibles pulsando con el botón derecho sobre un mensaje de la
+          lista de mensajes.
+      </PARA>
+      <PARA>          <VARIABLELIST>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Abrir en una Nueva Ventana</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Muestra el mensaje seleccionado en una nueva ventana.
+	   </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Editar Mensaje</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	      Abre el mensaje seleccionado en el compositor de mensajes.  Solo
+              puede editar mensajes que haya escrito usted: drafts y mensajes en 
+              la carpeta <GUILABEL>Enviados</GUILABEL>.
+	   </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Imprimir Mensaje</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Muestra la ventana de <INTERFACE>Vista Previa</INTERFACE>, 
+               lista para imprimir.
+	   </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Responder al Remitente</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Abre una ventana con el compositor de mensajes con la dirección
+               puesta al autor del mensaje.  Cubierto en detalle en 
+               <XREF LINKEND="usage-mail-getnsend-send-reply">.
+	      </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Responder a Todos</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Abre una ventana con el compositor de mensajes con la dirección
+      puesta al autor del mensaje y a todos los destinatarios conocidos.
+                Cubierto en detalle en <XREF LINKEND="usage-mail-getnsend-send-reply">.
+	      </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Reenviar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Adjunta el cuerpo del mensaje seleccionado a un nuevo mensaje.
+               Cubierto en detalle en  <XREF LINKEND="usage-mail-getnsend-fwd">.               
+	      </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Borrar Mensaje</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Marca un mensaje para borrar.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mover Mensaje</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Elije una carpeta a la cual enviar este mensaje.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Copiar Mensaje</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Copia el mensaje seleccionado a otra carpeta.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>VFolder según el Asunto</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Este elemento, y los tres que le siguen, crearán carpetas  
+  virtuales que podrá personalizar más o guardar tal cual. Este creará una
+              carpeta virtual que mostrará todos los mensajes que contengan la 
+               línea del asunto del mensaje seleccionado.                
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>VFolder según el Remitente</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Crea una carpeta virtual para poner en ella todos los mensajes del
+                 remitente del mensaje seleccionado.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>VFolder según Destinatarios</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Crea una carpeta virtaul para poner en ella todos enviados a los 
+               destinatarios del mensaje seleccionado.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Filtro según el Asunto</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Este elemento, y los tres siguientes, crearán filtros para los que 
+               debe elegir una acción.  Puede conservar el criterio como 
+               está, o modificarla como quiera. Este creará un filtro que
+               afectará a todos los mensajes que contengan la línea del 
+               asunto del mensaje seleccionado.                
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Filtrar según Remitente</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Crea un filtro que afectará a todos los mensajes del remitente del
+               mensaje seleccionado.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Filtrar según Destinatarios</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Crea un filtro que afectará a todos los mensajes dirigidos a los 
+               destinatarios del mensaje seleccionado.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	</VARIABLELIST>
+       </PARA>
+    </SECT2>
+
+   <SECT2 ID="menuref-mail-messagelistheader">      <TITLE>El Menú del Botón Derecho en la Cabecera</TITLE>
+      <PARA>         En la parte superior de la lista de mensajes está la cabecera de
+         la lista de mensajes. Puede pulsar en cualquiera de los títulos
+         individuales .
+         <GUILABEL>Asunto</GUILABEL>, por ejemplo, para ordenar la lista
+         de mensajes por ese atributo.  Eso si, si pulsa el botón derecho
+         sobre uno de los títulos, obtendrá el siguiente menú:
+      </PARA>
+
+      <PARA>          <VARIABLELIST>
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Ordenar Ascendentemente</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 Ordenar la lista, en orden ascendente, según el atributo sobre el que
+                 pulsó.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Ordenar Descendentemente</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 Ordenar la lista en orden descendente.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+  
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Desordenar</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 Deshacer cualquier ordenación mediante este atributo, y dejar la lista
+                 según el orden anterior.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Agrupar según este Campo</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 En lugar de ordenar los mensajes, los agrupa en cajas. 
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Agrupar por Caja</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA> Si tiene los mensajes agrupados en cajas,
+	      puede agrupar del mismo modo las cajas, eligiendo este
+	      elemento.  </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Quitar esta columna</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 Elija esto para quitar una columna de la vista de la lista de mensajes.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Selector de Campos</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 Abre una paleta de columnas. Usted puede arrastra las columnas
+		 que quiera desde la paleta hasta la posición en la barra de cabecera
+		 de la lista de mensajes; aparecen flechas rojas cunado se acerca los
+		 suficiente a una posición posible.</PARA>
+                 
+              <PARA>                 Sus opciones son: 
+                 <ITEMIZEDLIST>                     <LISTITEM><PARA>                         <GUIICON>Un Sobre</GUIICON> el cual indica cuando un mensaje a sido leído (cerrado para no leído, abierto para leído).
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUIICON>Un Signo de Exclamación</GUIICON> para la prioridad
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUIICON>Un Pingüino</GUIICON> el cual indica algo, aunque no estoy seguro de que.
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUIICON>Un Clip</GUIICON> el cual indica que hay un adjunto en el mensaje.
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUILABEL>De</GUILABEL>, para el campo <GUILABEL>De</GUILABEL> del mensaje.
+                     </PARA></LISTITEM>
+                     <LISTITEM><PARA>                         <GUILABEL>Asunto</GUILABEL>, para el campo <GUILABEL>Asunto</GUILABEL> del mensaje.
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUILABEL>Fecha</GUILABEL>, para la fecha y la hora en que se mandó el mensaje.
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUILABEL>Recibido</GUILABEL>, para la fecha y la hora en la que recibió en mensaje. 
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUILABEL>A</GUILABEL>, para el campo <GUILABEL>A</GUILABEL>.
+                     </PARA></LISTITEM>
+
+                     <LISTITEM><PARA>                         <GUILABEL>Tamaño</GUILABEL>, para el tamaño del mensaje.
+                     </PARA></LISTITEM>
+		  </ITEMIZEDLIST>
+             </PARA>   
+
+	      </LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Alineación</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA> Use este elemento para decidir sobre la alineación
+	      de los atributos de los mensajes en sus columnas.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Mejor Colocación</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 Modifica el ancho de las columnas de la lista de mensajes para
+maximizar la cantidad de información mostrada.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Formato de las Columnas...</GUIMENUITEM></TERM>
+	      <LISTITEM><PARA>		 Este elemento no está disponible todavía.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	      <TERM><GUIMENUITEM>Personalizar
+	      Vistas...</GUIMENUITEM></TERM> <LISTITEM><PARA> Abre una
+	      caja de diálogo que le permite elegir una ordenación compleja para
+	      su lista de mensajes, así puede combinar ordenar y agrupar de tantas
+	      maneras como quiera.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+          </VARIABLELIST>
+      </PARA>
+   </SECT2>
+  </SECT1>
+
+  <SECT1 ID="menuref-mail-editor">    <TITLE>Los Menús del Compositor de Mensajes</TITLE>
+    <PARA>      La ventana de composición de mensajes tiene su propio juego de menús:
+      <GUIMENU>Archivo</GUIMENU>, que controla las operaciones sobre los
+      archivos y los datos, <GUIMENU>Editar</GUIMENU>, para la edición de
+      textos, <GUIMENU>Formato</GUIMENU>, que controla el formato de los
+      mensajes que envía, <GUIMENU>Vista</GUIMENU>, que determina como ve el
+      mensaje, y <GUIMENU>Insertar</GUIMENU>, que tiene herramientas para
+      incluir archivos y otros objetos en los mensajes.  Aquí esta lo que
+hay en ellos:
+    </PARA>
+    <SECT2 ID="menuref-mail-editor-file">      <TITLE>El Menú Archivo del Compositor de Mensajes</TITLE>
+      <PARA>        <VARIABLELIST>	  <VARLISTENTRY>	      <TERM><GUIMENU>Abrir</GUIMENU></TERM>
+	      <LISTITEM><PARA>		 Abre un archivo de texto o el borrador de un mensaje.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	    <VARLISTENTRY>	      <TERM><GUIMENU>Guardar</GUIMENU></TERM>
+	      <LISTITEM><PARA>		 Guarda un mensaje de correo como un archivo de texto.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	    <VARLISTENTRY>	      <TERM><GUIMENU>Guardar Como</GUIMENU></TERM>
+	      <LISTITEM><PARA> 
+		Elija un nombre de archivo y un lugar para
+		el mensaje que quiere guardar como un archivo de texto.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	    <VARLISTENTRY>	      <TERM><GUIMENU>Guardar en una Carpeta</GUIMENU></TERM>
+	      <LISTITEM><PARA>		 Guarda un mensaje como un borrador, en lugar de como 
+		 un archivo de texto independiente.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	    <VARLISTENTRY>	      <TERM><GUIMENU>Insertar Archivo de Texto</GUIMENU></TERM>
+	      <LISTITEM><PARA>		   Abre un archivo de texto y lo inserta en el mensaje 
+		   actual. (FIXME: belongs under "Insert").
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+	  
+	    <VARLISTENTRY>	      <TERM><GUIMENU>Enviar Ahora</GUIMENU></TERM>
+	      <LISTITEM><PARA>		  Envia el mensaje inmediatamente.
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	    <VARLISTENTRY>	      <TERM><GUIMENU>Enviar más Tarde</GUIMENU></TERM>
+	      <LISTITEM><PARA>		  Lo pone en la cola de mensajes 
+	      </PARA></LISTITEM>
+	    </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENU>Cerrar</GUIMENU></TERM>
+	    <LISTITEM><PARA>		 Cierra el compositor de mensajes.  Si no lo ha echo ya, 
+		 <APPLICATION>Evolution</APPLICATION>
+		 le preguntará si quiere guardar su mensaje.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+    <SECT2 ID="menuref-mail-editor-edit">      <TITLE>El Menú Editar del Compositor de Mensajes</TITLE>
+      <PARA>          El menú <GUIMENU>Editar</GUIMENU> en el compositor de mensajes
+          contiene los siguientes elementos.  Los atajos de teclado están
+          al lado de los elementos en los propios menús.
+
+        <VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Deshacer</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>                Deshace la última acción realizada.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+    	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Rehacer</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Si cambia de idea sobre Deshacer algo, 
+               siempre puede usar esta opción.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Cotar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>                Elimina el texto seleccionado de la ventana de edición y lo 
+                guarda en la memoria del "portapapeles" del sistema, listo para pegarlo.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Copia</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Copia el texto seleccionado al portapapeles del sistema sin borrarlo.
+              Entoces el texto puede ser insertado en otra parte con el 
+              comando <GUIMENUITEM>Pegar</GUIMENUITEM>.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Pegar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>                Inserta el contenido del portapapeles del sistema en la 
+                posición del cursor.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Buscar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Escriba una frase y encuantra las coincidencias en el cuerpo 
+               del mensaje. Como con 
+               <GUIMENUITEM>Buscar Expresión</GUIMENUITEM>, 
+               <GUIMENUITEM>Buscar de nuevo</GUIMENUITEM>, y
+               <GUIMENUITEM>Remplazar</GUIMENUITEM>, <APPLICATION>Evolution</APPLICATION>
+               le ofrecerá la opción de buscar hacia adelante o hacia atras.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Buscar Expresión</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Si esta familiarizado con las <GLOSSTERM>expresiones regulares</GLOSSTERM>,
+                ha veces llamadas "regexes", puede buscar cosas más complicadas, 
+               usando comodines y lógica booleana.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Buscar de nuevo</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Repite la última búsqueda.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Remplazar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Escriba una palabra o frase y la palabra o frase por la que le gustaría
+               reemplazarla.  
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Propiedades</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               Esta opción muestra el Capplet de Propiedades del Compositor de Mensajes,
+               una parte del Centro de Control de GNOME ue determina la 
+               asociación de teclas en el compositor de mensajes.  La ayuda para este capplet está 
+               disponible directamente en el Centro de Control.
+               (FIXME: Write that help doc too) (FIXME: this is in the wrong place!)
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+    <SECT2 ID="menuref-mail-composer-format">      <TITLE>El Menú Formato del Compositor de Mensajes</TITLE>
+      <PARA> 
+        El menú <GUIMENU>Formato</GUIMENU> solo tiene una opción:
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>HTML</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>                 Activa el modo HTML para el compositor de mensajes.  Cuando esta seleccionado, 
+                 los mensajes se muestran y se envian en HTML.  Si ha escrito un mensaje
+                 en HTML y desactiva la opción HTML, se perderá la mayor parte del formato.
+                 Eso si, <APPLICATION>Evolution</APPLICATION> intentará consevar los
+                 espacios y eliminar el formato con cuidado.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+       </PARA>
+    </SECT2>
+    <SECT2 ID="menuref-mail-composer-view">      <TITLE>El Menú Ver del Compositor de Mensajes</TITLE>
+      <PARA>        El menú <GUIMENU>Vista</GUIMENU> controla la manera en que se
+        muestran sus mensajes, y cuanto del mensaje, de su cabecera y de los
+        adjuntos se muestra.  Contiene:
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mostrar Adjuntos</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA> 
+              Activa el mostrar los adjuntos.  Cuando esta opción está seleccionada,
+              <APPLICATION>Evolution</APPLICATION> creará una caja separada
+de la ventana
+              del compositor de mensajes para mostrar que archivos adjuntos está añadiendo
+              al mensaje. 
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+    <SECT2 ID="menuref-mail-composer-insert">      <TITLE>El Menú Insertar del Compositor de Mensajes</TITLE>
+      <PARA>        El menú <GUIMENU>Insertar</GUIMENU> contiene herramientas que le
+        permiten incluir imágenes, reglas horizontales, y otros objetos en
+        el cuerpo del mensaje. Las herramientas son:
+        <VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Imagen</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA> 
+               Esta herramienta le pedirá que seleccione una imagen para
+               insertarla en su mensaje en HTML.  Para mensajes de texto,
+               esto es lo mismo que adjuntar la imagen.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Enlace</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA> 
+              Abre la <INTERFACE>ventana de creación de enlaces</INTERFACE>,
+              que le permite especificar la URL y un descripción para el
+              enlace de su mensaje.  Tan solo funciona con mensajes en
+              HMTLs.
+	    </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Regla</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>    
+             Abre el <INTERFACE>diálogo de creación de reglas horizontales</INTERFACE>, el cual le permite
+	     crear una regla horizontal en HTML.  Para más información, vea
+	     <XREF LINKEND="usage-mail-getnsend-send-html">.
+             Esta herramienta solo funciona con mensajes en HTML.
+	     </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Archivo de Texto</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>	       Abre un archivo de texto y lo inserta en el mensaje actual.
+               Esta herramienta funciona tanto con mensajes de texto como
+               mensajes en HTML.
+	      </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+  </SECT1>
+
+    <SECT1 ID="menuref-cal">    <TITLE>Los Menús del Calendario</TITLE>
+    <PARA>      La ventana principal del calendario tiene los mismos menús que la
+      ventana principal del cliente de correo.  Aunque, sus contenidos
+      varian de varios modos.
+    </PARA>
+    <SECT2 ID="menuref-cal-edit">      <TITLE>El Menú Editar del Calendario</TITLE>
+      <PARA>         El contenido del menu Editar no esta todavía fijo, así que no lo
+         voy a documentar todavía. (Esto significa ARREGLAME). Deberian
+         ser:
+
+         <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Elemento</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Descripción
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Elemento</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Descripción
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Elemento</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>              Descripción
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+    <SECT2 ID="menuref-cal-view">      <TITLE>El Menú Ver del Calendario</TITLE>
+      <PARA>        El menú <GUIMENU>Vista</GUIMENU> del calendario contiene las siguientesins opciones:
+
+         <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mostrar la Barra de Atajos</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Active y desactive la barra de atajos con esta opción.    
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mostrar la Barra de Carpetas</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Active y desactive la barra de carpetas con esta opción. 
+             Vea <XREF LINKEND="usage-mainwindow-folderbar"> para 
+             más información acerca de la barra de carpetas.     
+           </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+		  
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Vista por Días</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Cambia el calendario a la vista diaria.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	  
+
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Vista Cinco Días</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Muestra cinco días del calendario de una vez. 
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	  
+
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Vista por Semanas</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Cambia el calendario a la vista semanal.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+  
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Vista por meses</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Vea todo un mes al tiempo.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-settings">      <TITLE>El Menú Configuración del Calendario</TITLE>
+      <PARA>         Este menú está vacío.
+      </PARA>
+    </SECT2>
+
+  </SECT1>
+
+  <SECT1 ID="menuref-cal-editor">    <TITLE>Los Menús del Editor de Citas</TITLE>
+    <PARA>    El editor de citas tiene sus propios menús, para ayudarle a usar sus
+    amplias posibilidades.
+    </PARA>
+    
+    <SECT2 ID="menuref-cal-editor-file">      <TITLE>El Menú Archivo del Editor de Citas</TITLE>
+      <PARA>         Este menú contiene varias opciones, incluyendo un sub-menú <GUISUBMENU>Nuevo</GUISUBMENU> que es identico al del 
+         <LINK LINKEND="menuref-universal-file">menú archivo de la ventana principal</LINK>.
+         Sus otros contenidos son:
+         <VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Enviar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Abre un mensaje de correo con la cita adjunta a el.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Guardar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Guarda esta cita en la posición y nombre actual. Si todavía no ha elegido
+              una posición y un nombre, esto es lo mismo que <GUIMENUITEM>Guardar Como</GUIMENUITEM>.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Guaradar Como</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Eliga una posición y un nombre para esta cita, y guardela.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Borrar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Borra la cita.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mover a una Carpeta</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Elija una carpeta, y mueva a ella la cita.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Copiar a una Carpeta</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Elija una carpeta, y ponga en ella una copia de la cita.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	   <TERM><GUIMENUITEM>Sub-menú de Configuración de Página</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Este menú contiene dos opciones:
+                <ITEMIZEDLIST>		  <LISTITEM><PARA>                   <GUIMENUITEM>Estilo del Memorando</GUIMENUITEM> 
+                    FIXME: What does this do?
+                   </PARA></LISTITEM>
+
+		  <LISTITEM><PARA>                    <GUIMENUITEM>Definir Estilos de Impresión</GUIMENUITEM> 
+                    FIXME: What does this do?
+                  </PARA></LISTITEM>
+		</ITEMIZEDLIST>
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Vista Previa</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA> Muestra el aspecto que tendrán su cita si la
+      imprime. Vea <XREF LINKEND="usage-print">	    para más detalles sobre imprimir y la función de Vista Previa.
+	    </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Imprimir</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Imprime la cita sin vista previa.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Propiedades</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             FIXME: What does this do?
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Cerrar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Cierra la ventana del editor de citas.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-editor-edit">      <TITLE>El Menú Editar del Editor de Citas</TITLE>
+      <PARA>         ARREGLAME: este menú esta copiado y pegado completamente de otro
+         sitio.
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-editor-view">      <TITLE>El Menú Ver del Editor de Citas</TITLE>
+      <PARA>         Este menú le permite ver distintas citas, y configurar la forma de
+         verlas, sin tener que volver a la <INTERFACE>Ventana 
+         Principal</INTERFACE>. Contiene:
+         <VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM><GUISUBMENU>Previa</GUISUBMENU></TERM>
+	    <LISTITEM><PARA>               La opción de este sub-menú le llevará a la cita anterior a
+               la actual. (FIXME: describe).
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUISUBMENU>Suiguiente</GUISUBMENU></TERM>
+	    <LISTITEM><PARA>               La opción de este sub-menú le llevará a la cita programada
+               para despues de la actual. (FIXME: describe).
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Calendario</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>               FIXME: What does this item do?
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUISUBMENU>Barras de Herramientas</GUISUBMENU></TERM>
+	    <LISTITEM><PARA>             El sub-menú <GUISUBMENU>Barras de Herramientas</GUISUBMENU> 
+             le permite elegir que barras de herramientas son mostradas en
+             el <INTERFACE>Editor de Citas</INTERFACE>. Estas son:
+             <ITEMIZEDLIST>		  <LISTITEM><PARA>                    <GUIMENUITEM>Estandar</GUIMENUITEM> 
+                    Activa y desactiva la barra de herramientas estandar.
+                   </PARA></LISTITEM>
+
+		  <LISTITEM><PARA>                    <GUIMENUITEM>Formato</GUIMENUITEM> 
+                    Activa y desactiva la barra de herramientas de formato.
+                   </PARA></LISTITEM>
+	
+		  <LISTITEM><PARA>                    <GUIMENUITEM>Personalizada</GUIMENUITEM> 
+                    Selecciona los contenidos de las barras de herramientas de formato y de la estandar.
+                   </PARA></LISTITEM>
+		</ITEMIZEDLIST>
+            </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-editor-insert">      <TITLE>El Menú Insertar del Editor de Citas</TITLE>
+      <PARA>        Este menú contiene: (FIXME: Insert Content Here)
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Archivo</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Elija un archivo para incluir a la cita o al petición de cita.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Elemento</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             FIXME: ?
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Objeto</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             FIXME: ?
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-editor-format">      <TITLE>El Menú Formato del Editor de Citas</TITLE>
+      <PARA>         Thite menú contiene dos opciones, ninguna de las cuales tiene
+         funcionalidad alguna todavía:
+         <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Fente</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             FIXME: ?
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Parrafo</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             FIXME: ?
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-editor-tools">      <TITLE>El Menú Herramientas del Editor de Citas</TITLE>
+      <PARA>         Este menú contiene cuatro opciones, incluyendo el sub-menú
+         <GUISUBMENU>Formularios</GUISUBMENU>, el caul le permite modificar
+         los formularios de los calendararios y crear sus propias entradas.
+         Esto todavia no funciona.
+
+         <VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Corrector Ortográfico</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Comprueba la ortografía en las entradas del calendario.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Comprobar Nombres</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA> Comprueba los nombres aquí enumerados contra los de
+	    su agenda de direcciones.
+            </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Agenda de Direcciones</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             FIXME: ?
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM><GUISUBMENU>Formularios</GUISUBMENU> Sub-menú</TERM>
+	    <LISTITEM><PARA>               El sub-menú Formularios le permite modificar la apariencia de
+	       de los Formularios del Calendario. 
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-editor-actions">      <TITLE>El Menú Acciones del Editor de Citas</TITLE>
+      <PARA>        Este menú contiene:
+
+         <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Fijar una Reunión</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Aparece la ventana de <INTERFACE>Invitación de Reunión</INTERFACE>, 
+              descrita en <XREF LINKEND="usage-calendar-apts">.
+           </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Cancelar Invitación</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Cancela el evento, notificandoselo a todos los asistentes. Puede que le pida que 
+              especifique un mensaje.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Reenviar como vCalendar</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Abre el compositor de mensajes con el evento actual adjunto.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Reenviar como Texto</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Abre el compositor de mensajes con una descripción en texto del evento actual
+              incluida en el cuerpo del mensaje.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="menuref-cal-editor-help">      <TITLE>El Menú Archivo del Editor de Citas</TITLE>
+      <PARA>         Este menú está vacío.
+      </PARA>
+    </SECT2>
+
+  </SECT1>
+
+  <SECT1>    <TITLE>Menús del Administrador de Contactos</TITLE>
+    <PARA>     El administrador de contactos tiene seis menús:
+     <GUIMENU>Archivo</GUIMENU>, <GUIMENU>Editar</GUIMENU>,
+     <GUIMENU>Vista</GUIMENU>, <GUIMENU>Configuración</GUIMENU>,
+     <GUIMENU>Herramientas</GUIMENU>, y
+     <GUIMENU>Ayuda</GUIMENU>.
+    </PARA>
+
+    <SECT2 ID="menuref-contact-edit">      <TITLE>Menú Editar del Administrador de Contactos</TITLE>
+      <PARA>         Este menú está vacío.
+      </PARA>
+    </SECT2>
+
+
+    <SECT2 ID="menuref-contact-view">      <TITLE>Menú Ver del Administrador de Contactos</TITLE>
+      <PARA>        Este menú contiene las siguiente opciones:
+
+         <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Mostrar Barra de Atajos</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>              Active y desactive la barra de atajos con esta opción.          
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Muestra la Barra de Carpetas</GUIMENUITEM></TERM>
+	    <LISTITEM><PARA>             Active y descative la barra de carpetas con esta opción. 
+             Vea <XREF LINKEND="usage-mainwindow-folderbar"> para 
+             más información acerca de la barra de carpetas.     
+           </XREF></PARA></LISTITEM>
+	  </VARLISTENTRY>
+		  
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Como un Tabla</GUIMENUITEM> / <GUIMENUITEM>As Minicards</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Vea sus contactos como una tabla.  
+             Cuando esta en el modo tabla, está opción del menú aparece
+             como <GUIMENUITEM>Como Minitarjetas</GUIMENUITEM>, y vuelve a
+             cambiar la vista al formato minitarjetas.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	  
+	</VARIABLELIST>      
+      </PARA>
+    </SECT2>
+
+   <SECT2 ID="menuref-contact-tools">      <TITLE>Menú Herramientas del Administrador de Contactos</TITLE>
+      <PARA>         Este menú contiene una opción:
+
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Buscar un
+	    Contacto</GUIMENUITEM></TERM> <LISTITEM><PARA> Abre una ventana
+	    para una busqueda en profundidad. <XREF LINKEND="contact-search"> describe como usar esta característica.
+	    </XREF></PARA></LISTITEM>
+            </VARLISTENTRY>
+        </VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+
+
+   <SECT2 ID="menuref-contact-actions">      <TITLE>Menú Herramientas del Administrador de Contactos</TITLE>
+      <PARA>         Este menú contiene unia sola opción:
+
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENUITEM>Nuevo Servidor de Directorio</GUIMENUITEM></TERM> <LISTITEM><PARA> Muestra una ventana
+	    de búsqueda en profundidad. <XREF LINKEND="config-prefs-contact-ldap-add"> describe como usar esta
+	    característica.  </XREF></PARA></LISTITEM>
+            </VARLISTENTRY>
+        </VARIABLELIST>
+
+      </PARA>
+    </SECT2>
+  </SECT1>
+
+  <SECT1 ID="menuref-contact-editor">    <TITLE>Los Menús del Editor de Contactos</TITLE>
+    <PARA>       Esta ventana solo tiene un menú: el menú archivo.
+    </PARA>
+   
+   <SECT2 ID="menuref-contact-editor-file">      <TITLE>Menú Archivo del Editor de Contactos</TITLE>
+      <PARA>         Este menú contiene cinco opciones:
+         <VARIABLELIST>
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Guardar</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	
+
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Guardar como</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>              Le permite guardar el contacto como un archivo externo en el 
+              formato <GLOSSTERM LINKEND="vcard">VCard</GLOSSTERM>. 
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	
+
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Imprimir</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Imprime el contacto actual.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	
+
+
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Borrar</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>             Borra el contacto actual.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	
+
+  
+	  <VARLISTENTRY>	  <TERM><GUIMENUITEM>Cerrar</GUIMENUITEM></TERM>
+	  <LISTITEM><PARA>              Cierra el Editor de Contactos sin guardar.
+           </PARA></LISTITEM>
+	  </VARLISTENTRY>	
+
+	</VARIABLELIST>  
+      </PARA>
+    </SECT2>
+  </SECT1>
+  
+</CHAPTER>

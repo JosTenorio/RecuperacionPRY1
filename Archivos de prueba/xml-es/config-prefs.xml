@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<CHAPTER ID="config-prefs">
+      <TITLE>Configuración Avanzada</TITLE>
+      <PARA>        Quizá su servidor de correo ha cambiado de nombre.  Quizá se ha
+        cansado de cierto aspecto de la configuración de sus citas.
+        Cualquiera que sea la razón, usted quiere cambiar su configuración
+        de <APPLICATION>Evolution</APPLICATION>.  Este capítulo le
+        dirá como hacer exactamente eso.
+      </PARA>
+
+       <SECT1 ID="config-prefs-mail">         <TITLE>Configuración del Correo</TITLE>
+        <PARA>        Para cambiar su configuración de correo, seleccione <MENUCHOICE>        <GUIMENU>Configuración</GUIMENU> <GUIMENUITEM>Configuración
+        de correo</GUIMENUITEM></MENUCHOICE> estando en Inbox.  Esto
+        abrirá la <INTERFACE>ventana de preferencias del correo</INTERFACE>,
+        ilustrada en <XREF LINKEND="config-prefs-mail-fig">.  Las
+        preferencias de correo están separadas en varias categorías:
+        <VARIABLELIST>	<VARLISTENTRY>          <TERM><GUILABEL>Identidades</GUILABEL></TERM>
+          <LISTITEM>	    <PARA>               Esto le permite crear o alterar una o más identidades para
+               su correo electrónico.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUILABEL>Fuentes</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>               Esta pestaña le permite indicar a
+               <APPLICATION>Evolution</APPLICATION> de donde obtener el
+               correo que le envíen y como obtenerlo.
+            </PARA>
+          </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>
+	  <TERM><GUILABEL>Transporte de Correo</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>               Esta pestaña le permite indicar a
+               <APPLICATION>Evolution</APPLICATION> como enviar su correo.
+            </PARA>
+          </LISTITEM>
+	</VARLISTENTRY>
+
+	<VARLISTENTRY>	  <TERM><GUILABEL>Servidores de Noticias</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>              Si quisiera usar <APPLICATION>Evolution</APPLICATION> para
+              leer los grupos de noticias, puede especificar aquí las
+              características de su servidor de noticias..
+           </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+	<VARLISTENTRY>	  <TERM><GUILABEL>Otros</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>              Configuración miscelánea para el correo y las noticias, como
+              el uso de HTML, y cuanto tiempo debe esperar
+              <APPLICATION>Evolution</APPLICATION> antes de marcar un
+              mensaje como leído.
+           </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+      </VARIABLELIST>
+
+    </XREF></PARA>
+
+      
+      <FIGURE ID="config-prefs-mail-fig">	<TITLE>Dialogo de Preferencias del Correo</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>Setting mail preferences</SCREENINFO>
+	  <GRAPHIC FILEREF="fig/config-mail" FORMAT="png" SRCCREDIT="Aaron Weber">	    </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+      
+
+
+      <SECT2 ID="config-prefs-mail-identity">      <TITLE>Configuración de Identidades</TITLE> 
+      <PARA>         Si solo tiene una cuenta de correo, o envía el correo desde una
+         sola dirección, tan solo deberá configurar una identidad. De todos
+         modos, si quiere puede tener múltiples identidades.  Esto puede
+         resultar útil si quiere mantener separados su correo personal y
+         profesional, o si tiene varios puestos en su trabajo.
+         
+       </PARA>
+       <PARA>         Para añadir una nueva identidad, simplemente pulse
+         <GUIBUTTON>Añadir</GUIBUTTON>. Para modificar una identidad
+         ya existente, seleccione la de la pestaña
+         <GUILABEL>Identidad</GUILABEL> de la ventana de
+         <INTERFACE>Preferencias</INTERFACE>, y pulse
+         <GUIBUTTON>Editar</GUIBUTTON>.
+      </PARA>
+
+      <PARA>         <APPLICATION>Evolution</APPLICATION> le presentará una caja de
+         dialogo que contiene cuatro campos:
+          <ITEMIZEDLIST>           <LISTITEM>	    <PARA>              <GUILABEL>Nombre Completo:</GUILABEL> por defecto, este es el
+              mismo nombre que el nombre completo descrito en su cuenta de
+              usuario en su ordenador.  Puede seleccionar otro si lo desea.
+            </PARA>
+	  </LISTITEM>
+           <LISTITEM>	    <PARA>              <GUILABEL>Dirección de Correo:</GUILABEL> Escriba su dirección
+              de correo en este espacio.
+            </PARA>
+	  </LISTITEM>
+           <LISTITEM>	    <PARA>              <GUILABEL>Organización:</GUILABEL> Si envía mensajes en
+              representación de una compañía u otra organización,
+              escriba aquí el nombre de la misma.
+            </PARA>
+	  </LISTITEM>
+           <LISTITEM>	    <PARA>              <GUILABEL>Archivo de Firma:</GUILABEL> Puede elegir un
+              pequeño archivo de texto para que sea añadido a todos los
+              mensajes que mande.  Típicamente, los archivos de firma
+              incluyen la dirección u otra información de contacto, o su
+              cita preferida.  Es una buena costumbre hacer que no tenga
+              más de cuatro líneas.
+            </PARA>
+	  </LISTITEM>
+	</ITEMIZEDLIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="config-prefs-mail-network">      <TITLE>Configuración de la Red</TITLE> 
+      <PARA>        Para enviar correo con
+        <APPLICATION>Evolution</APPLICATION>, deberá conectarse a la red.
+        Para hacer esto deberá conocer su nombre de usuario y su clave, que
+        tipo de protocolos de recepción y envío usa su red, y los nombres
+        de los servidores que va a usar.  Si está migrando desde otro
+        programa de trabajo en grupo o de correo, casi con toda seguridad
+        podrá usar la misma configuración que en dicho programa. La
+        configuración relacionada con la Red se encuentra en las pestañas
+        <GUILABEL>Fuentes de Correo</GUILABEL> y
+        <GUILABEL>Transportes de Correo</GUILABEL>.
+      </PARA>
+ 
+      <SECT3 ID="config-prefs-network-sources">	<TITLE>Fuentes del Correo</TITLE>
+	<PARA>          La pestaña <INTERFACE>Fuentes de Correo</INTERFACE> le permite
+          editar, añadir, o borrar métodos de obtener el correo de los
+          servidores.  Pulsando en <GUIBUTTON>Añadir</GUIBUTTON> o
+          <GUIBUTTON>Editar</GUIBUTTON> aparecerá una caja de diálogo que
+          le ofrecerá las siguientes opciones:
+           <VARIABLELIST>	    <VARLISTENTRY>	      <TERM><GUILABEL>Tipo de Fuente de Correo:</GUILABEL></TERM>
+	      <LISTITEM>		<PARA>                  Seleccione entre servidores <GLOSSTERM LINKEND="imap">IMAP</GLOSSTERM> o <GLOSSTERM LINKEND="pop">POP</GLOSSTERM>, o archivos tipo
+                  <SYSTEMITEM><FILENAME>mbox</FILENAME></SYSTEMITEM>
+                  o <SYSTEMITEM><FILENAME>mh</FILENAME></SYSTEMITEM>
+                  al estilo Unix.
+                </PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    <VARLISTENTRY>	      <TERM> <GUILABEL>Servidores:</GUILABEL></TERM>
+	      <LISTITEM>		<PARA>                  Introduzca el nombre del servidor de su fuente de correo
+                  en este campo. Si usa  puede o no que sea el mismo que su
+                  servidor <GLOSSTERM LINKEND="smtp">SMTP</GLOSSTERM>.
+                </PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    <VARLISTENTRY>	      <TERM><GUILABEL>Nombre de usuario:</GUILABEL></TERM>
+	      <LISTITEM>		<PARA>                  Introduzca el nombre para la cuenta que tiene en el
+                  servidor-- este debería ser la parte de delante de la @
+                  de su dirección de correo.  Si usa archivos
+                  <SYSTEMITEM><FILENAME>mbox</FILENAME></SYSTEMITEM>
+                  o <SYSTEMITEM><FILENAME>mh</FILENAME></SYSTEMITEM>
+                  como fuentes de correo, no necesita escribir un nombre de
+                  usuario.
+                </PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    <VARLISTENTRY>	      <TERM><GUILABEL>Autentificación:</GUILABEL></TERM>
+	      <LISTITEM>		<PARA>                  Diga a <APPLICATION>Evolution</APPLICATION> como
+                  verificar su identidad con el servidor.  Sus opciones
+                  varían dependiendo del tipo de servidor que esté usando,
+                  y de la forma en que esté configurado.  Dado el nombre del
+                  servidor,
+                  <APPLICATION>Evolution</APPLICATION> puede detectar que
+                  tipos de autentificación ofrece.
+               </PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	    <VARLISTENTRY>	      <TERM><GUILABEL>Probar Configuración</GUILABEL></TERM>
+	      <LISTITEM>		<PARA>                  Pulse este botón para que
+                  <APPLICATION>Evolution</APPLICATION> compruebe si sus
+                  fuentes de correo están configuradas correctamente.
+                </PARA>
+	      </LISTITEM>
+	    </VARLISTENTRY>
+	  </VARIABLELIST>
+          </PARA>
+          <PARA>            Si tiene varias fuentes de correo, pulsando <GUIBUTTON>            Obtener</GUIBUTTON> actualizará cualquier carpeta IMAP,
+            <SYSTEMITEM><FILENAME>mh</FILENAME></SYSTEMITEM>, o
+            <SYSTEMITEM><FILENAME>mbox</FILENAME></SYSTEMITEM>
+            y comprobará y descargará el correo de todos los servidores POP.
+            En otras palabras, <GUIBUTTON>Obtener</GUIBUTTON> obtiene su
+            correo, sin importar cuantas fuentes tenga, o de que tipo sean.
+          </PARA>
+      </SECT3>
+
+      <SECT3 ID="config-prefs-mail-network-transports">	<TITLE>Transportes del Correo</TITLE>
+	<PARA>           La pestaña <INTERFACE>Transporte del Correo</INTERFACE> le
+           permite especificar como enviará el correo.  Evolution
+           actualmente soporta dos tipos de transporte: <GLOSSTERM LINKEND="smtp">SMTP</GLOSSTERM>, el cual usa un
+           servidor de correo remoto, y
+           <GLOSSTERM LINKEND="sendmail">sendmail</GLOSSTERM>, el cual usa el
+           programa <APPLICATION>sendmail</APPLICATION> de su sistema local.
+           <APPLICATION>Sendmail</APPLICATION> es más difícil de configurar,
+           pero ofrece más flexibilidad que
+           <GLOSSTERM>SMTP</GLOSSTERM>.
+        </PARA>
+	<PARA>            Para usar <GUILABEL>SMTP</GUILABEL>, necesitará introducir
+            el nombre de su servidor SMTP.  Puede que sea el mismo nombre
+            que el del servidor de su fuente de correo.
+         </PARA>
+         <PARA>            <APPLICATION>Evolution</APPLICATION> puede intentar
+            determinar si ha introducido un nombre de servidor válido.  Para
+            que lo haga, pulse el botón <GUILABEL>Comprobar
+            Configuración</GUILABEL>.
+         </PARA>
+	</SECT3>
+      </SECT2>
+      <SECT2 ID="config-prefs-network-news">          
+          <TITLE>Servidores de Noticias</TITLE>
+          <PARA>            Los grupos de noticias se parecen tanto a listas de correo que
+            no hay ninguna razón para no tenerlos al lado de su correo.  La
+            primera vez que seleccione la pestaña <GUILABEL>Servidor de
+            Noticias</GUILABEL>, verá una caja vacía con tres botones ya
+            familiares a la derecha: <GUIBUTTON>Añadir</GUIBUTTON>,
+            <GUIBUTTON>Editar</GUIBUTTON>, y
+            <GUIBUTTON>Borrar</GUIBUTTON>.
+          </PARA>
+          <PARA>            Pulse <GUIBUTTON>Añadir</GUIBUTTON> para añadir un servidor de
+            noticias, será preguntado por su nombre.  Introduzca el nombre,
+            pulse <GUIBUTTON>ACEPTAR</GUIBUTTON>, y ya está.  Naturalmente, puede
+            tener tantos servidores de noticias como desee.  Los servidores
+            de noticias aparecerán detrás de sus servidores IMAP en la
+            <INTERFACE>barra de carpetas</INTERFACE>.
+          </PARA>
+     </SECT2>
+
+     <SECT2 ID="config-prefs-mail-other">	<TITLE>Otras Preferencias del Correo</TITLE>
+	<PARA>          No todo encaja bien en categorías.  Esta parte contiene
+          una miscelánea de configuraciones que no tienen demasiado que ver
+          unas con otras.
+          <VARIABLELIST>
+             <VARLISTENTRY>                <TERM> 
+                   <GUILABEL>Enviar mensajes en formato HMTL</GUILABEL>
+                </TERM>
+                <LISTITEM><PARA>                    Si selecciona esta opción, enviará sus
+                    mensajes en HTML por defecto.  Si no la selecciona, sus
+                    mensajes se enviarán sin formato HTML a menos que seleccione 
+                    <MENUCHOICE> <GUIMENU>Formato</GUIMENU> <GUIMENUITEM>HTML</GUIMENUITEM>
+                    </MENUCHOICE> en la ventana de composición de mensajes.
+                    Vea <XREF LINKEND="usage-mail-getnsend-send-html">                    para más información acerca del correo en HTML.
+                </XREF></PARA></LISTITEM>
+              </VARLISTENTRY>
+             <VARLISTENTRY>                <TERM> 
+                   <GUILABEL>Marcar Mensajes como Leídos Pasados</GUILABEL>
+                </TERM>
+                <LISTITEM><PARA> 
+                    Cuando selecciona un mensaje,
+                    <APPLICATION>Evolution</APPLICATION> esperará un
+                    momento antes de marcarlo como leído. Puede poner el
+                    tiempo de espera, en milisegundos, aquí.
+                 </PARA></LISTITEM>
+              </VARLISTENTRY>
+              <VARLISTENTRY>                <TERM>                   <GUILABEL>Formato de Carpeta</GUILABEL>
+                </TERM>
+                <LISTITEM> <PARA> Por defecto,
+                   <APPLICATION>Evolution</APPLICATION> guarda el correo
+                   en el formato
+                   <SYSTEMITEM><FILENAME>mbox</FILENAME></SYSTEMITEM>.
+                   Si quiere puede cambiar al formato
+                   <SYSTEMITEM><FILENAME>mh</FILENAME></SYSTEMITEM>. Sepa
+                   que esta en una característica avanzada y que puede hacer
+                   que pierda algunos mensajes, así que probablemente
+                   primero debería hacer una copia de seguridad de su
+                   directorio <SYSTEMITEM><FILENAME>evolution</FILENAME>                   </SYSTEMITEM>
+. Además, llevará bastante tiempo si tiene
+                   un mailbox grande.
+               </PARA></LISTITEM>
+             </VARLISTENTRY>
+           </VARIABLELIST>
+        </PARA>
+      </SECT2>
+    </SECT1>
+
+    <SECT1 ID="config-prefs-cal">       <TITLE>Configuración del Calendario</TITLE>
+       <PARA>          Para especificar sus preferencias sobre el calendario, selección
+          <MENUCHOICE><GUIMENU>Configuraciones</GUIMENU>
+          <GUIMENUITEM>Configuración del
+          Calendario</GUIMENUITEM></MENUCHOICE> desde la vista del
+          calendario.  Esto abrirá la ventana de
+          <INTERFACE>Preferencias</INTERFACE>.  Contiene cuatro pestañas:
+          <GUILABEL>Vista del tiempo</GUILABEL>,
+          <GUILABEL>Colores</GUILABEL>, <GUILABEL>Lista de Tareas</GUILABEL>
+          y <GUILABEL>Alarmas</GUILABEL>.  La <INTERFACE>ventana de
+          preferencias del calendario</INTERFACE> está ilustrada en <XREF LINKEND="config-prefs-cal-fig">.
+
+      
+      <FIGURE ID="config-prefs-cal-fig">	<TITLE>Diálogo de Preferencias del Calendario</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>Si esto funcionase en mi trabajo también como en mi calendario...</SCREENINFO>
+	  <GRAPHIC FILEREF="fig/config-cal" FORMAT="png" SRCCREDIT="Aaron Weber">	    </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+      
+        </XREF></PARA>
+
+    <SECT2 ID="config-prefs-cal-time">      <TITLE>Configuración de las Vistas del Tiempo</TITLE>
+      <PARA>        La pestaña <GUILABEL>mostrar el Tiempo</GUILABEL> le permite
+        configurar lo siguiente:
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM>Formato del tiempo</TERM>
+	    <LISTITEM>	      <PARA>Puede elegir aquí entre los formatos de doce horas (AM/PM) y
+	      de veinticuatro horas simplemente pulsando sobre el botón apropiado.
+              </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  <VARLISTENTRY>	    <TERM>La semana comienza</TERM>
+	    <LISTITEM>	      <PARA>Puede fijar que las semanas comiencen en Domingos o en               Lunes.</PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  <VARLISTENTRY>	    <TERM>Rango diario</TERM>
+	    <LISTITEM>               <PARA>                 ¿Cuando comienza u jornada laboral y cuando termina?
+                 En la vista diaria y semanal,
+                 <APPLICATION>Evolution</APPLICATION> muestra todas las
+                 horas del rango que seleccione aquí, incluso si no hay
+                 citas a esas horas.  Naturalmente, podrá poner una cita
+                 fuera de estas horas, y si lo hace, la vista se extenderá
+                 para mostrarla.
+               </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+       </PARA>
+    </SECT2>
+    <SECT2 ID="config-prefs-cal-color">      <TITLE>Colores del Calendario</TITLE>
+      <PARA>        La pestaña de <INTERFACE>colores</INTERFACE> le permite decidir
+        de que color será su calendario.  La pestaña consiste en un
+        calendario de ejemplo a la derecha y de una lista de diez elementos
+        que pueden ser coloreados en diferentes formas.  Si pulsa en botón
+        de color a la derecha de cada elemento, mostrará una ventana de
+        selección de color donde podrá elegir a que color cambiar el
+        elemento.  Pulsando <GUIBUTTON>ACEPTAR</GUIBUTTON> en el diálogo de
+        selección de colores, puede ver os resultados de los colores en el
+        calendario de ejemplo.
+     </PARA>
+     <PARA>Los elementos a mostrar cuyos colores puede fijar son:
+
+          <ITEMIZEDLIST>           <LISTITEM>              <PARA>                <GUILABEL>Marco:</GUILABEL> Las líneas entre los días y la
+                parte de arriba de la vista.
+              </PARA>
+            </LISTITEM>
+
+           <LISTITEM>              <PARA> <GUILABEL>Títulos:</GUILABEL> Color del texto para los
+                nombres de los días y los meses y para otros títulos.
+              </PARA>
+            </LISTITEM>
+
+           <LISTITEM>              <PARA> <GUILABEL>Días vacíos:</GUILABEL> Este es el color de
+                fondo para cualquier espacio de tiempo en el que no tiene citas.
+               </PARA>
+            </LISTITEM>  
+
+         <LISTITEM>              <PARA>         
+             <GUILABEL>Citas:</GUILABEL> Este es el color de fondo para
+                cualquier espacio de tiempo en el que tenga citas.
+               </PARA>
+            </LISTITEM>
+     
+	  <LISTITEM>	    <PARA> <GUILABEL>Día resaltado:</GUILABEL> El color de fondo
+              para un espacio de tiempo seleccionado.
+             </PARA>
+	  </LISTITEM>
+
+          
+	  <LISTITEM>	    <PARA>         
+              <GUILABEL>Números de los días:</GUILABEL> Color del texto para los números de las fechas.
+            </PARA>
+	  </LISTITEM>
+
+              
+	  <LISTITEM>	    <PARA>              <GUILABEL>Número del día actual:</GUILABEL> Color del texto para la fecha del día de hoy.
+             </PARA>
+	  </LISTITEM>
+
+	  <LISTITEM>	    <PARA> <GUILABEL>Elementos Por Hacer que dentro de plazo:
+             </GUILABEL> Color del texto para los elementos de la lista Por
+             Hacer que están aún dentro del plazo.
+             (¿Quizá sea el color de fondo? ¡averígualo!)
+               </PARA>
+	  </LISTITEM>
+
+
+	  <LISTITEM>	    <PARA> <GUILABEL>Elementos Por Hacer de plazo hoy:</GUILABEL>
+             Color del texto para las tareas de hoy.
+               </PARA>
+	  </LISTITEM>
+
+	  <LISTITEM>	    <PARA> <GUILABEL>Elementos Por Hacer fuera de plazo:</GUILABEL>
+             Color del texto para las tareas fuera de plazo.
+               </PARA>
+	  </LISTITEM>
+
+          </ITEMIZEDLIST>
+        </PARA>
+    </SECT2>
+
+    <SECT2 ID="config-prefs-cal-todo">      <TITLE>Configuración de la Lista de Tareas Por-Hacer</TITLE>
+     <PARA>       Puede elegir que información muestra la lista Por Hacer y la manera
+       como la muestra.  Las dos áreas de la pestaña <INTERFACE>Lista Por
+       Hacer</INTERFACE> ofrecen varias opciones cada una:
+       <VARIABLELIST>	 <VARLISTENTRY>	   <TERM>Mostrar en la Lista Por Hacer</TERM>
+	    <LISTITEM>	      <PARA>                Esta opción contiene tres elementos.  Si marca las casillas
+                a su lado, esa información aparecerá en la lista Por Hacer
+                para cada tarea que contenga:
+                <ITEMIZEDLIST>                  <LISTITEM>		    <PARA><GUILABEL>Fecha de Plazo</GUILABEL></PARA>
+                   </LISTITEM>
+                  <LISTITEM>		    <PARA><GUILABEL>Tiempo hasta el Plazo</GUILABEL></PARA>
+                   </LISTITEM>
+                  <LISTITEM>		    <PARA><GUILABEL>Prioridad</GUILABEL></PARA>
+                   </LISTITEM>
+               </ITEMIZEDLIST>
+               </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  <VARLISTENTRY>	    <TERM>Opciones de Estilo</TERM>
+	    <LISTITEM>               <PARA>                 Seleccione entre las siguientes casillas para determinar
+                 que aspecto tendrá la lista Por Hacer:
+                <ITEMIZEDLIST>                  <LISTITEM>		   <PARA><GUILABEL>Resaltar elementos fuera de plazo</GUILABEL></PARA>
+                   </LISTITEM>
+                  <LISTITEM>		   <PARA><GUILABEL>Resaltar elementos de plazo hoy</GUILABEL></PARA>
+                   </LISTITEM>
+                  <LISTITEM>		   <PARA><GUILABEL>Resaltar elementos dentro del plazo</GUILABEL></PARA>
+                   </LISTITEM>
+               </ITEMIZEDLIST>                 
+               </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </PARA>
+    </SECT2>
+
+    <SECT2 ID="config-prefs-cal-alarms">      <TITLE>Colocación de Alarmas</TITLE>
+      <PARA>  
+        La pestaña de <INTERFACE>alarmas</INTERFACE> le da la posibilidad de elegir entre tres opciones:
+        <ITEMIZEDLIST>	  <LISTITEM>	    <PARA><GUILABEL>Pitar al mostrar las alarmas</GUILABEL>: seleccione
+	    esta opción para que <APPLICATION>Evolution</APPLICATION> emita un
+	    pitido para la alarma que haya fijado.  Si deja esta opción sin
+	    marcar, <APPLICATION>Evolution</APPLICATION> tan solo le alertará de
+	    los sucesos abriendo un ventana de diálogo. Estos pitidos son
+	    distintos a los de las alarmas auditivas.
+           </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA><GUILABEL>Las alarmas auditivas cesan tras: </GUILABEL>
+	    Seleccione esta opción para que las alarmas auditivas cesen
+	    automáticamente pasados un número determinado de segundos.  </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA><GUILABEL>Activar recordatorio para:</GUILABEL> Si quiere
+	    tener la posibilidad de decirle a
+	    <APPLICATION>Evolution</APPLICATION> que repita la alarma en unos
+	    minutos, elija esta opción y decida cuanto tiempo quiere que espere
+	    antes de repetirla.
+           </PARA>
+	  </LISTITEM>
+	</ITEMIZEDLIST>   
+      </PARA>
+    </SECT2>
+
+   </SECT1>
+
+   <SECT1 ID="config-prefs-contact">      <TITLE>Administrando el Administrador de Contactos</TITLE>
+	<PARA>          Para fijar el comportamiento de su Administrador de Contactos,
+          pulse en la pestaña
+          <GUIBUTTON>Administrador de Contactos</GUIBUTTON> en la ventana de
+          <INTERFACE>Preferencias</INTERFACE>.
+        </PARA>
+	<PARA>          Ha definido las siguientes opciones: 
+        </PARA>
+      
+        <SECT2 ID="config-prefs-contact-ldap-add">           <TITLE>Añadiendo Servidores de Directorio</TITLE>
+           <PARA>              Para añadir un nuevo servidor LDAP a su carpeta de contactos
+              disponibles, selección <MENUCHOICE><GUIMENU>Acciones</GUIMENU>
+              <GUIMENUITEM>Nuevo Servidor de Directorio</GUIMENUITEM>
+              </MENUCHOICE>.  Esto mostrará una pequeña caja de diálogo que
+              le permitirá introducir los siguientes datos:
+              <ITEMIZEDLIST>	         <LISTITEM><PARA>                    <GUILABEL>Nombre</GUILABEL>  cualquier nombre que elija para el servidor.
+                 </PARA></LISTITEM>
+
+                <LISTITEM><PARA>                    <GUILABEL>Descripción</GUILABEL>  un descripción larga del servidor.
+                 </PARA></LISTITEM>
+
+                    <LISTITEM><PARA>                    <GUILABEL>Servidor LDAP</GUILABEL>  la dirección de red del servidor.
+                 </PARA></LISTITEM> 
+               
+                   <LISTITEM><PARA>                    <GUILABEL>Puerto</GUILABEL>  por defecto, el puerto es el 389.
+                 </PARA></LISTITEM>
+
+                   <LISTITEM><PARA>                    <GUILABEL>DN Raíz</GUILABEL>  entre el DN raíz aquí.
+                 </PARA></LISTITEM>
+             </ITEMIZEDLIST>
+         </PARA>
+       </SECT2>
+      </SECT1>
+    
+
+
+  <SECT1 ID="config-prefs-general">    <TITLE>Preferencias Generales</TITLE> 
+    <PARA>          Las opciones adicionales de configuración se cubrirán aquí,
+          según vayan estando disponibles.
+        </PARA>
+  </SECT1></CHAPTER>

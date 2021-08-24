@@ -1,0 +1,576 @@
+<?xml version="1.0"?>
+<ARTICLE ID="index" LANG="es"><ARTHEADER>
+<AUTHORGROUP><AUTHOR><FIRSTNAME>Manuel</FIRSTNAME> <SURNAME>De Vega Barreiro</SURNAME>
+<AFFILIATION> 
+<ORGNAME> Gnome-es </ORGNAME>
+<ADDRESS> <EMAIL> mbarreiro@red.madritel.es </EMAIL> </ADDRESS></AFFILIATION></AUTHOR></AUTHORGROUP>
+<COPYRIGHT><YEAR>
+2001
+</YEAR>
+<HOLDER>
+Manuel de Vega Barreiro
+</HOLDER></COPYRIGHT>
+<ABSTRACT><PARA>
+Este documento describe los pasos a seguir para traducir las ayudas de las aplicaciones y utilidades
+de Gnome.
+</PARA></ABSTRACT>
+<TITLE>
+Traducción de las ayudas de aplicaciones y utilidades del entorno de escritorio Gnome
+</TITLE></ARTHEADER>
+
+<SECT1 ID="introduction"><TITLE>
+Introducción
+</TITLE>
+<PARA>En todas las aplicaciones, apliques y utilidades del entorno Gnome se incluye
+un manual con la idea de facilitar su aprendizaje a los usuarios.
+Una vez traducidos los mensajes de la interfaz, de los menús y de los diálogos, que suponen el primer contacto de los usuarios con la aplicación, nuestro objetivo es traducir la documentación que se adjunta con ella.
+Esta guía tiene por objetivo ayudar a los traductores a realizar esta labor de
+forma sencilla, empezando por aclarar los distintos ficheros que se deben traducir 
+y terminado con la forma de entregar los trabajos en el repositorio CVS. </PARA>
+<PARA>Con  el fin de que la guía sea lo más practica posible, usaré
+las ayudas del aplique whereami y su traducción al castellano (código es) como ejemplo.</PARA>
+</SECT1>
+
+<SECT1><TITLE>Ficheros de un manual</TITLE>
+<PARA>El original en inglés de la ayuda de whereami se encuentra en el directorio:
+<FILENAME>gnome-applets/whereami/docs/C</FILENAME>
+
+
+y se compone de los siguientes ficheros:
+
+<PROGRAMLISTING>./C/whereami_applet.sgml
+./C/whereami.sgml
+./C/topic.dat
+./C/whereami_applet-C.omf
+./C/figures
+./C/figures/whereami_applet.png</PROGRAMLISTING>
+
+El resultado de la traducción deberá residir en el directorio:
+<FILENAME>gnome-applets/whereami/docs/es</FILENAME>
+manteniendo la misma estructura:
+<PROGRAMLISTING>./es/whereami_applet.sgml
+./es/whereami.sgml
+./es/topic.dat
+./es/whereami_applet-es.omf
+./es/figures
+./es/figures/whereami_applet.png
+
+./es/authors.sgml
+./es/license.sgml
+./es/licencia-es.sgml
+./es/licencia-nota-es.sgml</PROGRAMLISTING>
+Observarás que hay tres ficheros adicionales en la traducción. Más adelante explicaremos el motivo.</PARA>
+
+<PARA>El grueso de la traducción lo componen los ficheros de tipo sgml, debiéndose
+traducir también algunas frases en el resto de ficheros. Por último es 
+necesario realizar las capturas en castellano de las figuras que se incluyen
+en el directorio
+<FILENAME>figures</FILENAME>.</PARA>
+<PARA>Veremos en la sección dedicada a las entregas que, de cara a realizar una entrega en el repositorio,
+hay que prestar también atención a algunos ficheros adicionales.</PARA>
+<PARA>En los paquetes de traducción que preparamos en Gnome-es, incluimos el árbol con el original en inglés y, en caso de existir una versión previa de la traducción, 
+los ficheros correspondientes a la traducción anterior. Todo ello comprimido en
+un paquete de tipo tar.</PARA></SECT1>
+
+<SECT1><TITLE>Traducción de cada fichero</TITLE>
+<PARA>A continuación se describe cómo y qué traducir en cada fichero.</PARA>
+
+<SECT2><TITLE>harem_applet.sgsml</TITLE>
+<PARA>Este fichero es una especie de cabecera, y cuando existe
+(a veces está incluido todo en un único sgml), contiene información sobre el tipo 
+de DTD usada por el documento,  sobre la licencia
+y los derechos de autor.</PARA>
+
+<PARA><PROGRAMLISTING>
+!DOCTYPE Article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+ !ENTITY whereami.sgml SYSTEM "whereami.sgml"
+
+]
+
+article id="index" !-- please do not change the id --
+
+ !-- ============= Document Header ============================= --
+ artheader
+  titleWhere Am I? Applet/title
+  copyright
+   year2000/year
+   holderTelsa Gwynne/holder
+  /copyright
+
+  !-- translators: uncomment this:
+
+  copyright
+   year2000/year
+   holderME-THE-TRANSLATOR (Latin translation)/holder
+  /copyright
+
+   --
+
+  !-- do not put authorname in the header except in copyright - use
+  section "authors" below --
+
+  legalnotice id="legalnotice"
+   para
+    Permission is granted to copy, distribute and/or modify this
+    document under the terms of the citetitleGNU Free Documentation
+
+...
+
+    of the GNOME Documentation Project, the names have been printed in caps
+    or initial caps.
+   /para
+  /legalnotice
+
+  releaseinfo
+   This is version 1.0 of the Where Am I? applet manual.
+  /releaseinfo
+ /artheader
+
+ !-- ============= Document Body ============================= --
+
+ whereami.sgml;
+
+/article
+</PROGRAMLISTING></PARA>
+<PARA>En este fichero deberemos incluir una serie de nuevas definiciones en la cabecera DTD:
+<PROGRAMLISTING>
+ !ENTITY name "¿Dónde estoy?"
+ !ENTITY aplication "whereami"
+
+ !ENTITY authors SYSTEM "authors.sgml"
+ !ENTITY license SYSTEM "license.sgml"
+
+ !ENTITY licencia-nota-es SYSTEM "licencia-nota-es.sgml"
+ !ENTITY license-es SYSTEM "licencia-es.sgml"
+
+ !ENTITY programer "John Kodis"
+ !ENTITY programer-email "emailkodis@jagunet.com/email"
+
+ !ENTITY writer "Telsa Gwynne"
+ !ENTITY writer-email "emailhobbit@aloss.ukuu.org.uk/email"
+
+ !ENTITY traductor "Manuel de Vega Barreiro"
+ !ENTITY traductor-email "emailmbarreiro@red.madritel.es/email"
+
+</PROGRAMLISTING></PARA>
+<PARA>Iremos viendo el significado y uso de cada una de estas definiciones más adelante.</PARA>
+<PARA>Después indicaremos que el documento está en castellano:
+<PROGRAMLISTING>article id="index" lang="es" !-- please do not change the id --</PROGRAMLISTING></PARA>
+<PARA>Incluiremos una nota sobre los derechos de autor de la traducción:
+<PROGRAMLISTING>  copyright
+   year2001/year
+   holdertraductor; (Traducción al Castellano)/holder
+  /copyright</PROGRAMLISTING>
+Observa que el nombre del traductor se toma de una de las definiciones de la cabecera DTD. 
+De esta forma aunque el nombre aparezca varias veces a lo largo del manual sólo hay que mantenerlo
+actualizado en la cabecera. Fíjate en que el año de los derechos de autor de la traducción es el actual
+, y no tiene por qué coincidir con el del original.</PARA>
+<PARA></PARA>
+<PARA>El siguiente paso es  traducir la información de la versión del manual:
+<PROGRAMLISTING>  releaseinfo
+Ésta es la versión 1.0 del manual del aplique ¿Dónde estoy?
+  /releaseinfo</PROGRAMLISTING>
+La nota acerca de la licencia no se traduce por motivos legales. En su lugar incluimos una traducción a título informativo,
+insertando el fichero <FILENAME>licencia-nota-es.sgml</FILENAME>:
+<PROGRAMLISTING>licencia-nota-es;</PROGRAMLISTING></PARA>
+
+<PARA>La 
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/v1.4/ayudas/licencia-nota-es.sgml">nota acerca de la licencia </ULINK> 
+está disponible en la web de Gnome-es. </PARA>
+
+
+<PARA>A continuación presentamos el resultado final de la traducción de este fichero:
+<PROGRAMLISTING>
+CTYPE Article PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN"[
+ !ENTITY whereami.sgml SYSTEM "whereami.sgml"
+
+<EMPHASYS> !ENTITY name "¿Dónde estoy?"
+ !ENTITY aplication "whereami"
+
+ !ENTITY authors SYSTEM "authors.sgml"
+ !ENTITY license SYSTEM "license.sgml"
+
+ !ENTITY licencia-nota-es SYSTEM "licencia-nota-es.sgml"
+ !ENTITY license-es SYSTEM "licencia-es.sgml"
+
+ !ENTITY programer "John Kodis"
+ !ENTITY programer-email "emailkodis@jagunet.com/email"
+
+ !ENTITY writer "Telsa Gwynne"
+ !ENTITY writer-email "emailhobbit@aloss.ukuu.org.uk/email"
+
+ !ENTITY traductor "Manuel de Vega Barreiro"
+ !ENTITY traductor-email "emailmbarreiro@red.madritel.es/email"</EMPHASYS>
+
+]
+
+article id="index" <EMPHASYS>lang="es"</EMPHASYS> !-- please do not change the id --
+
+ !-- ============= Document Header ============================= --
+ artheader
+  titleAplique ¿Dónde estoy?/title
+  copyright
+   year2000/year
+   holderwriter;/holder
+  /copyright
+<EMPHASYS>  copyright
+   year2001/year
+   holdertraductor; (traducción al Castellano)/holder
+  /copyright</EMPHASYS>
+  !-- do not put authorname in the header except in copyright - use
+  section "authors" below --
+
+  legalnotice id="legalnotice"
+   para
+    Permission is granted to copy, distribute and/or modify this
+    document under the terms of the citetitleGNU Free Documentation
+
+...
+
+    of the GNOME Documentation Project, the names have been printed in caps
+    or initial caps.
+   /para
+<EMPHASYS>licencia-nota-es;</EMPHASYS>
+  /legalnotice
+
+  releaseinfo
+   Ésta es la versión 1.o del manual del aplique ¿Dónde estoy?
+  /releaseinfo
+ /artheader
+
+ !-- ============= Document Body ============================= --
+
+ whereami.sgml;
+
+/article
+</PROGRAMLISTING></PARA></SECT2>
+
+<SECT2><TITLE>whereami.sgsml</TITLE>
+<PARA>Este fichero contiene el cuerpo principal del manual. Se traduce siguiendo las normas
+de traducción de ficheros docbook/sgml. Si no conoces este tipo de ficheros la
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/docfaq/index.html">FAQ de documentación del grupo Lilo (SGML/docbook)</ULINK> 
+y los
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/trucos/index.html">Trucos y ayudas para traducir documentos Linux</ULINK> 
+te serán de gran ayuda.</PARA>
+<PARA>Hay dos secciones con un tratamiento especial: la sección dedicada a los
+autores y la licencia. </PARA>
+<PARA>La sección de autores básicamente es la misma en todos los documentos y para facilitar
+la labor de los traductores encontraréis en Gnome-es una 
+
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/v1.4/ayudas/authors.sgml">propuesta de traducción.</ULINK> 
+</PARA>
+<PARA>Como es habitual se debe respetar la licencia en su formato original, y por este motivo sólo 
+se incluye un traducción a titulo informativo. Nuevamente se dispone en Gnome-es de una 
+
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/v1.4/ayudas/licencia-es.sgml">propuesta de traducción.</ULINK> 
+
+y una copia de la 
+
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/v1.4/ayudas/license.sgml">licencia original en inglés.</ULINK> 
+
+
+</PARA>
+<PARA>Estas últimas secciones (autores, licencia original y licencia traducida) se insertan
+añadiendo al final de la traducción los siguientes marcadores:
+<PROGRAMLISTING>authors;
+license;
+licencia-es;</PROGRAMLISTING></PARA>
+<PARA>De esta forma el documento traducido tendría la siguiente presentación:
+<PROGRAMLISTING> sect1 id="whereami"
+  titleAplique ¿Dónde estoy?/title
+
+   para
+El aplique application¿Dónde estoy?/application, mostrado en
+xref linkend="whereamiapplet-fig", indica la posición del puntero
+del ratón en la pantalla, mostrando las coordenadas parameterx/parameter
+
+...
+
+    /itemizedlist
+   /para
+  /sect2
+
+
+  !-- ============= Bugs ================================== --
+  !-- This section should describe known bugs and limitations of
+       the program if there are any - please be frank and list all
+       problems you know of --
+
+  sect2 id="whereami-bugs"
+   titleErrores y limitaciones conocidas/title
+   para
+    Este aplique no tiene errores conocidos.
+   /para
+  /sect2
+
+authors;
+license;
+licencia-es;
+
+/sect1
+</PROGRAMLISTING></PARA>
+</SECT2>
+
+<SECT2><TITLE>topic.dat</TITLE>
+<PARA>Este fichero se traduce rápido, basta traducir la etiqueta asignada al índice del documento.
+<PROGRAMLISTING>index.html      Aplique ¿Dónde estoy?</PROGRAMLISTING></PARA></SECT2>
+
+<SECT2><TITLE>whereami_applet-es.omf</TITLE>
+<PARA>Este fichero también se traduce rápido, pero hay que tener cuidado, ya como observarás en 
+primer lugar se le cambia de nombre.
+<FILENAME>whereami_applet-<EMPHASYS>es</EMPHASYS>.omf</FILENAME></PARA>
+<PARA>Además no hay que traducir todo su contenido, sólo algunas partes:
+<PROGRAMLISTING>?xml version="1.0" standalone="no"?
+omf
+  resource
+    title
+      <EMPHASYS>Manual del aplique ¿Dónde estoy?</EMPHASYS>
+    /title
+    subject
+      categoryGNOME|Applets|Utility/category
+    /subject
+    format mime="text/sgml"/
+    identifier url="whereami_applet.sgml"/
+    language code="<EMPHASYS>es</EMPHASYS>"/
+  /resource
+/omf</PROGRAMLISTING>
+Como puedes ver el apartado 'category' no se traduce.</PARA>
+</SECT2>
+
+<SECT2><TITLE>figuras</TITLE>
+<PARA>Por último nos queda capturar las figuras, pero lógicamente en castellano. Los coordinadores del
+proyecto de documentación de Gnome (GDP) recomiendan usar el tema por defecto a la hora de realizar
+las capturas. Esto debería respetarse, ya que en el texto se hará mención a menús y botones, y si
+cambiamos a otros temas podrían tener una presentación diferente.</PARA></SECT2>
+</SECT1>
+
+<SECT1><TITLE>La revisión</TITLE>
+<PARA>En primer lugar, debemos precisar lo que entendemos por revisión: se trata de revisar la ortografía y el formato 
+de los documentos que acabamos de traducir, y no de una revisión de estilo, tal y como la acometería
+un revisor.</PARA>
+
+<SECT2><TITLE>Segunda lectura</TITLE>
+<PARA>Una cosa que siempre viene bien, una vez acabado el conjunto de la traducción, es leerla de nuevo. 
+Os aseguro que en esta segunda lectura se mejoran y corrigen muchas cosas.</PARA></SECT2>
+
+<SECT2><TITLE>Corrector ortográfico</TITLE>
+<PARA>La siguiente fase de la revisión consiste en pasar un corrector ortográfico a los documentos 
+traducidos.
+En las páginas de
+<ULINK TYPE="http" URL="http://www.datsi.fi.upm.es/~coes/espell_leame/espell_leame.html">COES</ULINK> 
+ tenéis la última versión del diccionario ispell en Castellano.</PARA></SECT2>
+
+<SECT2><TITLE>Formato SGML</TITLE>
+<PARA>Por último, conviene comprobar que hemos respetado el formato Docbook/SGML al realizar la
+traducción. La mejor forma de conseguirlo es convertir nuestro recién revisado documento al
+formato html usando el siguiente comando:
+<PROGRAMLISTING>db2html whereami_applet.sgml</PROGRAMLISTING>
+Al ejecutar este comando, un compilador que a partir del formato Docbook/SGML genera una versión
+del documento en formato html, podremos ver si existen errores en los marcadores.</PARA>
+<PARA>Disponer del documento en formato html también facilita una lectura más placentera de la traducción.</PARA>
+<PARA>La instalación de las herramientas y utilidades necesarias para este paso se describen en la
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/docfaq/index.html">FAQ de documentación del grupo Lilo (SGML/docbook)</ULINK> 
+      <NOTE>	  <PARA>La instalación de las herramientas no es una tarea trivial, o sea, que si ves que este paso
+te supera, no le des más vueltas; el coordinador lo hará por ti al recibir el trabajo.</PARA>
+      </NOTE></PARA></SECT2></SECT1>
+ 
+<SECT1><TITLE>La entrega al repositorio CVS</TITLE>
+<PARA>Pues vamos con el último paso: la entrega al repositorio. Esta fase es, sin duda, la más compleja, ya
+que es necesario conocer el funcionamiento de numerosas herramientas: cvs, make, db2html, etc.
+Si queremos ser totalmente rigurosos sería incluso necesario disponer de un entorno para compilar
+paquetes de desarrollo Gnome. Todo esto no es, desde luego, una tarea trivial, por lo que 
+si os véis superados nuevamente, dejad este tipo de tareas para los coordinadores. Tampoco quisiera desanimaros,
+a la postre es todo cuestión de remangarse. En las próximas secciones intentaré acercaros mis 
+experiencias con las entregas.</PARA>
+
+<SECT2><TITLE>Copiar el paquete del CVS</TITLE>
+<PARA>Para realizar la entrega de la documentación necesitamos en primer lugar obtener una
+copia del paquete al que pertenezca. 
+Esta copia la obtenemos del repositorio CVS de Gnome utilizando los siguientes comandos:
+<PROGRAMLISTING>bash-2.04$     cd /gnome/cvs
+bash-2.04$     export CVSROOT=:pserver:anonymous@anoncvs.gnome.org:/cvs/gnome
+bash-2.04$     cvs login
+(Logging in to anonymous@anoncvs.gnome.org)
+CVS password:  retorno
+bash-2.04$     cvs -z3 co gnome-applets</PROGRAMLISTING>
+Como podrás observar, para esta primera operación, nos basta con una conexión anónima (no
+es necesaria una cuenta personal) que ni siquiera necesita clave de acceso.</PARA>
+<NOTE><PARA>Este comando utiliza la rama principal del paquete, conocida como «HEAD». En algunas ocasiones
+esta rama puede no ser la apropiada, y no deberían entregarse paquetes copiados de una rama en
+otra diferente (al menos sin estar seguro de lo que se hace).</PARA></NOTE></SECT2>
+
+
+<SECT2><TITLE>Ficheros involucrados</TITLE>
+<PARA>Veamos ahora una lista de los ficheros que tendremos que manipular cuando realicemos
+una entrega:
+<PROGRAMLISTING>./gnome-applets/ChangeLog
+./gnome-applets/configure.in
+
+./gnome-applets/whereami/ChangeLog
+./gnome-applets/whereami/docs/Makefile.am
+
+./gnome-applets/whereami/docs/es/Makefile.am
+
+./gnome-applets/whereami/docs/es/figures
+./gnome-applets/whereami/docs/es/figures/whereami_applet.png
+./gnome-applets/whereami/docs/es/whereami.sgml
+./gnome-applets/whereami/docs/es/whereami_applet.sgml
+./gnome-applets/whereami/docs/es/license.sgml
+./gnome-applets/whereami/docs/es/licencia-es.sgml
+./gnome-applets/whereami/docs/es/licencia-nota-es.sgml
+./gnome-applets/whereami/docs/es/authors.sgml
+./gnome-applets/whereami/docs/es/topic.dat
+./gnome-applets/whereami/docs/es/whereami_applet-es.omf</PROGRAMLISTING>
+Como puede verse, tenemos los ya conocidos ficheros de la traducción y algunos ficheros adicionales. 
+En los siguientes apartados iremos viendo cómo generar o modificar cada uno de ellos. </PARA>
+
+<SECT3><TITLE>Ficheros de la traducción</TITLE>
+<PARA>Lo primero que debemos hacer es copiar los ficheros de la traducción es la estructura de 
+directorios del paquete. Suponiendo que nuestro directorio de trabajo es
+<FILENAME>/home/mbarreiro/traducciones/whereami</FILENAME>, las comandos serían los siguientes
+<PROGRAMLISTING>bash-2.04$     cd /gnome/cvs/gnome-applets 
+bash-2.04$     cd whereami/docs
+bash-2.04$     mkdir es
+bash-2.04$     cd es
+bash-2.04$     cp -rf /home/mbarreiro/traducciones/whereami/* .</PROGRAMLISTING>
+<NOTE><PARA>Es importante asegurarnos de que no copiamos otros ficheros o directorios, como por ejemplo
+el directorio <FILENAME>whereami</FILENAME> que se genera al crear la documentación
+en formato html, o las copias de seguridad creadas al editar los ficheros 
+(<FILENAME>whereami.sgml~</FILENAME>).</PARA>     </NOTE></PARA>
+<PARA>Con esto tendremos todos los ficheros en su lugar de destino, a falta del fichero 
+<FILENAME>Makefile.am</FILENAME>. Veamos cómo conseguir y actualizar este fichero:
+<PROGRAMLISTING>bash-2.04$     cd /gnome/cvs/gnome-applets/whereami/docs/es 
+bash-2.04$     cp ../C/Makefile.am .</PROGRAMLISTING>
+Como podéis ver, simplemente copiamos del directorio <FILENAME>C</FILENAME>, y después
+realizamos las siguientes modificaciones:</PARA>
+<PARA><FILENAME>gnome-applets/whereami/docs/es/Makefile.am</FILENAME></PARA>
+<PARA><PROGRAMLISTING>figs = \
+        figures/whereami_applet.png
+docname = whereami_applet
+lang = <EMPHASYS>es</EMPHASYS>
+omffile = whereami_applet-C.omf
+sgml_ents = whereami.sgml<EMPHASYS> \
+        license.sgml \
+        licencia-es.sgml \
+        licencia-nota-es.sgml \
+        authors.sgml</EMPHASYS>
+include $(top_srcdir)/sgmldocs.make
+dist-hook: app-dist-hook</PROGRAMLISTING></PARA></SECT3>
+
+<SECT3><TITLE>Ficheros de la aplicación</TITLE>
+<PARA>Si la traducción es nueva, habrá que incluir el código de idioma para que se 
+genere e instale la nueva documentación. Para ello modificaremos el fichero
+<FILENAME>docs/Makefile.am</FILENAME>:</PARA>
+<PARA><FILENAME>gnome-applets/whereami/docs/Makefile.am</FILENAME></PARA>
+<PARA><PROGRAMLISTING>SUBDIRS = C <EMPHASYS>es</EMPHASYS> it</PROGRAMLISTING>
+Para terminar debemos anotar los cambios que hemos realizado en el fichero
+<FILENAME>ChangeLog</FILENAME>, para que el resto de desarrolladores conozca
+los cambios que hemos realizado:</PARA>
+<PARA><FILENAME>gnome-applets/whereami/ChangeLog</FILENAME></PARA>
+<PARA><PROGRAMLISTING>2001-07-28  Manuel de Vega barreiro  mbarreiro@red.madritel.es
+
+          New Spanish Translation
+        * docs/es/*
+        * docs/Makefile.am
+</PROGRAMLISTING></PARA></SECT3>
+
+
+<SECT3><TITLE>Ficheros del paquete</TITLE>
+<PARA>A nivel de paquete debemos modificar el fichero <FILENAME>configure.in</FILENAME>, 
+incorporando las siguientes modificaciones:</PARA>
+<PARA><FILENAME>gnome-applets/configure.in</FILENAME></PARA>
+<PARA><PROGRAMLISTING>...
+AC_SUBST(CANVAS_PIXBUF_LIBS)
+ALL_LINGUAS="az ca cs da de el en_GB <EMPHASYS>es</EMPHASYS> et eu fi fr ga gl hu it ja ko lt nl nn no pl pt pt_BR ro ru sk sl sv tr uk wa zh_CN.GB2312 zh_TW.Big5"
+AM_GNOME_GETTEXT
+...
+AC_OUTPUT([
+gnome-applets.spec
+Makefile
+macros/Makefile
+...
+whereami/docs/it/Makefile
+<EMPHASYS>whereami/docs/es/Makefile</EMPHASYS>
+gtik/Makefile
+...</PROGRAMLISTING>
+<NOTE><PARA>Observa que el código de cada idioma se añade respetando el orden alfabético, ya que en caso contrario todo el 
+mundo se volvería loco al introducir un nuevo idioma.</PARA>     </NOTE></PARA>
+<PARA>Como de costumbre, debemos reflejar todos los cambios en el
+<FILENAME>ChangeLog</FILENAME>, esta vez a nivel de paquete, para que el resto de desarrolladores 
+conozca los cambios que hemos realizado:</PARA>
+<PARA><FILENAME>gnome-applets/ChangeLog</FILENAME></PARA>
+<PARA><PROGRAMLISTING>2001-07-28  Manuel de Vega barreiro  mbarreiro@red.madritel.es
+
+        Whereami help Spanish translation
+        * configure.in
+        * whereami/docs/Makefile.am
+        * whereami/docs/es/*</PROGRAMLISTING>
+<NOTE><PARA>Los ficheros <FILENAME>ChangeLog</FILENAME> y <FILENAME>configure.in</FILENAME> sufren frecuentes 
+cambios, por lo que conviene modificarlos justo antes de realizar la entrega.</PARA></NOTE></PARA></SECT3></SECT2>
+
+
+<SECT2><TITLE>Prueba de compilación</TITLE>
+<PARA>Ésta es, por así decirlo, la prueba del nueve. Se trata de compilar el paquete con las modificaciones
+que hemos incorporado. El problema es que compilar paquetes sacados directamente del repositorio CVS
+no es una tarea fácil. Esto se debe más a las dependencias cruzadas con otros paquetes y librerías, 
+que al propio paquete.
+<IMPORTANT><PARA>Jugar a compilar e instalar paquetes en desarrollo es la forma mas fácil de conseguir un escritorio 
+inutilizable. No lo hagas en un sistema en producción, ni en un ordenador del que dependa tu 
+trabajo diario. </PARA></IMPORTANT></PARA>
+<PARA>Dicho todo esto, veamos los comandos para compilar el paquete:
+<PROGRAMLISTING>bash-2.04$     cd /gnome/cvs/gnome-applets
+bash-2.04$     ./autogen.sh
+bash-2.04$     make</PROGRAMLISTING>
+Como ves, nada del otro mundo; son los comandos habituales para instalar paquetes GNU.</PARA></SECT2>
+
+
+<SECT2><TITLE>Entrega de ficheros al CVS</TITLE>
+<PARA>Para realizar la entrega debemos presentarnos en nuestra cuenta personal y ejecutar
+los siguientes comandos:
+<NOTE><PARA>Puedes solicitar una cuenta personal en el repositorio CVS tal y como se indica en
+?? </PARA></NOTE>
+<PROGRAMLISTING>bash-2.04$     cd /gnome/cvs
+bash-2.04$     export CVSROOT=:pserver:barreiro@cvs.gnome.org:/cvs/gnome
+bash-2.04$     cvs login
+(Logging in to barreiro@cvs.gnome.org)
+CVS password:  clave de acceso
+bash-2.04$     </PROGRAMLISTING>
+Llegados a este punto pueden darse dos casos: una traducción nueva, o una actualización.</PARA>
+<SECT3><TITLE>Traducción nueva</TITLE>
+<PARA>En este caso los comandos necesarios para la entrega serían:
+<PROGRAMLISTING>bash-2.04$     cd /gnome/cvs/gnome-applets/whereami/docs
+bash-2.04$     cvs add es
+bash-2.04$     cvs add es/*
+bash-2.04$     cvs add es/figures/*
+bash-2.04$     cd ..
+bash-2.04$     cvs commit
+
+bash-2.04$     cd /gnome/cvs/gnome-applets
+bash-2.04$     cvs commit configure.in ChangeLog
+bash-2.04$     cvs logout</PROGRAMLISTING>
+Cada vez que ejecutamos el comando <COMMAND>cvs commit</COMMAND> se presenta una lista
+con los ficheros que se van a entregar y se abre el editor por defecto para que 
+indiquemos brevemente el motivo de la actualización.</PARA>
+<PARA>Os recomiendo repasar la lista, ya que a veces podemos enviar ficheros que no
+forman parte de esta entrega por error. Éste es el motivo por el que acostumbro a realizar
+la entrega en dos partes.</PARA></SECT3>
+<SECT3><TITLE>Actualización</TITLE>
+<PARA>En este caso los comandos necesarios para la entrega serían:
+<PROGRAMLISTING>bash-2.04$     cd /gnome/cvs/gnome-applets/whereami
+bash-2.04$     cvs commit
+
+bash-2.04$     cd /gnome/cvs/gnome-applets
+bash-2.04$     cvs commit ChangeLog
+bash-2.04$     cvs logout</PROGRAMLISTING>
+A diferencia del caso anterior, no hay ficheros que añadir y, además, no es necesario modificar algunos
+ficheros (<FILENAME>makefile.am</FILENAME>,<FILENAME>configure.in</FILENAME>). El resto del
+proceso es idéntico.</PARA></SECT3>
+</SECT2>
+
+
+
+
+
+</SECT1>
+
+</ARTICLE>

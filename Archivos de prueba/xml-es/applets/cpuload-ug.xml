@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<SECT2 ID="cpuload-applet">   <TITLE>El aplique de carga de la CPU</TITLE> 
+
+   <PARA> 
+     El <APPLICATION>aplique de carga de la CPU</APPLICATION> es un pequeño aplique monitor que reside en su panel y le dice cuanta CPU esta siendo usada.
+   </PARA>
+
+   <SECT3 ID="cpuload-usage">    <TITLE>Uso</TITLE>
+    <PARA>     No es necesario hacer nada a este aplique. Se situará y ejecutará  en su panel. Existen varias opciones para modificar su aspecto.
+    </PARA>
+
+    <FIGURE ID="cpuload-applet-fig">      <TITLE>Aplique de Carga de CPU</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Aplique de Carga de CPU</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/cpuload-applet" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      El <APPLICATION>aplique de carga de la CPU</APPLICATION> divide el uso de la CPU en cuatro tipos:
+    </PARA>
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Usuario</TERM>
+      <LISTITEM>       <PARA>         Éste mide el uso de la CPU en "zona de usuario": por ejemplo, cosas que no se comunican con el kernel. Su color por defecto es el amarillo.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+ 
+     <VARLISTENTRY>      <TERM>Sistema</TERM>
+      <LISTITEM>       <PARA>         Éste mide el uso de CPU que implica al kernel: Mucho intercambio entre memoria y disco, por ejemplo . El color por defecto es gris pálido.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+ 
+     <VARLISTENTRY>      <TERM>Prioridad</TERM>
+      <LISTITEM>       <PARA>         Éste mide el uso de la CPU que no es "delicado": ejecutando con una prioridad alta.
+         El color por defecto es gris oscuro.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+ 
+     <VARLISTENTRY>      <TERM>Inactivo</TERM>
+      <LISTITEM>       <PARA>         Inactivo mide la capacidad de CPU no usada. El color por defecto es el negro.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+ 
+   <SECT3 ID="cpuload-right-click">    <TITLE>Opciones de Menú desplegables con botón derecho</TITLE>
+    <PARA> 
+     A parte de las opciones de menú estándar, el menú desplegable contiene las siguientes opciones: 
+    </PARA>   
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Propiedades por omisión...</TERM>
+      <LISTITEM>       <PARA>         Abre el <GUILABEL>cuadro de diálogo del aplique multicarga</GUILABEL>
+         <LINK LINKEND="cpuload-properties">descrito más adelante</LINK> que le permite modificar las propiedades por defecto de este aplique monitor y otros apliques relacionados.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Propiedades...</TERM>
+      <LISTITEM>       <PARA>         Abre el <GUILABEL>cuadro de diálogo del aplique multicarga</GUILABEL>
+         <LINK LINKEND="cpuload-properties">descrito más adelante</LINK> que afecta sólo a las propiedades del <APPLICATION>aplique de carga de la CPU</APPLICATION>.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Ejecutar gtop...</TERM>
+      <LISTITEM>       <PARA>Esta opción ejecutará <COMMAND>gtop</COMMAND> que arranca el Monitor del Sistema de GNOME. <APPLICATION>gtop</APPLICATION> proporciona una visión mucho más detallada del sistema y de lo que en él ocurre.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="cpuload-properties">    <TITLE>Propiedades</TITLE>
+
+    <FIGURE ID="cpuload-default-fig">      <TITLE>Diálogo de Propiedades por Omisión</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades por Omisión del Aplique de Carga de CPU</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/cpuload-applet-default" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>       Al igual que varios de los aplique monitores, el
+      <APPLICATION>aplique de carga de la CPU</APPLICATION> tiene dos modos de seleccionar preferencias. Puede hacer cambios que afectan a todo este grupo 
+      (<APPLICATION>aplique de carga CPU</APPLICATION>, <APPLICATION>aplique de carga de memoria</APPLICATION>,
+      <APPLICATION>aplique de carga swap</APPLICATION>, <APPLICATION>aplique de carga de la red</APPLICATION>
+      y <APPLICATION>aplique de carga promedio</APPLICATION>) en un amplio cuadro de diálogo. Esto es útil si ejecuta uno o más de ellos. Estos son los valores por defecto. Se llega a ellos desde la opción del menú 
+      <GUIMENUITEM>Propiedades por omisión...</GUIMENUITEM>
+    </PARA>
+
+    <FIGURE ID="cpuload-greyed-fig">      <TITLE>Diálogo de propiedades deshabilitado</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de propiedades deshabilitado del Aplique de Carga de CPU</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/cpuload-applet-greyed" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>       O puede cambiar sólo las propiedades para el 
+      <APPLICATION>aplique de carga de la CPU</APPLICATION>. Esto es útil cuando sólo utiliza el <APPLICATION>aplique de carga de la CPU</APPLICATION> o cuando quiere probar nuevas combinaciones. Se llega a él desde la opción del menú  
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>.
+    </PARA>
+    <NOTE>     <PARA>       Si usa la opción del menú <GUIMENUITEM>Propiedades...</GUIMENUITEM>
+      y edita las preferencias para sólo este aplique, debe deshabilitar la casilla  <GUIBUTTON>Usar propiedades por omisión</GUIBUTTON> antes de cambiar la configuración.
+     </PARA>
+    </NOTE>
+
+    <FIGURE ID="cpuload-properties-fig">      <TITLE>Diálogo de Propiedades de Carga de CPU</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades del Aplique de Carga de CPU</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/cpuload-applet-properties" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>       Los cambios que puede hacer a las propiedades son tres:
+    </PARA>
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Colores</TERM>
+      <LISTITEM>       <PARA>         Puede cambiar los colores usados para las diferentes formas de uso de CPU mostrados pulsando en las cajas de colores. Esto invoca la rueda de colores de GNOME.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Velocidad</TERM>
+      <LISTITEM>       <PARA>         Puede alterar la velocidad de actualización del gráfico.
+         Se mide en milisegundos. El valor más alto es 1,000,000,000
+         y el más bajo es 1. El valor por omisión es más sensible, es 500.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Tamaño</TERM>
+      <LISTITEM>       <PARA>          Puede cambiar el tamaño del aplique. La medida es en píxeles. El valor por defecto es 40, y el rango abarca desde 1 pixel hasta donde quiera. En un panel vertical, este valor hace referencia a la altura. En uno horizontal, a la anchura.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="cpuload-bugs">    <TITLE> Errores Conocidos y Limitaciones</TITLE>
+    <PARA>      Cambiar el tamaño del aplique y su orientación puede causar todavía problemas intermitentes, aunque ahora se corrigen por sí mismos al cabo de un corto período de tiempo.
+    </PARA>
+   </SECT3>
+
+</SECT2>

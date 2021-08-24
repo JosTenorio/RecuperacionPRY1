@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<SECT2 ID="charpickapplet">  <TITLE>Aplique Tabla de Caracteres</TITLE>
+
+  <PARA>   El aplique <APPLICATION>Tabla de Caracteres</APPLICATION>, mostrado en <XREF LINKEND="charpickapplet-fig">, te permite escribir fácilmente muchos
+   caracteres que no están disponibles en teclados estándar, como caracteres
+   acentuados, ciertos símbolos matemáticos y de puntuación, y otros símbolos
+   especiales. Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>, pulsa
+   con el botón derecho en el <INTERFACE>Panel</INTERFACE> y selecciona
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Aplique</GUISUBMENU>
+    <GUISUBMENU>Utilidades</GUISUBMENU>
+    <GUIMENUITEM>Tabla de Caracteres</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="charpickapplet-fig">   <TITLE>Aplique Tabla de Caracteres</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique Tabla de Caracteres</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/charpick_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="charpickapplet-usage">   <TITLE>Uso</TITLE>
+   <PARA>    Primero, lleva el foco del cursor al aplique <APPLICATION>Tabla de
+    Caracteres</APPLICATION> pulsando sobre uno de los caracteres mostrados en
+    el aplique. Especifica el grupo de caracteres pulsando la tecla
+    correspondiente en tu teclado. (Para una lista completa de grupos de
+    caracteres y teclas correspondientes, véase
+    <XREF LINKEND="charpickapplet-characters">.) Por ejemplo, para ver las
+    varias versiones de la letra "a" acentuada, pulsa "a". Después de haber
+    encontrado la letra o el símbolo correcto pulsa con el botón izquierdo sobre
+    él para copiar el símbolo al buffer. El caracter deberá aparecer cono un
+    botón pulsado. Esto es parecido al popular comando Copiar, disponible en
+    muchos programas. Para pegar el símbolo en cualquier ventana, simplemente
+    pulsa el botón central del ratón. La mayoría de las aplicaciones que tienen
+    las opciones Copiar y Pegar también te permitirán pegar el símbolo
+    utilizando su comando Pegar.
+   </XREF></PARA>
+
+   <NOTE>    <TITLE>Soporte de caracteres ISO-8859-1 (Latin-1)</TITLE>
+    <PARA>     Fíjate que algunas aplicaciones no soportan caracteres ISO-8859-1. Estas
+     aplicaciones no mostrarán ciertos caracteres del aplique
+     <APPLICATION>Tabla de Caracteres</APPLICATION>.
+    </PARA>
+   </NOTE>
+
+   <NOTE>    <TITLE>Copiar y Pegar en X</TITLE>
+    <PARA>     El sistema X Windows permite copiar y pegar texto marcándolo con el primer
+     botón del ratón para copiar el texto y después pegando el texto pulsando el
+     botón central del ratón. Fíjate que <APPLICATION>Tabla de
+     Caracteres</APPLICATION> usa el mismo buffer de copia que utiliza X. Por lo
+     tanto, cuando seleccionas un caracter en la <APPLICATION>Tabla de
+     Caracteres</APPLICATION> reemplaza cualquier texto previo que se encontrase
+     en el buffer. Del mismo modo, si has seleccionado un caracter en la
+     <APPLICATION>Tabla de Caracteres</APPLICATION> y después marcas algún texto
+     el texto marcado reemplazará el caracter en el buffer y el botón dejará de
+     aparecer como pulsado.
+    </PARA>
+   </NOTE>
+
+   <PARA>    Pulsando con el botón derecho sobre el aplique emerge un menú con los
+    siguientes elementos:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+       abre el diálogo <LINK LINKEND="charpickapplet-prefs">       <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Acerca de</GUIMENUITEM> 
+       muestra información básica acerca del <APPLICATION>Aplique Tabla de
+       Caracteres</APPLICATION>, incluyendo la versión del aplique y el nombre
+       del autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="charpickapplet-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>      Puedes personalizar el aplique <APPLICATION>Tabla de
+      Caracteres</APPLICATION> pulsando con el botón derecho sobre él y
+      seleccionando <GUIMENUITEM>Propiedades</GUIMENUITEM>. Esto abrirá
+      el diálogo <INTERFACE>Propiedades</INTERFACE> (mostrado en <XREF LINKEND="charpickapplet-settings-fig">), que te permite cambiar varias
+      opciones.
+    </XREF></PARA>
+
+    <FIGURE ID="charpickapplet-settings-fig">     <TITLE>Diálogo Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo Propiedades</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="figures/charpick_applet_settings" SRCCREDIT="muet">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>     Las propiedades en la pestaña <GUILABEL>Tamaño</GUILABEL> son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        <GUIBUTTON>Adaptar al tamaño del panel</GUIBUTTON>  Si este botón
+	se encuentra marcado, el aplique <APPLICATION>Tabla de
+	Caracteres</APPLICATION> adaptará automáticamente el número de filas y
+	columnas de caracteres para caber en el <INTERFACE>Panel</INTERFACE>.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Número mínimo de celdas</GUILABEL>: (para tamaño automático)
+         Esto define el número mínimo de botones con caracter (o
+	"celdas") que se mostrarán. El número real de botones con caracter
+	puede exceder de este número, dependiendo del tamaño del
+	<INTERFACE>Panel</INTERFACE> y el número elegido. Fíjate que si el
+	número es demasiado pequeño, algunos caracteres podrían no ser visibles.
+	(Esta variable no influye en la disposición de las celdas si el	botón
+	<GUIBUTTON>Adaptar al tamaño del panel</GUIBUTTON> no está
+	seleccionado.)
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Cantidad de filas de botones</GUILABEL>: 
+	Esto determina el número de filas de botones con caracter (o "celdas")
+	que aparecen en el aplique. (Esta variable no influye en la disposición
+	de las celdas si el botón <GUIBUTTON>Adaptar al tamaño del
+	panel</GUIBUTTON> está seleccionado.)
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Cantidad de columnas de botones</GUILABEL>: 
+        Esto determina el número de columnas de botones con caracter (o
+	"celdas") que aparecen en el aplique. (Esta variable no influye en la
+	disposición de las celdas si el botón <GUIBUTTON>Adaptar al tamaño del
+	panel</GUIBUTTON> está seleccionado.)
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Tamaño del botón</GUILABEL>: (en píxeles)  Este es el
+	tamaño (en píxeles) de cada botón con caracter en el aplique.
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA>     Las propiedades en la pestaña <GUILABEL>Lista por omisión</GUILABEL> son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        <GUILABEL>Lista de caracteres por omisión</GUILABEL>  Esta es
+	la lista de caracteres que será mostrada en el aplique cuando pulsas la
+	barra espaciadora. Esto es un modo conveniente de tener una lista de los
+	caracteres usados con mayor frecuencia. Simplemente introduce los
+	caracteres que más usas en este campo.
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA> 
+      Después de haber realizado todos los cambios que quieras, pulsa sobre
+      <GUIBUTTON>OK</GUIBUTTON> para aplicar los cambios y cerrar el diálogo
+      <INTERFACE>Properties</INTERFACE>. Pulsa
+      <GUIBUTTON>Aplicar</GUIBUTTON> para aplicar los cambios sin cerrar el
+      diálogo actual.
+      <GUIBUTTON>Cerrar</GUIBUTTON> cierra
+      <INTERFACE>Propiedades</INTERFACE> sin guardar los cambios que no hayan
+      sido aplicados. Los cambios aplicados no pueden ser cancelados.
+    </PARA>
+  </SECT3>
+
+  
+  <SECT3 ID="charpickapplet-characters">   <TITLE>Caracteres</TITLE>
+   <PARA>    El aplique <APPLICATION>Tabla de Caracteres</APPLICATION> tiene todos los
+    caracteres del conjunto de caracteres ISO-8859-1 (Latin 1) que no están en
+    los teclados estándar de EEUU. Están asignados como se muestra en <XREF LINKEND="charpickapplet-characters-fig">. Los caracteres en negrita en la
+    primera columna de cada mitad y a la izquierda de la línea de puntos son los
+    caracteres que debes usar en el aplique <APPLICATION>Tabla de
+    Caracteres</APPLICATION> para obtener los caracteres correspondientes
+    mostrados a la derecha.
+   </XREF></PARA>
+   <FIGURE ID="charpickapplet-characters-fig">    <TITLE>Clave de Caracteres de la Tabla de Caracteres</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Clave de Caracteres de la Tabla de Caracteres</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/charpick_characters.png" SRCCREDIT="muet">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="charpickapplet-bugs">   <TITLE>Errores y Limitaciones conocidos</TITLE>
+   <PARA>    Este aplique no tiene errores conocidos.
+   </PARA>
+  </SECT3>
+
+
+ </SECT2>

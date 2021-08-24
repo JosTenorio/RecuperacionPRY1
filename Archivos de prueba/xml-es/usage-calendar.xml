@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<CHAPTER ID="usage-calendar">  <TITLE>El calendario de Evolution</TITLE>
+  <PARA>    Para comenzar a usar el calendario, seleccione
+    <GUIBUTTON>Calendario</GUIBUTTON> de la <INTERFACE>barra de
+    atajos</INTERFACE>.  Por defecto, el calendario empieza mostrando el
+    horario para hoy sobre un fondo reglado.  Arriba a la derecha, hay un
+    calendario mensual que puede usar para cambiar de día.  Debajo de eso,
+    hay una <GUILABEL>Lista de Tareas</GUILABEL>, donde puede tener una
+    lista de tareas separada de sus citas del calendario.  La vista diaria
+    del calendario se muestra en <XREF LINKEND="usage-calendar-fig">.
+
+   
+    <FIGURE ID="usage-calendar-fig">      <TITLE>Vista del Calendario de Evolution</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Vista del Administrador de Contactos de Evolution</SCREENINFO>
+	<GRAPHIC FILEREF="fig/calendar" FORMAT="png" SRCCREDIT="Aaron Weber">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+   
+
+  </XREF></PARA>
+    <SECT1 ID="usage-calendar-view"> 
+    <TITLE>Maneras de ver su calendario</TITLE>
+
+    <PARA>      La barra de herramientas le ofrece cuatro vistas distintas de su  calendario:
+      un día, cinco días, una semana, o un mes. Pulse sobre los botones
+      con forma de calendario a la derecha de la barra de herramientas
+      para cambiar entre las distintas vistas. Tambien puede seleccionar un
+      rango de días en el pequeño calendario en la esquina superior derecha.
+    </PARA>
+    <PARA>       Para ver las citas de ayer, de la semana pasada, si esta en
+       la vista semanal, y del mes pasado en la vista mensual pulse
+       el botón <GUIBUTTON>Anterior</GUIBUTTON>.  Para mañana, la semana que
+       viene o el mes próximo, pulse <GUIBUTTON>Siguiente</GUIBUTTON>, y
+       naturalmente, pulse <GUIBUTTON>Hoy</GUIBUTTON> para hoy.
+    </PARA>
+    <PARA>       Para ver una fecha espefica del calendario, pulse
+       <GUIBUTTON>Ir A</GUIBUTTON> y seleccione la fecha en la ventana
+       de diálogo que aparece.
+    </PARA>
+
+
+
+  </SECT1>
+  <SECT1 ID="usage-calendar-apts">    <TITLE>Programando Citas con el Calendario de Evolution</TITLE>
+    <PARA>      Naturalmente, querra usar el calendario para hacer algo más que
+      saber que día es. Esta sección le contará como fijar eventos, poner
+      alarmas, y especificar recurrencias en los eventos.
+    </PARA>
+    <SECT2 ID="usage-calendar-apts-basic">      <TITLE>Creando eventos</TITLE>
+      <PARA>	Para crear un nuevo evento de calendario, seleccione
+        <MENUCHOICE>	  <GUIMENU>Archivo</GUIMENU>
+	  <GUISUBMENU>Nuevo</GUISUBMENU> 
+	  <GUIMENUITEM>Cita</GUIMENUITEM>
+	</MENUCHOICE>
+	o pulse el botón <GUIBUTTON>Nuevo</GUIBUTTON> a la izquierda de la barra
+	de herramientas. El diálogo de <INTERFACE>Nueva Cita</INTERFACE>
+	aparecerá con la habitual barra de menú, barra de herramientas, y ventana
+	llenas de opciones.
+      </PARA>
+      <TIP ID="new-appointment-shortcut">        <TITLE>Atajo</TITLE>
+        <PARA>           Si no necesita poner más información que la fecha y la hora de
+           la cita, puede pichar simplemente en cualquier espacio en blanco
+           del calendario y comenzar a escribir. Puede incluir otra
+           información más tarde con el editor de citas.
+        </PARA>
+      </TIP>
+
+      <PARA>        Su evento debe tener una fecha de inicio y de fin  por
+        defecto, hoy  pero puede elegir entre darle una hora de
+        inicio y de fin o marcarlo como un <GUILABEL>Evento de todo
+        el día</GUILABEL>. Un <GUILABEL>Evento de todo el día</GUILABEL>
+        aparece arriba en una lista de eventos diarios en lugar de dentro
+        del día.  Eso hace que sea más facil tener eventos que se solapen y
+        que esten unos dentro de otros.  Por ejemplo, una conferencia puede
+        ser un evento de todo el día, y los encuentros en la conferencia
+        serian eventos parciales.  Naturalmente, los eventos con horarios
+        específicos de inicio y fin tambien pueden solaparse.  Cuenado lo
+        hacen son mostrados como multiples columnas en la vista diaria del
+        calendario.
+      </PARA>
+      <NOTE>       <TITLE>Haciendo Dos Cosas A La Vez</TITLE>
+         <PARA>           Si crea eventos de calendario que se superponen,
+           <APPLICATION>Evolution</APPLICATION> los mostrará uno al lado del
+           otro en su calendario.  Eso si,
+           <APPLICATION>Evolution</APPLICATION> no puede ayudarle ha hacer
+           varias cosas al mismo tiempo.
+         </PARA>
+      </NOTE>
+      <PARA>         Puede tener hasta cuatro <GUILABEL>Alarmas</GUILABEL>
+         distintas, para cualquier momento antes de la hora que ha fijado
+         para el evento.  Puede tener una alarma de cada tipo:
+         <VARIABLELIST>           <VARLISTENTRY>	    <TERM><GUILABEL>Visual</GUILABEL></TERM>
+	    <LISTITEM>	      <PARA>	        Aparecerá una ventana en la pantalla para recordarle el evento.
+              </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  <VARLISTENTRY> 
+	    <TERM><GUILABEL>Auditiva</GUILABEL></TERM>
+	    <LISTITEM>	      <PARA>	        Eliga esta opción para que el ordenador emita una alarma auditiva.
+              </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  <VARLISTENTRY>	    <TERM><GUILABEL>Programa</GUILABEL></TERM>
+	    <LISTITEM>	      <PARA>	        Seleccione esto si quiere que alguna aplicación adicional se
+	        ejecute como recordatorio.  Puede escribir su nombre en el campo
+	        de texto, o buscarla con el botón
+	        <GUIBUTTON>Buscar</GUIBUTTON>.
+              </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  <VARLISTENTRY>	    <TERM><GUILABEL>Correo</GUILABEL></TERM>
+	    <LISTITEM>	      <PARA>	        <APPLICATION>Evolution</APPLICATION> enviará un mensaje
+	        recordatorio a la dirección que haya escrito en el campo de texto.
+             </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+	    
+      </PARA>
+      <PARA>         <GUILABEL>Clasificación</GUILABEL> es un poco más complicado,
+         y solo afecta a los calendarios en red.
+         <GUILABEL>Público</GUILABEL> es la categoría por defecto,
+         y un evento público puede ser visto por cualquiera en la red de
+         conpartición del calendario.  <GUILABEL>Privado</GUILABEL> indica
+         un nivel de seguridad, y <GUILABEL>Confidencial</GUILABEL> un
+         nivel mayor.   El significado y la implementecion de estas caracteristicas
+         todavia no se han determinado. 
+      </PARA>
+      <PARA>        La pestaña <GUILABEL>Recurrencia</GUILABEL> le permite describir
+        repeticiones en eventos que van desde una vez cada día a una vez
+        cada 100 años.  Puede tambien elegir cuando cesarán las
+        repeticiones, y, bajo <GUILABEL>Excepciones</GUILABEL>, elegir
+        días individuales en los que el evento <EMPHASIS>no</EMPHASIS> se
+        realizará.
+      </PARA>
+
+      <PARA>	Una vez que haya acabado con toda la configuración, pulse en el icono
+	del disco en la barra de herramientas.  Esto guardará el evento y cerrará
+	la ventana de edición de eventos. Si quiere, puede alterar el resumen del
+	en la vista del calendario pulsando sobre ela y escribiendo. Puede
+	cambiar otros valores pulsando con el botón derecho del ratón sobre el
+	evento y eligiendo <GUIMENUITEM>Editar esta cita</GUIMENUITEM>.
+      </PARA>
+    </SECT2>
+
+
+  </SECT1>
+
+  <SECT1 ID="usage-calendar-todo">   <TITLE>La lista de tareas</TITLE>
+    <PARA>       La lista de tareas, situada en la esquina inferior derecha del
+       calendario, le permite mantener una lista de tareas separada de sus
+       eventos de calendario.  Las tareas son coloreadas y ordenadas por
+       prioridad y fecha de vencimiento (vea
+       <XREF LINKEND="config-prefs"> para más inforación), y son incluidas
+       con la información del calendario cuando se sincroniza con
+       dispositivo de mano.
+    </XREF></PARA>
+    <PARA>       Para guardar una nueva tarea, pulse sobre el botón
+       <GUIBUTTON>Añadir</GUIBUTTON>.  <APPLICATION>Evolution</APPLICATION>
+       mostrará una pequeña ventana con cinco elementos en ella:
+     
+        <VARIABLELIST>	  <VARLISTENTRY>	  <TERM> <GUILABEL>Resumen:</GUILABEL></TERM>
+	  <LISTITEM>            <PARA>              La descripción que escriba aquí aparecerá en la lista Por
+              Hacer.
+          </PARA>
+	  </LISTITEM>
+	  </VARLISTENTRY>
+	
+	<VARLISTENTRY>	  <TERM> <GUILABEL>Fecha de Plazo:</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>            Decida cuando vence el plazo para este elemnto.
+            Puede escribir una fecha y una hora, o seleccionar una del
+            <GUIBUTTON>Calendario</GUIBUTTON> y la hora de los menus desplegables.
+          </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><GUILABEL>Prioridad:</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>             Seleccione un nivel de importancia desde 1 (más importante) a 9
+              (menos importante).
+            </PARA>
+	  </LISTITEM> 
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM> <GUILABEL>Comentarios sobre el elemento:</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>              Si lo desea, puede escribir aquí una descripción más detallada
+              del elemento.
+            </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+      </VARIABLELIST>
+    </PARA>
+   <PARA>     Una vez que ha añadido una tarea a su lista "por hacer", su resumen
+     aparece en la sección <GUILABEL>Resumen</GUILABEL> de la ventana del
+     calendario.  Para ver o editar una descripción detallada en un
+     elemento, pulse dos veces sobre el, o seleccionelo y pulse
+     <GUIBUTTON>Editar</GUIBUTTON>.  Puede borrar un elemento 
+     seleccionandolo y pulsandolo en el botón <GUIBUTTON>Borrar</GUIBUTTON>.
+   </PARA>
+  </SECT1>
+
+  <SECT1 ID="usage-calendar-multiple">    <TITLE>Múltiples Calendarios</TITLE>
+    <PARA>       <APPLICATION>Evolution</APPLICATION> le permite tener y mantener
+       múltiples calendarios.  Esto es útil si mantiene horarios para otras
+       personas, si es el responsable de la búsqueda de recursos o
+       habitaciones, o si tiene múltiples personalidades.
+    </PARA>
+   
+    <EXAMPLE>      <TITLE>Manteniendo Múltiples Calendarios</TITLE>
+      <PARA>        Keelyn. la encargada de oficina de una pequeña compañía, tiene
+        un calendario para su propio horario.  En la red local, mantiene
+        uno para la sala de reuniones, para que la gente sepa cuando pueden
+        concertar citas.  Ademas de eso, mantiene un calendario que refleja
+        cuando van a estar disponibles los consultores, y otro donde
+        sigue los días en los que juegan los Red Sox.
+      </PARA>
+    </EXAMPLE>
+    <PARA>      Para crear un nuevo calendario, seleccione
+      <MENUCHOICE>	<GUIMENU>Archivo</GUIMENU> <GUISUBMENU>Nuevo</GUISUBMENU>
+	<GUIMENUITEM>Calendario</GUIMENUITEM>
+      </MENUCHOICE>.
+       Puede colocar el calendario en cualquier carpeta de calendario y
+       acceder a el desde la vista de carpetas.  Las alarmas, la
+       configuración, y las vistas de cada calendario se mantienen separadas
+       unas de otras.
+    </PARA>
+    
+  </SECT1></CHAPTER>

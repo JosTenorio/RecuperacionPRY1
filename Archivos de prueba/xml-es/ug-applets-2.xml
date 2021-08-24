@@ -1,0 +1,715 @@
+<?xml version="1.0"?>
+<SECT1 ID="monitor-applets">  <TITLE>Apliques monitor</TITLE>
+
+  
+  <SECT2 ID="Battery-Charge-Monitor">   <TITLE>Aplique Monitor de carga de Bateria</TITLE> 
+
+   <PARA> 
+    <APPLICATION>Monitor de Carga de Batería</APPLICATION> aplique, mostrado en<LINK LINKEND="Battery-Charge-Monitor-fig1">Figura 1 1</LINK>, muestra el
+    estatus de carga de la bateria de tu portatil. Para aprender como añadir este
+	aplique al <INTERFACE>Panel</INTERFACE>, 
+    haz click con el boton derecho en el<INTERFACE>Panel</INTERFACE> y elige
+    <MENUCHOICE>      <GUIMENU>Panel</GUIMENU>
+      <GUISUBMENU>Añadir al panel</GUISUBMENU>
+      <GUISUBMENU>Aplique</GUISUBMENU>
+      <GUISUBMENU>Monitores</GUISUBMENU>
+      <GUIMENUITEM>Monitor de Carga de Bateria</GUIMENUITEM>
+    </MENUCHOICE>.
+  </PARA>
+  
+   <NOTE>	<TITLE>NOTA</TITLE>
+    <PARA>     Para que el<APPLICATION>Monitor de Carga de Bateria
+     </APPLICATION> funcione correctamente, tu computadora debe haber
+     sido confugurada para soportar <SYSTEMITEM>Advanced Power
+     Management</SYSTEMITEM>.
+    </PARA>
+   </NOTE>
+
+   <FIGURE ID="Battery-Charge-Monitor-fig1">    <TITLE>Monitor de Carga de Bateria</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Monitor de Carga de Bateria</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="./figs/battery-applet-ac-offline-25-20" SRCCREDIT="James Cope">    </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <SECT3 ID="Battery-Charge-Monitor-usage">    <TITLE>Usage</TITLE>
+    <PARA>     <APPLICATION>Monitor de Carga de Bateria</APPLICATION> se instala en
+     tu panel monitoreando el estado de la bateria de tu computadora. Al<MOUSEBUTTON>clikear</MOUSEBUTTON>con elboton izquierdo en el aplique tu puedes
+     alternar la presentación entre Readout View y Graph View descritas en las secciones 
+     <LINK LINKEND="Battery-Charge-Monitor-Readout-sec">Readout View</LINK> 
+     y <LINK LINKEND="Battery-Charge-Monitor-Graph-sec">Graph View</LINK> 
+     respectivamente.
+    </PARA>
+
+    <SECT4 ID="Battery-Charge-Monitor-Readout-sec">     <TITLE>Readout View</TITLE>
+     <PARA>      Readout View, es la vista por defecto, muestra el estado actual de la bateria
+	en forma de texto e icono. En este modo el 
+      <APPLICATION>Monitor de Carga de Bateria</APPLICATION> muestra la siguiente 
+	información:
+     </PARA>
+
+     <VARIABLELIST>      <VARLISTENTRY>       <TERM><EMPHASIS>Icono de bateria</EMPHASIS></TERM>
+       <LISTITEM>	<PARA>         La representación de la bateria mediante un icono a la izquierda del 
+         aplique, muestra cuan cargada esta la bateria actualmente
+         . La parte coloreada de la bateria representa la 
+         la cantidad de carga que resta en su batieria, con el tope representa
+		que la carga esta al 100%.
+	</PARA>
+	
+	<PARA>	 El color de la bateria cambia cuando la carga baja por debajo del nivel medio
+         <GUILABEL>Low Charge Threshold</GUILABEL> (see
+         <LINK LINKEND="Battery-Charge-Monitor-properties-general">Properties  
+	 General</LINK>). El color por defecto de la bateriaes verde en estado normal y
+         rojo cuando cae por debajo del <GUILABEL>Low Charge Threshold</GUILABEL>.
+        </PARA>
+
+	<PARA>         Cuando tu computadora esté conectada a la red electrica, una
+         pequeña bombilla aparece en la representación de la bateria para
+         indicar que la bateria esta conectada a la red electrica y esta
+         en estado de carga. Un ejemplo de esto se muestra en la
+         <LINK LINKEND="Battery-Charge-Monitor-fig2">Figura 2</LINK>. 
+	 tambien se puede configurar la bateria para que cambie de color cuando este
+         o no este conectada a la red electrica, mirar
+         <LINK LINKEND="Battery-Charge-Monitor-properties-readout">	 Properties  Readout</LINK> para instrucciones detalladas sobre esta funcionalidad.
+        </PARA>
+      
+	<FIGURE ID="Battery-Charge-Monitor-fig2">         <TITLE>Monitor de Carga de Bateria con la red electrica conectada</TITLE>
+         <SCREENSHOT>	  <SCREENINFO>Monitor de Carga de Bateria</SCREENINFO>
+	  <GRAPHIC FORMAT="png" FILEREF="./figs/battery-applet-ac-online-25-20" SRCCREDIT="James Cope">          </GRAPHIC>
+         </SCREENSHOT>
+	</FIGURE>
+
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM><EMPHASIS>Porcentaje Restante</EMPHASIS></TERM>
+       <LISTITEM>	<PARA>         El porcentaje restante representado arriba a la derecha del aplique
+         representa cuan cargada esta de momento la bateria.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM><EMPHASIS>Tiempo Restante</EMPHASIS></TERM>
+       <LISTITEM>       <PARA>        La representación del tiempo restante abajo a la derecha del aplique
+        muestra cuanto tiempo restante queda de duración de bateria. El tiempo se muestra
+        en horas y minutos.
+       </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+     </VARIABLELIST>
+    </SECT4>
+    
+    <SECT4 ID="Battery-Charge-Monitor-Graph-sec">     <TITLE>Vista en Gráfica</TITLE>
+     <PARA>      La vista en gráfica muestra el porcentaje el porcentaje de carga restante de
+      bateria como un gráfico cambiante. El eje horizontal representa el tiempo
+      y el eje vertical representa el porcentage de carga con el 100%
+      de carga estando en lo alto de la gráfica. Por defecto la grafica es
+      verde cuando tu computadora esta conectada a la alimentacion y
+      azul cuando no lo esta. La grafica tambien cambia de color cuando la
+      carga cae por debajo del <GUILABEL>Low Charge Threshold</GUILABEL>
+      (see <LINK LINKEND="Battery-Charge-Monitor-properties-general">      Properties  General</LINK>) El color por defecto en este caso es rojo.
+     </PARA>
+
+     <FIGURE>      <TITLE>Monitor de Carga de Bateria en Vista Grafica</TITLE>
+       <SCREENSHOT>        <SCREENINFO>Monitor de Carga de Bateria en Vista Grafica</SCREENINFO>
+        <GRAPHIC FORMAT="png" FILEREF="./figs/battery-applet-graph" SRCCREDIT="James Cope">        </GRAPHIC>
+       </SCREENSHOT>
+      </FIGURE>
+    </SECT4>
+   </SECT3>
+
+   <SECT3 ID="Battery-Charge-Monitor-right-click">    <TITLE>Items del Menu desplegable conClick-Derecho</TITLE>
+    <PARA> 
+     Ademas de los items del menu estandard, el menu del click-derecho tiene 
+     los siguientes items: 
+     <ITEMIZEDLIST> 	
+      <LISTITEM>       <PARA>        <GUIMENUITEM>Propiedades...</GUIMENUITEM>  Este menu item abre
+        <INTERFACE>Propiedades</INTERFACE> dialogo (mirar
+        <LINK LINKEND="Battery-Charge-Monitor-properties">Properties</LINK>) 
+	el cual permite personalizar la apariencia y el comportamiento de este aplique.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </PARA>
+   </SECT3>
+
+   <SECT3 ID="Battery-Charge-Monitor-properties">    <TITLE>Properties</TITLE>
+    <PARA>     Puedes configurar<APPLICATION>El aplique monitor de Carga de Bateria
+     </APPLICATION> presionando click-derecho en el aplique y eligiendo
+      <GUIMENUITEM>Propiedades...</GUIMENUITEM> menu.
+      Esto abre<INTERFACE>Propiedades</INTERFACE>
+     dialogo, con cuatro grupos de items configurables items dispuestos en las siguientes
+      paginas:
+     <LINK LINKEND="Battery-Charge-Monitor-properties-general">General</LINK>,
+     <LINK LINKEND="Battery-Charge-Monitor-properties-readout">Readout</LINK>,
+     <LINK LINKEND="Battery-Charge-Monitor-properties-graph">Grafica</LINK> y
+      <LINK LINKEND="Battery-Charge-Monitor-properties-messages">Mensajes
+      de Carga de Bateria</LINK>.
+    </PARA>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-general">     <TITLE>Propiedades  General</TITLE>
+    
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig1">      <TITLE>Propiedades Dialogo  General</TITLE>
+      <SCREENSHOT>       <SCREENINFO>Propiedades Dialogo  General</SCREENINFO> 
+       <GRAPHIC FORMAT="png" FILEREF="./figs/battery-applet-properties-general" SRCCREDIT="James Cope">        </GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>        <GUILABEL>Sigue Panel de Tamaño</GUILABEL>  instruye
+	<APPLICATION>Monitor de Carga de Bateria</APPLICATION> a rediseñar
+	cuando el panel cambia de tamaño. Es chequeado por defecto. Para que 
+	 <GUILABEL>Altura Aplique</GUILABEL> y
+	<GUILABEL>Ancho Aplique </GUILABEL> sparametros tomen efecto, esto
+		debe estar sin chequeo.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Altura Aplique  Ancho Aplique</GUILABEL> 
+	estos dos botones de giro permiten especifiar laqs dimensiones
+	de <APPLICATION>Monitor de Carga de Bateria</APPLICATION> en pixels exactos
+	. Para que estos parametros tomen efecto,
+	<GUILABEL>Siguiente Panel Tamaño</GUILABEL> debe estar sin chequeo. Loa
+		valores por defecto estan puestos a 48.
+       </PARA>
+
+       <NOTE>		<TITLE>NOTE</TITLE>
+	<PARA>	 Dejar estos valores muy pequeños (por debajo de 28 pixels)
+	 nos pasa que el icono de bateria no aparece debido a la falta de espacio
+	 .
+        </PARA>
+       </NOTE>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Intervalo de Refresco</GUILABEL>  specifica
+	en segundos cuando <APPLICATION>El Monitor de Carga de Bateria
+	</APPLICATION> refresca la informacion de carga de bateria
+	. El valor por defecto es dos segundos.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Indicador de Carga Baja</GUILABEL> es un porcentaje
+	de la carga de que el 
+	<APPLICATION>Monitor de Carga de Bateria</APPLICATION> usa para
+	opcionalmente mostrar una advertencia, es entonces cuando considera la bateria
+	con poca energia remanente. Por ejemplo esta informacion es
+	usada para decidir cuanndo debe de cambiar de color del icono de bateria
+	. El valor por defecto es 25.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>	 
+       <PARA>	<GUILABEL>Modo Aplique</GUILABEL>  los dos
+	<GUIBUTTON>Lectura</GUIBUTTON> y
+	<GUIBUTTON>Grafica</GUIBUTTON> checkboxes son otra forma de cambiar entre
+	 <LINK LINKEND="Battery-Charge-Monitor-Readout-sec">	Vista Lectura</LINK> and <LINK LINKEND="Battery-Charge-Monitor-Graph-sec">	Vista Grafica</LINK>.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-readout">     <TITLE>Propiedades  Lectura</TITLE>
+     
+     <PARA>      Los valores aqui solo afectan<APPLICATION>Monitor de Carga de Bateria
+      </APPLICATION> cuando esta en <LINK LINKEND="Battery-Charge-Monitor-Readout-sec">      Vista Lectura</LINK>.
+     </PARA>
+
+     <PARA> 
+      Todos los rectangulos coloreados aqui pueden ser
+      <MOUSEBUTTON>izquierdo</MOUSEBUTTON> clickeados para mostrar la
+      rueda de colores GNOME. Esto te permote elegir los colores que prefieras en vez de los de por defecto
+      .
+     </PARA>
+
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig2">      <TITLE>Propiedades Dialogo  Lectura</TITLE>
+      <SCREENSHOT>       <SCREENINFO>Propiedades Dialogo  Lectura</SCREENINFO>
+       <GRAPHIC FORMAT="png" FILEREF="./figs/battery-applet-properties-readout" SRCCREDIT="James   Cope"></GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+	
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	<GUILABEL>El Color de la Bateria AC-On</GUILABEL>  especifica el
+	color del icono de bateria en Vista Lectura cuando tu computadora esta
+	conectada ala fuente de alimentacion AC . El color por defecto es verde.
+       </PARA>
+      </LISTITEM> 
+
+      <LISTITEM>       <PARA>	<GUILABEL>EL Color de Bateria AC-Off</GUILABEL>  especifica
+	el colr del icono de bateria en la Vista Lectura cuando tu
+	computadora no esta conectada ala fuente de alimentacion AC . El color por
+	defecto es el verde
+       </PARA>
+      </LISTITEM>
+
+
+      <LISTITEM>       <PARA>	<GUILABEL>Clor de Bateria Baja</GUILABEL>  especifica el 
+	color del icono de bateria en la Vista de Lectura cuando el porcentaje de carga
+	cae por debajo del <GUILABEL>Indicador de Carga Baja
+	</GUILABEL> (see <LINK LINKEND="Battery-Charge-Monitor-properties-general">Properties 
+	 General</LINK>). El color por defecto es rojo.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-graph">     <TITLE>Propiedades  Grafica</TITLE>
+
+     <PARA>      Los valores aqui solo afectan cuando <APPLICATION>El Monitor de Carga
+      </APPLICATION> wcuando esta en <LINK LINKEND="Battery-Charge-Monitor-Graph-sec">      Vista Grafica</LINK>.
+     </PARA>
+
+     <PARA> Todos los rectangulos coloreados aqui pueden ser
+      <MOUSEBUTTON>derecha</MOUSEBUTTON> clickeados para mostrar la rueda de colores GNOME
+     . Esto te permite elegir los colores que prefieras envez de los de pordefecto
+      .
+     </PARA>
+
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig3">      <TITLE>Propiedades Dialogo  Grafica</TITLE>
+      <SCREENSHOT>       <SCREENINFO>Dialogo Propiedadese  Grafica</SCREENINFO>
+       <GRAPHIC FORMAT="png" FILEREF="./figs/battery-applet-properties-graph" SRCCREDIT="James   Cope"></GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+
+	
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	<GUILABEL>Color de Baeria AC-On</GUILABEL> 
+	especifica el color de la cuando tu computadora esta conectada
+	 a la alimentacion AC .El color por defecto es verde
+	.
+       </PARA>
+      </LISTITEM>
+	 
+      <LISTITEM>       <PARA>	<GUILABEL>Color de bateria AC-Off </GUILABEL> : especifica
+	el color de la grafica cuando tu computadora no esta conectada
+	ala alimetacin AC . El color por defecto es azul.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Color de Grafica de Bateria Baja</GUILABEL>  especifica
+	el color de la grafica cuando el porcentaje de carga cae por debajo
+	 <GUILABEL>Indicador Carga Baja</GUILABEL>. El color por defecto es rojo.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Color de la Marca en Grafica</GUILABEL>  especifica el color
+	de la linea que hace la division en la grafica,la cual marca el
+	25%, 50% y 75% puntos de carga. El color por defecto es gris oscuro.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Direccion de la Grafica</GUILABEL> 
+	especifica la direccion en que se mueve la grafica sobre el tiempo. La
+	direccion por defecto es <GUILABEL>Derecha a Izquierda</GUILABEL>.
+       </PARA>
+       </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-messages">     <TITLE>Propiedades  Mensajes de Carga de Bateria</TITLE>
+
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig4">      <TITLE>Propiedades de Dialogo  Mensajes Carga de Bateria
+        </TITLE>
+      <SCREENSHOT>       <SCREENINFO>Propiedades de Dialogo Mensajes Carga de bateria
+        </SCREENINFO>
+       <GRAPHIC FORMAT="png" FILEREF="./figs/battery-applet-properties-messages" SRCCREDIT="James   Cope"></GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	<GUILABEL>Alerta en la carga de bateria se encuantra por debajo de la marca</GUILABEL>
+	; especifica el porcentaje de carga al cual el
+	<APPLICATION>Monitor de Carga de Bateria</APPLICATION> muestra un
+	cuador de dialogo de alerta que la bateria esta baja. Esta
+	alerta es mostrada solo si esta marcado el <GUILABEL>Permitir Alerta de Bateria Baja
+	</GUILABEL> . El valor por defecto es 5%.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Permitir Alerta de Bateria Baja</GUILABEL> 
+	especifica si <APPLICATION>Monitor de Carga de Bateria</APPLICATION>
+	debe mostrar un cuadro de dialogo de alerta de que la carga de bateria
+	ha caido por debajo del porcentaje especificado
+	<GUILABEL>Alerta si el porcentaje de carga cae por debajo del especificado</GUILABEL>
+	. El valor por defecto es chequeado.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Permitir Notificacion de Carga Completa</GUILABEL> 
+	especifica si<APPLICATION>Monitor de Carga de Bateria
+	</APPLICATION> debe mostrar un cuadro de dialogo cuando la
+	bateria ha llegado a su 100% de carga. El valor por defecto no es chequeado.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+   </SECT3>
+  
+   <SECT3 ID="Battery-Charge-Monitor-bugs">    <TITLE> Bugs y Limitaciones conocidas</TITLE>
+    <PARA>     Una contrariedad es si se arranca<APPLICATION>Monitor de Carga de Bateria
+     </APPLICATION>en un PC que no tiene soporte para Advanced Power
+     Management . Esto causa que<GUILABEL>El cuadro de Alerta de Bateria Baja
+     </GUILABEL> puede ser confuso.     
+    </PARA>
+   </SECT3>
+
+
+ </SECT2>
+  <SECT2 ID="cpuload-applet">   <TITLE>El Aplique de Carga deCPU</TITLE> 
+
+   <PARA> 
+     El <APPLICATION>cpuload_aplique</APPLICATION> es un pequeño aplique monitor
+     el cual reside en tu panel y dice cuanta CPU esta siendo usada. 
+   </PARA>
+
+   <SECT3 ID="cpuload-usage">    <TITLE>Usage</TITLE>
+    <PARA>      No se necesita hacer nada a este aplique. Se encontrara y correra
+      en tu panel. Se encuentran varias opciones para alterar su visualizacion.
+      </PARA>
+
+    <FIGURE ID="cpuload-applet-fig">      <TITLE>CPU Load Aplique</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Aplique de Carga de CPU</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="./figs/cpuload-applet" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      <APPLICATION>cpuload_aplique</APPLICATION> divide el uso CPU en cuatro partes:
+      </PARA>
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>User</TERM>
+      <LISTITEM>       <PARA>         Este mmide el uso de CPU en "userland": Ej, Cosas que no hablan con el  
+         kernel. El color por defecto es el amarillo.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+ 
+     <VARLISTENTRY>      <TERM>System</TERM>
+      <LISTITEM>       <PARA>         Esto mide el uso de CPU que implica el  kernel: Mucho intercambio 
+         entre memoria y disco, por ejemplo . El color por defecto es palido
+         grey.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+ 
+     <VARLISTENTRY>      <TERM>Nice</TERM>
+      <LISTITEM>       <PARA>         Esto mide el uso de CPU el cual no es "preciso": corriendo con una prioridad alta.
+         EL color por defecto es gris medio. 
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+ 
+     <VARLISTENTRY>      <TERM>Idle</TERM>
+      <LISTITEM>       <PARA>         Medicion de capacidad de CPU desocupada. El color por defeto es negro.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+ 
+   <SECT3 ID="cpuload-right-click">    <TITLE>Menus Desplegables con Click-Derecho</TITLE>
+    <PARA> 
+     Aprte de los Items estandar en el menu, el menu deplegable con tiene 
+     los siguientes items: 
+    </PARA>   
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Propiedades por Defecto...</TERM>
+      <LISTITEM>       <PARA>         Esto abre el<GUILABEL>el cuadro de dialogomultiload_aplique</GUILABEL>
+         <LINK LINKEND="cpuload-properties">descrito mas abajo</LINK> el cual permite 
+         alterar las propiedades por defecto de este y otros apliques monitores.
+        </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Propiedades...</TERM>
+      <LISTITEM>       <PARA>         Esto abre el <GUILABEL>cuador de dialogo</GUILABEL>
+         <LINK LINKEND="cpuload-properties">descrito abajo</LINK> el cual
+         afecta solo <APPLICATION>a las propiedades cpuload_aplique.</APPLICATION>
+         </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Correr gtop...</TERM>
+      <LISTITEM>       <PARA>         Esta opcion corera<COMMAND>gtop</COMMAND> el cual
+         comienza el GNOME System Monitor. <APPLICATION>gtop</APPLICATION>
+         da en mucho mayor detalle lo que esta pasando en el sistema. 
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="cpuload-properties">    <TITLE>Properties</TITLE>
+
+    <FIGURE ID="cpuload-default-fig">      <TITLE>Dialogo de propiedades por Defecto</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Dialogo de propiedades de carga de CPU </SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="./figs/cpuload-applet-default" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Al igual que algunos apliques monitores,
+      <APPLICATION>cpuload_aplique</APPLICATION> tiene dos maneras de definir las preferencias preferences. 
+ 	Se pueden hacer cambios que afecten a cualquiera de este grupo
+      (<APPLICATION>cpuload_aplique</APPLICATION>, <APPLICATION>memload_aplique</APPLICATION>,
+      <APPLICATION>swapload_aplique</APPLICATION>, <APPLICATION>netload_aplique</APPLICATION>
+      and <APPLICATION>loadavg_aplique</APPLICATION>)in un cuadro de dialogo largo
+      . Esto es util cuando corres uno o varios. Estos son los parametros usados por defecto
+      . Se llega a ellos desde 
+      <GUIMENUITEM>menu Propiedades por Defecto...</GUIMENUITEM> .
+    </PARA>
+
+    <FIGURE ID="cpuload-greyed-fig">      <TITLE>Dialogo Propiedades Agrisadas</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Apllet carga de CPU Dialogo de popiedades </SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="./figs/cpuload-applet-greyed" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      O se pueden cambiar las propiedades para 
+      <APPLICATION>cpuload_aplique</APPLICATION>. Esto es util para cuando
+      solo se usa<APPLICATION>cpuload_aplique</APPLICATION> o quieres probar 
+      las nuevas combinaciones. Se llega desde  
+      <GUIMENUITEM>Properties</GUIMENUITEM> menu item.
+    </PARA>
+    <NOTE>	  <TITLE>NOTE</TITLE>
+     <PARA>     Si tu usas el menu<GUIMENUITEM>Propiedades...</GUIMENUITEM> y
+      editas las preferencias para este aplique, debes desmarcar
+      el <GUIBUTTON>Uso de porpiedades por Defecto</GUIBUTTON> checkbox antes
+     de que puedas alterar las preferencias.
+     </PARA>
+    </NOTE>
+
+    <FIGURE ID="cpuload-properties-fig">      <TITLE>Dialogo de Propiedades de CPU </TITLE>
+      <SCREENSHOT>	<SCREENINFO>Dialogo de Propiedades de Carga de CPU </SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="./figs/cpuload-applet-properties" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Los cambios que s pueden hacer son tres:
+    </PARA>
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Colours</TERM>
+      <LISTITEM>       <PARA>         Se pueden alterar los colores usados para las diferentes formas de  
+         uso de CPU mostrados al hacer click en las cajas de colores. Esto
+         invoca la rueda de colores de GNOME.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Speed</TERM>
+      <LISTITEM>       <PARA>         Se puede alterar la velociad conque el grafico trabaja con esto.
+         Esta medido en milisegundos. El valor mas alto es 1,000,000,000
+         y el menor es 1. El pordefecto es mas sensible y esta a 500.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Size</TERM>
+      <LISTITEM>       <PARA>         Se puede alterar el tamaño del aplique con estos. Esta medido en pixels
+        . El valor por defecto es 40, y el rango va desde 1 pixel
+         hasta lo que quieras. En un panel vertical, esto se refiere a la haltura
+         . En un panel horizontal , se refiere a la anchura. 
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="cpuload-bugs">    <TITLE>Bugs Conocidos y Limitaciones</TITLE>
+    <PARA>      Reajustar y por lo tanto alterar la orientacion del panel puede dar como resultado
+      problemas intermitentes, aunque se arreglan por si mismos en 
+      un corto periodo.
+    </PARA>
+   </SECT3>
+
+ </SECT2>
+<SECT2 ID="cpumemusage-applet">  <TITLE>Aplet de uso de memoria y de CPU</TITLE> 
+
+  <PARA> 
+    EL<APPLICATION>cpumemusage_aplique</APPLICATION> es un pequeño aplique monitor
+    el cual se pone en el panely dice sobre el uso de CPU y swap de tu maquina
+    .  Para añadir este
+    aplique a <INTERFACE>Panel</INTERFACE>, 
+    haz clic-derecho en<INTERFACE>Panel</INTERFACE> y elige
+    <MENUCHOICE>      <GUIMENU>Panel</GUIMENU>
+      <GUISUBMENU>Añadir al panel</GUISUBMENU>
+      <GUISUBMENU>Aplique</GUISUBMENU>
+      <GUISUBMENU>Monitors</GUISUBMENU>
+      <GUIMENUITEM>uso CPU/MEM</GUIMENUITEM>
+    </MENUCHOICE>. 
+  </PARA>  
+ 
+   <SECT3 ID="cpumemusage-usage">    <TITLE>Uso</TITLE>
+    <PARA>      No se necesita hacer nada en este aplique. Se instala y corre en tu panel.
+    </PARA>
+    <PARA>      EL aspplet muestra tres barras de mapas, para la CPU, memoria y espacio de swap. 
+      Si tu panel es horizontal,la barra de arriba es CPU, la de enmedio es
+      memoria , y la de abajo es swap. Si tu panel es vertical, la de la izquierda
+      es CPU, la de enmedio es memoria, y la de la derecha es swap.
+    </PARA>
+
+    <FIGURE ID="cpumemusage-applet-fig">      <TITLE>Aplique de CPU/MEM</TITLE>
+     <SCREENSHOT>      <SCREENINFO>aplique de CPU/MEM</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/cpumemusage-applet" SRCCREDIT="Eric Baudais">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+  
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>CPU</TERM>
+      <LISTITEM>       <PARA>         Se usan aqui tres colores. Amarillo es usado para la actividad de CPU 
+         la cual no necesita el kernel. Gris es usado para actividad de CPU 
+         por programas hablando con el kernel (tipicamente, muchos de I/O como
+         cuando se mueven cosas entre memoria y disco).EL negro esta de fondo
+         y representa la CPU sin usar. 
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+     <VARLISTENTRY>      <TERM>Memoria</TERM>
+      <LISTITEM>       <PARA>         Aqui se usan cuatro colores. Amarillo se usa para la memoria compartida
+         (memoria que esta usando mas de un programa). El Girs es usado para
+         el uso de buffer (memoria que contiene datos pero aun no ha sido escrito a disco).
+         El verde-amarillento se usa para otros tipos de memoria. Verde
+         representa la memoria sin usar.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+     <VARLISTENTRY>      <TERM>Swap</TERM>
+      <LISTITEM>       <PARA>         Aqui se usan dos colores. Rojo para el espacio de swap en uso.
+         Verde es para el espacio de swap sin usar. El swap es una seccion de disco duro
+         donde el kernel pone parte de los programas que no estan en uso en ese momento
+         asi puede recuperarlos facilmente cuando los necesite.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="cpumemusage-bugs">    <TITLE> Bugs conocidos y Limitaciones</TITLE>
+    <PARA>      No exsisten bugs conocidos para este aplique.
+    </PARA>
+   </SECT3>
+
+ </SECT2>
+<SECT2 ID="diskusage-applet">  <TITLE>Disk Usage Aplique</TITLE> 
+
+  <PARA> <APPLICATION>Apllet de Uso de Disco</APPLICATION>, mostrados en<XREF LINKEND="diskusage-applet-fig1">, provee un panel monitor para el
+  tamaño de disco en uso y disponible en tus discos duros. Para añadir 
+  este aplique al panel, haz click-derecho en el panel y elige
+         <MENUCHOICE>	<GUIMENU>Panel</GUIMENU>
+	<GUISUBMENU>Añadir al Panel</GUISUBMENU>
+	<GUISUBMENU>Aplique</GUISUBMENU>
+	<GUISUBMENU>Monitores</GUISUBMENU>
+	<GUIMENUITEM>Uso de Disco</GUIMENUITEM>
+      </MENUCHOICE>
+  </XREF></PARA>
+  
+ 
+    <FIGURE ID="diskusage-applet-fig1">     <TITLE>Disk Usage Aplique</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Usos del Apllet de Disco</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/diskusage-applet" SRCCREDIT="John         Fleck">      </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   
+
+  <SECT3 ID="diskusage-applet-usage">    <TITLE> Uso</TITLE>
+    <PARA><APPLICATION>Aplique de Uso de Disco</APPLICATION> provee
+    un monitoreo en tiempo real de la cantidad de espacio en tus discos duros.</PARA>
+    <PARA>Provee tres partes de informacion. La tarta coloreada
+    representa graficamente cuanto espacio esta siendo usado y cuanto
+    esta disponible. <GUILABEL>MP:</GUILABEL> indica el punto de montaje de
+    el disco que se esta monitoreando en el momento. <GUILABEL>av:</GUILABEL>
+    indica la cantidad de espacio disponible en el disco seleccionado, en
+    kilobytes. Haciendo click en el aplique cambia el disco que se esta monitoreando.
+    Haciendo esto repetidamente hace un ciclo por todos los discos disponibles.</PARA>
+  
+  <PARA>    Haciendo click con el boton derecho en el aplique arranca un menu que cobntiene los
+    siguientes items:
+    <ITEMIZEDLIST>        <LISTITEM>	  <PARA>	    <GUIMENUITEM>Sistema de Ficheros</GUIMENUITEM>  te permite
+	    cambiar el Sitema de Ficheros <APPLICATION>Aplique Uso de Disco
+	    </APPLICATION> monitores.</PARA>
+	</LISTITEM>
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Propiedades</GUIMENUITEM> abre las
+	    <LINK LINKEND="diskusage-applet-prefs">                <GUILABEL>Propiedades</GUILABEL>
+            </LINK>dialogo
+	    </PARA>
+	</LISTITEM>
+
+        <LISTITEM>	  <PARA>	    <GUIMENUITEM>Actualizar</GUIMENUITEM>  este puede ser usado
+	    para forzar al aplique a actualizar la lista de Sitemas de ficheros que el aplique usa.
+          </PARA>
+	</LISTITEM>
+	
+	 <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Acerca de;</GUIMENUITEM> 
+       muestra informacion basic sobre<APPLICATION>Aplique Uso de Disco
+       </APPLICATION>,incluyendo la vesion de los apliques y el nombre del autor.
+      </PARA>
+     </LISTITEM>
+	
+	
+
+      </ITEMIZEDLIST>
+    </PARA>
+  </SECT3>
+ 
+  <SECT3 ID="diskusage-applet-prefs">    <TITLE>Personalizacion</TITLE>
+    <PARA>      Se puede personalizar <APPLICATION>Aplique Uso de Disco</APPLICATION> con
+      click-derecho sobre el y eligiendo
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Esto lanzara el
+      <INTERFACE>Properties</INTERFACE>dialogo, que permite que tu cambies
+      varios parametros.
+    </PARA>
+    <FIGURE ID="diskusage-applet-fig2">     <TITLE>Dialogo de Preferencias</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Dialogo de Preferencias</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/diskusage-applet-prefs" SRCCREDIT="John Fleck">      </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+     <PARA>     Las propiedades son:
+     <ITEMIZEDLIST>
+      
+      <LISTITEM>       <PARA>        <GUILABEL>Colores</GUILABEL>   Para cambiar los colores
+      mostrados en el aplique, haz click en el <GUIBUTTON>boton
+      coloreado</GUIBUTTON> junto al <GUILABEL>Espacio de Disco Usado</GUILABEL>,
+      <GUILABEL>Espacio de Disco Libre</GUILABEL>,
+      <GUILABEL>Color de Texto</GUILABEL> and
+      <GUILABEL>Color de Fondo</GUILABEL>. Un dialogo de rueda de colores
+      aparecera mostrando opciones de colores para realizar cambios. Cuando acabes
+      , haz click en el <GUIBUTTON>OK</GUIBUTTON> en la ventana de opciones de colores.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Altura</GUILABEL>  <GUILABEL>Aplique
+    Altura</GUILABEL> y puede ser usado para cambiar la altura (en un 
+    panel horizontal) o anchura (en un panel vertical) del aplique.</PARA>
+
+    <PARA>Al chequear <GUILABEL>Automaticamente elige el mejor tamaño del aplique
+    </GUILABEL> cuadro de chequeo, se puede forzar <APPLICATION>al Aplique de Uso de Disco
+    t</APPLICATION> para que automaticamente elija el tamaño apropiado
+    para tu panel.
+       </PARA>
+      </LISTITEM>
+
+ <LISTITEM>       <PARA>        <GUILABEL>Fuentes</GUILABEL>  Haciendo click en la barra en esta
+        ventana se abre un cuadro de dialogo que permita cambiar la fuente
+        mostrada en el apllet.
+       </PARA>
+      </LISTITEM>
+ <LISTITEM>       <PARA>        <GUILABEL>Frecuencia de Refresco</GUILABEL>  cambia
+    la cantidad de tiempo , en segundos, entre refrescos de
+    <APPLICATION>Aplique de uso de Disco</APPLICATION>.
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+
+    <PARA> 
+     </PARA>
+
+   
+   
+    <PARA> Despues de que se hayan hecho todas las selecciones que se deseen, hacer click en
+      <GUIBUTTON>OK</GUIBUTTON> para efectuar los cambios y cerrar las
+      <INTERFACE>Propiedades</INTERFACE>. Para cancelar estos cambios
+      y retornar a los valores previos, hacer click en el boton
+      <GUIBUTTON>Cancelar</GUIBUTTON> .
+    </PARA>
+  </SECT3>
+  
+ </SECT2></SECT1>

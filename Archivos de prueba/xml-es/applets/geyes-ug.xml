@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<SECT2 ID="geyes">  <TITLE>Aplique gEyes</TITLE>
+
+   <PARA>    El aplique <APPLICATION>gEyes</APPLICATION>, véase <XREF LINKEND="geyesapplet-fig">,  es un par de ojos que siguen su puntero del ratón. Para añadir
+   este aplique al
+   <INTERFACE>Panel</INTERFACE>, pulse con el botón derecho del ratón sobre
+   <INTERFACE>Panel</INTERFACE> y elija 
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Aplique</GUISUBMENU>
+    <GUISUBMENU>Entretenimientos</GUISUBMENU>
+    <GUIMENUITEM>gEyes</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="geyesapplet-fig">   <TITLE>Aplique gEyes</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique gEyes</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="geyes_applet" SRCCREDIT="arjan">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="geyes-usage">   <TITLE>Utilización</TITLE>
+   <PARA>    Mirar como los ojos observan su ratón.
+   </PARA>
+
+   <PARA>    Presionando con el botón derecho sobre el aplique le muestra un menú conteniendo los
+    siguientes elementos:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+       abre el diálogo <LINK LINKEND="geyes-prefs">       <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Sobre</GUIMENUITEM> 
+       muestra información básica sobre el <APPLICATION>Aplique gEyes
+       </APPLICATION>, incluyendo la versión del aplique y el nombre de su autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="geyes-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>      Puede personalizar el aplique<APPLICATION>gEyes</APPLICATION> presionando el botón derecho
+      del ratón sobre él y seleccionado 
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Esta opción abrirá el diálogo
+      <INTERFACE>Propiedades</INTERFACE> (mostrado en  <XREF LINKEND="geyes-settings-fig">), el cual le permitirá cambiar el tema.
+    </XREF></PARA>
+
+    <FIGURE ID="geyes-settings-fig">     <TITLE>Diálogo propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo propiedades</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="geyes_settings" SRCCREDIT="arjan">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>     Esta ventana muestra una lista de los temas (apariencias) actualmente instalados  para el
+     <APPLICATION>gEyes</APPLICATION>. Seleccione el tema que desee utilizar.
+    </PARA>
+
+    <PARA> 
+      Después de que haya seleccionado un nuevo tema, presione en el botón 
+      <GUIBUTTON>OK</GUIBUTTON> para aplicar los cambios y cerrar el diálogo
+      <INTERFACE>Propiedades</INTERFACE>.
+    </PARA>
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="geyes-bugs">   <TITLE>Limitaciones y Errores conocidos</TITLE>
+   <PARA>    Con la excepción del por-defecto-minúsculo, la mayoría de los temas son demasiado grandes para
+    algunos tamaños de <INTERFACE>Panel</INTERFACE> y obligan al  <INTERFACE>Panel</INTERFACE> a
+    cambiar de tamaño.
+   </PARA>
+  </SECT3>
+
+
+</SECT2>

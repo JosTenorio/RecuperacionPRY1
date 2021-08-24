@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<SECT2 ID="lifeapplet">  <TITLE>El Aplique Juego de la Vida</TITLE>
+  <PARA>    El panel <APPLICATION>life</APPLICATION> de GNOME es un aplique que ejecuta
+    <QUOTE>juego de la vida</QUOTE> según las reglas de Conway's en 
+    una pequeña rejilla en el panel, con los organismos y el color de fondo cambiando
+    constantemente. Forma parte del paquete gnome-applets. 
+  </PARA>
+  <PARA>    Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>, 
+    pulse el botón derecho sobre el <INTERFACE>Panel</INTERFACE> y elija
+    <MENUCHOICE>      <GUIMENU>Panel</GUIMENU>
+      <GUISUBMENU>Añadir al panel</GUISUBMENU>
+      <GUISUBMENU>Aplique</GUISUBMENU>
+      <GUISUBMENU>Divertimientos</GUISUBMENU>
+      <GUIMENUITEM>El juego de la vida</GUIMENUITEM>
+    </MENUCHOICE>.
+	o puede teclear este comando en la linea de comandos:
+    <COMMAND>life_applet --activate-goad-server=life_applet  </COMMAND>
+  </PARA>
+
+  <FIGURE ID="life-applet-fig">    <TITLE>El Aplique Juego de la Vida</TITLE>
+    <SCREENSHOT>      <SCREENINFO>El Aplique Juego de la Vida</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="figures/life-applet" SRCCREDIT="Eric Baudais">      </GRAPHIC>
+    </SCREENSHOT>
+  </FIGURE>
+
+    <SECT3 ID="lifeapplet-usage">     <TITLE>Uso</TITLE>
+     <PARA>	Una vez presente, no necesita hacer nada con el aplique juego de la vida. Se
+	ejecutará alegremente a su aire. 
+     </PARA>
+
+    <PARA>	Al pulsar el botón derecho se presenta un menu con los siguiente item: 
+      <ITEMIZEDLIST>	
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Al azar</GUIMENUITEM> 
+		Cambia el juego al azar. Esto terminará con la ejecución repetida de los mismos
+		aburridos patrones. 
+	  </PARA>
+	</LISTITEM>
+	
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+		Muestra este documento. 
+	  </PARA>
+	</LISTITEM>
+	
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Acerca</GUIMENUITEM> 
+	    Muestra información basica acerca del aplique <APPLICATION>Juego de la vida 
+	    </APPLICATION>, incluyendo la versión del aplique y el nombre del autor.  
+	  </PARA>
+	</LISTITEM>
+	
+      </ITEMIZEDLIST>
+    </PARA>
+    </SECT3>
+
+    <SECT3 ID="lifeapplet-rules">     <TITLE>Reglas</TITLE>
+     <PARA>	El juego de la vida fue descrito por Conway en 1970 con las siguientes
+        reglas: 
+     </PARA>
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	Se empieza con un rejilla (normalmente un sencillo cuadrado) de cuadros. Se rellena 
+	una porción de ellos con celulas, situadas al azar. Esta es la primera generación. 
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>	Cualquier celula con dos o tres vecinas sobrevive a la siguiente
+	generación. 
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>	En cualquier cuadro sin celula y con tres vecinas, nace una nueva
+	celula. En cualquier otro cuadro, no nacen nuevas celulas. 
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>	Repetir para las siuientes generaciones. 
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+
+     <PARA>	El juego podra eventualmente terminar en alguna de las siguientes maneras: 
+     </PARA>
+
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	La muerte de todas las celulas (teórico, pero improbable en el aplique vida). 
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>	Un equilibrio fijo con todas las restantes celulas sobreviviendo pero sin la creación
+	 de nuevas celulas. 
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>	Un equilibrio dinámico donde el juego repite de forma constinua una
+	secuencia particular de patrones. 
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+
+     <PARA>       Para conseguir valores interesantes, la rejilla actual del aplique juego de la vida
+	 es de 78 por 78 y la proporción de cuadros rellenados con celulas es del 50.
+     </PARA>
+    </SECT3>
+
+    <SECT3 ID="lifeapplet-bugs">     <TITLE>Errores y limitaciones conocidos</TITLE>
+     <PARA>	Ninguno conocido. 
+     </PARA>
+    </SECT3>
+</SECT2>

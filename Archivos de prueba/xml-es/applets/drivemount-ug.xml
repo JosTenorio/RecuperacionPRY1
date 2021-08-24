@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<SECT2 ID="drivemountapplet">  <TITLE>Aplique Montador de Discos</TITLE>
+
+   <PARA>   El Aplique<APPLICATION>Montador de Discos</APPLICATION>, que puede ver en <XREF LINKEND="drivemountapplet-fig">, permite montar y desmontar en su ordenador
+   fácil y rápidamente diversos tipos de unidades y sistemas de ficheros.
+   Para añadirlo a su  <INTERFACE>Panel</INTERFACE>, 
+   pulse con el botón derecho sobre el  <INTERFACE>Panel</INTERFACE> y escoja 
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Add to panel</GUISUBMENU>
+    <GUISUBMENU>Aplique</GUISUBMENU>
+    <GUISUBMENU>Utilidades</GUISUBMENU>
+    <GUIMENUITEM>Montador de Discos</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="drivemountapplet-fig">   <TITLE>Aplique Montador de Discos</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique Montador de Discos</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/drivemount_applet_floppy" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  <NOTE>   <TITLE>Información general para principiantes</TITLE>
+   <PARA>	Muchos de los sistemas de ficheros de Linux y Unix han de ser montados y
+	desmontados manualmente. Para leer y escribir en un
+       	sistema de ficheros se ha de montar previamente. Una vez termine de
+	utilizarlo debería desmontarlo. Desmontar las unidades
+       	removibles, como disquetes o discos Zip, antes de sacar el disco es
+	especialmente importante ya que los sistemas Linux o Unix
+       	no siempre graban los cambios en el momento. Normalmente los cambios se
+	guardan temporalmente en un buffer para mejorar la
+       	velocidad del sistema. Las particiones de los discos fijos, como su
+	disco duro, normalmente se montan automáticamente al
+       	arrancar el ordenador y se desmontan al cerrar el sistema. Las unidades
+	removibles se han de montar y desmontar manualmente,
+       	usando, por ejemplo, el aplique <APPLICATION>Montador de Discos</APPLICATION>.  
+   </PARA>
+   <PARA>	El "sistema de ficheros raíz" es el principal de los de su ordenador y
+	comienza en "/" (raíz). Otros sistemas de ficheros se asocian
+       	a directorios del sistema de ficheros raíz. A estos se les conoce como
+	"puntos de montaje", que son simples directorios vacíos.
+       	Cuando se monta un sistema de ficheros, su contenido aparece dentro de
+	este directorio. Por ejemplo, la mayoría de sistemas
+       	crean un punto de montaje "/mnt/floppy" que mientras no monte la
+	disquetera será solo un directorio vacío y al montarla su
+       	contenido será el del disquete.
+   </PARA>
+  </NOTE>
+
+  
+  <SECT3 ID="drivemount-usage">   <TITLE>Uso</TITLE>
+   <PARA>    Para montar o desmontar una unidad, simplemente pulse sobre el icono del
+    aplique <APPLICATION>Montador de Discos</APPLICATION> con el botón
+    izquierdo del ratón. En el caso de aquellas unidades que pueden expulsar su
+    disco como la mayoría de CDROM's y unidades JAZ, puede hacerlo pulsando
+    sobre su icono con el botón derecho del ratón y seleccionando 
+    <GUIMENUITEM>Expulsar</GUIMENUITEM>. Para navegar por el contenido 
+    de la unidad con el <APPLICATION>Gestor de Ficheros de GNOME</APPLICATION>, seleccione
+    <GUIMENUITEM>Navegar</GUIMENUITEM>. 
+   </PARA>
+
+   <PARA>	Pulsando el botón derecho sobre el aplique hace aparecer un menú con
+	las siguientes opciones: 
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Navegar</GUIMENUITEM>  muestra el contenido de la 
+	unidad con el <APPLICATION>Gestor de Ficheros de GNOME</APPLICATION>. Para que
+	funcione la unidad ha de estar montada.  
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Expulsar</GUIMENUITEM>  expulsa el medio de almacenamiento
+	de aquellas unidades capaces de hacerlo, como puedan ser las
+	unidades CDROM o JAZZ. 
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+       abre el diálogo de  <LINK LINKEND="drivemountapplet-prefs">       <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+	muestra este documento. 
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Acerca</GUIMENUITEM> 
+       muestra información básica sobre el Aplique<APPLICATION>Montador de
+       Discos </APPLICATION>, incluyendo la versión del aplique y el nombre de
+       sus autores. 
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+
+   <PARA>    Si deja descansar el cursor sobre el aplique aparecerá un tooltip con
+    el punto de montaje y el estado de la unidad, como puede ver en
+    <XREF LINKEND="drivemountapplettooltips-fig">.
+    <FIGURE ID="drivemountapplettooltips-fig">     <TITLE>El Aplique Montador de discos enseñando un tooltip</TITLE>
+     <SCREENSHOT>      <SCREENINFO>El Aplique Montador de discos enseñando un tooltip</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="figures/drivemount_applet_tooltip" SRCCREDIT="muet">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+   </XREF></PARA>
+
+  </SECT3>
+
+
+  
+  <SECT3 ID="drivemountapplet-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>      Usted puede personalizar el aplique <APPLICATION>Montador de Discos</APPLICATION>
+      pulsando con el botón derecho y escogiendo
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Se abrirá el diálogo de
+      <INTERFACE>Propiedades</INTERFACE> (puede verlo en <XREF LINKEND="drivemount-settings-fig">), que le permite cambiar varios parámetros. 
+
+    </XREF></PARA>
+
+    <FIGURE ID="drivemount-settings-fig">     <TITLE>El diálogo de Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>El diálogo de Propiedades</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="figures/drivemount_applet_settings" SRCCREDIT="muet">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>	Las propiedades son: 
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        <GUILABEL>Punto de Montaje </GUILABEL>  Este es el punto que se
+        utiliza para montar la unidad. Si no esta familiarizado con los puntos
+	de montaje, este es un directorio vacío que tendrá el contenido de la
+	unidad cuando este montada. Los puntos de montaje pueden estar en cualquier
+        parte del sistema de ficheros, pero por convención todos los puntos de
+        montaje para unidades removibles se ponen en el directorio
+	<FILENAME CLASS="directory">/mnt</FILENAME>
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Actualización en segundos</GUILABEL>  Este es el intervalo
+	en segundos que espera el aplique <APPLICATION>Montador de Discos</APPLICATION> 
+	para refrescar su icono comprobando el estado del montaje. Esta opción solo
+	tiene sentido si a veces monta o desmonta la unidad con otra orden o
+        aplicación además del aplique <APPLICATION>Montador de Discos</APPLICATION>.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Icono</GUILABEL>  Determina los iconos (uno cuando no
+	esta montada y otro si lo esta) que mostrará para la unidad Hay conjuntos de
+	iconos para los tipos de unidad más comunes(disquetes, CDROM, Zip, disco duro,
+	y JAZ). Los puede ver en <XREF LINKEND="drivemountappletall-fig">. También puede
+        escoger <GUIMENUITEM>Personalizado</GUIMENUITEM>; que le permite especificar sus
+	iconos particulares. 
+       </XREF></PARA>
+       <FIGURE ID="drivemountappletall-fig">        <TITLE>Iconos para diversos tipos de unidades montadas y no montadas</TITLE>
+        <SCREENSHOT>         <SCREENINFO>Iconos para diversos tipos de unidades montadas y no montadas</SCREENINFO> 
+         <GRAPHIC FORMAT="png" FILEREF="figures/drivemount_applet_all" SRCCREDIT="muet">         </GRAPHIC>
+        </SCREENSHOT>
+       </FIGURE>
+       <PARA>        Dese cuenta que <XREF LINKEND="drivemountappletall-fig">	muestra los iconos correspondientes al estado no montado y montado de
+        (de izquierda a derecha) unidad de disquete, CDROM, Zip, JAZ, y disco duro. 
+       </XREF></PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Icono personalizado para el estado montado</GUILABEL>   
+	Un icono personalizado que se mostrará cuando la unidad este montada.
+	Esta opción solo estará disponible si en <GUIMENU>Icono:</GUIMENU> se
+	ha seleccionado la opción "Personalizado".
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUILABEL>Icono personalizado para el estado desmontado</GUILABEL>   
+	Un icono personalizado que se mostrará cuando la unidad no este montada. Esta
+       	opción solo estará disponible si en <GUIMENU>Icono</GUIMENU>: se ha seleccionado
+	la opción "Personalizado". 
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUIBUTTON>Escalar el tamaño al del panel</GUIBUTTON>  Seleccionando esta
+	opción el tamaño de los iconos montado y desmontado se escala para que
+       	coincida con el del <INTERFACE>Panel</INTERFACE>. Si esta opción esta desactivada
+	el tamaño de los iconos sera fijo, con independencia del tamaño del
+	<INTERFACE>Panel</INTERFACE>. Seleccionar esta opción normalmente ayuda a mejorar
+	el aspecto. Para tamaños muy reducidos del <INTERFACE>Panel</INTERFACE>, puede valer la
+        pena desactivar esta opción ya que mejora la visibilidad del aplique al
+	forzarlo a aparecer más grande y rotado. 
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        <GUIBUTTON>Usar la amigable prueba del estado automontado</GUIBUTTON>
+         Seleccione esta opción si utiliza automount, sino dejela desactivada. 
+       </PARA>
+       <NOTE>        <TITLE>Información para usuarios avanzados</TITLE>
+        <PARA>         La orden predeterminada que utiliza el aplique <APPLICATION>Montador
+         de Discos</APPLICATION> para averiguar si una unidad esta montada es
+         <COMMAND>stat</COMMAND>. Si el usuario utiliza <APPLICATION>automount</APPLICATION>
+	 puede provocar que se monte automáticamente la unidad. Si se activa
+         este botón utilizará en su lugar la orden <COMMAND>mount</COMMAND>
+	 para evitar que <APPLICATION>automount</APPLICATION> monte la unidad.  
+	 El botón esta desactivado por defecto porque <COMMAND>mount</COMMAND> 
+         gasta más cpu que <COMMAND>stat</COMMAND>. 
+        </PARA>
+       </NOTE>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA>Después de efectuar sus cambios, pulse el botón 
+      <GUIBUTTON>OK</GUIBUTTON> para aplicar los cambios y cerrar el diálogo de
+      <INTERFACE>Propiedades</INTERFACE> 
+      <GUIBUTTON>Apply</GUIBUTTON>. Para deshacer los
+      cambios y recuperar los valores anteriores pulse el botón 
+      <GUIBUTTON>Close</GUIBUTTON> 
+      <INTERFACE>Properties</INTERFACE> 
+    </PARA>
+  </SECT3>
+
+  
+  <SECT3 ID="drivemountapplet-configuring">   <TITLE>Configurando el Sistema</TITLE>
+
+   <WARNING>    <TITLE>Para usuarios avanzados</TITLE>
+    <PARA>     Esta sección esta pensada para administradores de sistemas y usuarios
+     avanzados. 
+    </PARA>
+   </WARNING>
+  
+   <PARA>    Para configurar correctamente el Aplique <APPLICATION>Montador de Discos</APPLICATION> 
+    , el administrador del sistema puede necesitar los privilegios de root Esta
+    sección hace una introducción muy básica. 
+   </PARA>
+
+   <PARA>    En <FILENAME>/etc/fstab</FILENAME> se guarda la información del punto de montaje y tipo de sistema
+    de ficheros que corresponde a cada unidad. Este fichero se puede configurar manualmente 
+    o usando la aplicación <APPLICATION>linuxconf</APPLICATION>. Cuando la unidad
+    pueda contener más de un tipo de sistema de ficheros (como sería el caso de la disquetera
+    que puede tener sistemas de ficheros msdos o ext2), debería usar la opción "auto". A cada
+    unidad le corresponde una sola linea de <FILENAME>/etc/fstab</FILENAME> como: 
+    <PROGRAMLISTING>    /dev/fd0        /mnt/floppy      auto    noauto,rw,user  0 0
+    </PROGRAMLISTING>
+    Esta entrada describe la primera disquetera (/dev/fd0) indicando que su
+    punto de montaje es <FILENAME>/mnt/floppy</FILENAME>, que su tipo de sistema de
+    ficheros debería detectarse automáticamente ya que no es fijo, y las siguientes
+    opciones de configuración: "noauto" No montar automáticamente al arrancar 
+    el ordenador "rw" Habilitar lectura y escritura en la unidad, y
+    "user" Los usuarios pueden montar la unidad.  Todas estas opciones, y los
+    dos campos finales que no hemos descrito, se discuten en detalla en la pagina del
+     manual de fstab a la que puede acceder tecleando <COMMAND>man fstab</COMMAND> o a través 
+    del <APPLICATION>Visualizador de ayuda de GNOME</APPLICATION>.
+   </PARA>
+   <PARA>    La aplicación <APPLICATION>linuxconf</APPLICATION> proporciona un interfaz
+    gráfico para controlar los sistemas de ficheros. Para arrancar <APPLICATION>linuxconf</APPLICATION>
+    , solo ha de teclear <APPLICATION>linuxconf</APPLICATION>, en una ventana
+    con el interprete de ordenes (Ha de haber entrado en el sistema como root).
+    Escoja
+    <MENUCHOICE>     <GUIMENU>Config</GUIMENU>
+     <GUISUBMENU>filesystems</GUISUBMENU>
+     <GUIMENUITEM>Access local drive</GUIMENUITEM>
+    </MENUCHOICE>. 
+    Para editar una entrada, solo ha de seleccionarla. 
+    <APPLICATION>linuxconf</APPLICATION> trata de ser fácil de usar y cuenta con
+    su propio sistema de ayuda para conducirle durante todo el proceso. También puede
+    añadir nuevas entradas seleccionando el botón <GUIBUTTON>Add</GUIBUTTON>.
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="drivemountapplet-troubleshooting">   <TITLE>Solución de problemas y comprensión de los mensajes de error</TITLE>
+   <PARA>    Si su sistema no esta configurado adecuadamente se puede encontrar con ciertos
+    mensajes de error al tratar de montar y desmontar algunas unidades. Aquí tiene
+    una lista de los mensajes más habituales y sus causas: 
+    <ITEMIZEDLIST>     <LISTITEM>      <PARA>       <QUOTE>mount: /dev/fd0 is not a valid block device</QUOTE> 
+	Habitualmente este error se produce por que la unidad (en este ejemplo,
+	/dev/fd0, es decir la unidad de disquetes) esta vacía. 
+      </PARA>
+     </LISTITEM> 
+     <LISTITEM>      <PARA>       <QUOTE>mount: only root can mount /dev/fda on /mnt/floppy</QUOTE> 
+	No esta autorizado a montar la unidad. Pongase en contacto con el
+        administrador del sistema para que le otorgue los permisos necesarios. 
+      </PARA>
+      <NOTE>       <TITLE>Nota para Administradores de Sistemas</TITLE>
+       <PARA>	Para conseguir que los usuarios puedan montar y desmontar la unidad ha
+	de añadir "user" a las opciones de montaje (cuarta columna) de
+        <FILENAME>/etc/fstab</FILENAME>. Se puede hacer manualmente o con
+        <APPLICATION>linuxconf</APPLICATION>, escogiendo el apartado <GUILABEL>Local volume</GUILABEL>
+	en   
+       <MENUCHOICE>        <GUIMENU>Config</GUIMENU>
+        <GUISUBMENU>Filesystems</GUISUBMENU>
+        <GUIMENUITEM>Access local drive</GUIMENUITEM>
+       </MENUCHOICE>. Después de escoger la unidad en la lista, le mostrará las <GUILABEL>Volume
+        specifications</GUILABEL>. Pulse en el apartado <GUILABEL>Options</GUILABEL> y active el botón 
+        <GUIBUTTON>User mountable</GUIBUTTON>. 
+       </PARA>
+      </NOTE>
+     </LISTITEM>
+     <LISTITEM>      <PARA>       <QUOTE>mount: wrong fs type, bad option, bad superblock on
+       /dev/cdrom, or too many mounted file systems</QUOTE>
+       Este error puede tener varias causas. La más habitual es no haber acertado con
+       el tipo de sistema de ficheros, como pueda ser tratar de montar un CDROM de música como
+       si contuviera datos o un disquete msdos como si su formato fuera ext2. 
+      </PARA>
+     </LISTITEM>
+     <LISTITEM>      <PARA>       <QUOTE>mount /mnt/cdrom 2&gt;&amp;1 reported: mount: No medium
+       found</QUOTE> Este error indica que la unidad, en este caso la
+       unidad CDROM, esta vacía.
+      </PARA>
+     </LISTITEM>
+     <LISTITEM>      <PARA>       <QUOTE>umount /mnt/cdrom 2&gt;&amp;1 reported: umount: /mnt/cdrom:
+       device is busy</QUOTE> Este error indica que la unidad no se puede desmontar por
+       que esta siendo utilizada por el ordenador. A menudo se produce al tener
+       abierto un directorio de la unidad en el <APPLICATION>Gestor de ficheros</APPLICATION>
+       o por que el directorio de trabajo de un terminal de una de sus ventanas
+       es de la unidad. 
+      </PARA>
+     </LISTITEM>
+     <LISTITEM>      <PARA>       <QUOTE>umount: can't find /mnt/floppy in /etc/fstab or /etc/mtab
+       </QUOTE> Indica que su sistema no tiene configurado el punto 
+       de montaje que trata de utilizar Muchas veces se debe a un error al
+       rellenar la casilla de <GUILABEL>punto de montaje</GUILABEL> en el
+       <INTERFACE>Diálogo de Propiedades</INTERFACE> (vea <XREF LINKEND="drivemountapplet-prefs">). Para averiguar el punto de montaje
+       correcto, pongase en contacto con el administrador de su sistema 
+      </XREF></PARA>
+      <NOTE>       <TITLE>Nota para usuarios avanzados</TITLE>
+       <PARA>        Cada dispositivo(sistema de ficheros o unidad) a montar debería estar
+        reflejado en el fichero de configuración <FILENAME>/etc/fstab</FILENAME> 
+	La lectura de este fichero le indicará que dispositivos están
+	configurados en su sistema. Para añadir o modificar las entradas puede 
+	editarlas manualmente o utilizar <APPLICATION>linuxconf</APPLICATION>.
+       </PARA>
+      </NOTE>
+     </LISTITEM>
+     <LISTITEM>      <PARA>       <QUOTE>mount: /dev/fd0 already mounted or /mnt/floppy busy
+       mount: according to mtab, /dev/fd0 is mounted on /mnt/floppy_ext2
+       </QUOTE>
+	Este error se produce si un dispositivo (en este caso /dev/fd0) esta configurado
+	para varios puntos de montaje y intenta montarlo en uno de ellos
+        cuando ya esta montado en otro. Normalmente no hay ninguna necesidad de
+	tener varios puntos de montaje para un solo dispositivo. 
+      </PARA>
+     </LISTITEM>
+     <LISTITEM>      <PARA>       <QUOTE>mount: the kernel does not recognize /dev/sda4 as a
+       block device(maybe 'insmod driver'?)</QUOTE> 
+       Pongase en contacto con el
+       administrador de su sistema. Este error se produce si el núcleo de su
+       sistema no esta configurado para cargar automáticamente los
+       módulos del núcleo para estos dispositivos. 
+      </PARA>
+     </LISTITEM>
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="drivemount-bugs">   <TITLE>Errores y limitaciones conocidos</TITLE>
+   <PARA>    <GUIMENUITEM>Expulsar</GUIMENUITEM> 
+	No siempre funciona. Cuando se intenta expulsar una unidad montada no se da un
+	mensaje de aviso de esta circunstancia.
+   </PARA>
+  </SECT3>
+</SECT2>

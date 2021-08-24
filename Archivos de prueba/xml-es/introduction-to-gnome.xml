@@ -1,0 +1,1034 @@
+<?xml version="1.0"?>
+<ARTICLE ID="index" LANG="es">  <ARTHEADER> 
+  <TITLE>Introducción a GNOME</TITLE>
+ <AUTHORGROUP>   <AUTHOR>    <FIRSTNAME>Gnome</FIRSTNAME>
+    <SURNAME>Equipo de documentación</SURNAME>
+   </AUTHOR>
+  </AUTHORGROUP>
+
+
+  <RELEASEINFO>   Este es un borrador de la introducción a Gnome para Gnome 1.4
+  </RELEASEINFO>
+
+
+  <COPYRIGHT>   <YEAR>2000, 2001</YEAR>
+
+      <HOLDER>Red Hat, Inc., David A. Wheeler, Alexander Kirillov 
+      </HOLDER>
+  </COPYRIGHT>
+<COPYRIGHT><YEAR>2001</YEAR>
+<HOLDER>Manuel de Vega Barreiro y grupo Gnome-es (traducción al Castellano)</HOLDER></COPYRIGHT>
+    
+    <LEGALNOTICE ID="legalnotice">      <PARA> 
+        Permission is granted to copy, distribute and/or modify this
+        document under the terms of the <ULINK TYPE="help" URL="gnome-help:fdl"><CITETITLE>GNU Free Documentation
+        License</CITETITLE></ULINK>, Version 1.1 or any later version
+        published by the Free Software Foundation with no Invariant
+        Sections, no Front-Cover Texts, and no Back-Cover Texts. You
+        may obtain a copy of the <CITETITLE>GNU Free Documentation
+        License</CITETITLE> from the Free Software Foundation by
+        visiting <ULINK TYPE="http" URL="http://www.fsf.org">their Web
+        site</ULINK> or by writing to: Free Software Foundation, Inc.,
+        59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+      </PARA>
+      <PARA>	Many of the names used by companies to distinguish their
+	products and services are claimed as trademarks. Where those
+	names appear in any Gnome documentation, and those trademarks
+	are made aware to the members of the Gnome Documentation
+	Project, the names have been printed in caps or initial caps.
+      </PARA>
+
+           <PARA>       Se permite la copia, distribución y/o modificación de este 
+       documento bajo los términos de la licencia de documentación libre
+       de GNU, versión 1.1 o cualquier versión posterior publicada por la
+       fundación para el software libre; sin secciones invariantes, sin 
+       portada, y sin contraportada.
+       Una copia de esta licencia esta disponible en la fundación para el
+       software libre y puede leerse en 
+       <ULINK TYPE="help" URL="gnome-help:fdl">linea</ULINK>.
+       </PARA>
+
+
+      <PARA> 
+        Muchos de los nombres usados por las compañías para diferencias sus 
+        productos y servicios son reclamados como marcas registradas. Allí 
+        donde estos nombres aparezcan en la documentación de Gnome, y cuando
+        los miembros del proyecto de documentación Gnome hayan sido informados
+        de esas marcas registradas, los nombres estarán impresos en mayúsculas
+        o como nombres propios.
+      </PARA>
+
+    </LEGALNOTICE>
+  
+
+
+
+
+ </ARTHEADER>
+
+
+<SECT1 ID="whatisGnome">    <TITLE>¿Qué es GNOME?</TITLE>
+<PARA>GNOME es un entorno gráfico (escritorio de trabajo) amigable para Unix y
+sistemas tipo Unix, que permite a los usuarios usar y configurar sus ordenadores 
+de una forma sencilla.
+GNOME incluye un panel (para arrancar aplicaciones y presentar el estado de
+funcionamiento), un escritorio ( donde se pueden situar los datos y las 
+aplicaciones), un conjunto estándar de aplicaciones y herramientas de 
+escritorio, y un conjunto de convenciones que facilitan la operación y 
+consistencia de las aplicaciones entre sí. Los usuarios de otros sistemas
+operativos y entornos se sentirán como en casa cuando usen el potente entorno
+gráfico que proporciona GNOME. Gnome se puede ejecutar en un buen numero de
+sistemas de tipo Unix, incluyendo Linux, FreeBSD, y Solaris.</PARA>
+<PARA>GNOME está basado en su totalidad en código abierto (software libre), 
+desarrollado por cientos 
+de programadores en todo el mundo. Tanto el código fuente como los binarios
+de Gnome listos para ejecutar están disponibles para su descarga en Internet;
+se distribuyen bajo los términos de <ULINK TYPE="gnome-help" URL="gnome-help:gpl">la licencia pública general GNU</ULINK> (y sus primas, <ULINK TYPE="gnome-help" URL="gnome-help:lgpl">La licencia publica general «Lesser» </ULINK> y
+<ULINK TYPE="gnome-help" URL="gnome-help:fdl">La licencia de documentación libre</ULINK>
+para las librerías y la documentación, respectivamente).
+Mas concretamente, esto significa que cualquiera es libre de usar, copiar o distribuir
+Gnome.
+Si quiere saber más sobre el proyecto Gnome puede visitar la 
+<ULINK TYPE="http" URL="http://www.gnome.org">página web de Gnome</ULINK>.
+<FOOTNOTE><PARA>También puede encontrar documentación Gnome en Castellano en la 
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/">página web de Gnome-es</ULINK> 
+y en la 
+<ULINK TYPE="http" URL="http://www.es.gnome.org">página de Gnome España</ULINK> </PARA></FOOTNOTE>.</PARA>
+
+<PARA>GNOME es altamente configurable, permitiéndole ajustar su escritorio con
+el aspecto que desee. GNOME soporta muchos idiomas, y se añaden más cada
+mes. GNOME soporta incluso varios protocolos de arrastrar y 
+soltar (drag and drop DD) para una máxima interoperabilidad con 
+aplicaciones que no sean compatibles con GNOME.</PARA>
+
+<PARA>GNOME es un acrónimo de 'GNU Network Object Model Environment', entorno de trabajo
+en red orientado a objetos. GNOME forma parte del más amplio
+proyecto GNU. El proyecto GNU nació en 1984 con el objetivo de desarrollar un
+sistema operativo tipo Unix completamente libre. Si te interesa saber más 
+acerca del Proyecto GNU, puedes leer acerca de él en
+<ULINK TYPE="http" URL="http://www.gnu.org">http://www.gnu.org</ULINK>.</PARA>
+
+
+    <PARA>Esta guía describe Gnome 1.4, última versión de Gnome (al menos en Febrero de
+2001).
+    </PARA>
+  </SECT1>
+
+
+
+<SECT1 ID="about">    <TITLE>Acerca de esta Guía</TITLE>
+    <PARA>Esta guía le dará una breve introducción a Gnome. No esta destinada a 
+cubrir todos los detalles de Gnome; si necesita mas información, debería
+leer los detallados manuales indicados en <XREF LINKEND="otherinfo">.
+Además, esta guía asume que ya tiene Gnome instalado; si necesita ayuda 
+para instalar Gnome, por favor consulte las instrucciones en la
+<ULINK TYPE="http" URL="http://www.gnome.org">página Gnome</ULINK>.
+    </XREF></PARA>
+ 
+    <PARA> 
+Los autores de esta guía son los miembros del grupo de documentación de Gnome (GDP).
+Si quiere hacer cualquier comentario o sugerencia acerca de esta guía, o si puede
+ofrecer cualquier otra ayuda para mejorar o traducir documentación Gnome, por favor
+envíe un mensaje a <EMAIL>docs@gnome.org</EMAIL>, o visite la
+<ULINK TYPE="http" URL="http://developer.gnome.org/projects/gdp/">pagina web de GDP</ULINK>.
+<FOOTNOTE><PARA>La traducción es obra del grupo 
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/">Gnome-es</ULINK>, si tienes algún comentario o sugerencia dirigete a la
+<ULINK TYPE="mailto" URL="mailto:traductores@es.gnome.org">lista del grupo</ULINK>. </PARA></FOOTNOTE>.
+    </PARA>
+    <PARA>Los autores de están guía asumen que esta usando la configuración por omisión de 
+Gnome ( esto es, el tema GTK por omisión y el gestor de ventanas <APPLICATION>sawfish</APPLICATION>
+con el micro-tema <GUILABEL>MicroGUI</GUILABEL>. Gnome es altamente configurable,
+así que es fácil cambiar no solo el aspecto, sino también el comportamiento de 
+Gnome; en cualquier caso, recomendamos hacerlo únicamente cuando tenga algo de
+experiencia con Gnome.  
+    </PARA>
+  </SECT1>
+
+
+<SECT1 ID="conventions">    <TITLE>Convenios sobre le ratón utilizados en esta guía</TITLE> 
+    <PARA>Antes de describir Gnome, permitanos introducir algunos términos usados
+no solo es esta guía sino en todos los documentos Gnome. Principalmente,
+necesitamos aclarar el uso de los botones del ratón y sus pulsaciones.
+    </PARA>
+    <PARA>La mayoría de los documentos Gnome asumen que está usando un ratón
+estándar (en Unix) de 3 botones y hablan de los botones izquierdo,
+derecho y central; si un documento indica <QUOTE>pulsar</QUOTE> sin
+especificar de forma explicita ningún botón, se asume que se trata
+del botón izquierdo. Algunos documentos usa la notación <QUOTE>1º botón
+del ratón</QUOTE>, <QUOTE>2º botón del ratón</QUOTE> y <QUOTE>3º botón
+del ratón</QUOTE> (o MB1, MB2, MB3 para abreviar) para los botones
+izquierdo, central y derecho respectivamente. 
+    </PARA>
+    <PARA>Si esta usando un ratón de dos botones, puede emular el botón central
+pulsando de forma simultanea los botones izquierdo y derecho; si dispone
+de un ratón con rueda, la rueda puede usarse en sustitución del botón
+central.
+    </PARA>
+    <PARA>Puede intercambiar las funciones de los botones usando el <APPLICATION>Centro de control</APPLICATION> Gnome. Muchos usuarios zurdos deciden
+invertir los botones izquierdo y derecho. Si ha hecho esto último, debe usar el
+botón <EMPHASIS>derecho</EMPHASIS> siempre que en el documento se le 
+pida una pulsación, y el botón <EMPHASIS>izquierdo</EMPHASIS> del ratón
+siempre que se pida pulsar el botón <QUOTE>derecho</QUOTE> o el 3º
+botón del ratón.
+    </PARA>
+    <PARA>Si utiliza un ratón con alguna disposición inusual de los botones, 
+un «trackball», o algún otro tipo de dispositivo de entrada, necesita
+localizar los botones <QUOTE>derecho</QUOTE>,
+<QUOTE>izquierdo</QUOTE> y <QUOTE>centrales</QUOTE> correspondientes;
+esta información puede normalmente encontrarse en el manual que se
+entrega con el dispositivo. Normalmente, el botón <QUOTE>izquierdo</QUOTE>
+ (MB1) es el que cae bajo el dedo índice. 
+    </PARA>
+
+  </SECT1>
+
+
+<SECT1 ID="firstglance">    <TITLE>Un primer vistazo a Gnome: el escritorio y el panel</TITLE> 
+    <PARA>      <XREF LINKEND="desktop-fig"> muestra un ejemplo de Gnome en plena 
+ejecución. Gnome es muy configurable, así que su pantalla puede tener
+un aspecto bastante diferente.
+    </XREF></PARA>
+    <FIGURE ID="desktop-fig">     <TITLE>Ejemplo de pantalla Gnome.</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Ejemplo de pantalla Gnome</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figures/desktop" SRCCREDIT="sasha">      </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+ 
+<SECT2 ID="panel">      <TITLE>Panel</TITLE>
+      <PARA>La barra larga en la parte inferior de <XREF LINKEND="desktop-fig"> es el
+panel Gnome. Contiene un montón de cosas útiles, como 
+	<ITEMIZEDLIST>	  <LISTITEM>	    <PARA>El <GUIBUTTON>Menú principal</GUIBUTTON>: es el botón
+con una estilizada huella de un pie. Si pulsamos este botón se abre un 
+menú que contiene todas las aplicaciones y comandos de Gnome, incluyendo 
+el comando para terminar la sesión.
+	    </PARA>
+	  </LISTITEM>
+	  <LISTITEM> 
+	    <PARA>Los lanzadores de aplicaciones: son botones que arrancan varias programas.
+Por ejemplo, el botón con una caja de herramientas arranca el <APPLICATION>Centro de
+control Gnome</APPLICATION> (para configurar su sistema).
+	    </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA>Apliques del panel: son pequeñas aplicaciones diseñadas para funcionar 
+dentro del panel. Por ejemplo, el aplique <APPLICATION>reloj</APPLICATION>
+en el extremo derecho muestra la hora actual, y el aplique 
+<APPLICATION>lista de tareas</APPLICATION> muestra una lista de las ventanas
+de aplicaciones de su escritorio ( esto ultimo se discutirá en detalle
+en <XREF LINKEND="tasklist">).
+	    </XREF></PARA>
+	  </LISTITEM>
+	</ITEMIZEDLIST>
+      </XREF></PARA>
+      <PARA> 
+Al igual que todos los componentes Gnome, el panel es altamente configurable:
+puede añadir o eliminar lanzadores de aplicaciones y apliques, editar
+el <GUIMENU>Menú principal</GUIMENU>, cambiar el fondo del panel,
+o incluso crear nuevos paneles. Por ejemplo para mover un objeto, arrastrelo
+hasta la nueva posición usando el <LINK LINKEND="conventions">botón central del ratón</LINK>; para configurar
+un objeto, obtener ayuda acerca de el, o para eliminarlo del panel,
+pulse el botón derecho sobre el y elija el elemento apropiado del
+menú <GUIMENU>desplegable</GUIMENU>. Para ocultar el panel cuando no 
+este usándolo, pulse sobre uno de los 
+<GUIBUTTON>botones de ocultación</GUIBUTTON> (con pequeñas flechas) en los
+extremos del panel.
+      </PARA>
+      <PARA>Hay mas operaciones accesibles desde el menú del <GUIMENU>Panel</GUIMENU>,
+y puede acceder a ellas pulsando el botón derecho sobre un espacio vacío
+del panel (por ejemplo, en las flechas de ocultación) y seleccionando
+<GUISUBMENU>Panel</GUISUBMENU> en el menú. El menú del panel también
+contiene el
+<ULINK TYPE="help" URL="gnome-help:panel">manual del panel</ULINK>, que describe
+todas estas opciones y otras mas.</PARA>
+    </SECT2>
+
+
+
+    <SECT2 ID="desktop"> 
+      <TITLE>Escritorio</TITLE> 
+      <PARA>Cualquier cosa fuera del panel se conoce como <QUOTE>escritorio</QUOTE>.
+Puede situar iconos representando ficheros, aplicaciones, y otros elementos
+en el escritorio (con Gnome se instala por defecto un conjunto de iconos),
+y después pulsar dos veces sobre un elemento para usarlo: 
+      </PARA>
+      <ITEMIZEDLIST MARK="bullet">	<LISTITEM>	  <PARA>   
+Si el elemento es un programa, el programa arrancara.
+	  </PARA>
+	</LISTITEM>
+	<LISTITEM>	  <PARA>Si es un fichero de datos, se arrancara el programa apropiado con esos
+datos cargados.
+	  </PARA>
+	</LISTITEM>
+	<LISTITEM>  
+
+	  <PARA>Si es un directorio, se arrancara el gestor de ficheros y se mostrara el
+contenido de ese directorio. Su escritorio tendrá probablemente un icono
+que muestra una casa y esta etiquetado como  
+<GUILABEL>directorio personal</GUILABEL>. Si pulsa dos veces sobre este 
+icono el gestor de ficheros arrancara mostrando su directorio personal.
+	  </PARA>
+	</LISTITEM>
+      </ITEMIZEDLIST>
+      <PARA>La forma mas fácil de situar un elemento en el escritorio es arrastrar y
+soltar un fichero desde la ventana del gestor de ficheros. Esto se 
+discutirá con mas detalle en <XREF LINKEND="nautilus">. Una vez que el
+elemento este situado en el escritorio, puede moverlo por el escritorio
+usando el botón izquierdo del ratón, o puede pulsar el botón derecho sobre
+el para abrir el menú <GUIMENU>desplegable</GUIMENU> que permite eliminar
+el elemento o cambiar sus propiedades.
+    </XREF></PARA>
+    </SECT2>
+
+
+
+    <SECT2 ID="mouse"> 
+      <TITLE>Uso del ratón</TITLE> 
+      <PARA>Como ya hemos visto, puede hacer prácticamente cualquier cosa con tan
+solo pulsar el ratón. A continuación damos una serie de convenciones que
+funcionan prácticamente en cualquier parte de Gnome:    
+      </PARA> 
+
+      <ITEMIZEDLIST MARK="bullet"> 
+	<LISTITEM><PARA> 
+Al pulsar sobre un elemento con el botón izquierdo del ratón se selecciona
+(destaca) este elemento. Si necesita seleccionar varios objetos, mantenga
+pulsada la tecla <KEYCAP>CTRL</KEYCAP> mientras la pulsa.
+	  </PARA></LISTITEM>
+	<LISTITEM><PARA> 
+Al pulsar dos veces sobre un elemento se ejecuta la acción por omisión para
+este elemento (ejecución del una aplicación, apertura de un fichero, etc.) 
+	  </PARA></LISTITEM> 
+	<LISTITEM><PARA> 
+Al pulsar sobre un elemento con el botón derecho se abre un menú dependiente
+del contexto, que contiene todos los comandos y la información disponible
+para este elemento. Si tiene seleccionado un grupo de elementos, al pulsar
+el botón derecho sobre cualquiera de ellos se abre un menú dependiendo del
+contexto que se aplica a todos estos elementos.
+	  </PARA></LISTITEM>
+	<LISTITEM><PARA>Puede seleccionar texto en cualquier punto de la pantalla usando el botón
+izquierdo del ratón, y insertarlo después en cualquier otra parte de la
+pantalla que acepte una entrada de texto, pulsando el
+<LINK LINKEND="conventions">botón central del ratón</LINK>.
+	  </PARA></LISTITEM>
+      </ITEMIZEDLIST>
+      <PARA>Además, pulsando el botón derecho del ratón sobre un espacio vació de su
+escritorio se abre un menú <GUIMENU>desplegable</GUIMENU>, que permite
+cambiar el fondo del escritorio u otras de sus propiedades, o añadir
+un nuevo elemento en el escritorio. Al pulsar en el escritorio con el
+botón central del ratón se abre el menú por omisión de su gestor de 
+ventanas (véase <XREF LINKEND="windows">).
+	</XREF></PARA> 
+    </SECT2> 
+
+    <SECT2 ID="logout"> 
+      <TITLE>Terminar la sesión</TITLE> 
+      
+      <PARA>Para terminar la sesión Gnome, pulse sobre el icono del 
+<GUIMENU>Menú principal</GUIMENU> y elija la opción 
+<GUIMENUITEM>Terminar sesión</GUIMENUITEM>.
+Gnome le pedirá confirmación; le ofrecerá también la opción de
+salvar la sesión  esto es, se salvara información acerca 
+de las aplicaciones actualmente abiertas y su posición en la 
+pantalla, de forma que cuando se conecte la próxima vez,  
+encuentre las mismas aplicaciones en los mismos sitios (esto solo
+funciona para aplicaciones totalmente compatibles con Gnome). 
+      </PARA>
+    </SECT2>
+	
+  </SECT1>
+
+
+<SECT1 ID="windows">    <TITLE>Trabajar con ventanas</TITLE>
+    <PARA>El sistema gráfico usado por todos los sistemas operativos de tipo Unix,
+el sistema de ventanas X, permite tener varias ventanas en la pantalla,
+con aplicaciones diferentes ejecutándose cada una en una de las ventanas.
+Sin embargo, por si mismo, el sistema de ventanas X solo puede realizar
+operaciones de muy bajo nivel, así que se usa siempre en conjunción con
+otro paquete de software, llamado gestor de ficheros.
+Un gestor de ventanas proporciona los bordes de las ventanas y los botones,
+permite mover, cerrar, y cambiar el tamaño de las ventanas, etc. Gnome 
+puede trabajar con muchos gestores de ventanas.
+Los mas populares son:
+      <ULINK TYPE="http" URL="http://www.enlightenment.org">      <APPLICATION>Enlightenment</APPLICATION></ULINK> y <ULINK TYPE="http" URL="http://sawmill.sourceforge.net">      <APPLICATION>Sawfish</APPLICATION></ULINK> (oficialmente 
+conocido como Sawmill).
+Cada gestor de ventanas puede usar muchos estilos diferentes de decoración
+de ventanas y botones ( que se conocen como
+<QUOTE>temas del gestor de ventanas</QUOTE>). 
+Como es imposible abarcarlos todos, en esta sección describiremos solo el 
+gestor de ventanas entregado por defecto con Gnome,
+<APPLICATION>Sawfish</APPLICATION>, y su tema por omisión. 
+(<GUILABEL>MicroGUI</GUILABEL>). 
+En <XREF LINKEND="microguiborder"> se muestra un ejemplo de borde de las
+ventanas en el tema <GUILABEL>MicroGUI</GUILABEL>.
+    </XREF></PARA>
+
+    <FIGURE ID="microguiborder">     <TITLE>Borde de las ventanas en el estilo MicroGUI.</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Borde de las ventanas en el estilo MicroGUI</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figures/microguiborder" SRCCREDIT="sasha">      </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+ 
+    <PARA>¿Entonces, que se puede hacer con las ventanas?
+    </PARA>
+      <VARIABLELIST>	<VARLISTENTRY>	  <TERM>	  <EMPHASIS>Cerrar, minimizar, y maximizar ventanas</EMPHASIS>
+          </TERM>     
+	  <LISTITEM>	    <PARA> 
+Para cerrar una ventana, pulse el botón con una pequeña <QUOTE>x</QUOTE>
+amarilla en lado derecho del borde de la ventana. Si la aplicación tiene
+datos que no se han salvado, le preguntara si desea salvarlos.  
+	    </PARA>
+	    <PARA>Para maximizar una ventana, esto es hacerla que ocupe toda la pantalla (a
+excepción de la parte ocupada por los paneles), pulse el botón con una
+pequeña flecha amarilla apuntado hacia <QUOTE>arriba</QUOTE>. Pulsando de
+nuevo sobre esta flecha devolverá la ventana a su tamaño original.
+	    </PARA>
+	    <PARA>Para minimizar (ocultar o iconificar) una ventana, pulse el botón con una
+pequeña flecha amarilla apuntado hacia <QUOTE>abajo</QUOTE>. La ventana
+desaparecerá de la pantalla. sin embargo, no se abra perdido para siempre
+ la aplicación de esta ventana continua ejecutándose, no se pierden
+los datos  esta solamente oculta de forma temporal. Todas las 
+ventanas minimizadas se muestran en el aplique lista de tareas y pueden
+recuperarse como se indica mas adelante.
+	    </PARA>
+	    <PARA>Una alternativa practica a minimizar las ventanas es 
+<QUOTE>enrollarlas</QUOTE>. Cuando se enrolla una ventana, se 
+<QUOTE>enrolla</QUOTE> sobre su propia barra de titulo, de forma que 
+la barra de titulo es la única parte de la ventana que permanece en la
+pantalla. Para enrollar una ventana, pulse dos veces sobre la barra
+de titulo; para desenrollarla, pulse dos veces de nuevo. ¡Pruebelo! 
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+
+	<VARLISTENTRY>	  <TERM>	     <EMPHASIS>Pasar a primer o segundo plano las ventanas</EMPHASIS>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Las ventanas pueden estar superpuestas en la pantalla, de forma que una
+de las ventanas estará <QUOTE>sobre</QUOTE> las demás. 
+Puede pasar a <QUOTE>primer plano</QUOTE> una ventana (esto es, ponerla
+por encima de todas las demás) pulsando en la barra  de título de la
+ventana. También puede pasar una ventana del primer plano a un segundo
+plano pulsando el <LINK LINKEND="conventions">botón derecho del ratón</LINK>
+sobre la barra de titulo de la ventana, o pulsando el botón derecho del ratón
+mientras se mantiene pulsada la tecla <KEYCAP>ALT</KEYCAP> en cualquier parte 
+del interior de la ventana. 
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM>	     <EMPHASIS>Foco</EMPHASIS>
+          </TERM>     
+	  <LISTITEM>	    <PARA>De todas las ventanas de la pantalla, solo una esta activa (en la jerga de
+la computación, <QUOTE>«focused»</QUOTE>), lo que significa que cualquier cosa
+teclee en el teclado se enviara a la aplicación que este ejecutándose en esta
+ventana. (Esto no significa que las aplicaciones que se ejecutan en otras
+ventanas estén ociosas  pueden también estar en plena ejecución).
+Para ayudarle a ver que ventana tiene el foco, la barra de titulo de esta
+ventana tiene un color diferente (la parte izquierda es azul, en contraposición
+al gris del resto de las ventanas). Para cambiar el foco a otra ventana,
+simplemente pulse en cualquier parte de esta ventana. Puede también pulsar en la
+barra de titulo para activar y llevar a primer plano de forma simultanea 
+una ventana. 
+
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+
+	<VARLISTENTRY>	  <TERM>	     <EMPHASIS>Mover y cambiar el tamaño de las ventanas</EMPHASIS>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Para mover una ventana, arrastre su barra de titulo hasta una nueva posición
+usando el botón izquierdo del ratón (esto es, pulse sobre la barra de titulo
+y mueva el ratón sin soltar el ratón). Puede también mover una ventana
+pulsando en cualquier punto del interior de la ventana manteniendo pulsada
+la tecla <KEYCAP>ALT</KEYCAP>.
+	    </PARA>
+	    <PARA> 
+Para cambiar el tamaño de una ventana, sitúe el cursor del ratón en cualquiera
+de los bordes de la ventana (a excepción del superior) o en las esquinas.
+El cursor del ratón se transformara en una flecha que empuja una linea o una
+esquina, permitiendo arrastrar el borde o la esquina a una nueva posición. 
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+    </VARIABLELIST>
+
+
+    <SECT2 ID="tasklist">      <TITLE>Lista de tareas</TITLE>
+      <PARA>Todas las ventanas del escritorio (incluidas las minimizadas) se muestran
+en la <APPLICATION>Lista de tareas</APPLICATION>, situada en el panel.
+Para cada ventana, se muestra un mini-icono y el principio del titulo de
+la ventana. Para restaurar una ventana minimizada, pulse simplemente sobre
+su titulo en la lista de tareas. Al pulsar con el botón derecho sobre
+el titulo de la ventana se abre un menú <GUIMENU>desplegable</GUIMENU>, que
+permite enrollar la ventana, cerrarla, o matar la aplicación que se ejecuta
+en la ventana. La ultima opción debería usarse solamente cuando la aplicación
+esta bloqueada y no responda al comando <QUOTE>Cerrar ventana</QUOTE>. Si
+mata una aplicación, pierde todos los datos que no haya salvado!
+      </PARA>
+    </SECT2>
+    
+
+    <SECT2 ID="wm-menus">      <TITLE>Menú de manejo de ventanas</TITLE>
+      <PARA>	<APPLICATION>Sawfish</APPLICATION> también proporciona un menú
+para cada ventana; este menú contiene todas las operaciones posibles
+para esta ventana descritas anteriormente. Para acceder es este menú,
+pulse sobre el botón situado a la izquierda de la barra de titulo de
+la ventana (con un pequeño triángulo apuntando hacia abajo). Puede también
+invocar este menú pulsando el botón derecho sobre el título de la ventana
+o pulsando en cualquier parte de la ventana con el 
+<LINK LINKEND="conventions">botón central del ratón</LINK> mientras mantiene
+pulsada la tecla <KEYCAP>ALT</KEYCAP>.
+      </PARA>
+    </SECT2>
+
+
+    <SECT2 ID="wm-desktop-menu">      <TITLE>Menú del escritorio</TITLE>
+      <PARA>Finalmente, <APPLICATION>Sawfish</APPLICATION> también proporciona un
+<QUOTE>menú de escritorio</QUOTE>; se puede acceder a el pulsando
+el <LINK LINKEND="conventions">botón central del ratón</LINK> en cualquier
+espacio vació del escritorio. Contiene las siguientes opciones: 
+      </PARA>
+      <VARIABLELIST> 
+	<VARLISTENTRY>	  <TERM>	    <GUIMENUITEM>Ventanas</GUIMENUITEM>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Proporciona una lista de todas las ventanas, incluyendo las minimizadas.
+Si seleccionamos una de ellas, se restaurara (si estaba minimizada) y
+pasara a primer plano, por encima del resto de las ventanas. Muy cómodo si 
+tiene tantas ventanas que la que necesita esta completamente tapada por
+las demás.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM>	    <GUIMENUITEM>Escritorios</GUIMENUITEM>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Permite saltar de un escritorio a otro, crear y eliminar escritorios. Véase
+mas detalles en el manual de <APPLICATION>Sawfish</APPLICATION>.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM>	    <GUIMENUITEM>Programas</GUIMENUITEM>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Igual a la sección <GUISUBMENU>Programas</GUISUBMENU> del
+<GUIMENU>Menú principal</GUIMENU>. 
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM>	    <GUIMENUITEM>Configurar</GUIMENUITEM>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Permite al usuario personalizar todas las propiedades del comportamiento
+de <APPLICATION>Sawfish</APPLICATION>. Para los usuarios noveles,
+recomendamos probar varios valores de la <GUILABEL>Apariencia</GUILABEL>,
+pero dejar como están el resto de las subsecciones.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM>	    <GUIMENUITEM>Ayuda</GUIMENUITEM>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Proporciona enlaces a las paginas de <APPLICATION>Sawfish</APPLICATION>,
+al manual de <APPLICATION>Sawfish</APPLICATION> (cuidado: esto no es
+un manual de usuario, sino un manual para las personas que escriben 
+extensiones/personalizaciones para la aplicación 
+<APPLICATION>Sawfish</APPLICATION> usando el lenguaje de programación
+LISP), un enlace a la <CITETITLE>Guía de usuario Gnome</CITETITLE>,
+y a la <ULINK TYPE="http" URL="http://www.gnome.org">Página web de Gnome</ULINK>.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+      </VARIABLELIST>
+    </SECT2>
+	      
+  </SECT1>
+
+
+<SECT1 ID="nautilus">    <TITLE>Nautilus: el gestor de ficheros de Gnome, un navegador para ayudas, y mas</TITLE>
+    <PARA>Gnome 1.4 incluye un <QUOTE>interprete de comandos gráfico</QUOTE>, 
+      <APPLICATION>Nautilus</APPLICATION>.
+Combina un gestor de ficheros, un navegador para ayudas, un navegador para la web, un cliente
+FTP, y mucho mas. Para ejecutarlo, seleccione <GUIMENUITEM>Nautilus</GUIMENUITEM> en el 
+<GUIMENU>Menú principal</GUIMENU>, o simplemente pulse dos veces en cualquier icono
+de directorio de su escritorio.
+    </PARA>
+    <SECT2 ID="nautilus-fm">      <TITLE>Manejo de ficheros con Nautilus</TITLE>
+
+      <PARA>Como los mas modernos gestores de ficheros gráficos, <APPLICATION>Nautilus</APPLICATION>
+muestra el contenido de los directorios seleccionados usando iconos para representar
+los ficheros y subdirectorios. los ficheros o directorios se abren al pulsar dos veces
+sobre ellos (para los ficheros de datos, se arranca la  aplicación apropiada para 
+abrir este fichero). Al pulsar con el botón derecho sobre un fichero o directorio se
+abre un menú <GUIMENU>desplegable</GUIMENU>. Usando este menú, se puede borrar
+o renombrar el fichero, ver o cambiar sus propiedades o permisos, y mas cosas.
+      </PARA>
+      <PARA><APPLICATION>Nautilus</APPLICATION> también proporciona una forma fácil de mover
+ficheros entre directorios. Para mover un fichero de un directorio a otro, abra
+cada directorio en una ventana diferente de <APPLICATION>Nautilus</APPLICATION>
+seleccionado <GUIMENUITEM>Nueva ventana</GUIMENUITEM> en el menú
+<GUIMENU>Archivo</GUIMENU> de <APPLICATION>Nautilus</APPLICATION>.
+Seleccione el fichero que necesita, y arrastrelo de una ventana a la otra.
+Puede también arrastrar un fichero o directorio al escritorio. 
+      </PARA>
+      <PARA> <APPLICATION>Nautilus</APPLICATION> proporciona muchas otras
+herramientas para manipular ficheros. Es también altamente configurable, de forma
+que puede fácilmente cambiar la forma en que se presentan los ficheros (por ejemplo,
+puede elegir un icono personalizado para un determinado fichero). Para una
+descripción detallada de todas estas posibilidades, lea el
+<ULINK TYPE="help" URL="gnome-help:nautilus">manual de Nautilus</ULINK>.
+      </PARA>
+    </SECT2>
+
+
+    <SECT2 ID="nautilus-help">      <TITLE>Lectura de documentación con Nautilus</TITLE> 
+      <PARA>Además de ser un gestor de ficheros, <APPLICATION>Nautilus</APPLICATION> es
+también un navegador de ayudas: puede usarlo para leer documentación instalada
+en su ordenador. Esto incluye no solo la documentación de Gnome, sino también
+las paginas de manual al estilo Unix («manpages»), las paginas info de GNU
+(formato de documentación de la utilidades del proyecto GNU), y otros
+tipo de documentación. Para ver la lista de toda la documentación instalada en
+su sistema, pulse en la solapa <GUILABEL>Ayuda</GUILABEL> en la parte izquierda
+del panel de <APPLICATION>Nautilus</APPLICATION>.
+      </PARA>
+    </SECT2>
+  </SECT1>
+
+
+<SECT1 ID="customizing">    <TITLE>Personalización</TITLE>
+    <PARA>Gnome es altamente configurable  puede cambiar prácticamente 
+cualquier cosa: el color del fondo, las acciones asociadas a las teclas,
+la posición de los paneles, el contenido del <GUIMENU>Menú principal</GUIMENU>,
+y mas cosas. La mayoría de estos cambios se realizan usando el
+<APPLICATION>Centro de control de Gnome</APPLICATION>, que puede encontrarse
+en el submenú <GUISUBMENU>Configuración</GUISUBMENU> del 
+<GUIMENU>Menú principal</GUIMENU>. El 
+<APPLICATION>Centro de control de Gnome</APPLICATION> dispone de su propia
+documentación detallada que debería consultar antes de realizar cambio 
+alguno.
+    </PARA>
+    <PARA>Aquí nos gustaría dar únicamente un vistazo a las opciones mas comúnmente
+utilizadas del <APPLICATION>centro de control de Gnome</APPLICATION>. 
+    </PARA>
+    <VARIABLELIST>      <VARLISTENTRY>	<TERM>Fondo</TERM>
+      <LISTITEM> 
+	<PARA>Puede cambiar el fondo del escritorio seleccionado
+<GUILABEL>Propiedades del tapiz</GUILABEL> en la sección 
+<GUILABEL>Escritorio</GUILABEL> del 
+<APPLICATION>centro de control de Gnome</APPLICATION>.
+(una alternativa mas rápida para acceder a esta sección es pulsar con el 
+botón derecho del ratón sobre un espacio vació del escritorio y seleccionar
+<GUIMENUITEM>Configurar la imagen de fondo</GUIMENUITEM> en el menú
+<GUIMENU>desplegable</GUIMENU>). 
+	</PARA>
+      </LISTITEM>
+      </VARLISTENTRY>
+      <VARLISTENTRY>	<TERM><GUILABEL>Selector de temas</GUILABEL>
+	</TERM>
+      <LISTITEM> 
+	<PARA>	 El <GUILABEL>Selector de temas</GUILABEL> permite cambiar el tema
+del escritorio (también conocido como tema GTK). Esto cambia la apariencia
+del <GUIMENU>Menú principal</GUIMENU>, así como los menús, barras de 
+herramientas, barras deslizantes, botones de selección y otros elementos
+gráficos de la interfaz de usuario para todas las aplicaciones Gnome.
+Muchos usuarios encuentran el tema por defecto demasiado gris, así que 
+la primera cosa que hacen es cambiarlo por otro.
+	</PARA>
+      </LISTITEM>
+      </VARLISTENTRY>
+      <VARLISTENTRY>	<TERM><GUILABEL>El gestor de ventanas Sawfish</GUILABEL>
+	  </TERM>
+      <LISTITEM> 
+	<PARA>Esta sección permite cambiar las características del gestor de ventanas. En 
+particular, en la subsección <GUILABEL>Apariencia</GUILABEL> puede cambiar 
+el estilo de los marcos (tema), que determina los bordes de las ventanas y
+los botones. También puede cambiar la tipografía usada en la barra de titulo 
+de las ventanas. Si es un usuario novel, le recomendamos que no cambie otras
+cosas.  
+	</PARA>
+      </LISTITEM>
+      </VARLISTENTRY>
+      <VARLISTENTRY>	<TERM><GUILABEL>Sesión</GUILABEL>
+	  </TERM>
+      <LISTITEM> 
+	<PARA>En esta sección puede definir los programas iniciales (esto es, los programas
+que se ejecutan cada vez que se conecta en el sistema), activar o desactivar
+los consejos durante el arranque y los formularios de confirmación de
+fin de sesión.
+	</PARA>
+      </LISTITEM>
+      </VARLISTENTRY>
+    </VARIABLELIST>
+    <PARA>Además, puede cambiar las propiedades de varios elementos  especialmente,
+las de los paneles e iconos del escritorio  pulsando sobre ellos
+con el botón derecho del ratón y seleccionando 
+<GUIMENUITEM>Propiedades</GUIMENUITEM> en el menú <GUIMENU>desplegable</GUIMENU>.
+De esta manera, se puede cambiar el titulo de un icono, el tamaño y el color de
+fondo (o incluso la imagen de fondo) del panel, y mas cosas.  
+    </PARA>
+    <PARA>Casi todas las aplicaciones tienen sus propios parámetros de configuración
+(busque los menús de <GUIMENU>Preferencias</GUIMENU> o 
+<GUIMENU>Configuración</GUIMENU>), así que puede cambiar, por ejemplo, los 
+colores usados por el terminal de Gnome o hacerlo transparente  las
+posibilidades son ilimitadas!  
+    </PARA>
+  </SECT1>
+
+
+<SECT1 ID="apps">    <TITLE>Aplicaciones y utilidades Gnome</TITLE>
+    <PARA>Gnome se entrega con muchas aplicaciones y utilidades; además, Gnome permite
+utilizar aplicaciones de terceros como <APPLICATION>Netscape</APPLICATION>),
+aplicaciones de KDE, y otras aplicaciones y utilidades instaladas en su 
+sistema. A continuación se incluye una lista de algunas de las mas útiles 
+aplicaciones y utilidades que podrá encontrar en el <GUIMENU>Menú principal</GUIMENU> 
+de Gnome (¡no es una lista completa!).
+    </PARA>
+    <VARIABLELIST>	
+      <VARLISTENTRY>	<TERM><GUISUBMENU>Aplicaciones</GUISUBMENU>
+	</TERM>     
+	<LISTITEM>	  <PARA>Incluye aplicaciones de oficina y aplicaciones tales que
+	  </PARA>
+	  <ITEMIZEDLIST>	    <LISTITEM><PARA>		<APPLICATION>Gnumeric</APPLICATION>
+	          una hoja de calculo compatible con Excel y totalmente funcional.
+	      </PARA>
+	    </LISTITEM>
+	    <LISTITEM><PARA>		<APPLICATION>AbiWord</APPLICATION>  un procesador de textos ligero.
+	      </PARA>
+	    </LISTITEM>
+	    <LISTITEM><PARA>		<APPLICATION>Calendario de Gnome</APPLICATION> para ayudarle a gestionar su
+saturada agenda
+	      </PARA>
+	    </LISTITEM>
+	    <LISTITEM><PARA> Varios editores de texto, desde el simple y fácil de usar
+<APPLICATION>gedit</APPLICATION>, hasta el (posiblemente) mas poderoso editor de
+textos jamas creado, <APPLICATION>Emacs</APPLICATION> (que no es una aplicación
+Gnome).
+	      </PARA>
+	    </LISTITEM>
+
+	  </ITEMIZEDLIST>
+	</LISTITEM>
+      </VARLISTENTRY>
+       <VARLISTENTRY>	<TERM><GUISUBMENU>Gráficos</GUISUBMENU>
+	</TERM>     
+	<LISTITEM>	  <ITEMIZEDLIST>	    <LISTITEM><PARA> 
+		<APPLICATION>Gimp</APPLICATION> 
+programa de edición de imágenes para usuarios avanzados; rival de
+		<APPLICATION>Photoshop</APPLICATION>.
+	      </PARA>
+	    </LISTITEM>
+	    <LISTITEM><PARA>Visualizadores de imágenes como el <APPLICATION>Ojo de Gnome</APPLICATION>,
+<APPLICATION>GQview</APPLICATION> y <APPLICATION>xv</APPLICATION>. 
+	      </PARA>
+	    </LISTITEM>
+	  </ITEMIZEDLIST>
+	</LISTITEM>
+      </VARLISTENTRY>
+       <VARLISTENTRY>	<TERM><GUISUBMENU>Utilidades</GUISUBMENU>
+	</TERM>     
+	<LISTITEM>	  <PARA>Junto a otras cosas, aqui encontrara
+          </PARA>
+	    <ITEMIZEDLIST>	      <LISTITEM><PARA>		  <APPLICATION>Calculadora</APPLICATION>
+		</PARA>
+	      </LISTITEM>
+	      <LISTITEM><PARA> 
+		  <APPLICATION>Herramienta de búsqueda de Gnome</APPLICATION> que puede
+usar para buscar ficheros en su sistema
+		</PARA>
+	      </LISTITEM>
+	      <LISTITEM><PARA>		  <APPLICATION>gfloppy</APPLICATION> para formatear disquetes
+		</PARA>
+	      </LISTITEM>
+	      <LISTITEM><PARA> 
+		  <APPLICATION>GDict</APPLICATION> para 
+buscar palabras en uno de los diccionarios libremente disponibles en Internet
+		</PARA>
+	      </LISTITEM>
+	    </ITEMIZEDLIST>
+	</LISTITEM>
+      </VARLISTENTRY>       
+      <VARLISTENTRY>	<TERM><GUISUBMENU>Multimedia</GUISUBMENU>
+	</TERM>     
+	<LISTITEM>	  <PARA>Aquí encontrara el 
+	    <APPLICATION>lector de CD</APPLICATION>, el
+	    <APPLICATION>Mezclador</APPLICATION> (que también puede
+usarse para ajustar el volumen de los altavoces), y el lector de MP3
+	    <APPLICATION>XMMS</APPLICATION>. 
+	  </PARA>
+	</LISTITEM>
+      </VARLISTENTRY>
+	
+       <VARLISTENTRY>	<TERM><GUISUBMENU>Sistema</GUISUBMENU>
+	</TERM>     
+	<LISTITEM>	  <PARA>Este submenú contiene utilidades para manejar su sistema. Puede encontrar información
+detallada acerca del procesador, la memoria, y el sistema operativo usando la
+<APPLICATION>información del sistema</APPLICATION>, chequear cuanto espacio queda
+libre en sus discos usando el <APPLICATION>disco libre Gnome</APPLICATION>, o ver todos
+los procesos (tareas) que se están ejecutando en su ordenador usando el
+	    <APPLICATION>Monitor del sistema</APPLICATION>. 
+Además, el <APPLICATION>Monitor del sistema</APPLICATION> también muestra el
+nivel de carga del procesador y la memoria, y permite matar los procesos bloqueados
+o no deseados por otros motivos.
+	  </PARA>
+	  <PARA> 
+Este submenú también contiene herramientas para gestionar el software instalado
+en su sistema, llamadas <APPLICATION>GnoRPM</APPLICATION> y 
+<APPLICATION>Actualizaciónes Helix Gnome</APPLICATION> (si esta usando la distribución
+de Gnome preparada por la empresa Helix Code).
+<APPLICATION>GnoRPM</APPLICATION> permite ver todos los paquetes de software
+instalados en su sistema (si esta usando una distribución de Linux basada en paquetes
+RPM, como Red Hat, SuSe, o Mandrake); también permite eliminar, actualizar, o instalar
+nuevos paquetes.
+<APPLICATION>Actualizaciónes Helix Gnome</APPLICATION> proporciona una extremadamente
+sencilla forma, casi una sola pulsación de ratón, de actualizar su instalación de
+Gnome. Ambas utilidades, en cualquier caso, requieren disponer de privilegios
+de administración (root).
+	  </PARA>
+	  <PARA>Y finalmente, el mismo submenú contiene también varios emuladores de terminal
+(<APPLICATION>xterm</APPLICATION>, <APPLICATION>xterm a color</APPLICATION>, 
+<APPLICATION>terminal de Gnome</APPLICATION>) que le permiten utilizar la mas
+poderosa (aunque no la mas intuitiva) interfaz jamas creada  el 
+interprete de linea de comandos.
+	  </PARA>
+	</LISTITEM>
+      </VARLISTENTRY>
+      <VARLISTENTRY>	<TERM><GUISUBMENU>Red</GUISUBMENU>
+	</TERM>     
+	<LISTITEM>	  <PARA>Aqui, encontrara el navegador <APPLICATION>Netscape</APPLICATION>, 
+<APPLICATION>X-Chat</APPLICATION> para las retransmisión de charlas 
+en Internet (IRC), <APPLICATION>Gnome-ICU</APPLICATION> para hablar con
+otras personas usando el protocolo ICQ, y <APPLICATION>gftp</APPLICATION>
+una herramienta gráfica para transferir ficheros vía FTP.
+Observe que el gestor de ficheros, <APPLICATION>Nautilus</APPLICATION>,
+también dispone de capacidades FTP empotradas, así que <APPLICATION>gftp</APPLICATION>
+se necesita solo en los raros casos en que necesite algo realmente complejo 
+(por ejemplo, la transferencia de ficheros usando versiones seguras de FTP,
+basadas en <APPLICATION>ssh</APPLICATION>).
+	  </PARA>
+	</LISTITEM>
+      </VARLISTENTRY>
+      <VARLISTENTRY>	<TERM><GUISUBMENU>Juegos</GUISUBMENU>
+	</TERM>     
+	<LISTITEM>	  <PARA>	    Montones de juegos  ¡simplemente pruebelos!
+	  </PARA>
+	</LISTITEM>
+      </VARLISTENTRY>
+	    
+    </VARIABLELIST>
+
+  </SECT1>
+
+
+<SECT1 ID="trouble">    <TITLE>Ayuda -  Tengo problemas!</TITLE>
+    <PARA>Todo el mundo se encuentra con problemas tarde o temprano. A continuación
+se dan algunos consejos para enfrentarse a los problemas mas
+comunes:
+    </PARA>
+    
+    <SECT2 ID="kill-an-app">      <TITLE>Matar una aplicación bloqueada</TITLE>
+      <PARA>Si una aplicación se bloquea o cuelga  esto es, si no responde 
+a las pulsaciones de ratón y a los comandos de teclado, puede o bien
+esperar y confiar en que vuelva a responder, o bine puede matarla.
+Si decide matarla (Aviso: perderá todos los datos no salvados), arranque
+el <APPLICATION>monitor de sistema Gnome</APPLICATION>
+(desde el submenú <GUISUBMENU>Sistema</GUISUBMENU> del 
+<GUIMENU>Menú principal</GUIMENU>), pulse con el botón derecho sobre
+el nombre de la aplicación colgada, y seleccione 
+<GUIMENUITEM>Matar inmediatamente</GUIMENUITEM>. 
+El uso del <APPLICATION>monitor de sistema Gnome</APPLICATION> permite
+también localizar y matar todos los procesos de apoyo arrancados por
+esta aplicación.
+	</PARA>
+      <PARA>Si una aplicación Gnome se bloquea o casca (muere de forma inesperada)
+de forma repetida, debería rellenar un informe de error tal y como se 
+describe en <XREF LINKEND="feedback">.
+      </XREF></PARA>
+    </SECT2>
+    <SECT2 ID="kill-X11">      <TITLE>Mi sistema completo se bloqueo!</TITLE> 
+
+      <PARA> 
+Si el sistema entero se bloquea y no responde, no se apresure a
+pulsar el botón de <QUOTE>reset</QUOTE> del ordenador 
+esta es generalmente la peor solución.
+Probablemente, no sera el sistema operativo mismo el que esta bloqueado
+(los sistemas Unix son conocidos por su estabilidad), sino únicamente
+la parte gráfica, el sistema de ventanas X. En este caso, puede probar
+a arrancar de nuevo el sistema de ventanas X pulsando simultáneamente
+<KEYCAP>CTRL</KEYCAP>-<KEYCAP>ALT</KEYCAP>-<KEYCAP>Backspace</KEYCAP>.
+Esto debería funcionar en la implementación del sistema de ventanas X
+usada con Linux y *BSD, XFree86  a no ser que su administrador de
+sistemas lo haya deshabilitado. Por supuesto, con este método también
+se pierden todos los datos no salvados, pero el menos no corre el riesgo
+de estropear todo el sistema de ficheros.
+      </PARA>
+    </SECT2>
+
+
+    <SECT2 ID="Gnome-messedup">      <TITLE>Se perdió la configuración completa de Gnome!</TITLE>
+      <PARA> 
+Si tiene problemas mas serios que la simple desordenación de los iconos
+del escritorio  la solución radical es eliminar todos los ficheros
+de configuración de Gnome y arrancar desde cero. Esta es una solución de 
+emergencia, ya que pierde todos los parámetros de configuración y deberá
+configurar sus menús, paneles, etc. desde cero de nuevo, esto es, a partir
+de la configuración por omisión de Gnome. En cualquier caso, esto solo
+afecta a la configuración de Gnome, así que sus ficheros de datos y los
+parámetros de las aplicaciones Gnome permanecen intactos.
+      </PARA>
+      <PARA>Para eliminar todos los ficheros de configuración de Gnome y volver a
+la configuración original de Gnome, termine la sesión y conectese de
+nuevo manteniendo pulsadas las teclas <KEYCAP>CTRL</KEYCAP> y
+<KEYCAP>SHIFT</KEYCAP>  (inmediatamente después de introducir su clave
+en el formulario de acceso). Se le presentara un formulario, ofreciéndole
+la posibilidad de resetear la sesión salvada (esto es, las aplicaciones
+que tenia abiertas la ultima vez que termino la sesión); o resetear los
+parámetros de la configuración de Gnome; o ambas. 
+      </PARA>
+      <PARA>Finalmente, si tiene realmente serios problemas y su sistema se bloquea
+o queda inutilizable en cualquier otra forma, nada mas conectarse, queda
+una ultima opción. Puede seleccionar una sesión del tipo 
+<GUIMENUITEM>prueba de fallos</GUIMENUITEM> en vez de la sesión
+por defecto <GUIMENUITEM>Gnome</GUIMENUITEM> en la pantalla de acceso.
+Tanto el gestor de acceso de Kde como el de Gnome soportan esta opción.
+En este tipo de sesión, no se arranca Gnome; en su lugar, se accede
+con un única ventana de tipo terminal. Esto al menos garantiza un arranque
+correcto, y , si sabe como usar las herramientas de linea de comandos,
+tiene una oportunidad de localizar y corregir el problema. En caso
+contrario, consulte a un experto.  
+      </PARA> 
+    </SECT2>
+  </SECT1>
+
+
+<SECT1 ID="otherinfo">    <TITLE>¿Donde encontrar mas información?</TITLE>
+    <SECT2 ID="Gnome-docs">      <TITLE>Documentación incluida con Gnome</TITLE>
+      <PARA>Gnome incluye documentación detallada de la mayoría de las aplicaciones,
+utilidades y de otros componentes, como el panel o el gestor de ficheros
+nautilus. Puede ver la lista de todos los documentos de Gnome instalados
+en su sistema usando la carpeta <GUILABEL>Contenido de la ayuda</GUILABEL>
+en <LINK LINKEND="nautilus-help">Nautilus</LINK>. Por tanto, si desea 
+saber mas acerca de uno de estos componentes, lea el manual apropiado.
+      </PARA>
+      <PARA> 
+Además de los manuales de los componentes individuales, la documentación
+Gnome incluye también:
+      </PARA>
+      <VARIABLELIST> 
+	<VARLISTENTRY>	  <TERM>	    <ULINK TYPE="help" URL="gnome-help:users-faq">	    <CITETITLE>Preguntas frecuentemente formuladas</CITETITLE>
+	     </ULINK>
+          </TERM>     
+	  <LISTITEM>	    <PARA>Este documento contiene las respuestas a algunas de las preguntas sobre
+Gnome mas frecuentemente formuladas.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM> <ULINK TYPE="help" URL="gnome-help:unix-primer">	    <CITETITLE>Si es nuevo en el mundo UNIX/Linux...</CITETITLE>
+	    </ULINK>
+	  </TERM>     
+	  <LISTITEM>	    <PARA>Este breve documento le da la mínima información necesaria sobre Unix
+y los sistemas operativos de tipo Unix, incluyendo cosas como los
+nombres de ficheros,enlaces simbólicos y la mas confusa de todas ellas,
+la noción de <QUOTE>montaje</QUOTE>. Si no ha usado nunca antes un 
+sistema Unix, no olvide leerlo.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>	  <TERM><ULINK TYPE="help" URL="gnome-help:glossary">	      <CITETITLE>Glosario</CITETITLE></ULINK>
+	    </TERM>
+	  <LISTITEM>	    <PARA>Ofrece una breve explicación de algunos de los términos relacionados con
+ordenadores que podrá ver en la documentación Gnome, desde ASCII hasta
+el sistema de ventanas X.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+      </VARIABLELIST>
+    </SECT2>
+    <SECT2 ID="gnome-www"> 
+      <TITLE>Recursos Gnome en Internet</TITLE>
+      <PARA> 
+Además de la documentación entregada con Gnome, hay también información 
+abundante disponible en Internet. Un buen sitio donde empezar es, por
+supuesto, la <ULINK TYPE="http" URL="http://www.gnome.org">pagina web de Gnome</ULINK>. Allí
+encontrara instrucciones para instalar Gnome, revisiones y trucos, 
+información de desarrollo, y mas cosas.
+<FOOTNOTE><PARA>También puede encontrar documentación Gnome en Castellano en la 
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/gnome-es/">página web de Gnome-es</ULINK> 
+y en la 
+<ULINK TYPE="http" URL="http://www.es.gnome.org">página de Gnome España</ULINK> </PARA></FOOTNOTE>.
+      </PARA>
+      <PARA>Si no encuentra allí la respuesta a su pregunta, puede preguntar a otros
+usuarios y desarrolladores de Gnome en la lista de correo de Gnome
+(las instrucciones para suscribirse puede encontrarse 
+<ULINK TYPE="http" URL="http://mail.gnome.org/mailman/listinfo/gnome-list">aquí</ULINK>).
+Tenga en cuenta, sin embargo, que esta lista es solo para cuestiones 
+relacionadas con Gnome (no pregunte como configurar el sistema de ventanas
+X, por ejemplo), y es de mala educación (por decirlo suavemente) formular
+una pregunta sin comprobar primero que no este ya contestada en los
+documentos disponibles como las <ULINK TYPE="gnome-help" URL="gnome-help:users-faq">FAQ de Gnome</ULINK>.
+     </PARA>
+
+    </SECT2>
+    <SECT2 ID="not-Gnome-docs">      <TITLE>No todo es Gnome</TITLE>
+      <PARA>Se dará cuenta que Gnome es solo una parte de su ordenador.
+Si desea descubrir todo el potencial de su ordenador, deberá comprender 
+no solamente Gnome, sino también el sistema operativo oculto debajo
+(Unix/linux/FreeBSD), varias herramientas y utilidades incluidas con el,
+y su sistema gráfico (el sistema de ventanas X). Cada uno de estos
+componentes vienen normalmente con su propia documentación. La mayoría
+de los comandos y utilidades Unix están documentadas en las así llamadas
+<QUOTE>paginas de manuales</QUOTE>, «man pages» abreviado en Ingles. 
+Puede verlas usando <APPLICATION>Nautilus</APPLICATION> 
+(véase <XREF LINKEND="nautilus-help">). Esta documentación es normalmente
+muy detallada y mas técnica de lo que la mayoría de los usuarios 
+quisieran. Otro formato de documentación usado por las utilidades del
+proyecto GNU es el de las <QUOTE>paginas info</QUOTE>.
+Pueden también visualizarse usando <APPLICATION>Nautilus</APPLICATION>.
+Muchas aplicaciones tienen también documentación en otros formatos.
+Algunas veces no es fácil localizar documentación de un determinada
+aplicación  pruebe a mirar en el directorio 
+<FILENAME>/usr/doc</FILENAME>.
+      </XREF></PARA>
+      <PARA>La documentación del sistema operativo mismo varía de un sistema a otro.
+El mejor consejo es buscar en el manual impreso que se entrega con su 
+sistema. Para Linux, una buena fuente de información es el proyecto
+de documentación Linux (LDP); puede leer su documentación en Internet
+(en <ULINK TYPE="http" URL="http://www.linuxdoc.org">http://www.linuxdoc.org</ULINK>).
+Virtualmente todos las distribuciones de Linux incluyen también copia
+de los documentos de LDP; normalmente se encuentran en  
+	<FILENAME>/usr/doc/LDP</FILENAME> o
+	<FILENAME>/usr/doc/HOWTO</FILENAME>.
+<FOOTNOTE><PARA>Muchos de los documentos del proyecto LDP se encuentran también traducidos al castellano.Podras
+encontarlos en las
+páginas de los proyectos:   
+<ULINK TYPE="http" URL="http://LuCAS.hispalinux.es/htmls/manuales.html">Lucas</ULINK> para los
+manuales
+,
+<ULINK TYPE="http" URL="http://www.insflug.org/">Insflug</ULINK>
+para los documentos como («HOWTO»), y
+<ULINK TYPE="http" URL="http://www.croftj.net/~barreiro/spanish/grupos-es/tematica/documentacion/">Grupos-es</ULINK> para otros proyectos de traducción de documentación.</PARA></FOOTNOTE>.
+      </PARA>
+
+      <PARA> 
+Y por supuesto, hay un buen numero de libros disponibles acerca de todas
+la variaciones de Unix/Linux, Gnome, y acerca de cualquier cosa en la
+que este interesado. Busque en su librería local.
+      </PARA> 
+    </SECT2>
+  </SECT1>
+  <SECT1 ID="feedback">    <TITLE>«feedback»</TITLE>
+    <PARA>Si tiene cualquier comentario, sugerencia, o queja sobre esta guia, por favor
+envielas al proyecto de documentación Gnome en 
+      <EMAIL>docs@gnome.org</EMAIL>.
+    </PARA>
+    <PARA>Si encuentra algún fallo en una de las aplicaciones Gnome, por favor
+reportelo! Los desarrolladores leerán estos informes y trataran de 
+corregir todos los fallos reportados. La forma mas fácil de enviar 
+un informe de fallo es usar la <APPLICATION>herramienta para informar de
+errores de Gnome</APPLICATION>, que se encuentra en el submenú
+<GUISUBMENU>Utilidades</GUISUBMENU> del <GUIMENU>Menú principal</GUIMENU>.
+Esta herramienta arrancara de forma automática cuando una aplicación
+Gnome falla. También debería usarse para enviar sugerencias o peticiones
+de nuevas funcionalidades para las aplicaciones Gnome:
+simplemente seleccione <GUILABEL>Prioridad: mejora</GUILABEL> en la
+ventana apropiada de la <APPLICATION>herramienta para informar de
+errores de Gnome</APPLICATION>. 
+    </PARA>
+    <PARA>Si tiene preguntas sobre Gnome, o desea discutir acerca de Gnome
+con otros usuarios y desarrolladores, debería suscribirse a la lista
+de correo de Gnome en la forma descrita en <XREF LINKEND="gnome-www">.
+    </XREF></PARA>
+  </SECT1></ARTICLE>

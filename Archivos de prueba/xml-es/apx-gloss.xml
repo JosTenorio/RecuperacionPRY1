@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<GLOSSARY ID="apx-gloss">
+ <TITLE>Glosario</TITLE>
+
+ <GLOSSENTRY ID="attachment">  <GLOSSTERM>Adjunto</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Cualquier archivo enviado junto con el mensaje de correo.  Los adjuntos
+    pueden estar insertados dentro del mensaje o añadidos a el.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+<GLOSSENTRY ID="automatic-indexing">  <GLOSSTERM>Indexado Automático</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     El procedimiento de pre-ordenado que permite a
+     <APPLICATION>Evolution</APPLICATION> encontrar la información
+     rápidamente.  Permite búsquedas más rápidas y disminuye el uso de la
+     memoria para mostrar datos.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="bcc">  <GLOSSTERM>Cco (Con Copia Oculta)</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Una manera de dirigir un mensaje.  Bcc es usado para enviar un mensaje
+    a un grupo de personas, a la vez que se ocultan los nombres y
+    direcciones de unos a los otros.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="cc">  <GLOSSTERM>Cc (Con Copia)</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Con-Copia es usado para enviar una copia del mensaje a una 3º persona,
+    para que puedan enterarse de la conversación, sin estar en la lista de
+    A:
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="druid">  <GLOSSTERM>Ayudante</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Una herramienta que guía al usuario a través de una serie de pasos,
+    normalmente para configurar un programa.  Equivalente a "Asistente"
+    y "Wizard".
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+<GLOSSENTRY ID="emoticon">  <GLOSSTERM>Emoticon</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     También llamados "smileys", los emoticones son pequeñas caras puestas
+     de lado echas de puntos y paréntesis que la gente usa para expresar
+     emociones en los correos electrónicos. Ejemplos: :-) ó ;(  .
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="evolution">  <GLOSSTERM>Evolution</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    <APPLICATION>Evolution</APPLICATION> es la aplicación de trabajo en
+    grupo de <ACRONYM>GNOME</ACRONYM>.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="execute">  <GLOSSTERM>Ejecutar</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Para ejecutar un programa.  Cualquier archivo que se puede ejecutar
+    se llama ejecutable.  <APPLICATION>Evolution</APPLICATION> puede
+    descargar ejecutables adjuntos, pero antes de poder ejecutarlos, el
+    archivo debe ser marcado como ejecutable a través de una shell o un
+    administrador de archivos.  Esta precaución de seguridad previene contra
+    la ejecución automática o accidental de programas maliciosos. Para más
+    información acerca de archivos ejecutables y permisos de archivos,
+    consulte la documentación de su administrador de archivos o de su shell.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+
+ <GLOSSENTRY ID="filetree">  <GLOSSTERM>Árbol de Archivos</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     Un forma de describir un conjunto de archivos en un ordenador.  Con
+     la especial perversión de la típica nomenclatura de ordenadores
+     (y especialmente en Unix y Linux), la parte más alta del árbol se
+     llama el directorio raíz, y se denota por <SYSTEMITEM><FILENAME>/
+     </FILENAME></SYSTEMITEM>.  El resto de las "ramas" se extienden
+     desde la raíz.  No confundir el directorio raíz (root en ingles) con
+     la cuenta <SYSTEMITEM>root</SYSTEMITEM>, o con el directorio del
+     usuario root, <SYSTEMITEM><FILENAME>/home/root</FILENAME></SYSTEMITEM>.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="filter">  <GLOSSTERM>Filtro</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Dentro de <APPLICATION>Evolution</APPLICATION>, un filtro es un método
+    para ordenar el correo automáticamente.  Puede crear filtros para
+    realizar una o más acciones sobre un mensaje que cumple alguno (o todos)
+    de los requisitos de un amplio rango de criterios.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="forward">  <GLOSSTERM>Reenviar</GLOSSTERM>
+  <GLOSSDEF>   <PARA>       el usuario puede enviar un mensaje a una tercera persona    que originalmente le fue enviado a el.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="groupware"> <GLOSSTERM>Trabajo en Grupo</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Trabajo en Grupo es un término que describe la aplicación que ayuda a
+    grupos de persones a trabajar juntas.  Típicamente, esta aplicación
+    varias herramientas de productividad integradas en un mismo programa.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="haiku">  <GLOSSTERM>Haiku</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     Una forma de poesía tradicional japonesa.  Los poemas son de tres
+     líneas, donde la primera y la última tienen cinco sílabas, y la
+     segunda línea tiene siete sílabas.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="html">  <GLOSSTERM>HTML</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Lenguaje de Marcas de Hyper-texto (<ACRONYM>HTML</ACRONYM>) es un
+    lenguaje para describir la forma de la página en documentos electrónicos
+    como páginas web, archivos de ayuda, y mensajes de correo.  El HTML se
+    puede usar en el correo electrónico y en los grupos de noticias para
+    insertar imágenes o formatear el texto
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="hot-key">  <GLOSSTERM>Tecla Rápida</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Teclas rápidas son combinaciones de teclado usadas para realizar
+    acciones en el ordenador en lugar de usar el ratón para la misma
+    acción. Las teclas rápidas pueden acelerar el uso del ordenador.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="ical">  <GLOSSTERM>iCal</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    <APPLICATION>iCal</APPLICATION> es el programa que usa
+    <APPLICATION>Evolution</APPLICATION> para manejar la sección del
+    calendario.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY> 
+
+ <GLOSSENTRY ID="imap">  <GLOSSTERM>IMAP</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Dependiendo a quien pregunte, IMAP significa Protocolo de Acceso al
+    Correo de Internet, o Protocolo de Acceso a Correo Interinamente.
+    Lo que sea que signifique, permite acceder al correo que está
+    típicamente (aunque no siempre) guardado remotamente en el servidor en
+    lugar de en el disco duro local.  Algunas veces contrasta con
+    <GLOSSTERM>POP</GLOSSTERM>.
+    Esto no estará en la prueba.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+
+ <GLOSSENTRY ID="inline">  <GLOSSTERM>En línea</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     Mostrados como para de una mensaje u otro documento, en lugar de
+     incluido como un archivo separado. Contrasta con <GLOSSTERM LINKEND="attachment">Adjunto</GLOSSTERM>.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+ 
+  <GLOSSENTRY ID="ldap">   <GLOSSTERM>LDAP</GLOSSTERM>
+   <GLOSSDEF>    <PARA>     LDAP, el Protocolo Ligero de Acceso a Directorio, permite a un cliente
+     buscar en una gran base de datos de direcciones, números de teléfono y
+     y personas que se encuentra en un servidor.
+    </PARA>
+   </GLOSSDEF>
+  </GLOSSENTRY>
+
+ <GLOSSENTRY ID="mail-client">  <GLOSSTERM>Cliente de Correo</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Un cliente de correo es la aplicación con la que una persona lee y
+    envía correos electrónicos.  En el otro lado están los distintos tipos
+    de servidores de correo, que se encargan de autentificar al usuario
+    y dirigir los mensajes desde el remitente hasta el destinatario.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+
+ <GLOSSENTRY ID="minicard">  <GLOSSTERM>Minitarjeta</GLOSSTERM>
+  <GLOSSDEF>   <PARA>      Un formato para mostrar la información de contacto.  Similar en
+      apariencia a una pequeña tarjeta de visita.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY> 
+
+ <GLOSSENTRY ID="nautilus">  <GLOSSTERM>Nautilus</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    <APPLICATION>Nautilus</APPLICATION> es la próxima generación del
+    gestor de archivos de <ACRONYM>GNOME</ACRONYM> que está desarrollando
+    la compañía Eazel.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="nickname">  <GLOSSTERM>Apodo</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Un alias para una dirección de correo electrónico.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="pop">  <GLOSSTERM>POP</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     POP, el Protocolo de Oficina de Correos, es un mecanismo para el
+     transporte de correo.  En contraste con IMAP, solo se usa para obtener
+     el correo del servidor y almacenarlo localmente en el disco duro.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="protocol">  <GLOSSTERM>Protocolo</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     Un método de comunicación acordado, especialmente uno acordado para
+     enviar tipos particulares de información entre ordenadores
+     Ejemplos son POP (Protocolo de Oficina de Correo), para el correo, y
+     HTTP (Protocolo de Transferencia de Hipertexto), para páginas web.
+
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+
+ <GLOSSENTRY ID="regular-expression">  <GLOSSTERM>Expresión Regular</GLOSSTERM>
+  <GLOSSDEF>   <PARA>      Una expresión regular, o "regex", es una forma de describir una
+      cadena de texto usando meta caracteres o símbolos wild-card.  Por
+      ejemplo, la frase <USERINPUT>tener.*pat[a|o]</USERINPUT> significa
+      "cualquier frase que comience por 'tener' y que acabe en 'pata' o
+      'pato'".  Si usted busca esta expresión, encontrará entre otras
+      "tener mala pata" y "tener un pato".  No hay sitio aquí para
+      entrar en profundidad, pero si lo desea, puede echar un vistazo a la
+      documentación del comando <COMMAND>grep</COMMAND>.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="script">  <GLOSSTERM>Script</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Un programa escrito en un lenguaje interpretado (en lugar de
+    compilado).  A menudo usado como sinónimo de "macro," para denotar
+    una serie de comando o acciones pre grabados en una aplicación.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="sendmail">  <GLOSSTERM>Sendmail</GLOSSTERM>
+  <GLOSSDEF>   <PARA>      Como su nombre indica, <APPLICATION>sendmail</APPLICATION> es un
+      programa que envía correo.  <APPLICATION>Evolution</APPLICATION>
+      puede usarlo en lugar de <GLOSSTERM>SMTP</GLOSSTERM>; algunas
+       personas lo prefieren porque permite más flexibilidad, pero es más
+      difícil de configurar.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+
+ <GLOSSENTRY ID="shortcut-bar">  <GLOSSTERM>Barra de Atajos</GLOSSTERM>
+  <GLOSSDEF>   <PARA>     Una parte de <APPLICATION>Evolution</APPLICATION> que ofrece
+     a los usuarios un rápido acceso a la partes de la aplicación
+     usadas más frecuentemente.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+  <GLOSSENTRY ID="signature">   <GLOSSTERM>Firma</GLOSSTERM>
+   <GLOSSDEF>    <PARA>     En términos de un correo electrónico, una firma es un texto situado
+     al final de todos los mensajes que usted mande, como una firma hecha
+     a mano al final de una carta escrita.  Una firma puede ser cualquier
+     cosa desde su cita preferida hasta un enlace a una página web.  La
+     cortesía dicta que debe tener una longitud inferior a cuatro líneas.
+    </PARA>
+   </GLOSSDEF>
+  </GLOSSENTRY> 
+
+  <GLOSSENTRY ID="SMTP">   <GLOSSTERM>SMTP</GLOSSTERM>
+   <GLOSSDEF>    <PARA>      Esta es la manera más común de transportar mensajes desde el
+      ordenador cliente (el suyo) al servidor. SMTP significa Protocolo
+      Simple de Transferencia de Correo.
+    </PARA>
+   </GLOSSDEF>
+  </GLOSSENTRY> 
+
+ <GLOSSENTRY ID="spam">  <GLOSSTERM>Spam</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Correo no deseado ó inútil.  El spam normalmente aparece como cartas
+    encadenadas y publicidad de compañías sin escrúpulos o sin sentido.
+    Los mensajes que no valen para nada se conocen como "boletínes
+    opt-in"
+.   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+
+ <GLOSSENTRY ID="tooltip">  <GLOSSTERM>Mensaje de Ayuda</GLOSSTERM>
+  <GLOSSDEF>   <PARA>      Una paqueña caja con texto explicatorio que aparece cuando el puntero
+      del ratón permanece sin moverse sobre un botón o cualquier otro
+      elemento de la interfaz.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+
+
+
+ <GLOSSENTRY ID="virus">  <GLOSSTERM>Virus</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Un programa malicioso que se inserta a si mismo en otros para así ser 
+    ejecutado, permitiéndole expandirse a más programas y a otros ordenadores.
+    Un virus puede causar daños sustanciales colapsando redes y unidades de disco, 
+    borrando archivos, o abriendo agujeros de seguridad.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="vcard">  <GLOSSTERM>vCard</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Un formato de archivo para el intercambio de información de contactos.
+    Cuando recibe una tarjeta adjunta a un correo, esta probablemente en el
+    formato vCard.  No confundir con <GLOSSTERM LINKEND="vfolder">vFolder</GLOSSTERM>.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+
+ <GLOSSENTRY ID="vfolder">  <GLOSSTERM>vFolder</GLOSSTERM>
+  <GLOSSDEF>   <PARA>    Una herramienta para organizar mensajes. vFolders le permite crear una
+    carpeta que contiene los resultados de una búsqueda compleja.  Los
+    contenidos de la carpeta se actualizan dinámicamente.
+   </PARA>
+  </GLOSSDEF>
+ </GLOSSENTRY>
+</GLOSSARY>

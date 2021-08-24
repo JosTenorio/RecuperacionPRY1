@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<CHAPTER ID="desk"><TITLE>
+El Escritorio GNOME
+</TITLE>
+<SECT1><TITLE>
+Introducción
+</TITLE>
+<PARA><INDEXTERM ID="idx-a27"><PRIMARY>
+Escritorio GNOME
+</PRIMARY></INDEXTERM>
+
+El escritorio GNOME le proporciona la funcionalidad de un
+escritorio tradicional de un sistema operativo. Puede arrastrar
+ficheros, programas y directorios al escritorio; también puede
+arrastrar estos elementos sobre aplicaciones compatibles GNOME,
+permitiendole acceder de forma rápida a cualquier elemento que
+seleccione.</PARA>
+<IMPORTANT><TITLE>
+Importante
+</TITLE>
+<PARA>
+El escritorio GNOME actualmente viene proporcionado por un
+proceso en segundo plano del Administrador de ficheros de GNOME. Si, por
+cualquier razón, el proceso en segundo plano ha dejado de ejecutarse, puede
+volver a ejecutar el Administrador de ficheros de GNOME y el
+escritorio volverá a funcionar. Incluso si tiene que hacer esto recuerde que
+no hay necesidad de mantener la ventana del administrador de ficheros
+abierta para que el escritorio funcione. 
+</PARA></IMPORTANT></SECT1>
+<SECT1 ID="deskuse"><TITLE>
+Utilizando el escritorio
+</TITLE>
+<PARA>
+Utilizar el escritorio es algo tan sencillo como arrastrar todo
+aquello que desee utilizar rutinariamente al escritorio. El escritorio
+de forma predeterminada incluye una carpeta con su directorio hogar
+(<FILENAME>/home/[nombre usuario]</FILENAME>). De forma predeterminada
+aparecerá también la ventana del administrador de ficheros de GNOME para
+permitirle acceder de formoa rápida a otras zonas de su sistema. 
+</PARA>
+    <PARA>Una vez que tengamos un ítem en el escritorio puede pulsar dos veces sobre el
+para ejecutar su acción por defecto o pulsar con el botón derecho sobre el (
+pulsar sobre el usando el botón derecho del ratón) para ver un menú de acciones
+que puede realizar. Las acciones por omisión dependen del tipo de elemento que
+sea; si es un programa, el programa se iniciara, si se trata de datos, el 
+programa apropiado arrancara con esos datos cargados, y si es un directorio,
+se abrirá una ventana del gestor de ficheros mostrando su contenido. 
+    </PARA>
+
+<PARA>
+Para utilizar arrastrar y soltar necesita utilizar una
+aplicación compatible GNOME o una aplicación Motif. GNOME es compatible 
+con arrastrar y soltar de Motif, por lo que verá que funciona con muchas
+de las aplicaciones que tiene instaladas.
+</PARA>
+<PARA>
+Todo lo que tiene en el escritorio está almacenado en el directorio: 
+
+<PROGRAMLISTING><PROMPT>
+$
+</PROMPT>
+
+/home/[nombre usuario]/.gnome-desktop/
+</PROGRAMLISTING>
+
+Le será útil recordarlo cuando quiera que su escritorio contenga algún elemento
+y no
+pueda ponerlo mediante arrastrar y soltar.
+</PARA>
+<PARA><INDEXTERM ID="idx-a28"><PRIMARY>
+Escritorio GNOME
+</PRIMARY>
+<SECONDARY>
+Dispositivos hardware
+</SECONDARY></INDEXTERM>
+
+Una vez haya arrancado GNOME podrá observar que todos los
+dispositivos que tenga conectados a su sistema aparecen en su
+escritorio con los iconos apropiados. Puede montar y acceder a estos
+dispositivos utilizando estos iconos.
+</PARA>
+<IMPORTANT><TITLE>
+Importante
+</TITLE>
+<PARA>
+Debe tener permiso para montar los dispositivos que aparecen en su
+escritorio antes de poder utilizar estos iconos. 
+Si no dispone de permiso para montarlos, alguien con acceso a la cuenta
+«root», como el administrador del sistema, puede dárselo tal y como se
+indica a continuación.
+Puede leer mas sobre este tema y otros relacionados con el sistema en
+<XREF LINKEND="newbies">.</XREF></PARA>
+<PARA><INDEXTERM ID="idx-a29"><PRIMARY>
+Montar unidades
+</PRIMARY></INDEXTERM>
+
+Puede fácilmente otorgar el permiso para montar unidades a
+usuarios normales si
+tiene 
+
+<APPLICATION><EMPHASIS>
+linuxconf
+</EMPHASIS></APPLICATION>
+
+instalado en su ordenador. Sólo tiene que seleccionar la unidad a
+la que quiere acceder en la sección 
+
+<GUILABEL>
+Acceso a unidades locales
+</GUILABEL>
+
+. Debe seleccionar la
+opción 
+
+<GUILABEL>
+Montable por el usuario
+</GUILABEL>
+
+dentro de la carpeta
+
+<GUILABEL>
+Opciones
+</GUILABEL>
+
+. Ahora los usuarios normales podrán montar unidades.
+</PARA>
+<PARA>
+Si no tiene
+
+<APPLICATION><EMPHASIS>
+linuxconf
+</EMPHASIS></APPLICATION>
+
+alguien con acceso a la cuenta «root» deberá
+editar el fichero 
+
+<EMPHASIS>
+/etc/fstab
+</EMPHASIS>
+
+para añadir
+acceso a los usuarios. Esto se consigue añadiendo el
+atributo de usuario a la unidad. Por ejemplo:
+</PARA>
+<PARA>
+Si en su fichero fstab aparece algo así:
+
+<PROGRAMLISTING>
+/dev/cdrom /mnt/cdrom iso9660 exec,dev,ro,noauto 0 0
+</PROGRAMLISTING>
+
+Añada ``user'' a la cuarta columna:
+
+<PROGRAMLISTING>
+/dev/cdrom /mnt/cdrom iso9660 user,exec,dev,ro,noauto 0 0
+</PROGRAMLISTING></PARA>
+<PARA>
+Esto puede implicar ciertos problemas de seguridad,
+dependiendo de su sistema y de su entorno de trabajo. Por favor,
+consulte a su administrador de sistema antes de permitir montar unidades
+a los usuarios.
+</PARA></IMPORTANT>
+<PARA>
+Una vez haya conseguido el permiso para montar una unidad puede
+pulsar con el botón derecho del ratón en el icono representativo
+de la unidad que hay en su escritorio. Aparecerá un pequeño
+menú desplegable.
+</PARA>
+<PARA>
+Puede seleccionar 
+
+<GUIMENUITEM>
+Montar dispositivo
+</GUIMENUITEM>
+
+para
+montarlo y 
+
+<GUIMENUITEM>
+Expulsar dispositivo
+</GUIMENUITEM>
+
+para
+expulsarlo. Una vez lo haya montado puede hacer doble click con el
+ratón o elegir 
+
+<GUIMENUITEM>
+Abrir
+</GUIMENUITEM>
+
+del menú
+desplegable para abrirlo y ver los contenidos de la unidad en  una ventana 
+del administrador de ficheros GNOME.
+</PARA>
+<PARA>
+Si hay alguna unidad que no aparece en el escritorio y que está
+en su máquina, puede pulsar con el botón derecho del ratón en
+un lugar vacío del escritorio y escoger la opción
+
+<GUIMENUITEM>
+Recrear los dispositvos por omisión
+</GUIMENUITEM>
+
+del
+menú 
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+.
+</PARA>
+<PARA>Algunas distribuciones crearan iconos en el escritorio para, por ejemplo,
+paginas web. Si quiere recrear estos iconos en caso de que hayan sido
+eliminados previamente debe seleccionar el elemento de menú <GUIMENUITEM>Recrear 
+iconos de escritorio</GUIMENUITEM> en el menú <GUIMENU>desplegable</GUIMENU>.</PARA></SECT1>
+<SECT1 ID="deskareas"><TITLE>
+Áreas del escritorio
+</TITLE>
+<PARA><INDEXTERM ID="idx-a30"><PRIMARY>
+Áreas del escritorio
+</PRIMARY></INDEXTERM>
+<INDEXTERM ID="idx-a31"><PRIMARY>
+Múltiples escritorios
+</PRIMARY></INDEXTERM>
+
+Las áreas del escritorio le permitirán mantener un sistema bien
+organizado mientras realiza varias tareas simultáneamente. Es como
+añadir otra mesa cuando tiene demasiadas cosas para ponerlas en una sola, 
+las áreas
+del escritorio le permitirán moverse a otra área para lanzar más
+programas.
+</PARA>
+<PARA>
+GNOME es capaz de utilizar las áreas del escritorio aunque éstas
+estén controladas por otro programa llamado el `administrador de
+ventanas'. Puede decidir la cantidad de áreas de escritorio que quiere
+mediante la configuración del administrador de ventanas que esté
+utilizando. Si está utilizando el administrador de ventanas que
+viene predeterminado o su administrador de ventanas tiene una herramienta
+gráfica de configuración, entonces debería ser capaz de
+lanzar dicha herramienta desde el aplique C administrador de
+ventanas. Puede leer más acerca de este aplique en 
+
+<XREF LINKEND="gccwm"></XREF></PARA>
+<IMPORTANT><TITLE>
+Importante
+</TITLE>
+<PARA>
+Muchos administradores de ventanas le darán la posibilidad de
+tener escritorios múltiples, que es distinto a tener distintas áreas
+de escritorio. Las áreas de escritorio son, virtualmente, una
+extensión de un escritorio, mientras que los escritorios múltiples son
+distintos escritorios separados. 
+</PARA>
+<PARA>
+En la instalación predeterminada de GNOME se utilizan las áreas de
+escritorio con sólo un escritorio. La razón es que puede que el
+usuario experimente problemas con el arrastrar y soltar entre
+escritorios con algunas aplicaciones, como por ejemplo aquellas
+programadas con Motif.
+</PARA></IMPORTANT></SECT1>
+<SECT1 ID="deskmenus"><TITLE>
+Otros menús de escritorio
+</TITLE>
+<PARA><INDEXTERM ID="idx-a32"><PRIMARY>
+Escritorio GNOME
+</PRIMARY>
+<SECONDARY>
+Menús del escritorio
+</SECONDARY></INDEXTERM>
+
+Hay unos cuantos menús de escritorio que podrá utilizar
+desde GNOME. A estos menús se accede pulsando con el botón
+derecho del ratón en cualquier lugar vacío del
+escritorio. Aparecerá un menú 
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+con las siguientes opciones:
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Terminal
+</GUIMENUITEM>
+
+- Esta opción
+lanzará una ventana del Terminal de GNOME utilizando el
+directorio <FILENAME>~/.gnome-desktop</FILENAME>.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Directorio
+</GUIMENUITEM>
+
+- Esta opción
+crea un nuevo directorio en el escritorio, en el que podrá colocar ficheros: 
+una manera eficaz de mantener ordenado el escritorio.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | Lanzador
+</GUIMENUITEM>
+
+- Esta opción le
+permite colocar un nuevo lanzador de aplicaciones en el
+escritorio. Cuando seleccione esta opción aparecerá el
+cuadro de diálogo 
+
+<GUIMENUITEM>
+Lanzador de
+aplicaciones
+</GUIMENUITEM>
+
+que le permitirá especificar la
+aplicación y sus propiedades.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Nuevo | [aplicación]
+</GUIMENUITEM>
+
+- Algunas
+aplicaciones pueden incluir aquí algunas opciones. Por
+ejemplo, la hoja de cálculo Gnumeric pondrá una opción
+
+<GUIMENUITEM>
+Nueva hoja de cálculo Gnumeric
+</GUIMENUITEM>
+
+dentro del menú 
+
+<GUIMENU>
+Nuevo
+</GUIMENU>
+
+para que así
+puede comenzar rápidamente la creación de una nueva hoja
+de cálculo.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Alinear iconos
+</GUIMENUITEM>
+
+- Esta opción
+alineará automáticamente los iconos de su escritorio.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Crear nueva ventana
+</GUIMENUITEM>
+
+- Esta opción
+lanzará una nueva ventana del administrador de ficheros GNOME
+mostrando su directorio hogar.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Actualizar dispositivos del sistema
+</GUIMENUITEM>
+
+-
+Esta opción buscara los dispositivos montables de sus sistema y mostrará un 
+icono por 
+cada uno de los nuevos dispositivos que encuentre. Actualiza
+también cualquier elemento del escritorio que su distribución coloque
+predeterminadamente en él.
+</PARA></LISTITEM>
+<LISTITEM><PARA><GUIMENUITEM>
+Actualizar escritorio
+</GUIMENUITEM>
+
+- Esta
+opción actualizará los ficheros contenidos en el
+directorio <FILENAME>~/.gnome-desktop</FILENAME>. Se colocarán los iconos correspondientes a 
+cualquier nuevo fichero.
+</PARA></LISTITEM></ITEMIZEDLIST></SECT1></CHAPTER>

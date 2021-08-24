@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<APPENDIX ID="authors" LABEL="B"><TITLE>
+Equipo de documentación de la guía de usuario GNOME</TITLE>
+<PARA>Esta guía de usuario fue escrita por los siguientes autores </PARA>
+
+<FORMALPARA ID="writers"><TITLE>
+Autores
+</TITLE>
+<PARA></PARA></FORMALPARA>
+<PARA>
+David C. Mason
+</PARA>
+<PARA>
+David A. Wheeler
+</PARA>
+
+  <PARA>    Alexander Kirillov 
+  </PARA>
+  <PARA>    Dan Mueth
+  </PARA>
+  <PARA>    Telsa Gwynne
+  </PARA>
+  <PARA>    Eric Baudais
+  </PARA>
+  <PARA>    John Fleck
+  </PARA>
+  <PARA>    Aaron Weber
+  </PARA>
+  <PARA>    Kenny Graunke
+  </PARA>
+  <PARA>    John Kodis
+  </PARA>
+  <PARA>    Havoc Pennington
+  </PARA>
+  <PARA>    Spiros Papadimitriou
+  </PARA>
+  <PARA>    Oliver Maruhn
+  </PARA>
+  <PARA>    Chris Lyttle
+  </PARA>  
+  <PARA>    James Cope
+  </PARA>
+  <PARA>    Michael Hall
+  </PARA>
+  <PARA>    Tom Gilbert
+  </PARA> 
+  <PARA>    John Kodis
+  </PARA> 
+  <PARA>    Gregory Leblanc
+  </PARA></APPENDIX>

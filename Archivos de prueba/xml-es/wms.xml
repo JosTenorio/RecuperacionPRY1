@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<CHAPTER ID="wm"><TITLE>
+GNOME y los gestores de ventanas
+</TITLE>
+<SECT1 ID="wmabout"><TITLE>
+Acerca de los gestores de ventanas
+</TITLE>
+<PARA>
+El gestor de ventanas es la parte del software que controla las
+ventanas en el 'Entorno de ventanas X'. La posición, bordes, y 
+
+
+estilo
+de cualquier ventana la maneja el gestor de ventanas. Esto es muy
+distinto en muchos otros sistemas operativos, y la forma en que GNOME
+dialoga con los gestores de ventanas es diferente de la de otros entornos
+de escritorio.
+</PARA>
+<PARA>
+Como se indicó anteriormente en esta guía, GNOME no depende de ningún
+gestor de ventanas. Esto significa que la mayor parte de su entorno de
+escritorio no cambiará si decide cambiar de gestor de ventanas. GNOME
+trabaja con el gestor de ventanas para proporcionarle el entorno de trabajo
+más amigable
+
+
+posible. 
+GNOME no se preocupa de la colocación de las ventanas, 
+
+
+sino que obtiene información sobre su posición del gestor de ventanas. 
+El paginador («Pager») sólo funcionará con gestores de ventanas compatibles con GNOME,
+al igual que arrastrar y soltar en el escritorio.
+</PARA>
+<PARA>
+Al cierre de esta edición de la 'Guía de usuario GNOME', el gestor de 
+ventanas 'Sawfish' y 'Enlightenment' son los únicos gestores de ventanas 100% 
+compatibles con GNOME.
+Hay muchos otros gestores de ventanas parcialmente compatibles o 
+
+
+en los que se está
+trabajando para que lleguen a serlo.
+</PARA>
+<PARA>
+Algunos de los gestores de ventanas parcial o totalmente compatibles en
+el momento de redactar esta versión de la 'Guía de usuario GNOME' eran:
+</PARA>
+<ITEMIZEDLIST MARK="bullet"><LISTITEM><PARA>
+<ULINK URL="http://sawmill.sourceforge.net" TYPE="http">
+Sawfish
+</ULINK> (mas conocido como Sawmill)</PARA></LISTITEM>
+<LISTITEM><PARA>
+<ULINK URL="http://www.kiss.uni-lj.si/~k4fr0235/icewm/" TYPE="http">
+Icewm
+</ULINK></PARA></LISTITEM>
+<LISTITEM><PARA>
+
+<ULINK URL="http://www.windowmaker.org" TYPE="http">
+Windowmaker
+</ULINK></PARA></LISTITEM>
+<LISTITEM><PARA>
+
+
+<ULINK URL="http://www.enlightenment.org" TYPE="http">
+Enlightenment
+</ULINK></PARA></LISTITEM>
+
+<LISTITEM><PARA>
+
+
+<ULINK URL="http://www.afterstep.org/" TYPE="http">
+Afterstep
+</ULINK></PARA></LISTITEM>
+
+<LISTITEM><PARA>
+
+<ULINK URL="http://www.fvwm.org/" TYPE="http">
+Fvwm
+</ULINK></PARA></LISTITEM></ITEMIZEDLIST>
+<PARA>
+Existen muchos nuevos gestores de ventanas en desarrollo que funcionarán con
+GNOME. Encontrara algunos de estos gestores en
+
+<ULINK URL="http://www.gnome.org/applist/">
+Índice de software GNOME
+</ULINK>
+
+.
+</PARA></SECT1>
+<SECT1 ID="wmchange"><TITLE>
+Cambiando de gestor de ventanas
+</TITLE>
+<PARA>
+Cada vez que quiera cambiar de gestor de ventanas, deberá usar el
+aplique C del gestor de ventanas en el Centro de Control. Puede
+leer más acerca de este aplique C en
+
+<XREF LINKEND="gccwm "></XREF></PARA>
+<IMPORTANT><TITLE>
+IMPORTANTE
+</TITLE>
+<PARA>
+Tenga 
+
+
+siempre presente que el gestor de ventanas que decida usar puede
+no ser compatible con GNOME, 
+
+
+e impedirle beneficiarse de algunas de las funcionalidades de GNOME en caso de usarlo.
+</PARA></IMPORTANT></SECT1></CHAPTER>
