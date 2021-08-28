@@ -1,4 +1,6 @@
 import cmd
+from documentParser import clean_xml,load_stopwords
+from utils import load_directory_files,open_file,test_clean_xml
 
 
 class Terminal(cmd.Cmd):
