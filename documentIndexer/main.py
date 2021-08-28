@@ -1,12 +1,13 @@
 import cmd
-from documentParser import clean_xml,load_stopwords
-from utils import load_directory_files,open_file,test_clean_xml
+
+from documentParser import clean_xml, load_stopwords
+from utils import load_directory_files, open_file, test_clean_xml
 
 
 class Terminal(cmd.Cmd):
     prompt = ">>"
 
-    intro = "-----------------------------------------------------------------------\n" \
+    intro = "----------------------------------------------------------------------------------------\n" \
             "Bienvenido a la herramienta de consulta de archivos de texto \n" \
             "La lista de comandos diponibles es: \n" \
             ">>indizar  [Colección]  [Stopwords] [Indice]\n" \
@@ -14,21 +15,21 @@ class Terminal(cmd.Cmd):
             ">>mostrar  [Indice]  [Tipo]  [Dato]\n" \
             ">>salir\n" \
             "Con '>>help' o '>>?' puede consultar esta lista o algun comando en especifico\n" \
-            "-----------------------------------------------------------------------"
+            "----------------------------------------------------------------------------------------"
 
-    def do_indizar(self, person):
-        """indizar  [Colección]  [Stopwords] [Indice]
-        Greet the named person"""
+    def do_indizar(self, line):
+        """indizar  [Colección]  [Stopwords] [Índice]
+        Crea un índice para los archivos del directorio [Colección]"""
         print("Comando de indizacion")
 
-    def do_buscar(self, person):
+    def do_buscar(self, line):
         """buscar  [Indice]  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]
-        Greet the named person"""
+        Realiza la consulta con los paramétros especificados sobre el índice en el directorio [Indice]"""
         print("Comando de busquéda")
 
-    def do_mostrar(self, person):
+    def do_mostrar(self, line):
         """mostrar  [Indice]  [Tipo]  [Dato]
-        Greet the named person"""
+        Muestra la información guardada en índice en el directorio [Indice]"""
         print("Comando de inspección")
 
     def do_salir(self, line):
@@ -51,6 +52,12 @@ class Terminal(cmd.Cmd):
 
     def postloop(self):
         print("Terminando ejecución")
+
+    def default(self, line):
+        print("No se reconoce el comando: '" + line.split()[0] + "', por favor intentar de nuevo.")
+
+    def emptyline(self):
+        print("Por favor digite alguno de los comandos disponibles.")
 
 
 if __name__ == '__main__':
