@@ -1,10 +1,8 @@
 # Functions related to data cleaning and word extraction
 import re
 # Pattern used for regex
-word_pattern = r"([A-Za-zÀ-ÿ\u00f1\u00d1\d_\@://\.-]+)"
 word_pattern_no_symbols = r"([A-Za-zÀ-ÿ\u00f1\u00d1\d_]+)"
 word_pattern_test = r"[(\w@/:)+\.]+"
-word_pattern_email = r"[A-Za-zÀ-ÿ\u00f1\u00d1\d_\@://-]+\.[A-Za-zÀ-ÿ\u00f1\u00d1\d_\@://-]+"
 tag_pattern = r"<.*?>"
 global_stopwords = ['a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde', 'e', 'el', 'en', 'entre', 'hacia', 'hasta',
                     'ni', 'la', 'le', 'lo', 'los', 'las', 'o', 'para', 'pero', 'por', 'que', 'se', 'segun', 'sin', 'so', 'sobre',
@@ -43,10 +41,6 @@ def clean_xml(lines,stopwords,globalDict):
     for word in words:
         word = normalize_word(word)
         if word not in stopwords:
-            if word in words_dict:
-                words_dict[word] += 1
-            else:
-                words_dict[word] = 1
             insert_glob_dict(word,globalDict)
             total_word_count += 1
     print(f'Total count {total_word_count}')
@@ -55,7 +49,7 @@ def clean_xml(lines,stopwords,globalDict):
 
 # Retrieves stopwords in a document and returns an array containing every stopword
 def load_stopwords(lines_stop):
-    stopwords = re.findall(word_pattern,lines_stop)
+    stopwords = re.findall(word_pattern_no_symbols,lines_stop)
     for stopword in stopwords:
         if stopword not in global_stopwords:
             global_stopwords.append(stopword)
