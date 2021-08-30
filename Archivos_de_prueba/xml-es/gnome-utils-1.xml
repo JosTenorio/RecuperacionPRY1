@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<CHAPTER ID="gnome-utilities">  <TITLE>Utilidades para GNOME</TITLE>
+  <PARA>Gnome incluye una colección de utilidades, distribuidas todas juntas
+en el paquete <FILENAME>gnome-utils</FILENAME>, para manejar un
+abanico de faenas domesticas básicas del ordenador. En contraste con
+los apliques, que se ejecutan dentro del <INTERFACE>Panel</INTERFACE>
+Gnome, las utilidades son aplicaciones completas. Al instalar el paquete
+se instalan todas las utilidades, que van desde herramientas para gestionar
+el sistema, hasta visualizadores de texto, pasando por una calculadora.</PARA>
+
+  <PARA>Una vez instaladas, las utilidades se presentan debajo de uno
+de los elementos de menú
+  <GUIMENUITEM>Aplicaciones</GUIMENUITEM>,
+  <GUIMENUITEM>Utilidades</GUIMENUITEM> o
+  <GUIMENUITEM>Sistema</GUIMENUITEM>
+en el
+<GUIMENU>Menú principal</GUIMENU>.</PARA>
+  
+
+  <SECT1 ID="gnome-utils-system">    <TITLE>Sistema</TITLE>
+<PARA>las utilidades de <GUIMENUITEM>Sistema</GUIMENUITEM> le ayudan
+a monitorizar el funcionamiento del ordenador. Para arrancar una
+de estas aplicaciones, pulse el <GUIMENU>Menú principal</GUIMENU> y 
+elija el ítem de menú <GUIMENU>sistema</GUIMENU>.</PARA>
+
+
+    <SECT2 ID="gdiskfree">      <TITLE>Disco libre Gnome</TITLE>
+
+
+      <PARA><APPLICATION>Disco libre Gnome</APPLICATION>, también conocido como 
+<APPLICATION>Disco libre G</APPLICATION>, es un programa para monitorizar
+el uso del disco en su ordenador.
+
+        <FIGURE ID="gdiskfreefig">	  <TITLE>Disco libre G</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Disco libre G</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gdiskfreemain" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+    </PARA>
+
+<PARA>Puede arrancar <APPLICATION>Disco libre G</APPLICATION> seleccionando 
+<GUIMENUITEM>GNOME Disco libre</GUIMENUITEM> en el submenú de <GUISUBMENU>Utilidades</GUISUBMENU>
+del <GUIMENU>menú del sistema</GUIMENU> , o ejecutando el comando <COMMAND>gdiskfree</COMMAND> desde 
+la linea de ordenes.</PARA>
+
+<PARA>Cuando se arranca el programa, puede verse un dial para cada uno de los discos y/o particiones
+montados en su ordenador. la posición de la aguja y el numero cercano, indican la cantidad de espacio 
+usado en el disco.</PARA>
+
+<PARA>La etiqueta en la parte superior del dial identifica el dispositivo o partición medido. 
+<FILENAME>/dev/hda1</FILENAME>, por ejemplo, mide la primera partición del primer disco duro (hda). 
+<FILENAME>/dev/fd0</FILENAME> indica que se trata del primer disquete. Otros identificadores pueden ser 
+<FILENAME>/dev/sda</FILENAME>, para el primer disco duro <ACRONYM>SCSI</ACRONYM> , y 
+<FILENAME>/dev/sga</FILENAME> para el primer dispositivo <ACRONYM>SCSI</ACRONYM> genérico. </PARA>
+
+<PARA>Por defecto, el punto de montaje del dispositivo (el directorio donde se muestra el dispositivo 
+en su sistema de ficheros) se mostrara bajo el dial. </PARA>
+
+      <PARA>La barra de menú, situada el la parte superior de la ventana principal , 
+proporciona los siguientes comandos: </PARA>
+      
+      <VARIABLELIST>	<VARLISTENTRY> <TERM><GUIMENU>Fichero</GUIMENU></TERM>
+          <LISTITEM><PARA>Este menú contiene el comando 
+	      <MENUCHOICE>	        <SHORTCUT><KEYSYM>Ctrl-q</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>Salida</GUIMENUITEM>
+	      </MENUCHOICE>
+	     que es auto-explicativo..
+	    </PARA>
+	  </LISTITEM> 
+	</VARLISTENTRY> 
+
+	
+	<VARLISTENTRY> <TERM><GUIMENU>Salir</GUIMENU></TERM>
+          <LISTITEM><PARA> Este menú contiene el comando
+	      <MENUCHOICE>	       
+		<GUIMENUITEM>Propiedades</GUIMENUITEM>
+	      </MENUCHOICE>
+que arranca el 
+	     <LINK LINKEND="gdiskfree-customization">formulario de<INTERFACE>Configuración general
+		  </INTERFACE>formulario</LINK>. 
+	    </PARA>
+	  </LISTITEM> 
+	</VARLISTENTRY> 
+
+	<VARLISTENTRY>	  <TERM><GUIMENU>Ayuda</GUIMENU></TERM>
+	  <LISTITEM><PARA>	      Este menú contiene los comandos 
+	      <ITEMIZEDLIST>		<LISTITEM>		  <PARA><GUIMENUITEM>Manual</GUIMENUITEM> 
+		    muestra este manual 
+		  </PARA>
+		</LISTITEM>
+
+		<LISTITEM>		  <PARA><GUIMENUITEM>Acerca de</GUIMENUITEM> 
+muestra información básica sobre
+		    <APPLICATION>Disco libre G</APPLICATION>,
+como el nombre del autor y la versión.
+		  </PARA>
+		</LISTITEM>
+	      </ITEMIZEDLIST>
+
+	      </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+	</VARIABLELIST>
+
+      <SECT3 ID="gdiskfree-customization">  
+	<TITLE>Personalización de Disco libre G</TITLE> 
+	<PARA>Para modificar los parámetros por omisión, seleccione el comando 
+<GUIMENUITEM>Propiedades</GUIMENUITEM> en el menú de <GUIMENU>Configuración</GUIMENU>. 
+Esto arranca el formulario de <INTERFACE>Configuración general</INTERFACE>, mostrado en 
+<XREF LINKEND="gdiskfree-shot2">. </XREF></PARA>
+
+	<FIGURE ID="gdiskfree-shot2">	  <TITLE>Formulario de configuración general de <APPLICATION>Disco libre G</APPLICATION></TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Formulario de configuración general de Disco libre G</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gdiskfree-prefs" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+
+    
+	<SECT4 ID="gdiskfree-sync">	  <TITLE>Invocando sync</TITLE>
+	  <PARA>La casilla <GUILABEL>Invocar sync antes de obtener la información de uso</GUILABEL> asegura que 
+<APPLICATION>Disco libre G</APPLICATION> disponga de los datos mas al día cuando se muestra la 
+información. En circunstancias de normales de funcionamiento, el núcleo no siempre escribe inmediatamente 
+los datos en los discos, guardándolos en un tampón de memoria y escribiéndolos después de forma periódica 
+en los discos para acelerar las operaciones. Marcando la casilla se obliga al núcleo a actualizar los ficheros
+de disco antes de que se actualice la presentación de <APPLICATION>Disco libre G</APPLICATION>, asegurando que
+la información este al día. Esto se consigue a costa de reducir sensiblemente las prestaciones. </PARA>
+
+	</SECT4>
+
+	<SECT4>	  <TITLE>Puntos de montaje</TITLE>
+    
+  
+	  <PARA>Marcando la casilla <GUILABEL>Mostrar puntos de montaje</GUILABEL> se muestra el punto de montaje 
+debajo de cada dispositivo. Es el equivalente al directorio en el que aparece el contenido del disco 
+en su sistema de ficheros. </PARA>
+
+	</SECT4>
+	<SECT4>	  <TITLE>Orientación</TITLE>
+    
+	  <PARA>La <GUILABEL>Orientación del dial</GUILABEL> puede la apariencia de la presentación 
+de <APPLICATION>Disco libre G</APPLICATION> , bien alineando los diales horizontalmente, 
+bien apilándolos verticalmente. </PARA>
+
+	</SECT4>
+	<SECT4>	  <TITLE>Periodo de actualización</TITLE>
+    
+	  <PARA>El <GUILABEL>Periodo de actualización</GUILABEL> determina el tiempo , en segundos, 
+entre actualizaciones de <APPLICATION>Disco libre G</APPLICATION>. Puede cambiar el valor pulsando el botón 
+izquierdo del ratón sobre la barra deslizante, desplazándola a la izquierda o a la 
+derecha. el periodo de actualización, en segundos, se muestra debajo de la barra deslizante. </PARA>
+
+	  <WARNING>	    <PARA>Dar 1 segundo a este periodo es probablemente una mala idea, ya que su ordenador dedicara 
+una parte sustancial de su tiempo y energía actualizando <APPLICATION>Disco libre G</APPLICATION>, en lugar de
+realizar trabajo real. </PARA>
+	  </WARNING>
+	</SECT4>
+
+	<SECT4>	  <TITLE>Geometría</TITLE>
+	  <PARA>Puede también controlar el tamaño y posición de <APPLICATION>Disco libre G</APPLICATION> al arrancar desde la linea de ordenes 
+con la opción de linea de ordenes <COMMAND>geometry</COMMAND>.
+<COMMAND>gdiskfree --geometry 200x300+30+50</COMMAND> , por
+ejemplo, creará la ventana de <APPLICATION>Disco libre G</APPLICATION> con 200 puntos de ancho y 300 puntos de alto, 
+con la esquina superior izquierda situada a 30 puntos horizontales y 50 puntos verticales 
+de la esquina superior izquierda de su pantalla. </PARA>
+	</SECT4>
+
+
+
+      </SECT3>
+    </SECT2>
+
+
+
+    <SECT2 ID="gshutdown">      <TITLE>Apagar o reiniciar</TITLE>
+      <PARA><APPLICATION>Apagar</APPLICATION> es un programa para apagar el ordenador.
+
+        <FIGURE ID="gshutdownfig">	  <TITLE>Gshutdown</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Apagar o reiniciar</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gshutdownfig" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+      </PARA>
+
+      <SECT3 ID="gshutdownusage">	<TITLE>Uso de Apagar</TITLE>
+
+
+	<PARA><APPLICATION>Apagar</APPLICATION> puede arrancarse seleccionado 
+<GUIMENUITEM>Apagar o reiniciar</GUIMENUITEM> en el submenú
+<GUISUBMENU>Sistema</GUISUBMENU> en el <GUIMENU>Menú principal</GUIMENU>,
+o ejecutando el comando <COMMAND>gshutdown</COMMAND> desde el interprete de
+comandos.</PARA>
+<PARA>Si quiere apagar el ordenador, elija "apagar" en lugar de "reiniciar", y
+pulse "Aceptar". Espere unos momentos para que el ordenador se prepare, después 
+apágelo. Si su ordenador dispone de funciones de gestión avanzada de potencia, 
+como muchos portátiles y algunos ordenadores de sobremesa, puede no necesitar pulsar
+el botón de apagado.</PARA>
+
+      <PARA>Para reiniciar, simplemente elija "Reiniciar", pulse "Aceptar", y espere
+ </PARA>
+
+      </SECT3>
+
+      <SECT3 ID="gshutdownadvanced">	<TITLE>Características avanzadas</TITLE>
+    
+
+	<FIGURE ID="gshutdownadvancefig">	  <TITLE>Ventana avanzada de <APPLICATION>Apagar</APPLICATION></TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Ventana avanzada de "Apagar"</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gshutdown-advanced" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+
+
+	<PARA>Usando la carpeta avanzada, puede cambiar a cualquier nivel de ejecución.
+        </PARA>
+
+
+
+      </SECT3>
+      
+      <SECT3 ID="gshutdownpreferences">	<TITLE>Preferencias de apagar</TITLE>
+  
+	<FIGURE ID="gshutdownprefsfigure">	  <TITLE>Ventana de preferencias de <APPLICATION>Apagar</APPLICATION></TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Ventana de preferencias de apagar</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gshutdown-preferences" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+
+ 
+
+	<PARA>Existe también un formulario de preferencias que permite configurar los parámetros del
+comando de apagado. Los detalles sobre los niveles de ejecución y los efectos de varios
+parámetros del comando de apagado puede encontrarlos en la documentación de su ordenador.
+Si no está familiarizado con los detalles de estas operaciones, deberla limitarse a la carpeta
+Fácil. Si entiende de estas cosas, la carpeta avanzada se explica por si misma.</PARA>
+
+      </SECT3>
+
+
+
+    </SECT2>
+
+
+    <SECT2>      <TITLE>Información del sistema</TITLE>
+      <PARA>El programa <APPLICATION>Información del sistema</APPLICATION>,
+      <APPLICATION>Guname</APPLICATION>, muestra una variada información básica
+      del sistema.
+
+        <FIGURE ID="gunamefig">	  <TITLE>Guname</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Información del sistema</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gunamefig" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+      </PARA>
+
+      <SECT3 ID="gunameusage">	<TITLE>Uso del programa Información del sistema</TITLE>
+	<PARA>Para ejecutar <APPLICATION>Guname</APPLICATION>, elija
+	<GUIMENUITEM>Información del sistema...</GUIMENUITEM> en el submenú
+	<GUISUBMENU>Utilidades</GUISUBMENU> del 
+	<GUIMENU>Menú principal</GUIMENU>, o teclee
+	<COMMAND>guname</COMMAND> en el interprete de comandos.</PARA>
+
+	<PARA>En la ventana principal, <APPLICATION>Guname</APPLICATION>
+muestra la distribución de sistema que usa el ordenador, el sistema operativo,
+la versión de la distribución, la versión del sistema operativo, la revisión
+del sistema operativo, el tipo de procesador, el nombre del ordenador, el nombre
+del usuario que invoco <APPLICATION>Guname</APPLICATION>, el nombre de la 
+pantalla X y el estado del sistema: tiempo en servicio (tiempo transcurrido desde
+la ultima vez que se arranco el ordenador), el número de usuarios actuales y
+tres números que representan la "carga" - la carga media del sistema en el ultimo
+minuto (el primer valor de carga), en los últimos cinco minutos y en los últimos
+quince minutos.</PARA>
+
+  
+
+	<PARA>La ventana principal incluye un campo de texto donde va deslizándose una lista
+de muchos de los colaboradores del proyecto Gnome.</PARA>
+
+	<PARA>La ventana principal también incluye tres botones que permiten realizar
+las siguientes acciones:
+<LINK LINKEND="guname-detailed-information">        <GUIBUTTON>Información detallada...</GUIBUTTON></LINK>,
+        <LINK LINKEND="guname-saveormail"><GUIBUTTON>Guardar la información a un archivo...</GUIBUTTON></LINK>, y <LINK LINKEND="guname-saveormail"><GUIBUTTON>Enviar por correo electrónico</GUIBUTTON></LINK>.</PARA>
+
+      </SECT3>
+
+      <SECT3 ID="guname-detailed-information">	<TITLE>Información detallada de Guname</TITLE>
+	<PARA>La <GUILABEL>ventana de información detallada</GUILABEL>
+proporciona datos sobre en uso de disco, memoria y CPU.
+        </PARA>
+  
+	<SECT4 ID="diskinfo">	  <TITLE>Información de disco</TITLE>
+
+	  <FIGURE ID="diskinfo-fig">	    <TITLE>Información de disco de<APPLICATION>Guname</APPLICATION></TITLE>
+	    <SCREENSHOT>	      <SCREENINFO>Información de disco del sistema</SCREENINFO>
+	      <GRAPHIC FILEREF="./figs/guname-diskinfo" FORMAT="png" SRCCREDIT="John Fleck">              </GRAPHIC>
+	    </SCREENSHOT>
+	  </FIGURE>
+
+	  <PARA>En la ventana de <GUILABEL>Información de disco</GUILABEL>,
+	  <APPLICATION>Guname</APPLICATION> proporciona la contabilidad de la
+cantidad de espacio de cada sistema de ficheros y de como esta ocupado.
+          </PARA>
+
+	  <PARA>Podrá ver un cuadro de cada dispositivo de disco y/o partición de disco montados
+en el ordenador. La posición de la barra mostrada y los números sobre y a su izquierda
+indican la cantidad de espacio usado y disponible en el disco, y por quien esta ocupado. </PARA>
+
+	  <PARA>La etiqueta en la parte superior de cada cuadro identifica el dispositivo o partición que se
+esta midiendo. <FILENAME>/dev/hda1</FILENAME>, por ejemplo, mide la primera partición del
+primer disco duro (hda). <FILENAME>/dev/fd0</FILENAME> indica que se trata del primer
+disquete. Otros posibles identificadores son <FILENAME>/dev/sda</FILENAME>, para el
+primer disco duro <ACRONYM>SCSI</ACRONYM>, y 
+	  <FILENAME>/dev/sga</FILENAME> para el primer dispositivo 
+	  <ACRONYM>SCSI</ACRONYM> genérico.</PARA>
+     
+	</SECT4>
+
+	<SECT4 ID="guname-memory-information">	  <TITLE>Información de memoria</TITLE>
+	  <FIGURE ID="guname-memoryinfo">	    <TITLE>Información de memoria de <APPLICATION>Guname</APPLICATION></TITLE>
+	    <SCREENSHOT>	      <SCREENINFO>Información de memoria del sistema</SCREENINFO>
+	      <GRAPHIC FILEREF="./figs/guname-memoryinfo" FORMAT="png" SRCCREDIT="John Fleck">              </GRAPHIC>
+	    </SCREENSHOT>
+	  </FIGURE>
+
+	  <PARA>La ventana <GUILABEL>Información de memoria</GUILABEL>
+proporciona detalla de cuanta memoria dispone el ordenador, y como esta utilizada,
+incluyendo la cantidad actualmente en uso.</PARA>
+
+
+	</SECT4>
+
+	<SECT4 ID="cpu-information">	  <TITLE>Información de la CPU del sistema</TITLE>
+	  <FIGURE ID="cpuinfo-fig">	    <TITLE>Información de la CPU de <APPLICATION>Guname</APPLICATION></TITLE>
+	    <SCREENSHOT>	      <SCREENINFO>Información de la CPU</SCREENINFO>
+	      <GRAPHIC FILEREF="./figs/guname-cpuinfo" FORMAT="png" SRCCREDIT="John Fleck">              </GRAPHIC>
+	    </SCREENSHOT>
+	  </FIGURE>
+
+	  <PARA>La ventana de <GUILABEL>Información de la CPU</GUILABEL> indica
+el tipo de procesador del ordenador, el fabricante, su velocidad y otros detalles 
+sobre su funcionamiento.</PARA>
+	  
+	</SECT4>
+
+	<SECT4 ID="guname-saveormail">	  <TITLE>Guardar o enviar por correo la información</TITLE>
+	  <PARA>La ventana principal de <APPLICATION>Guname's</APPLICATION>
+ofrece dos maneras de salvar la información para su posterior uso.</PARA>
+	
+<PARA>Al pulsar el botón <GUIBUTTON>Guardar la información a un archivo...</GUIBUTTON>
+se abre un ventana estándar de salvado, en la que se pide el nombre y directorio donde
+salvar el fichero. <APPLICATION>Guname</APPLICATION> creara un fichero de texto con
+toda la información básica contenida en la ventana principal de la aplicación.</PARA>
+
+<PARA><APPLICATION>Guname</APPLICATION> ofrece también la opción de enviar la información del
+sistema por correo electrónico. Al pulsar el botón 
+<GUIBUTTON>Enviar por correo electrónico</GUIBUTTON> se abre un formulario en el que se pide
+la dirección de correo electrónico donde se desea enviar la información.</PARA>
+
+	</SECT4>
+
+
+      </SECT3>
+    </SECT2>
+
+
+
+    <SECT2>      <TITLE>Lista de usuarios</TITLE>
+<PARA>El programa <APPLICATION>Lista de usuarios</APPLICATION>, 
+<APPLICATION>Gw</APPLICATION>, presenta una lista de todos los usuarios
+actualmente presentados en la maquina, acompañada de información sobre 
+lo que están haciendo. También le da la oportunidad de comunicarse con ellos.
+
+        <FIGURE ID="gwfig">	  <TITLE>Lista de usuarios</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Lista de usuarios</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gwfig" FORMAT="png" SRCCREDIT="John Fleck">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+      </PARA>
+
+ 
+
+      <SECT3 ID="gwusage">	<TITLE>Uso del programa Lista de usuarios</TITLE>
+	<PARA>Para ejecutar <APPLICATION>Gw</APPLICATION>, elija
+	<GUIMENUITEM>Lista de usuarios</GUIMENUITEM> en el submenú
+	<GUISUBMENU>Utilidades</GUISUBMENU> en el 
+	<GUIMENU>Menú principal</GUIMENU>, o teclee
+        <COMMAND>gw</COMMAND> en el interprete de comandos.
+        </PARA>
+
+	<PARA>Al arrancar, <APPLICATION>Gw</APPLICATION> muestra una lista con todos
+los usuarios.</PARA>
+
+     
+
+	<TIP>	  <TITLE>Truco</TITLE>
+	  <PARA><APPLICATION>Gw</APPLICATION> no actualiza las estadísticas de forma
+automática. Deberá pulsar <GUIBUTTON>Actualizar información</GUIBUTTON> para que el
+programa presente la información mas reciente.</PARA>
+	</TIP>
+
+
+
+	<PARA>Los datos presentados incluyen:
+        <ITEMIZEDLIST>	    
+	    <LISTITEM>	      <PARA><GUILABEL>USER</GUILABEL>  el nombre del usuario conectado.
+	      </PARA>
+	    </LISTITEM>
+
+	    <LISTITEM>	      <PARA><GUILABEL>TTY</GUILABEL>  El terminal desde el cual se presento el usuario.
+	      </PARA>
+	    </LISTITEM>
+
+	    <LISTITEM>	      <PARA><GUILABEL>FROM</GUILABEL>  
+El ordenador remoto desde el que se presento el usuario, o 
+X display terminal si el usuario es local.
+	    </PARA>
+	    </LISTITEM>
+	    <LISTITEM>	      <PARA><GUILABEL>LOGIN@</GUILABEL>  
+El tiempo que lleva conectado el usuario.
+	    </PARA>
+	    </LISTITEM>
+
+	    <LISTITEM>	      <PARA><GUILABEL>IDLE</GUILABEL>  
+La cantidad de tiempo ocioso de CPU asociado a esta conexión.
+	    </PARA>
+	    </LISTITEM>
+	    
+	    <LISTITEM>	      <PARA><GUILABEL>JCPU</GUILABEL>  
+La cantidad de tiempo de CPU usado por todos los procesos asociados con la conexión.
+	    </PARA>
+	    </LISTITEM>
+	    <LISTITEM>	      <PARA><GUILABEL>PCPU</GUILABEL>  
+El tiempo de CPU asociado con el proceso mostrado en el campo <GUILABEL>WHAT</GUILABEL> 
+	      .</PARA>
+	    </LISTITEM>
+
+	    <LISTITEM>	      <PARA><GUILABEL>WHAT</GUILABEL>  
+El comando ejecutado en este momento por el usuario.
+	    </PARA>
+	    </LISTITEM>
+	    
+	  </ITEMIZEDLIST>
+
+      </PARA>
+
+      </SECT3>
+
+      <SECT3 ID="gwmenubar">	<TITLE>Menús del programa Lista de usuarios</TITLE>
+	<PARA>La barra de menú, localizada en la parte superior de la <INTERFACE>ventana principal</INTERFACE>,
+contiene los siguientes menús: 
+   </PARA>
+
+	<VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENU>Archivo</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>       Este menú contiene:
+                <MENUCHOICE>		  <SHORTCUT>		    <KEYSYM>Alt-G</KEYSYM>
+		  </SHORTCUT>
+		  <GUIMENUITEM>Guardar</GUIMENUITEM>
+		</MENUCHOICE>, que no hace nada de momento, 
+                y
+                <MENUCHOICE>		  <SHORTCUT>		    <KEYSYM>Ctrl-Q</KEYSYM>
+		  </SHORTCUT>
+		  <GUIMENUITEM>Salir</GUIMENUITEM>
+		</MENUCHOICE>
+                que abandona el programa.
+      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENU>Configuración</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>       Este menú contiene:
+     
+                <LINK LINKEND="gw-prefs">                 <MENUCHOICE>		    <SHORTCUT>		      <KEYSYM>Ctrl-P</KEYSYM>
+		    </SHORTCUT>
+          <GUIMENUITEM>Preferencias</GUIMENUITEM>
+	      </MENUCHOICE></LINK>
+abre un formulario que permite crear un menú desde el que ejecutar otros comandos,
+como puede ser <APPLICATION>talk</APPLICATION>, desde la interfaz de <APPLICATION>Gw's</APPLICATION>
+para comunicar con otros usuarios de la maquina.  
+         </PARA>
+        </LISTITEM>
+       
+    </VARLISTENTRY>
+
+   
+
+    <VARLISTENTRY>     <TERM><GUIMENU>Ayuda</GUIMENU></TERM>
+     <LISTITEM>      <PARA>       Este menú contiene:
+       <ITEMIZEDLIST>        <LISTITEM>         <PARA>          <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+          Muestra este manual.
+         </PARA>
+        </LISTITEM>
+
+        <LISTITEM>         <PARA>          <GUIMENUITEM>Acerca de</GUIMENUITEM>  
+muestra información acerca de <APPLICATION>Gw</APPLICATION>, como el nombre
+del autor y el numero de versión de la aplicación.
+         </PARA>
+        </LISTITEM>
+       </ITEMIZEDLIST>
+
+      </PARA>
+     </LISTITEM>
+    </VARLISTENTRY>
+   </VARIABLELIST>
+  </SECT3>
+
+
+ 
+ <SECT3 ID="gw-prefs">  <TITLE>Personalización del programa Lista de usuarios</TITLE>
+<PARA>Pulsando el botón derecho sobre la ventana principal de <APPLICATION>Gw's</APPLICATION>,
+se abrirá un menú desplegable con los comandos que pueden usarse para comunicar con otros
+usuarios. Pero antes de hacerlo, se debe configurar los valores de las preferencias del programa
+para crear el menú. </PARA>
+
+    <PARA>Para conseguirlo, seleccione <GUIMENUITEM>Preferencias</GUIMENUITEM> en el menú
+<GUIMENU>Configuración</GUIMENU>. Esto abrirá el formulario <INTERFACE>elementos de menú</INTERFACE>,
+mostrado en <XREF LINKEND="gw-preferences-fig">. 
+  </XREF></PARA>
+
+
+  <FIGURE ID="gw-preferences-fig">   <TITLE>Formulario de preferencias del programa <APPLICATION>Lista de usuarios</APPLICATION></TITLE>
+   <SCREENSHOT>    <SCREENINFO>Formulario de preferencias de la lista de usuarios</SCREENINFO>
+    <GRAPHIC FILEREF="./figs/gw-menuitems" FORMAT="png" SRCCREDIT="John Fleck">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+<PARA>El cuadro principal de la ventana principal <GUILABEL>Elementos de Menú</GUILABEL> 
+contiene la lista de comandos que pueden verse en el menú de botón derecho. 
+Si el cuadro esta esta vació, pulse
+el botón  <GUIBUTTON>Añadir</GUIBUTTON> para crear una lista de comandos básicos
+útiles en esta situación.</PARA>
+
+    <PARA>Cada comando tiene un campo <GUILABEL>Nombre</GUILABEL> y un campo
+<GUILABEL>Comando</GUILABEL>. El <GUILABEL>Nombre</GUILABEL> es la palabra
+que aparecerá en el menú de botón derecho de la pantalla principal de
+<APPLICATION>GW</APPLICATION>. El campo <GUILABEL>Linea de comando</GUILABEL>
+es el comando que se ejecutara.</PARA>
+
+    <PARA>Por ejemplo, El comando predefinido <COMMAND>talk</COMMAND>, uno de los
+incluidos por omisión cuando se pulsa <GUIBUTTON>Añadir algunos valores de entorno</GUIBUTTON>,
+funciona de la siguiente manera:
+En la ventana principal de <APPLICATION>Gw</APPLICATION>, pulse sobre el nombre de la
+persona con la que charlar, pulse entonces el botón derecho en la ventana principal de
+<APPLICATION>Gw</APPLICATION> y pulse en el ítem de menú <MENUCHOICE>	<GUIMENUITEM>talk</GUIMENUITEM>
+      </MENUCHOICE>. <APPLICATION>Gw</APPLICATION> ejecutara el comando
+<COMMAND>xterm -e talk %u %t</COMMAND>, abriendo un <APPLICATION>xterm</APPLICATION> e
+iniciando una sesión <APPLICATION>talk</APPLICATION> con el usuario y terminal elegido en
+la ventan principal, y definida en la linea de comando por las variables 
+    <VARNAME>%u</VARNAME> y <VARNAME>%t</VARNAME>.</PARA>
+
+	<PARA>Para añadir un comando, pulse <GUIBUTTON>añadir</GUIBUTTON> y teclee
+en los campos de texto nombre de comando y comando en la parte superior 
+de la ventana. Para borrar un comando, pulse sobre el comando que desea
+borrar, y después el botón <GUIBUTTON>borrar</GUIBUTTON>.</PARA>
+
+   
+	<PARA>Después de realizar todos los cambios deseados, pulse <GUIBUTTON>Aplicar</GUIBUTTON>
+para activar los cambios, o <GUIBUTTON>Aceptar</GUIBUTTON> para activarlos y cerrar
+el formulario <INTERFACE>Preferencias</INTERFACE>. Para cancelar los cambios y
+volver a los valores iniciales, pulse el botón 
+<GUIBUTTON>Aplicar</GUIBUTTON>. </PARA>
+
+
+      </SECT3>
+    
+    </SECT2>
+
+
+    <SECT2 ID="idetool-intro">      <TITLE>Herramienta IDE</TITLE>
+      
+      <PARA>La <APPLICATION>herramienta IDE</APPLICATION> es una herramienta para visualizar y
+ajustar las características de los dispositivos IDE, tales que discos duros y
+CDroms. Las características de los discos duros que presenta la 
+<APPLICATION>herramienta IDE</APPLICATION> incluyen el modelo, la geometría y
+la «cache». Permite controlar la configuración de los dispositivos, por ejemplo
+cuando usa DMA o IRQ enmascarada.
+      </PARA>
+      
+      
+      <PARA>Para ejecutar la <APPLICATION>herramienta IDE</APPLICATION>, elija 
+	<GUIMENUITEM>Herramienta de dispositivos IDE</GUIMENUITEM> en el
+submenú <GUISUBMENU>Utilidades</GUISUBMENU> del <GUIMENU>Menú principal</GUIMENU>,
+o teclee <COMMAND>idetool</COMMAND> en el indicador del interprete de comandos.
+      </PARA>
+      
+    </SECT2>
+
+
+
+    
+    
+    
+    <SECT2 ID="idetool-viewing">      <TITLE>Presentación de la información de los dispositivos IDE
+      </TITLE>
+      <PARA>La <APPLICATION>herramienta IDE</APPLICATION> presenta una 
+<INTERFACE>solapa</INTERFACE> como interfaz para cada dispositivo IDE del
+sistema, tal y como se puede ver en  <XREF LINKEND="idetool-mainwindow-fig">.
+
+	  
+	  
+	  <FIGURE ID="idetool-mainwindow-fig">	    <TITLE>Ventana principal de la herramienta IDE</TITLE>
+	    <SCREENSHOT>	      <SCREENINFO>Ventana principal de la herramienta IDE</SCREENINFO>
+	      <GRAPHIC FILEREF="./figs/idetool" FORMAT="png" SRCCREDIT="muet">	      </GRAPHIC>
+	    </SCREENSHOT>
+	  </FIGURE>
+	  
+      </XREF></PARA>
+      
+      <PARA>Para ver las características de un determinado dispositivo IDE, elija la correspondiente
+<INTERFACE>solapa</INTERFACE>.
+      </PARA>
+      
+      <NOTE>	<TITLE>Nota</TITLE>
+	<PARA>Los dispositivos IDE se identifican generalmente como
+	  <GUILABEL>hda</GUILABEL>(maestro en la primera controladora IDE),
+	  <GUILABEL>hdb</GUILABEL>(esclavo en la primera controladora IDE),
+          <GUILABEL>hdc</GUILABEL>(maestro en la segunda controladora IDE),
+	  y <GUILABEL>hdd</GUILABEL>(esclavo en la segunda contoladora IDE).
+(podría haber mas, siguiendo la misma regla para el nombrado, en ordenadores con 
+mas de dos controladoras IDE, sin embargo esto no es habitual).
+	</PARA>
+      </NOTE>
+      
+      <PARA>Para cada dispositivo, se presenta la siguiente información): 
+	<ITEMIZEDLIST>	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Modelo</GUIMENUITEM> 
+Es el modelo del dispositivo. Indica típicamente el fabricante y el numero de modelo
+del dispositivo. Los dispositivos que no sean discos duros se etiquetan generalmente a su
+manera (eje. <QUOTE>TOSHIBA DVD-ROM SD-M1212</QUOTE> o <QUOTE>HP CD-Writer+ 7100</QUOTE>).
+	    </PARA>
+	  </LISTITEM>
+
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Código interno (Firmware)</GUIMENUITEM> 
+Es el numero de versión del código interno del dispositivo. La mayoría de la gente
+no tendrá necesidad de conocer que versión de código interno están ejecutando.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Numero de serie</GUIMENUITEM> 
+Es el numero de serie del dispositivo. Puede ser útil con vistas a la garantía y
+al servicio técnico.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Geometría</GUIMENUITEM> 
+(Solo para los discos duros). Muestra el numero de cilindros, cabezas y sectores del 
+dispositivos.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Cache</GUIMENUITEM> 
+Es la cantidad de «cache» del dispositivo.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Estado</GUIMENUITEM> 
+Muestra el estado del modo de operación, que puede ser  
+	      <GUILABEL>desconocido</GUILABEL>, <GUILABEL>Activo/Inactivo</GUILABEL>,
+	      <GUILABEL>respaldo</GUILABEL>, o <GUILABEL>espera</GUILABEL>.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Modo DMA</GUIMENUITEM> 
+Muestra si el DMA esta <GUILABEL>Activado</GUILABEL> o
+<GUILABEL>Desactivado</GUILABEL>.
+	    </PARA>
+	  </LISTITEM>
+
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Modo IO</GUIMENUITEM> 
+Muestra si el modo I/O esta fijado en 
+	      <GUILABEL>16-bit</GUILABEL> o <GUILABEL>32-bit</GUILABEL>.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>IRQ enmascarado</GUIMENUITEM> 
+Indica si el dispositivo esta autorizado a enmascarar otras interrupciones.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Multisector</GUIMENUITEM> 
+Indica si el dispositivo puede enviar datos de varios sectores en cada
+interrupción.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>	      <GUIMENUITEM>Al reiniciar</GUIMENUITEM> 
+Indica si el dispositivos puede conservar algunas características
+(<GUILABEL>Modo DMA</GUILABEL>, <GUILABEL>Multisector</GUILABEL>, y 
+<GUILABEL>IRQ enmascarada</GUILABEL>) cuando se realiza una reinicialización
+por software del dispositivo. 
+	    </PARA>
+	  </LISTITEM>
+	  
+    </ITEMIZEDLIST>
+      </PARA>
+      
+    </SECT2>
+    
+    
+    
+    <SECT2 ID="idetool-configuring">      <TITLE>Configuración de dispositivos IDE</TITLE>
+      <PARA>Algunas de las características IDE (modo DMA, IRQ enmascarada, y al
+reiniciar) puede configurarse usando la <APPLICATION>herramienta IDE</APPLICATION>.
+Para modificar el valor de una de estas propiedades, basta pulsar dos veces sobre el
+ítem. De esta forma se cambiara el valor de la característica concreta.
+      </PARA>
+      
+      <WARNING>	<TITLE>Aviso: Solo los usuarios expertos deberían cambiar las características IDE
+	</TITLE>
+	<PARA>Configuraciones erróneas en los dispositivos IDE pueden causar serios problemas
+de funcionamiento en el sistema. Asegúrese de aprender el correcto uso de cada
+característica y los riesgos habituales de su configuración. La paginas de manual
+del comando <COMMAND>hdparm</COMMAND> pueden ser sumamente instructivas para
+aprender mas sobre este tema. Puede ver estas paginas de manual bien desde la
+la sección <GUILABEL>Paginas de manual</GUILABEL> (subsección 
+<GUILABEL>administración</GUILABEL>) de <APPLICATION>Sistema de ayuda Gnome</APPLICATION>,
+o bien tecleando <COMMAND>man hdparm</COMMAND> en el indicador del interprete de comandos.    
+	</PARA>
+      </WARNING>
+    </SECT2>
+  </SECT1></CHAPTER>

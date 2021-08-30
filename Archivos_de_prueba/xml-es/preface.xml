@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<PREFACE ID="introduction">    <TITLE>Introducción</TITLE> 
+
+    <SECT1 ID="what"> 
+      <TITLE>¿Qué es Evolution, y qué puede hacer por mi?</TITLE>
+      <PARA>       La información no sirve a menos que este organizada y sea accesible.
+       Ni si quiera se merece ese nombre si no puede mirarla y estar
+       <EMPHASIS>informado</EMPHASIS>.
+       El objetivo de <APPLICATION>Evolution</APPLICATION> es hacer que las
+       tareas de guardar, organizar, y obtener su información personal sean
+       más fáciles, para que pueda trabajar y comunicarse con otros. Esto
+       es, programa de <GLOSSTERM LINKEND="groupware">trabajo en grupo</GLOSSTERM> altamente
+       evolucionado, una parte integral del escritorio conectado a Internet.
+       Por dentro, es una potente base de datos. Por fuera, es una
+       herramienta para ayudarle ha hacer su trabajo.
+      </PARA>
+      <PARA>        Como parte de proyecto GNOME,
+        <APPLICATION>Evolution</APPLICATION> is Software Libre.  El
+        programa y su código fuente están liberados bajo los términos de
+        la <ULINK TYPE="help" URL="gnome-help:gpl"><CITETITLE>General Public License "Licencia Pública
+        General" (GPL)</CITETITLE></ULINK> de GNU, y la
+        documentación está bajo la <ULINK TYPE="help" URL="gnome-help:fdl"><CITETITLE>Free Documentation
+        License "Licencia Libre de Documentación"</CITETITLE></ULINK>
+        (FDL). Para más información acerca de la GPL y de la FDL,
+        visite el sitio web de la Free Software Foundation "Fundación para
+        el Software Libre" en <ULINK URL="http://www.fsf.org">http://www.fsf.org</ULINK>.
+      </PARA>
+      <PARA>        <NOTE>           <TITLE>Esta es una liberación de prueba</TITLE>
+           <PARA>             <APPLICATION>Evolution</APPLICATION> no esta completa, y
+             todavía tiene muchos fallos.  Por favor ayúdenos a mejorarla
+             informandonos acerca de ellos.  Debe hacerlo enviando reportes
+             de fallo con la <APPLICATION>Herramienta de Reportes de
+             Fallo</APPLICATION> de GNOME (conocida como
+             <COMMAND>bug-buddy</COMMAND> en la línea de comandos).
+          </PARA>
+        </NOTE>
+      </PARA>
+
+      <PARA>        <APPLICATION>Evolution</APPLICATION> le puede ayudar a trabajar en
+        grupo encargandose del correo, direcciones y otra información
+        de contacto, y uno o más calendarios.  Puede hacerlo en uno o varios
+        ordenadores, conectados directamente o a traves de una red, para una
+        persona o para grandes grupos.
+      </PARA>
+      <PARA>        El proyecto de <APPLICATION>Evolution</APPLICATION> tiene cuatro
+        objetivos principales:
+
+        <ITEMIZEDLIST>	  <LISTITEM>	    <PARA>             La aplicación debe ser <EMPHASIS>al mismo tiempo potente
+             y facil de usar</EMPHASIS>. En otras palabras, necesita una
+             interfaz familiar e intuitiva que los usuarios puedan
+             personalizar a su gusto, y los usuarios deben tener acceso a
+             atajos para tareas complicadas.
+            </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA>              <APPLICATION>Evolution</APPLICATION> debe cumplir y
+              sobrepasar los estandares impuestos por otros programas de
+              trabajo en grupo.  Debe tener soporte para la mayor parte de
+              los <GLOSSTERM LINKEND="protocol">protocolos</GLOSSTERM>
+              de red para poder integrarse sin problemas con el hardware
+              y los entornos de red existentes.
+            </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA>               El proyecto debe apoyar a los estandares abiertos y estar
+               abierto a la expansion, para que se pueda convertir en una
+               plataforma de desarollo tanto como en una aplicación.
+               Desde los guiones más simples a la programación de red y
+               componentes más compleja,
+               <APPLICATION>Evolution</APPLICATION> debe ofrecer a los
+               desarrolladores un entorno para el desarrollo de aplicaciones
+               de vanguardia.
+            </PARA>
+	  </LISTITEM>
+	  <LISTITEM>	    <PARA>               Los datos deben ser seguros:
+               <APPLICATION>Evolution</APPLICATION> no debe perder correo,
+               corromper buzones u otra información, ejecutar
+               <GLOSSTERM LINKEND="script">guiones</GLOSSTERM> de
+               instruciones arbitrarios o borrar archivos de su disco duro.
+            </PARA>
+          </LISTITEM>
+	</ITEMIZEDLIST>
+      </PARA>
+      <PARA>        <APPLICATION>Evolution</APPLICATION> está diseñada para hacer la
+        mayoría de las tareas diarias más rápido.  Por ejemplo, solo
+        requiere una o dos pulsaciones introducir una nueva cita o una
+        tarjeta que le hayan enviado por correo, o enviar un correo a un
+        contacto o a una cita.  <APPLICATION>Evolution</APPLICATION>
+        hace las vistas más rápidas y eficientes, para que las búsquedas
+        sean más rápidas y el uso de la memoria sea menor.  Las personas
+        que reciben mucho correo apreciarán las características avanzadas
+        como las <LINK LINKEND="usage-mail-organize-vFolders">Carpetas Virtuales</LINK>,
+        que le permiten guardar búsquedas como si fueran carpetas de correo
+        normales.
+      </PARA>
+
+  </SECT1>
+
+  <SECT1 ID="aboutbook">      <TITLE>Acerca de este Libro</TITLE>
+    
+      <PARA>        Esta versión de la Guía de Usuario de
+        <APPLICATION>Evolution</APPLICATION> es un
+        <EMPHASIS>borrador</EMPHASIS>. Describe la versión 0.6 del
+        programa.  Le faltan grandes piezas de información, y muchas de
+        las arecteristicas que describe no están implementadas.
+        Todo el contenido esta sujeto a cambios, especialmente si usted
+        colabora.  Por favor ebvie comentarios sobre la guía a
+        <EMAIL>aaron@ximian.com</EMAIL> y sobre la traducción a
+        <EMAIL>hector@scouts-es.org</EMAIL>. Si le gustaría colaborar en la
+        guía por favor pongase en contacto conmigo o vea el <ULINK URL="http://developer.gnome.org/projects/gdp">sitio
+        web</ULINK> del proyecto de Documentación de GNOME.  Este párrafo
+        será eliminado en futuras versiones del manual.
+      </PARA>
+    
+
+      <PARA>        Thite libro está dividido en dos partes, con varios apendices.
+        La primera parte es una <LINK LINKEND="usage">visita
+        guiada</LINK> le explicará como usar
+        <APPLICATION>Evolution</APPLICATION>.  Si es nuevo en el uso de
+        <APPLICATION>Evolution</APPLICATION> o de los programas de trabajo
+        en grupo en general, esta sección es para usted. La segunda sección,
+        cubriendo la <LINK LINKEND="config">configuración</LINK>, está
+        dirijida a usuarios más avanzados, pero cualquiera que quiera
+        cambiar el aspecto o el comportamiento de
+        <APPLICATION>Evolution</APPLICATION> se beneficiará de su lectura.
+        Ademas, hay una <LINK LINKEND="menuref">referencia de menús</LINK>
+        que describe casi todas las posibilidades que ofrece
+        <APPLICATION>Evolution</APPLICATION>.
+      </PARA>
+      <FORMALPARA>        <TITLE>Convenios Tipográficos</TITLE>
+	<PARA>          Algunas clases de palabras están escritas con una tipografía especial:
+          <SIMPLELIST>	    <MEMBER><APPLICATION>Aplicaciones</APPLICATION></MEMBER>
+	    <MEMBER><COMMAND>Comandos</COMMAND> escritos en la línea de comandos</MEMBER>
+	    <MEMBER><GUILABEL>Etiquetas</GUILABEL> de elementos de la interfaz</MEMBER>
+
+            <MEMBER> La opcciones de los menús aparecen así:
+                       <MENUCHOICE>                          <GUIMENU>Menú</GUIMENU>
+                          <GUISUBMENU>Sub-menú</GUISUBMENU> 
+                          <GUIMENUITEM>Opción del Menú</GUIMENUITEM>
+                     </MENUCHOICE>
+            </MEMBER>
+	    <MEMBER><GUIBUTTON>Butones</GUIBUTTON> que puede pulsar</MEMBER>
+            <MEMBER><USERINPUT>Cualquier cosa que
+            escribe</USERINPUT></MEMBER> <MEMBER><COMPUTEROUTPUT>Salida
+            del ordenador en texto</COMPUTEROUTPUT></MEMBER>
+            <MEMBER><GLOSSTERM LINKEND="apx-gloss">Palabras</GLOSSTERM>
+            que están definidas en el <XREF LINKEND="apx-gloss">.</XREF></MEMBER>
+	  </SIMPLELIST>
+        </PARA>
+      </FORMALPARA>
+  </SECT1>
+  <SECT1 ID="commontasks">    <TITLE>Referencia Rápida para Tareas Comunes</TITLE>
+    <PARA>        Puede que quiera copiar esta sección y pegarla a la pared de al lado
+        de su ordenador: es un resumen muy corto de la mayoría de las cosas
+        que querrá hacer con <APPLICATION>Evolution</APPLICATION>, y 
+        referencias a las secciones del libro donde encontrará descripciones
+        más profundas de dichas tareas.
+    </PARA>
+    <SECT2 ID="quickref-newthings">      <TITLE>Abriendo o Creando algo</TITLE>
+      <PARA>         Aquí están los atajos de teclado y las opciones del menú que
+         probablemente sean las que mas use:
+         
+          <VARIABLELIST>
+	  <VARLISTENTRY>	    <TERM>Crear una nueva carpeta</TERM>
+	    <LISTITEM>	      <PARA>                <MENUCHOICE><GUIMENU>Archivo</GUIMENU><GUISUBMENU>Nuevo</GUISUBMENU>
+                <GUIMENUITEM>Carpeta</GUIMENUITEM></MENUCHOICE> o
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>Shift </KEYCAP>
+		  <KEYCAP>C</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM>Crear un nuevo Atajo en la Barra de Evolution</TERM>
+	    <LISTITEM>	      <PARA>       
+                  <MENUCHOICE><GUIMENU>Archivo</GUIMENU>
+		  <GUISUBMENU>Nuevo</GUISUBMENU>
+		  <GUIMENUITEM>Atajo de Evolution</GUIMENUITEM> </MENUCHOICE> or 
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>Shift</KEYCAP>
+		  <KEYCAP>A</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM>Crear un nuevo mensaje de correo:</TERM>
+	    <LISTITEM>	      <PARA>                Use
+                <MENUCHOICE><GUIMENU>Archivo</GUIMENU><GUISUBMENU>Nuevo</GUISUBMENU><GUIMENUITEM>Mensaje de 
+                Correo</GUIMENUITEM>  </MENUCHOICE> o 
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>Shift </KEYCAP>
+		  <KEYCAP>M</KEYCAP>
+                </KEYCOMBO>
+              </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+	  <VARLISTENTRY>	    <TERM>Crear una nueva Cita</TERM>
+	    <LISTITEM>	      <PARA>       
+                  <MENUCHOICE><GUIMENU>Archivo</GUIMENU>
+		  <GUISUBMENU>Nuevo</GUISUBMENU>
+		  <GUIMENUITEM>Cita</GUIMENUITEM> </MENUCHOICE>  o 
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>Shift</KEYCAP>
+		  <KEYCAP>T</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM>Introducir un nuevo Contacto</TERM>
+	    <LISTITEM>	      <PARA>       
+                  <MENUCHOICE><GUIMENU>Archivo</GUIMENU>
+		  <GUISUBMENU>Nuevo</GUISUBMENU>
+		  <GUIMENUITEM>Contacto</GUIMENUITEM> </MENUCHOICE>  o 
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>Shift</KEYCAP>
+		  <KEYCAP>C</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+
+	  <VARLISTENTRY>	    <TERM>Crear una nueva Tarea</TERM>
+	    <LISTITEM>	      <PARA>       
+                  <MENUCHOICE><GUIMENU>Archivo</GUIMENU>
+		  <GUISUBMENU>Nuevo</GUISUBMENU>
+		  <GUIMENUITEM>Tarea</GUIMENUITEM>  </MENUCHOICE> o 
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>Shift</KEYCAP>
+		  <KEYCAP>T</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+	</VARIABLELIST>
+      </PARA>
+    </SECT2> 
+    <SECT2 ID="quickref-mail">      <TITLE>Enviar Tareas por Correo</TITLE>
+      <PARA>        Aquí están las tareas más comunes con el correo, y los atajos para manejarse por su buzón con el teclado en lugar de con el ratón:
+         <VARIABLELIST>	  <VARLISTENTRY>	    <TERM>Comprobar Correo</TERM>
+	    <LISTITEM>	      <PARA>                Pulse <GUIBUTTON>Obtener</GUIBUTTON> en la barra de
+                herramientas. No hay atajo de taclado para esto,
+                pero puede pedir a <APPLICATION>Evolution</APPLICATION>
+                que obtenga los nuevos mensajes periodicamente. Para hacerlo, FIXME.
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+          <VARLISTENTRY>	    <TERM>Responder a un Mensaje</TERM>
+	    <LISTITEM>	      <PARA>                Para responder al remitente de un mensaje tan solo debe:
+                pulsar <GUIBUTTON>Responder</GUIBUTTON> en la barra de
+                herramientas, o pulsar
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>R</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	      <PARA>                Para responder al remitente y a todos los destinatarios
+                visibles del mensaje, pulse <GUIBUTTON>Responder a
+                Todos</GUIBUTTON> o seleccione el mensaje y pulse
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Shift</KEYCAP>
+		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>R</KEYCAP>
+                </KEYCOMBO>
+              </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  
+          <VARLISTENTRY>	    <TERM>Reenviar un Mensaje</TERM>
+	    <LISTITEM>	      <PARA>                Sleccione el mensaje o mensajes que quiere reenviar,
+                y pulse <GUIBUTTON>Reenviar</GUIBUTTON> en la barra de
+                herramientas, o pulse
+                <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>J</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+          <VARLISTENTRY>	    <TERM>Abrir un Mensaje en una Nueva Ventana</TERM>
+	    <LISTITEM>	      <PARA>                Pulse dos veces sobre el mensaje que quiere ver, o
+                seleccionelo y pulse <KEYCOMBO ACTION="simul">		  <KEYCAP>Ctrl</KEYCAP>
+		  <KEYCAP>O</KEYCAP>
+                </KEYCOMBO>
+                </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+
+          <VARLISTENTRY>	    <TERM>Crear Filtros y Carpetas Virtuales</TERM>
+	    <LISTITEM>	      <PARA>                Puede crear filtros y carpetas virtuales basados en las
+                caracteristicas de un mensaje específico desde el menú que
+                aparece al pulsar el botón derecho del ratón.  
+                Alternativamente, seleccion un mensaje, y elija
+                <MENUCHOICE><GUIMENU>Configuración</GUIMENU>
+                <GUIMENUITEM>Filtros de Correo</GUIMENUITEM> </MENUCHOICE>
+                o <MENUCHOICE> <GUIMENU>Configuración</GUIMENU>
+                <GUIMENUITEM>Editor de Carpetas Virtuales</GUIMENUITEM>
+                </MENUCHOICE>.  Los filtros se discuten en <XREF LINKEND="usage-mail-organize-filters">, y las carpetas
+                virtuales en <XREF LINKEND="usage-mail-organize-vfolders">.
+            </XREF></XREF></PARA>
+	    </LISTITEM>
+	</VARLISTENTRY>
+	</VARIABLELIST>
+
+        </PARA>
+      </SECT2>
+      <SECT2 ID="quickref-cal">        <TITLE>Calendario</TITLE>
+        <PARA>        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM></TERM>
+	    <LISTITEM>	      <PARA>               </PARA>
+	    </LISTITEM>
+	    </VARLISTENTRY>
+	  </VARIABLELIST>
+
+        </PARA>
+      </SECT2>
+      <SECT2 ID="quickref-contact">        <TITLE>Administrador de Contactos</TITLE>
+        <PARA>
+
+        <VARIABLELIST>	  <VARLISTENTRY>	    <TERM></TERM>
+	    <LISTITEM>	      <PARA>               </PARA>
+	    </LISTITEM>
+	    </VARLISTENTRY>
+	  </VARIABLELIST>
+
+
+        </PARA>
+      </SECT2>
+    </SECT1>
+  </PREFACE>

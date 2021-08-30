@@ -1,0 +1,493 @@
+<?xml version="1.0"?>
+<SECT1 ID="gnome-utils-applications"><TITLE>Aplicaciones</TITLE>
+    <PARA>GNOME Time Tracker es la única utilidad en el
+    paquete <FILENAME>gnome-utils</FILENAME> que aparece debajo
+    del ítem <GUIMENUITEM>Aplicaciones</GUIMENUITEM> del <GUIMENU>Menú
+    Principal</GUIMENU>.</PARA>
+
+  <SECT2 ID="gtt-introduction">      <TITLE>Introducción a GNOME Time Tracker</TITLE> 
+    <SECT3>    <TITLE>Que es GNOME Time Tracker?</TITLE>
+    <PARA>      <APPLICATION>GNOME Time Tracker</APPLICATION> es un programa para manejar el flujo de trabajo y llevar la cuenta del tiempo dedicado a un proyecto. 
+
+      <APPLICATION>GNOME Time Tracker</APPLICATION> puede ser de gran ayuda una vez se ha aprendido a manejar eficazmente. Se puede utilizar para optimizar el trabajo y decidir si se consume mucho tiempo en tareas sin importancia.  Se pueden contar las horas que se dedican a un proyecto que se mide por horas. Se pueden descubrir muchas otras maneras de sacar provecho de <APPLICATION>GNOME Time Tracker</APPLICATION>.
+    </PARA>
+   
+
+    <PARA><APPLICATION>GNOME Time Tracker</APPLICATION> puede ser iniciado seleccionando <GUIMENUITEM>Herramienta de Time Tracking</GUIMENUITEM> del submenú <GUISUBMENU>Aplicaciones</GUISUBMENU> dentro del <GUIMENU>Menú Principal</GUIMENU>, o bien ejecutando el comando <COMMAND>gtt</COMMAND> en la línea de comandos.  
+    </PARA>
+  </SECT3>
+
+<SECT3 ID="gtt-usage"> 
+   <TITLE>Uso de GNOME Time Tracker</TITLE>
+         <PARA> <APPLICATION>GNOME Time Tracker</APPLICATION> puede ser usado para llevar la cuenta del tiempo que se dedica a diferentes tareas. Para ello se definen diversos proyectos y, según avanza el dia, vas informando a <APPLICATION>GNOME Time Tracker</APPLICATION> de los proyectos en los que se trabaja. Así queda grabada información sobre cuánto tiempo se dedica a cada proyecto por dia, el tiempo total dedicado a cada proyecto, y la cantidad total de tiempo registrada entre todos los proyectos por dia.
+    </PARA>
+
+    <PARA>        Desafortunadamente, <APPLICATION>GNOME Time Tracker</APPLICATION> no es especialmente inteligente: el cronónometro no se para cuando te tomas un respiro para jugar una rápida partida de solitario que se convierte en varias horas de distracción.
+      Cuando termines de trabajar en un proyecto, asegúrate de parar el cronómetro, pinchando en el botón <GUIBUTTON>Cronómetro</GUIBUTTON> o usando <GUIMENUITEM>Parar</GUIMENUITEM> del menú <GUIMENU>Cronómetro</GUIMENU>.  Mientras te acuerdes de esto, tu trabajo se registrará fielmente. Se puede, sin embargo, modificar los tiempos desde el diálogo <INTERFACE>Propiedades</INTERFACE> si son incorrectos.
+      Ver <LINK LINKEND="gtt-properties"></LINK> para más información.
+    </PARA>
+ 
+<PARA ID="gtt-timer"><APPLICATION>GNOME Time Tracker</APPLICATION> puede informarte de los tiempos de tu proyecto de varias maneras. Para cada proyecto, se mantiene un cronómetro para la cantidad de tiempo dedicada durante el dia, y cuanto tiempo se ha dedicado en total.
+      Además, <APPLICATION>GNOME Time Tracker</APPLICATION> cuenta cuanto tiempo se ha dedicado a todos los proyectos en todo el dia. Este último número es el que se muestra en la esquina inferior izquierda de la barra de estado.
+      </PARA>
+
+<PARA>	Cuando se inicia por primera vez <APPLICATION>GNOME Time Tracker</APPLICATION>, se ve la <INTERFACE>Ventana principal</INTERFACE>, como en la figura <LINK LINKEND="gtt-mainwindowfig"></LINK>.
+	<FIGURE ID="gtt-mainwindowfig">	  <TITLE>Ventana principal de GNOME Time Tracker</TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Ventana principal de GNOME Time Tracker Main Window, con un proyecto seleccionado</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gtt_mainwin" FORMAT="png" SRCCREDIT="Aaron Weber"></GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+      
+
+
+
+      La ventan principal se compone de cuatro áreas. Hay una barra de menú (ver <LINK LINKEND="gtt-menubar"></LINK>) y una barra de herramientas (ver <LINK LINKEND="gtt-toolbar"></LINK>) en la parte superior de la ventana, una barra de estado (ver <LINK LINKEND="gtt-statusbar"></LINK>) en la parte inferior, y entre ambas, una lista desplazable de proyectos (ver <LINK LINKEND="gtt-projlist"></LINK>).
+      Cuando se inicia por primera vez <APPLICATION>GNOME Time Tracker</APPLICATION>, este área muestra exactamente un proyecto llamado "vacío".
+   </PARA>		    
+
+
+   <TIP>	  <TITLE>Truco</TITLE>
+   <PARA>      Se puede adaptar la apariencia de la ventana princiapl en el <INTERFACE>diálogo de preferencias</INTERFACE>. Ver <LINK LINKEND="gtt-preferences"></LINK>
+      para más información sobre cambios en la barra de herramientas, lista de proyectos, y ventana de tiempo.
+   </PARA>
+  </TIP></SECT3>
+
+
+         
+    <SECT3 ID="gtt-menubar"><TITLE>GNOME Time Tracker Menus</TITLE>
+
+
+   <PARA>      Casi todos los menús en <APPLICATION>GNOME Time Tracker</APPLICATION> tienen un atajo o una tecla aceleradora. Los atajos aparecen a la derecha detrás del nombre del item en los menús.
+   </PARA>
+
+   <PARA>       La barra de menú se compone de cuatro de cuatro menús: <GUIMENU>Archivo</GUIMENU>, <GUIMENU>Editar</GUIMENU>, <GUIMENU>Cronómetro</GUIMENU> y <GUIMENU>Ayuda</GUIMENU>.
+   </PARA>
+
+      
+      <VARIABLELIST>	<VARLISTENTRY> 
+          <TERM><GUIMENU>Archivo</GUIMENU></TERM>
+            <LISTITEM>              <PARA>                 Este menú contiene los siguientes comandos:
+	      </PARA>
+            <PARA>  
+	       <MENUCHOICE>	            <SHORTCUT>                      <KEYSYM>                        Ctrl-N
+                      </KEYSYM>
+		    </SHORTCUT> 
+		
+		    <GUIMENUITEM>                    Nuevo Proyecto
+                    </GUIMENUITEM>
+	         </MENUCHOICE>
+	         Nuevo Proyecto lanza el diálogo <INTERFACE>Nuevo Proyecto</INTERFACE> de forma que se puede crear un nuevo proyecto.
+            </PARA>
+	    <PARA>		<MENUCHOICE>	          <SHORTCUT>                    <KEYSYM>                      Ctrl-L
+                    </KEYSYM>
+		    </SHORTCUT> 
+		    <GUIMENUITEM>  Recargar Archivo de Configuración</GUIMENUITEM>
+		  </MENUCHOICE>
+	      
+	      Esta opción carga la última versión salvada del archivo de configuración, <FILENAME>$HOME/.gnome/gtt</FILENAME>. Este archivo es salvado cada vez que se sale de <APPLICATION>GNOME Time Tracker</APPLICATION>, y contiene información sobre tus proyectos y preferencias.
+	        Si eliges este ítem de menú, tus proyectos retornan al estado en que se encontraban la última vez que se salvó el archivo de configuración.
+	      </PARA>
+
+	      <PARA>	      <MENUCHOICE>		<SHORTCUT><KEYSYM>Ctrl-S</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>  Guardar Archivo de Configuración</GUIMENUITEM>
+	      </MENUCHOICE>
+	      Esta función guarda información sobre tus proyectos y preferencias en el archivo de configuración <FILENAME>$HOME/.gnome/gtt</FILENAME>.
+	      <APPLICATION>GNOME Time Tracker</APPLICATION> guarda esta información automáticamente cada vez que sales de la aplicación, y lo intenta incluso cuando la aplicación falla. De todos modos, no hace ningún daño guardar tu información de vez en cuando.
+	      </PARA>
+
+	      <PARA>	      <MENUCHOICE>	        <SHORTCUT><KEYSYM>Ctrl-Q</KEYSYM>
+		</SHORTCUT>
+		<GUIMENUITEM>  Salir</GUIMENUITEM>
+	      </MENUCHOICE>
+	      Para salir de <APPLICATION>GNOME Time Tracker</APPLICATION>. Al salir se guardan automáticamente los datos del proyecto y se actualiza el fichero de registro.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY> 
+
+	<VARLISTENTRY>	  <TERM><GUIMENU>Editar</GUIMENU></TERM>
+          <LISTITEM>	    <PARA>              Este menú contiene los siguientes comandos:
+	      <MENUCHOICE>		 <SHORTCUT><KEYSYM>Ctrl-X</KEYSYM></SHORTCUT>
+		<GUIMENUITEM>Cortar</GUIMENUITEM>
+	        
+	      </MENUCHOICE>
+	       Remueve un ítem de la lista de proyectos, y lo guarda en memoria por si quieres pegarlo en otro sitio.
+	      </PARA>
+
+	      <PARA>		 <MENUCHOICE>		    <SHORTCUT><KEYSYM>Ctrl-C</KEYSYM></SHORTCUT>	
+		    <GUIMENUITEM>Copiar</GUIMENUITEM>	    
+		 </MENUCHOICE>	
+		 Duplica el proyecto seleccionado, copiándolo a memoria.
+		</PARA>
+
+		<PARA>		   <MENUCHOICE>		      <SHORTCUT><KEYSYM>Ctrl-V</KEYSYM></SHORTCUT>
+		      <GUIMENUITEM>Pegar</GUIMENUITEM>
+		   </MENUCHOICE>
+		      Sitúa el proyecto en memoria en la lista de tareas.  Los proyectos son insertados antes del ítem seleccionado. Si no hay ningún ítem seleccionado, aparecen al final de la lista.
+		</PARA>
+
+		<PARA>		    <MENUCHOICE>  
+		       <GUIMENUITEM>Borrar Contador Diario</GUIMENUITEM>
+	            </MENUCHOICE>
+		       Esta función es una forma rápida de borrar el contador diario para el proyecto actualmente seleccionado. Puedes usarlo si quieres cronometrar un un proceso más de una vez. Es útil, también, si quieres saber cuanto dura una conexión PPP a Internet, o para calcular tiempos de compilación y otras tareas repetitivas. Este comando no afecta al cronómetro global.	         </PARA>
+
+		 <PARA>		 <MENUCHOICE>	            <GUIMENUITEM>Propiedades...</GUIMENUITEM>
+		 </MENUCHOICE>
+		  Esta opción abre el diálogo <INTERFACE>Propiedades</INTERFACE> para el proyecto seleccionado. Aquí se pueden ver y editar el nombre, la descripción, y los tiempos del proyecto. Es la misma acción que el botón <GUIBUTTON>Props</GUIBUTTON> en la barra de herramientas. Ver <LINK LINKEND="gtt-properties"></LINK> para más información.
+		 </PARA>
+	    </LISTITEM>
+	</VARLISTENTRY>
+
+	<VARLISTENTRY> 
+	    <TERM><GUIMENU>Settings</GUIMENU></TERM>
+	    <LISTITEM>               <PARA>                 Este menú contiene sólo un commando:
+	         <GUIMENUITEM>Preferencias</GUIMENUITEM>, que lanza el
+	         <INTERFACE>Diálogo de Preferencias</INTERFACE>. Ver <LINK LINKEND="gtt-preferences"></LINK>
+                 para más información.
+               </PARA>
+             </LISTITEM>
+        </VARLISTENTRY>
+
+	<VARLISTENTRY>	   <TERM><GUIMENU>Cronómetro</GUIMENU></TERM>
+	   <LISTITEM>             <PARA>	       Este menú contiene los siguientes comandos:
+               <MENUCHOICE>		 <SHORTCUT><KEYSYM>Ctrl-A</KEYSYM></SHORTCUT>
+		<GUIMENUITEM>Iniciar</GUIMENUITEM>
+	       </MENUCHOICE>
+               Inicia el cronómetro del proyecto seleccionado.	      
+             </PARA>
+
+	     <PARA>	       <MENUCHOICE>		<SHORTCUT><KEYSYM>Ctrl-Z</KEYSYM></SHORTCUT>
+		<GUIMENUITEM>Parar cronómetro</GUIMENUITEM>
+	       </MENUCHOICE>
+                Para el cronómetro.
+             </PARA>
+  
+	      <PARA>                <MENUCHOICE>		<SHORTCUT><KEYSYM>Ctrl-T</KEYSYM></SHORTCUT>   
+		<GUIMENUITEM>Conmutar Cronómetro</GUIMENUITEM>
+	      </MENUCHOICE> 
+                Este ítem conmuta el cronómetro entre encendido y apagado.
+              </PARA>
+            </LISTITEM>
+	</VARLISTENTRY>
+
+	<VARLISTENTRY>	    <TERM><GUIMENU>Ayuda</GUIMENU></TERM>
+	      <LISTITEM>                 <PARA>                   Este menú contiene los comandos:
+	           <MENUCHOICE><GUIMENUITEM>Manual</GUIMENUITEM></MENUCHOICE>
+		    Muestra este manual.
+		 </PARA>
+
+		 <PARA>                     <MENUCHOICE><GUIMENUITEM>Introducción</GUIMENUITEM></MENUCHOICE>
+		      Muestra la introducción a este manual y a <APPLICATION>GNOME Time Tracker</APPLICATION> en general.
+		 </PARA>
+
+		 <PARA>                    <MENUCHOICE><GUIMENUITEM>Trabajar con GTT</GUIMENUITEM></MENUCHOICE>
+		     Muestra la sección del manual acerca de trabajar con <APPLICATION>GNOME Time Tracker</APPLICATION>.
+		 </PARA>
+
+		  <PARA>                     <MENUCHOICE><GUIMENUITEM>La Ventana Principal</GUIMENUITEM></MENUCHOICE>
+		      Ayuda sobre la ventana principal.
+		  </PARA>
+
+		  <PARA>                     <MENUCHOICE><GUIMENUITEM>Diálogos</GUIMENUITEM></MENUCHOICE>
+		      Información sobre los diversos cuadros de diálogo que se muestran en <APPLICATION>GNOME Time Tracker</APPLICATION>.
+		  </PARA>
+
+		  <PARA>                    <MENUCHOICE><GUIMENUITEM>Acerca de</GUIMENUITEM></MENUCHOICE>
+		     Muestra información sobre el autor y el copyright de <APPLICATION>GNOME Time Tracker</APPLICATION>.
+		  </PARA>
+
+		</LISTITEM>
+	   </VARLISTENTRY>
+	</VARIABLELIST>
+      
+	</SECT3>
+
+
+
+	<SECT3 ID="gtt-toolbar">	<TITLE>Barra de herramientas de GNOME Time Tracker</TITLE>
+        <PARA>        La barra de herramientas es otra forma de acelerar las operaciones más frecuentes en <APPLICATION>GNOME Time Tracker</APPLICATION>. Cada uno de los iconos que contiene es un atajo a una de las funciones del menú. Por defecto, los botones son:
+        <ITEMIZEDLIST>        <LISTITEM>          <PARA>            <GUIBUTTON>Nuevo</GUIBUTTON>, abre el diálogo <INTERFACE>Nuevo Proyecto</INTERFACE>.
+          </PARA> 
+        </LISTITEM>
+
+        <LISTITEM>          <PARA>            <GUIBUTTON>Props</GUIBUTTON>, abre el diálogo <INTERFACE>Propiedades</INTERFACE>.
+          </PARA>
+        </LISTITEM>
+
+        <LISTITEM>          <PARA>            <GUIBUTTON>Cronómetro</GUIBUTTON>, conmuta el cronómetro entre encendido y apagado.
+          </PARA>
+        </LISTITEM>
+        
+        <LISTITEM>          <PARA>            <GUIBUTTON>Prefs</GUIBUTTON>, abre el diálogo <INTERFACE>Preferencias</INTERFACE>.
+          </PARA>
+        </LISTITEM>
+        <LISTITEM>           <PARA>              <GUIBUTTON>Manual</GUIBUTTON>, abre este manual.
+           </PARA>
+        </LISTITEM>
+
+        <LISTITEM>          <PARA>             <GUIBUTTON>Salir</GUIBUTTON>, sale de <APPLICATION>GNOME Time Tracker</APPLICATION>.
+          </PARA>
+        </LISTITEM>
+     </ITEMIZEDLIST>
+
+Se puede elegir qué funciones aparecen en la barra de herramientas desde el diálogo <INTERFACE>Preferencias</INTERFACE>. Ver <LINK LINKEND="gtt-preferences"></LINK> para más información.
+	</PARA>
+	</SECT3>   
+
+
+    <SECT3 ID="gtt-projlist">      <TITLE>GNOME Time Tracker Project List</TITLE>
+      <PARA>      La lista de proyectos contiene una lista de todos los proyectos e indica cual está activo en cada momento. También muestra los atributos de cada proyecto. Se pueden modificar estos atributos mediante el diálogo <INTERFACE>Preferencias</INTERFACE> (ver <LINK LINKEND="gtt-preferences"></LINK>).
+      </PARA>
+      
+      <SECT4 ID="gtt-projwhat">      <TITLE>¿Qué es un Proyecto?</TITLE>
+      <PARA>        Un proyecto consiste de lo siguiente:
+	<ITEMIZEDLIST>
+	  <LISTITEM><PARA>	  Un título, mostrado en la lista de proyectos.
+	  </PARA></LISTITEM>
+
+	  <LISTITEM><PARA>	      Un cronómetro <EMPHASIS>diario</EMPHASIS>, que es inicializado automáticamente cada dia, y se puede poner a cero a voluntad.
+	  </PARA></LISTITEM>
+
+	  <LISTITEM><PARA>	      Un cronómetro de <EMPHASIS>tiempo total</EMPHASIS>, que cuenta la cantidad total de tiempo empleada en el proyecto. 
+	  </PARA></LISTITEM>
+
+	  <LISTITEM><PARA>	      Una breve descripción del proyecto.
+	  </PARA></LISTITEM>
+	</ITEMIZEDLIST>
+        </PARA>
+	</SECT4>
+	
+	<SECT4>	<TITLE>El Estado de un Proyecto</TITLE>
+
+	  <PARA>Un proyecto tiene dos estados, seleccionado y deseleccionado. Sólo se puede seleccionar un proyecto a la vez.
+	  </PARA>
+
+	  <PARA>	  Si no hay ningún proyecto seleccionado, no pasa nada.
+	  </PARA>
+	  
+	  <PARA>	  Si hay un proyecto seleccionado, pero el cronómetro no esta corriendo, el comando del intérprete de comandos select-project ha sido ejecutado pero no ha terminado. Sin embargo no se hace ninguna modificación al fichero de registro.
+       	  </PARA>
+	  
+	  <PARA>	  Si se selecciona un proyecto y el cronómetro esta corriendo, el comando es ejecutado y y el fichero de registro actualizado.
+	  </PARA>
+
+	  <PARA>Esto puede resultar confuso al principio, pero en combinación con los comandos del intérprete (ver <LINK LINKEND="gtt-shellcmd"></LINK>) se pueden usar los cambios de estado para mantener registros más exactos y comprensibles.
+          </PARA>
+<EXAMPLE ID="gtt-projectstate-example">	  <TITLE>Usando los Estados de Proyecto</TITLE>
+	  <PARA>	  He configurado los comandos del intérprete de <APPLICATION>GNOME Time Tracker</APPLICATION> para actualizar mi archivo <FILENAME>.proyecto</FILENAME> cuando selecciono o cambio de proyecto.
+          No quiero modificar el archivo si sólo me estoy tomando un pequeño descanso. Por eso, cuando me levanto a por café, paro el cronómetro en vez de deseleccionar el proyecto.
+          Esto hace que no se incluya en el archivo <FILENAME>.proyecto</FILENAME> el tiempo que he estado ausente.          
+	  </PARA>
+</EXAMPLE>	  
+	</SECT4>
+	<SECT4>	 <TITLE>Trabajar con la lista de Proyectos</TITLE>
+	    <PARA>	    La lista de proyectos esta localizada en el área central de la ventana principal. Aquí se muestra la lista de proyectos y cual de ellos se encuentra seleccionado. Cada línea corresponde a un proyecto, y muestra el tiempo total y el diario que ha sido registrado, así como también el título y la descripción.
+	    </PARA>
+
+	    <PARA>	    Se puede seleccionar un proyecto pinchando en él con el botón izquierdo del ratón. Pulsando el botón izquierdo de nuevo sobre un proyecto seleccionado, lo deselecciona. Sólo se puede tener un proyecto seleccionado a la vez.	    </PARA>
+
+	    <PARA>	    Para obtener un menú desplegable del proyecto, pinchar sobre él el botón derecho del ratón. Si el proyecto no estaba seleccionado, se seleccionará, y se mostrará el menú <GUIMENU>Editar</GUIMENU>.
+	    </PARA>
+	    </SECT4>
+	
+	</SECT3>
+
+	<SECT3 ID="gtt-statusbar">	 <TITLE>Barra de estado de GNOME Time Tracker</TITLE>
+
+	<PARA>	El primer campo de la barra de estado muestra la suma del tiempo diario de todos los proyectos. Si el contador diario no se inicializó, se muestra el tiempo total trabajado durante el dia en los proyectos..
+	</PARA>
+
+	<PARA>	El segundo campo contiene el título del proyecto seleccionado. si no hay ninguno seleccionado, se puede leer: <COMPUTEROUTPUT>Ningún proyecto seleccionado</COMPUTEROUTPUT>.
+	</PARA>
+
+	<PARA>        La esquina derecha de la barra de estado contiene un pequeño reloj si el cronómetro está corriendo. Si el cronómetro esta parado, el espacio aparece en blanco.
+        </PARA></SECT3>
+
+ 
+  <SECT3 ID="gtt-preferences">      <TITLE>Personalización de GNOME Time Tracker</TITLE> 
+      <PARA>      para cambiar los valores por defecto, seleccione el comando <GUIMENUITEM>Preferencias</GUIMENUITEM> en el menú <GUIMENU>Settings</GUIMENU>. Ésto lanza el diálogo <INTERFACE>Preferencias</INTERFACE>, mostrado en <LINK LINKEND="gtt-prefsfigure"></LINK>.
+       Hay dos grupos de preferencias en la ventana.
+     </PARA>
+	<FIGURE ID="gtt-prefsfigure">	<TITLE><APPLICATION>GNOME Time Tracker</APPLICATION> Diálogo de Preferencias </TITLE>
+	  <SCREENSHOT>	    <SCREENINFO>Diálogo de preferencias de GNOME Time Tracker</SCREENINFO>
+	    <GRAPHIC FILEREF="./figs/gtt_prefswin" FORMAT="png" SRCCREDIT="Aaron Weber">	    </GRAPHIC>
+	  </SCREENSHOT>
+	</FIGURE>
+ </SECT3>
+
+ <SECT3>      <TITLE>El Grupo de Preferencias de la Barra de Herramientas</TITLE>
+      <PARA>        Este grupo contiene dos secciones de botones: <GUILABEL>Barra de herramientas</GUILABEL> y <GUILABEL>Segmentos de la Barra de Herramientas</GUILABEL>
+        <ITEMIZEDLIST>          <LISTITEM>	    <PARA> 
+	      La <GUILABEL>Barra de Herramientas</GUILABEL> contiene las siguientes opciones: 
+	      <ITEMIZEDLIST MARK="none">		  <LISTITEM>		    <PARA>		      <GUIBUTTON> Mostrar iconos de la Barra de Herramientas</GUIBUTTON>
+		      </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		      <GUIBUTTON> Mostrar Textos de la Barra de Herramientas</GUIBUTTON>
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		      <GUIBUTTON> Mostrar Trucos</GUIBUTTON>
+		    </PARA>
+		  </LISTITEM>
+		</ITEMIZEDLIST>
+	      Con ellas se determina si los iconos y sus descripciones se muestran en la barra de herramientas, y si se muestran indicaciones sobre los botones cuando se pasea el ratón sobre ellos.
+	    </PARA>
+	  </LISTITEM>
+          <LISTITEM>	      <PARA>	        Las opciones de <GUILABEL>Segmentos de la Barra de Herramientas</GUILABEL> determinan cuales de los botones de atajo se muestran en la barra:
+		<ITEMIZEDLIST MARK="none">		  <LISTITEM>		    <PARA>		      <GUILABEL>  Mostrar 'Nuevo' </GUILABEL>
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		      <GUILABEL> Mostrar 'Guardar', 'Recargar'</GUILABEL>
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		      <GUILABEL> Mostrar 'Cortar', 'Copiar', 'Pegar'</GUILABEL>
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		      <GUILABEL> Mostrar 'Propiedades' </GUILABEL>
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		      <GUILABEL> Mostrar 'Cronómetro' </GUILABEL>
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		      <GUILABEL> Mostrar 'Preferencias' </GUILABEL>
+		    </PARA>
+		  </LISTITEM>
+		  <LISTITEM>		    <PARA>		     <GUILABEL>  Mostrar 'Salir' </GUILABEL>
+		    </PARA>
+		  </LISTITEM>
+		</ITEMIZEDLIST>
+	      </PARA>
+          </LISTITEM>
+        </ITEMIZEDLIST>
+        </PARA>
+    </SECT3>
+
+   <SECT3 ID="gtt-other-settings">      <TITLE>Otros Settings</TITLE>
+         <PARA>         Hay tres secciones en el grupo <GUIBUTTON>Misc</GUIBUTTON>.
+	 <VARIABLELIST>           
+           <VARLISTENTRY> 
+              <TERM><GUILABEL>Mostrar</GUILABEL></TERM>
+	      <LISTITEM> 
+                <PARA>	          La opción Mostrar contiene a su vez tres opciones:
+	          <ITEMIZEDLIST MARK="bullet">		    <LISTITEM>		      <PARA>	              <GUILABEL> Mostrar Segundos </GUILABEL>
+		      </PARA>
+		    </LISTITEM>
+		    <LISTITEM>		      <PARA>			<GUILABEL> Mostrar Barra de Estado </GUILABEL>
+		      </PARA>
+		    </LISTITEM>
+		    <LISTITEM>		      <PARA>			<GUILABEL> Mostrar Cabecera de Tabla </GUILABEL>
+		      </PARA>
+		    </LISTITEM>
+		  </ITEMIZEDLIST>
+	          Con ellos se selecciona si los segundos aparecen con el cronómetro, y si la barra de estado y la cabecera de tabla aparecen en la <INTERFACE>Ventana Principal</INTERFACE>
+	         </PARA>
+              </LISTITEM>
+	    </VARLISTENTRY>
+
+	    <VARLISTENTRY>	        <TERM><GUILABEL>Comandos del Intérprete</GUILABEL></TERM>
+                <LISTITEM>                   <PARA>                     <ANCHOR ID="gtt-shellcmd">                      Dos comandos del intérprete son ejecutados por <APPLICATION>GNOME Time Tracker</APPLICATION>.
+                      Uno es ejecutado cuando se cambia de proyecto y el otro cuando se deselecciona un proyecto o se sale de la aplicación.
+                      <ITEMIZEDLIST>                        <LISTITEM>	                  <PARA>		            <GUILABEL>Comando para Cambiar de Proyecto</GUILABEL>:
+		            Este comando del intérprete se ejecuta cada vez que se selecciona un proyecto que había sido previamente deseleccionado. Si se usa <LITERAL>%s</LITERAL> en este comando, <APPLICATION>GNOME Time Tracker</APPLICATION> reemplaza automáticamente áquel con el título del proyecto seleccionado. Yo uso el siguiente campo para actualizar mi archivo de <FILENAME>proyecto</FILENAME>:
+		            <USERINPUT>echo '%s' ~/.project</USERINPUT>
+		           </PARA>
+                         </LISTITEM>
+		         <LISTITEM>		           <PARA>                             <GUILABEL>Ningún Comando de Proyecto</GUILABEL>
+		             Este comando del intérprete se ejecuta cada vez que se deselecciona un proyecto o se sale de <APPLICATION>GNOME Time Tracker</APPLICATION>. Para completar el ejemplo anterior, yo uso este comando:
+		             <USERINPUT>rm -f ~/.project</USERINPUT>
+                           </PARA>
+                         </LISTITEM>
+                      </ITEMIZEDLIST>
+                   </ANCHOR></PARA>	   
+                 </LISTITEM>
+             </VARLISTENTRY>
+
+	 <VARLISTENTRY>	    <TERM><GUILABEL>Preferencias del archivo de Registro</GUILABEL></TERM>
+	    <LISTITEM>              <PARA>	        El área de Preferencias del archivo de Registro contiene una opción <GUIBUTTON>Usar archivo de Registro</GUIBUTTON>, que determina si se usa un archivo de registro, y además las siguientes entradas de texto, que gobiernansu comportamiento:
+	        <ITEMIZEDLIST>	     
+                <LISTITEM><PARA>	             <GUILABEL>Nombre de Archivo</GUILABEL>
+		      Determina la ruta y el nombre del archivo de Registro. Ésta debería ser la ruta completa y el nombre de archivo, sin variables de entorno como $HOME o ~.
+		</PARA></LISTITEM>
+
+                <LISTITEM><PARA>                      <GUILABEL>Principio de Entrada</GUILABEL>
+                      Ésta es la cadena que marca el principio de una entrada larga. Puede incluir las mismas variables que <GUILABEL>Fin de Entrada</GUILABEL>.
+                </PARA></LISTITEM>
+
+                <LISTITEM><PARA>                      <GUILABEL>Fin de Entrada</GUILABEL>
+                      Ésta cadena marca el final de una entrada larga. Tanto ésta cadena coma la de <GUILABEL>Principio de Entrada</GUILABEL> pueden contener las siguientes variables:
+                      <ITEMIZEDLIST> <LISTITEM><PARA><LITERAL>%t</LITERAL>  El título del proyecto.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%d</LITERAL>  El título del proyecto.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%t</LITERAL>  La descripción del proyecto.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%T</LITERAL>  El tiempo total registrado para el proyecto, en el formato Horas:Minutos:Segundos.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%h</LITERAL>  El número de horas registradas en el proyecto en el dia.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%H</LITERAL>  El número de horas dedicadas al proyecto en el dia, en dos dígitos.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%m</LITERAL>  El número de minutos empleados en el proyecto en el dia.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%M</LITERAL>  El número de minutos empleados en el proyecto en el dia (00-59).</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%s</LITERAL>  El número de segundos dedicados al proyecto en el dia.</PARA></LISTITEM>
+ <LISTITEM><PARA><LITERAL>%S</LITERAL>  El número de segundos empleados en el proyecto en el dia (00-59).</PARA></LISTITEM></ITEMIZEDLIST>
+                </PARA></LISTITEM>
+		   
+		<LISTITEM><PARA>		    <GUILABEL>Tiempo de espera en segs</GUILABEL>  
+		    Este valor representa el tiempo mínimo que un proyecto debe permanecer seleccionado antes de ser registrado. Ésto es útil si no se quiere registrar tareas muy cortas o si se pincha en un proyecto por equivocación. Por ejemplo, supongamos que se quiere empezar a trabajar en una carta a un amigo y se selecciona el proyecto (<EMPHASIS>Carta a Juan</EMPHASIS>), pero ésto te recuerda que todavía tienes que preparar una lista de regalos de Navidad (Juan te ha pedido que le des ideas). Entonces, cambias al proyecto <EMPHASIS>Regalos de Navidad</EMPHASIS>. No te gustaría que el proyecto <EMPHASIS>Carta a Juan</EMPHASIS> apareciese en tu archivo de registro, porque realmente no has empezado todavía. Te sugiero que configures este valor a 10 segundos.
+	        </PARA></LISTITEM>
+
+             </ITEMIZEDLIST>
+            
+		  <TIP>		    <TITLE>Truco</TITLE>
+		    <PARA>		      Un proyecto no será registrado hasta que se salga de <APPLICATION>GNOME Time Tracker</APPLICATION>, se cambie a otro proyecto o se deseleccione el proyecto. No extrañarse si al mirar en el archivo de registro el proyecto actual no aparece, incluso si ha estado corriendo durante las dos últimas horas.</PARA>
+		  </TIP>
+		 
+	
+	</PARA></LISTITEM>
+	</VARLISTENTRY>
+	</VARIABLELIST></PARA>
+  </SECT3>
+ 
+      <SECT3>	  <TITLE>Aceptar, Aplicar y Cerrar</TITLE>
+	<PARA>	  Si estas satisfecho con los cambios efectuados pincha el botón <GUIBUTTON>Aceptar</GUIBUTTON> para activarlos y hacer desaparecer el diálogo.
+	</PARA>
+
+	<PARA>	  Si se quiere ver como quedarán los cambios sin cerrar la ventana, pulsar <GUIBUTTON>Aplicar</GUIBUTTON> para activar los valores y mantener el diálogo abierto.
+	</PARA>
+
+	<PARA>	 Si no se quieren activar los cambios, pulsar <GUIBUTTON>Cerrar</GUIBUTTON>. El diálogo se cerrará, pero los cambios hechos no serán guardados. Esto no deshace los cambios activados con el comando <GUIBUTTON>Aplicar</GUIBUTTON>.  Al pulsar <GUIBUTTON>Aplicar</GUIBUTTON> y después <GUIBUTTON>Cerrar</GUIBUTTON> se obtiene el mismo resultado que al pulsar <GUIBUTTON>Aceptar</GUIBUTTON>.
+	</PARA>
+      </SECT3>
+
+      <SECT3 ID="gtt-properties">  
+	<TITLE>El Diálogo de Propiedades</TITLE>
+        <PARA>En este diálogo, se pueden ver y editar todas las propiedades de un proyecto:
+
+        <ITEMIZEDLIST>      
+         <LISTITEM>              <PARA>              <GUILABEL>Título del Proyecto</GUILABEL>
+	      Aquí se puede cambiar el título del proyecto.</PARA>
+	  </LISTITEM>
+
+          <LISTITEM><PARA>	  <GUILABEL>Descripción del proyecto</GUILABEL>
+	    Se puede dar una descripción más detallada del proyecto, si quieres.</PARA>
+	</LISTITEM>
+
+	<LISTITEM><PARA>	  <GUILABEL>Tiempo del Proyecto en el dia</GUILABEL>
+	    Este es el tiempo <EMPHASIS>diario</EMPHASIS> trabajado en el proyecto en el dia. Aquí se puede editar este tiempo.</PARA>
+	</LISTITEM>
+
+	<LISTITEM><PARA>	  <GUILABEL>Tiempo Total del Proyecto</GUILABEL>
+	  Este es el tiempo <EMPHASIS>total</EMPHASIS> trabajado en un proyecto. Aquí se puede editar este tiempo.</PARA>
+	</LISTITEM>
+      </ITEMIZEDLIST>
+    </PARA></SECT3>
+
+<SECT3>      <TITLE>El Diálogo de Nuevo Proyecto</TITLE>
+      <PARA>Este diálogo es bastante pequeño. Sólo es para saber cómo se quiere llamar al nuevo proyecto. Sólo hay que introducir el nombre para el nuevo proyecto y pulsar <GUIBUTTON>Aceptar</GUIBUTTON>.
+	Si cambias de idea y no quieres que <APPLICATION> GNOME Time Tracker</APPLICATION> añada un nuevo proyecto, pulsa <GUIBUTTON>Cancelar</GUIBUTTON>.
+      </PARA>
+    </SECT3>      </SECT2>
+
+
+
+
+
+
+
+
+
+</SECT1>

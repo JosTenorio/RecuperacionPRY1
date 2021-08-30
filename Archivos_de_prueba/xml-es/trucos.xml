@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<ARTICLE ID="index" LANG="es"><ARTHEADER><AUTHORGROUP><AUTHOR><FIRSTNAME>
+Manuel
+</FIRSTNAME>
+<SURNAME>
+De Vega Barreiro
+</SURNAME>
+<AFFILIATION><ORGNAME>
+Linux Landia
+</ORGNAME>
+<ADDRESS><EMAIL>
+barreiro@arrakis.es
+</EMAIL></ADDRESS></AFFILIATION></AUTHOR></AUTHORGROUP>
+<COPYRIGHT><YEAR>
+2000
+</YEAR>
+<HOLDER>
+Manuel de Vega Barreiro
+</HOLDER></COPYRIGHT>
+<ABSTRACT><PARA>
+Recopilación de algunos trucos y ayudas para traducir documentos Linux
+</PARA></ABSTRACT>
+<TITLE>
+Trucos y ayudas para traducir documentos Linux
+</TITLE></ARTHEADER>
+
+<SECT1 ID="trabajos"><TITLE>Tipos de trabajos</TITLE>
+<SECT2 ID="po"><TITLE>Ficheros po</TITLE>
+<PARA>Este tipo de trabajos engloba todos los mensajes de las aplicaciones. 
+Además cada trabajo de traducción corresponde a un paquete de gnome, no a una
+única aplicación. Puedes por tanto encontrar mensajes de varias aplicaciones.
+Un caso claro de esto son los paquetes gnome-core y gnome-applets,
+que engloban el conjunto de aplicaciones básicas de Gnome..</PARA>
+
+<PARA>
+En cada trabajo deberás traducir los siguientes ficheros:
+
+<PROGRAMLISTING>paquete.es.po   Mensajes de la aplicación.
+*.desktop               menús</PROGRAMLISTING>
+
+también pueden existir los siguientes ficheros:
+<PROGRAMLISTING>*.soundlist           descripción de sonidos
+*.mime                acciones para tipos Mime
+*.sheet               descripciones en XML</PROGRAMLISTING>
+
+En el documento 
+<ULINK URL="http://www.croftj.net/~barreiro/spanish/gnome-es/translate/" TYPE="http">Traducción de documentación Gnome</ULINK> 
+tienes instrucciones sobre la como traducir cada uno de estos ficheros.</PARA>
+<PARA>Recuerda revisar los textos marcados como 'fuzzy' (mezcla automática), y en
+caso de que la traducción sea correcta, o una vez corregida, eliminar la
+etiqueta 'fuzzy'.
+ejemplo:
+
+<PROGRAMLISTING>#: panel/hints.c:78
+#, fuzzy
+msgid "Panel hint"
+msgstr "Consejo para el panel"</PROGRAMLISTING>
+
+como la traducción es correcta debe quedar
+
+<PROGRAMLISTING>#: panel/hints.c:78
+msgid "Panel hint"
+msgstr "Consejo para el panel"</PROGRAMLISTING>
+
+En el caso de que la mezcla automática de la traducción antigua y la
+nueva versión no sea correcta, corrigela y quita la etiqueta 'fuzzy'.</PARA>
+<PARA>Las lineas que empiezan po #~ son mensajes anticuados 
+<PROGRAMLISTING>#~ msgid "Panel hint"
+#~ msgstr "Consejo para el panel"</PROGRAMLISTING>
+y deben eliminarse antes de realizar la entrega.
+</PARA></SECT2>
+
+<SECT2 ID="sgml"><TITLE>Ficheros de ayuda y manuales en formato sgml</TITLE>
+<PARA>El formato sgml es similar a html, un fichero Ascii con marcadores
+('token', texto entre  y ) para indicar el formato del documento. 
+Debes traducir todo excepto los propios marcadores. Tampoco conviene traducir
+los identificadores (id="xxx"), ni los nombres de los dibujos.</PARA>
+<PARA>No es necesario que escribas los acentos y otros caracteres especiales en
+formato sgml (á = aacute;); una vez finalizado el documento se pueden 
+convertir de iso8859_1 (á) a sgml (acute;) y viceversa.
+<NOTE>	  <PARA>Parece que en la ultima versión de las herramientas docbook no hay
+que prestar atención a este tema, ya hace el cambio de forma automática</PARA>
+	</NOTE></PARA></SECT2></SECT1>
+
+
+
+<SECT1 ID="trucos"><TITLE>trucos</TITLE>
+<SECT2 ID="trucospo"><TITLE>Ficheros po</TITLE>
+<PARA>Al terminar la traducción puedes comprobar que el fichero "compila" usando
+los siguientes comandos:
+
+<PROGRAMLISTING>msgfmt --statistics paquete.es.po.dis</PROGRAMLISTING>
+devuelve los mensajes traducidos, sin traducir, y las mezclas.
+
+<PROGRAMLISTING>msgfmt -vv fichero po</PROGRAMLISTING>
+se obtiene un listado de errores en el fichero.
+
+<PROGRAMLISTING>msgfmt -c -v -o /dev/null file.po</PROGRAMLISTING>
+indica los mensajes que faltan por traducir, los fuzzy y
+los errores en mensajes con formateadores C (%s, %d, etc)
+
+<PROGRAMLISTING>msgmerge es.po paquete.pot  es.new.po</PROGRAMLISTING>
+  mezcla de forma inteligente una antigua traducción y un nuevo
+  fichero de mensajes.</PARA>
+<PARA>Estos comando están incluidos en el paquete: gettext</PARA>
+<PARA>Uso de popsell para la revisión ortográfica:
+
+<PROGRAMLISTING>popsell -n es.po -p ispell -- -d spanish -T latin1 %f</PROGRAMLISTING></PARA>
+
+<PARA>Para cambiar de codificación sgml a iso8859_1 existe la utilidad
+<PROGRAMLISTING>recode -d iso-8859-1..ht4 fichero.sgml
+  convierte todo, pero mete algunas secuencias de clavo
+recode -d ht4..iso-8859-1 fichero.sgml
+  No me funciona </PROGRAMLISTING>
+No he conseguido que me funcione de forma totalmente satisfactoria, así que
+uso un guión perl para estos cambios. Si alguien sabe como hacer funcionar
+recode, agradeceríamos sus comentarios.</PARA></SECT2>
+
+<SECT2 ID="emacs"><TITLE>Configuración de emacs</TITLE>
+<PARA>
+Para que emacs reconozca ficheros de este tipo debes poner en .emacs
+
+<PROGRAMLISTING>     (setq auto-mode-alist
+           (cons '("\\.po[tx]?\\'\\|\\.po\\." . po-mode) auto-mode-alist))
+     (autoload 'po-mode "po-mode")
+
+     (autoload 'po-find-file-coding-system "po-mode")
+     (modify-coding-system-alist 'file "\\.po[tx]?\\'\\|\\.po\\."
+                                 'po-find-file-coding-system)
+</PROGRAMLISTING>
+</PARA>
+<PARA>
+Modificaciones para revisar la ortografía
+al terminar la traducción de cada mensaje de forma automática.
+Para ello activaremos la función 'ke-po-ispell-buffer'
+M-x ke-po-toggle-ispell
+</PARA>
+<PARA>fichero po-mode.el 
+
+<PROGRAMLISTING>@@ -1785,6 +1757,7 @@
+   (skip-chars-backward " \t\n")
+   (if (eq (preceding-char) ?&lt;)
+       (delete-region (1- (point)) (point-max)))
++  (run-hooks 'po-subedit-exit-hook)
+   (let ((string (buffer-string)))
+     (po-subedit-abort)
+     (po-find-span-of-entry)</PROGRAMLISTING>
+</PARA>
+<PARA>fichero .emacs
+
+<PROGRAMLISTING>(setq ispell-dictionary "american")
+;; (set-default 'ispell-local-dictionary "american")
+
+(defvar ke-po-dictionary "german-latin1"
+  "*Dictionary to use for spell checking `msgstr' entries.
+
+For available dictionaries see `ispell-dictionary-alist'.")
+
+(defvar ke-po-ispell-buffer nil
+  "*non-nil enable spell checking before exit subedit.")
+
+(defun ke-po-toggle-ispell ()
+  "Toggle ispell."
+  (interactive)
+  (setq ke-po-ispell-buffer (not ke-po-ispell-buffer)))
+
+(defun ke-ispell-buffer ()
+  (let ((ispell-local-dictionary ke-po-dictionary))
+    (if ke-po-ispell-buffer
+        (ispell-buffer))))
+(add-hook 'po-subedit-exit-hook 'ke-ispell-buffer)</PROGRAMLISTING>
+
+</PARA>
+<PARA>
+Modificaciones para revisar un fichero po de un punto hasta
+el final.
+
+<PROGRAMLISTING>(defun ke-po-ispell-msgstr (dict)
+  "`ispell' a `msgstr' entry."
+  (interactive "*")
+  (let ((start) (end)
+        (ispell-local-dictionary dict))
+    (setq end (re-search-forward po-any-msgstr-regexp))
+    (ispell-region (+ (match-beginning 0)
+                      (length "msgstr"))
+                   end)))
+
+(defun ke-po-do-ispell ()
+  "`ispell' a PO file from point to the end of the buffer."
+  (interactive "*")
+  (while (not (eobp))
+    (ke-po-ispell-msgstr ke-po-dictionary)))</PROGRAMLISTING></PARA></SECT2>
+
+
+<SECT2 ID="vim"><TITLE>
+Configuración de vim
+</TITLE>
+<PARA>
+Añadir rn rl fichero .vimrc
+<PROGRAMLISTING>augroup PO-MODE
+  autocmd!
+  autocmd BufRead *.po map ^[n /msgstr "CRz.f"l
+  autocmd BufRead *.po map ^[p k?msgstr "CRz.f"l
+  autocmd BufRead *.po map ^[u /msgstr ""CRz.$
+  autocmd BufRead *.po map ^[f /#, fuzzyCR^[n
+  autocmd BufRead *.po map ^[r ?#, fuzzyCRdd^[n
+  autocmd BufRead *.po map ^[z ?#:CRo#, fuzzy^[^[n
+  autocmd BufRead *.po map ^[c ?msgidCRf"lv^[nk$hhy^[nP
+  autocmd BufRead *.po map ^[i :wCR:!pocheck %CR:e %CR
+  autocmd BufRead *.po map ^[e /CRzt
+  autocmd BufRead *.po map ^[d ^[p^[eV/=====CRd/CRdd
+augroup END</PROGRAMLISTING></PARA>
+<PARA>A todas las funciones se accede pulsando Alt+key:
+n-siguiente mensaje, p-previo, u-siguiente no traducido, f-siguiente fuzzy,
+r-quita la marca fuzzy, z-marca como fuzzy, c-copia el original (para 
+derechos de autor y otros textos no traducibles), i-comprueba con pocheck,
+e-busca siguiente conflicto, d-borra trozo antiguo de conflicto.
+Por supuesto cada ^[ debe reemplazarse por el carácter de escape actual, esto
+es, ctrl+v esc.</PARA></SECT2></SECT1>
+
+
+<SECT1 ID="er"><TITLE>Entrega y recogida de trabajo</TITLE>
+<PARA>Normalmente siempre hay trabajos anunciados en las paginas web
+de Gnome-es. Algunas veces el enlace al trabajo te permitirá registrarte
+como colaborador y recoger tu mismo el trabajo. En otras te registraras
+en ese momento y recibirás los ficheros por e-correo mas adelante (normalmente
+en menos de una semana, pero recuerda somos todos somos voluntarios, yo 
+concretamente suelo contestar los fines de semana).</PARA>
+<PARA>Cuando tengas la traducción terminada (o una parte si es muy grande), 
+debes enviarla por e-correo al coordinador de tu trabajo o al coordinador
+de Gnome-es. Ellos se ocuparan de revisar que el formato es correcto y de
+entregarlo al repositorio cvs de Gnome. </PARA>
+<PARA>Estos procedimientos están destinados a los traductores noveles y 
+aquellos que no sepan o no tengan interés en trabajar directamente con
+el repositorio de ficheros fuente. En este caso el coordinador de Gnome-es o
+el de tu trabajo concreto se ocupara de estos temas. </PARA>
+<PARA>Sin embargo, si eres una mente inquieta, puedes tu mismo ocuparte de
+todo el proceso. A continuación os doy algunos consejos sobre como obtener
+y preparar ficheros directamente del repositorio cvs.</PARA>
+    <PARA>Eso si recuerda siempre informar al coordinador de Gnome-es
+o al de tu trabajo del paquete o documento que has decidido traducir, para
+evitar que dos personas trabajen en lo mismo.</PARA>
+  
+<SECT2><TITLE>ficheros po</TITLE>
+<PARA>Este es el tipo de trabajos en el que mas se agradece la iniciativa del
+traductor, ya que son los que mas cambian y dan por tanto mas trabajo a los
+coordinadores. Son, no obstante, los que tienen un proceso de recogida y
+entrega mas complicado.</PARA>
+<PARA>Para recoger ficheros po debes seguir el siguiente procedimiento:
+<FOOTNOTE>	  <PARA>Todos los comandos cvs indicados en este documento se aplican a la rama
+estable de desarrollo. Esta rama suele etiquetarse como 'HEAD', aunque 
+puede tener distintas etiquetas (paquete_1_0 es otra etiqueta 
+habitual).
+Se puede consultar la pagina de status de traducciones, o consultar con el
+coordinador del paquete para obtener la etiqueta de esta rama.
+ </PARA>
+	</FOOTNOTE></PARA>
+
+<SECT3><TITLE>Requisitos:</TITLE>
+<ITEMIZEDLIST><LISTITEM><PARA>Una versión de Linux instalada</PARA></LISTITEM>
+<LISTITEM><PARA>Gnome (recomenadado)</PARA></LISTITEM>
+<LISTITEM><PARA>Conexion a internet en servicio</PARA></LISTITEM>
+<LISTITEM><PARA>Paquete cvs</PARA></LISTITEM>
+<LISTITEM><PARA>Paquete gettext</PARA></LISTITEM>
+<LISTITEM><PARA>Paquetes de desarrollo (opcional)</PARA></LISTITEM>
+<LISTITEM><PARA>Paquetes de desarrollo Gnome (opcional)</PARA></LISTITEM></ITEMIZEDLIST>
+<PARA>Hay también que tener previsto espacio para los paquetes de código fuente
+con los que vayas a trabajar. Por ejemplo gnome-core ocupa mas de 10MB,
+otros como gnome-print son mas pequeños, 2MB, pero ojo los hay inmensos como
+gimp de mas de 30 MB.</PARA></SECT3>
+
+<SECT3><TITLE>copiar el paquete de cvs</TITLE>
+<PARA>Para copiar el código fuente del paquete "gnome-pepe"
+<PROGRAMLISTING>cd /home/gnome/cvs      # o el directorio donde quieras dejar los fuentes
+cd head                 # directorio para la rama estable
+export CVSROOT=:pserver:anonymous@anoncvs.gnome.org:/cvs/gnome
+cvs login              # cuando pida "password" pulsar [Retorno]
+# la primera vez que se copie un paquete
+cvs -z3 co -Pd -r HEAD gnome-pepe
+# para actualizar el paquete posteriormente
+cvs -z3 update -A gnome-pepe</PROGRAMLISTING></PARA></SECT3>
+<SECT3><TITLE>crear el fichero gnome-pepe.pot</TITLE>
+<PARA>Este fichero contiene todos los mensajes en ingles de los ficheros
+fuente del paquete.</PARA>
+<PROGRAMLISTING>cd /home/gnome
+cd cvs/head
+cd gnome-pepe/po
+./update_pofiles.sh         # este guion no se si es necesario, no ejecutar
+                            # de momento
+./update.sh</PROGRAMLISTING>
+<PARA>Algunos paquetes no incluyen estos dos guiones, pero como son iguales
+para casi todos, puede usar la copia que tengo en el servidor ftp
+de Linux Landia.</PARA></SECT3>
+<SECT3><TITLE>crear o actualizar el fichero es.po</TITLE>
+<PARA>Si no existe traducción previa, esto es no hay ya un fichero es.po en el cvs 
+<PROGRAMLISTING>cd /home/gnome/cvs/head
+cd gnome-pepe/po
+cp gnome-pepe.pot es.po </PROGRAMLISTING>
+
+Si existe una traducción de una versión anterior
+<PROGRAMLISTING>mv es.po es.po.xxx               # copia de salvaguardia la version previa
+msgmerge es.po.xxx gnome-pepe.pot &gt;es.po</PROGRAMLISTING>
+Como valor de xxx suelo poner la revisión cvs del fichero que se puede
+sacar del fichero:
+<PROGRAMLISTING>po/CVS/Entries</PROGRAMLISTING>
+Bueno y despues de todo este rollo ya tenemos el fichero es.po necesario
+para la traducción, y si te pica la curiosidad de saber como es de grande
+el trabajito teclea el ya conocido comando:
+<PROGRAMLISTING>msgfmt -v es.po</PROGRAMLISTING></PARA></SECT3>  
+
+
+<SECT3><TITLE>Entrega de un fichero po al repositorio cvs</TITLE>
+<NOTE>	  <PARA>Esta parte no esta terminada, no uséis este método de momento</PARA></NOTE>
+<PARA>Pendiente finalizar y revisar</PARA>
+<PARA>Requisitos: cuenta en el cvs.</PARA>
+	<PROGRAMLISTING>chequear el fichero:
+msgfmt -v es.po
+msgfmt -v -c -o /dev/null es.po</PROGRAMLISTING>
+	<PARA>corregir los posibles errores.
+
+actualizar la copia del repositorio, repitiendo el
+proceso de recogida, pero esta vez haciendo la mezcla
+con nuestro fichero es.po recién traducido.
+
+Comprobaremos que suele haber nuevamente mensajes sin
+traducir y otros 'fuzzy', a veces bastantes (los desarrolladores no
+paran nunca de modificar y mejorar los paquetes, y
+esto hace difícil la vida del coordinador de traducciones).
+
+Aquí se puede entregar tal cual y después revisar tranquilamente
+el nuevo fichero (o enviarlo nuevamente al colaborador para que lo 
+revise).
+
+Lo importante es no demorar la entrega, que se hace con los comandos.
+
+<PROGRAMLISTING>cd /mnt/gnome
+cd cvs/head
+cd gnome-pepe
+cvs -d :pserver:cuenta@cvs.gnome.org:/cvs/gnome login
+  password: xxxxxx    es la clave de tu cuenta cvs
+
+cd po
+cvs -d :pserver:cuenta@cvs.gnome.org:/cvs/gnome -z3 commit es.po</PROGRAMLISTING></PARA>
+<PARA>Para informar de los cambios es conveniente anunciarlos en el 
+fichero
+<FILENAME>ChangeLog</FILENAME> del directorio po añadiendo:
+<PROGRAMLISTING>2000-05-20 nombre de la persona que modifica cvs e-correo
+
+        * es.po      Updated Spanish translation
+</PROGRAMLISTING>
+Y enviando el nuevo fichero al cvs
+<PROGRAMLISTING>cd /mnt/gnome
+cd cvs/head
+cd gnome-pepe/po
+cvs -d :pserver:cuenta@cvs.gnome.org:/cvs/gnome login
+  password: xxxxxx    es la clave de tu cuenta cvs
+cvs -d :pserver:cuenta@cvs.gnome.org:/cvs/gnome -z3 commit ChangeLog 
+cvs -d :pserver:cuenta@cvs.gnome.org:/cvs/gnome logout</PROGRAMLISTING>
+
+
+</PARA>
+      </SECT3></SECT2>
+
+<SECT2><TITLE>ficheros desktop, menu, etc</TITLE>
+<PARA>Pendiente</PARA>
+<NOTE><PARA>Con este tipo de ficheros hay que tener especial cuidado ya que 
+contienen las traducciones en todos los idiomas.</PARA></NOTE>
+<PARA>terminar el guión perl que junta y separa los ficheros
+desktop.
+adecuarlo a los otros tipos de ficheros.</PARA></SECT2>
+
+<SECT2><TITLE>ficheros de ayuda y manuales</TITLE>
+<PARA>Pendiente</PARA></SECT2>
+</SECT1>
+
+
+
+<SECT1 ID="url"><TITLE>Direcciones de interés</TITLE>
+<PARA><ULINK URL="http://lucas.hispalinux.es/htmls/normas-lista.html" TYPE="http">Lista de correo sobre traducciones de Lucas </ULINK></PARA>
+
+<PARA><ULINK URL="http://www.croftj.net/~barreiro/spanish/grupos-es/" TYPE="http">Grupos de traducción de documentación al Castellano</ULINK></PARA>
+
+<PARA><ULINK URL="http://lucas.hispalinux.es/htmls/Otros/glosario/Glosario/glosario.html" TYPE="http">Glosario de Lucas</ULINK></PARA>
+    <PARA>
+<ULINK URL="http://bytez.telenet.es/~livingstone/kde-es/glosario.html" TYPE="http">Glosario de Kde</ULINK></PARA>
+    <PARA><ULINK URL="http://www.gnome.org/gdp/translation" TYPE="http">Pagina del proyecto de traducción de Gnome</ULINK></PARA>
+    <PARA><ULINK URL="http://www.docbook.org/" TYPE="http">Docbook, herramientas para generar la documentación</ULINK></PARA>
+
+    <PARA><ULINK URL="http://www.datsi.fi.upm.es/~coes/espell_leame/espell_leame.html" TYPE="http">Diccionario ispell Castellano</ULINK></PARA>
+    <PARA><ULINK URL="http://www.image.dk/~byrial/pospell/" TYPE="http">Adaptación del programas ispell para ficheros po</ULINK></PARA>
+</SECT1>
+
+</ARTICLE>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<CHAPTER ID="usage-sync">      <TITLE>Sincronizando con un Dispositivo de mano</TITLE>
+      <PARA>        Este capítulo cubre como sincronizar datos una vez instalado y 
+        configurado.  Si necesita información sobre como preparar un
+        sistema de sincronización, consulte <XREF LINKEND="config-sync">.
+      </XREF></PARA>
+      <SECT1 ID="hotsync">        <TITLE>Usando la Sincronización</TITLE>
+        <PARA>          Ponga su dispositivo de mano en su cuna y apriete el botón
+          de sincronización.
+        </PARA>
+        <PARA>         No, de verdad.  Esto es todo lo que hay que hacer.
+        </PARA>
+       </SECT1>
+    </CHAPTER>

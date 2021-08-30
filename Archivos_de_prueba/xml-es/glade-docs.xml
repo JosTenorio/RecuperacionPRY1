@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<BOOK ID="index">  <BOOKINFO>    <TITLE>Manual de usuario de Glade</TITLE>
+<COPYRIGHT><YEAR>2000</YEAR>
+<HOLDER>León H.G. y grupo Gnome-es (traducción al Castellano).</HOLDER></COPYRIGHT>
+
+  </BOOKINFO>
+
+  <CHAPTER>    <TITLE>Introducción</TITLE>
+    <PARA>Glade es una interfaz de desarrollo libre para el usuario, para GTK+ y
+el escritorio de Gnome.
+    </PARA>
+
+    <PARA> Los principales aspectos de Glade son:
+      <ITEMIZEDLIST>	<LISTITEM>	  <PARA>Soporte para  casi todos los Widgets  de GTK+ 1.2 y  muchos Widgets de
+Gnome.
+	  </PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA>La  interfaz de  usuario se  almacena  en XML,  permitiendo una  fácil
+integración de herramientas externas.
+	  </PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA>El  código puede  ser generado  para  varios lenguajes  como: C,  C++,
+ Ada95, Perl y Phyton.  (Glade genera el código en C y el soporte para
+ otros lenguajes se hace con herramientas externas)
+	  </PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA>La interfaz  puede ser  llamada de forma  dinámica usando  la librería
+libglade.
+	  </PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA> Para los proyectos  en C, Glade genera todos  los archivos necesarios
+ para crear la aplicación en  GTK o Gnome, incluyendo los archivos que
+ utilizan autoconfig y automake.   También soporta gettext, así que tu
+ aplicación puede  ser traducida fácilmente  a otros lenguajes,  y las
+ reglas para distribuir e instalar  las gráficas que son usadas en tus
+ aplicaciones.
+	  </PARA>
+	</LISTITEM>
+
+      </ITEMIZEDLIST>
+    </PARA>
+  </CHAPTER>
+
+  <CHAPTER>    <TITLE>Creación de una interface con Glade</TITLE>
+    <PARA> Este capitulo describe como crear una aplicación con Glade.
+      </PARA>
+    <PARA>  Debes notar que las imágenes son de la versión Glade para Gnome, las
+  cuales se ven un poco diferentes de la versión de GTK+.
+      </PARA>
+
+    <SECT1>      <TITLE>La ventana de proyectos</TITLE>
+      <PARA>	<SCREENSHOT>	  <GRAPHIC FILEREF="project.gif" ALIGN="right"></GRAPHIC>
+	</SCREENSHOT>
+      </PARA>
+
+      <PARA> La  ventana de  proyectos  muestra los  principales componentes  para
+ crear tu  proyecto -  las ventanas y  las cajas  de dialogo (  que en
+ adelante llamaremos "forms" o  "formas").  Los iconos de la izquierda
+ de cada forma indican el tipo de ventana o dialogo que es.
+      </PARA>
+
+      <PARA> Para  agregar una  nueva  forma,  selecciona uno  de  los widgets  de
+ ventana  o  de  dialogo  de   la  paleta.   Los  widgets  pueden  ser
+ identificadas fácilmente por las tiras  de color en la parte superior
+ de los iconos, que representan  la barra de títulos para las ventanas
+ o los diálogos.  (Para distinguir  las formas para GTK+ de las formas
+ para Gnome, las formas GTK+ tienen  la barra de titulo en azul, y las
+ de Gnome las tienen en rojo.  )
+      </PARA>
+
+      <PARA> Para desplegar una de las  formas en la ventana de proyecto solamente
+ haz doble click en ella.
+      </PARA>
+
+      <PARA> Los menús Popup también aparecen en la ventana de proyecto.  Al hacer
+ doble click en  alguna de ellas aparece el  Menú Editor, donde puedes
+ editar los detalles en el menú.
+      </PARA>
+    </SECT1>
+
+    <SECT1>      <TITLE>La paleta</TITLE>
+      <PARA>	<SCREENSHOT>	  <GRAPHIC FILEREF="palette.gif" ALIGN="right"></GRAPHIC>
+	</SCREENSHOT>
+      </PARA>
+      <PARA>  La  paleta  se usa  para  seleccionar  widgets  y agregarlos  en  tu
+ interfaz.  También contiene la  herramienta de selección (la flecha en
+ la  parte  superior  izquierda  de   la  ventana)  que  se  usa  para
+ seleccionar widgets en la interfaz.
+      </PARA>
+      <PARA> La paleta esta dividida en páginas enumeradas.  El botón debajo de la
+ herramienta de  selección muestra qué pagina está  disponible y puede
+ ser usado para cambiar entre las diferentes páginas.
+      </PARA>
+      <PARA> Existen dos  tipos de widgets  en la paleta  (1).  - widgets  de alto
+nivel como:  ventanas, diálogos y el  menú popup y, (2).   - todos los
+demás widgets, como etiquetas,  botones, campos para ingreso de texto,
+etc.
+      </PARA>
+      <PARA> Seleccionando  uno  de  los  widgets  de alto  nivel  de  la  paleta,
+ resultará  en  una nueva  ventana  o  una  ventana de  dialogo,  será
+ agregada al  proyecto en la ventana  del proyecto, y la  ventana o el
+ dialogo estará lista para que la edites.
+      </PARA>
+      <PARA> Cuando  selecciones cualquiera  de los  demás widgets  en  la paleta,
+ deberás escoger la posición de la forma en la ventana.
+      </PARA>
+      <PARA>Debes notar  que después de agregar  un widget, el  selector se activa
+ otra vez.  Si  quieres agregar varios widgets del  mismo tipo, sostén
+ la  tecla Ctrl  cuando selecciones  el widget  de la  paleta.  Cuando
+ hayas   terminado  de   agregar  los   widgets  deberás   escoger  el
+ seleccionador otra vez.
+      </PARA>
+    </SECT1>
+
+    <SECT1>      <TITLE>El editor de propiedades</TITLE>
+      <PARA>   La ventana de  edición muestra las propiedades del  widget que está
+ seleccionado en  ese momento y  te permite editarlas.  Muchas  de las
+ propiedades también  tienen opciones que pueden  ser vistas colocando
+ el ratón sobre el nombre de la propiedad.
+      </PARA>
+      <PARA>  Las  propiedades  están divididas  en  6  paginas, etiquetadas  con:
+"Widget";"place"      ("lugar"),      "Basic"      ("Básicos"),"Style"
+("Estilo"),"Accel.  " ("Aceleradores") y "Sig.  " ("Señales").
+      </PARA>
+
+      <SECT2>	<TITLE>La página de widget</TITLE>
+	<PARA>	<SCREENSHOT>	    <GRAPHIC FILEREF="property.gif" ALIGN="right"></GRAPHIC>
+	  </SCREENSHOT>
+ La página  del "Widget"  muestra el nombre  dado al widget  y algunas
+ propiedades especificas del tipo de widget que se trate, es decir, la
+ etiqueta del widget va a estar aquí para su edición.
+	</PARA>
+      </SECT2>
+
+      <SECT2>	<TITLE>La página de posición</TITLE>
+	<PARA>	<SCREENSHOT>	    <GRAPHIC FILEREF="property2.gif" ALIGN="right"></GRAPHIC>
+	  </SCREENSHOT>
+ La página de "Place" ("posición") contiene las propiedades relativas a
+ la posición  en el  widget que lo  contiene.  Este es  sólo aplicable
+ para  los widgets  en ciertos  contenedores como:  GtkTable, GtkHBox,
+ GtkVBox, GtkHPaned, GtkVPaned y GtkPacker,  y va a estar vacía en los
+ demás casos.
+
+	</PARA>
+      </SECT2>
+
+      <SECT2>	<TITLE>La página de básicos</TITLE>
+	<PARA>	<SCREENSHOT>	    <GRAPHIC FILEREF="property3.gif" ALIGN="right"></GRAPHIC>
+	  </SCREENSHOT>
+ La  página  de "Basic"  ("Básicos")  tiene  las  propiedades que  son
+ comunes  a  todos los  widgets,  como el  ancho  y  alto del  widget.
+ Algunas propiedades no se pueden modificar si no se aplican al widget
+ actual, eje. un widget de  tipo caja contenedor tendrá las propiedades
+ x e y no accesibles ya que no deberían usarse en una caja.
+	</PARA>
+      </SECT2>
+
+      <SECT2>	<TITLE>La página de estilo</TITLE>
+	<PARA>	<SCREENSHOT>	    <GRAPHIC FILEREF="property4.gif" ALIGN="right"></GRAPHIC>
+	  </SCREENSHOT>
+ La  pagina  "Style" ("Estilo")  muestra  el  estilo  del widget  -los
+ colores y  backgrounds usados para dibujar  el widget en  cada uno de
+ los cinco  posibles estados.  El  widget puede heredar el  estilo del
+ widget padre,  en tal caso el  resto de las propiedades  no se podrán
+ modificar.   Los estilos  pueden ser  designados y  compartidos entre
+ muchos  widgets, dándole  un nombre  a un  estilo o  seleccionando el
+ nombre del estilo creado con  anterioridad.  El cuaderno de la pagina
+ de estilos muestra los 5 posibles  estados de un widget y los colores
+ usados  para  este  estado.   Los  colores y  backgrounds  puede  ser
+ copiados y pegados.
+	</PARA>
+      </SECT2>
+
+      <SECT2>	<TITLE>La pagina de teclas rápidas</TITLE>
+	<PARA>	<SCREENSHOT>	    <GRAPHIC FILEREF="property5.gif" ALIGN="right"></GRAPHIC>
+	  </SCREENSHOT>
+La pagina de teclas rápidas...
+	</PARA>
+      </SECT2>
+
+      <SECT2>	<TITLE>La página de señales</TITLE>
+	<PARA>	<SCREENSHOT>	    <GRAPHIC FILEREF="property6.gif" ALIGN="right"></GRAPHIC>
+	  </SCREENSHOT>
+La página de señales...
+      </PARA>
+      </SECT2>
+
+    </SECT1>
+
+    <SECT1>      <TITLE>El árbol de widget</TITLE>
+      <PARA>	<SCREENSHOT>	  <GRAPHIC FILEREF="widget_tree.gif"></GRAPHIC>
+	</SCREENSHOT>
+
+      </PARA>
+
+      <PARA>Muestran un árbol que contiene a todos los widgets en la interfaz.  Si
+seleccionas  un widget  en  el árbol  se  activará éste  widget en  la
+interfaz.
+      </PARA>
+    </SECT1>
+
+    <SECT1 ID="menu-editor">      <TITLE>El editor de menús</TITLE>
+      <PARA>	<SCREENSHOT>	  <GRAPHIC FILEREF="menu_editor.gif"></GRAPHIC>
+	</SCREENSHOT>
+
+      </PARA>
+    </SECT1>
+
+    <SECT1>      <TITLE>El formulario de opciones del proyecto</TITLE>
+      <PARA>	<SCREENSHOT>	  <GRAPHIC FILEREF="options.gif"></GRAPHIC>
+	</SCREENSHOT>
+
+      </PARA>
+    </SECT1>
+
+    <SECT1>      <TITLE>Posicionamiento de Widget</TITLE>
+      <PARA> Usando Tablas y cajas.
+
+La rejilla - en los contenedores fijos.
+
+ Presiona Ctrl+R para redesplegar la ventana, que puede ser desplegada
+ con el tamaño que tendrá en la aplicación final.
+      </PARA>
+    </SECT1>
+
+    <SECT1>      <TITLE>Selección de widget</TITLE>
+      <PARA> Cuando el selector esté activo  usa el botón izquierdo del ratón para
+ seleccionar los  widgets.  Sosteniendo la tecla  Shift selecciona los
+ widgets que  estén detrás del widget  activo.  Esto te  permite ver y
+ editar las propiedades de los contenedores.
+
+ Presionando el botón derecho del ratón se muestra un menú sensible al
+ contexto.  Este  contiene comando relativos al  widget en particular,
+ con submenús que contiene  comandos relacionados a los widgets detrás
+ del widget seleccionado ( es decir, los contenedores).
+
+ Presiona ESC para de-seleccionar a todos los widgets.
+
+      </PARA>
+    </SECT1>
+  </CHAPTER>
+
+  <CHAPTER>    <TITLE>Uso del código C generado por Glade</TITLE>
+    <PARA>
+      </PARA>
+
+    <SECT1>      <TITLE>Los ficheros fuente generados por Glade</TITLE>
+      <PARA>
+      </PARA>
+    </SECT1>
+
+    <SECT1>      <TITLE>Acceso   a   los   widget   desde  los   manejadores   de
+      señales</TITLE>
+      <PARA>
+      </PARA>
+    </SECT1>
+
+    <SECT1>      <TITLE>Paso de datos a los manejadores de señales</TITLE>
+      <PARA>
+      </PARA>
+    </SECT1>
+
+  </CHAPTER></BOOK>

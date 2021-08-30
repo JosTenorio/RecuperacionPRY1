@@ -1,6 +1,15 @@
 import glob
 import time
+import re
+from documentParser import load_stopwords,clean_xml
+regex_paths= r'[A-z]:\\(?:[^\\\/:*?"<>|\r\n]+\\)*[^\\\/:*?"<>|\r\n]*'
+regex_files = r'[a-zA-Z]:[\\\/](?:[a-zA-Z0-9]+[\\\/])*([a-zA-Z0-9]+\.txt)'
 
+def is_path(path):
+    print(path)
+    return bool(re.match(regex_paths,path))
+def is_file(path):
+    return bool(re.match(regex_files,path))
 def open_file(path):
     try:
         file = open(path, encoding="utf-8")
@@ -18,8 +27,8 @@ def load_directory_files(path):
     return glob.glob(path+"/**/*.xml",recursive=True)
 
 # Test function for cleaning functions
-def test_clean_xml():
-    path="D:\\Development\\RecuperacionPRY1\\documentIndexer\\stopWords\\stopWords1.txt"
+def start_indexing(collection_path,stopwords_path,target_path):
+    path=stopwords_path
     file = open_file(path)
     stopwords = load_stopwords(file.read())
     documents = load_directory_files("D:\\Development\\RecuperacionPRY1\\Archivos de prueba\\xml-es")
