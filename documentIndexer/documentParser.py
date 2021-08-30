@@ -40,8 +40,10 @@ def clean_xml(lines,stopwords,globalDict):
     total_word_count = 0
     for word in words:
         word = normalize_word(word)
+        print(word)
         if word not in stopwords:
             insert_glob_dict(word,globalDict)
+            
             total_word_count += 1
     print(f'Total count {total_word_count}')
     print(f'Number of different words {len(words_dict)}')

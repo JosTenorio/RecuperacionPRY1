@@ -31,7 +31,7 @@ def start_indexing(collection_path,stopwords_path,target_path):
     path=stopwords_path
     file = open_file(path)
     stopwords = load_stopwords(file.read())
-    documents = load_directory_files("D:\\Development\\RecuperacionPRY1\\Archivos de prueba\\xml-es")
+    documents = load_directory_files(collection_path)
     if len(documents) == 0:
         print("No existen documentos para indexar en este directorio")
         return
