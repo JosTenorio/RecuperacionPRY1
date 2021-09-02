@@ -1,5 +1,13 @@
-# Functions related to data cleaning and word extraction
+ # Functions related to data cleaning and word extraction
+
+ # Imports
 import re
+import sys
+from utils import open_file,load_directory_files
+from Structures.Collection import Collection
+# Package setup
+sys.path.insert(0, './Structures')
+
 # Pattern used for regex
 word_pattern_no_symbols = r"([A-Za-zÀ-ÿ\u00f1\u00d1\d_]+)"
 word_pattern_test = r"[(\w@/:)+\.]+"
@@ -59,3 +67,17 @@ def load_stopwords(lines_stop):
             global_stopwords.append(stopword)
     return global_stopwords
 
+# Test function for cleaning functions
+def start_indexing(collection_path,stopwords_path,target_path):
+    path=stopwords_path
+    file = open_file(path)
+    stopwords = load_stopwords(file.read())
+    documents = load_directory_files(collection_path)
+    if len(documents) == 0:
+        print("No existen documentos para indexar en este directorio")
+        return
+    dics = []
+    collection = Collection(collection_path,stopwords_path)
+    glob_dict = {}
+    for document in documents:
+        dics.append(clean_xml(open_file(document).read(),stopwords,glob_dict))

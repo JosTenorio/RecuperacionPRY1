@@ -1,7 +1,7 @@
 import cmd
 
-from documentParser import clean_xml, load_stopwords
-from utils import load_directory_files, open_file, start_indexing, is_path,is_file
+from documentParser import clean_xml, load_stopwords,start_indexing
+from utils import load_directory_files, open_file, is_path,is_file
 
 
 class Terminal(cmd.Cmd):
@@ -21,7 +21,6 @@ class Terminal(cmd.Cmd):
         """indizar  [Colección]  [Stopwords] [Índice]
         Crea un índice para los archivos del directorio [Colección]"""
         args = line.split()
-        print(len(args))
         if(len(args)<3):
             print("Por ingrese todos los parámetros correctamente")
             return
@@ -84,3 +83,4 @@ class Terminal(cmd.Cmd):
 
 if __name__ == '__main__':
     Terminal().cmdloop()
+    # Index test comand indizar D:\Development\RecuperacionPRY1\Archivos_de_prueba\xml-es D:\Development\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt D:\Development\RecuperacionPRY1\documentIndexer\stopWords

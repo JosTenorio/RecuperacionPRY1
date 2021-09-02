@@ -1,12 +1,15 @@
 import glob
 import time
 import re
-from documentParser import load_stopwords,clean_xml
+import sys
+# Package setup
+sys.path.insert(0, './Structures')
+
+# Utility REGEX
 regex_paths= r'[A-z]:\\(?:[^\\\/:*?"<>|\r\n]+\\)*[^\\\/:*?"<>|\r\n]*'
 regex_files = r'[a-zA-Z]:[\\\/](?:[a-zA-Z0-9]+[\\\/])*([a-zA-Z0-9]+\.txt)'
 
 def is_path(path):
-    print(path)
     return bool(re.match(regex_paths,path))
 def is_file(path):
     return bool(re.match(regex_files,path))
@@ -26,17 +29,3 @@ def open_file(path):
 def load_directory_files(path):
     return glob.glob(path+"/**/*.xml",recursive=True)
 
-# Test function for cleaning functions
-def start_indexing(collection_path,stopwords_path,target_path):
-    path=stopwords_path
-    file = open_file(path)
-    stopwords = load_stopwords(file.read())
-    documents = load_directory_files(collection_path)
-    if len(documents) == 0:
-        print("No existen documentos para indexar en este directorio")
-        return
-    dics = []
-    glob_dict = {}
-    for document in documents:
-        dics.append(clean_xml(open_file(document).read(),stopwords,glob_dict))
-    print(len(glob_dict))
