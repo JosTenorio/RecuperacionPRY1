@@ -1,10 +1,23 @@
+from Posting import Posting
 class Term:
 
-    def __init__(self, frequency, inv_frequency):
+    def __init__(self, term, frequency, inv_frequency=0):
         """
         :type frequency: int
         :type inv_frequency: float
         """
+        self.term = term
         self.frequency = frequency
         self.inv_frequency = inv_frequency
         self.postings = {}
+    def insert_posting(self,doc_id):
+        if doc_id in self.postings.keys():
+            self.postings[doc_id].frequency += 1
+        else:
+            self.postings[doc_id] = Posting(doc_id,1)
+
+    def __str__(self):
+        string = f'Término {self.term} ------ Frecuencia {self.frequency} \n'
+        for key in self.postings.keys():
+            string+=str(self.postings[key])
+        return string+"\n \n ================ \n"
