@@ -3,7 +3,7 @@
 # Imports
 import re
 import sys
-from utils import open_file, load_directory_files
+from utils import open_file, load_directory_files,write_index
 from Structures.Collection import Collection
 from Structures.Posting import Posting
 from Structures.Term import Term
@@ -86,5 +86,5 @@ def start_indexing(collection_path, stopwords_path, target_path):
         doc_id_counter += 1
     collection.size = len(collection.documents)
     collection.calculate_avr_size()
-    print(collection)
-    print(len(collection.dictionary))
+    write_index(collection,target_path)
+

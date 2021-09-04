@@ -2,6 +2,7 @@ import glob
 import time
 import re
 import sys
+import pickle
 # Package setup
 sys.path.insert(0, './Structures')
 
@@ -29,3 +30,7 @@ def open_file(path):
 def load_directory_files(path):
     return glob.glob(path+"/**/*.xml",recursive=True)
 
+def write_index(collection,destination):
+    f = open(destination+"file.pkl", "wb")
+    pickle.dump(collection,f)
+    f.close()
