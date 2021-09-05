@@ -9,7 +9,7 @@ from Structures.Posting import Posting
 from Structures.Term import Term
 from Structures.Document import Document
 from shlex import split
-from utils import load_directory_files, open_file, is_path, is_file
+from utils import load_directory_files, open_file, is_path, is_file, normalize_word
 
 # Package setup
 sys.path.insert(0, './Structures')
@@ -27,17 +27,7 @@ global_stopwords = ['a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde',
 
 # Start of functions
 
-# Normalizes accents
-def normalize_word(word):
-    word = word.lower()
-    word = word.replace('á', 'a')
-    word = word.replace('é', 'e')
-    word = word.replace('í', 'i')
-    word = word.replace('ó', 'o')
-    word = word.replace('ú', 'u')
-    word = word.replace('ü', 'u')
 
-    return word
 
 
 # Argument validation
@@ -83,6 +73,8 @@ def clean_xml(lines, stopwords, collection, doc_id):
             collection.insert_term(word, doc_id)
             total_word_count += 1
     collection.documents[str(doc_id)].size = total_word_count
+    if doc_id == 91:
+        print(total_word_count)
     return
 
 

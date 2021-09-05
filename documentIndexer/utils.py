@@ -10,6 +10,17 @@ sys.path.insert(0, './Structures')
 regex_paths = r'[A-z]:\\(?:[^\\\/:*?"<>|\r\n]+\\)*[^\\\/:*?"<>|\r\n]*'
 regex_files = r'[a-zA-Z]:[\\\/](?:[a-zA-Z0-9]+[\\\/])*([a-zA-Z0-9]+\.txt)'
 
+# Normalizes accents
+def normalize_word(word):
+    word = word.lower()
+    word = word.replace('á', 'a')
+    word = word.replace('é', 'e')
+    word = word.replace('í', 'i')
+    word = word.replace('ó', 'o')
+    word = word.replace('ú', 'u')
+    word = word.replace('ü', 'u')
+
+    return word
 
 def is_path(path):
     return bool(re.match(regex_paths, path))

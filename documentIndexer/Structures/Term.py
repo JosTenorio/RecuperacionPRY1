@@ -6,7 +6,7 @@ class Term:
     def __init__(self, term, frequency):
         """
         :type frequency: int
-        :type inv_frequency: float
+        :type term: str
         """
         self.term = term
         self.frequency = frequency

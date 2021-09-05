@@ -28,7 +28,8 @@ class Collection:
         string = ""
         for key in self.dictionary.keys():
             string += (str(self.dictionary[key]))
-        string += f'Collection size ={self.size} || Document avr length {self.avr_length} || Collection address {self.address}'
+        string += f'Collection size ={self.size} || Document avr length {self.avr_length} || Collection address' \
+                  f' {self.address}'
         return string
 
     def calculate_avr_size(self):

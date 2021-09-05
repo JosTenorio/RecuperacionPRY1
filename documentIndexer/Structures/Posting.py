@@ -3,7 +3,6 @@ class Posting:
     def __init__(self, doc_id, frequency):
         """
         :type frequency: int
-        :type weight: float
         """
         self.doc_id = doc_id
         self.frequency = frequency

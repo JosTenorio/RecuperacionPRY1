@@ -4,7 +4,7 @@
 import sys
 from shlex import split
 from os import path
-from utils import load_index
+from utils import load_index, normalize_word
 
 # Package setup
 sys.path.insert(0, './Structures')
@@ -33,14 +33,29 @@ def validate_parameters(line):
 
 # Document inspection
 def inspect_doc(collection, doc_path):
-    # dic_item = [k for k, v in collection.documents.items() if k.address == doc_path][0]
-    print(doc_path)
+    real_doc_path = path.normcase(collection.address + "\\" + doc_path)
+    search_result = [(k, v) for k, v in collection.documents.items() if path.normcase(v.address) == real_doc_path]
+    if not search_result:
+        print("No se encontró la entrada de la colección correspondiente a la ruta relativa dada, por favor reintentar")
+        return
+    else:
+        doc_id, doc = search_result[0]
+        print("Detalles del documento: " + str(path.normcase(doc_path)) + "\n\nId: " + str(doc_id) + "\nLongitud: "
+              + str(doc.size) + "\nNorma: " + str(doc.norm))
 
 
-# Term inspection
-def inspect_term(collection, term):
-    print(term)
+# Term inspection and display
+def inspect_term(collection, term_spelling):
+    term = collection.dictionary[normalize_word(term_spelling)]
+    print("Detalles del término '" + term_spelling + "': \n\nDocumentos en los que aparece (ni): " +
+          str(len(term.postings.keys())) + "\nIDF vectorial: " + str(term.inv_frequency_vec) + "\nIDF BM25: "
+          + str(term.inv_frequency_bm5))
+    print("Postings (id del documento, frecuencia en el documento, peso vectorial, peso BM25): ")
+    for k, v in term.postings.items():
+        print("(%s, %s, %s, %s)" % (str(k), str(v.frequency), str(v.weight_vec), str(v.weight_bm25)))
 
+
+# mostrar 'C:\Users\Personal\Desktop\RecuperacionPRY1\documentIndexer\stopWords' ter carga
 
 # Entry point function
 def inspect_index(line):
@@ -52,7 +67,8 @@ def inspect_index(line):
     try:
         collection = load_index(params["index_path"])
     except FileNotFoundError:
-        print("Error: El directorio de indíce especificado no contiene ningún índice o este no se puede acceder, por favor reintentar")
+        print("Error: El directorio de indíce especificado no contiene ningún índice o este no se puede acceder,"
+              " por favor reintentar")
         return
     if params["type"] == "ter":
         inspect_term(collection, params["data_path"])
