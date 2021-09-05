@@ -17,8 +17,12 @@ def validate_parameters(line):
 
 
 def inspect_doc(collection, doc_path):
+    #dic_item = [k for k, v in collection.documents.items() if k.address == doc_path][0]
+
+
     print(doc_path)
 
+#C:\Users\Personal\Desktop\RecuperacionPRY1\Archivos de prueba\xml-es
 
 def inspect_term(collection, term):
     print(term)

@@ -66,3 +66,5 @@ class Terminal(cmd.Cmd):
 
 if __name__ == '__main__':
     Terminal().cmdloop()
+
+# mostrar 'C:\Users\Personal\Desktop\RecuperacionPRY1\Archivos de prueba\xml-es' doc 'C:\Users\Personal\Desktop\RecuperacionPRY1\Archivos de prueba\xml-es'
