@@ -2,17 +2,23 @@ import glob
 import re
 import sys
 import pickle
+
 # Package setup
 sys.path.insert(0, './Structures')
 
 # Utility REGEX
-regex_paths= r'[A-z]:\\(?:[^\\\/:*?"<>|\r\n]+\\)*[^\\\/:*?"<>|\r\n]*'
+regex_paths = r'[A-z]:\\(?:[^\\\/:*?"<>|\r\n]+\\)*[^\\\/:*?"<>|\r\n]*'
 regex_files = r'[a-zA-Z]:[\\\/](?:[a-zA-Z0-9]+[\\\/])*([a-zA-Z0-9]+\.txt)'
 
+
 def is_path(path):
-    return bool(re.match(regex_paths,path))
+    return bool(re.match(regex_paths, path))
+
+
 def is_file(path):
-    return bool(re.match(regex_files,path))
+    return bool(re.match(regex_files, path))
+
+
 def open_file(path):
     try:
         file = open(path, encoding="utf-8")
@@ -27,9 +33,18 @@ def open_file(path):
 
 
 def load_directory_files(path):
-    return glob.glob(path+"/**/*.xml",recursive=True)
+    return glob.glob(path + "/**/*.xml", recursive=True)
 
-def write_index(collection,destination):
-    f = open(destination+"/file.pkl", "wb")
-    pickle.dump(collection,f)
+
+def write_index(collection, destination):
+    f = open(destination + "/file.pkl", "wb")
+    pickle.dump(collection, f)
     f.close()
+
+
+# Function that loads a collection from a previously created index
+def load_index(location):
+    f = open(location + "/file.pkl", "rb")
+    index = pickle.load(f)
+    f.close()
+    return index
