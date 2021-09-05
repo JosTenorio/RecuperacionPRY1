@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<CHAPTER ID="config-setupassist">      <TITLE>Configuración Fácil con el Asistente</TITLE>
+      <PARA>        La primera vez que intente usar el correo, el asistente de
+        configuración del correo le pedirá algunos datos básicos, para que
+        <APPLICATION>Evolution</APPLICATION> le deje usar el correo. Si
+        prefiere una configuración más detallada, o si quiere realizar
+        cambios en una configuración ya existente, vea <XREF LINKEND="config-prefs">.
+      </XREF></PARA>
+
+   <SECT1 ID="config-setupassist-mail">      <TITLE>Configuración del Correo</TITLE>
+      <PARA>        La primera vez que intente enviar o recibir correo con
+	<APPLICATION>Evolution</APPLICATION>, aparecerá el <INTERFACE>asistente de
+	configuración del correo</INTERFACE> para ayudarle con la configuración de
+	su correo.  Si no piensa usar el correo electrónico, o si prefiere
+	ocuparse de la configuración de su correo más tarde, pulse
+	<GUIBUTTON>Cancelar</GUIBUTTON>.
+      </PARA>
+
+
+      <PARA>         El asistente para la configuración (algunas veces llamado 
+	 <GLOSSTERM>Druida</GLOSSTERM>, por analogía con los "Magos"
+	 que usan otros programas) le guiará a través del proceso de configuración
+	 de la red.  Le preguntará acerca de alguna información básica. Su
+	 administrador de sistemas o su proveedor de Internet debería tener
+	 las respuestas que necesitará.  El asistente para la configuración del
+	 correo está representado en <XREF LINKEND="usage-setup-fig">.
+
+
+	<FIGURE ID="usage-setup-fig">	<TITLE>Asistente para la Configuración del Correo</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>Ventana del Correo de Evolution</SCREENINFO>
+	  <GRAPHIC FILEREF="fig/mail-druid-pic" FORMAT="png" SRCCREDIT="Kevin Breit">	    </GRAPHIC>
+	</SCREENSHOT>
+	</FIGURE>
+
+
+
+  El asistente le pedirá la siguiente información:
+        <VARIABLELIST>
+          <VARLISTENTRY>               <TERM> <GUILABEL>Nombre:</GUILABEL> </TERM> <LISTITEM>	  <PARA>Su nombre completo. </PARA></LISTITEM>
+         </VARLISTENTRY>
+
+       <VARLISTENTRY>          <TERM><GUILABEL>Dirección de correo electrónico:</GUILABEL></TERM>
+	  <LISTITEM><PARA>                 Su dirección de correo completa.
+                 </PARA></LISTITEM>
+       </VARLISTENTRY>
+
+       <VARLISTENTRY>          <TERM> <GUILABEL>Organización:</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>           Cualquier organización a la que represente, o la compañía para
+           la que trabaja.  Deje esto en blanco si lo prefiere, o ponga
+           "Yo mismo" así la gente sabrá que sus opiniones son solo suyas.
+           </PARA>
+	  </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>	 <TERM><GUILABEL>Archivo de Firma:</GUILABEL></TERM>
+          <LISTITEM>            <PARA>             Un archivo de texto añadido a cualquier mensaje que envíe. Una
+             firma típica consiste en su nombre y su dirección de correo,
+             o una cita que le guste.  Es una buena medida mantener su
+             "firma" corta: cuatro líneas son suficientes. Recuerde,
+             que esto se adjuntará a todos los mensajes que envíe.
+            </PARA>
+         </LISTITEM>
+       </VARLISTENTRY>
+
+       <VARLISTENTRY>           <TERM> <GUILABEL>Tipo de fuente del correo:</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>              <APPLICATION>Evolution</APPLICATION> soporta varias fuentes
+              para el correo: servidores <GLOSSTERM LINKEND="pop">POP</GLOSSTERM> e <GLOSSTERM LINKEND="imap">IMAP</GLOSSTERM>, y archivos 
+              <SYSTEMITEM><FILENAME>mbox</FILENAME></SYSTEMITEM> y
+              <SYSTEMITEM><FILENAME>mh</FILENAME></SYSTEMITEM> al estilo UNIX.
+              Los servidores POP le permiten obtener su correo y guardarlo
+              localmente para que pueda consultarlo incluso cuando no esté
+              conectado a la red; los servidores <GLOSSTERM>IMAP</GLOSSTERM>
+              guardan el correo en el servidor para que puede acceder a el
+              desde varios sitios; los
+              archivos <SYSTEMITEM><FILENAME>mbox</FILENAME></SYSTEMITEM>
+              son usados por su ordenador para el correo interno, y pueden
+              ser útiles si quiere cambiar desde otro cliente de correo como
+              <APPLICATION>Spruce</APPLICATION> o
+              <APPLICATION>Netscape Communicator</APPLICATION>.  Pregunte
+              a su administrador de sistemas cual debe usar, o intente
+              hasta que alguno funcione.  Puede usar múltiples fuentes si lo
+              desea; vea <XREF LINKEND="config-prefs-mail-network"> para más
+              información.
+            </XREF></PARA>
+            <PARA>              Si decide que <APPLICATION>Evolution</APPLICATION>
+              no use ningún servidor, los siguientes elementos no son
+              relevantes; tan solo debe indicar donde se encuentran los
+              archivos a los que desea acceder.
+            </PARA>
+	  </LISTITEM>
+	  </VARLISTENTRY>
+          
+       <VARLISTENTRY>          <TERM> <GUILABEL>Servidor:</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>              Este debe ser el nombre del servidor de donde obtiene el
+              correo entrante.  Puede (o puede no) ser el mismo servidor
+              al que envía su correo saliente.
+            </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+
+     <VARLISTENTRY>	  <TERM><GUILABEL>Nombre de usuario:</GUILABEL></TERM>
+	<LISTITEM>            <PARA>             Introduzca el nombre de usuario de la cuenta de su servidor de
+             correo, si tiene una. En casi todos los casos, esta es la parte
+             de su correo de antes del carácter @, y
+             <APPLICATION>Evolution</APPLICATION> elige ese valor como
+             valor por defecto.  Si tiene un nombre de usuario distinto,
+             puede escribirlo aquí.
+           </PARA>
+	  </LISTITEM>
+      </VARLISTENTRY>
+     
+       <VARLISTENTRY>            <TERM><GUILABEL>Autentificación:</GUILABEL></TERM> 
+	    <LISTITEM>	    <PARA>              Selección el tipo de autentificación que usará.  Puede              pulsar <GUIBUTTON>Detectar tipos soportados</GUIBUTTON> para
+              averiguar que protocolos de autentificación admite su sistema.
+            </PARA>
+	  </LISTITEM>
+       </VARLISTENTRY>
+
+      <VARLISTENTRY> 
+         <TERM><GUILABEL>Transporte de Correo:</GUILABEL></TERM>
+	  <LISTITEM>	    <PARA>              Este es el protocolo de envío de correo que quiera usar.
+              <APPLICATION>Evolution</APPLICATION> soporta ambos
+              <GLOSSTERM LINKEND="smtp">SMTP</GLOSSTERM> y
+              <APPLICATION>sendmail</APPLICATION>; SMTP es de lejos el más
+              común.
+            </PARA>
+	  </LISTITEM>
+      </VARLISTENTRY>
+     </VARIABLELIST>
+      </XREF></PARA>
+      <PARA>        Para aprender a configurar <APPLICATION>Evolution</APPLICATION>
+        con todo detalle, o para cambiar las preferencias una vez que las
+        ha fijado, mire <XREF LINKEND="config-prefs">.
+      </XREF></PARA>
+    </SECT1>
+</CHAPTER>

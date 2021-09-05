@@ -1,0 +1,735 @@
+<?xml version="1.0"?>
+<SECT1 ID="utility-applet">  <TITLE>Apliques de Utilidades</TITLE>
+  <SECT2 ID="printer">   <TITLE>Aplique de Impresora</TITLE> 
+
+   <PARA> 
+
+      Aplique de <APPLICATION>Impresora</APPLICATION> , mostrado en <XREF LINKEND="printer-fig">, 
+      te permite imprimir ficheros arrastrándolos al
+      aplique desde el <INTERFACE> escritorio</INTERFACE> o el <INTERFACE>gestor de 
+      archivos</INTERFACE>.  Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>, 
+      pulsa con el botón derecho en el <INTERFACE>Panel</INTERFACE> y selecciona
+      <MENUCHOICE>	<GUIMENU>Panel</GUIMENU>
+	<GUISUBMENU>Añadir al panel</GUISUBMENU>
+	<GUISUBMENU>Aplique</GUISUBMENU>
+	<GUISUBMENU>Utilidades</GUISUBMENU>
+	<GUIMENUITEM>Aplique de Impresora</GUIMENUITEM>
+      </MENUCHOICE>.
+      
+  </XREF></PARA>
+  
+ 
+   <FIGURE ID="printer-fig">   <TITLE>Aplique de Impresora</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique de Impresora</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/printer-fig" SRCCREDIT="Michael Hall">    </GRAPHIC>
+   </SCREENSHOT>
+   </FIGURE>
+
+   <SECT3 ID="printer-usage">    <TITLE>Uso</TITLE>
+
+    <PARA>    Para imprimir un fichero desde tu <INTERFACE>escritorio</INTERFACE> o <INTERFACE>gestor
+    de archivos</INTERFACE>, arrastra el fichero encima del aplique de <APPLICATION>impresora</APPLICATION>.
+    
+    </PARA>
+   </SECT3>
+
+   <SECT3 ID="printer-right-click">    <TITLE>Elementos emergentes de botón derecho</TITLE>
+    <PARA>      Si se pulsa con el botón derecho sobre el aplique emerge un menú con
+      los siguientes elementos
+      <ITEMIZEDLIST> 	
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Propiedades...</GUIMENUITEM>  Este elemento
+	    de menú abre el diálogo <INTERFACE>Propiedades</INTERFACE>  (véase
+	    <XREF LINKEND="printer-properties">) que te permite personalizar 
+	    el aspecto y comportamiento de este aplique.
+	  </XREF></PARA>
+	</LISTITEM>
+	
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+	    muestra este documento.
+	  </PARA>
+	</LISTITEM>
+	
+	<LISTITEM>	  <PARA>	    <GUIMENUITEM>Acerca de</GUIMENUITEM> 
+	    muestra información básica acerca del <APPLICATION>Aplique de Impresora</APPLICATION>,
+	    además de la versión del aplique y el nombre del autor.
+	  </PARA>
+	</LISTITEM>
+
+      </ITEMIZEDLIST>	
+    </PARA>             
+   </SECT3>
+
+   <SECT3 ID="printer-properties">    <TITLE>Propiedades</TITLE>
+    <PARA>     Puedes configurar el aplique <APPLICATION>impresora</APPLICATION>
+     pulsando con el botón derecho sobre el aplique y seleccionando
+     el elemento de menú <GUIMENUITEM>Propiedades...</GUIMENUITEM>.
+      Esto abrirá el diálogo <INTERFACE>Propiedades</INTERFACE>, mostrado en <XREF LINKEND="printer-properties-fig">.
+    </XREF></PARA>
+
+    <FIGURE ID="printer-properties-fig">     <TITLE>Diálogo Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo Propiedades</SCREENINFO> 
+      <GRAPHIC FORMAT="png" FILEREF="./figs/printer-properties" SRCCREDIT="Michael Hall">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+    
+    <PARA> 
+
+    Para cambiar la etiqueta mostrada en la parte inferior del 
+    aplique <APPLICATION>impresora</APPLICATION>, ("Print" en <XREF LINKEND="printer-fig">) escribe un nuevo nombre en el campo
+    <GUILABEL>Nombre de la impresora</GUILABEL> field.
+     Esta configuración es útil si tienes más de una impresora 
+    disponible y deseas añadir un aplique de 
+    <APPLICATION>impresora</APPLICATION> al <INTERFACE>Panel</INTERFACE>
+    para cada impresora. El <GUILABEL>Nombre de la impresora</GUILABEL>
+    no determina en qué impresora será impreso el fichero,
+    existe como un modo sencillo de distinmguir entre impresoras en el caso de que tengas
+    más de un aplique de <APPLICATION>impresora</APPLICATION>
+    instalado en tu <INTERFACE>Panel</INTERFACE>.
+
+
+    </XREF></PARA>
+    
+    <PARA>     Para cambiar el comando que utiliza el aplique de <APPLICATION>impresora</APPLICATION>
+     para imprimir tus ficheros, puedes introducir un nuevo comando en el campo
+     <GUILABEL>Comando de impresión</GUILABEL>.  Por omisión, el aplique de <APPLICATION>impresora
+     </APPLICATION> usa el comando <COMMAND>lpr</COMMAND>, que es
+     común a muchos sistemas. Tu sistema podría usar un commado diferente. Si no estás
+     seguro échale un vistazo a la documentación de tu sistema.
+    </PARA>
+      <NOTE>	  <TITLE>NOTA</TITLE>
+	<PARA> 
+	  Si tienes más de una impresora, puedes asignar a qué impresora enviar ficheros
+	  cambiando la configuración <GUILABEL>Comnando de impresión</GUILABEL>.  Por
+	  ejemplo, si tu sistema usa el comando <COMMAND>lpr</COMMAND> para imprimir
+	  ficheros y necesitas imprimir tu fichero en la impresira llamada "ljet5",
+	  cambiarías el <GUILABEL>Comando de impresión</GUILABEL> a <COMMAND>lpr
+	  -Pljet5</COMMAND>.  
+	</PARA>
+      </NOTE>
+
+    <PARA> 
+      Después de haber hecho todos los cambios que quieras, pulsa en 
+      <GUIBUTTON>OK</GUIBUTTON> para aplicar los cambios y cerrar el diálogo
+      <INTERFACE>Propiedades</INTERFACE>. Para cancelar los cambios y volver
+      a los valores anteriores, pulsa en el botón 
+      <GUIBUTTON>Cerrar</GUIBUTTON>.
+    </PARA>
+   </SECT3>
+  
+   <SECT3 ID="printer-bugs">    <TITLE>Errores y Limitaciones conocidos</TITLE>
+    <PARA>     No hay errores conocidos en el aplique de 
+     <APPLICATION>impresora</APPLICATION>. 
+    </PARA>
+   </SECT3>
+
+ </SECT2>
+
+ <SECT2 ID="charpickaplique">  <TITLE>Aplique Tabla de Caracteres</TITLE>
+
+  <PARA>   El aplique <APPLICATION>Tabla de Caracteres</APPLICATION>, mostrado en <XREF LINKEND="charpickapplet-fig">, te permite escribir fácilmente muchos caracteres
+   que no están disponibles en teclados estándar, así como caracteres acentuados,
+   ciertos símbolos matemáticos y de puntuación, y otros símbolos especiales
+   Para añadir este aplique a un 
+   <INTERFACE>Panel</INTERFACE>, 
+   pulsa con el botón derecho en el <INTERFACE>Panel</INTERFACE> 
+   y selecciona
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Aplique</GUISUBMENU>
+    <GUISUBMENU>Utilidades</GUISUBMENU>
+    <GUIMENUITEM>Tabla de Caracteres</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="charpickapplet-fig">   <TITLE>Aplique Tabla de Caracteres</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique Tabla de Caracteres</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/charpick_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="charpickaplique-usage">   <TITLE>Uso</TITLE>
+   <PARA>    Primero lleva el foco del cursor a la <APPLICATION>Tabla de
+    Caracteres</APPLICATION> pulsando sobre uno de los caracteres
+    mostrados en el aplique. Especifica el grupo de caracteres
+    pulsando la tecla correspondiente en tu teclado. (Para una
+    lista completa de grupos de caracteres y teclas correspondientes, véase
+    <XREF LINKEND="charpickaplique-characters">.) Por ejemplo,
+    para ver las varias versiones de la letra "a" acentuada, pulsa
+    "a". Después de haber encontrado la letra o el símbolo correcto,
+    pulsa con el botón derecho para copiar el símbolo al buffer. El
+    caracter deberá aparecer como un botón pulsado. Esto es parecido 
+    al comando Copiar común, disponible en muchos programas. Para pegar el
+    símbolo en cualquier ventana, simplemente pulsa el botón central del ratón.
+     La mayoría de las aplicaciones que tienes opciones de Copiar y Pegar
+    también te permitirán pegar el símbolo utilizando su comado Pegar.
+   </XREF></PARA>
+
+   <NOTE>    <TITLE>NOTA</TITLE>
+    <PARA>     Fíjate que algunas aplicaciones no soportan caracteres ISO-8859-1
+     Estas aplicaciones no mostrarán ciertos caracteres del aplique
+     <APPLICATION>Tabla de Caracteres</APPLICATION>.
+    </PARA>
+   </NOTE>
+
+   <NOTE>    <TITLE>NOTA</TITLE>
+    <PARA>     El sistema X Windows permite copiar y pegar texto marcándolo
+     con el primer botón del ratón para copiar el texto y después
+     pegando el texto pulsando el botón central del ratón.
+     Fíjate en que <APPLICATION>Tabla de Caracteres</APPLICATION>
+     usa el mismo buffer para almacenar su caracter que el que usa X.
+     Por lo tanto, cuando seleccionas un caracter en el aplique
+     <APPLICATION>Tabla de Caracteres</APPLICATION> reemplaza
+     cualquier texto previo que había en el buffer.
+     Del mismo modo, si has seleccionado un caracter en el aplique
+     <APPLICATION>Tabla de Caracteres</APPLICATION> y después marcas 
+     texto, el texto marcado reemplazará el caracter en el buffer y
+     el botón del carácter ya no aparecerá pulsado.
+    </PARA>
+   </NOTE>
+
+   <PARA>    Si se pulsa con el botón derecho sobre el aplique emerge un menú con
+    los siguientes elementos:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+       abre el  <LINK LINKEND="charpickaplique-prefs">       diálogo <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Acerca de</GUIMENUITEM> 
+       muestra información básica acerca del <APPLICATION>Aplique Tabla de Caracteres</APPLICATION>,
+       además de la versión del aplique y el nombre del autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="charpickaplique-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>      Puedes personalizar el aplique <APPLICATION>Tabla de Caracteres</APPLICATION>
+      pulsando con el botón derecho sobre él y seleccionando
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Esto abrirá el
+      diálogo <INTERFACE>Propiedades</INTERFACE> (mostrado en <XREF LINKEND="charpickapplet-settings-fig">), que te permite cambiar varias
+      opciones.
+
+    </XREF></PARA>
+
+    <FIGURE ID="charpickapplet-settings-fig">     <TITLE>Diálogo Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo Propiedades</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="./figs/charpick_applet_settings" SRCCREDIT="muet">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>     Las propiedades en la pestaña <GUILABEL>Tamaño</GUILABEL> son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        Adaptar al tamaño del panel  Si este botón está marcado, el
+        aplique <APPLICATION>Tabla de Caracteres</APPLICATION> 
+	automáticamente adaptará el número de filas y columnas de caracteres
+	 para caber en el <INTERFACE>Panel</INTERFACE>.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Número mínimo de celdas: (para tamaño automático) Esto define
+	el número mínimo de botones con caracter (o "celdas") que se mostrarán.
+	El número real de botones con caracter puede exceder de este número,
+	dependiendo del tamaño del <INTERFACE>Panel</INTERFACE>
+	y el número elegido. Fíjate en que si el número es demasiado pequeño,
+	algunos caracteres podrán no ser visibles. (Esta variable no influye
+	en la disposición de las celdas si el botón <GUIBUTTON>Adaptar al tamaño del panel</GUIBUTTON>
+	no está seleccionado.)
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Cantidad de líneas de botones:  Esto determina el número de filas
+	de botones con caracter (o "celdas") que aparecen en el aplique.
+	(Esta variable no influye en la disposición de las celdas si 
+	el botón <GUIBUTTON>Adaptar al tamaño del panel</GUIBUTTON>
+	está seleccionado.)
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Cantidad de columnas de botones: Esto determina el número
+	de columnas de botones con caracter (o "celdas") que aparecen en el aplique.
+        (Esta variable no influye en la disposición de las celdas si 
+	el botón <GUIBUTTON>Adaptar al tamaño del panel</GUIBUTTON>
+	está seleccionado.)
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Tamaño del botón: (en píxeles)  Este es el tamaño (en píxeles)
+	de cada botón con caracter en el aplique.
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA>     Las propiedades en la pestaña <GUILABEL>Lista por omisión</GUILABEL> son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        Lista de caracteres por omisión  Esta es la lista de caracteres
+	que será mostrada en el aplique cuando pulsas la barra espaciadora.
+	Esto es un modo conveniente de tener una lista de los caracteres
+	que más frecuentemente usas. Simplemente introduce los caracteres
+	que más usas en este campo.
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA> 
+      Después de realizar todos los cambios que quieras, pulsa
+      sobre <GUIBUTTON>OK</GUIBUTTON> para aplicar los cambios y cerrar el
+      diálogo <INTERFACE>Propiedades</INTERFACE>. Para cancelar los cambios
+      y volver a los valores anteriores pulsa el botón 
+      <GUIBUTTON>Cancelar</GUIBUTTON>.
+    </PARA>
+  </SECT3>
+
+  
+  <SECT3 ID="charpickaplique-characters">   <TITLE>Caracteres</TITLE>
+   <PARA>    El aplique <APPLICATION>Tabla de Caracteres</APPLICATION> tiene todos los
+    caracteres del conjunto de caracteres ISO-8859-1(Latin 1) que no están
+    en los teclados estándar de EEUU. Están asignados como se muestra en 
+    <XREF LINKEND="charpickapplet-characters-fig">.
+    Los caracteres en negrita en la primera columna de cada mitad y a la
+    izquierda de la línea de puntos son los caracteres que debes pulsar
+    en la <APPLICATION>Tabla de Caracteres</APPLICATION> para obtener
+    los caracteres correspondientes mostrados a la derecha.
+   </XREF></PARA>
+   <FIGURE ID="charpickapplet-characters-fig">    <TITLE>Clave de Caracteres de la Tabla de Caracteres</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Clave de Caracteres de la Tabla de Caracteres</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="./figs/charpick_characters" SRCCREDIT="muet">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="charpickaplique-bugs">   <TITLE>Errores y Limitaciones conocidos</TITLE>
+   <PARA>    Este aplique no tiene errores conocidos.
+   </PARA>
+  </SECT3>
+ </SECT2>
+
+
+<SECT2 ID="deskguide-aplique">  <TITLE>Guía de Escritorio</TITLE> 
+  
+   <PARA> 
+    El aplique <APPLICATION>Guía de Escritorio</APPLICATION>, mostrado en  <XREF LINKEND="deskguide-applet-fig">, es un aplique que te permite navegar
+    visualmente por tus escritorios virtuales. Para añadir este aplique a un 
+    <INTERFACE>Panel</INTERFACE>, pulsa con el botón derecho en el panel
+    y selecciona
+         <MENUCHOICE>               <GUIMENU>Apliques</GUIMENU>
+               <GUISUBMENU>Utilidades</GUISUBMENU>
+	       <GUIMENUITEM>Guía de Escritorio</GUIMENUITEM>
+	</MENUCHOICE>. 
+   </XREF></PARA>
+  
+ 
+   <FIGURE ID="deskguide-applet-fig">   <TITLE>Guía de Escritorio</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Guía de Escritorio</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/deskguide-fig" SRCCREDIT="John Fleck">    </GRAPHIC>
+   </SCREENSHOT>
+   </FIGURE>
+   <SECT3 ID="deskguide-applet-usage">   <TITLE>Uso</TITLE>
+
+
+   <PARA>    El aplique<APPLICATION>Guía de Escritorio</APPLICATION> te ayuda
+    a navegar por todos los escritorios virtuales de tu sistema. El
+    sistema <APPLICATION>X Window</APPLICATION>, ayudado por un elemento
+    de software llamado "gestor de ventanas", te permite crear más de 
+    un escritoria virtual para organizar tu trabajo, con distintas
+    aplicaciones ejecutándose en cada escritorio. Cada escritorio
+    puede ser subdividido por el gestor de ventanas en filas y columnas,
+    llamadas "áreas de escritorio". El aplique<APPLICATION>Guía de 
+    Escritorio</APPLICATION> es una herramienta de navegación para
+    llegar a cada uno de los escritorios y áreas de escritorio,
+    proveyendo un mapa en miniatura en el panel de GNOME que muestra
+    todos tus escritorios virtuales (también conocidos como espacios
+    de trabajo) y áreas de escritorio, y permitiendote cambiar entre
+    ellos.</PARA>
+
+    <PARA>El aplique<APPLICATION>Guía de Escritorio</APPLICATION>
+    trabaja mano a mano con el gestor de ventanas, el elemento de software
+    tal como Sawfish, conocido anteriormente como Sawmill, o Enlightenment
+    que maneja el aspecto y sensación de tus ventanas - generando bordes,
+    cambiando el tamaño de las ventanas, posicionándolas, moviéndolas, etc.
+    El gestor de ventanas se encarga de los disintos escritorios.
+    El aplique<APPLICATION>Guía de Escritorio</APPLICATION> se encarga
+    de la navegación.
+    </PARA>
+ 
+    <PARA>El  aplique<APPLICATION>Guía de Escritorio</APPLICATION> muestra
+    versiones en miniatura de todos tus escritorios disponibles,
+    e incluye cajas trazadas que representan a las aplicaciones que
+    se ejecutan en cada ventana des escritorio. El escritorio que está en uso 
+    está iluminado. Pulsa con el ratón en una representación de un escritorio
+    en el aplique<APPLICATION>Guía de Escritorio</APPLICATION> para cambiar
+    a un escritorio virtual distinto en tu pantalla.</PARA>
+
+    <PARA>Mantén pulsado el botón central del ratón en cualquier
+    imagen de una ventana en el aplique<APPLICATION>Guía de Escritorio</APPLICATION>
+    para arrastrar la ventana por tus escritorios virtuales.</PARA>
+
+    <NOTE>	  <TITLE>NOTA</TITLE>
+      <PARA>Los diferentes gestores de ventanas usan diferernte terminología
+      para describir escritorios virtuales y los espacios de trabajo
+      subdivididos en ellos. <APPLICATION>Enlightenment</APPLICATION>
+      divide tu área de trabajo en "escritorios", y subdivide éstos en
+      "pantallas". <APPLICATION>Sawfish</APPLICATION>, conocido anteriormente
+      como <APPLICATION>Sawmill</APPLICATION> divide tu área de trabajo en 
+      "espacios de trabajo" y subdivide éstos en filas y columnas.
+      El aplique<APPLICATION>Guía de Escritorio</APPLICATION> denomina a
+      los espacios de trabajo "escritorios" y a las áreas contenidas en ellos
+      puertos de vista. Lee la documentación de tu gestor de ventanas para
+      más información acerca de cómo poner a funcionar y manejar tus
+      espacios de trabajo virtuales.</PARA>
+    </NOTE>
+
+    <PARA>Pulsando con el ratón en la flecha a la izquierda del aplique
+    <APPLICATION>Guía de Escritorio</APPLICATION> muestra la ventana 
+    <INTERFACE>Lista de Tareas</INTERFACE>, mostrada en <XREF LINKEND="deskguide-tasklist-applet-fig">.</XREF></PARA>
+
+ <FIGURE ID="deskguide-tasklist-applet-fig">   <TITLE>Lista de Tareas de la Guía de Escritorio</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Lista de Tareas de la Guía de Escritorio</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="./figs/deskguide-tasklist-fig" SRCCREDIT="John Fleck">    </GRAPHIC>
+   </SCREENSHOT>
+   </FIGURE>
+
+    <PARA>La ventana muestra las aplicaciones que se están ejecutando
+    en tu ordenador. Pulsando con el ratón sobre cualquiera de las aplicaciones
+    mostradas en la ventana <INTERFACE>Lista de Tareas</INTERFACE> cambia
+    el foco a esa aplicación, p.ej. esta ventana emerge a primer plano
+    y todo lo que se introduzca por el teclado será enviado a la aplicación 
+    que se ejecuta en esa ventana.</PARA>
+
+  </SECT3>
+
+   <SECT3 ID="deskguide-right-click">    <TITLE>Elementos emergentes de botón derecho</TITLE>
+    <PARA> 
+     Además de los elementos de menú estándar (véase <XREF LINKEND="deskguide-standard-right-click-items">), el menú
+     emergente del botón derecho tiene los siguientes elementos
+     <ITEMIZEDLIST> 	
+      <LISTITEM>       <PARA>        <GUIMENUITEM>Propiedades...</GUIMENUITEM>  Este elemento
+	de menú abre el diálogo <INTERFACE>Propiedades</INTERFACE> (véase
+        <XREF LINKEND="deskguide-properties">) que te permite
+	adaptar la apariencia y el comportamiento de este aplique.
+       </XREF></PARA>
+      </LISTITEM>
+    
+      
+     </ITEMIZEDLIST>
+    </XREF></PARA>
+   </SECT3>
+
+   <SECT3 ID="deskguide-properties">    <TITLE>Propiedades</TITLE>
+    <PARA>     Puedes configurar el aplique <APPLICATION>Guía de Escritorio</APPLICATION>
+     pulsando con el botón derecho sobre el aplique y sleccionando el elemento 
+     de menú <GUIMENUITEM>Propiedades...</GUIMENUITEM>. Esto abrirá el diálogo
+     <INTERFACE>Propiedades</INTERFACE>, con cuatro pestañas distintas que te dan 
+     acceso a varias opciones de configuración -
+     <LINK LINKEND="deskguide-properties-display">visualización</LINK>,
+     <LINK LINKEND="deskguide-properties-tasks">tareas</LINK> <LINK LINKEND="deskguide-properties-geometry">geometría</LINK>, <LINK LINKEND="deskguide-properties-advanced">avanzado</LINK>.</PARA>
+
+
+   
+    <SECT4 ID="deskguide-properties-display">      <TITLE>Propiedades - Visualización</TITLE>
+      <PARA>La primera ventana de <INTERFACE>Propiedades </INTERFACE>
+      mostrada en <XREF LINKEND="deskguide-properties-fig">, te permite
+      controlar la visualización del aplique <APPLICATION>Guía de Escritorio</APPLICATION>.
+      </XREF></PARA>
+ 
+    <FIGURE ID="deskguide-properties-fig">     <TITLE>Diálogo Propiedades</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo Propiedades</SCREENINFO> 
+      <GRAPHIC FORMAT="png" FILEREF="./figs/deskguide-properties" SRCCREDIT="John Fleck">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+    
+    <PARA>Opciones incluídas:
+<ITEMIZEDLIST>
+	<LISTITEM>	  <PARA><GUILABEL>Cambiar flecha de lista de tareas</GUILABEL>
+	   cambia el lado en el que es mostrada la flecha
+	  usada para lanzar la ventana de lista de tareas.</PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA><GUILABEL>Ver solo escritorio actual en el paginador
+	  </GUILABEL>  limita la visualización en el aplique del
+	  escritorio en uso, incluyendo todos sus puertos de vista.</PARA>
+	</LISTITEM>
+
+	<LISTITEM>	  <PARA><GUILABEL>Levantar rejilla de área sobre tareas</GUILABEL>
+	   Si utilizas múltiples puertos de vista (no solo múltiples 
+	  escritorios) con tu gestor de ventanas, el aplique <APPLICATION>Guía de
+	  Escritorio</APPLICATION> dibuja una rejilla depuertos de vista en 
+	  el escritorio actual. Puede dibujar la rejilla tanto encima de las ventanas
+	  como debajo de ellas.</PARA>
+	</LISTITEM>
+      
+
+        <LISTITEM>	  <PARA><GUILABEL>Mostrar Tooltips de la Guía de Escritorio</GUILABEL> 
+	  Muestra tooltips relacionados con varios componentes del aplique
+	  <APPLICATION>Guía de Escritorio</APPLICATION>. La flecha es el
+	  único componente que mustra un tooltip.</PARA> 
+	</LISTITEM>
+
+        <LISTITEM>	  <PARA><GUILABEL>Retardo del tooltip de Guía de Escritorio [ms]</GUILABEL> 
+	  retardo, en milisegundos, antes de que el tooltip es mostrado. Puedes 
+	  tanto escibir el número como usar las flechas para cambiar el número.</PARA>
+	</LISTITEM>
+
+        <LISTITEM>	  <PARA><GUILABEL>Mostrar tooltip del nombre de escritorio</GUILABEL>
+	   Algunos gestores de ventanas, como <APPLICATION>Enlightenment</APPLICATION>,
+	  te permiten dar un nombre a tus escritorios. Esta opción hace que 
+	  <APPLICATION>Guía de Escritorio</APPLICATION> muestre un tooltip
+	  con el nombre del escritorio.</PARA> 
+	</LISTITEM>
+
+        <LISTITEM>	  <PARA><GUILABEL>Retardo del tooltip del nombre del nombre de escritorio [ms]</GUILABEL>
+	   retardo, en milisegundos, antes de que el tooltip es mostrado. Puedes 
+	  tanto escibir el número como usar las flechas para cambiar el número.</PARA> 
+	</LISTITEM>
+
+      </ITEMIZEDLIST>&lt;</PARA>
+   </SECT4>
+    <SECT4 ID="deskguide-properties-tasks">      <TITLE>Propiedades - Tareas</TITLE>
+
+ 
+  <FIGURE ID="deskguide-properties-tasks-fig">     <TITLE>Diálogo Propiedades - Tareas</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo Propiedades - Tareas</SCREENINFO> 
+      <GRAPHIC FORMAT="png" FILEREF="./figs/deskguide-properties-tasks-fig" SRCCREDIT="John Fleck">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+      <PARA>Opciones incluídas:</PARA>
+      <ITEMIZEDLIST>	<LISTITEM>	  <PARA><GUILABEL>Mostrar tareas ocultas (HIDDEN)</GUILABEL>, 
+	<GUILABEL>Mostrar tareas sombreadas (SHADED)</GUILABEL>,
+	<GUILABEL>Mostrar tareas que se ocultan de la lista de tareas (SKIP-WINLIST)</GUILABEL>,
+	<GUILABEL>Mostrar tareas que se ocultan de la barra de tareas (SKIP-TASKBAR)</GUILABEL>
+	  Estos cuatro elementos permiten que <APPLICATION>Guía de Escritorio</APPLICATION>
+	 muestre aplicaciones que se ejecutan con indicadores que normalmente las ocultarían de una
+	 aplicación como esta. Por ejemplo, la aplicación <APPLICATION>panel</APPLICATION>
+	 tiene indicadores HIDDEN, HIDE_FROM_WINLIST y HIDE_FROM_TASKBAR.
+	 Seleccionando estas opciones permitirá a <APPLICATION>Guía de Escritorio</APPLICATION>
+	 mostrarte estas aplicaciones.</PARA>
+	</LISTITEM>
+
+      </ITEMIZEDLIST>
+
+     </SECT4>
+
+    <SECT4 ID="deskguide-properties-geometry">      <TITLE>Propiedades - Geometría</TITLE>
+     <FIGURE ID="deskguide-properties-geometry-fig">     <TITLE>Diálogo Propiedades - Geometría</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo Propiedades - Geometría</SCREENINFO> 
+      <GRAPHIC FORMAT="png" FILEREF="./figs/deskguide-properties-geometry-fig" SRCCREDIT="John Fleck">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+      <PARA>Opciones incluídas:</PARA>
+      <ITEMIZEDLIST>	<LISTITEM>	 <PARA><GUILABEL>Altura del escritorio [píxeles]</GUILABEL> 
+	 fija la altura del escritorio. Por omisión esto está sombreado,
+	 y el tamaño del panel ajusta automáticamente la altura del escritorio.
+	 Para activarlo desmarca la casilla <GUILABEL>Forzar altura de escritorio
+	 a tamaño de panel</GUILABEL>.</PARA>
+	</LISTITEM>
+      
+
+      <LISTITEM>	 <PARA><GUILABEL>Forzar altura de escritorio
+	 a tamaño de panel</GUILABEL>  fuerza a <APPLICATION>Guía de 
+	 Escritorio</APPLICATION> a ajustarse al panel. Desmarcando esta opción
+	 te permite ajustar el tamaño manuelmente usando la opción
+	 <GUILABEL>Altura de Escritorio</GUILABEL> de encima.</PARA>
+	</LISTITEM>
+    
+
+	<LISTITEM>	 <PARA><GUILABEL>Dividir altura por cantidad de líneas</GUILABEL> 
+	  divide la altura total del aplique por el número de líneas de áreas
+	  de escritorio visibles.</PARA>
+	</LISTITEM>
+     
+
+
+	<LISTITEM>	 <PARA><GUILABEL>Líneas de escritorios</GUILABEL>  ajusta
+	 el número de líneas de mapas de escritorio que <APPLICATION>Guía
+	 de Escritorio</APPLICATION> crea en el panel para representar tus
+	 escritorios.</PARA>
+	</LISTITEM>
+     
+
+
+      <LISTITEM>	 <PARA><GUILABEL>Dividir altura por número de líneas</GUILABEL>
+	  fuerza a <APPLICATION>Guía de Escritorio</APPLICATION>
+	 a encajar todas las filas de escritorios en la altura especificada
+	 arriba (ya sea la especificada a mano o el ajuste automático
+	 del panel. Desmarcando esto, si tienes más de una fila, permite
+	 a <APPLICATION>Guía de Escritorio</APPLICATION> expandirse
+	 verticalmente a dos o más veces su altura normal.</PARA>
+	</LISTITEM>
+
+      </ITEMIZEDLIST>
+
+      <PARA>Las opciones para <INTERFACE>Disposición Vertical</INTERFACE>
+      son equivalentes a las de Disposición Horizontal pero afectan
+      a la anchura en vez de la altura del aplique, y el número de columnas
+      que ocupa en vez de filas.</PARA>
+    </SECT4>
+
+    <SECT4 ID="deskguide-properties-advanced">      <TITLE>Propiedades - Avanzad</TITLE>
+         <FIGURE ID="deskguide-properties-advanced-fig">     <TITLE>Diálogo Propiedades - Avanzado</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo Propiedades - Avanzado</SCREENINFO> 
+      <GRAPHIC FORMAT="png" FILEREF="./figs/deskguide-properties-advanced-fig" SRCCREDIT="John Fleck">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+      <PARA>Las opciones avanzadas te permiten controlar el
+      comportamiento de <APPLICATION>Guía de escritorio</APPLICATION>
+      con gestores de ventana específicos, además de otros ajustes.</PARA>
+
+      <ITEMIZEDLIST>
+	<LISTITEM>	 <PARA><GUILABEL>Dibujar los escritorios con doble-buffering (recomendado)
+	 </GUILABEL>  controla el método con el que <APPLICATION>Guía de escritorio
+	 </APPLICATION> dibuja los escritorios. Sin doble-buffering, podrías ver
+	 parpadeos en máquinas más lentas. Con ello, podrías notar 
+	 rendimiento más lento en conexiones de red.</PARA>
+	</LISTITEM>
+
+	<LISTITEM>	 <PARA><GUILABEL>El Gestor de Ventanas mueve la decoración de la ventana
+	 </GUILABEL>  Marca esto si, cuando mueves una ventana con el botón
+	 central, la posición resultante de la ventana está fuera. Si no estás
+	 seguro, marca esto si utilizas cualquiera de los siguientes
+	 getores de ventanas	 
+	 (<APPLICATION>AfterStep</APPLICATION>,
+	 <APPLICATION>Enlightenment</APPLICATION>,
+	 <APPLICATION>FVWM</APPLICATION>,
+	 <APPLICATION>IceWM</APPLICATION>, or
+	 <APPLICATION>Sawmill</APPLICATION>, ahora conocido como
+	 <APPLICATION>Sawfish</APPLICATION>).</PARA>
+	</LISTITEM>
+
+	<LISTITEM>	 <PARA><GUILABEL>El Gestor de Ventanas cambia el área activa en todos
+	 los escritorios.</GUILABEL>  Si tienes más de un escritorio, 
+	 con múltiples áreas de trabajo en cada una de ellos, esta
+	 opción puede ser usada para forzar al gestor de ventanas a cambiar
+	 el área de trabajo activa en todos los escritorios simultáneamente
+	 si cambias el área de trabajo en uno.</PARA>
+	</LISTITEM>
+
+	<LISTITEM>	 <PARA><GUILABEL>El Gestor de Ventanas espera que el paginador
+	 modifique área+escritorio</GUILABEL>  Actualmente no tiene efecto.</PARA>
+	</LISTITEM>
+    <LISTITEM>	 <PARA><GUILABEL>Cerrar la vista de tareas automáticamente</GUILABEL> 
+	 Enrolla automáticamente la ventana de tareas cuando pulsas sobre una aplicación
+	 en la lista de tareas. Si está desmarcada, debes pulsar en la flecha de la lista
+	 de tareas para que se cierre.</PARA>
+	</LISTITEM>
+  </ITEMIZEDLIST>
+    </SECT4>
+
+<SECT4>      <TITLE>Más Información</TITLE>
+    <PARA>Todos los diálogos de <INTERFACE>Propiedades</INTERFACE> tienen
+    los siguientes botones en la parte inferior del diálogo:
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>        <GUIBUTTON>OK</GUIBUTTON> 
+        Pulsar <GUIBUTTON>Aceptar</GUIBUTTON> activará cualquier
+	cambio que hayas hecho en las propiedades y cerrar el diálogo
+        <INTERFACE>Properties</INTERFACE>.
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>        <GUIBUTTON>Aplicar</GUIBUTTON> 
+        Pulsando <GUIBUTTON>Aplicar</GUIBUTTON> en cualquier momento
+	activcará los cambios sin cerrar el diálogo
+        <INTERFACE>Properties</INTERFACE>. Esto es útil si quieres
+	probar los efectos de los cambios que has hecho, pero quieres seguir
+	cambiando las propiedades.
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>        <GUIBUTTON>Cerrar</GUIBUTTON> 
+        Pulsando <GUIBUTTON>Cerrar</GUIBUTTON> cerrará el
+	diálogo <INTERFACE>Properties</INTERFACE>. Solamente los cambios 
+	en la configuración que previamenta han sido aplicados con el botón
+	<GUIBUTTON>Aplicar</GUIBUTTON> serán efectivos. Otros
+	cambios no serán activados.
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>        <GUIBUTTON>Ayuda</GUIBUTTON> 
+        Pulsando <GUIBUTTON>Ayuda</GUIBUTTON> abrirá el manual de
+	la aplicación, abriéndolo en la página que describe
+	el diálogo <INTERFACE>Propiedades</INTERFACE>.
+
+
+    
+    </PARA></LISTITEM></ITEMIZEDLIST></PARA></SECT4>
+
+ <SECT4 ID="deskguide-standard-right-click-items"> 
+    <TITLE>Elementos emergentes estándar</TITLE>
+    <PARA>    Todos los apliques deberían tener los siguientes elementos en su
+     <GUIMENU>menu emergente</GUIMENU>:
+     <VARIABLELIST>      <VARLISTENTRY>       <TERM>Quitar del Panel</TERM>
+       <LISTITEM>        <PARA>         El elemento de menú<GUIMENUITEM>Quitar del Panel</GUIMENUITEM>
+	 quita el aplique del <INTERFACE>Panel</INTERFACE>. 
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Mover</TERM>
+       <LISTITEM>        <PARA>	 Después de seleccionar <GUIMENUITEM>Mover</GUIMENUITEM>, 
+	 el puntero del ratón cambiará de apariencia (normalmente será
+	 una cruz con flechas en cada dirección). A medida que muevas
+	 el ratón, el aplique se moverá con él. Cuando hayas terminado
+	 de mover el aplique pulsa cualquier botón del ratón y éste se
+	 anclará en su posicón actual. Fíjate en que los apliques pueden ser
+	 movidos entre dos <INTERFACE>Paneles</INTERFACE> de este modo.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Panel</TERM>
+       <LISTITEM>        <PARA>         El submenú <GUISUBMENU>Panel</GUISUBMENU> contiene varios elementos
+	 y submenúes para añadir y quitar <INTERFACE>Paneles</INTERFACE> 
+	 y apliques y para cambiar la configuración.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Acerca...</TERM>
+       <LISTITEM>        <PARA>         El elemento de menú <GUIMENUITEM>Acerca...</GUIMENUITEM> abre un cajón de diálogo
+	 que contiene información variada acerca del apple, incluyendo generalmente
+	 el nombre del aplique, su versión, autor, copyright, licencia y descripción. 
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Ayuda</TERM>
+       <LISTITEM>        <PARA>         El elemento <GUIMENUITEM>Ayuda</GUIMENUITEM> abre el manuel de ayuda para este aplique.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+     </VARIABLELIST>
+    </PARA>
+   </SECT4>
+
+
+   <SECT4 ID="deskguide-applet-bugs">    <TITLE>Errores y Limitaciones conocidos</TITLE>
+    <PARA>La opción <GUILABEL>&gt;El Gestor de Ventanas espera que el paginador
+    modifique área+escritorio</GUILABEL> en la ventana <INTERFACE>Propiedades
+    Avanzadas</INTERFACE> actualmente no hace nada.
+    
+    </PARA>
+   </SECT4>
+   </SECT3>
+ </SECT2>
+
+
+
+
+
+
+
+
+</SECT1>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<SECT2 ID="whereami">  <TITLE>Aplique ¿Donde estoy?</TITLE>
+
+   <PARA>El aplique <APPLICATION>¿Donde estoy?</APPLICATION>, mostrado en
+<XREF LINKEND="whereamiapplet-fig">, indica la posición del puntero
+del ratón en la pantalla, mostrando las coordenadas <PARAMETER>x</PARAMETER>
+e <PARAMETER>y</PARAMETER>, donde <PARAMETER>x</PARAMETER> es la coordenada 
+horizontal e <PARAMETER>y</PARAMETER> es la vertical.
+Las dimensiones de un área en la pantalla se puede determinar arrastrando 
+el puntero del ratón, una vez arrancada el aplique <APPLICATION>¿Donde estoy?</APPLICATION>.</XREF></PARA>
+<PARA>Para añadir este aplique en un <INTERFACE>panel</INTERFACE>, pulse el
+botón derecho sobre el <INTERFACE>Panel</INTERFACE> y escoja
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Aplique</GUISUBMENU>
+    <GUISUBMENU>Utilidades</GUISUBMENU>
+    <GUIMENUITEM>¿Donde estoy?</GUIMENUITEM>
+   </MENUCHOICE>.
+  </PARA>
+
+  <FIGURE ID="whereamiapplet-fig">   <TITLE>Aplique ¿Donde estoy?</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique ¿Donde estoy?</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/whereami_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="whereami-usage">   <TITLE>Uso</TITLE>
+   <PARA>No necesita hacer nada especial para usar este aplique. Indicara la posición
+del puntero según vaya moviendo el ratón. Al pulsar sobre 
+<APPLICATION>¿Donde estoy?</APPLICATION> se memorizará la posición
+del puntero, haciendo que su forma se transforme en una cruz. Una vez
+que la posición del puntero se ha memorizado, puede arrastrarlo para
+medir las dimensiones de una área de la pantalla. Una segunda pulsación
+finalizara la operación en curso, y restaurara el funcionamiento normal.
+   </PARA>
+
+   <PARA>    Al pulsar el botón derecho sobre el aplique aparecerá un menú desplegable con las
+    siguientes opciones:
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       presenta este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Acerca de...;</GUIMENUITEM> 
+       presenta información básica acerca de <APPLICATION>¿Donde estoy?</APPLICATION>,
+       incluyendo la versión del aplique y el autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  
+
+  <SECT3 ID="whereami-bugs">   <TITLE>Errores y limitaciones conocidas</TITLE>
+   <PARA>    Este aplique no tiene errores conocidos.
+   </PARA>
+  </SECT3>
+
+</SECT2>

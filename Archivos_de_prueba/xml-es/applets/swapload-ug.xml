@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<SECT2 ID="swapload-applet">   <TITLE>El aplique de carga de swap</TITLE> 
+
+   <PARA> 
+     El <APPLICATION>aplique de carga de swap</APPLICATION> es un pequeño aplique monitor situado en su panel que indica cuanto espacio de swap se está usando.
+   </PARA>
+  
+   <PARA>   El espacio de swap es una parte del disco duro que no forma parte del sistema de ficheros. Cuando el kernel decide que un programa en memoria no está siendo usado mucho pero puede ser requerido pronto, libera algunas partes del programa fuera de la memoria y las guarda en en el espacio de swap, de donde las puede recuperar fácilmente. El movimiento de datos entre la memoria y el espacio de swap puede ser lento, así que si está usando mucho espacio de swap, puede notar que el tiempo de respuesta de la máquina se realentiza.
+   </PARA>
+ 
+   <SECT3 ID="swapload-usage">    <TITLE>Uso</TITLE>
+    <PARA>    No necesita hacerle nada a este aplique. Él sólo se situará y se ejecutará en su panel. Hay varias opciones disponibles para modificar su aspecto.
+    </PARA>
+
+    <FIGURE ID="cpuload-applet-fig">      <TITLE>Aplique de Carga de Swap</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Aplique de Carga de Swap</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/swapload-applet" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+   </SECT3>
+
+   <SECT3 ID="swapload-right-click">    <TITLE>Opciones del menú desplegable con el botón derecho</TITLE>
+    <PARA> 
+  Además de las opciones de menú estándard, el menú desplegable con el botón derecho tiene las siguientes opciones:
+    </PARA>   
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Propiedades por omisión...</TERM>
+      <LISTITEM>       <PARA>         Lanza el <GUILABEL>cuadro de diálogo del aplique multicarga</GUILABEL>
+         <LINK LINKEND="swapload-properties">descrito más adelante</LINK> que le permite modificar las propiedades por defecto de este aplique monitor y otros apliques relacionados.</PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Propiedades...</TERM>
+      <LISTITEM>       <PARA>         Lanza el <GUILABEL>cuadro de diálogo del aplique multicarga</GUILABEL>
+         <LINK LINKEND="swapload-properties">descrito más adelante</LINK> que afecta sólo a las propiedades del <APPLICATION>aplique de carga de swap</APPLICATION>.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Lanzar gtop...</TERM>
+      <LISTITEM>       <PARA>         Esta opción ejecutará <COMMAND>gtop</COMMAND> que arranca el Monitor del Sistema de GNOME. <APPLICATION>gtop</APPLICATION> proporciona una visión mucho más detallada del sistema y de lo que en él ocurre.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="swapload-properties">    <TITLE>Propiedades</TITLE>
+
+    <FIGURE ID="cpuload-default-fig">      <TITLE>Diálogo de Propiedades por Omisión</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades por Omisión del Aplique de Carga de Swap</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/swapload-applet-default" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Al igual que varios de los aplique monitores, el
+      <APPLICATION>aplique de carga de swap</APPLICATION> tiene dos modos de seleccionar preferencias. Puede hacer cambios que afectan a todo este grupo 
+      (<APPLICATION>aplique de carga CPU</APPLICATION>, <APPLICATION>aplique de carga de memoria</APPLICATION>,
+      <APPLICATION>aplique de carga swap</APPLICATION>, <APPLICATION>aplique de carga de la red</APPLICATION>
+      y <APPLICATION>aplique de carga promedio</APPLICATION>) en un amplio cuadro de diálogo. Esto es útil si ejecuta uno o más de ellos. Estos son los valores por defecto. Se llega a ellos desde la opción del menú 
+      <GUIMENUITEM>Propiedades por omisión...</GUIMENUITEM>
+    </PARA>
+
+    <FIGURE ID="swapload-greyed-fig">      <TITLE>Diálogo de propiedades deshabilitado</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de propiedades deshabilitado del Aplique de Carga de Swap</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/swapload-applet-greyed" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      O puede cambiar sólo las propiedades para el 
+      <APPLICATION>aplique de carga de swap</APPLICATION>. Esto es útil cuando sólo utiliza el <APPLICATION>aplique de carga de swap</APPLICATION> o cuando quiere probar nuevas combinaciones. Se llega a él desde la opción del menú  
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>.
+    </PARA>
+    <NOTE>     <PARA>      Si usa la opción del menú <GUIMENUITEM>Propiedades...</GUIMENUITEM>
+      y edita las preferencias para sólo este aplique, debe deshabilitar la casilla  <GUIBUTTON>Usar propiedades por omisión</GUIBUTTON> antes de cambiar la configuración.
+     </PARA>
+    </NOTE>
+
+    <FIGURE ID="swapload-properties-fig">      <TITLE>Diálogo de Propiedades de Carga Swap</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades del Aplique de Carga Swap</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/swapload-applet-properties" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Los cambios que puedes hacer a las propiedades son tres:
+    </PARA>
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Colores</TERM>
+      <LISTITEM>       <PARA>           Puede modificar los colores utilizados para el espacio de swap ocupado y el libre pulsando en los cuadros de color. Así se invoca la paleta de colores de GNOME.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Velocidad</TERM>
+       <LISTITEM>        <PARA>           Puede cambiar la velocidad a la que el gráfico se actualiza. La medida es en milisegundos, y el valor por defecto 500.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Tamaño</TERM>
+       <LISTITEM>        <PARA>          Puede cambiar el tamaño del aplique. La medida es en píxeles. El valor por defecto es 40, y el rango abarca desde 1 pixel hasta donde quiera. En un panel vertical, este valor hace referencia a la altura. En uno horizontal, a la anchura.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+     </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="swapload-bugs">    <TITLE> Known Bugs and Limitations</TITLE>
+    <PARA>      El cambiar el tamaño del aplique y su orientación puede causar todavía problemas intermitentes, aunque ahora se corrigen por sí mismos al cabo de un corto período de tiempo.
+    </PARA>
+   </SECT3>
+
+</SECT2>

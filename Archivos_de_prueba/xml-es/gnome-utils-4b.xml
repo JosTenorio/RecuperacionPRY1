@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<SECT2 ID="gdict">      <TITLE>GDict</TITLE>
+  
+    <SECT3 ID="gdictintro">      <TITLE>GDict</TITLE>
+  
+      <PARA>	<APPLICATION>GDict</APPLICATION> proporciona un diccionario de definiciones de palabras,
+usando cualquier servidor que soporte el protocolo <EMPHASIS>dict</EMPHASIS>, un estandar de Internet
+para aplicaciones cliente/servidor de diccionario. 
+      </PARA>
+      
+      <PARA>Para ejecutar <APPLICATION>GDict</APPLICATION>, elija 
+<GUIMENUITEM>GDict</GUIMENUITEM> en el submenu <GUISUBMENU>Utilidades</GUISUBMENU> 
+del <GUIMENU>Menu principal</GUIMENU>, o teclee <COMMAND>gdict -a</COMMAND> en el 
+interprete de comandos.
+      </PARA>
+      
+      <PARA>	<APPLICATION>GDict</APPLICATION> puede tambien arrancarse via un aplique de panel.
+Para añadir este aplique en el <INTERFACE>Panel</INTERFACE>, pulse con el boton derecho 
+sobre el panel y seleccione
+	<MENUCHOICE>	  <GUIMENU>Apliques</GUIMENU>
+	  <GUISUBMENU>Utilidades</GUISUBMENU>
+	  <GUIMENUITEM>GDict</GUIMENUITEM>
+	</MENUCHOICE>, o teclee <COMMAND>gdict</COMMAND> en el interprete de comandos.
+      </PARA>
+      
+    </SECT3>
+    
+    <SECT3 ID="gdictusage">      <TITLE>Uso de GDict</TITLE>
+      <PARA>	<APPLICATION>GDict</APPLICATION> puede usarse para obtener definiciones de palabras de
+diccionario de forma local o de servidores de dicconarios remotos. Puede comprobar la ortografia
+y realizar busquedas de palabras bsasndose en palabras tecleadas de forma imprecisa usando distintas
+tipos de patrones regulares. Esta seccion describe el uso basico de 
+	<APPLICATION>GDict</APPLICATION>.
+      </PARA>
+
+      
+      
+      <SECT4 ID="gdictmainwin">	<TITLE>Uso básico</TITLE>
+	<PARA>Al arrancar <APPLICATION>GDict</APPLICATION> se abre la <INTERFACE>ventana principal</INTERFACE>,
+mostrada en <XREF LINKEND="gdictmainwindow-fig">.
+	    
+	    <FIGURE ID="gdictmainwindow-fig">	      <TITLE>Ventana principal de GDict</TITLE>
+	      <SCREENSHOT>		<SCREENINFO>Ventana principal de GDict</SCREENINFO>
+		<GRAPHIC FILEREF="./figs/gdictmain" FORMAT="png" SRCCREDIT="John Fleck">		</GRAPHIC>
+	      </SCREENSHOT>
+	    </FIGURE>
+	    
+	    
+	</XREF></PARA>
+	
+	<PARA>	  <APPLICATION>GDict</APPLICATION> conecta de forma automática con el servidor por
+defecto, mostrando un mensaje de error si fuera incapaz de conectar.
+	</PARA>
+	<PARA>Para obtener la definición de una palabra, tecleela en el campo de tipo texto justo debajo 
+de la barra de herramientas, y pulse el botón <GUIBUTTON>Búsqueda</GUIBUTTON> en la barra 
+de herramientas o la tecla <KEYCODE>Intro</KEYCODE> o <KEYCODE>Retorno</KEYCODE>.
+	</PARA>
+	
+	<PARA>	  <APPLICATION>GDict</APPLICATION> conecta con el servidor y, si encuentra una
+definición, la presenta en la ventana de texto principal. 
+	</PARA>
+	<PARA>Si no se encuentra la palabra, <APPLICATION>GDict</APPLICATION> abrirá de forma automática la
+ventana de verificación ortográfica, y realizara la oportuna corrección ortográfica sobre la 
+palabra. Dispone de mas información sobre el proceso de corrección en 
+<XREF LINKEND="gdictspellwindow-fig">	</XREF></PARA>
+
+	
+	<PARA>Si teclea una texto en búsqueda con patrones regulares, <APPLICATION>GDict</APPLICATION>
+abre la ventana de verificación ortográfica y inicia una búsqueda de palabras que concuerden
+con el patrón tecleado. Por ejemplo, si se teclea <COMMAND>^h[ie]ll</COMMAND>, se obtendrá
+"hell", "hill", y todas las palabras que empiecen por "hill" y "hell". Los patrones regulares
+forman una potente técnica de búsqueda que queda fuera del ámbito de este documento.
+De todas formas, mencionaremos algunas reglas: un conjunto de letras entre corchetes
+significa cualquiera de esas letras, un punto (.) significa cualquier carácter, y el patrón
+".*" significa cualquier secuencia de cero o mas caracteres. Pueden verse mas detalles 
+buscando man:regex o man:grep en el visualizador de ayuda
+	</PARA>
+	
+	<PARA>Por defecto, <APPLICATION>GDict</APPLICATION> usa el servidor de dict.org y busca las palabras 
+exactas tecleadas en todas las bases de datos. Puede cambiar el servidor usado, las bases de datos
+en las que se busca y la estrategia de búsqueda (permitiendo buscar, por ejemplo, palabras similares
+o comodines) en el formulario de preferencias mostrado en <XREF LINKEND="gdictpreferences-fig">.
+	</XREF></PARA>
+	
+	
+	<PARA>Si se teclea una palabra y se pulsa el botón de la barra de herramientas llamado
+<GUIBUTTON>corregir</GUIBUTTON>, <APPLICATION>GDict</APPLICATION> abre la 
+<INTERFACE>ventana de corrección ortográfica</INTERFACE>, mostrada en 
+<XREF LINKEND="gdictspellwindow-fig">.  
+	    
+	    <FIGURE ID="gdictspellwindow-fig">	      <TITLE>Ventana de corrección ortográfica de GDict</TITLE>
+	      <SCREENSHOT>		<SCREENINFO>Ventana de corrección ortográfica de GDict</SCREENINFO>
+		<GRAPHIC FILEREF="./figs/gdict-spell" FORMAT="png" SRCCREDIT="John Fleck">		</GRAPHIC>
+	      </SCREENSHOT>
+	    </FIGURE>
+	    
+	    
+	</XREF></PARA>
+	
+	<PARA>Esta ventana presenta una lista palabras posibles, basándose en una estrategia de búsqueda
+de palabras similares. La búsqueda se ejecuta en el servidor, no en <APPLICATION>GDict</APPLICATION>,
+y los tipos de estrategias de búsquedas disponibles varía. Un menú desplegable etiquetado 
+<GUILABEL>estrategia de búsqueda</GUILABEL> muestra las distintas estrategias disponibles en el
+servidor. Este menú permite cambiar las estrategias de búsqueda y ordenar una nueva búsqueda 
+pulsando <GUIBUTTON>Buscar palabras</GUIBUTTON>.
+	</PARA>
+	
+	<PARA>En la <INTERFACE>ventana de corrección ortográfica</INTERFACE>, se puede también buscar la 
+definición de una palabra, una vez corregida su ortografía. Para lograrlo, pulse primero 
+sobre la palabra, y después pulse <GUIBUTTON>Búsqueda</GUIBUTTON>. La definición se presentara
+el la ventana principal del programa.
+	</PARA>
+	
+      </SECT4>
+
+
+      
+      <SECT4 ID="gdictmenubar">	<TITLE>Menús</TITLE>
+	<PARA>La barra de menús, situada en la parte superior de la <INTERFACE>ventana principal</INTERFACE>,
+contienen los siguientes menús:
+	</PARA>
+	
+	<VARIABLELIST>	  <VARLISTENTRY>	    <TERM><GUIMENU>Fichero</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>Este menú contiene:
+		<MENUCHOICE>		  
+		  <GUIMENUITEM>Búsqueda</GUIMENUITEM>
+		</MENUCHOICE> busca una palabra,
+		<MENUCHOICE>		  
+		  <GUIMENUITEM>Ortografía</GUIMENUITEM>
+		</MENUCHOICE> muestra una ventana de ayuda con la ortografía de la palabra, y
+		<GUIMENUITEM>Salir</GUIMENUITEM> que es auto-explicativo.
+	      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENU>Editar</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>Este menú no contienen nada.
+	      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENU>Parámetros</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>Este menú contiene las <GUIMENUITEM>Preferencias</GUIMENUITEM>, que abren el
+<LINK LINKEND="gdictprefs"><INTERFACE>Formulario de preferencias</INTERFACE></LINK>.
+	      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	  
+	  <VARLISTENTRY>	    <TERM><GUIMENU>Ayuda</GUIMENU></TERM>
+	    <LISTITEM>	      <PARA>Este menú contiene:
+		<ITEMIZEDLIST>		  <LISTITEM>		    <PARA>		      <GUIMENUITEM>Manual</GUIMENUITEM>  muestra este manual.
+		    </PARA>
+		  </LISTITEM>
+		  
+		  <LISTITEM>		    <PARA>		      <GUIMENUITEM>Acerca de</GUIMENUITEM>  
+Muestra información básica acerca de <APPLICATION>GDict</APPLICATION>, como el nombre del
+autor y el numero de versión de la aplicación.
+		    </PARA>
+		  </LISTITEM>
+		</ITEMIZEDLIST>
+		
+	      </PARA>
+	    </LISTITEM>
+	  </VARLISTENTRY>
+	</VARIABLELIST>
+      </SECT4>
+    </SECT3>
+    
+    
+    
+    <SECT3 ID="gdictprefs">      <TITLE>Personalización</TITLE>
+      <PARA>Para cambiar los parámetros de la aplicación, seleccione <GUIMENUITEM>Preferencias</GUIMENUITEM>
+en el menú de <GUIMENU>Propiedades</GUIMENU>. Se abrirá el formulario de <INTERFACE>Preferencias</INTERFACE>,
+, mostrado en <XREF LINKEND="gdictpreferences-fig">.
+      </XREF></PARA>
+
+      <FIGURE ID="gdictpreferences-fig">	<TITLE>Formulario de preferencias</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>Formulario de preferencias</SCREENINFO>
+	  <GRAPHIC FILEREF="./figs/gdict-prefs" FORMAT="png" SRCCREDIT="John Fleck">	  </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+      
+      <TIP>	<TITLE>TRUCO</TITLE>
+	<PARA>Cuando se abre el <GUILABEL>formulario de propiedades</GUILABEL>,
+<APPLICATION>GDict</APPLICATION> mantiene un breve dialogo con el servidor seleccionado,
+personalizando después los listados en el formulario de acuerdo a las capacidades del servidor.
+El formulario mostrado  en <LINK LINKEND="gdictpreferences-fig"></LINK> usa el servidor por
+defecto, www.dict.org.
+	</PARA>
+      </TIP>
+      <PARA>Las propiedades en la solapa <GUILABEL>Servidor</GUILABEL> son:
+	<ITEMIZEDLIST>	  
+	  <LISTITEM>	    <PARA>Servidor  El nombre del servidor que usa <APPLICATION>GDict</APPLICATION>. www.dict.org es 
+el defecto. Puede usar cualquier otro servidor que soporte el protocolo "dict" de Internet. 
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>Puerto  El numero de puerto que usa <APPLICATION>GDict</APPLICATION> para la conexión.
+2628 es el estándar.
+	    </PARA>
+	</LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>Base de datos  En su conversación inicial con el servidor elegido, <APPLICATION>GDict</APPLICATION>
+descarga una lista de las bases de datos de diccionarios disponible para las búsquedas. Este menú desplegable
+permite seleccionar una o todas las base de datos para las búsquedas.
+	    </PARA>
+	  </LISTITEM>
+	  
+	  <LISTITEM>	    <PARA>Estrategia por omisión:  En la conversación inicial con el servidor seleccionado,
+<APPLICATION>GDict</APPLICATION> descarga una lista de estrategias de búsquedas disponibles en
+el servidor. Este menú desplegable permite seleccionar la estrategia por omisión que se usa para
+deletrear, o que se hace cuando se teclea un texto que no coincide de forma exacta con una de las
+palabras de la base de datos de diccionarios usados para la búsqueda. 
+	    </PARA>
+	  </LISTITEM>
+	  
+	</ITEMIZEDLIST>
+      </PARA>
+      
+      <PARA>Las propiedades en la solapa <GUILABEL>Tipografías</GUILABEL> son:
+	<ITEMIZEDLIST>	  
+	  <LISTITEM>	    <PARA>Raíz de la palabra, pronunciación, etimología, ejemplo, cuerpo principal, sub-numero, parte 
+hablada y referencias cruzadas  Cuando <APPLICATION>GDict</APPLICATION> devuelve una
+definición,  usa diferentes tipografías y colores para diferenciar las distintas partes de la
+definición  devuelta. Esta solapa permite personalizar estas tipografías y colores.
+	    </PARA>
+	    <PARA>Pulsando el icono "ABC" cercano a cada elemento se abre una formulario estándar de selección de fuentes
+Gnome. Pulsando en el cuadro de colores cercano a cada elemento se abre un formulario estándar Gnome de selección 
+de colores.
+	    </PARA>
+	  </LISTITEM>
+	</ITEMIZEDLIST>
+      </PARA>
+
+      <PARA>Después de realizar todos los cambios deseados, pulse el botón <GUIBUTTON>Aceptar</GUIBUTTON>
+para aplicar los cambios y cerrar el <INTERFACE>formulario de propiedades</INTERFACE>.
+Para cancelar los cambios y volver al los valores anteriores, pulse el botón
+<GUIBUTTON>Cancelar</GUIBUTTON>. 
+      </PARA>
+      
+    </SECT3>
+  </SECT2>

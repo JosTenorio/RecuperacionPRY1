@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<SECT2 ID="mixerapplet">  <TITLE>Aplique Mezclador</TITLE>
+
+   <PARA>   El aplique <APPLICATION>Mezclador</APPLICATION> , mostrado en <XREF LINKEND="mixerapplet-fig">, proporciona una interfaz sencillo y 
+   conveniente para controlar el volumen de sonido y lanzar el 
+   <APPLICATION>Mezclador de Audio</APPLICATION>. Para añadir este aplique
+   al <INTERFACE>Panel</INTERFACE>, presione el botón derecho sobre el
+   <INTERFACE>Panel</INTERFACE>  y selecciones:
+      
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Aplique</GUISUBMENU>
+    <GUISUBMENU>Multimedia</GUISUBMENU>
+    <GUIMENUITEM>Mezclador</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="mixerapplet-fig">   <TITLE>Aplique mezclador</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique Mezclador</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/mixer_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="mixerapplet-usage">   <TITLE>Uso</TITLE>
+   <PARA>    Para ajustar el volumen, desplace la barra de volumen hacia 
+    arriba (más voz) o hacia abajo (menor voz). Para silenciar 
+    (o no-silenciar)  presione en el icono del altavoz en la parte 
+    inferior del aplique.
+    (N.T.: Algunas veces el aplique se dispone horizontalmente, 
+    en ese caso hemos de buscar el icono altavoz en el lado izquierdo
+    del aplique)
+
+   </PARA>
+
+   <PARA>     Al pulsar el botón derecho del ratón sobre el aplique  aparece un
+     menú conteniendo los siguientes elementos:
+
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ejecuta el Mezclador de Audio</GUIMENUITEM>  starts
+       La aplicación <APPLICATION>Mezclador de Audio Gmix</APPLICATION>.
+       El contenido de este mezclador de audio puede variar, 
+       dependiendo de las capacidades de su tarjeta de sonido.
+       Sin embargo, habitualmente le permite controlar el nivel
+       de voz de las diferentes entradas de los dispositivos
+       de sonido, tales como el lector de CD, micrófono y línea.  
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+       Muestra este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Sobre</GUIMENUITEM> 
+       Muestra información básica sobre el aplique 
+       <APPLICATION>Mezclador</APPLICATION>, incluyendo la versión
+       del aplique y el nombre de su autor.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+
+   <NOTE>    <TITLE>Nota sobre el Sonido en GNOME</TITLE>
+    <PARA>     Para que el sonido funcione en GNOME, Vd. debe tener el sonido 
+     habilitado en el <APPLICATION>Centro de Control</APPLICATION>.
+     Para configurar el sonido, pulse sobre el botón <GUIBUTTON>Menú 
+     Principal</GUIBUTTON> (el icono pie) y seleccione:
+
+     <MENUCHOICE>      <GUIMENU>Programas</GUIMENU>
+      <GUISUBMENU>Configuración</GUISUBMENU>
+      <GUISUBMENU>Multimedia</GUISUBMENU>
+      <GUIMENUITEM>Sonido</GUIMENUITEM>
+      
+     </MENUCHOICE>.  Compruebe que las opciones de sonido  están 
+     habilitadas en la pestaña <GUILABEL>General</GUILABEL>. 
+     Configure y pruebe libremente los sonidos en la sección  
+     <GUILABEL>Eventos de Sonido</GUILABEL>. Dese cuenta que 
+     debe salir de GNOME y volver a entrar para que el sonido
+     funcione adecuadamente después de habilitarlo la  primera
+     vez en el  <APPLICATION>Centro de Control</APPLICATION>.
+    
+    </PARA>
+   </NOTE>
+
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="mixerapplet-bugs">   <TITLE>Errores y Limitaciones Conocidas</TITLE>
+   <PARA>    Este aplique no posee errores conocidos.
+   </PARA>
+  </SECT3>
+</SECT2>

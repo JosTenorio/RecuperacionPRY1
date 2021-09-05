@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<SECT2 ID="netload-applet">   <TITLE>El aplique de carga de la red</TITLE> 
+
+   <PARA> 
+     El <APPLICATION>aplique de carga de la red</APPLICATION> es un pequeño aplique monitor que situado en su panel le indica la carga en diferentes interfaces de red. 
+   </PARA>
+  
+ 
+   <SECT3 ID="netload-usage">    <TITLE>Uso</TITLE>
+    <PARA>      No necesita hacerle nada a este aplique. Él solo se situará y ejecutará en su panel. Hay varias opciones disponibles para modificar su aspecto.
+    </PARA>
+
+    <FIGURE ID="netload-applet-fig">      <TITLE>Aplique de Carga de la Red</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Aplique de Carga de la Red</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/netload-applet" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Muestra los detalles para cuatro tipos diferentes de interfaz de red:
+    </PARA>
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>SLIP</TERM>
+      <LISTITEM>       <PARA>         SLIP es el protocolo IP para líneas serie. Actualmente ya no se usa, pues ha sido reemplazado por PPP, pero es una forma de conectar ordenadores con otras máquinas que fue popular para los modems. 
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>PPP</TERM>
+      <LISTITEM>       <PARA>        PPP es el Protocolo Punto a Punto, para conectar un ordenador con otro. Ha reemplazado ampliamente a SLIP. Es eficiente y flexible pero no tan rápido como ethernet. Es probablemente la forma que más gente usa para conectarse a internet desde casa. 
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>ETH</TERM>
+      <LISTITEM>       <PARA>         Ethernet is otro método para interconectar máquinas. Requiere una tarjeta ethernet en el ordenador y cable para conectarlo a la otra máquina con la que se quiere comunicar. Es mucho más rápido que PPP.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Otro</TERM>
+      <LISTITEM>       <PARA>         Hay otras formas de establecer una red, como medios de comunicación por infrarrojos (IRDA), por radio aficionado (AX25), y redes token-ring. Cualquier medio que el aplique encuentre que no sea SLIP, PPP or ethernet se monitoriza en 'otros'.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+
+    <PARA>      Si tiene dos interfaces del mismo tipo habilitados (por ejemplo, dos interfaces ethernet hablando con máquinas diferentes), lo que se muestra es la suma total de los dos. El aplique no lo dividirá en dos secciones.
+    </PARA>
+   </SECT3>
+
+   <SECT3 ID="netload-right-click">    <TITLE>Menú desplegable con botón derecho</TITLE>
+    <PARA> 
+      Además de las opciones del menú estándar, el menú desplegable con el botón derecho tiene las siguientes opciones:
+    </PARA>   
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Propiedades por omisión...</TERM>
+      <LISTITEM>       <PARA>         Abre el <GUILABEL>diálogo de aplique multicarga</GUILABEL>
+         <LINK LINKEND="netload-properties">descrito más adelante</LINK> que le permite modificar las propiedades por defecto de este aplique monitor y otros apliques relacionados.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Propiedades...</TERM>
+      <LISTITEM>       <PARA>         Abre el <GUILABEL>diálogo del aplique multicarga</GUILABEL>
+         <LINK LINKEND="netload-properties">descrito más adelante</LINK> que afecta
+         sólo a las propiedades del  <APPLICATION>aplique de carga de la red</APPLICATION>.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+
+     <VARLISTENTRY>      <TERM>Lanzar gtop...</TERM>
+      <LISTITEM>       <PARA>         Esta opción ejecuta <COMMAND>gtop</COMMAND> que arranca el Monitor del Sistema de GNOME. <APPLICATION>gtop</APPLICATION> proporciona una visión mucho más detallada del sistema y de lo que en él ocurre.
+       </PARA>
+      </LISTITEM>
+     </VARLISTENTRY>
+    </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="netload-properties">    <TITLE>Propiedades</TITLE>
+
+    <FIGURE ID="netload-default-fig">      <TITLE>Diálogo de Propiedades por Defecto</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades por Defecto del Aplique de Carga de la Red</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/netload-applet-default" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Al igual que varios de los aplique monitores,
+      el <APPLICATION>aplique de carga de la red</APPLICATION> tiene dos modos de cambiar las preferencias. Puedes hacer cambios que afectan a todos los apliques de este grupo (<APPLICATION>aplique de carga de CPU</APPLICATION>, <APPLICATION>aplique de carga de memoria</APPLICATION>,
+      <APPLICATION>aplique de carga de swap</APPLICATION>, <APPLICATION>aplique de carga de la red</APPLICATION>
+      y <APPLICATION>aplique de carga promedio</APPLICATION>) en un amplio cuadro de diálogo. Esto es útil si usa uno o más de ellos. Estos son los valores usados por defecto. Se accede a ellos desde la opción del menú <GUIMENUITEM>Propiedades por omisión...</GUIMENUITEM>
+    </PARA>
+
+    <FIGURE ID="netload-greyed-fig">      <TITLE>Diálogo de Propiedades deshabilitado</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades deshabilitado del Aplique de Carga de la Red</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/netload-applet-greyed" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      O puede cambiar sólo las propiedades del  
+     <APPLICATION>aplique de carga de la red</APPLICATION>. Esto es útil cuando sólo usa el <APPLICATION>aplique de carga de la red</APPLICATION> o quiere probar nuevas combinaciones. Se accede desde la opción  
+     <GUIMENUITEM>Propiedades</GUIMENUITEM> del menu.
+    </PARA>
+    <NOTE>     <PARA>      Si usa la opción del menú <GUIMENUITEM>Propiedades...</GUIMENUITEM> 
+      y edita las preferencias sólo para este aplique, debe deseleccionar la opción  <GUIBUTTON>Usar propiedades por omisión</GUIBUTTON> antes de modificar ningún valor.
+     </PARA>
+    </NOTE>
+
+    <FIGURE ID="netload-properties-fig">      <TITLE>Diálogo de Propiedades de Carga de la Red</TITLE>
+      <SCREENSHOT>	<SCREENINFO>Diálogo de Propiedades del Aplique de Carga de la Red</SCREENINFO>
+	<GRAPHIC FORMAT="png" FILEREF="figures/netload-applet-properties" SRCCREDIT="Eric Baudais">	</GRAPHIC>
+      </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>      Los cambios que se pueden hacer a las propiedades son tres:
+    </PARA>
+
+    <VARIABLELIST>     <VARLISTENTRY>      <TERM>Colores</TERM>
+      <LISTITEM>       <PARA>Puede modificar los colores usados para los diferentes interfaces de red pinchando en los cuadros de color. Así se invoca la paleta de colores de GNOME.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Velocidad</TERM>
+       <LISTITEM>        <PARA>         Puede cambiar la velocidad a la que se actualiza el gráfico. La medida es en milisegundos. El valor por defecto es 500. 
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM>Tamaño</TERM>
+       <LISTITEM>        <PARA>          Puede cambiar el tamaño del aplique. La medida es en píxeles. El valor por defecto es 40, y el rango abarca desde 1 pixel hasta donde quiera. En un panel vertical, este valor hace referencia a la altura. En uno horizontal, a la anchura. 
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+     </VARIABLELIST>
+   </SECT3>
+  
+   <SECT3 ID="netload-bugs">    <TITLE>Errores conocidos y limitaciones</TITLE>
+    <PARA>      Cambiar el tamaño del aplique y su orientación puede causar todavía problemas intermitentes, aunque ahora se corrigen por sí mismos al cabo de un corto período de tiempo.
+    </PARA>
+   </SECT3>
+</SECT2>

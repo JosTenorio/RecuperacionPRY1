@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<SECT2 ID="cdplayerapplet">  <TITLE>Aplique lector de CD</TITLE>
+
+   <PARA>   <APPLICATION>Aplique de lector de CD</APPLICATION>, que se muestra en <XREF LINKEND="cdplayerapplet-fig">, le permite escuchar CDs desde el
+   <INTERFACE>Panel</INTERFACE>. Para añadir este aplique al <INTERFACE>Panel</INTERFACE>, 
+   apriete el botón derecho del ratón sobre el <INTERFACE>Panel</INTERFACE> y seleccione
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Añadir al panel</GUISUBMENU>
+    <GUISUBMENU>Aplique</GUISUBMENU>
+    <GUISUBMENU>Multimedia</GUISUBMENU>
+    <GUIMENUITEM>Lector de CD</GUIMENUITEM>
+   </MENUCHOICE>.
+  </XREF></PARA>
+
+  <FIGURE ID="cdplayerapplet-fig">   <TITLE>Aplique lector de CD</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Aplique lector de CD</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/cdplayer_applet" SRCCREDIT="muet">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="cdplayer-usage">   <TITLE>Uso</TITLE>
+   <PARA>     Este aplique se utiliza para escuchar o controlar CDs sin bloquear el equipo
+     mientras usted realiza su trabajo o juega a <APPLICATION>FreeCell</APPLICATION>. Para
+     utilizarlo, simplemente apriete los pequeños botones en el aplique tal como
+     haría en cualquier lector de CD. 
+   </PARA>
+
+   <PARA>     Apretando el botón derecho del ratón sobre el aplique aparece un menú que
+     contiene los siguientes elementos: 
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ejecutar lector de CD</GUIMENUITEM> 
+       ejecuta el <APPLICATION>Lector de CD de GNOME</APPLICATION>, 
+       que tiene más funcionalidades que el <APPLICATION>Aplique de lector de CD
+       </APPLICATION> omo son la descarga automática de la información sobre
+       las pistas del CD desde un servidor CDDB, el control del volumen y el
+       visualizador de título y pista.  
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+	enseña este documento.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Acerca</GUIMENUITEM> 
+       muestra información básica acerca del<APPLICATION>Aplique 
+       lector de CD</APPLICATION>, incluyendo la versión del aplique y el
+       nombre del autor. 
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  
+  <SECT3 ID="cdplayer-bugs">   <TITLE>Errores conocidos y Limitaciones</TITLE>
+   <PARA>	Este aplique no tiene errores conocidos. 
+   </PARA>
+  </SECT3>
+
+
+
+ </SECT2>
