@@ -1,5 +1,4 @@
 import glob
-import time
 import re
 import sys
 import pickle
@@ -31,6 +30,6 @@ def load_directory_files(path):
     return glob.glob(path+"/**/*.xml",recursive=True)
 
 def write_index(collection,destination):
-    f = open(destination+"file.pkl", "wb")
+    f = open(destination+"/file.pkl", "wb")
     pickle.dump(collection,f)
     f.close()

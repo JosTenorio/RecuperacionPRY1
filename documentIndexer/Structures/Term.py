@@ -1,14 +1,15 @@
 from Posting import Posting
 class Term:
 
-    def __init__(self, term, frequency, inv_frequency=0):
+    def __init__(self, term, frequency):
         """
         :type frequency: int
         :type inv_frequency: float
         """
         self.term = term
         self.frequency = frequency
-        self.inv_frequency = inv_frequency
+        self.inv_frequency_vec = 0
+        self.inv_frequency_bm5 = 0
         self.postings = {}
     def insert_posting(self,doc_id):
         if doc_id in self.postings.keys():

@@ -86,5 +86,5 @@ def start_indexing(collection_path, stopwords_path, target_path):
         doc_id_counter += 1
     collection.size = len(collection.documents)
     collection.calculate_avr_size()
-    write_index(collection,target_path)
+    write_index(collection, target_path)
 
