@@ -1,4 +1,5 @@
 import cmd
+from indexInspector import inspect_index
 
 from documentParser import clean_xml, load_stopwords,start_indexing
 from utils import load_directory_files, open_file, is_path,is_file
@@ -10,15 +11,16 @@ class Terminal(cmd.Cmd):
     intro = "----------------------------------------------------------------------------------------\n" \
             "Bienvenido a la herramienta de consulta de archivos de texto \n" \
             "La lista de comandos diponibles es: \n" \
-            ">>indizar  [Colección]  [Stopwords] [Indice]\n" \
-            ">>buscar  [Indice]  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]\n" \
-            ">>mostrar  [Indice]  [Tipo]  [Dato]\n" \
+            ">>indizar  '[Colección]'  '[Stopwords]' '[Indice]'\n" \
+            ">>buscar  '[Indice]'  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]\n" \
+            ">>mostrar  '[Indice]'  [Tipo]  '[Dato]'\n" \
             ">>salir\n" \
             "Con '>>help' o '>>?' puede consultar esta lista o algun comando en especifico\n" \
+            "Recuerde que las direcciones de archivos se deben digitar entre comillas simples ('')\n" \
             "----------------------------------------------------------------------------------------"
 
     def do_indizar(self, line):
-        """indizar  [Colección]  [Stopwords] [Índice]
+        """indizar  '[Colección]'  '[Stopwords]' '[Indice]'
         Crea un índice para los archivos del directorio [Colección]"""
         args = line.split()
         if(len(args)<3):
@@ -44,14 +46,14 @@ class Terminal(cmd.Cmd):
 
 
     def do_buscar(self, line):
-        """buscar  [Indice]  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]
+        """buscar  '[Indice]'  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]
         Realiza la consulta con los paramétros especificados sobre el índice en el directorio [Indice]"""
         print("Comando de busquéda")
 
     def do_mostrar(self, line):
-        """mostrar  [Indice]  [Tipo]  [Dato]
+        """mostrar  '[Indice]'  [Tipo]  '[Dato]'
         Muestra la información guardada en índice en el directorio [Indice]"""
-        print("Comando de inspección")
+        inspect_index(line)
 
     def do_salir(self, line):
         """salir
@@ -63,10 +65,12 @@ class Terminal(cmd.Cmd):
             cmd.Cmd.do_help(self, line)
         else:
             print("La lista de comandos diponibles es: \n" \
-                  ">>indizar  [Colección]  [Stopwords] [Indice]\n" \
-                  ">>buscar  [Indice]  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]\n" \
-                  ">>mostrar  [Indice]  [Tipo]  [Dato]\n" \
-                  "Con '>>help' o '>>?' puede consultar esta lista o algun comando en especifico\n")
+                  ">>indizar  '[Colección]'  '[Stopwords]' '[Indice]'\n" \
+                  ">>buscar  '[Indice]'  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]\n" \
+                  ">>mostrar  '[Indice]'  [Tipo]  '[Dato]'\n" \
+                  ">>salir\n" \
+                  "Con '>>help' o '>>?' puede consultar esta lista o algun comando en especifico\n"\
+                  "Recuerde que las direcciones de archivos se deben digitar entre comillas simples ('')\n")
 
     def do_EOF(self, line):
         return True
@@ -84,3 +88,5 @@ class Terminal(cmd.Cmd):
 if __name__ == '__main__':
     Terminal().cmdloop()
     # Index test comand indizar D:\Development\RecuperacionPRY1\Archivos_de_prueba\xml-es D:\Development\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt D:\Development\RecuperacionPRY1\documentIndexer\stopWords
+
+# mostrar 'C:\Users\Personal\Desktop\RecuperacionPRY1\Archivos de prueba\xml-es' doc 'C:\Users\Personal\Desktop\RecuperacionPRY1\Archivos de prueba\xml-es'
