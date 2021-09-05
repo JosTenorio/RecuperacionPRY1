@@ -1,0 +1,1361 @@
+<?xml version="1.0"?>
+<CHAPTER ID="gmc">  <TITLE>Gestor de ficheros GNOME</TITLE>
+  <SECT1>    <TITLE>Uso del gestor de ficheros</TITLE>
+    <PARA>GNOME incluye un gestor de ficheros que permite manipular los ficheros de
+su sistema en un entorno gráfico confortable y potente. El gestor de ficheros
+es conocido como GMC «GNU Midnight Commander». GMC se basa en el gestor
+de ficheros «Midnight Commander» que puede ejecutarse en modo terminal. 
+    </PARA>
+    <PARA>«Midnight Commander» era conocido hace tiempo por su potencia y facilidad de
+uso. GMC ha heredado la potencia y facilidad de uso de MC y le ha añadido
+la interfaz gráfica de GNOME.
+    </PARA>
+    <PARA> 
+Como se mencionó en el capítulo anterior, el gestor de ficheros de GNOME
+proporciona a GNOME la funcionalidad de escritorio. El gestor de ficheros 
+de GNOME también proporciona un lugar para manipular ficheros usando la 
+ventana del gestor de ficheros.
+      <FIGURE>	<TITLE>«GNU Midnight Commander» - El gestor de ficheros de GNOME</TITLE>
+	<SCREENSHOT>	  <SCREENINFO>GMC</SCREENINFO>
+	  <GRAPHIC FORMAT="png" FILEREF="./figs/gmc1" SRCCREDIT="dcm">	  </GRAPHIC>
+	</SCREENSHOT>
+      </FIGURE>
+    </PARA>
+    <PARA>Existen dos ventanas principales dentro del gestor de ficheros.
+A la izquierda tenemos la representación del árbol de directorios de
+nuestro ordenador, ordenados jerárquicamente. Y a la derecha tenemos la ventana
+de contenido, la cual nos mostrará el contenido del directorio que hayamos
+seleccionado en la ventana de la izquierda.  
+    </PARA>
+    <PARA>Para seleccionar un directorio en el árbol pulse una vez con el ratón.
+Esto cambiará la vista de la ventana de contenido, mostrando los ficheros del
+directorio que hemos elegido. Si hay directorios contenidos dentro de
+otros, se puede pulsar sobre el signo más en la ventana de árbol para
+expandir el directorio. En ese momento el signo será sustituido por un signo
+menos.  Si pulsa en el signo menos, los subdirectorios se ocultaran de nuevo
+en el árbol y el signo más aparecerá de nuevo.
+    </PARA>
+    <PARA>      <INDEXTERM>	<PRIMARY>	  Visualización de ficheros
+	</PRIMARY>
+      </INDEXTERM> 
+La ventana de directorios dispone de varias vistas opcionales a las que
+podrá sacar partido: la vista de iconos y tres vistas en árbol: breve,
+detallada y personalizada.
+    </PARA>
+    <PARA>La vista de iconos es la predeterminada
+y muestra los ficheros, representándolos con grandes iconos.
+La vista breve muestra los ficheros y directorios en una lista pero sin 
+mostrar información adicional alguna. La vista detallada mostrará una lista 
+con los ficheros del directorio ampliando la lista con información sobre 
+estos. 
+La vista personalizada es una lista en la que  podremos elegir la información
+deseada de los ficheros. 
+    </PARA>
+    <PARA>En las vistas breve, detallada y personalizada, si se pulsa en uno de los
+títulos informativos de la parte superior de la ventana, se ordenaran 
+los ficheros de acuerdo con dicha información. 
+Por ejemplo, si quisiera encontrar el fichero más grande del directorio
+no tiene más que pulsar sobre la etiqueta Tamaño y los ficheros se ordenarán
+desde el más grande al más pequeño. Y otra pulsación más en Tamaño cambiará
+la ordenación desde el más pequeño al más grande.
+    </PARA>
+  </SECT1>
+  <SECT1 ID="gmcnav">    <TITLE>Moviéndonos por el Gestor de Ficheros GNOME</TITLE>
+    <PARA>      <INDEXTERM>	<PRIMARY>	  Moviéndonos por el Gestor
+	</PRIMARY>
+      </INDEXTERM>
+Encima de las ventanas del árbol y de la principal en en gestor de ficheros
+Gnome, tenemos un formulario con el campo de texto 
+<GUILABEL>ubicación</GUILABEL>.
+    </PARA>
+      <PARA>En este campo podemos introducir la ruta del directorio que deseamos
+ver en la ventana principal.
+      </PARA>
+      <PARA>        <INDEXTERM ID="idx-a38">          <PRIMARY>            FTP
+          </PRIMARY>
+        </INDEXTERM>
+El gestor de ficheros GNOME también esta equipado para mostrar ficheros
+vía ftp. Para ver un servidor ftp necesitaremos estar conectados a Internet,
+bien a través de una cuenta en cualquier servidor o a través de una red.
+Escriba la dirección del servidor ftp en el campo ubicación y el gestor de
+ficheros GNOME realizará  la conexión con el servidor.
+      </PARA>
+      <PARA>Asegúrese de escribir las direcciones ftp de la siguiente manera:
+        <PROGRAMLISTING>ftp://[dirección del servidor]</PROGRAMLISTING>
+      </PARA>
+      <PARA>Encima del campo de texto <GUILABEL>ubicación</GUILABEL> están los botones 
+de navegación,
+cuyo uso puede resultarle interesante.
+Estos botones presentados como flechas,
+le permiten moverse dentro de los directorios adyacentes al que está.
+El botón de la izquierda le llevará al directorio previo en el que estuvo,
+el botón central le permitirá subir un nivel en la jerarquía de directorios,
+y el botón de la derecha le llevara al siguiente directorio si se acaba
+de mover hacia atrás.
+      </PARA>
+      <TIP>        <TITLE>Truco</TITLE>
+        <PARA>Puede abrir una ventana secundaria usando el botón central del ratón en cualquier
+directorio. Pulse el botón central del ratón (o el botón derecho e 
+izquierdo a la vez, si usa la emulación de tres botones) en un directorio
+de la ventana principal
+y una ventana nueva se abrirá mostrándonos los contenidos del directorio que
+pulsó.
+        </PARA>
+      </TIP>
+    </SECT1>
+    <SECT1 ID="gmcselect">      <TITLE>Selección de Ficheros</TITLE>
+      <PARA>        <INDEXTERM>          <PRIMARY>            Selección de Ficheros
+          </PRIMARY>
+        </INDEXTERM>
+La selección de ficheros se realiza con el ratón, pulsando sobre el
+fichero o los ficheros que queremos seleccionar. El fichero que está
+seleccionado aparecerá marcado para mostrarnos que ha sido seleccionado.
+      </PARA>
+      <PARA>        <INDEXTERM ID="idx-a40">          <PRIMARY>             Selección de múltiples ficheros
+          </PRIMARY>
+        </INDEXTERM>
+Existen varias formas para seleccionar más de un fichero.
+Una de ellas es usar la banda elástica [rubber band] para seleccionar 
+arrastrando el ratón
+sobre algunos ficheros.
+Esta acción producirá una pequeña
+línea de puntos, la banda elástica, para mostrarnos el área en la cual los
+ficheros serán seleccionados.
+      </PARA>
+      <FIGURE>        <TITLE>Selección mediante banda elástica</TITLE>
+        <SCREENSHOT>          <SCREENINFO>Selección mediante banda elástica</SCREENINFO>
+          <GRAPHIC FORMAT="png" FILEREF="./figs/rubberband" SRCCREDIT="dcm">          </GRAPHIC>
+        </SCREENSHOT>
+      </FIGURE>
+      <PARA>Si desea ser más selectivo en los ficheros
+que elige, o los ficheros que necesita no están juntos, puede usar la
+tecla 
+
+<KEYCAP>CTRL</KEYCAP>
+
+para mantener los archivos que ha seleccionado mientras
+sigue seleccionando más. Esto se realiza seleccionando un fichero,
+pulsando la tecla 
+
+<KEYCAP>CTRL</KEYCAP>
+
+y manteniéndola pulsada y seleccionamos otro fichero
+. Mientras la tecla 
+
+<KEYCAP>CTRL</KEYCAP>
+
+ este pulsada puede añadir ficheros a la
+lista de ficheros seleccionados. Y una vez que ha seleccionado múltiples
+ficheros por cualquiera de los métodos, puede copiar o mover los ficheros
+.
+    </PARA>
+    <PARA> 
+Puede también usar la tecla <KEYCAP>SHIFT</KEYCAP> para seleccionar un
+rango de ficheros. Por ejemplo, si esta en el modo lista y pulsa la tecla
+<KEYCAP>SHIFT</KEYCAP> mientras selecciona un fichero en la parte superior
+de la lista, y después selecciona un fichero 10 filas mas abajo con la
+tecla <KEYCAP>SHIFT</KEYCAP> todavía pulsada, seleccionara los 10 ficheros
+de ese rango.
+    </PARA>
+      <PARA>También puede seleccionar todos los ficheros de un directorio
+seleccionando <GUIMENUITEM>Seleccionar Todo</GUIMENUITEM> del menú 
+<GUIMENU>Edición</GUIMENU>.
+      </PARA>
+      <PARA>        <INDEXTERM>          <PRIMARY>            filtrado
+          </PRIMARY>
+        </INDEXTERM>
+También puede filtrar su selección usando la opción de menú
+
+<GUIMENUITEM>
+Seleccionar Ficheros
+</GUIMENUITEM>
+
+del menú
+
+<GUIMENU>
+Edición
+</GUIMENU>
+
+. Esto nos mostrará una ventana de dialogo
+que le permitirá escribir el criterio de su selección. 
+En este campo, el símbolo
+
+<KEYCAP>
+*
+</KEYCAP>
+
+se interpreta como un comodín, esto es, representa cualquier cadena de 
+caracteres. 
+Por ejemplo,
+si usted quisiera seleccionar todos los ficheros del directorio que
+comienzan con la letra 
+
+<KEYCAP>
+D
+</KEYCAP>
+
+, puede escribir 
+
+<KEYCAP>
+D*
+</KEYCAP>
+
+(tenga en cuenta que Unix diferencia mayúsculas y minúsculas).
+      </PARA>
+    <TIP>      <TITLE>Truco</TITLE>
+      <PARA>Observe que "*.*" se traduce por "todos los ficheros que contienen un punto", mientras que
+"*" lo hace por "todos los ficheros". Un símbolo de interrogación (?) se traduce por cualquier
+carácter único, mientras que los paréntesis ([]) rodeando un conjunto de caracteres se traduce
+por cualquier carácter de ese conjunto. Por ejemplo, "?[ae]" se traduce por cualquier fichero
+de dos letras con cualquier carácter en la primera letra, seguido de una "a" o una "e" como
+segunda letra.
+Algunos usuarios avanzados pueden preferir usar las expresiones regulares de tipo grep para
+definir los filtros: si desea hacerlo, veasé Preferencias... en la carpeta 
+Opciones-&gt;Mostrar fichero.
+      </PARA>
+    </TIP>
+
+    </SECT1>
+    <SECT1 ID="gmccopy">      <TITLE>Copiar y mover ficheros</TITLE>
+      <PARA>        <INDEXTERM>          <PRIMARY>            Copia de ficheros
+          </PRIMARY>
+        </INDEXTERM>
+        <INDEXTERM>          <PRIMARY>            Movimiento de ficheros
+          </PRIMARY>
+        </INDEXTERM>
+La acción predeterminada al arrastrar ficheros desde el gestor de ficheros
+GNOME hacia el escritorio es moverlos.
+Pero también puede usar arrastrar ficheros para copiar 
+un fichero pulsando la tecla 
+
+<KEYCAP>
+SHIFT 
+</KEYCAP>
+
+mientras arrastramos el/los fichero/s.
+También puede arrastrar ficheros desde el gestor de ficheros hacia otro
+directorio. Selecciones el fichero en la ventana principal y arrastrelo hasta
+el directorio deseado en el árbol de directorios.
+Según arrastra el fichero hacia el árbol de directorio, 
+verá aparecer un signo menos para recordarle que se va a copiar el fichero.
+Puede también usar arrastrar y pegar para copiar directorios de la misma
+forma que para los ficheros. Observe de nuevo el signo más, indicándole que
+el directorio no se mueve, sino que se copia.
+      </PARA>
+      <PARA>        <INDEXTERM>          <PRIMARY>            Enlace de ficheros
+          </PRIMARY>
+        </INDEXTERM>
+También puede abrir un menú para decidir la acción que se realizara al
+arrastrar el fichero, usando el botón central del ratón para arrastrarlo
+o pulsando la tecla <KEYCAP>ALT</KEYCAP> mientras arrastra el fichero.
+Una vez que lo suelte, observara un menú de cortinilla con las opciones copiar,
+mover, enlazar y cancelar arrastre.
+      </PARA>
+    <PARA>Para aprender mas sobre como enlazar ficheros en sistemas Linux/Unix puede
+leer <XREF LINKEND="syslinks">    </XREF></PARA>
+
+<PARA>Otra forma para copiar o mover es usar la ventaja que nos proporciona
+el menú <GUIMENU>desplegable</GUIMENU> que aparece al pulsar el botón 
+derecho del ratón. Pulse
+con el botón derecho del ratón sobre el fichero que desee copiar o mover
+y seleccione <GUIMENUITEM>Mover/cambiar nombre</GUIMENUITEM> o 
+<GUIMENUITEM>Copiar</GUIMENUITEM> del menú  <GUIMENU>desplegable</GUIMENU>. 
+Esto nos llevará a una ventana de dialogo donde realizaremos estas tareas.</PARA>
+
+      <PARA>        <FIGURE>          <TITLE>Formulario mover</TITLE>
+          <SCREENSHOT>            <SCREENINFO>Formulario mover</SCREENINFO>
+            <GRAPHIC FORMAT="png" FILEREF="./figs/gmc_move" SRCCREDIT="dcm">            </GRAPHIC>
+          </SCREENSHOT>
+        </FIGURE>
+        <INDEXTERM>          <PRIMARY>            Movimiento de ficheros
+          </PRIMARY>
+        </INDEXTERM>
+Para usar el formulario de movimiento de ficheros simplemente debe escribir 
+la ruta a donde quiera mover el archivo.
+Si lo que quiere es cambiar el nombre del fichero, simplemente escriba
+el nuevo nombre del fichero. La ventana de dialogo Copiar es y funciona
+exactamente igual que la ventana de dialogo Mover/Renombrar.
+      </PARA>
+      <PARA>Si el fichero que está moviendo es un enlace simbólico  , que es un enlace
+virtual al punto donde esta realmente radicado el fichero (conocidos como accesos directos en otros sistemas operativos )  , 
+puede seleccionar la pestaña de 
+
+<GUILABEL>
+Opciones avanzadas
+</GUILABEL>
+
+y seleccionar
+
+<GUILABEL>
+Conservar enlaces simbólicos. 
+</GUILABEL>
+
+Haciendo esto se asegurara que el enlace se conserva
+a pesar de mover el fichero. 
+      </PARA>
+      <PARA>Se recomienda usar este método si desea mover
+un enlace simbólico.
+      </PARA>
+    </SECT1>
+    <SECT1 ID="gmcrename">      <TITLE>Renombrar ficheros</TITLE>
+      <PARA>        <INDEXTERM>          <PRIMARY>            Renombrar ficheros
+          </PRIMARY>
+        </INDEXTERM>
+Renombrar ficheros en el gestor de ficheros GNOME o en el escritorio
+se puede abordar de dos formas. 
+      </PARA>
+      <PARA>Una forma de renombrar ficheros es pulsar el botón derecho del ratón sobre
+el y escoger la opción 
+
+<GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+en el menú
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+. En el campo de tipo texto nombre de fichero del formulario puede
+teclear el nuevo nombre tal y como quieras que aparezca.
+      </PARA>
+      <FIGURE>        <TITLE>Propiedades del fichero</TITLE>
+        <SCREENSHOT>          <SCREENINFO>Propiedades del fichero</SCREENINFO>
+          <GRAPHIC FORMAT="png" FILEREF="./figs/fileprops" SRCCREDIT="dcm">          </GRAPHIC>
+        </SCREENSHOT>
+      </FIGURE>
+      <PARA>Un atajo para renombrar un fichero es pulsar lentamente dos veces sobre
+el nombre fichero en la vista de iconos o en el escritorio. Asegúrese de hacerlo lentamente para no lanzar la ejecución
+del fichero, sino simplemente seleccionarlo y pulsar de nuevo. En este
+momento el nombre del fichero pasara a modo edición, el cursor del ratón
+cambiara a edición de línea, y podrá teclear el nuevo nombre. Una vez tecleado
+el nombre elegido deberá pulsar
+
+<KEYCAP>
+Intro
+</KEYCAP>
+
+para finalizar la edición.
+      </PARA>
+    </SECT1>
+    <SECT1 ID="gmclaunch">      <TITLE>Ejecutar aplicaciones desde el gestor de ficheros GNOME</TITLE>
+      <PARA>        <INDEXTERM>          <PRIMARY>            Ejecutar aplicaciones desde el gestor
+          </PRIMARY>
+        </INDEXTERM>
+El Gestor de Ficheros GNOME le permite ejecutar aplicaciones desde la
+ventana principal pulsando dos veces con el ratón sobre un fichero,
+que a su vez tiene asociada un aplicación. 
+Puede cambiar la forma en que se manejan los ficheros, tal y como se describe
+en <XREF LINKEND="gccmime">.
+Algunos ficheros que a su vez contienen otros ficheros, le permitirán miran
+dentro de ellos. Por ejemplo, en los ficheros .tar, .gz y .rpm, puede pulsar
+dos veces con el ratón sobre ellos y los ficheros almacenados en su interior
+aparecerán en el gestor de ficheros.
+      </XREF></PARA>
+      <PARA>        <INDEXTERM>          <PRIMARY>            Abrir con
+          </PRIMARY>
+        </INDEXTERM>
+
+Si el fichero no tiene asociada ninguna aplicación, puede pulsar con el botón
+derecho del ratón sobre el fichero y seleccionar <GUIMENUITEM>Abrir con</GUIMENUITEM>
+en el menú <GUIMENUITEM>desplegable</GUIMENUITEM>. 
+Esto abrirá un formulario en que podrá definir la aplicación que se arrancara para
+ese fichero.
+El formulario reproduce los ítem del menú principal para que pueda navegar por las
+aplicaciones y encontrar una con la que abrir el fichero.
+Si no encuentra la aplicación en el árbol puede especificar una ruta y nombre de aplicación en el campo de texto <GUILABEL>Programa a ejecutar</GUILABEL>.
+      </PARA>
+      <FIGURE>        <TITLE>Formulario abrir con</TITLE>
+        <SCREENSHOT>          <SCREENINFO>Formulario abrir con</SCREENINFO>
+          <GRAPHIC FORMAT="png" FILEREF="./figs/open_with" SRCCREDIT="dcm">          </GRAPHIC>
+        </SCREENSHOT>
+      </FIGURE>
+    </SECT1>
+    <SECT1 ID="gmcfileprops"><TITLE>Propiedades y acciones de los ficheros</TITLE>
+      <PARA>        <INDEXTERM ID="idx-a48">          <PRIMARY>            Propiedades de los ficheros
+          </PRIMARY>
+        </INDEXTERM>
+Puedes pulsar el botón derecho del ratón sobre cualquier fichero en la 
+ventana principal de ficheros y seleccionar entre sus diversas propiedades 
+y acciones desde el menú
+
+<GUIMENU>
+desplegable
+</GUIMENU>
+
+:
+      </PARA>
+      <ITEMIZEDLIST MARK="bullet">        <LISTITEM>          <PARA><GUIMENUITEM>Open</GUIMENUITEM> - Esta opción abrirá el fichero con la aplicación 
+predeterminada para este. Puede leer mas sobre como editar estas asociaciones en el capitulo aplique C mime en <XREF LINKEND="gccmime">. 
+Algunos ficheros que a su vez contienen otros ficheros, le permitirán miran
+dentro de ellos. Por ejemplo, en los ficheros .tar, .gz y .rpm, puede pulsar
+dos veces con el ratón sobre ellos y los ficheros almacenados en su interior
+aparecerán en el gestor de ficheros.
+          </XREF></PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Abrir con
+</GUIMENUITEM>
+
+- Puede abrir un fichero con cualquier aplicación usando esta opción del
+menú. Puede leer mas sobre este tema en
+
+<XREF LINKEND="gmclaunch">
+.
+          </XREF></PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Ver
+</GUIMENUITEM>
+
+- Esta opción mostrara el fichero con un visualizador de texto básico.
+          </PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Editar
+</GUIMENUITEM>
+
+- Esta opción arrancara un editor para editar el fichero. El editor 
+ejecutado se determina gracias a la aplicación asociada con este tipo
+de fichero. Puede leer mas sobre la modificación de esa asociación en
+<XREF LINKEND="gccmime">.
+          </XREF></PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Copiar
+</GUIMENUITEM>
+
+- Con esta opción se copia el fichero al porta papeles de forma que pueda
+pegarse en otra parte.
+          </PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Borrar
+</GUIMENUITEM>
+
+- Con esta opción se borrará el fichero.
+          </PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Mover
+</GUIMENUITEM>
+
+- Esta opción abrirá el formulario 
+
+<GUILABEL>
+Mover
+</GUILABEL>
+
+que nos permite mover el fichero. Puede leer mas sobre este formulario y
+el movimiento de ficheros en
+
+<XREF LINKEND="gmccopy">
+.
+          </XREF></PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Enlaces simbólicos
+</GUIMENUITEM>
+
+- Los enlaces simbólicos le permiten crear un enlace simbólico apuntando al
+fichero elegido en otro directorio. Cuando selecciona la opción de enlaces 
+simbólicos, aparecerá un formulario en el que podrá escribir el directorio
+y el nombre del fichero al que apuntará el enlace simbólico. El enlace será
+un atajo al fichero elegido. Si no entiendes los enlaces simbólicos deberías
+leer en <XREF LINKEND="newbies">.
+          </XREF></PARA>
+        </LISTITEM>
+        <LISTITEM>          <PARA><GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+- La opción de <GUIMENUITEM>propiedades</GUIMENUITEM> del menú abrirá el formulario 
+de propiedades.
+El formulario de propiedades permite editar y ver las propiedades de los 
+ficheros seleccionados.
+          </PARA>
+          <PARA>El formulario de propiedades tiene tres apartados, 
+<GUILABEL>estadísticas</GUILABEL>,
+<GUILABEL>opciones</GUILABEL>, y 
+<GUILABEL>permisos</GUILABEL>.
+          </PARA>
+          <FIGURE>            <TITLE>Propiedades del fichero</TITLE>
+            <SCREENSHOT>              <SCREENINFO>Propiedades del fichero</SCREENINFO>
+              <GRAPHIC FORMAT="png" FILEREF="./figs/fileprops" SRCCREDIT="dcm">              </GRAPHIC>
+            </SCREENSHOT>
+          </FIGURE>
+          <ITEMIZEDLIST MARK="bullet">            <LISTITEM>              <PARA><GUILABEL>Estadísticas</GUILABEL>
+- Este apartado muestra información sobre el fichero incluyendo nombre,
+tipo, tamaño, e historial. Puede cambiar el nombre del fichero en la
+casilla de texto
+<GUILABEL>Nombre del fichero</GUILABEL>.
+El tamaño de los directorios <EMPHASIS>no</EMPHASIS> refleja el tamaño del directorio
+y de los ficheros que contiene.
+              </PARA>
+            </LISTITEM>
+            <LISTITEM>              <PARA><GUILABEL>
+Opciones
+</GUILABEL>
+
+- Este apartado permite cambiar las opciones de acción para este fichero.
+Puede definir como abrir, ver, y editar el fichero. Si necesita abrirlo en
+una ventana de terminal puede marcar la casilla
+
+<GUILABEL>
+Necesita un terminal para funcionar
+</GUILABEL>
+
+.
+              </PARA>
+              <NOTE>                <TITLE>Nota</TITLE>
+                <PARA>Si abre el formulario de propiedades desde un icono situado en el 
+escritorio, será capaz de cambiar el icono de este fichero en el
+apartado de 
+
+<GUILABEL>
+Opciones
+</GUILABEL>
+
+.
+
+                </PARA>
+              </NOTE>
+            </LISTITEM>
+            <LISTITEM>              <PARA><GUILABEL>
+Permisos
+</GUILABEL>
+
+- Este apartado permite cambiar los permisos y el propietario de un fichero
+si esta autorizado para hacerlo. Puede seleccionar los permisos de 
+lectura, escritura y ejecución para el usuario, grupo, y el resto. Puede
+además determinar el UID, GID y «Sticky», así como determinar el propietario
+del fichero. Puede aprender mas sobre permisos de ficheros en <XREF LINKEND="newbies">. 
+              </XREF></PARA>
+	    <WARNING>	      <TITLE>Aviso</TITLE>
+	      <PARA>Sea precavido al otorgar permisos de lectura y escritura a Otros; esto permite
+a <EMPHASIS>cualquiera</EMPHASIS> que use el ordenador leer y escribir (respectivamente)
+el fichero que haya seleccionado.
+	      </PARA>
+	    </WARNING>
+	  </LISTITEM>
+          </ITEMIZEDLIST>
+        </LISTITEM>
+      </ITEMIZEDLIST>
+    <NOTE>      <TITLE>Nota</TITLE>
+      <PARA>No tiene sentido cambiar las propiedades de los enlaces simbólicos en el
+gestor de ficheros. Si necesita cambiar las propiedades de este tipo de ficheros
+debe cambiar las del fichero actual, no los de su enlace. 
+      </PARA>
+    </NOTE>
+    </SECT1>
+    <SECT1 ID="gmcprefs">      <TITLE>Cambio de las preferencias en el gestor de ficheros</TITLE>
+      <PARA>        <INDEXTERM>          <PRIMARY>            Preferencias
+          </PRIMARY>
+        </INDEXTERM>
+Hay muchos parámetros del gestor de ficheros GNOME que se pueden configurar. 
+      </PARA>
+      <PARA>A estos parámetros se accede a través del formulario 
+
+<GUILABEL>
+Preferencias GMC
+</GUILABEL>
+
+. Puede abrir este formulario eligiendo la opción 
+
+<GUIMENUITEM>
+Preferencias
+</GUIMENUITEM>
+
+en el menú
+
+<GUIMENU>
+Editar
+</GUIMENU>
+
+.
+      </PARA>
+      <PARA>El formulario 
+
+<GUILABEL>
+Preferencias GMC
+</GUILABEL>
+
+se divide en seis secciones principales:
+
+<GUILABEL>Presentación de ficheros</GUILABEL>
+,
+<GUILABEL>Confirmación</GUILABEL>
+,                
+<GUILABEL>VFS</GUILABEL>
+,  
+<GUILABEL>Guardando en cache</GUILABEL>
+, 
+<GUILABEL>Escritorio</GUILABEL> y, <GUILABEL>Vista personalizada</GUILABEL>.
+      </PARA>
+      <SECT2 ID="gmcprefs-file">        <TITLE>Presentación de ficheros</TITLE>
+        <FIGURE>          <TITLE>Preferencias de la presentación de ficheros</TITLE>
+          <SCREENSHOT>            <SCREENINFO>Preferencias de la presentación de ficheros</SCREENINFO>
+            <GRAPHIC FORMAT="png" FILEREF="./figs/gmcprops1" SRCCREDIT="dcm">            </GRAPHIC>
+          </SCREENSHOT>
+        </FIGURE>
+        <ITEMIZEDLIST MARK="bullet">          <LISTITEM>            <PARA>              <INDEXTERM>                <PRIMARY>                  Presentación
+                </PRIMARY>
+              </INDEXTERM>
+La sección
+<GUILABEL>
+Presentación de ficheros
+</GUILABEL>
+
+permite cambiar la forma en que se presentan los ficheros en GMC.
+            </PARA>
+            <ITEMIZEDLIST MARK="bullet">              <LISTITEM>                <PARA><GUILABEL>
+Mostrar los ficheros de respaldo
+</GUILABEL>
+
+- Mostrara las copias de respaldo de cualquier fichero
+que pueda haber en su sistema. Un fichero de respaldo es cualquier fichero  cuyo nombre 
+comience con una ~.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA>                  <INDEXTERM>                    <PRIMARY>                      Ficheros ocultos
+                    </PRIMARY>
+                  </INDEXTERM>
+                  <INDEXTERM>                    <PRIMARY>                      Mostrar ficheros ocultos
+                    </PRIMARY>
+                  </INDEXTERM>
+<GUILABEL>
+Mostrar ficheros ocultos
+</GUILABEL>
+
+- Mostrara todos los ficheros punto, ficheros que comienzan con un punto.
+Entre estos ficheros se incluyen típicamente los de configuración y los
+directorios.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA><GUILABEL>
+Mezclar ficheros y directorios
+</GUILABEL>
+
+- Mostrara los ficheros y directorios en el orden en que los ordenes,
+en vez de mostrar siempre los directorios antes que los ficheros.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA><GUILABEL>
+Usar patrones «shell» en vez de expresiones regulares.
+</GUILABEL>
+
+- Esta opción se reserva para usuarios expertos. Si no esta familiarizado
+con las expresiones regulares, no debería usar esta opción. Si esta
+familiarizado con la creación de expresiones regulares puede elegir esta
+opción para usarlas en sus ordenaciones y filtrados.
+                </PARA>
+              </LISTITEM>
+            </ITEMIZEDLIST>
+          </LISTITEM>
+        </ITEMIZEDLIST>
+      </SECT2>
+      <SECT2 ID="gmcprefs-confirm">        <TITLE>Confirmación</TITLE>
+        <FIGURE>          <TITLE>Preferencias en las confirmaciones</TITLE>
+          <SCREENSHOT>            <SCREENINFO>Preferencias en las confirmaciones</SCREENINFO>
+            <GRAPHIC FORMAT="png" FILEREF="./figs/gmcprops2" SRCCREDIT="dcm">            </GRAPHIC>
+          </SCREENSHOT>
+        </FIGURE>
+        <ITEMIZEDLIST MARK="bullet">          <LISTITEM>            <PARA>              <INDEXTERM>                <PRIMARY>                  Confirmaciones
+                </PRIMARY>
+              </INDEXTERM>
+Esta sección permite cambiar las operaciones que piden confirmación antes
+de continuar.
+            </PARA>
+            <ITEMIZEDLIST MARK="bullet">              <LISTITEM>                <PARA><GUILABEL>
+Confirmar antes de borrar ficheros
+</GUILABEL>
+
+- Mostrara un formulario de confirmación antes de borrar un fichero.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA><GUILABEL>
+Confirmar antes de sobreescribir ficheros
+</GUILABEL>
+
+- Mostrara un formulario de confirmación antes de sobreescribir un fichero.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA><GUILABEL>
+Confirmar la ejecución de ficheros
+</GUILABEL>
+
+- Mostrara un formulario de confirmación antes de ejecutar un fichero.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA><GUILABEL>
+Mostrar indicadores de progreso de la operaciones
+</GUILABEL>
+
+- Mostrara un indicador de progreso durante la ejecución de ciertas
+operaciones, tales que copias, movimientos, borrados, etc.
+                </PARA>
+              </LISTITEM>
+            </ITEMIZEDLIST>
+          </LISTITEM>
+        </ITEMIZEDLIST>
+      </SECT2>
+      <SECT2 ID="gmcprefs-VFS"><TITLE>Vfs</TITLE>
+        <FIGURE>         <TITLE>Preferencias Vfs</TITLE>
+          <SCREENSHOT>            <SCREENINFO>Preferencias Vfs</SCREENINFO>
+            <GRAPHIC FORMAT="png" FILEREF="./figs/gmcprops3" SRCCREDIT="dcm">            </GRAPHIC>
+          </SCREENSHOT>
+        </FIGURE>
+        <ITEMIZEDLIST MARK="bullet">          <LISTITEM>            <PARA>              <INDEXTERM>                <PRIMARY>                  Vfs
+                </PRIMARY>
+              </INDEXTERM>
+              <INDEXTERM>                <PRIMARY>                  Sistemas de ficheros virtual
+                </PRIMARY><SEE>"VFS"</SEE>
+              </INDEXTERM>
+Esta sección permite configurar las opciones del sistema
+de ficheros virtual.
+            </PARA>
+            <PARA> 
+El sistema de ficheros virtual permite manipular ficheros que no están
+radicados en su sistema de ficheros local. Hay varias versiones de VFS
+incluyendo ftpfs y tarfs. Ftpfs permite trabajar con servidores ftp mientras
+que tarfs le facilita el acceso al contenido de ficheros .tar.
+            </PARA>
+            <NOTE>              <TITLE>Nota</TITLE>
+              <PARA>Tar es el formato de archivo estándar UNIX.
+              </PARA>
+            </NOTE>
+            <ITEMIZEDLIST MARK="bullet">              <LISTITEM>                <PARA>  
+<GUILABEL>
+Temporizador VFS
+</GUILABEL>
+
+- Permite determinar cuanto tiempo se estará conectado a cualquier VFS
+sin actividad. El temporizador se mide en segundos.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA><GUILABEL>
+Clave para ftp anónimo
+</GUILABEL>
+
+- Permite asignar una clave para presentarse en servidores ftp anónimos.
+Generalmente elegirá asignar su dirección de correo electrónico.
+                </PARA>
+              </LISTITEM>
+              <LISTITEM>                <PARA><GUILABEL>
+Usar siempre «proxy» para ftp
+</GUILABEL>
+
+- Si necesita usar un «proxy» para conectar a los servidores ftp, deberá
+habilitar esta opción.
+                </PARA>
+              </LISTITEM>
+            </ITEMIZEDLIST> 
+          </LISTITEM>
+        </ITEMIZEDLIST>
+      </SECT2>
+      <SECT2 ID="gmcprefs-cache">       <TITLE>Cache</TITLE>
+        <FIGURE>         <TITLE>Preferencias caché</TITLE>
+         <SCREENSHOT>          <SCREENINFO>Preferencias caché</SCREENINFO>
+          <GRAPHIC FORMAT="png" FILEREF="./figs/gmcprops4" SRCCREDIT="dcm">          </GRAPHIC>
+         </SCREENSHOT>
+        </FIGURE>
+      <ITEMIZEDLIST MARK="bullet">       <LISTITEM>        <PARA>Esta sección permite configurar opciones que mejorarán la velocidad de
+GMC usando caché.
+        </PARA>
+        <ITEMIZEDLIST MARK="bullet">         <LISTITEM>          <PARA> 
+<GUILABEL>
+Recarga rápida de directorios
+</GUILABEL>
+
+- Con esta opción se guardara información de los directorios en la caché
+de forma que se carguen mas rápido.
+          </PARA>
+          <IMPORTANT>           <TITLE>Importante</TITLE>
+           <PARA>Si habilita la
+
+<GUILABEL>
+Recarga rápida de directorios
+</GUILABEL>
+
+puede tener problemas al no ver nuevos ficheros que se hayan
+añadido a los directorios.
+           </PARA>
+          </IMPORTANT>
+         </LISTITEM>
+         <LISTITEM>          <PARA><GUILABEL>
+Calcular totales antes de copiar ficheros
+</GUILABEL>
+
+- Con esta opción GMC determina el numero de ficheros que esta
+copiando antes de realizar la operación, de forma que puede informarle 
+sobre el proceso según se desarrolla.
+          </PARA>
+         </LISTITEM>
+         <LISTITEM>          <PARA><GUILABEL>
+temporizador de la caché de los directorios Ftp
+</GUILABEL>
+
+- Con esta opción se mantendrá en caché, durante el tiempo especificado,
+la información de los servidores ftp visitados recientemente. El tiempo
+se mide en segundos.
+          </PARA>
+         </LISTITEM>
+         <LISTITEM>          <PARA><GUILABEL>
+Permitir iconos personalizados en la vista de iconos
+</GUILABEL>
+
+- Esta opción permite cambiar los iconos en la vista de iconos, pulsando
+sobre ellos el botón derecho y seleccionando en el menú la opción 
+
+<GUIMENUITEM>
+Propiedades
+</GUIMENUITEM>
+
+. Siempre puede cambiar los iconos de los elementos que estén en su escritorio,
+pero solo puede cambiar los iconos en la vista de iconos con esta opción
+habilitada.
+          </PARA>
+          <IMPORTANT>           <TITLE>Importante</TITLE>
+           <PARA>Habilitar la opción
+
+<GUILABEL>
+Permitir iconos personalizados en la vista de iconos
+</GUILABEL>
+
+puede provocar que el sistema funcione más lentamente.
+           </PARA>
+          </IMPORTANT>
+         </LISTITEM>
+        </ITEMIZEDLIST>
+       </LISTITEM>
+      </ITEMIZEDLIST>
+      </SECT2>
+      <SECT2 ID="gmcprefs-desk">	<TITLE>Escritorio</TITLE>
+	<PARA>	<INDEXTERM>         <PRIMARY>          Escritorio
+         </PRIMARY>
+	</INDEXTERM>
+Como ha aprendido anteriormente, el escritorio de GNOME se controla 
+mediante el gestor de ficheros GNOME. El formulario Escritorio le 
+permite cambiar los parámetros del escritorio. 
+	</PARA>
+         <FIGURE>          <TITLE>El formulario escritorio</TITLE>
+           <SCREENSHOT>	    <SCREENINFO>El formulario escritorio</SCREENINFO>
+	    <GRAPHIC FORMAT="png" FILEREF="./figs/gmcprops5" SRCCREDIT="dcm">             </GRAPHIC>
+	    </SCREENSHOT>
+	    </FIGURE>
+         <PARA><GUILABEL>
+Posicionamiento de Iconos
+</GUILABEL>
+- Esta pequeña ventana le permite determinar donde se situarán los 
+iconos del escritorio inicialmente. Para cambiar la posición de los 
+iconos simplemente haga click con el botón de su ratón en la ventana 
+próxima al borde en el que le gustaría que se encontraran sus iconos. 
+El ejemplo de pequeños iconos se moverá cuando haga click con el ratón 
+mostrándole donde se situarán inicialmente.
+         </PARA>
+         <PARA> 
+<GUILABEL>
+Uso de iconos determinados
+</GUILABEL>
+Esta opción inicialmente está activada. Si por alguna razón tiene una 
+pantalla antigua, unos valores iniciales de un servidor X desconocido, 
+o algún problema con la pantalla gráfica, deberá seleccionar esta 
+opción para que los iconos del escritorio no sean transparentes.  
+         </PARA>
+         <PARA><GUILABEL>
+Uso de texto determinado
+</GUILABEL>
+- Esta opción inicialmente se encuentra activada. Como con los iconos 
+determinados vistos anteriormente puede optar por tener el texto de 
+etiquetado de sus iconos que no sea transparente.
+         </PARA>
+         <PARA><GUILABEL>
+Auto posicionamiento de iconos
+</GUILABEL>
+- Esta opción le permite ordenar automáticamente los iconos de su 
+escritorio. Si prefiriera situar los iconos manualmente esta opción
+debería estar desactivada. 
+         </PARA>
+         <PARA><GUILABEL>
+Mantener iconos alineados
+</GUILABEL>
+- Esta opción mantendrá todos sus iconos en linea cuando los mueva 
+manteniendo un escritorio limpio. Esto crea una rejilla en la que los 
+iconos serán movidos automáticamente después de arrastrar el icono a 
+la posición de destino deseada.  
+         </PARA>
+       </SECT2>
+   <SECT2 ID="gmcprefs-custom">    <TITLE>Vista personalizada</TITLE>
+    <PARA>    <INDEXTERM>     <PRIMARY>      Vista personalizada
+     </PRIMARY>
+     </INDEXTERM>
+El formulario vista personalizada permite definir la presentación
+de la vista personalizada en el gestor de ficheros GNOME.
+    </PARA>
+     <FIGURE>      <TITLE>Formulario vista personalizada</TITLE>
+      <SCREENSHOT>       <SCREENINFO>Formulario vista personalizada</SCREENINFO>
+       <GRAPHIC FORMAT="png" FILEREF="./figs/gmcprops6" SRCCREDIT="dcm">       </GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+    <PARA>Hay dos columnas principales en la
+
+<GUILABEL>
+Vista personalizada
+</GUILABEL>
+
+, Las 
+
+<GUILABEL>
+Columnas Posibles
+</GUILABEL>
+
+y las
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+.
+    </PARA>
+    <PARA>La lista de  
+
+<GUILABEL>
+Columnas posibles
+</GUILABEL>
+
+incluye todos los tipos de información que pueden mostrarse. 
+Si quiere incluir alguno debe pulsar el botón
+
+<GUIBUTTON>
+Añadir
+</GUIBUTTON>
+
+y se añadirá a la lista de 
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+.
+    </PARA>
+    <PARA>La lista de 
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+muestra los tipos actuales de información que se incluirán en la vista
+personalizada. Si quiere eliminar alguno pulse el botón
+
+<GUIBUTTON>
+Quitar
+</GUIBUTTON>
+
+.
+    </PARA>
+    <PARA>Si quieres reordenar los elementos de la lista de 
+
+<GUILABEL>
+Columnas visibles
+</GUILABEL>
+
+puede arrastrarlos a la posición deseada con el ratón.
+    </PARA>
+   </SECT2>
+  </SECT1>
+  <SECT1 ID="gmcmenus">   <TITLE>Guía del menú del gestor de ficheros GNOME</TITLE>
+   <PARA>   <INDEXTERM>    <PRIMARY>     Menús
+    </PRIMARY>
+    </INDEXTERM>
+En esta sección se describirán cada uno de los elementos de menú en el gestor
+de ficheros GNOME.
+   </PARA>
+   <TIP>    <TITLE>Truco</TITLE>
+    <PARA>Todos los menús en el gestor de ficheros GNOME están habilitados con
+la característica menú flotante [tear-away]. Si desea que cualquier menú
+flote en el escritorio dentro de su propia ventana, simplemente seleccione 
+la línea perforada en la parte superior del menú.
+    </PARA>
+   </TIP>
+   <ITEMIZEDLIST MARK="bullet">    <LISTITEM>     <PARA>      <GUIMENU>Fichero</GUIMENU> 
+-  El menú fichero o archivo contiene elementos asociados con ficheros y
+actividades de más alto nivel.
+     </PARA>
+      <ITEMIZEDLIST MARK="bullet">       <LISTITEM>        <PARA><GUIMENUITEM>
+Crear nueva ventana
+</GUIMENUITEM>
+
+- Esta opción abrirá una nueva ventana.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>Nuevo | Terminal</GUIMENUITEM>
+- Esta opción lanza una nueva ventana Terminal GNOME en la que podrá 
+navegar automáticamente por el directorio mostrado en la vista de la 
+ventana principal.  
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Nuevo | Directorio
+</GUIMENUITEM>
+- Esta crea un nuevo directorio en el directorio mostrado en la vista de
+la ventana principal.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Nueva | [aplicación]
+</GUIMENUITEM>
+- Algunas aplicaciones te permiten poner artículos en el menú 
+
+<GUIMENU>
+Nuevo 
+</GUIMENU>
+
+. Por ejemplo, la hoja de cálculo Gnumeric pondrá un artículo de menú 
+
+<GUIMENUITEM>
+Nueva hoja de cálculo Gnumeric
+</GUIMENUITEM>
+
+en el 
+
+<GUIMENU>
+Nuevo 
+</GUIMENU>
+
+menú así que usted podrá crear una nueva hoja de calculo en el 
+directorio mostrado en la vista de la ventana principal.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Abrir
+</GUIMENUITEM>
+
+- Esta opción abrirá el fichero seleccionado con el cursor del ratón.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Copiar
+</GUIMENUITEM>
+
+- Esta lanzará la ventana de dialogo Copiar, que le permite
+copiar el fichero seleccionado en el destino que elija.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Borrar
+</GUIMENUITEM>
+
+- Esta borrará el fichero que haya seleccionado.
+        </PARA>
+	    <WARNING>	      <TITLE>Aviso</TITLE>
+	      <PARA>                ¡Una vez que haya borrado un fichero no podrá recuperarlo!
+	      </PARA>
+	    </WARNING>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Mover
+</GUIMENUITEM>
+
+- Esta lanzará la ventana de dialogo Mover/Renombrar, que le
+permite renombrar o mover el fichero seleccionado al destino que elija.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>Mostrar tamaño de directorios</GUIMENUITEM>
+- Esta opción determinará el tamaño de sus directorios y le mostrará
+este en las vistas Detallada o Personalizada. Dependiendo del tamaño de 
+sus directorios, podrá tomar un tiempo considerable hasta que se muestre 
+e incluso aumentarlo más cuando visualice directorios grandes en su sistema. 
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Cerrar esta ventana
+</GUIMENUITEM>
+
+- Esta cerrará la ventana del gestor de ficheros GNOME que esté ejecutando.
+        </PARA>
+       </LISTITEM>
+     </ITEMIZEDLIST>
+    </LISTITEM>
+   </ITEMIZEDLIST>
+   <ITEMIZEDLIST MARK="bullet">    <LISTITEM>     <PARA><GUIMENU>
+Editar
+</GUIMENU>
+
+-  El menú Edición contiene elementos que están asociados a la
+edición y selección de ficheros.
+     </PARA>
+     <ITEMIZEDLIST MARK="bullet">      <LISTITEM>       <PARA><GUIMENUITEM>
+Seleccionar todo
+</GUIMENUITEM>
+
+- Selecciona todos los ficheros de la ventana principal.
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA><GUIMENUITEM>
+Seleccionar ficheros
+</GUIMENUITEM>
+
+- Esta opción abrirá un sencillo formulario donde podrá especificar una
+plantilla de selección de ficheros. Por ejemplo, si quiere seleccionar todos
+los ficheros que empiecen con la letra D, puede simplemente teclear
+<USERINPUT>D*</USERINPUT> y pulsar <USERINPUT>OK</USERINPUT>.
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA><GUIMENUITEM>
+Invertir Selección
+</GUIMENUITEM>
+
+- Esta opción invertirá la selección actual. Por ejemplo, si tiene 7 ficheros
+seleccionados en un directorio con 10 ficheros, pulsando <GUIMENUITEM>invertir
+selección</GUIMENUITEM> seleccionaremos los tres ficheros restantes y descartaremos
+los 7 ficheros que teníamos previamente seleccionados. 
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA><GUIMENUITEM>Buscar</GUIMENUITEM>
+- Esta opción se utiliza para la "realización" de búsquedas en el 
+Gestor de Ficheros.  Una vez puesto en marcha aparece la palabra "Buscar:"
+en la parte baja de la de la barra de estado y le permite empezar ha 
+teclear. Si está buscando un fichero llamado "GNU" en el directorio que 
+se muestra en la ventana principal, tecleando la letra "G" se desplazará
+la barra de cursor al primer fichero o directorio que empiece por "G".  
+Tecleando "GN" moverá la barra de cursor al primer fichero que empiece 
+por "GN", y así sucesivamente. Puede utilizar también esta 
+característica pulsando
+<KEYCOMBO><KEYCAP>CTRL</KEYCAP><KEYCAP>S</KEYCAP></KEYCOMBO>
+.  Para finalizar la búsqueda deberá seleccionar el fichero o el directorio
+o simplemente moverse fuera del fichero con las teclas de movimiento o 
+con su ratón.
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA><GUIMENUITEM>
+Actualizar directorio
+</GUIMENUITEM>
+
+- Esta actualiza el directorio actual en caso de
+que los ficheros del directorio hubieran cambiado.
+       </PARA>
+      </LISTITEM>
+      </ITEMIZEDLIST>
+     </LISTITEM>
+    </ITEMIZEDLIST>
+   <ITEMIZEDLIST MARK="bullet">      <LISTITEM>       <PARA><GUIMENU>Configuración</GUIMENU>
+- Contiene el artículo de Menú Preferencias.
+       </PARA>
+      <ITEMIZEDLIST MARK="bullet">       <LISTITEM>        <PARA><GUIMENUITEM>
+Preferencias
+</GUIMENUITEM>
+
+- Esta lanzará la ventana de dialogo Preferencias, donde
+puede configurar el gestor de ficheros GNOME.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </LISTITEM>
+   </ITEMIZEDLIST>
+   <ITEMIZEDLIST MARK="bullet">    <LISTITEM>     <PARA><GUIMENU>
+Presentación
+</GUIMENU>
+
+- Este menú contiene elementos asociados a las opción-es de
+visualización de los ficheros en el gestor de ficheros GNOME.
+     </PARA>
+      <ITEMIZEDLIST MARK="bullet">       <LISTITEM>        <PARA><GUIMENUITEM>
+Ordenar por
+</GUIMENUITEM>
+
+- Esta opción lanzará una ventana de dialogo, que le permitirá
+seleccionar como quiere ordenar los ficheros en el directorio actual.
+Los puede ordenar por una de las siguientes formas:
+        </PARA>
+         <ITEMIZEDLIST MARK="none">          <LISTITEM>           <PARA>Nombre</PARA>
+          </LISTITEM>
+          <LISTITEM>       
+           <PARA>Tipo de fichero</PARA>
+          </LISTITEM>
+          <LISTITEM>           <PARA>Tamaño</PARA>
+          </LISTITEM>
+          <LISTITEM>   
+           <PARA>Fecha ultimo acceso</PARA>
+          </LISTITEM>
+          <LISTITEM>           <PARA>Fecha ultima modificación</PARA>
+          </LISTITEM>
+          <LISTITEM>           <PARA>fecha ultimo cambio</PARA>
+          </LISTITEM>
+         </ITEMIZEDLIST>
+        </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>Vista filtrada</GUIMENUITEM>
+- Esta opción lanzará una ventana de dialogo que le permitirá
+ver sólo ficheros según un plantilla determinada. Por ejemplo, si desea ver sólo
+los ficheros del directorio que comienzan con la letra D, puede escribir
+d* en la caja de texto y pulsar <GUIBUTTON>OK</GUIBUTTON>. Si desea ver de nuevo todos los ficheros
+necesitará abrir ver filtrado de nuevo y borrar la selección anterior o
+escribir *.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Vista de iconos
+</GUIMENUITEM>
+
+- Esta mostrará los ficheros en la vista principal,
+representados por iconos grandes.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Vista breve
+</GUIMENUITEM>
+
+-  Esta mostrará los ficheros en la vista principal,
+como una lista con solo los nombres de los ficheros.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Vista detallada
+</GUIMENUITEM>
+
+- Esta mostrará los ficheros en la vista principal, como una
+lista con toda la información de los ficheros.
+        </PARA>
+       </LISTITEM>
+      <LISTITEM>        <PARA><GUIMENUITEM>
+Vista personalizada
+</GUIMENUITEM>
+
+- La <GUIMENUITEM>Vista personalizada</GUIMENUITEM> cambia la presentación 
+por la vista personalizada que es una 
+vista tipo lista con la información que especifique acerca de sus ficheros.
+Para personalizar la vista personalizada deberá usar el 
+<GUILABEL>Editor de vistas personalizadas</GUILABEL> en el formulario de 
+<GUILABEL>Preferencias</GUILABEL>. Puede leer mas acerca del formulario de 
+<GUILABEL>Preferencias</GUILABEL> en <XREF LINKEND="gmcprefs">.
+        </XREF></PARA>
+       </LISTITEM>
+      </ITEMIZEDLIST>
+     </LISTITEM>
+    </ITEMIZEDLIST>
+   <ITEMIZEDLIST MARK="bullet">     <LISTITEM>      <PARA><GUIMENU>
+Comandos
+</GUIMENU>
+
+- El menú comandos contiene comandos que se ejecutan sobre los ficheros
+del gestor de ficheros GNOME.
+      </PARA>
+      <ITEMIZEDLIST MARK="bullet">       <LISTITEM>        <PARA><GUIMENUITEM>
+Buscar ficheros
+</GUIMENUITEM>
+
+- Buscar ficheros abre un formulario que le permite localizar determinados 
+ficheros en su sistema.
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Editar tipos mime
+</GUIMENUITEM>
+
+- Esta opción ejecuta el aplique C del centro de control GNOME que permite
+editar tipos mime en GNOME. Los tipos mime determinan, entre otras cosas,
+que aplicación manejará un tipo particular de fichero. Puede leer mas acerca
+de los tipos mime en <XREF LINKEND="gccmime">.
+        </XREF></PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Ejecutar comando
+</GUIMENUITEM>
+
+- Esta opción de menú permite ejecutar un comando desde el GMC
+        </PARA>
+       </LISTITEM>
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Ejecutar comando en el panel
+</GUIMENUITEM>
+
+- Esta opción de menú ejecuta comandos predeterminados o los comandos
+que especifiques en el directorio actual. Estos comandos pueden localizar 
+programas SUID o SGID, etc.
+        </PARA>
+       </LISTITEM>
+
+       <LISTITEM>        <PARA><GUIMENUITEM>
+Salir
+</GUIMENUITEM>
+
+- Esta opción permite salir del gestor de ficheros GNOME.
+        </PARA>
+        <IMPORTANT>         <TITLE>Importante</TITLE>
+         <PARA>Esto hará que se cierren todos los procesos del gestor de ficheros GNOME,
+incluyendo el escritorio GNOME. Si lo hace perderá toda la funcionalidad del
+escritorio GNOME. No se recomienda usar esta opción.
+Si desea cerrar la ventana actual use el botón
+
+<GUIMENUITEM>
+Fichero/Cerrar
+</GUIMENUITEM>
+
+         </PARA>
+        </IMPORTANT>
+       </LISTITEM>         
+      </ITEMIZEDLIST>
+     </LISTITEM>
+    </ITEMIZEDLIST>
+  </SECT1>
+  <SECT1 ID="dragtour">   <TITLE>Una breve visita a la función arrastrar y soltar de GNOME</TITLE>
+    <PARA>    <INDEXTERM>     <PRIMARY>      Arrastrar y soltar
+     </PRIMARY>
+    </INDEXTERM>
+Hay muchos trucos y atajos en el escritorio GNOME. La funcionalidad arrastrar
+y soltar se extiende a lo largo de muchas áreas de GNOME, haciendo fácil 
+interconectar GNOME de muchas formas interesantes. A continuación se citan
+una serie de trucos y atajos para usar la funcionalidad arrastrar y soltar 
+de GNOME. Esta es una visita completa a GNOME y le mostrara como utilizar
+GNOME en toda su dimensión.
+    </PARA>
+   <ITEMIZEDLIST MARK="bullet">    <LISTITEM>     <PARA>Arrastrar un color sobre el panel - Allí donde se presente un selector de
+colores, puede arrastrar un color desde la barra de color sobre el panel y
+el panel cambiara a este color.
+     </PARA>
+    </LISTITEM>
+    <LISTITEM>     <PARA>Arrastrar una imagen al selector de fondos - Si desea cambiar la imagen
+del fondo, puede arrastrar esa imagen desde el gestor de ficheros GNOME sobre
+la imagen del monitor en el  aplique C fondo del centro de control y cambiara
+a esta imagen.
+     </PARA>
+    </LISTITEM>
+    <LISTITEM>     <PARA>Arrastrar sobre una aplicación - Muchas aplicaciones compatibles con
+GNOME aceptan la funcionalidad arrastrar y soltar. Si desea abrir un fichero
+con Gnumeric, una hoja de calculo compatible con GNOME, puede simplemente
+arrastrar el fichero desde el gestor de ficheros GNOME sobre Gnumeric y
+esta abrirá el ficheros. Esto también funciona con aplicaciones diseñadas
+utilizando Motif. Puede arrastrar una URL guardada sobre Netscape 4x y
+abrirá la URL. Esto puede ser muy útil si esta trabajando en el gestor
+de ficheros GNOME y desea abrir rápidamente un fichero.
+     </PARA>
+    </LISTITEM>
+    <LISTITEM>     <PARA>Añadir un lanzador de aplicación al panel - Si quiere añadir un lanzador de 
+aplicación al panel, puede arrastrar y soltar cualquier fichero ejecutable
+desde el gestor de ficheros GNOME, o desde el escritorio, sobre el panel.
+Se abrirá el formulario de creación de lanzador, permitiéndole elegir un 
+nombre y un icono para este lanzador.
+     </PARA>
+    </LISTITEM>
+    <LISTITEM>     <PARA>Arrastrando Ficheros - Existen muchas formas de usar arrastrar y
+soltar para ayudarnos a manejar el sistema. Puede abrir dos ventanas
+del Gestor de Ficheros GNOME seleccionando dos directorios diferentes 
+y arrastrar
+ficheros de una ventana a otra para copiar, mover, o crear enlaces.
+Puede arrastrar ficheros desde el Gestor de Ficheros hacia el escritorio
+para hacerlo mas accesibles. Use el botón central o el derecho e izquierdo
+del ratón simultáneamente y arrastre un directorio al Escritorio.
+Elija la opción enlace del menú <GUIMENU>desplegable</GUIMENU> para crear un 
+enlace en el escritorio.
+Esto le proporcionará una vía fácil para ejecutar el gestor de ficheros y
+ver ese directorio.
+     </PARA>
+    </LISTITEM>
+    <LISTITEM>     <PARA>Puede arrastrar cualquier submenú desde el <GUIMENU>Menú Principal</GUIMENU> 
+hacia el
+panel y un nuevo menú lanzador es añadido al panel.
+Esto permite acceder más fácilmente a ese conjunto de sub-menús.
+     </PARA>
+    </LISTITEM>
+   </ITEMIZEDLIST>
+  </SECT1></CHAPTER>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<CHAPTER ID="config-sync">     <TITLE>Configurando su sistema de sincronización</TITLE> 
+     <PARA>        La sincronización le planteará dos problemas de los que tendrá que
+        ocuparse.  El primero es muy simple: necesitará obtener los datos
+        a mover entre los distintos dispositivos que este usando.  Si
+        ya tiene <APPLICATION>Gnome-Pilot</APPLICATION> configurado y
+        funcionando, entonces todo lo que tiene que hacer es decirle que use
+        el <GLOSSTERM>enlace</GLOSSTERM> de
+        <APPLICATION>Evolution</APPLICATION>.  Si no ha usado
+        <APPLICATION>Gnome-Pilot</APPLICATION> antes, deberá ejecutar
+        el <APPLICATION>Centro de Control</APPLICATION> de GNOME e ir
+        al asistente de configuración de dispositivos de mano.  Entonces
+        podrá seleccionar el enlace de Evolution y pulsar el botón de
+        sincronización.
+      </PARA>
+      <PARA>        Si no funciona, pongase a pegar saltos y a perjurar en alto.
+        Entonces asegúrese que tiene
+        <APPLICATION>Gnome-Pilot</APPLICATION> accediendo al dispositivo
+        correcto (para mi puerto serie, es /dev/ttys0, no el valor por
+        defecto /dev/pilot) y que tiene acceso de lectura y escritura en
+        ese dispositivo.  Si no, necesitará añadirse al grupo que posea
+        dichos privilegios (probablemente tty).
+     </PARA>
+     <PARA>        Una vez que <APPLICATION>Evolution</APPLICATION> sabe como obtener
+        los datos del correo, las direcciones y del calendario, necesita
+        saber que hacer con ellos.  Cuando sincroniza su información local
+        con los datos de un servidor o de un dispositivo de mano, puede que
+        encuentre conflictos: quizá puede acabar con dos tarjetas con el
+        mismo nombre y direcciones diferentes, o algún mensaje antiguo que
+        ha sido borrado de un dispositivo pero no de otro.  ¿Que ocurre si
+        tan solo quiere tener unos pocos contactos o mensajes en su
+        dispositivo de mano o en su portátil, pero mantener todos los datos
+        en el servidor o en el ordenador de su escritorio?
+        Seleccione la pestaña <GUIBUTTON>Sincronización</GUIBUTTON> de la
+        ventana <INTERFACE>Preferencias</INTERFACE> para configurar las
+        opciones sobre la resolución de conflictos.
+     </PARA>
+      <PARA> 
+         Puede fijar el comportamiento de sincronización de
+         <APPLICATION>Evolution</APPLICATION> de las siguiente formas: 
+         
+      </PARA>
+      <PARA> 
+         <WARNING> 
+	  <TITLE>Prevención de la Pérdida de Datos</TITLE> 
+	  <PARA>	    Siempre es una buena idea hacer una copia de seguridad.  Si configura
+	    sus características de configuración mal, podría acabar borrando los
+	    mensajes y las tarjetas que quiere conservar, y guardando los que
+	    quiere borrar.  Antes de cambiar estas preferencias,
+	    haga una copia de seguridad del directorio
+	    <SYSTEMITEM><FILENAME>evolution</FILENAME></SYSTEMITEM>.
+          </PARA>
+	</WARNING>
+       </PARA>
+    </CHAPTER>

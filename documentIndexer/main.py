@@ -1,7 +1,7 @@
 import cmd
 
-from documentParser import clean_xml, load_stopwords
-from utils import load_directory_files, open_file, test_clean_xml
+from documentParser import clean_xml, load_stopwords,start_indexing
+from utils import load_directory_files, open_file, is_path,is_file
 
 
 class Terminal(cmd.Cmd):
@@ -20,7 +20,28 @@ class Terminal(cmd.Cmd):
     def do_indizar(self, line):
         """indizar  [Colección]  [Stopwords] [Índice]
         Crea un índice para los archivos del directorio [Colección]"""
-        print("Comando de indizacion")
+        args = line.split()
+        if(len(args)<3):
+            print("Por ingrese todos los parámetros correctamente")
+            return
+        collection_path,stopwords_path,target_path = args
+        error=False
+        if(not is_path(collection_path)):
+            print("Asegurese de que el directorio de la colección tenga un formato correcto (No puede contener espacios)")
+            error = True
+        if(not is_file(stopwords_path)):
+            print("Asegúrese de que la ruta del archivo de stopwords tenga como objetivo un archivo en formato txt")
+            error = True
+        if(not is_path(target_path)):
+            print("Asegurese de que el directorio objetivo del índice tenga un formato correcto")
+            error = True
+        if(error):
+            return
+        else:
+            start_indexing(collection_path,stopwords_path,target_path)
+
+
+
 
     def do_buscar(self, line):
         """buscar  [Indice]  [Tipo]  [Prefijo]  [NumDocs]  [Consulta]
@@ -62,3 +83,4 @@ class Terminal(cmd.Cmd):
 
 if __name__ == '__main__':
     Terminal().cmdloop()
+    # Index test comand indizar D:\Development\RecuperacionPRY1\Archivos_de_prueba\xml-es D:\Development\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt D:\Development\RecuperacionPRY1\documentIndexer\stopWords

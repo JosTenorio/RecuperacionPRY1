@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<APPENDIX ID="authors">    <TITLE>Autores</TITLE>
+     <PARA>      <APPLICATION>Evolution</APPLICATION> ha sido escrita por:
+<SIMPLELIST>     <MEMBER>Seth Alves: <EMAIL>alves@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Anders Carlsson: <EMAIL>andersca@gnu.org</EMAIL></MEMBER>
+     <MEMBER>Damon Chaplin: <EMAIL>damon@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Clifford R. Conover: <EMAIL>rusty@zootweb.com</EMAIL></MEMBER>
+     <MEMBER>Miguel De Icaza: <EMAIL>miguel@helixcode.com</EMAIL></MEMBER>
+     <MEMBER> Radek Doulik: <EMAIL>rodo@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Arturo Espinoza: <EMAIL>arturo@nucleu.unam.mx</EMAIL></MEMBER>
+     <MEMBER>Larry Ewing: <EMAIL>lewing@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Bertrand Guiheneuf: <EMAIL>bertrand@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Tuomas Kuosmanen: <EMAIL>tigert@gimp.org</EMAIL></MEMBER>
+     <MEMBER>Christopher J. Lahey: <EMAIL>clahey@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Matthew Loper: <EMAIL>matt@loper.org</EMAIL></MEMBER>
+     <MEMBER>Federico Mena: <EMAIL>federico@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Eskil Heyn Olsen: <EMAIL>deity@eski.dk</EMAIL></MEMBER>
+     <MEMBER>Nat Friedman: <EMAIL>nat@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Ettore Perazzoli: <EMAIL>ettore@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Jeffrey Stedfast: <EMAIL>jeff@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Russell Steinthal: <EMAIL>rms39@columbia.edu</EMAIL></MEMBER>     
+     <MEMBER>Peter Teichman: <EMAIL>peter@helixcode.com</EMAIL></MEMBER>     
+     <MEMBER>Chris Toshok: <EMAIL>toshok@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Peter Williams: <EMAIL>peter@newton.cx</EMAIL></MEMBER>
+     <MEMBER>Dan Winship: <EMAIL>danw@helixcode.com</EMAIL></MEMBER>
+     <MEMBER>Michael Zucchi: <EMAIL>notzed@helixcode.com</EMAIL></MEMBER></SIMPLELIST>
+y otros dedicados programadores de GNOME. </PARA>
+    <PARA>      El código de <APPLICATION>Evolution</APPLICATION> debe mucho a las
+       aplicaciones <APPLICATION>GNOME-pim</APPLICATION> y
+       <APPLICATION>GNOME-Calendar</APPLICATION>, y a
+       <APPLICATION>KHTMLW</APPLICATION>.  Los desarrolladores de
+       <APPLICATION>Evolution</APPLICATION> reconocen los esfuerzos y
+       contribuciones de todos los que ha trabajado en dichos proyectos.
+    </PARA>
+
+   <PARA>      Para más información por favor visite la 
+      <ULINK URL="http://www.helixcode.com/apps/evolution.php3" TYPE="http">página web</ULINK> de <APPLICATION>Evolution
+      </APPLICATION>. Por favor envíe todos los comentarios,
+      sugerencias, y reportes de fallo al <ULINK URL="http://bugs.gnome.org" TYPE="http">sistema de seguimiento de
+      fallos de GNOME</ULINK>. Las instrucciones para hacer reportes de
+      fallos se pueden encontrar en línea en <ULINK URL="http://bugs.gnome.org/Reporting.html" TYPE="http">      http://bugs.gnome.org/Reporting.html</ULINK>. También puede usar el
+      comando <COMMAND>bug-buddy</COMMAND> para enviar reportes de fallo.
+    </PARA>
+    <PARA>      Este manual ha sido escrito por Aaron Weber
+      (<EMAIL>aaron@helixcode.com</EMAIL>) y Kevin Breit
+      (<EMAIL>battery841@mypad.com</EMAIL>) con la ayuda de los
+      programadores de la aplicación y el proyecto de documentación de
+      GNOME. Por favor envíe todos sus comentarios y sugerencias acerca de
+      este manual al proyecto de documentación de GNOME a
+      <EMAIL>docs@gnome.org</EMAIL>. También puede enviar comentarios a
+      del web usando la <ULINK URL="http://www.gnome.org/gdp/doctable/" TYPE="http">Tabla de Estado de la
+      Documentación de GNOME</ULINK> (está en ingles).
+    </PARA>
+    <PARA> Traducción al español realizada por
+      Héctor García Álvarez (<EMAIL>hector@scouts-es.org</EMAIL>). 
+      Por favor envíe todos los comentarios y sugerencias sobre esta 
+      traducción a <EMAIL>hector@debian.org</EMAIL>.  </PARA>
+    </APPENDIX>

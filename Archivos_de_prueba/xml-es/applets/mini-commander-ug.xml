@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<SECT2 ID="mini-commander">  <TITLE>El Aplique Mini-Commander</TITLE>
+
+  <PARA>   <APPLICATION>El aplique Mini-Commander</APPLICATION>, que puede ver en <XREF LINKEND="mini-commander-applet-fig">, añade una linea de ordenes a su
+   <INTERFACE>Panel</INTERFACE>. Panel. Sus funciones incluyen compleción de ordenes,
+   historial, macros modificables y un reloj interno opcional.
+   Su sistema de macros facilita su uso para tareas tan diversas
+   como arrancar un programa (o una pequeña macro), ver una pagina web o buscar
+   una pagina info o de manual, etc.
+   <APPLICATION>Mini-Commander</APPLICATION> puede despegarse del
+   <INTERFACE>Panel</INTERFACE> usando un tirador lateral opcional, lo cual
+   es especialmente útil en los paneles verticales.  
+  </XREF></PARA> 
+  <PARA>   Para añadir este aplique a un <INTERFACE>Panel</INTERFACE>, 
+   pulse sobre él con el boton derecho y escoja
+   <MENUCHOICE>    <GUIMENU>Panel</GUIMENU>
+    <GUISUBMENU>Add to panel</GUISUBMENU>
+    <GUISUBMENU>Applet</GUISUBMENU>
+    <GUISUBMENU>Utility</GUISUBMENU>
+    <GUIMENUITEM>Mini-Commander</GUIMENUITEM>
+   </MENUCHOICE>.
+  </PARA>
+
+  <FIGURE ID="mini-commander-applet-fig">   <TITLE>El Aplique Mini-Commander</TITLE>
+   <SCREENSHOT>    <SCREENINFO>El Aplique Mini-Commander</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/mini-commander_applet" SRCCREDIT="Martin Baulig">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  
+  <SECT3 ID="APPLET-usage">   <TITLE>Uso</TITLE>
+
+   <PARA>    Para arrancar un programa o ejecutar una orden, entre su nombre y pulse return.
+    Para buscar una orden o aplicación en su sistema de
+    ficheros pulse sobre el pequeño <GUIICON>circulo</GUIICON> de la esquina inferior. 
+   </PARA>
+   <PARA>    <APPLICATION>Mini-Commander</APPLICATION> ofrece compleción de ordenes (similar a la
+    de otros interpretes de ordenes de usuario). A menudo no hace falta teclear 
+    todo el nombre, basta con los primeros caracteres y la tecla <KEYCAP>tabulador</KEYCAP>.
+    <APPLICATION>Mini-Commander</APPLICATION>; intentará completar el nombre del programa tal
+    como hacen la mayoría de shells UNIX. 
+   </PARA>
+   <PARA>    <APPLICATION>Mini-Commander</APPLICATION>,al igual que la mayoría de los shells UNIX,
+     también guarda un historial de ordenes que permite recuperar las ultimas
+     ordenes introducidas con las teclas <KEYCAP>flecha arriba</KEYCAP> o<KEYCAP> flecha abajo</KEYCAP>.
+     Para evitar duplicidades no se guardan en el historial las repeticiones consecutivas de
+     la misma orden. También puede acceder a la lista de historial del aplique pulsando el pequeño
+     <GUIBUTTON>icono flecha abajo</GUIBUTTON> y seleccionando una de las ordenes de la lista.
+   </PARA>
+   <PARA>    <APPLICATION>Mini-Commander</APPLICATION> puede utilizar macros. Viene con varias macros
+     predefinidas. Por ejemplo, si entra <COMMAND>term:<REPLACEABLE>orden</REPLACEABLE></COMMAND>
+     se ejecutará <COMMAND><REPLACEABLE>orden</REPLACEABLE></COMMAND> en una
+     ventana de terminal. O si entra una URL se mostrará en su navegador de web.
+     Ademas puede añadir sus propias macros e incluso cambiar las predefinidas. 
+   </PARA>
+
+   <PARA>    Pulsando sobre sobre el aplique con el botón derecho aparece un menú con las
+    siguientes opciones: 
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Propiedades</GUIMENUITEM> 
+       abre el diálogo de <LINK LINKEND="mini-commander-prefs">       <GUILABEL>Propiedades</GUILABEL></LINK>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Ayuda</GUIMENUITEM> 
+	muestra este documento. 
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       <GUIMENUITEM>Acerca</GUIMENUITEM> 
+       muestra información básica sobre el Aplique <APPLICATION>Mini-commander
+       </APPLICATION>, como el nombre de los autores y la versión. 
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="mini-commander-prefs">    <TITLE>Personalización</TITLE>
+    <PARA>      Puede personalizar <APPLICATION>Mini-Commander</APPLICATION>
+      pulsando sobre el con el botón derecho y escogiendo
+      <GUIMENUITEM>Propiedades</GUIMENUITEM>. Se abrirá el diálogo de
+      <INTERFACE>Propiedades</INTERFACE> (puede verlo en <XREF LINKEND="mini-commander-settings-fig-1">), ue le permite cambiar varios
+      parámetros del aplique. 
+    </XREF></PARA>
+
+    <FIGURE ID="mini-commander-settings-fig-1">     <TITLE>Diálogo de Propiedades: Apartado General</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Diálogo de Propiedades: Apartado General</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="figures/mini-commander_settings_general" SRCCREDIT="Martin Baulig">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>
+
+    <PARA>     Las propiedades de este apartado <GUILABEL>General</GUILABEL> son:
+     <ITEMIZEDLIST>
+      <LISTITEM>       <PARA>        Mostrar la hora  Si se marca este botón, se mostrará la hora en
+        la esquina inferior del aplique. 
+
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Mostrar la fecha  Si se marca este botón, se mostrará la fecha
+        en la esquina inferior del aplique.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Mostrar el tirador   Si marca este botón, se añadirá un tirador
+        lateral al aplique, que permite despegarlo del <INTERFACE>Panel</INTERFACE>.
+	Para volver a insertarlo solo ha de arrastrarlo hasta el interior del
+	<INTERFACE>Panel</INTERFACE>.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Muestra marco  Si se marca este botón, se dibujará un marco
+        negro delgado alrededor del aplique. 
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Activar auto-compleción basada en el historial   Si se selecciona este 
+	botón <APPLICATION>Mini-Commander</APPLICATION> usará la lista de historial 
+        completar sus ordenes automáticamente. 
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Anchura del aplique  Entre aquí la anchura que desea para el aplique.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Altura del aplique  Entre aquí la altura que desea para el aplique.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Altura de la linea de ordenes  (Esta función esta desactivada.)
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Color de la linea de ordenes  Seleccione el color del texto que
+        usted entra.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Color de fondo de la linea de ordenes  Seleccione el color de
+	fondo para el texto que usted entra. 
+       </PARA>
+      </LISTITEM>
+
+     </ITEMIZEDLIST>
+    </PARA>
+
+    <PARA>     El apartado de <GUILABEL> Macros</GUILABEL> tiene una lista de hasta 99 macros, cada
+     una de las cuales se compone de una expresión regular (<GUILABEL>Regex</GUILABEL>) y una
+     macro (<GUILABEL>Macro</GUILABEL>). Entre en la columna izquierda la expresión regular que
+     <APPLICATION>Mini-Commander</APPLICATION> ha de emparejar, y la macro correspondiente, que
+     será ejecutada, en la derecha. Para aprender a definir sus propias macros puede
+     aprovechar que muchas macros de utilidad general estan ya definidas. 
+    </PARA>
+
+    <PARA> 
+     Después de efectuar sus cambios, pulse el botón <GUIBUTTON>OK</GUIBUTTON> para aplicar los cambios y
+     cerrar el diálogo de <INTERFACE>Propiedades</INTERFACE>. Para deshacer los
+     cambios y recuperar los valores anteriores pulse el botón
+     <GUIBUTTON>Cerrar</GUIBUTTON>.
+    </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="faq">   <TITLE>Preguntas de uso frecuente</TITLE>
+
+   <PARA>    Aquí se relacionan una serie de preguntas de uso frecuente y las
+    correspondientes respuestas: 
+   </PARA>
+
+   <QANDASET>    <QANDAENTRY>     <QUESTION>      <PARA>       ¿Por que no puedo dar el foco de teclado a <APPLICATION>Mini-Commander</APPLICATION>? 
+      </PARA>
+     </QUESTION>
+     <ANSWER>      <PARA>	Este es un problema que arrastra a confusión. Las razones de su origen
+        son diversas y solo se da en ciertas circunstancias.
+      </PARA>
+
+      <PARA>	Cuando no se puede dar nunca el foco a <APPLICATION>Mini-Commander</APPLICATION> 
+	lo más probable es que el problema provenga de su Gestor de Ventanas. Si es su
+	caso me sería de gran ayuda que me enviará un pequeño mensaje detallando que
+	Gestor de Ventanas utiliza (nombre y versión).
+      </PARA>
+
+      <PARA>	A veces ocurre que <APPLICATION>Mini-Commander</APPLICATION> solo recibe el foco
+	de teclado la primera vez y después ya no hay manera de que lo reciba. En estos
+	momentos se desconoce el origen del problema. 
+      </PARA>
+
+     </ANSWER>
+    </QANDAENTRY>
+   
+   </QANDASET>
+  </SECT3>
+
+
+  
+  <SECT3 ID="mini-commander-bugs">   <TITLE>Errores y Limitaciones conocidos</TITLE>
+   <PARA>    A veces es imposible dar el foco a
+    <APPLICATION>Mini-Commander</APPLICATION> después de la primera vez.
+   </PARA>
+  </SECT3>
+
+
+  
+  <SECT3 ID="furtherinfo">   <TITLE>Información adicional</TITLE>
+   <PARA>    Para obtener más información sobre el aplique <APPLICATION>Mini-Commander</APPLICATION>
+    , puede dirigirse a su su pagina web <ULINK URL="http://www.maruhn.com/mini-commander/">    http://www.maruhn.com/mini-commander/</ULINK>.
+   </PARA>
+  </SECT3>
+</SECT2>

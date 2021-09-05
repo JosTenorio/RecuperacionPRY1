@@ -1,0 +1,2749 @@
+<?xml version="1.0"?>
+<CHAPTER ID="nautilus">
+  <TITLE>Manual del Usuario de Nautilus</TITLE>
+
+
+   
+
+
+
+
+
+ 
+ <SECT1 ID="naut-intro">  <TITLE>Introducción a Nautilus</TITLE>
+
+  <PARA>   Nautilus es un componente del núcleo del ambiente de escritorio GNOME.
+   Nautilus provee una forma sencilla para usted de ver, manejar y personalizar sus
+   archivos y carpetas como así también navegar por Internet.
+  </PARA>
+
+  <PARA>   Nautilus integra su accesos a archivos, aplicaciones, medios,
+   recursos basados en Internet, y la Web, haciendo más fácil
+   y rápido localizar y usar todo los recursos disponibles que tenga
+   a su disposición.
+  </PARA>
+
+  <SECT2 ID="intro1">   <TITLE>La Ventana de Nautilus</TITLE>
+
+   <FIGURE ID="full1">    <TITLE>La ventana de Nautilus</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Diagrama de Nautilus</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/full">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    <GUIMENU>barra del menú</GUIMENU>
+   </PARA> 
+
+   <PARA>    Los ocho menúes contienen opciones para la mayoría de las tareas
+    que se realizan sobre archivos y carpetas, y le dejan personalizar
+    la vista de todas las aplicaciones, carpetas, y archivos que contenga
+    en su disco rígido. El menú de Preferencias representado por el símbolo
+    que se encuentra a la derecha del menú Ayuda le deja especificar su 
+    nivel de experiencia en Linux y GNOME.
+   </PARA>
+
+   <PARA>    <GUIMENU>barra de herramientas</GUIMENU>
+   </PARA>
+
+   <PARA>    La barra de herramientas le permite con un solo clic navegar y buscar
+    en las carpetas de su computadora, como así también en Internet. Haga
+    clic en el botón Servicios para acceder instantáneamente a los Servicios
+    Eazel, un conjunto de servicios especialmente diseñados para satisfacer
+    la necesidades de los usuarios de Linux.
+   </PARA>
+
+   <PARA>    <GUIMENU>barra de dirección</GUIMENU>
+   </PARA>
+
+   <PARA>    Use la barra de dirección para ingresar rutas de archivos, direcciones
+    Web (URLs) u otro tipo de direcciones. El menú pop-up que esta sobre el
+    final del lado derecho de la barra le permite elegir diferentes vistas,
+    por ejemplo, Ver como íconos ó como una Lista. Haga clic en el signo +
+    y - para agrandar o reducir los íconos en las vistas icono o lista.
+    También puede hacer clic el la Lupa para volver a ver lo íconos en su
+    tamaño original. (Si ha cambiado el tema por omisión de Nautilus la lupa pudo haber sido cambiada
+    por otro símbolo.)
+   </PARA>
+
+   <PARA>    <GUIMENU>barra lateral</GUIMENU>
+   </PARA>
+
+   <PARA>    La barra lateral muestra información sobre el archivo o la carpeta
+    actual. Cada una de las cuatro solapas que están en la base de la barra
+    proveen ayuda o información adicional:
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      La solapa árbol muestra el árbol - una vista jerárquica de la
+      organización de archivos y carpetas en su computadora -
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      La solapa Histórico contiene una lista de rutas o direcciones de
+      lugares que usted ha visitado previamente durante su sesión de trabajo con
+      Nautilus.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      La solapa Ayuda le brinda un acceso rápido a los recursos
+      de información - manuales, páginas info de GNOME, páginas man de Linux
+      y más también.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      La solapa Notas provee un espacio donde puede dejar comentarios
+      acerca de la carpeta actual.
+     </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+
+   <PARA>    Nota: Si su nivel de usuario esta configurado como Principiante o
+    si usted ha cambiado las preferencias de la barra lateral puede ocurrir
+    que no vea las cuatro solapas.
+   </PARA>
+
+   <PARA>    <GUIMENU>Panel Principal</GUIMENU>
+   </PARA>
+
+   <PARA>    El panel principal en la ventana de Nautilus es donde usted lleva 
+    a cabo la mayoría de la navegación. Archivos, carpetas y aplicaciones
+    son mostradas aquí. Usted tiene varias opciones para modificar y personalizar
+    sus vistas.
+   </PARA>
+
+  </SECT2>
+
+  <SECT2 ID="introdesktop">   <TITLE>El Escritorio de Nautilus</TITLE>
+
+   <PARA>    El escritorio es el área posterior de su pantalla. Si Nautilus fué
+    pre-instalado en su sistema GNOME entonces Nautilus será el encargado de dibujar el escritorio.
+    El escritorio de su computadora puede verse como su escritorio físico
+    - puede estar lleno de carpetas, íconos y trabajos pendientes, o puede
+    estar completamente limpio. Nautilus le deja organizarlo de la forma en
+    que usted desee.
+
+    Si Nautilus no dibuja el escritorio en este momento en su sistema haga esto:
+ 
+    <ORDEREDLIST>     <LISTITEM><PARA>Abra el menú preferencias (mostrado a continuación) y seleccione Preferencias.</PARA></LISTITEM>
+     <LISTITEM><PARA>En la sección Escritorio seleccione "Usar Nautilus para dibujar el Escritorio"</PARA></LISTITEM>
+     <LISTITEM><PARA>Haga clic en Aceptar.</PARA></LISTITEM>
+    </ORDEREDLIST>
+
+    <FIGURE ID="prefmenu11">     <TITLE>El menu Preferencias</TITLE>
+     <SCREENSHOT>      <SCREENINFO>Captura de Pantalla del menu Preferencias</SCREENINFO>
+      <GRAPHIC FORMAT="png" FILEREF="figures/prefmenu">      </GRAPHIC>
+     </SCREENSHOT>
+    </FIGURE>  
+
+   </PARA>
+   
+   <PARA>    Al principio el escritorio contiene tres elementos: un ícono
+    de una casa que representa su directorio personal , un ícono de
+    una papelera y un icono de Servicios Eazel que lo llevará hasta
+    el sitio Web de Eazel.
+   </PARA>
+
+   <PARA>    Usted puede crear carpetas en el escritorio, o arrastrar archivos 
+    y carpetas adicionales desde la ventana de Nautilus hacia su escritorio.
+    Por ejemplo: puede crear una carpeta que contenga sus proyectos actuales
+    y dejarla en el escritorio para poder accederla de forma sencilla. También
+    puede montar discos (podrían ser discos flexibles o discos compactos) 
+    en el escritorio.
+   </PARA>
+
+   <PARA>    Para ver las opciones de uso que tiene su escritorio haga un
+    clic con el botón derecho de su mouse en cualquier lugar libre
+    donde no haya una ventana.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="gnome">   <TITLE>Acerca de GNOME</TITLE>
+
+   <PARA>    Nautilus es desarrollado por Eazel, un miembro fundador de la 
+    GNOME Foundation, con la ayuda de la <ULINK TYPE="http" URL="http://www.gnome.org">comunidad GNOME</ULINK>. Nautilus es
+    un proyecto de software libre desarrollado bajo la Licencia Pública
+    General GNU (GPL).
+   </PARA>
+
+  </SECT2>
+
+ </SECT1>
+
+
+ 
+ <SECT1 ID="nav">  <TITLE>Navegando en su computadora y en Internet</TITLE>
+
+  <PARA>   Esta sección de la guía explica como usar Nautilus para ver las
+   carpetas y los archivos en su computadora, como asi también 
+   como navegar por páginas Web en Internet.
+  </PARA>
+
+  <SECT2 ID="toc2">   <TITLE>Contenidos de esta sección:</TITLE>
+
+   <SIMPLELIST>    <MEMBER>     <LINK LINKEND="home">Observando su directorio personal</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="navigating">Navegando en sus archivos y carpetas</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="tree">El árbol</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="viewopen">Visualizando y abriendo archivos</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="music">Visualizando y escuchando archivos MP3</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="mount">Montando las disqueteras y unidades de CDROM</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="internet">Navegando en Internet</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="history">Observando el Histórico de su Navegación</LINK>
+    </MEMBER>
+    <MEMBER>     <LINK LINKEND="bookmarks">Marcando sus direcciones favoritas</LINK>
+    </MEMBER>
+   </SIMPLELIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="home">   <TITLE>Observando su directorio personal</TITLE>
+
+   <PARA>    Cuando ejecuta Nautilus por primera vez verá su directorio personal en
+    la ventana de Nautilus. Tres áreas de la ventana de Nautilus contienen
+    información sobre su carpeta:
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      La <GUIMENU>barra lateral</GUIMENU>, la cual contiene un ícono de
+      una carpeta representando la carpeta actual.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      El <GUIMENU>Panel Principal</GUIMENU>, donde puede ver íconos
+      representando los elementos que se encuentran en su carpeta.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      La <GUIMENU>barra de direcciones</GUIMENU>, que contiene la 
+      ruta de la carpeta actual.
+     </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+ 
+   <FIGURE ID="part">    <TITLE>barra de dirección, barra lateral, y Panel Principal</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Diagrama de Nautilus</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/part">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Su Directorio Personal también aparece en su escritorio, representado
+    por un ícono de una casa. Haciendo doble clic en el ícono de la casa
+    se abrirá una nueva ventana de Nautilus, conteniendo su Directorio Personal.
+   </PARA>
+
+   <PARA>    Nota acerca del Directorio Personal: Dependiendo de su nivel de
+    usuario su Directorio Personal puede ser la carpeta de Nautilus
+    por omisión, la cual contiene información básica sobre su computadora
+    y enlaces hacia algunas aplicaciones muy útiles, o el Directorio 
+    Personal definido para usted en las configuraciones de Linux 
+    (normalmente /home/su_nombre).
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="navigating">   <TITLE>Navegando en sus archivos y carpetas</TITLE>
+
+   <PARA>    Puede moverse por sus carpetas utilizando los botones de navegación
+    que se encuentran en la barra de herramientas y los íconos en
+    la ventana de Nautilus.
+   </PARA>
+
+   <TIP>    <TITLE>Intente lo siguiente</TITLE>
+    <PARA>     Usando su directorio personal como punto de referencia navegue
+     su disco rígido:
+    </PARA>
+ 
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       Para ver su directorio personal haga clic en el <GUIBUTTON>botón 
+       inicio</GUIBUTTON>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para moverse hacia la carpeta que contiene su directorio personal
+       - esto es para moverse una carpeta hacia arriba en la jeraquía - haga
+       clic en el <GUIBUTTON>botón Arriba</GUIBUTTON>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para volver al directorio personal haga clic en el
+       <GUIBUTTON>botón Atrás</GUIBUTTON>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para ver los contenidos de cualquier carpeta haga doble
+       clic en su ícono (normalmente es un ícono de carpeta).
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Si piensa que los contenidos de una carpeta han cambiado mientras
+       usted estaba viendola haga clic en el botón <GUIBUTTON>Actualizar</GUIBUTTON>
+       para actualizar la información.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para detener la carga de una elemento haga clic en el 
+       botón <GUIBUTTON>Parar</GUIBUTTON>.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </TIP>
+
+  </SECT2>
+
+  
+  <SECT2 ID="tree">   <TITLE>El árbol</TITLE>
+
+   <PARA>    Puede obtener una vista de todas las carpetas y todos los archivos
+    de su computadora utilizando el árbol. Mucha gente encuentra que
+    utilizar el árbol para navegar es más rápido que seleccionar y abrir
+    carpetas.
+   </PARA>
+
+   <PARA>    Para ver el árbol, haga clic en la solapa árbol que esta
+    en la parte inferior de la barra lateral. Haga clic en la
+    solapa una vez más para quitar el árbol de su vista.
+   </PARA>
+
+   <PARA>    Si no ve la solapa Árbol haga un clic con el botón derecho del mouse
+    y elija Árbol en el menú contextual que aparecerá.
+   </PARA>
+
+   <PARA>    El punto de inicio - la cima del árbol - es el directorio raíz,
+    representado por una barra (/). Haga clic en el triangulo que se
+    encuentra cerca del directorio raíz para abrir o cerrar la lista de
+    todas sus carpetas y archivos. Los elementos en su computadora son
+    acomodados de una forma jerarquica. El directorio raíz puede listar
+    direcciones de red además de direcciones de su computadora. (Nota:
+    Además del directorio raíz identificado por / hay un directorio
+    llamado "root.")
+   </PARA>
+
+   <TIP>    <TITLE>Intente lo siguiente:</TITLE>
+    <PARA>     Abrir y cerrar una carpeta en el árbol:
+    </PARA>
+
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       Para abrir o cerrar una carpeta en el árbol haga clic
+       en su triangulo.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para ver el contenido de una carpeta en el panel principal
+       haga clic en el nombre de la carpeta en el árbol.
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </TIP>
+
+  </SECT2>
+
+  
+  <SECT2 ID="viewopen">   <TITLE>Visualizando y abriendo archivos</TITLE>
+
+   <PARA><GUIMENU>Vistas Icono y Lista</GUIMENU></PARA>
+
+   <PARA>    La primera vez que ejecuta Nautilus puede ver las carpetas y
+    los archivos representados como íconos. Esta es la vista ícono.
+   </PARA>
+
+   <TIP>    <TITLE>Intente lo siguiente:</TITLE>
+    <PARA>     Observando sus archivos y carpetas de dos formas:
+    </PARA>
+
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       Para ver los contenidos de una carpeta como lista haga clic
+       en el menú pop-up <GUIMENU>Ver como</GUIMENU> y elija
+       <GUIMENUITEM>Ver como Lista</GUIMENUITEM>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para ordenar los elementos mostrados en la vista lista haga
+       clic en las cabeceras de las columnas (Nombre, Tamaño, Tipo y Fecha
+       de Modificación).
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para volver a la vista ícono abra el menú pop-up 
+       <GUIMENU>Ver como</GUIMENU> y elija <GUIMENUITEM>Ver como
+       Iconos</GUIMENUITEM>.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para ordenar los elementos en la vista ícono abra el menú
+       <GUIMENU>Ver</GUIMENU>, luego elija <GUIMENUITEM>Ordenar Elementos</GUIMENUITEM>
+       y entonces elija una opción de ordenamiento. (Para aprender más acerca de
+       las opciones de ordenamiento vea <LINK LINKEND="layout">Seleccionando el Orden de
+       Elementos</LINK>.)
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </TIP>
+
+   <FIGURE ID="viewmenu">    <TITLE>El menú pop-up Ver como</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla de menú</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/viewmenu">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    <GUIMENU>Agrandando y Encogiendo</GUIMENU>
+   </PARA>
+
+   <PARA>    Puede agrandar o encoger el tamaño de los elementos ya sea en
+    la vista lista o la vista ícono y redimensionar íconos individualmente
+    sólo en la vista ícono.
+   </PARA>
+
+   <TIP>    <TITLE>Intente lo siguiente</TITLE>
+    <PARA>     Agrandando y Encongiendo íconos en la vista ícono o la vista lista:
+    </PARA>
+
+    <ITEMIZEDLIST>
+     <LISTITEM>      <PARA>       Para agrandar o encoger todos los íconos al mismo tiempo
+       haga clic en los símbolos + y - en la
+       barra de dirección.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para devolverlos a su tamano orginal haga clic en
+       el símbolo que se encuentra entre los símbolos suma
+       y resta (normalmente es una lupa).
+      </PARA>
+     </LISTITEM>
+
+    </ITEMIZEDLIST>
+   </TIP>
+
+   <TIP>    <TITLE>Intente lo siguiente</TITLE>
+    <PARA>     Redimensionar un ícono en la vista ícono:
+    </PARA>
+
+    <ORDEREDLIST>
+     <LISTITEM>      <PARA>       Seleccione el ícono que desea redimensionar haciendo
+       un clic sobre él.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Abra el menú Edición y escoja Redimensionar Icono. Aparecerá una
+       caja alrededor del ícono seleccionado previamente con 
+	 tiradores en cada esquina.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Haga clic en un tirador y arrastre el mouse para redimensionar el
+       ícono. Para cancelar el redimensionado presione la tecla Escape.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Para quitar los tiradores del ícono haga un clic fuera del ícono.
+      </PARA>
+     </LISTITEM>
+
+    </ORDEREDLIST>
+   </TIP>
+
+   <PARA>    Para dejar un ícono en su tamaño normal seleccione el ícono y
+    entonces abra el menú Edición y elija Restaurar los Iconos a su Tamaño Normal.
+   </PARA>
+
+   <PARA>    <GUIMENU>Previsualizando Archivos en la Vista Icono</GUIMENU>
+
+   </PARA>
+
+   <PARA>    Puede previsualizar muchos archivos en la ventana de Nautilus con solo
+    observar sus íconos in el Panel Principal - no necesita abrir los archivos. -
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      Archivos de Texto: Los íconos para la mayoría de los archivos de
+      texto muestran sólo las primeras palabras o líneas de texto del archivo.
+      Si agranda un ícono de un archivo de texto usando Agrandar o
+      redimensionandolo puede ver un poco más de su contenido.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Archivos de Imagen: Los íconos para la mayoría de las ímagenes aparecen
+      como pequeñas muestras de las mismas.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Archivos de Música: Puede realizar una escucha previa para los
+      tipos más comunes de archivos de música colocando el puntero
+      del mouse sobre los íconos. La Música sonará mientras
+      mantenga el puntero del mouse sobre el ícono del archivo de música.
+     </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+
+   <PARA>    <GUIMENU>Usando Nautilus como un Visualizador</GUIMENU>
+   </PARA>
+
+   <PARA>    Puede usar la ventana de Nautilus para ver los contenidos de
+    un archivo sin tener que abrirlo para editarlo en una aplicación.
+    Utilizar Nautilus como un visualizador en vez de abrir una 
+    aplicación puede ahorrarle tiempo y memoria de su sistema.
+   </PARA>
+
+   <PARA>    La mayoría de los archivos de texto automáticamente aparecen en la
+    ventana de Nautilus cuando hace un doble clic en sus íconos. De todos
+    modos algunos archivos se abren automáticamente en sus aplicaciones.
+    Para manejarse con archivos de este último tipo haga un clic encima
+    de su ícono utilizando el botón derecho del mouse y seleccione la
+    opción Abrir con, recién entonces seleccione el visualizador apropiado.
+   </PARA>
+
+   <PARA>    Nota: Puede controlar con que visualizador o aplicación se abrirá
+    automaticamente un archivo. Vea <LINK LINKEND="file">Seleccionando Aplicaciones para Manejar Archivos</LINK>.
+   </PARA>
+
+   <PARA>    Aquí se muestran algunos de los tipos de archivos con los cuales una
+    ventana de Nautilus puede trabajar como Visualizador:
+   </PARA>
+
+   <INFORMALTABLE FRAME="none">    <TGROUP COLS="2">     <COLSPEC COLWIDTH="1in">&gt;
+     <TBODY>      <ROW>       <ENTRY><EMPHASIS>Texto</EMPHASIS></ENTRY>
+       <ENTRY>Texto ASCII, HTML</ENTRY>
+      </ROW>
+      <ROW>       <ENTRY><EMPHASIS>Imagenes</EMPHASIS></ENTRY>
+       <ENTRY>JPEG, PNG, GIF (no animados), XPM, SVG (sin caracteristicas interactivas)</ENTRY>
+      </ROW>
+      <ROW>       <ENTRY><EMPHASIS>Música</EMPHASIS></ENTRY>
+       <ENTRY>MP3 (para archivos MP3 que están en el disco rígido), AIFF, WAV, RIFF</ENTRY>
+      </ROW>
+      <ROW>       <ENTRY><EMPHASIS>Paquetes</EMPHASIS></ENTRY>
+       <ENTRY>RPM (para archivos RPM que están en el disco rígido)</ENTRY>
+      </ROW>
+     </TBODY>
+    </COLSPEC></TGROUP>
+   </INFORMALTABLE>
+
+
+   <PARA>    <GUIMENU>Abriendo Archivos Individualmente</GUIMENU>
+   </PARA>
+
+   <PARA>    Puede abrir archivos en Nautilus de varias formas:
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      Haciendo doble clic en el ícono del archivo (al menos que
+      haya cambiado las preferencias para hacerlo con un solo clic).
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Hacer clic en ícono del archivo, luego abrir el menú <GUIMENU>Archivo</GUIMENU>
+      y elegir <GUIMENUITEM>Abrir</GUIMENUITEM> o <GUIMENUITEM>Abrir
+      Con</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haciendo clic con el botón derecho sobre el ícono del archivo
+      y luego seleccionado algunas de las opciones <GUIMENUITEM>Abrir</GUIMENUITEM> o
+      <GUIMENUITEM>Abrir Con</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haciendo clic en el ícono del archivo y presionando la tecla Enter.
+     </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+
+   <PARA>    Nota: Si la aplicación que quiere usar no esta en la lista que 
+    <LINK LINKEND="chapter6">Configurando Aplicaciones Auxiliares</LINK>.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="music">   <TITLE>Visualizando y escuchando archivos MP3</TITLE>
+
+   <PARA>    Nautilus provee una conjunto especial de caracteristicas que le ayudan
+    a disfrutar sus archivos MP3. Usando la opción Ver como Música puede
+    configurar una carpeta de archivos MP3 como si fuese un albúm, conteniendo
+    temas de su elección y representados por una tapa (una imagen personalizada) que
+    usted puede especificar.
+   </PARA>
+
+   <TIP>    <TITLE>Intente lo siguiente</TITLE>
+    <PARA>     Use su colección de archivos MP3 para crear un albúm de música personalizado:
+    </PARA>
+
+    <ORDEREDLIST>
+     <LISTITEM>      <PARA>       Vaya a la carpeta que contiene sus archivos MP3.
+      </PARA>
+     </LISTITEM>
+
+     <LISTITEM>      <PARA>       Haga clic en el menú pop-up Ver como y elija Ver como Música.
+      </PARA>
+     </LISTITEM>
+
+    </ORDEREDLIST>
+   </TIP>
+
+   <FIGURE ID="view2">    <TITLE>El Menú Pop-Up Ver Como</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de ver com musica</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/viewmusic">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Sólo los archivos MP3 en su carpeta son visibles en esta vista.
+    Por cada archivo puede ver una lista de titulos, artistas, velocidad
+    de muestreo y tiempo de ejecución.
+   </PARA>
+
+   <PARA>    Para empezar a ejecutar uno de los temas en su album haga clic en
+    el botón Tocar de su reproductor. El tema seleccionado empezará a
+    reproducirse; cuando termine el siguiente tema empezará automáticamente.
+    También puede hacer un doble clic sobre un tema para reproducirlo.
+   </PARA>
+
+   <FIGURE ID="player">    <TITLE>El Reproductor de Música</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla del Reproductor de Música</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/player">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Si lo desea puede escojer una imagen para la portada del album para
+    su carpeta de música:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Vaya a la carpeta que contiene sus archivos MP3.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Click the <GUIMENU>View as</GUIMENU> menú and choose
+      <GUIMENUITEM>View as Music</GUIMENUITEM>.
+      Haga clic en el menú <GUIMENU>Ver como</GUIMENU> y 
+      elija <GUIMENUITEM>Ver como Música</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en el botón <GUIMENUITEM>Establecer Portada</GUIMENUITEM>
+      que se encuentra en la parte inferior derecha de la ventana de Nautilus.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Navegue para encontrar el gráfico que quiere usar, luego
+      seleccionelo.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="mount">   <TITLE>Montando las disqueteras y unidades de CDROM</TITLE>
+
+   <PARA>    Si tiene un disco insertado en unidad de CD-ROM o una disquetera puede
+    montarlo desde el escritorio. Haga lo siguiente:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Asegurece de que el disco esta insertado en la unidad.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic con el botón derecho del mouse en cualquier lugar del
+      escritorio (fuera de una ventana) y elija desde el menú pop-up
+      las siguiente opciones <MENUCHOICE><GUIMENU>Discos</GUIMENU> 
+      <GUISUBMENU>Disquetera</GUISUBMENU></MENUCHOICE> o <GUIMENU>Discos</GUIMENU>
+      <GUISUBMENU>CD-ROM</GUISUBMENU>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="internet">   <TITLE>Navegando en Internet</TITLE>
+
+   <PARA>    Puede usar Nautilus como una navegador para ver páginas Web y
+    sitios FTP.
+   </PARA>
+
+   <PARA>    Para ver una página Web escriba su dirección de Web (URL) en la
+    barra de dirección.
+   </PARA>
+
+   <TIP>    <TITLE>Intente lo Siguiente:</TITLE>
+    <PARA>     Conectese al sitio Web de Eazel escribiendo <USERINPUT>eazel.com</USERINPUT>
+     en la barra de dirección y presionando luego la tecla Enter. No
+     es necesario escribir "http://" o "www."
+    </PARA>
+   </TIP>
+
+   <FIGURE ID="locbar">    <TITLE>La barra dirección</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla de la barra de dirección</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/locbar">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Cuando esta viendo una página Web Nautilus le da opciones adicionales
+    del Navegador en caso de que quiera usar un navegador externo. Para 
+    seleccionar un navegador diferente haga clic en alguno de los botones
+    que aparecen en la barra lateral.
+   </PARA>
+
+   <FIGURE ID="sidebar">    <TITLE>La barra lateral</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla de la barra lateral</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/sidebar">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+  </SECT2>
+
+  
+  <SECT2 ID="history">   <TITLE>Observando el Histórico de su Navegación</TITLE>
+
+   <PARA>    Cuando usted navega en su computadora o en Internet puede querer 
+    regresar a una página, archivo o carpeta que haya visto previamente.
+   </PARA>
+
+   <PARA>    Puede ver su Histórico de Navegación de tres formas diferentes:
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      Fíjese en la parte inferior del menú <GUIMENU>Ir</GUIMENU> para
+      obtener una lista de las cosas que ha visto durante la sesión de
+      trabajo actual.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en la solapa <GUIMENUITEM>Histórico</GUIMENUITEM> que se
+      encuentra en la parte inferior de la barra lateral. (Para quitar de
+      su vista la solapa Histórico haga clic en la misma nuevamente.)
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haciendo un clic con el botón derecho sobre los botones
+      <GUIMENU>Atrás</GUIMENU> o <GUIMENU>Adelante</GUIMENU>.
+      </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+
+   <PARA>    Puede necesitar que Nautilus limpie la lista de las direcciones
+    que ha visitado previamente. Esto quita la direcciones anteriores
+    listadas en el menú Ir, la solapa Histórico y lo que este debajo de
+    los botones Atrás y Adelante.
+   </PARA>
+
+   <PARA>    Para limpiar la lista de direcciones visitadas previamente:
+   </PARA>
+
+   <ITEMIZEDLIST>    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Ir</GUIMENU> y seleccione
+      <GUIMENUITEM>Borrar Historial</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+   </ITEMIZEDLIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="bookmarks">   <TITLE>Marcando sus direcciones favoritas</TITLE>
+
+   <PARA>    Probablemente descubra que frecuentemente visita cierto tipo de
+    direcciones - páginas Web, carpetas en su computadora y sus fotos
+    o textos favoritos -. Puede Marcar estos elementos en Nautilus, de
+    esta forma puede volver a ellos de una forma más sencilla.
+   </PARA>
+
+   <PARA>    <GUIMENU>Creando un Marcador</GUIMENU>
+   </PARA>
+
+   <PARA>    Para marcar un elemento:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Vaya al elemento que quiere marcar. Por ejemplo vaya a http://www.linux.org.ar
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Marcadores</GUIMENU> y seleccione
+      <GUIMENUITEM>Agregar Marcador</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Para usar su marcador abra el menú <GUIMENU>Marcadores</GUIMENU> y
+      seleccione su marcador desde la parte inferior del menú.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    <GUIMENU>Usando lo Marcadores Internos</GUIMENU>
+   </PARA>
+
+   <PARA>    Nautilus viene con algunos marcadores internos ordenados en carpetas
+    en la parte media del menú Marcadores. Estos lo llevaran a sitios Web
+    de organizaciones y compañías de interés para usuarios de Linux.
+   </PARA>
+
+   <PARA>    Si su nivel de usuario esta configurado como Intermedio o Avanzado
+    puede desactivar los marcadores internos:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Preferencias</GUIMENU> y seleccione
+      <GUIMENUITEM>Preferencias</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la columna del lado izquierdo de la caja de dialogo Preferencias
+      haga clic en <GUIMENUITEM>Navegación</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione No Incluir los Marcadores Internos en el menú Marcadores.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <FIGURE ID="prefmenu1">    <TITLE>El menú Preferencias</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de pantalla del menú Preferencias</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/prefmenu">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    <GUIMENU>Editando sus Marcadores</GUIMENU>
+   </PARA>
+
+   <PARA>    Puede renombrar un marcador. cambiar su dirección o quitarlo
+    todo junto en un mismo lugar:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Marcadores</GUIMENU> y seleccione
+      <GUIMENUITEM>Editar Marcadores</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione el marcador que quiere editar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>       Escriba un nombre o dirección nuevo para el marcador o haga clic en Quitar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando haya finalizado de editar sus marcadores cierre la caja de dialogo.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+ </SECT1>
+
+ 
+ <SECT1 ID="search">  <TITLE>Buscando en su computadora y en Internet</TITLE>
+
+  <PARA>   Nautilus ofrece una opción de búsqueda para localizar archivos y directorios
+   en su computadora y una opción de búsqueda Web para buscar páginas Web.
+  </PARA>
+
+  <SECT2 ID="toc3">   <TITLE>Contenidos de esta sección:</TITLE>
+
+   <SIMPLELIST>    <MEMBER><LINK LINKEND="find">Buscando elementos en su computadora</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="simple">Búsquedas Simples</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="medusa">Búsquedas Complejas</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="search">Buscando en Internet</LINK></MEMBER>
+   </SIMPLELIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="find">   <TITLE>Buscando elementos en su computadora</TITLE>
+
+   <PARA>    Cuando busca elementos en su propia computadora usará una de estas
+    utilidades de búsqueda de Nautilus:
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      Búsquedas Simples: Si su nivel de usuario esta configurado con Principiante entonces 
+      Nautilus realiza una búsqueda rápida y sencilla por nombre de archivo.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Búsquedas Complejas: Si su nivel de usuario esta configurado como Intermedio o Avanzado 
+      entonces Nautilus busca archivos en su computadora
+      por nombre de archivo, creador, tipo de archivo y otros atributos, así también
+      como por el actual contenido de los archivos.
+     </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+
+   <PARA>    <GUIMENU>Búsquedas Rápidas Versus Búsquedas Lentas</GUIMENU>
+   </PARA>
+   
+   <PARA>    Nautilus utiliza Medusa (un proceso), el cual es una pieza de software
+    que se ejecuta en segundo plano.
+    Medusa crea un índice de todos los elementos que hay en su disco rígido y
+    en las unidades que se encuentren montadas, incluyendo dentro de este los
+    nombres de archivo, tamaño, fecha de creación y otros atributos. Además
+    Medusa indexa el <EMPHASIS>contentido</EMPHASIS> de cada archivo - de este
+    modo usted puede buscar cualquier palabra o frase en cualquier archivo de
+    su computadora cuando haga una búsqueda por contenido.
+   </PARA>
+
+   <PARA>    Medusa corre cuando su computadora esta desocupada, de este modo no interrumpe sus actividades.
+   </PARA>
+   
+   <PARA>    Si Medusa no ha terminado de indexar su sistema o no se esta ejecutando
+    en su computadora entonces cuando realice una búsqueda puede aparecerle
+    un mensaje advirtiendole que Nautilus no puede realizar una búsqueda rápida.
+   </PARA>
+
+   <PARA>    Si sospecha que Medusa no esta ejecutandose haga lo siguiente:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra un ventana de terminal.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Conectese a su sistema como root.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Ingrese el siguiente comando en la línea de comandos: medusa-searchd
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+   
+   <PARA>Si Medusa aún no esta ejecutandose haga esto:</PARA>
+   
+   <ORDEREDLIST>    <LISTITEM>     <PARA>      Abra el menú Preferencias y seleccione Preferencias.
+     </PARA>
+    </LISTITEM>
+    
+    <LISTITEM>     <PARA>      Desde el lado izquierdo de la caja de dialogo de Preferencias seleccione la opción Búsqueda
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la sección Búsqueda Rápida active la opción "Habilitar Búsqueda Rápida".
+     </PARA>
+    </LISTITEM>        
+   </ORDEREDLIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="simple">   <TITLE>Búsquedas simples</TITLE>
+
+   <PARA>    Para buscar un elementos en su disco rígido (nivel de usuario Principiante):
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic en el botón <GUIMENUITEM>Buscar</GUIMENUITEM> que se encuentra
+      en la barra de herramientas. La barra de dirección entonces es
+      reemplazada por la barra de búsqueda.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Ingrese el nombre del elemento que quiere buscar en el
+      campo Buscar:.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Luego haga clic en <GUIMENUITEM>Buscar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando la búsqueda haya finalizado haga clic nuevamente en el
+      botón <GUIMENUITEM>Buscar</GUIMENUITEM> para asi ocultar la 
+      barra de búsqueda.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="medusa">   <TITLE>Búsquedas Complejas</TITLE>
+
+   <PARA>    Para buscar un elemento en su disco rígido (Nivel de usuario Intermedio o Avanzado):
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic en el botón <GUIMENUITEM>Buscar</GUIMENUITEM> de la barra de herramientas.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      De los dos menúes pop-up escoja el criterio para definir su búsqueda.
+      La opciones son explicadas a continuación.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      (Opcional) Para refinar su búsqueda haga clic en <GUIMENUITEM>Más Opciones</GUIMENUITEM> y
+      seleccione criterios adicionales.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Ingrese el elemento que quiere buscar - un nombre de archivo en particular,
+      fecha de modificación y demás cosas dentro del campo de búsqueda.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en el botón <GUIMENUITEM>Buscar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando haya finalizado la búsqueda haga clic en el botón
+      <GUIMENUITEM>Buscar</GUIMENUITEM> para ocultar la barra de Búsqueda.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <INFORMALTABLE FRAME="all">    <TGROUP COLS="3">     <TBODY>
+      <ROW>       <ENTRY><GUIMENU>Categoría de Búsqueda</GUIMENU></ENTRY>
+       <ENTRY><GUIMENU>Modificador</GUIMENU></ENTRY>
+       <ENTRY><GUIMENU>Campo de búsqueda o Lista</GUIMENU></ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>        Nombre: Nautilus buscará los nombres de archivos en su disco rígido.
+       </ENTRY>
+
+       <ENTRY>        Especifique si los archivos deben tener un nombre que contenga,
+        comienze con ó terminen con los caracteres que usted escribe.
+        También puede elegir "coincidencias globales" o "coincide con expresión regular"
+        para hacer búsquedas con comodines Linux.
+       </ENTRY>
+
+       <ENTRY>        Ingrese parte o todo el nombre de archivo que quiere buscar.
+       </ENTRY>
+
+      </ROW>
+
+      <ROW>
+       <ENTRY>        Contenido: Nautilus buscará el contenido de archivos en su disco rígido.
+       </ENTRY>
+
+       <ENTRY>        Especifique si los archivos tienen un contenido que incluye todo,
+        alguna, cualquiera o ninguna de las palabras o frases que usted
+        escribe.
+       </ENTRY>
+
+       <ENTRY>        Ingrese una palabra o frase que quiere buscar dentro del contendo de los archivos
+        que se encuentrar en su disco rígido.
+       </ENTRY>
+
+      </ROW>
+
+      <ROW>
+       <ENTRY>        Tipo: Nautilus buscará los archivos que usted especifique.
+       </ENTRY>
+
+       <ENTRY>        Elija "es" o "no es" para incluir o excluir tipos de archivos de la búsqueda.
+       </ENTRY>
+
+       <ENTRY>        Elija un tipo de archivo desde el menú pop-up.
+       </ENTRY>
+
+      </ROW>
+
+      <ROW>
+       <ENTRY>Tamaño</ENTRY>
+
+       <ENTRY>        Especifique si los archivos deberán se más grandes ó más pequeños que
+        el número que usted escribe.
+       </ENTRY>
+
+       <ENTRY>Escriba un tamaño en KB (Kilobytes)</ENTRY>
+
+      </ROW>
+
+      <ROW>
+       <ENTRY>Con Marca</ENTRY>
+
+       <ENTRY>        Especifique si los archivos deberían estar marcados o no marcados con una determinada marca.
+       </ENTRY>
+
+       <ENTRY>Elija una marca.</ENTRY>
+
+      </ROW>
+
+      <ROW>
+       <ENTRY>Ultima Modificación</ENTRY>
+
+       <ENTRY>        Elija una opción para restringir la fecha de última modificación de los archivos.
+       </ENTRY>
+
+       <ENTRY>        Ingrese una fecha. Por omisión se utiliza la fecha actual, pero
+        puede borrarla y escribir cualquier fecha que usted desee.
+       </ENTRY>
+
+      </ROW>
+
+      <ROW>
+       <ENTRY>Dueño</ENTRY>
+
+       <ENTRY>        Elija "es" o "no es" para incluir o excluir archivos adueñados por un usuario en particular.
+       </ENTRY>
+
+       <ENTRY>        Ingrese el nombre de un usuario que posea archivos en su sistema.
+       </ENTRY>
+
+      </ROW>
+
+     </TBODY>
+    </TGROUP>
+   </INFORMALTABLE>
+
+  </SECT2>
+
+  
+  <SECT2 ID="search">   <TITLE>Buscando en Internet</TITLE>
+
+   <PARA>    Para buscar páginas en la Web haga clic en el botón Búsqueda Web que 
+    se encuentra en la barra de herramientas. Entonces aparecerá la página
+    de búsqueda de Eazel. Escriba la palabra o frase por la que quiere 
+    buscar y luego haga clic en Buscar.
+   </PARA>
+
+   <PARA>    Puede elegir un motor de búsqueda entre algunos de los listados a continuación
+    de la caja de búsqueda. Por ejemplo, elija Google haciendo clic en el
+    enlace Google.
+   </PARA>
+
+   <PARA>    Si le interesa puede configurar el botón de Búsqueda Web para que lo
+    lleve a su servicio de búsqueda Favorito:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Preferencias</GUIMENU> y seleccione <GUIMENUITEM>Preferencias</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En el lado izquierdo de la caja de dialogo Preferencias haga clic sobre 
+      <GUIMENUITEM>Búsqueda</GUIMENUITEM>. 
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la sección Búsqueda Web ingrese la dirección Web (URL) de
+      su servicio de búsqueda favorito.   
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>OK</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <FIGURE ID="prefmenu5">    <TITLE>El menú preferencias</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla del menú Preferencias</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/prefmenu">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+  </SECT2>
+
+ </SECT1>
+
+ 
+ <SECT1 ID="manage">  <TITLE>Administrando sus archivos y carpetas</TITLE>
+
+  <PARA>   Esta sección explica como utilizar Nautilus para organizar sus archivos y carpetas.
+  </PARA>
+
+  <SECT2 ID="toc4">   <TITLE>Contenidos de esta sección:</TITLE>
+
+   <SIMPLELIST>    <MEMBER><LINK LINKEND="move">Moviendo y Copiando Archivos y Carpetas</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="create">Creando Carpetas Nuevas</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="desktop">Archivos y Carpetas en el Escritorio</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="duplicate">Duplicando Archivos y Carpetas</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="rename">Renombrando Archivos y Carpetas</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="delete">Borrando Archivos y Carpetas</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="permissions">Cambiando los permisos de los archivos</LINK></MEMBER>
+   </SIMPLELIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="move">   <TITLE>Moviendo y Copiando Archivos y Carpetas</TITLE>
+
+   <PARA>    La forma más sencilla de mover un archivo o una carpeta es trabajar con dos ventanas de Nautilus a la vez.
+   </PARA>
+
+   <PARA>    Para mover un archivo o una carpeta a una nueva dirección haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione la opción
+      <GUIMENUITEM>Nueva Ventana</GUIMENUITEM>. Ahora tiene dos ventanas
+      de Nautilus.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En una ventana ubique el archivo o la carpeta que quiere mover. En la otra ventana ubique la carpeta de destino.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Usando el botón izquierdo del mouse haga clic en el archivo o carpeta que quiere mover y 
+      arrástrelo hacia la otra ventana.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Nota: Si su disco rígido esta dividido en particiones (volumenes) al arrastrar un
+    archivo o carpeta desde una partición hacia otra el archivo o carpeta es copiado en vez
+    de movido.
+   </PARA>
+
+   <PARA>    Para copiar un archivo o carpeta a una carpeta nueva reteniendo el original haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione la opción <GUIMENUITEM>Nueva Ventana</GUIMENUITEM>. Ahora
+      tiene dos ventanas de Nautilus.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En una ventana ubique el archivo o carpeta que quiere copiar. En la
+      otra ventana ubique la carpeta de destino.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic con el botón derecho sobre el elemento y mantengalo presionado, luego arrástrelo a la 
+      carpeta de destino. Aparecerá un menú pop-up.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione la opción <GUIMENUITEM>Copiar aquí</GUIMENUITEM> para dejar una copia del elemento en
+      la carpeta de destino. Seleccione <GUIMENUITEM>Enlazar aquí</GUIMENUITEM> para crear un enlace al
+      elemento.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="create">   <TITLE>Creando Carpetas Nuevas</TITLE>
+
+   <PARA>    Puede crear una carpeta nueva en cualquier lugar en la jerarquía de carpetas que hay en
+    su computadora siempre y cuando tenga los permisos apropiados.
+   </PARA>
+
+   <PARA>    Intente hacer lo siguiente:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Vaya a la carpeta que contendrá la nueva carpeta.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione la opción
+      <GUIMENUITEM>Nueva Carpeta</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Nautilus creará una carpeta nueva dentro de la carpeta actual. Está tendrá como nombre 
+    Carpeta sin titulo. Puede <LINK LINKEND="rename">renombrar la nueva carpeta</LINK>.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="desktop">   <TITLE>Archivos y Carpetas en el Escritorio</TITLE>
+
+   <PARA>    Puede considerar al escritorio como una extensión de la ventana de Nautilus y de ese modo
+    mover, copiar y crear carpetas en ese lugar.
+   </PARA>
+
+   <PARA>    Para mover un archivo o carpeta al escritorio use el botón izquierdo del mouse
+    para seleccionarlo y luego arrastrarlo hacia el escritorio. Puede poner el archivo
+    o carpeta en cualquier lugar que desee dentro del escritorio.
+   </PARA>
+
+   <PARA>    Para poner una copia de un elemento en el escritorio o crear un enlace hacia este haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      En la ventana de Nautilus ubique el archivo o la carpeta que quiere copiar
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic encima del elemento y luego arrástrelo hacia el escritorio. Aparecerá un menú pop-up.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>       Seleccione la opción <GUIMENUITEM>Copiar aquí</GUIMENUITEM> para dejar una copia del 
+       elemento en el escritorio. Seleccione <GUIMENUITEM>Enlazar aquí</GUIMENUITEM> para crear
+       un enlace hacia el elemento.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Para crear una carpeta nueva en el escritorio haga clic con el botón derecho en
+    cualquier lugar en el escritorio (fuera de una ventana) y seleccione Nueva Ventana desde
+    el menú pop-up que aparecerá.
+   </PARA>
+
+   <PARA>    Consejo: Si esta trabajando en el escritorio y quiere abrir una ventana de Nautilus
+    haga clic con el botón derecho en cualquier lugar en el escritorio y seleccione
+    Nueva Ventana desde el menú pop-up.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="duplicate">   <TITLE>Duplicando Archivos y Carpetas</TITLE>
+
+   <PARA>    Para duplicar un elemento haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic en el ícono del elemento que quiere duplicar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione la opción <GUIMENUITEM>Duplicar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Se agrega entonces un copia del elemento a la carpeta actual. Entonces puede
+    <LINK LINKEND="rename">renombrar el nuevo elemento</LINK>.
+   </PARA>
+
+   <PARA>    Atajo: En cualquiera de la dos vistas, ícono o lista, puede hacer clic con 
+    el botón derecho sobre el elemento que desea duplicar y luego seleccionar 
+    la opción Duplicar desde el menú pop-up que aparecerá.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="rename">   <TITLE>Renombrando Archivos y Carpetas</TITLE>
+
+   <PARA>    Para renombrar un elemento estando en la vista ícono haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic sobre el ícono del elemento que desea renombrar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione la opción <GUIMENUITEM>Renombrar</GUIMENUITEM>.
+      La etiqueta del ícono ahora tiene una caja de texto.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Escriba un nombre nuevo para el elemento y presione la tecla Enter.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Para renombrar un elemento estando en la vista lista haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic sobre el elemento que quiere renombrar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione la opción <GUIMENUITEM>Ver Propiedades</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Escriba un nombre nuevo para el elemento en el espacio provisto dentro de la solapa llamada Básico.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cierre la caja de dialogo.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Atajo: Estando en cualquiera de las dos vistas, lista ó ícono haga clic con el botón derecho sobre el elemento que
+    quiere renombrar. El la vista ícono seleccione la opción Renombrar que aparece en el menú contextual, en la vista 
+    lista seleccione Mostrar Propiedades.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="delete">   <TITLE>Borrando Archivos y Carpetas</TITLE>
+
+   <PARA>    Para borrar un elemento haga lo siguiente:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic en el ícono del elemento que quiere borrar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo </GUIMENU> y seleccione la opción
+      <GUIMENUITEM>Mover a la Papelera</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Para vaciar la Papelera abra el menú <GUIMENU>Archivo</GUIMENU> y luego seleccione
+      <GUIMENUITEM>Vaciar Papelera</GUIMENUITEM>. (Vacie la Papelera sólo si esta absolutamente
+      seguro de que quiere borrar los elementos permanentemente)
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Atajos: Estando en cualquiera de las dos vistas, ícono ó lista, haga clic con el botón derecho
+    sobre el elemento que quiere borrar y seleccione Mover a la Papelera desde el menú pop-up que aparecerá.
+    O haga clic sobre el elemento y luego arrástrelo hacia el ícono de la Papelera que se encuentra en su
+    escritorio.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="permissions">   <TITLE>Cambiando los permisos de los archivos</TITLE>
+
+   <PARA>    Puede cambiar los permisos de las carpetas y de los archivos que posee.
+    Si esta conectado como root (sólo para expertos) puede cambiar los
+    permisos de cualquier carpeta y archivos que tenga en su computadora.
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic sobre el elemento al que quiera cambiarle los permisos.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione la opción
+      <GUIMENUITEM>Ver Propiedades</GUIMENUITEM>. Se abrirá entonces
+      la caja de dialogo con las Propiedades del elemento que ha seleccionado.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga un clic sobre la solapa Permisos.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Desde el menú <GUIMENU>Grupo</GUIMENU> seleccione el 
+      grupo al que pertenece el elemento seleccionado.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la tabla haga clic para poner una marca debajo de cada tipo de permiso
+      que quiera otorgar. Por ejemplo usted puede darle al dueño y los usuarios 
+      de un grupo permisos para leer (ver), escribir (editar) y ejecutar el archivo y 
+      darle otros permisos para leer archivos, pero no para escribirlos.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando haya terminado de administrar los permisos cierre la caja de dialogo.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Nota: Ejecutar normalmente se usa solo para programas y para carpetas con
+    contenidos que usted desea poner a disposición.
+   </PARA>
+ 
+  </SECT2>
+
+ </SECT1>
+
+ 
+ <SECT1 ID="custom">  <TITLE>Personalizando Nautilus</TITLE>
+
+  <PARA>   Puede personalizar Nautilus de muchas formas para que su apariencia y
+   comportamiento se ajusten a sus necesidades y gustos. Esta sección explica como.
+  </PARA>
+
+  <SECT2 ID="toc5">   <TITLE>Contenidos de esta sección:</TITLE>
+
+   <SIMPLELIST>    <MEMBER><LINK LINKEND="settings">Configurando su nivel de usuario</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="preferences">Configurando las Preferencias</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="bars">Mostrar y Ocultar Barras</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="layout">Escogiendo el orden de los archivos</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="themes">Cambiando Temas y Fondos</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="customicons">Personalizando los íconos y sus descripciones</LINK></MEMBER>
+    <MEMBER><LINK LINKEND="customdesktop">Seleccionando un fondo de escritorio</LINK></MEMBER>
+   </SIMPLELIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="settings">   <TITLE>Configurando su nivel de usuario</TITLE>
+
+   <PARA>    Cuando ejecutó Nautilus por primera vez tuvo que seleccionar un
+    nivel de usuario: Principiante, Intermedio o Avanzado. El nivel de
+    usuario determina la cantidad de detalles que verá mientras navegue
+    sus archivos y carpetas:
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      Principiante: Para usuarios que no tienen experiencia previa con GNOME o Linux.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Intermedio: Para usuarios que tienen alguna experiencia con Linux o GNOME pero
+      no quieren ver todos los detalles de su sistema.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Avanzado: Para usuarios que quieren ver cada detalle de su sistema.
+     </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+
+   <PARA>    Para cambiar su nivel de usuario abra el menú Preferencias y seleccione el nivel que quiera.
+   </PARA>
+
+   <FIGURE ID="prefmenu2">    <TITLE>El menú Preferencias</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de pantalla del menú Preferencias</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/prefmenu">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Una forma de ver las diferencias entre los niveles es ir a su directorio personal y entonces
+    comparar lo que puede ver con cada cambio de nivel. Asegurece de regresar al nivel con el que
+    se siente confortable una vez que haya terminado de hacer las pruebas.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="preferences">   <TITLE>Configurando las Preferencias</TITLE>
+
+   <PARA>    Varias configuraciones de Preferencias que usted puede ajustar se encuentran en la
+    caja de dialogo Preferencias. Las configuraciones disponibles dependen de su nivel
+    de usuario - Los usuarios Intermedios y Avanzados tienen acceso a más configuraciones
+    que los Principiantes.
+   </PARA>
+
+   <PARA>    Las configuraciones de Preferencias ajustan la Apariencia de Nautilus, el
+    comportamiento de archivos y carpetas cuando usted hace clic sobre ellos, 
+    el tipo de búsquedas ejecutadas cuando hace clic en los botones Buscar 
+    y Búsqueda Web y muchas cosas más.
+   </PARA>
+
+   <PARA>    Para abrir la caja de dialogo Preferencias use el menú Preferencias mostrado aquí.
+   </PARA>
+
+   <FIGURE ID="prefmenu7">    <TITLE>El menú Preferencias</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla del menú Preferencias</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/prefmenu">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Para personalizar las Preferencias:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Preferencias</GUIMENU> y seleccione la opción <GUIMENUITEM>Preferencias</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Del lado izquierdo de la caja de dialogo de Preferencias seleccione el tipo  
+      de configuración que quiere ajustar (por ejemplo, las vistas Icono y Carpeta).
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Ajuste cada grupo de configuraciones como lo desee.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando termine haga clic en el botón OK para cerrar la ventana.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+  
+  <SECT2 ID="bars">   <TITLE>Mostrar y Ocultar Barras</TITLE>
+
+   <PARA>    La ventana de Nautilus muetra por omisión las siguientes barras:
+   </PARA>
+
+   <ITEMIZEDLIST>    <LISTITEM><PARA>barra lateral</PARA></LISTITEM>
+    <LISTITEM><PARA>barra de herramientas</PARA></LISTITEM>
+    <LISTITEM><PARA>barra de dirección</PARA></LISTITEM>
+    <LISTITEM><PARA>barra de estado (en la parte inferior de la ventana de Nautilus)</PARA></LISTITEM>
+   </ITEMIZEDLIST>
+
+   <FIGURE ID="full3">    <TITLE>La ventana de Nautilus</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Diagrama de Nautilus</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/full">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Puede querer ocultar una o mas de estas barras para ahorrar espacio en su pantalla.
+   </PARA>
+
+   <PARA>    Para ocultar y mostrar barras:
+   </PARA>
+
+   <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Ver</GUIMENU> y seleccione una de las opciones de la
+      segunda sección. Por ejemplo para ocultar la barra lateral haga clic en
+      Ocultar barra lateral.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Para ver la barra de nuevo, abra el menú <GUIMENU>Ver</GUIMENU> y seleccione alguna de la opciones Mostrar.
+     </PARA>
+    </LISTITEM>
+
+   </ITEMIZEDLIST>
+
+   <PARA>    Nota: Si oculta una barra en su ventana de Nautilus y luego abre otra
+    ventana de Nautilus la barra no estará oculta en la nueva ventana. Para
+    especificar que barras deben ocultarse o mostrarse en las nuevas ventanas haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Preferencias</GUIMENU> (que se muestra a continuación) y seleccione la opción 
+      choose <GUIMENUITEM>Preferencias</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Del lado izquierdo de la caja de dialogo Preferencias haga clic en la opción 
+      <GUIMENUITEM>Apariencia</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la sección Vistas desmarque cualquier barra que quiera ocultar en las ventanas nuevas.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>OK</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <FIGURE ID="prefmenu8">    <TITLE>El menú Preferencias</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla del menú Preferencias</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/prefmenu">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+  </SECT2>
+
+  
+  <SECT2 ID="layout">   <TITLE>Escogiendo el orden de los archivos</TITLE>
+
+   <PARA>    <GUIMENU>Orden de archivos en la vista ícono</GUIMENU>
+   </PARA>
+
+   <PARA>    Para cambiar el orden de los archivos que esta viendo abra el menú Ver
+    y seleccione Ordenar elementos. Luego seleccione como quiere que los
+    archivos sean ordenados.
+   </PARA>
+
+   <INFORMALTABLE FRAME="all">    <TGROUP COLS="2">     <TBODY>
+      <ROW>       <ENTRY>Manualmente</ENTRY>
+       <ENTRY>Puede arrastrar los íconos y acomodarlos como mas les guste.</ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>Por Nombre</ENTRY>
+       <ENTRY>Los íconos son ordenados en orden alfabetico.</ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>Por Tamaño</ENTRY>
+       <ENTRY>Los archivos son mostrados de Mayor a Menor.</ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>Por Tipo</ENTRY>
+       <ENTRY>        Los archivos son ordenados en grupos, como textos, imagenes y demás.
+        Todas las carpetas son agrupadas juntas.
+       </ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>Por Fecha de Modificación</ENTRY>
+       <ENTRY>Los archivos modificados mas recientemente aparecen primero en el orden.</ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>Por Marcas</ENTRY>
+       <ENTRY>        Si le ha agregado marcas a los íconos, los archivos son agrupados de acuerdo a las marcas 
+        (los archivos sin marcas se ponen al final del orden).
+       </ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>Disposición Ajustada</ENTRY>
+       <ENTRY>Los íconos se agrupan de la forma mas ajustada posible.</ENTRY>
+      </ROW>
+
+      <ROW>       <ENTRY>Orden Inverso</ENTRY>
+       <ENTRY>Invierte el orden que usted haya seleccionado previamente.</ENTRY>
+      </ROW>
+
+     </TBODY>
+    </TGROUP>
+   </INFORMALTABLE>
+
+   <PARA>    <GUIMENU>Orden de archivos en la vista lista</GUIMENU>
+   </PARA>
+
+   <PARA>    En la vista Lista puede cambiar el orden de los archivos haciendo clic en los
+    encabezados de las columnas. Por ejemplo, para ordenar los archivos por su tipo haga
+    clic en el encabezado de la columna correspondiente a Tipo. Haga clic de nuevo en la 
+    misma columna para invertir el orden.
+   </PARA>
+
+   <PARA>    <LINK LINKEND="viewopen">Vea también Visualizando y Abriendo Archivos</LINK>.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="themes">   <TITLE>Cambiando Temas y Fondos</TITLE>
+
+   <PARA>    Puede personalizar la decoración de su ventana de Nautilus seleccionado
+    un tema y cambiando el color o la imagen del fondo de objetos especificos.
+   </PARA>
+
+   <PARA>    <GUIMENU>Seleccionando un Tema Nuevo</GUIMENU>
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú Editar y seleccione Temas de Nautilus.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione un tema. La apariencia cambia inmediatamente de este modo usted
+      puede ver como se ve el tema que ha seleccionado.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando termine haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    <GUIMENU>Cambiando Fondos</GUIMENU>
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Editar</GUIMENU> y seleccione la opción
+      <GUIMENUITEM>Fondos y Marcas</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la caja de dialogo de Fondos y Marcas seleccione
+      <GUIMENUITEM>Fondos o Colores</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Arrastre una muestra hacia una parte de la ventana de Nautilus. Por ejemplo,
+      cambie el color de la barra lateral arrastrando el color amarillo. Para restaurar
+      el color original arrastre la muestra que dice "Reset".
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando haya terminado haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Nota: La caja de dialogo de Fondos y Marcas también le deja arrastrar
+   <LINK LINKEND="custicon">marcas</LINK> para adosarlas individualmente a los iconos de
+    archivos y carpetas.
+   </PARA>
+
+   <PARA>    <GUIMENU>Agregar y Quitar Fondos Personalizados</GUIMENU>
+   </PARA>
+
+   <PARA>    Si su nivel de usuario esta configurado como Intermedio o Avanzado puede
+    agregar y quitar fondos y colores a la opciones de personalización.
+   </PARA>
+
+   <PARA>    Cualquier archivo de imagen puede ser un Fondo. Para agregar un fondo a las
+    opciones de personalización:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Editar</GUIMENU> y seleccione <GUIMENUITEM>Fondos y Marcas</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la caja de dialogo Fondos y Marcas seleccione <GUIMENUITEM>Fondos</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Agregar un fondo</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Ubique la imagen que quiere agregar al conjutno de fondos.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione el archivo de imagen y luego haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+      La imagen es agregada como una nueva muestra.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Para agregar un color nuevo a las opciones de color de fondo:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Editar</GUIMENU> y seleccione la opción 
+     <GUIMENUITEM>Fondos y Marcas</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la caja de dialogo de Fondos y Marcas seleccione <GUIMENUITEM>Colores</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Agregar un Color</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En el circulo de color haga clic sobre el color que desea usar y para terminar haga clic en 
+      <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Escriba un nombre para el color y luego haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+      El color se ha agregado como una muestra nueva.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Para quitar colores o fondos personalizados de un conjunto de muestras de fondos y colores:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Editar</GUIMENU> y seleccione <GUIMENUITEM>Fondos y Marcas</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la caja de dialogo de Fondos y Marcas seleccione
+      <GUIMENUITEM>Fondos o Colores</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Quitar un Fondo</GUIMENUITEM> o <GUIMENUITEM>Quitar un Color</GUIMENUITEM>
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cualquier fondo o color que haya agregado previamente son mostrados en la caja de dialogo.
+      Haga clic en el que quiera quitar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Repita los pasos 3 y 4 para cualquier color o fondo que quiera quitar.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM> cuando haya terminado.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Nota: Si quita un fondo o un color que ya habia aplicado como un fondo a un objeto el
+    objeto continua mostrando ese fondo o ese color.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="customicons">   <TITLE>Personalizando los íconos y sus descripciones</TITLE>
+
+   <PARA>    Los íconos aparecen con información en sus descripciones - normalmente el nombre del directorio y el
+    número de elementos de ese directorio y también el nombre y tamaño de los archivos. Si usted Agranda
+    la vista para ver los íconos de más cerca aparece más información.
+   </PARA>
+
+   <PARA>    <GUIMENU>Personalizando las descripciones de los íconos</GUIMENU>    
+   </PARA>
+
+   <PARA>    Puede personalizar la información que aparece debajo de los íconos, sin embargo
+    el nombre del archivo aparecerá siempre primero, puede especificar que otra información
+    mostrar y cambiar el orden de esa información.
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Editar</GUIMENU> y seleccione <GUIMENUITEM>Texto de los íconos</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en el primer botón y seleccione de la lista. La información
+      que elija será la primera cosa que aparecerá por debajo de un ícono luego
+      del nombre de archivo.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Repita los pasos 2 para el segundo y tercer botón
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cuando termine de personalizar las descripciones de los íconos cierre la caja de dialogo.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Nota: Para ver toda la descripción de un ícono debe agrandar la vista todo lo que pueda (haciendo clic en el símbolo + que
+    se encuentra en la barra de dirección).
+   </PARA>
+
+   <PARA>    <GUIMENU>Personalizando Iconos</GUIMENU>
+   </PARA>
+
+   <PARA>    Puede cambiar el ícono para una carpeta o archivo en particular dandole un ícono personalizado.
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic en el ícono del archivo o la carpeta.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione <GUIMENUITEM>Ver Propiedades</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la caja de dialogo Propiedades haga clic en <GUIMENUITEM>Seleccionar Icono Personal</GUIMENUITEM>
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Busque y seleccione la imagen que quiera usar como un ícono personal, luego haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Cierre la caja de dialogo Propiedades.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    También puede arrastrar un archivo de imagen hacia un ícono que quiera personalizar:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Si tiene una solapa (árbol,Notas,Histórico o Ayuda) abierta en la barra lateral
+      cierrela para que de ese modo pueda ver el ícono que quiera personalizar.
+      (Para cerrar una solapa haga clic sobre ella.)
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga doble clic en el elemento que quiera personalizar para que de ese modo su ícono sea
+      visible en la barra lateral.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Arrastre una imagen hacia el ícono. La imagen reemplazará al ícono.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <FIGURE ID="custicon">    <TITLE>Creando un ícono personalizado</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Captura de Pantalla de Icono Personalizado</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="figures/custicon">     </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <PARA>    Consejo: Puede trabajar con dos ventanas de Nautilus cuando
+    personalice un ícono . Abra el menú Archivo y seleccione
+    Ventana Nueva. Puede arrastrar una imagen desde una de las ventanas hacia
+    la otra ventana donde esta el ícono que quiere personalizar.
+   </PARA>
+
+   <PARA>    <GUIMENU>Agregando Marcas a los Iconos</GUIMENU>
+   </PARA>
+
+   <PARA>    Las Marcas le dejan caracterizar archivos individuales como Urgente, Favorito y demás.
+    Para agregar una marca a un ícono:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Asegurece que la carpeta o archivo al que quiere agregar una marca
+      esta visible en la ventana de Nautilus. Puede usar la vista lista o
+      la vista ícono.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Editar</GUIMENU> y seleccione la opción <GUIMENUITEM>Fondos y Marcas</GUIMENUITEM>. 
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la caja de dialogo de Fondos y Marcas seleccione <GUIMENUITEM>Marcas</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione una marca y arrastrela hacia el icono que quiere personalizar.
+      Para quitar marcas arrastre la marca que lleva el nombre "Erase" sobre el ícono.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.   
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Puede agregar al ícono tantas marcas como desee.
+   </PARA>
+
+   <TIP>    <TITLE>Intente esto:</TITLE>
+    <PARA>     Usar marcas para organizar sus archivos.
+    </PARA>
+   </TIP>
+
+   <PARA>    Agregue la marca Oh No! o Urgente a los archivos que necesitan atención inmediata, luego abra el menú
+    Ver y seleccione la opcion Ordenar Elementos/por Marcas. Los archivos con marcas se muestran
+    al principio en la vista ícono y primeros en la vista lista.
+   </PARA>
+
+   <PARA>    Si usa marcas puede también <LINK LINKEND="find">buscar</LINK> por marca.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="customdesktop">   <TITLE>Eligiendo un fondo de Escritorio</TITLE>
+
+   <PARA>    Puede cambiar los colores de su escritorio o darle un nuevo Fondo de Pantalla. Haga esto:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Ponga el puntero del mouse sobre un área libre del escritorio y haga clic con el botón derecho, luego
+      seleccione la opción Configurar Imagen de fondo del menú pop-up que aparece.
+      Entonces se abrirá el Centro de Control GNOME.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Para usar una imagen como fondo seleccione un elemento desde menú pop-up de Fondo o haga clic en 
+      <GUIMENUITEM>Buscar</GUIMENUITEM> para encontrar un archivo de imagen en su computadora.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Si esta usando una imagen como fondo seleccione el efecto que quiere 
+      <GUIMENUITEM>Mosaico</GUIMENUITEM>,<GUIMENUITEM>Centrado</GUIMENUITEM> o
+      <GUIMENUITEM>Redimensionado</GUIMENUITEM>. Haga clic en 
+      <GUIMENUITEM>Probar</GUIMENUITEM> para ver como se ven los diferentes estilos.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Para usar un color como fondo haga clic en la muestras de <GUIMENUITEM>Color Primario</GUIMENUITEM> y luego
+      en <GUIMENUITEM>Color Secundario</GUIMENUITEM> y seleccione colores desde la rueda de color.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Desde el menú pop-up de Color seleccione <GUIMENUITEM>Sólido</GUIMENUITEM>,
+      <GUIMENUITEM>Degradado Horizontal</GUIMENUITEM> o <GUIMENUITEM>Degradado Vertical</GUIMENUITEM>.
+      Luego haga clic en Probar para ver como se ven los diferentes estilos.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Asegurese de que la opción <GUIMENUITEM>Usar GNOME para definir el fondo</GUIMENUITEM> esta seleccionada.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>, luego cierre el Centro de Control de GNOME.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+ </SECT1>
+
+
+ 
+ <SECT1 ID="file">  <TITLE>Seleccionando Aplicaciones para Manejar Archivos</TITLE>
+
+  <PARA>   Esa sección explica como personalizar la forma en que los archivos son abiertos para ser vistos o editados.
+  </PARA>
+
+  <SECT2 ID="toc6">   <TITLE>Contenidos de esta sección:</TITLE>
+   
+   <SIMPLELIST>
+    <MEMBER>     <LINK LINKEND="handlers">¿Qué son los tipos MIME?</LINK>     
+    </MEMBER>
+
+    <MEMBER>     <LINK LINKEND="menu">Agregando y quitando Aplicaciones</LINK>     
+    </MEMBER>
+
+    <MEMBER>     <LINK LINKEND="defaulthandler">Cambiando la Aplicación por Omisión</LINK>     
+    </MEMBER>
+
+    <MEMBER>     <LINK LINKEND="configure">Configurando Aplicaciones Adicionales (Avanzado)</LINK>
+    </MEMBER>
+
+    <MEMBER>     <LINK LINKEND="mime">Agregando un tipo MIME nuevo (Avanzado)</LINK>
+    </MEMBER>
+
+   </SIMPLELIST>
+
+  </SECT2>
+
+  <SECT2 ID="handlers">   <TITLE>¿Qué son los tipos MIME?</TITLE>   
+
+   <PARA>    Los tipos MIME son una forma estandar para identificar archivos, de este modo estos
+    pueden ser transmitidos facilmente por Internet. MIME significa "Multipurpose Internet
+    Mail Extention." (Extención Multipropósito de Correo Internet). Cada tipo de archivo
+    es asignado a un tipo determinado MIME. Por ejemplo el tipo MIME para los archivos 
+    HTML es "text/html" y el tipo MIME para los archivos JPEG es "image/jpeg". El tipo MIME
+    de un archivo le dice a las aplicaciones de Internet como Navegadores y programas
+    de correo electrónico que tipo de archivo esta siendo intercambiado, como codificarlo para
+    transmitirlo y como decodificarlo al recibirlo.
+   </PARA>
+   
+   <PARA>    Al menos que haya especificado que una aplicación o un visualizador en particular debe abrir el archivo
+    este normalmente se abre automáticamente en una aplicación que sea la apropiada para ese archivo. 
+    Por ejemplo, un archivo JPEG normalmente se abrirá automáticamente en una aplicación
+    que maneje gráficos.
+   </PARA>
+
+   <PARA>    Usted puede elegir que aplicación o visualizador abrirá automáticamente
+    un tipo de archivo en particular. También puede configurar nuevas aplicaciones
+    para manejar este tipo de archivos en particular.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="menu">   <TITLE>Agregando y Quitando Aplicaciones</TITLE>
+
+   <PARA>    Cuando selecciona una archivo y luego elije la opción Abrir con... usted ve
+    una lista de aplicaciones que pueden abrir ese archivo en particular. También
+    tiene las opciones Otra Aplicación y Otro Visualizador, las cuales le dejan usar
+    una aplicación que no esta en la lista para ver o abrir ese archivo.
+   </PARA>
+
+   <PARA>    Usted puede modificar la lista de las aplicaciones que ve cuando elije la opción Abrir con:
+   </PARA>
+
+  <ORDEREDLIST>
+   <LISTITEM>    <PARA>     Haga clic en el ícono del archivo para el cual quiere cambiar la opciones de Abrir Con.
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione <MENUCHOICE><GUIMENU>Abrir con</GUIMENU> 
+     <GUISUBMENU>Otra aplicación</GUISUBMENU></MENUCHOICE>. Aparecerá una caja de dialogo con una lista
+     de todas las aplicaciones que actualmente pueden abrir ese tipo de archivo. Algunas aplicaciones
+     en la lista están marcadas "en el menú" para este tipo de archivo, otras estan marcadas como
+     "No en el menú."
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     Seleccione una aplicación en la lista y haga clic sobre <GUIMENUITEM>Modificar</GUIMENUITEM>.
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     Seleccione la opción que quiera. Puede elegir agregar o quitar la
+     aplicación desde el menú para este archivo en particular o para todos
+     los archivos del mismo tipo.
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>. (Si quiere abrir el archivo ahora haga clic en Elegir.)
+    </PARA>
+   </LISTITEM>
+
+  </ORDEREDLIST>
+
+  <PARA>   Para modificar la lista de los visualizadores que ve cuando selecciona Abrir Con 
+   siga los pasos 1 a 6 mostrados anteriormente pero seleccione Otro visualizador en vez de
+   Otra Aplicación en el paso 2. (Un visualizador le deja ver pero no editar un archivo.
+   Al abrir un archivo puede ahorrar tiempo y memoria del sistema.)
+
+  </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="defaulthandler">   <TITLE>Cambiando la Aplicación por Omisión</TITLE>
+
+   <PARA>    La aplicación o visualizador por omisión  abre un archivo automáticamente cuando
+    selecciona dicho archivo y elige Abrir desde el menú Archivo. Para especificar
+    la Aplicación por Omisión:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic en el ícono del archivo para el cual quiere cambiar la Aplicación por Omisión.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione <MENUCHOICE><GUIMENU>Abrir Con</GUIMENU> 
+      <GUISUBMENU>Otra Aplicación</GUISUBMENU></MENUCHOICE>
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione la aplicación que quiera usar por omisión y luego haga clic en <GUIMENUITEM>Modificar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione la opción que quiera. Puede elegir usar la aplicación como predeterminada para este
+      archivo en particular o para todos los archivos de su tipo.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>. (Si quiere abrir el archivo ahora haga clic en Elegir.)
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Para cambiar el visualizador por omisión siga los pasos del 1 al 6 que se
+    mencionaron anteriormente pero seleccione Otro Visualizador en vez de Otra Aplicación en 
+    en paso 2.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="configure">   <TITLE>Configurando Aplicaciones Adicionales (Avanzado)</TITLE>
+
+   <PARA>    La caja de dialogo Abrir Con Otro (descripta anteriormente) lista todas las
+    aplicaciones que Nautilus puede usar actualmente para abrir un archivo.
+    Su computadora puede tener aplicaciones adicionales que pueden abrir el
+    archivo pero pueden no estar en la lista. Puede configurar aplicaciones
+    adicionales para que ellas aparezcan en la lista.
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Haga clic para seleccionar el archivo que quiere configurar como nueva aplicación.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Abra el menú <GUIMENU>Archivo</GUIMENU> y seleccione las opciones
+      <MENUCHOICE><GUIMENU>Abrir Con</GUIMENU> <GUISUBMENU>Otra Aplicación</GUISUBMENU></MENUCHOICE>
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la sección Tipos de Archivos y Programas ha
+ga clic en en botón "Ir ahí".
+      Se abrirá el Panel de Control de GNOME en la sección de preferencias ee
+      Tipos de Archivos y Programas.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la lista, busque el tipo de archivo que se corresponde con el archivo con el cual esta trabajando.
+      Por ejemplo si esta configurando una aplicación adicional para un archivo de texto ubique la entrada
+      para archivos de texto en la lista. (Haciendo clic en las cabeceras de las columnas puede ordenar la información.)
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Una vez que haya encontrado el tipo de archivo haga clic sobre el para seleccionarlo.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la sección de Acción por Omisión haga clic sobre <GUIMENUITEM>Editar Lista</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic sobre <GUIMENUITEM>Agregar Aplicación</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Escriba el nombre de la aplicación y el comando que ejecuta la aplicación.
+      El comando es el mismo que escribiria si estuviese ejecutando la aplicación
+      desde la ventana de la terminal de GNOME.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en el botón <GUIMENUITEM>Aceptar</GUIMENUITEM> en cada una de las siguiente tres
+      ventanas de dialogo para aplicar los cambios.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Para editar el nombre o el comando de una aplicación siga los pasos
+    del 1 hasta el 9 pero haga clic en Editar Aplicación en vez de Agregar Aplicación
+    en el paso 7.
+   </PARA>
+
+   <PARA>    Para quitar una aplicación siga los pasos desde el 1 hasta el 9 pero haga clic
+    sobre Borrar Aplicación en vez de Agregar Aplicación en el paso 7.
+   </PARA>
+
+  </SECT2>
+
+  
+  <SECT2 ID="mime">   <TITLE>Agregando un Nuevo Tipo MIME (Avanzado)</TITLE>
+
+   <PARA>    Puede configurar aplicaciones por omisión para nuevos tipos de archivos que no
+    estan configurados actualmente en su sistema.
+   </PARA>
+
+   <PARA>    Primero, agregue el nuevo tipo de archivo:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Abra el <GUIMENU>Menú Principal de GNOME</GUIMENU> y seleccione 
+      <MENUCHOICE><GUIMENU>Programas</GUIMENU>
+      <GUISUBMENU>Configuración</GUISUBMENU> <GUIMENUITEM>Centro de Control GNOME</GUIMENUITEM></MENUCHOICE>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Seleccione <GUIMENUITEM>Tipos de Archivos y Programas</GUIMENUITEM> desde la columna
+      del lado izquierdo del Centro de Control GNOME.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Agregar nuevo tipo MIME</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la caja de dislogo de Agregar Tipo MIME ingrese el tipo MIME y una
+      descripción. Por ejemplo, si tiene una nueva clase de imagen del tipo "alf"
+      (para archivos alfie), debería ingresar "imagen/x-alf" como el tipo MIME
+      y "Imagen Alfie" como la descripción.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>. Recién entonces su nuevo tipo MIME se agregará a la lista.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Segundo, asociar un extensión de archivo:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Seleccione su nuevo tipo MIME en la lista y haga clic en 
+      <GUIMENUITEM>Cambiar Extenciones de Archivos</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Agregar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Escriba una extensión de archivo (por ejemplo, ".alf" para los archivos de imagen "alfie" usados en el ejemplo)
+      y luego haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+   <PARA>    Tercero, especifique un ícono:
+   </PARA>
+
+   <ORDEREDLIST>    <LISTITEM>     <PARA>      Seleccione su nuevo tipo MIME en la lista y luego haga clic sobre 
+      <GUIMENUITEM>Cambiar Icono</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+    <LISTITEM>     <PARA>      Seleccione un ícono y haga clic en 
+      <GUIMENUITEM>Aceptar</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+   </ORDEREDLIST>
+
+   <PARA>    Cuarto, defina la/s aplicacion/es que pueden abrir archivos de este tipo:
+   </PARA>
+
+   <ORDEREDLIST>
+    <LISTITEM>     <PARA>      Seleccione su nuevo tipo MIME en la lista.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      En la sección Acción por Omisión haga clic en <GUIMENUITEM>Editar Lista</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Agregar Aplicación</GUIMENUITEM>.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Escriba el nombre de la aplicación y el comando que ejecuta esa aplicación.
+      El comando es el mismo que escribiria si estuviese ejecutando la aplicación
+      desde la ventana de la terminal de GNOME.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      Haga clic en <GUIMENUITEM>Aceptar</GUIMENUITEM> en cada una de las siguientes tres
+      cajas de dialogo para aplicar los cambios.
+     </PARA>
+    </LISTITEM>
+
+   </ORDEREDLIST>
+
+  </SECT2>
+
+ </SECT1>
+
+
+ 
+ <SECT1 ID="services">  <TITLE>Servicios Eazel</TITLE>
+
+  <PARA>   Los servicios Eazel son herramientas basadas en Internet diseñadas para simplificar
+   la administración del sistema para usarios de Linux. Nautilus y los Servicios Eazel
+   trabajan juntos para hacer su vida lo más fácil posible.
+  </PARA>
+
+  <PARA>   Los servicios Eazel incluyen:
+  </PARA>
+
+  <ITEMIZEDLIST>
+   <LISTITEM>    <PARA>     Almacenamiento en línea Eazel, para resguardo de archivos.
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     Capacidad para compartición de archivos
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     Catalogo de Software Eazel para una instalación fácil de los programas.
+    </PARA>
+   </LISTITEM>
+
+   <LISTITEM>    <PARA>     El instalador Nautilus
+    </PARA>
+   </LISTITEM>
+
+  </ITEMIZEDLIST>
+
+  <PARA>   <GUIMENU>Registrandose con Eazel</GUIMENU>
+  
+  </PARA>
+
+  <PARA>   Cuando Nautilus fué ejecutado por primera vez se le preguntó si queria
+   registrarse para los Servicios Eazel. Si se registró en ese momento haga 
+   clic en el botón Servicios en la ventana de Nautilus e ingrese usando su
+   nombre de usuario y clave de acceso.
+  </PARA>
+
+  <PARA>   Si aún no se registró haga clic en el botón Servicios para ver la
+   pantalla de registración. Luego siga la instrucciones para registrarse.
+  </PARA>
+
+ </SECT1>
+
+ 
+ <SECT1 ID="shortcuts">  <TITLE>Atajos con el Teclado en Nautilus</TITLE>
+
+  <PARA>    Estos atajos con el teclado estan disponibles cuando tu estas trabajando
+    en la ventana de Nautilus o en el escritorio de Nautilus.
+  </PARA>
+
+  <INFORMALTABLE FRAME="all">   <TGROUP COLS="2">    <COLSPEC COLWIDTH="2in">&gt;
+    <TBODY>     <ROW>      <ENTRY><GUIMENU>Combinacin de Teclas</GUIMENU></ENTRY>
+      <ENTRY><GUIMENU>Resultado</GUIMENU></ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-B</ENTRY>
+      <ENTRY>Agregar al Bookmark</ENTRY>
+     </ROW>
+     <ROW> 
+      <ENTRY>Ctrl-X</ENTRY>
+      <ENTRY>Cortar Texto</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-C</ENTRY>
+      <ENTRY>Copiar Text</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-V</ENTRY>
+      <ENTRY>Pegar Text</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-A</ENTRY>
+      <ENTRY>Selecciona Todo (selecciona todo el texto, selecciona todos los archivos, etc.)</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-N</ENTRY>
+      <ENTRY>Nueva Carpeta</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-O</ENTRY>
+      <ENTRY>Abrir</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-W</ENTRY>
+      <ENTRY>Cerrar Ventana</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Shift-Ctrl-W</ENTRY>
+      <ENTRY>Cerrar Todas las Ventanas</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-I</ENTRY>
+      <ENTRY>Mostrar Propiedades</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-T</ENTRY>
+      <ENTRY>Mover a la Basura</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-D</ENTRY>
+      <ENTRY>Duplicar</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-L</ENTRY>
+      <ENTRY>Crear Enlace</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-F</ENTRY>
+      <ENTRY>Buscar</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Shift-Ctrl-F</ENTRY>
+      <ENTRY>Buscar en el Web</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-[</ENTRY>
+      <ENTRY>Volver</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-]</ENTRY>
+      <ENTRY>Avanzar</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-U</ENTRY>
+      <ENTRY>Subir un Nivel</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-H</ENTRY>
+      <ENTRY>Principal</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-R</ENTRY>
+      <ENTRY>Refrescar</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl-=</ENTRY>
+      <ENTRY>Acercar</ENTRY>
+     </ROW>
+     <ROW>      <ENTRY>Ctrl--</ENTRY>
+      <ENTRY>Alejar</ENTRY>
+     </ROW>
+    </TBODY>
+   </COLSPEC></TGROUP>
+  </INFORMALTABLE>
+
+ </SECT1>
+
+ 
+ <SECT1 ID="appendix2">  <TITLE>Marcas por omisión</TITLE>
+
+  <PARA>   Nautilus aplica marcas automáticamente a los íconos de archivos que
+   son de sólo lectura, y a íconos que son enlaces (alias) hacia otros
+   archivos o carpetas.
+  </PARA>
+
+  <PARA>   Las marcas por omisión cambian dependiendo de su tema. Las que se muestran
+   aquí pertenecen a dos temas de Nautilus, pero si utiliza un tema personalizado
+   sus marcas pueden verse diferentes.
+  </PARA>
+
+  <FIGURE ID="nowrite">   <TITLE>Sólo Lectura</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Captura de pantalla de la marca de sólo lectura</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/nowrite">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  <PARA>   Sólo lectura: Usted tiene permisos para ver este archivo o carpeta, pero
+   no puede modificarlos.
+  </PARA> 
+
+  <FIGURE ID="noread">   <TITLE>Sin permisos de lectura o escritura</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Capura de pantalla de marca sin permisos</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/noread">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  <PARA>   Usted no puede ver no modificar este archivo p esta carpeta.
+  </PARA>
+
+  <FIGURE ID="link">   <TITLE>Enlace</TITLE>
+   <SCREENSHOT>    <SCREENINFO>Captura de pantalla de la marca de enlace</SCREENINFO>
+    <GRAPHIC FORMAT="png" FILEREF="figures/link">    </GRAPHIC>
+   </SCREENSHOT>
+  </FIGURE>
+
+  <PARA>   Un ícono de enlace denota un archivo que no tiene contenido por sus propios medios, pero
+   apunta a un archivo o carpeta localizada en cualquier otro lugar de la computadora.
+   Haciendo clic en este ícono se abrirá la carpeta o el archivo al que se encuentre enlazado. 
+   (Un enlace similar a un acceso directo en Windows o un alias en el sistema operativo de Mac).
+  </PARA>
+
+ </SECT1>
+
+
+ 
+
+ <SECT1 ID="license">  <TITLE>Licencias</TITLE>
+
+  <SECT2 ID="softwarelic">   <TITLE>Licencia del Software Nautilus</TITLE>
+
+   <PARA>    Este programa es software libre, usted puede redistribuirlo y/o
+    modificarlo bajo los términos de la <ULINK TYPE="help" URL="gnome-help:gnugpl"> 
+    <CITETITLE>Licencia Pública General GNU</CITETITLE></ULINK> como
+    es publicada por la Free Software Foundation ya sea la versión 2 de la misma
+    o (como lo desee) cualquier versión posterior.
+    Junto con el programa se provee una copia de la licencia dentro del archivo
+    <FILENAME>COPYING-DOCS</FILENAME>.
+   </PARA>
+
+   <PARA>    Este programa es distribuido con la esperanza de que le sea de suma utilidad, pero
+    sin NINGUN TIPO DE GARANTIA, sin siquiera la garantía implicita de
+    MERCANTIBILIDAD o con la CUMPLIR UN PROPOSITO EN PARTICULAR. Vea la
+    <CITETITLE>GNU General Public License</CITETITLE> para mas detalles.
+   </PARA>
+
+  </SECT2>
+
+  <SECT2 ID="doclic">   <TITLE>Licencia del Manual del Usuario de Nautilus</TITLE>
+
+   <PARA>    Esta permitido copiar, distribuir y modificar este documento
+    bajo los términos de la <ULINK TYPE="help" URL="gnome-help:gnufdl"> <CITETITLE>GNU Free Documentation
+    License</CITETITLE></ULINK>, en su versión 1.1 o cualquier otra versión
+    posterior de la misma publicada por la Free Software Foundation sin
+    Secciones Invariantes, sin Textos en el Frente y sin Textos en la Parte Posterior.
+   </PARA>
+
+   <PARA>    Muchos de los nombres usados por compañías para distingir sus productos y
+    servicios son reclamados como marcas comerciales. Donde estos nombres aparezcan
+    en cualquier documentación de GNOME, y esas marcas comerciales hayan sido
+    advertidas por los miembros del Proyecto de Documentación GNOME esos nombres
+    han sido impresos en mayúsculas o capitalizados.
+   </PARA>
+
+  </SECT2>
+
+ </SECT1>
+
+ 
+
+ <SECT1 ID="translation">   <TITLE>Acerca de la traducción</TITLE>
+ 
+  <SECT2 ID="equipo">    <TITLE>Traductores de la versión 1.0</TITLE>    
+    
+    <PARA>     Esta es una lista de la gente que colaboró con la traducción de esta guía.
+    </PARA>
+    
+    <ITEMIZEDLIST>
+      <LISTITEM>        <PARA>          Ivan Avila [ivan@avila.org]
+        </PARA>
+      </LISTITEM> 
+
+      <LISTITEM>       <PARA>        Manuel de Vega Barreiro [barreiro@arrakis.es]
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Mauricio Araya P. [mauricio@eazel.com]
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        Miguel Guirao [thinkfreemx@yahoo.com.mx]
+       </PARA>
+      </LISTITEM>
+      
+      <LISTITEM>       <PARA>        Pablo Gonzalo del Campo [pablodc@bigfoot.com]
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>        René Espíndola [rene@univerciudad.com]
+       </PARA>
+      </LISTITEM>
+
+    </ITEMIZEDLIST>
+    
+  </SECT2>  
+
+  <SECT2 ID="infotrad">    <TITLE>Aviso</TITLE>    
+
+    <PARA>     Cuando leas la guía de Nautilus ten en cuenta que, aunque hemos intentado no descuidar
+     la calidad del trabajo, ninguno de nosotros es traductor profesional y esta es
+     una de las primeras versiones del documento. Así que si encuentras errores,
+     imprecisiones e incluso faltas de ortografía, no dudes
+     en enviarnos un mensaje con tus correcciones y comentarios.
+    </PARA>
+
+  </SECT2>
+  
+  <SECT2 ID="lictradd">    <TITLE>Licencia de la traducción al Castellano</TITLE>    
+
+    <PARA>     Esta traducción se distribuye bajo licencia GDPL con las siguientes partes invariantes:
+    </PARA>
+
+    <ITEMIZEDLIST>
+    <LISTITEM>      <PARA>      Portada del documento.
+      </PARA> 
+    </LISTITEM>
+
+    <LISTITEM>      <PARA>       Apéndice "Acerca de la traducción".
+      </PARA> 
+    </LISTITEM>
+
+    </ITEMIZEDLIST>
+    
+    <PARA>     Esta restricción no busca otra cosa que el respeto al trabajo de todos los voluntarios
+     que colaboraron en esta traducción.
+    </PARA>
+     
+    <PARA>     Si usas un extracto de este trabajo, deberías citar la fuente del trabajo e incluir un
+     enlace al trabajo completo.
+    </PARA>
+    
+  </SECT2>
+  
+  <SECT2 ID="thankgv">    <TITLE>Agradecimientos</TITLE>    
+
+    <PARA>    Una pequeña lista de agradecimientos:
+    </PARA>
+
+    <ITEMIZEDLIST>
+    <LISTITEM>     <PARA>      A todo el equipo de desarrollo de GNOME.
+     </PARA>
+    </LISTITEM> 
+
+    <LISTITEM>     <PARA>      A Linus y a todos los que hace posible Linux día a día.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      A Carlos Perelló Marín por todo su apoyo y su empeño en coordinar todo el trabajo de traducción de GNOME 1.4.
+     </PARA>
+    </LISTITEM>
+
+    <LISTITEM>     <PARA>      A Gabriela Galtero por todo su asesoramiento en castellano/inglés y toda su paciencia.
+     </PARA>
+    </LISTITEM>
+
+    </ITEMIZEDLIST> 
+
+  </SECT2>  
+
+ </SECT1> 
+ </CHAPTER>

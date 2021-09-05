@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<SECT2 ID="Battery-Charge-Monitor">   <TITLE>Aplique Monitor de la Carga de la Batería </TITLE> 
+
+   <PARA> 
+    El aplique <APPLICATION>Monitor de la Carga de la Batería</APPLICATION>,
+    tal como se observa en <LINK LINKEND="Battery-Charge-Monitor-fig1">Figura 1</LINK>, muestra el estado 
+    de la carga de la batería de su ordenador portátil. Para
+    incluir este aplique en el  <INTERFACE>Panel</INTERFACE>, 
+    pulse con el botón derecho sobre el <INTERFACE>Panel</INTERFACE> y elija
+    <MENUCHOICE>      <GUIMENU>Panel</GUIMENU>
+      <GUISUBMENU>Añadir al panel</GUISUBMENU>
+      <GUISUBMENU>Aplique</GUISUBMENU>
+      <GUISUBMENU>Monitores</GUISUBMENU>
+      <GUIMENUITEM>Monitor de la Carga de la Batería</GUIMENUITEM>
+    </MENUCHOICE>.
+  </PARA>
+  
+   <NOTE>    <PARA>     Para que el <APPLICATION>Monitor de la Carga de la Batería</APPLICATION>
+     funcione adecuadamente, su ordenador debe estar configurado para
+     admitir la <SYSTEMITEM>Gestión Avanzada de Energía</SYSTEMITEM>.
+    </PARA>
+   </NOTE>
+
+   <FIGURE ID="Battery-Charge-Monitor-fig1">    <TITLE>Monitor de la Carga de la Batería</TITLE>
+    <SCREENSHOT>     <SCREENINFO>Monitor de la Carga de la Batería</SCREENINFO>
+     <GRAPHIC FORMAT="png" FILEREF="battery-applet-ac-offline-25-20" SRCCREDIT="James Cope">    </GRAPHIC>
+    </SCREENSHOT>
+   </FIGURE>
+
+   <SECT3 ID="Battery-Charge-Monitor-usage">    <TITLE>Utilización</TITLE>
+    <PARA>     El <APPLICATION>Monitor de la Carga de la Batería</APPLICATION> sencillamente
+     se localiza en su panel siguiendo el estado de la batería de su ordenador. Pulsando
+     el botón <MOUSEBUTTON>izquierdo</MOUSEBUTTON> sobre el aplique podrá conmutar entre
+     las vistas lectura y gráfica, tal y como se explica en las secciones respectivas
+     <LINK LINKEND="Battery-Charge-Monitor-Readout-sec">Vista Lectura</LINK> 
+     y <LINK LINKEND="Battery-Charge-Monitor-Graph-sec">Vista Gráfica</LINK> .
+
+    </PARA>
+
+    <SECT4 ID="Battery-Charge-Monitor-Readout-sec">     <TITLE>Vista Lectura</TITLE>
+     <PARA>      La Vista Lectura, el modo por omisión de la vista, muestra el estado
+      actual de la batería en forma de icono y texto. En este modo en el
+      <APPLICATION>Monitor de la Carga de la Batería</APPLICATION>  aparecerá
+      la siguiente información:
+     </PARA>
+
+     <VARIABLELIST>      <VARLISTENTRY>       <TERM><EMPHASIS>Icono Batería</EMPHASIS></TERM>
+       <LISTITEM>	<PARA>	 La representación iconográfica de la batería en la parte izquierda del aplique, 
+	 muestra cuánto de llena está actualmente su batería. La superficie coloreada de
+	 la batería representa la cantidad de carga restante en su batería,  
+	 el límite superior representa la carga del 100% .
+	</PARA>
+	
+	<PARA>	 El color de la batería cambia cuando la carga cae por debajo del umbral
+	 actual de <GUILABEL>Umbral de Carga Baja</GUILABEL> (ver
+         <LINK LINKEND="Battery-Charge-Monitor-properties-general">Propiedades  
+	 Generales</LINK>). Los colores por omisión son verde si la batería está normal
+	 y rojo cuando está por debajo del <GUILABEL>Umbral de Carga Baja</GUILABEL> .
+        </PARA>
+
+	<PARA>	 Cuando su ordenador está conectado a una fuente de corriente, aparece un 
+	 pequeño rayo en la representación de la batería indicando que la batería
+	 está conectada al suministro eléctrico y se está cargando. Se puede ver
+	 un ejemplo de esto en la  <LINK LINKEND="Battery-Charge-Monitor-fig2">	 Figura 2</LINK>. Puede configurar la batería para cambiar el color cuando
+	 está o no conectada a la alimentación eléctrica, véase
+         <LINK LINKEND="Battery-Charge-Monitor-properties-readout">	 Propiedades  de Lectura</LINK> para más detalles.
+        </PARA>
+      
+	<FIGURE ID="Battery-Charge-Monitor-fig2">         <TITLE>Monitor de la Carga de la Batería con la alimentación eléctrica conectada
+	 </TITLE>
+         <SCREENSHOT>	  <SCREENINFO>Monitor de la Carga de la Batería</SCREENINFO>
+	  <GRAPHIC FORMAT="png" FILEREF="battery-applet-ac-online-25-20" SRCCREDIT="James Cope">          </GRAPHIC>
+         </SCREENSHOT>
+	</FIGURE>
+
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM><EMPHASIS>Porcentaje Restante</EMPHASIS></TERM>
+       <LISTITEM>	<PARA>	 El porcentaje que se lee en la parte superior del aplique representa cual es la 
+	 carga actual de la batería de su ordenador.
+        </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+
+      <VARLISTENTRY>       <TERM><EMPHASIS>Tiempo Restante</EMPHASIS></TERM>
+       <LISTITEM>       <PARA>       El tiempo restante de batería aparece en la esquina inferior derecha del aplique.
+       Este tiempo está indicado en horas y minutos.
+
+
+
+       </PARA>
+       </LISTITEM>
+      </VARLISTENTRY>
+     </VARIABLELIST>
+    </SECT4>
+    
+    <SECT4 ID="Battery-Charge-Monitor-Graph-sec">     <TITLE>Vista Gráfica</TITLE>
+     <PARA>      La vista gráfica muestra el porcentaje de carga restante en su batería
+      en forma de gráfica móvil. El eje horizontal representa el tiempo y el vertical
+      el porcentaje de carga con el 100 de carga en la superior. Por omisión
+      la gráfica es verde cuando su ordenador se conecta a la alimentación eléctrica
+      y azul en otro caso. La gráfica también cambia de color cuando la carga cae por
+      debajo del <GUILABEL>Umbral de Carga Baja</GUILABEL> (véase <LINK LINKEND="Battery-Charge-Monitor-properties-general">Propiedades  Generales</LINK>)
+      en ese caso el color por omisión es el rojo.
+  
+
+     </PARA>
+
+     <FIGURE>      <TITLE>Monitor de Carga de Batería en el Modo Gráfico </TITLE>
+       <SCREENSHOT>        <SCREENINFO> Monitor de Carga de Batería en el Modo Gráfico </SCREENINFO>
+        <GRAPHIC FORMAT="png" FILEREF="battery-applet-graph" SRCCREDIT="James Cope">        </GRAPHIC>
+       </SCREENSHOT>
+      </FIGURE>
+    </SECT4>
+   </SECT3>
+
+   <SECT3 ID="Battery-Charge-Monitor-right-click">    <TITLE>Elementos del Menú Emergente del Botón-Derecho</TITLE>
+    <PARA> 
+     Además de los elementos del menú estándar, el menú emergente del botón derecho posee
+     los siguientes elementos:    
+     <ITEMIZEDLIST> 	
+      <LISTITEM>       <PARA>        <GUIMENUITEM>Propiedades...</GUIMENUITEM>  Este menú abre el diálogo
+        <INTERFACE>Propiedades</INTERFACE>  (véase
+        <LINK LINKEND="Battery-Charge-Monitor-properties">Propiedades</LINK>) 
+	 le permite personalizar la apariencia y comportamiento de este aplique.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </PARA>
+   </SECT3>
+
+   <SECT3 ID="Battery-Charge-Monitor-properties">    <TITLE>Propiedades</TITLE>
+    <PARA>	
+     Puede configurar el aplique <APPLICATION>Monitor de la Carga de la Batería</APPLICATION>
+     pulsando sobre el botón derecho del aplique y eligiendo el elemento de menú <GUIMENUITEM>Propiedades...
+     </GUIMENUITEM>. Se abrirá el diálogo <INTERFACE>Propiedades</INTERFACE>, con cuatro grupos de
+     elementos configurables dispuestos en las siguientes páginas:
+
+   
+     <LINK LINKEND="Battery-Charge-Monitor-properties-general">General</LINK>,
+     <LINK LINKEND="Battery-Charge-Monitor-properties-readout">Lectura</LINK>,
+     <LINK LINKEND="Battery-Charge-Monitor-properties-graph">Gráfica</LINK> y
+      <LINK LINKEND="Battery-Charge-Monitor-properties-messages">Mensajes de Carga de Batería
+       </LINK>.
+    </PARA>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-general">     <TITLE>Propiedades  Generales</TITLE>
+ 
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig1">      <TITLE>Propiedades del Diálogo  General</TITLE>
+      <SCREENSHOT>       <SCREENINFO>Propiedades del Diálogo   General</SCREENINFO> 
+       <GRAPHIC FORMAT="png" FILEREF="battery-applet-properties-general" SRCCREDIT="James Cope">        </GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>        <GUILABEL>Seguir el Tamaño del Panel</GUILABEL>  le indica al
+	<APPLICATION>Monitor de la Carga del Batería</APPLICATION> que cambie su tamaño
+	cuando lo haga el panel. Por omisión aparece seleccionado. Para que los elementos
+	 <GUILABEL>Alto de Aplique </GUILABEL> y
+	<GUILABEL>Ancho de Aplique </GUILABEL> tengan efecto, la opción anterior
+        no debe estar seleccionada. 
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Alto de Aplique   Ancho de Aplique</GUILABEL> 
+	Estos dos botones "spin" le permiten indicar exactamente las dimensiones del
+	<APPLICATION>Monitor de la Carga de la Batería</APPLICATION> en pixels. Para que
+	éstos tengan efecto <GUILABEL>Seguir el Tamaño del Panel</GUILABEL> no debe estar 
+	seleccionado. Los valores por omisión son, para ambos, 48.
+
+       </PARA>
+
+       <NOTE>	<PARA>	 Fijando estos valores muy pequeños (por debajo de 28 pixels) hará que
+	 no se muestre el icono batería por la falta de espacio.      
+        </PARA>
+       </NOTE>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	El <GUILABEL>Intervalo de Actualización</GUILABEL>  indica la periodicidad
+	de los refrescos de la información mostrada por el <APPLICATION>Monitor de Carga 
+	de la Batería</APPLICATION>. Por omisión se toma dos segundos.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	El <GUILABEL>Umbral de Carga Baja </GUILABEL>  es un valor porcentual
+	de carga de la batería tal que es utilizado por el <APPLICATION>Monitor de Carga 
+	de la Batería</APPLICATION> para, opcionalmente,  mostrar un mensaje de alerta,
+        en ese caso considera que le queda poca energía a la batería. Esta información se 
+	utiliza, por ejemplo, para decidir cuando se ha de cambiar el color del icono batería de 
+	la Vista Lectura. El valor por omisión es 25.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>	 
+       <PARA>	<GUILABEL>Modo Aplique</GUILABEL>  las dos cajas de chequeo
+	<GUIBUTTON>Lectura</GUIBUTTON> y
+	<GUIBUTTON>Gráfica</GUIBUTTON> son la otra forma de cambiar entre
+	<LINK LINKEND="Battery-Charge-Monitor-Readout-sec">	Vista Lectura</LINK> y <LINK LINKEND="Battery-Charge-Monitor-Graph-sec">	Vista Gráfica </LINK>.
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-readout">     <TITLE>Propiedades  Lectura </TITLE>
+     
+     <PARA>      Los elementos de esta pestaña sólo actúan sobre el <APPLICATION>Monitor de Carga de
+      la Batería </APPLICATION> cuando está en modo 
+      <LINK LINKEND="Battery-Charge-Monitor-Readout-sec"> Vista Lectura</LINK>.
+     </PARA>
+
+     <PARA> 
+      Todos los rectángulos coloreados de esta pestaña se pueden pulsar con el 
+      botón <MOUSEBUTTON>izquierdo</MOUSEBUTTON> del ratón, de esa forma aparecerá
+      la rueda de colores de GNOME. Esto le permitirá seleccionar los colores que 
+      prefiera además de los predeterminados.
+      
+     </PARA>
+
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig2">      <TITLE>Propiedades del Diálogo  Lectura </TITLE>
+      <SCREENSHOT>       <SCREENINFO>Propiedades del Diálogo   Lectura </SCREENINFO>
+       <GRAPHIC FORMAT="png" FILEREF="battery-applet-properties-readout" SRCCREDIT="James   Cope"></GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+	
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	<GUILABEL>Color Batería Conectada (AC-On)</GUILABEL>  indica el 
+	color del icono batería en la vista Lectura cuando su ordenador está conectado
+	a la alimentación AC. El color por omisión es el verde.
+       </PARA>
+      </LISTITEM> 
+
+      <LISTITEM>       <PARA>	<GUILABEL>Color Batería Desconectada (AC-Off)</GUILABEL>  indica el
+	color del icono batería en la vista Lectura cuando su ordenador no está 
+	conectado a la alimentación AC. El valor por omisión es verde.
+       </PARA>
+      </LISTITEM>
+
+
+      <LISTITEM>       <PARA>	<GUILABEL>Color de Batería Baja </GUILABEL>   indica el color 
+	del icono batería en la vista Lectura cuando el porcentaje de carga 
+        cae por debajo del <GUILABEL>Umbral de Carga Baja</GUILABEL> 
+        (véase <LINK LINKEND="Battery-Charge-Monitor-properties-general">Propiedades 
+	 Generales</LINK>). El valor por omisión es rojo. 
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-graph">     <TITLE>Propiedades  Gráfica</TITLE>
+     <PARA>      Los elementos de esta pestaña sólo afectan al <APPLICATION>Monitor de la Carga
+      de la Batería</APPLICATION> cuando está en modo <LINK LINKEND="Battery-Charge-Monitor-Graph-sec">      Vista Gráfica</LINK>.
+
+       </PARA>
+
+     <PARA> Todos los  rectángulos coloreados en esta pestaña se pueden pulsador con el 
+      botón <MOUSEBUTTON>izquierdo</MOUSEBUTTON> así aparecerá la rueda de selección 
+      de color de GNOME. De esa forma podrá seleccionar los colores que prefiera además de los
+      predeterminados.
+
+     </PARA>
+
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig3">      <TITLE>Propiedades del Diálogo   Gráfica </TITLE>
+      <SCREENSHOT>       <SCREENINFO>Propiedades del Diálogo   Gráfica </SCREENINFO>
+       <GRAPHIC FORMAT="png" FILEREF="battery-applet-properties-graph" SRCCREDIT="James   Cope"></GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+
+	
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	<GUILABEL>Color de Batería conectada (AC-On)</GUILABEL> 
+	indica el color del gráfico cuando su ordenador está conectado
+        a la alimentación AC. El valor por omisión es verde.
+       </PARA>
+      </LISTITEM>
+	 
+      <LISTITEM>       <PARA>	<GUILABEL>Color de Batería desconectada (AC-Off)</GUILABEL> : indica 
+        el color de la gráfica cuando su ordenador no está conectado a la alimentación
+        AC. El valor por omisión es azul.
+       
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Color de Gráfica de Batería Baja </GUILABEL>  indica
+        el color de la gráfica cuando el porcentaje de carga cae por debajo del
+       <GUILABEL>Umbral de Carga Baja</GUILABEL>. El valor por defecto es rojo.
+
+       </PARA>
+      </LISTITEM>
+      <LISTITEM>       <PARA>	<GUILABEL>Color de divisiones del Gráfico</GUILABEL>  indica el color
+        de las líneas de división de la gráfica, marca los puntos de carga
+        25 50 y 75 . El color por omisión es gris oscuro.
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Dirección de la Gráfica </GUILABEL> 
+	indica en que dirección se moverá la gráfica contra el tiempo. La dirección por
+        defecto es <GUILABEL>Derecha a Izquierda</GUILABEL>.
+
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+
+    <SECT4 ID="Battery-Charge-Monitor-properties-messages">     <TITLE>Mensajes de la  Carga de la Batería </TITLE>
+
+     <FIGURE ID="Battery-Charge-Monitor-properties-fig4">      <TITLE>Diálogo Propiedades   Mensajes de la Carga de la Batería</TITLE>
+      <SCREENSHOT>       <SCREENINFO>Diálogo Propiedades  Mensajes de la Carga de la Batería</SCREENINFO>
+  
+       <GRAPHIC FORMAT="png" FILEREF="battery-applet-properties-messages" SRCCREDIT="James   Cope"></GRAPHIC>
+      </SCREENSHOT>
+     </FIGURE>
+
+     <ITEMIZEDLIST>      <LISTITEM>       <PARA>	<GUILABEL>Alerta si la carga de la batería cae </GUILABEL>
+	 indica el porcentaje de carga para el cual el
+	<APPLICATION>Monitor de Carga de la Batería </APPLICATION> mostrará una
+        caja de diálogo cuando la batería estea baja. Esta alerta se mostrará únicamente
+        si se selecciona <GUILABEL>Habilitar Alterna de Batería Baja </GUILABEL>. 
+	El valor por omisión es 5. 
+
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Habilitar Alerta de Batería Baja </GUILABEL> 
+	indica si el <APPLICATION>Monitor de Carga de la Batería </APPLICATION>
+        debería mostrar una caja de diálogo cuando la carga de la batería ha caído por 
+        debajo del porcentaje de carga indicado en el elemento  <GUILABEL>Alerta si 
+	la carga de la batería cae</GUILABEL>. El valor por omisión es seleccionado.
+
+	
+       </PARA>
+      </LISTITEM>
+
+      <LISTITEM>       <PARA>	<GUILABEL>Habilitar la Notificación de Carga-Completa </GUILABEL> 
+	indica si el <APPLICATION>Monitor de la Carga de la Batería </APPLICATION> 
+	mostrará una caja de  diálogo cuando la batería ha alcanzado el porcentaje
+        del 100 de carga. El valor por defecto es no seleccionado.
+	
+       </PARA>
+      </LISTITEM>
+     </ITEMIZEDLIST>
+    </SECT4>
+   </SECT3>
+  
+   <SECT3 ID="Battery-Charge-Monitor-bugs">    <TITLE> Errores y Limitaciones Conocidas </TITLE>
+    <PARA>     Un problema es si arranca <APPLICATION>Monitor de la Carga de la Batería</APPLICATION>
+     en un ordenador que no tiene soporte de Gestión de Energía Avanzado.
+     De esa forma la caja  diálogo <GUILABEL>Alerta de Batería Baja</GUILABEL> 
+     mostrada esté equivocada.
+
+    </PARA>
+   </SECT3>
+
+</SECT2>
