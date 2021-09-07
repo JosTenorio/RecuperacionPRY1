@@ -3,12 +3,13 @@
 # Imports
 import re
 import sys
+import numpy as np
+from shlex import split
 from utils import open_file, load_directory_files, write_index
 from Structures.Collection import Collection
 from Structures.Posting import Posting
 from Structures.Term import Term
 from Structures.Document import Document
-from shlex import split
 from utils import load_directory_files, open_file, is_path, is_file, normalize_word
 
 # Package setup
@@ -72,7 +73,7 @@ def clean_xml(lines, stopwords, collection, doc_id):
         if word not in stopwords:
             collection.insert_term(word, doc_id)
             total_word_count += 1
-    collection.documents[str(doc_id)].size = total_word_count
+    collection.documents[doc_id].size = total_word_count
     if doc_id == 91:
         print(total_word_count)
     return
@@ -103,9 +104,24 @@ def start_indexing(line):
     collection = Collection(collection_path, stopwords_path)
     doc_id_counter = 1
     for document in documents:
-        collection.documents[str(doc_id_counter)] = Document(document)
+        collection.documents[doc_id_counter] = Document(document)
         clean_xml(open_file(document).read(), stopwords, collection, doc_id_counter)
         doc_id_counter += 1
     collection.size = len(collection.documents)
     collection.calculate_avr_size()
+    calc_vect_weight(collection)
     write_index(collection, target_path)
+
+def calc_vect_weight(collection):
+    collection_size = collection.size
+    for docid in collection.documents:
+        total_doc_weight = 0
+        for term in collection.dictionary:
+            term_struct = collection.dictionary[term]
+            term_struct.inv_frequency_vec = np.log(collection_size/len(term_struct.postings))
+            if docid in term_struct.postings:
+                weight = np.log2((1 + term_struct.postings[docid].frequency))*np.log2(collection_size/len(term_struct.postings))
+                term_struct.postings[docid].weight_vec = weight
+                total_doc_weight += np.square(weight)
+        norm = np.sqrt(total_doc_weight)
+        collection.documents[docid].norm = norm

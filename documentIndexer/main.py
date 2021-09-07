@@ -64,6 +64,6 @@ class Terminal(cmd.Cmd):
 
 if __name__ == '__main__':
     Terminal().cmdloop()
-    # Index test comand indizar D:\Development\RecuperacionPRY1\Archivos_de_prueba\xml-es D:\Development\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt D:\Development\RecuperacionPRY1\documentIndexer\stopWords
+    # Index test comand indizar 'D:\Development\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'D:\Development\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt' 'D:\Development\RecuperacionPRY1\documentIndexer\stopWords'
 
 # mostrar 'C:\Users\Personal\Desktop\RecuperacionPRY1\Archivos de prueba\xml-es' doc 'C:\Users\Personal\Desktop\RecuperacionPRY1\Archivos de prueba\xml-es'
