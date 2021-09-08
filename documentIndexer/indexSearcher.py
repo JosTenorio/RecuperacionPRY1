@@ -79,7 +79,6 @@ def query_index(line):
 
 
 def clean_query(query, stopwords):
-    
     clean_query = []
     for word in query:
         cleaned_word = normalize_word(word)
