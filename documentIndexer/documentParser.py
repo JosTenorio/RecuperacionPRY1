@@ -28,8 +28,6 @@ global_stopwords = ['a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde',
 # Start of functions
 
 
-
-
 # Argument validation
 def validate_arguments(line):
     try:
