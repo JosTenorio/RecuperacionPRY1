@@ -72,8 +72,6 @@ def clean_xml(lines, stopwords, collection, doc_id):
             collection.insert_term(word, doc_id)
             total_word_count += 1
     collection.documents[doc_id].size = total_word_count
-    if doc_id == 91:
-        print(total_word_count)
     return
 
 
@@ -107,8 +105,21 @@ def start_indexing(line):
         doc_id_counter += 1
     collection.size = len(collection.documents)
     collection.calculate_avr_size()
+    calc_inv_frequency(collection)
     calc_vect_weight(collection)
     write_index(collection, target_path)
+
+
+def calc_inv_frequency(collection):
+    for term in collection.dictionary:
+        term_struct = collection.dictionary[term]
+        term_struct.inv_frequency_vec = np.log(collection.size / len(term_struct.postings))
+        term_struct.inv_frequency_bm5 = np.log(collection.size - len(term_struct.postings.keys()) + 0.5 /
+                                   len(term_struct.postings.keys()) + 0.5)
+        print ()
+        if term_struct.inv_frequency_bm5 < 0:
+            print(term_struct.inv_frequency_bm5)
+
 
 def calc_vect_weight(collection):
     collection_size = collection.size
@@ -116,10 +127,11 @@ def calc_vect_weight(collection):
         total_doc_weight = 0
         for term in collection.dictionary:
             term_struct = collection.dictionary[term]
-            term_struct.inv_frequency_vec = np.log(collection_size/len(term_struct.postings))
             if docid in term_struct.postings:
-                weight = np.log2((1 + term_struct.postings[docid].frequency))*np.log2(collection_size/len(term_struct.postings))
+                weight = np.log2((1 + term_struct.postings[docid].frequency)) * np.log2(
+                    collection_size / len(term_struct.postings))
                 term_struct.postings[docid].weight_vec = weight
                 total_doc_weight += np.square(weight)
         norm = np.sqrt(total_doc_weight)
         collection.documents[docid].norm = norm
+
