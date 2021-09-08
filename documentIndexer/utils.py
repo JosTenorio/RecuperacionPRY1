@@ -2,7 +2,6 @@ import glob
 import re
 import sys
 import pickle
-
 # Package setup
 sys.path.insert(0, './Structures')
 
@@ -59,3 +58,14 @@ def load_index(location):
     index = pickle.load(f)
     f.close()
     return index
+
+def copy_file(content, target):
+    print(content)
+    f = open(target+"/stopwords.txt","w",encoding= "utf-8")
+    for line in content:
+        print(line)
+        f.write(line+" ")
+        
+    f.close()
+    return 
+# indizar 'D:\Development\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'D:\Development\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt' 'D:\Development\RecuperacionPRY1\documentIndexer\directorio     pruebas'

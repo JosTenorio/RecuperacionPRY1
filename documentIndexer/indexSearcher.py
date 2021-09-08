@@ -4,7 +4,8 @@
 import sys
 from shlex import split
 from os import path
-from utils import load_index, normalize_word
+from utils import load_index, normalize_word, open_file
+from documentParser import load_stopwords
 
 # Package setup
 sys.path.insert(0, './Structures')
@@ -61,7 +62,29 @@ def query_index(line):
         print("Error: El directorio de indíce especificado no contiene ningún índice o este no se puede acceder,"
               " por favor reintentar")
         return
+    try:
+        stopwords_path =params["index_path"]+"/"+collection.stopwords
+        stopwords_file = open_file(stopwords_path)
+        stopwords = load_stopwords(stopwords_file.read())
+    except FileNotFoundError:
+        print("Error: El directorio de indíce especificado no contiene ningún índice o este no se puede acceder,"
+              " por favor reintentar")
+        return
+    query = clean_query(params["query"],stopwords)
+    # Aquí va limpiar query con stopwords
     if params["type"] == "vec":
         vector_query(collection, params["query"])
     else:
         bm25_query(collection, params["query"])
+
+
+def clean_query(query, stopwords):
+    
+    clean_query = []
+    for word in query:
+        cleaned_word = normalize_word(word)
+        if cleaned_word not in stopwords:
+            clean_query.append(cleaned_word)
+    print(clean_query)
+    return clean_query
+

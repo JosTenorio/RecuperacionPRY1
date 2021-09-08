@@ -5,7 +5,7 @@ import re
 import sys
 import numpy as np
 from shlex import split
-from utils import open_file, load_directory_files, write_index
+from utils import open_file, load_directory_files, write_index, copy_file
 from Structures.Collection import Collection
 from Structures.Posting import Posting
 from Structures.Term import Term
@@ -79,6 +79,7 @@ def clean_xml(lines, stopwords, collection, doc_id):
 def load_stopwords(lines_stop):
     stopwords = re.findall(word_pattern_no_symbols, lines_stop)
     for stopword in stopwords:
+        stopword = normalize_word(stopword)
         if stopword not in global_stopwords:
             global_stopwords.append(stopword)
     return global_stopwords
@@ -90,14 +91,23 @@ def start_indexing(line):
     error, collection_path, stopwords_path, target_path = args
     if error:
         return
+
     path = stopwords_path
-    file = open_file(path)
-    stopwords = load_stopwords(file.read())
+    try:
+        file_stopwords = open_file(path)
+        stopwords = load_stopwords(file_stopwords.read())
+        copy_file(stopwords,target_path)
+    except FileNotFoundError:
+        print("Error: Este archivo archivo no se puede acceder,"
+              " por favor reintentar")
+        return
+
+
     documents = load_directory_files(collection_path)
     if len(documents) == 0:
         print("No existen documentos para indexar en este directorio")
         return
-    collection = Collection(collection_path, stopwords_path)
+    collection = Collection(collection_path, "stopwords.txt")
     doc_id_counter = 1
     for document in documents:
         collection.documents[doc_id_counter] = Document(document)
@@ -113,10 +123,9 @@ def start_indexing(line):
 def calc_inv_frequency(collection):
     for term in collection.dictionary:
         term_struct = collection.dictionary[term]
-        term_struct.inv_frequency_vec = np.log(collection.size / len(term_struct.postings))
-        term_struct.inv_frequency_bm5 = np.log(collection.size - len(term_struct.postings.keys()) + 0.5 /
+        term_struct.inv_frequency_vec = np.log2(collection.size / len(term_struct.postings))
+        term_struct.inv_frequency_bm5 = np.log2(collection.size - len(term_struct.postings.keys()) + 0.5 /
                                    len(term_struct.postings.keys()) + 0.5)
-        print ()
         if term_struct.inv_frequency_bm5 < 0:
             print(term_struct.inv_frequency_bm5)
 
