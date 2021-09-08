@@ -42,7 +42,7 @@ def open_file(path):
         file = open(path)
         return file
     except FileNotFoundError:
-        return 0
+        raise FileNotFoundError("No se encontró el archivo")
 
 
 def load_directory_files(path):
