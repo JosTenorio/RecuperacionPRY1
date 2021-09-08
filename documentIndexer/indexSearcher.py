@@ -66,9 +66,10 @@ def query_index(line):
         stopwords_path =params["index_path"]+"/"+collection.stopwords
         stopwords_file = open_file(stopwords_path)
         stopwords = load_stopwords(stopwords_file.read())
+        
     except FileNotFoundError:
-        print("Error: El directorio de indíce especificado no contiene ningún índice o este no se puede acceder,"
-              " por favor reintentar")
+        print("Error: El directorio de indíce especificado no contiene ningún archivo de stopwords,"
+        "por favor colocar de nuevo el archivo o reindexar la colección")
         return
     query = clean_query(params["query"],stopwords)
     # Aquí va limpiar query con stopwords
