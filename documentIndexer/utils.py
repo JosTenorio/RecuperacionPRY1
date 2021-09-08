@@ -63,7 +63,6 @@ def copy_file(content, target):
     print(content)
     f = open(target+"/stopwords.txt","w",encoding= "utf-8")
     for line in content:
-        print(line)
         f.write(line+" ")
         
     f.close()

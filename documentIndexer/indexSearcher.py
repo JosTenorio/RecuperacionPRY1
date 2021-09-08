@@ -85,6 +85,5 @@ def clean_query(query, stopwords):
         cleaned_word = normalize_word(word)
         if cleaned_word not in stopwords:
             clean_query.append(cleaned_word)
-    print(clean_query)
     return clean_query
 
