@@ -4,9 +4,7 @@
 import re
 import sys
 from shlex import split
-
 import numpy as np
-
 from Structures.Collection import Collection
 from Structures.Document import Document
 from utils import load_directory_files, open_file, is_path, is_file, normalize_word

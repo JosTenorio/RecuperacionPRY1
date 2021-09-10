@@ -46,11 +46,12 @@ def inspect_doc(collection, doc_path):
 
 # Term inspection and display
 def inspect_term(collection, term_spelling):
-    if term_spelling not in collection.dictionary:
+    normalized_term = normalize_word(term_spelling)
+    if normalized_term not in collection.dictionary:
         print("No se encontró la entrada de la colección correspondiente al término dado, por favor reintentar")
         return
-    term = collection.dictionary[normalize_word(term_spelling)]
-    print("Detalles del término '" + term_spelling + "': \n\nDocumentos en los que aparece (ni): " +
+    term = collection.dictionary[normalize_word(normalized_term)]
+    print("Detalles del término '" + normalized_term + "': \n\nDocumentos en los que aparece (ni): " +
           str(len(term.postings.keys())) + "\nIDF vectorial: " + str(term.inv_frequency_vec) + "\nIDF BM25: "
           + str(term.inv_frequency_bm5))
     print("Postings (id del documento, frecuencia en el documento, peso vectorial): ")

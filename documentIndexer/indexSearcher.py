@@ -6,9 +6,15 @@ from shlex import split
 from os import path
 from utils import load_index, normalize_word, open_file
 from documentParser import load_stopwords
+import operator
+import numpy as np
 
 # Package setup
 sys.path.insert(0, './Structures')
+
+# Global parameters for bm25 search
+k = 1.2
+b = 0.75
 
 
 # Parameter validation
@@ -41,11 +47,24 @@ def validate_parameters(line):
 
 
 def vector_query(collection, query):
-    print("Búsqueda vectorial")
+    print("El método que hará mi cafetalero favorito")
 
 
 def bm25_query(collection, query):
-    print("Búsqueda vectorial")
+    similitudes = {}
+    for word in query:
+        if word in collection.dictionary:
+            term = collection.dictionary[word]
+            for posting in term.postings.values():
+                doc = collection.documents[posting.doc_id]
+                similitude = term.inv_frequency_bm5 * ((posting.frequency * (k + 1)) /
+                                                       (posting.frequency + k * (
+                                                                   1 - b + b * (doc.size / collection.avr_length))))
+                if posting.doc_id not in similitudes:
+                    similitudes[posting.doc_id] = similitude
+                else:
+                    similitudes[posting.doc_id] += similitude
+    return similitudes
 
 
 # Entry point function
@@ -55,7 +74,6 @@ def query_index(line):
     except ValueError as exc:
         print(exc.args[0])
         return
-    print(params)
     try:
         collection = load_index(params["index_path"])
     except FileNotFoundError:
@@ -63,27 +81,27 @@ def query_index(line):
               " por favor reintentar")
         return
     try:
-        stopwords_path =params["index_path"]+"/"+collection.stopwords
+        stopwords_path = params["index_path"] + "/" + collection.stopwords
         stopwords_file = open_file(stopwords_path)
         stopwords = load_stopwords(stopwords_file.read())
-        
+
     except FileNotFoundError:
         print("Error: El directorio de indíce especificado no contiene ningún archivo de stopwords,"
-        "por favor colocar de nuevo el archivo o reindexar la colección")
+              "por favor colocar de nuevo el archivo o reindexar la colección")
         return
-    query = clean_query(params["query"],stopwords)
-    # Aquí va limpiar query con stopwords
+    query = clean_query(params["query"], stopwords)
+    similitudes = {}
     if params["type"] == "vec":
-        vector_query(collection, params["query"])
+        similitudes = vector_query(collection, query)
     else:
-        bm25_query(collection, params["query"])
+        similitudes = bm25_query(collection, query)
+    ranking = sorted(similitudes.items(), key=operator.itemgetter(1), reverse=True)
 
 
 def clean_query(query, stopwords):
-    clean_query = []
+    cleaned_query = []
     for word in query:
         cleaned_word = normalize_word(word)
         if cleaned_word not in stopwords:
-            clean_query.append(cleaned_word)
-    return clean_query
-
+            cleaned_query.append(cleaned_word)
+    return cleaned_query
