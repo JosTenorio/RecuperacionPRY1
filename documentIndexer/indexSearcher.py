@@ -4,6 +4,11 @@
 import sys
 from shlex import split
 from os import path
+from collections import Counter
+from Structures.Term_query import Term_query
+
+import numpy as np
+
 from utils import load_index, normalize_word, open_file
 from documentParser import load_stopwords
 import operator
@@ -45,9 +50,21 @@ def validate_parameters(line):
     return {"index_path": params[0], "type": params[1], "result_prefix": params[2], "num_docs": num_docs,
             "query": query}
 
-
+# Function in charge of calculating the similitude of every document based in a query
 def vector_query(collection, query):
-    print("El método que hará mi cafetalero favorito")
+    similitudes = {}
+    query_dict, query_norm = calc_query_weight(query,collection)
+    for word in query_dict:
+        if word in collection.dictionary:
+            term = collection.dictionary[word]
+            for posting in term.postings.values():
+                doc = collection.documents[posting.doc_id]
+                similitude = (query_dict[word].weight * posting.weight_vec)/(doc.norm*query_norm)
+                if posting.doc_id not in similitudes:
+                    similitudes[posting.doc_id] = similitude
+                else:
+                    similitudes[posting.doc_id] += similitude
+    return similitudes
 
 
 def bm25_query(collection, query):
@@ -97,11 +114,26 @@ def query_index(line):
         similitudes = bm25_query(collection, query)
     ranking = sorted(similitudes.items(), key=operator.itemgetter(1), reverse=True)
 
-
+# Function that cleans and normalizes the input given in a query
 def clean_query(query, stopwords):
     cleaned_query = []
     for word in query:
         cleaned_word = normalize_word(word)
         if cleaned_word not in stopwords:
+            clean_query.append(cleaned_word)
+    return clean_query
+# Function that calculates the weight of every term in a query
+def calc_query_weight(query,collection):
+    query = Counter(query)
+    sum_for_norm = 0
+    query_dictionary = {}
+    for term in query.keys():
+        if term in collection.dictionary:
+            weight = np.log2(1+query[term])*np.log2(collection.size/len(collection.dictionary[term].postings))
+            sum_for_norm += np.square(weight)
+            term_info = Term_query(term, query[term], weight)
+            query_dictionary[term] = term_info
+    norm = np.sqrt(sum_for_norm)
+    return [query_dictionary, norm]
             cleaned_query.append(cleaned_word)
     return cleaned_query
