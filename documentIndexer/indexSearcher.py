@@ -62,10 +62,10 @@ def vector_query(collection, query):
                     similitudes[posting.doc_id] = similitude
                 else:
                     similitudes[posting.doc_id] += similitude
-    print(similitudes)
     return similitudes
 
 
+# Function that calculates the similitudes between a given query and all documents in the collection
 def bm25_query(collection, query):
     similitudes = {}
     for word in query:
@@ -80,7 +80,6 @@ def bm25_query(collection, query):
                     similitudes[posting.doc_id] = similitude
                 else:
                     similitudes[posting.doc_id] += similitude
-    print(similitudes)
     return similitudes
 
 
@@ -115,6 +114,7 @@ def query_index(line):
     write_ranking(ranking, collection, params["query"], params["result_prefix"], params["index_path"])
 
 
+# Function that saves a .esca file to the index directory with the ranking
 def write_ranking(ranking, collection, original_query, result_prefix, index_path):
     result_path = index_path + "/" + result_prefix + ".esca"
     query = " ".join(original_query)
@@ -133,8 +133,9 @@ def write_ranking(ranking, collection, original_query, result_prefix, index_path
     except FileNotFoundError:
         print("Error: No ha sido posible guardar el resultado de la búsqueda en el directorio de índice dado")
 
-#indizar 'C:\Users\JOS\Desktop\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\directorio pruebas'
-#buscar 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\directorio pruebas' bm25 query11 25 impuestos y depreciación
+
+# indizar 'C:\Users\JOS\Desktop\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\directorio pruebas'
+# buscar 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\directorio pruebas' bm25 query11 25 impuestos y depreciación
 
 
 # Function that cleans and normalizes the input given in a query
