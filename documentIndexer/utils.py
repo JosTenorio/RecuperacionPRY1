@@ -72,3 +72,4 @@ def copy_file(content, target):
     f.close()
     return
     # indizar 'D:\Development\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'D:\Development\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt' 'D:\Development\RecuperacionPRY1\documentIndexer\directorio     pruebas'
+    #buscar 'D:\Development\RecuperacionPRY1\documentIndexer\directorio     pruebas'  vec index 10 cachodna depreciacion Depreciacion depreciacion
