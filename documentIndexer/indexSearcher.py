@@ -115,7 +115,6 @@ def query_index(line):
     ranking = sorted(similitudes.items(), key=operator.itemgetter(1), reverse=True)
 
     write_html_ranking(ranking,collection,params["query"],params["result_prefix"],params["num_docs"],params["index_path"])
-    print(ranking)
 
 # Function that cleans and normalizes the input given in a query
 def clean_query(query, stopwords):
@@ -215,7 +214,7 @@ def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_pa
                 <a href={doc_path}> <h3>{doc_path}</h3> </a>
                 </div>
             </div>
-            <div style="clear:left;margin-left:20px;width:70%">
+            <div style="clear:left;margin-left:40px;width:70%">
             <p>{doc_Text[:200]}</p>
             </div>
         </div>

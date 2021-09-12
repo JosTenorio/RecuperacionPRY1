@@ -77,4 +77,9 @@ def copy_file(content, target):
 # Function that receives an xml file and return the raw text without the tags
 def remove_tags(text):
     lines = re.sub(tag_pattern, "", text)
-    return lines
+    lines = lines.split("\n")
+    non_empty_lines = [line for line in lines if line.strip() != ""]
+    clean_text = ""
+    for line in non_empty_lines:
+      clean_text += line + "\n"
+    return clean_text
