@@ -207,6 +207,14 @@ def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_pa
                 </div>
             </div>
             <div>
+              <div class="ranking-box">
+                <h3>Id del documento:</h3>
+                </div>
+                <div class="query-box">
+                <h3>{result[0]}</h3>
+                </div>
+            </div>
+            <div>
                 <div class="ranking-box">
                 <h3>Directorio del documento:</h3>
                 </div>
