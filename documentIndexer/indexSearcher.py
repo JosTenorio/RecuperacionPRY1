@@ -109,10 +109,12 @@ def query_index(line):
     query = clean_query(params["query"], stopwords)
     similitudes = {}
     if params["type"] == "vec":
+        print("a")
         similitudes = vector_query(collection, query)
     else:
         similitudes = bm25_query(collection, query)
     ranking = sorted(similitudes.items(), key=operator.itemgetter(1), reverse=True)
+    print(ranking)
 
 # Function that cleans and normalizes the input given in a query
 def clean_query(query, stopwords):
@@ -120,8 +122,8 @@ def clean_query(query, stopwords):
     for word in query:
         cleaned_word = normalize_word(word)
         if cleaned_word not in stopwords:
-            clean_query.append(cleaned_word)
-    return clean_query
+            cleaned_query.append(cleaned_word)
+        return cleaned_query
 # Function that calculates the weight of every term in a query
 def calc_query_weight(query,collection):
     query = Counter(query)
@@ -135,5 +137,5 @@ def calc_query_weight(query,collection):
             query_dictionary[term] = term_info
     norm = np.sqrt(sum_for_norm)
     return [query_dictionary, norm]
-            cleaned_query.append(cleaned_word)
-    return cleaned_query
+           
+
