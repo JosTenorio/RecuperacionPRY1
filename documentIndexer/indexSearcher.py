@@ -5,14 +5,14 @@ import sys
 from shlex import split
 from os import path
 from collections import Counter
-from Structures.Term_query import Term_query
-
-import numpy as np
-
-from utils import load_index, normalize_word, open_file
-from documentParser import load_stopwords
 import operator
 import numpy as np
+from datetime import datetime
+import numpy as np
+
+from utils import load_index, normalize_word, open_file,remove_tags
+from documentParser import load_stopwords
+from Structures.Term_query import Term_query
 
 # Package setup
 sys.path.insert(0, './Structures')
@@ -109,11 +109,12 @@ def query_index(line):
     query = clean_query(params["query"], stopwords)
     similitudes = {}
     if params["type"] == "vec":
-        print("a")
         similitudes = vector_query(collection, query)
     else:
         similitudes = bm25_query(collection, query)
     ranking = sorted(similitudes.items(), key=operator.itemgetter(1), reverse=True)
+
+    write_html_ranking(ranking,collection,params["query"],params["result_prefix"],params["num_docs"],params["index_path"])
     print(ranking)
 
 # Function that cleans and normalizes the input given in a query
@@ -138,4 +139,88 @@ def calc_query_weight(query,collection):
     norm = np.sqrt(sum_for_norm)
     return [query_dictionary, norm]
            
+def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_path):
+    filename = index_path+f"/{prefix}.html"
+    html_file = open(filename,"w",encoding="UTF-8")
+    original_query = ' '.join([str(elem) for elem in original_query])
+    date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    html_text = f"""
+    <!DOCTYPE html> 
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../resources/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+        rel="stylesheet"
+        />
+    </head>
+    <header>
+        <h1 class="title">Resultado de la búsqueda de documentos</h1>
+    </header>
+    <body>
+        <div>
+            <div>
+                <div class="label-box">
+                <h2>Consulta realizada:</h2>
+                </div>
+                <div class="query-box">
+                <h2>{original_query}</h2>
+                </div>
+            </div>
+            <div style="clear: left">
+                <div class="label-box">
+                <h2>Hora de la consulta:</h2>
+                </div>
+                <div class="query-box">
+                <h2>{date}</h2>
+                </div>
+            </div>
+        </div>
+    <div>
 
+    """
+    html_file.write(html_text)
+    for count, result in enumerate(ranking,1):
+        if count>numdocs:
+            break
+        doc_path = collection.documents[result[0]].address
+        doc_file = open_file(doc_path)
+        doc_Text = remove_tags(doc_file.read())
+        ranking_text= f"""
+        <div style="clear:left">
+            <div>
+                <div class="ranking-box">
+                <h3>Posición en el ranking:</h3>
+                </div>
+                <div class="query-box">
+                <h3>{count}</h3>
+                </div>
+            </div>
+             <div>
+                <div class="ranking-box">
+                <h3>Similitud:</h3>
+                </div>
+                <div class="query-box">
+                <h3>{result[1]}</h3>
+                </div>
+            </div>
+            <div>
+                <div class="ranking-box">
+                <h3>Directorio del documento:</h3>
+                </div>
+                <div class="query-box">
+                <a href={doc_path}> <h3>{doc_path}</h3> </a>
+                </div>
+            </div>
+            <div style="clear:left;margin-left:20px;width:70%">
+            <p>{doc_Text[:200]}</p>
+            </div>
+        </div>
+        """
+        html_file.write(ranking_text)
+    html_file.write("   </div> </body> </html>")
+    html_file.close()
+    
