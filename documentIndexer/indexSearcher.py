@@ -138,7 +138,7 @@ def calc_query_weight(query,collection):
             query_dictionary[term] = term_info
     norm = np.sqrt(sum_for_norm)
     return [query_dictionary, norm]
-           
+# Function that saves an html file containing all the information used in the query and the ranking obtained.      
 def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_path):
     filename = index_path+f"/{prefix}.html"
     html_file = open(filename,"w",encoding="UTF-8")
