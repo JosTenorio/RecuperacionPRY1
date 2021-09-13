@@ -141,3 +141,4 @@ def calc_weight(collection):
                 total_doc_weight += np.square(weight)
         norm = np.sqrt(total_doc_weight)
         collection.documents[docid].norm = norm
+
