@@ -65,11 +65,9 @@ def load_index(location):
 
 # Function that copies a file from one directory to another
 def copy_file(content, target):
-    print(content)
     f = open(target + "/stopwords.txt", "w", encoding="utf-8")
     for line in content:
         f.write(line + " ")
-
     f.close()
     return
 

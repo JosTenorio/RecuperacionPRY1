@@ -10,7 +10,7 @@ import numpy as np
 from datetime import datetime
 import numpy as np
 
-from utils import load_index, normalize_word, open_file,remove_tags
+from utils import load_index, normalize_word, open_file, remove_tags
 from documentParser import load_stopwords
 from Structures.Term_query import Term_query
 
@@ -116,7 +116,8 @@ def query_index(line):
     ranking = sorted(similitudes.items(), key=operator.itemgetter(1), reverse=True)
     write_ranking(ranking, collection, params["query"], params["result_prefix"], params["index_path"])
 
-    write_html_ranking(ranking,collection,params["query"],params["result_prefix"],params["num_docs"],params["index_path"])
+    write_html_ranking(ranking, collection, params["query"], params["result_prefix"], params["num_docs"],
+                       params["index_path"])
 
 
 # Function that saves a .esca file to the index directory with the ranking
@@ -166,10 +167,12 @@ def calc_query_weight(query, collection):
             query_dictionary[term] = term_info
     norm = np.sqrt(sum_for_norm)
     return [query_dictionary, norm]
-# Function that saves an html file containing all the information used in the query and the ranking obtained.      
-def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_path):
-    filename = index_path+f"/{prefix}.html"
-    html_file = open(filename,"w",encoding="UTF-8")
+
+
+# Function that saves an html file containing all the information used in the query and the ranking obtained.
+def write_html_ranking(ranking, collection, original_query, prefix, numdocs, index_path):
+    filename = index_path + f"/{prefix}.html"
+    html_file = open(filename, "w", encoding="UTF-8")
     original_query = ' '.join([str(elem) for elem in original_query])
     date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     html_text = f"""
@@ -211,13 +214,13 @@ def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_pa
 
     """
     html_file.write(html_text)
-    for count, result in enumerate(ranking,1):
-        if count>numdocs:
+    for count, result in enumerate(ranking, 1):
+        if count > numdocs:
             break
         doc_path = collection.documents[result[0]].address
         doc_file = open_file(doc_path)
         doc_Text = remove_tags(doc_file.read())
-        ranking_text= f"""
+        ranking_text = f"""
         <div style="clear:left">
             <div>
                 <div class="ranking-box">
@@ -259,4 +262,3 @@ def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_pa
         html_file.write(ranking_text)
     html_file.write("   </div> </body> </html>")
     html_file.close()
-    

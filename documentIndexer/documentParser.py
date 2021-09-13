@@ -95,7 +95,7 @@ def start_indexing(line):
         stopwords = load_stopwords(file_stopwords.read())
         copy_file(stopwords, target_path)
     except FileNotFoundError:
-        print("Error: Este archivo archivo no se puede acceder,"
+        print("Error: El archivo de stopwords indicado no se puede acceder o copiar,"
               " por favor reintentar")
         return
     documents = load_directory_files(collection_path)
@@ -114,6 +114,7 @@ def start_indexing(line):
     calc_weight(collection)
     write_index(collection, target_path)
 
+#indizar 'C:\Users\JOS\Desktop\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\stopWords\originalStopwords.txt' 'C:\Users\JOS\Desktop\RecuperacionPRY1\indx1'
 
 # Function that calculates the inverted document frequency of each term in both the vector based and bm25 models.
 def calc_inv_frequency(collection):
