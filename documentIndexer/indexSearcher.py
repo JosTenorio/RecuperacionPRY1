@@ -177,7 +177,7 @@ def write_html_ranking(ranking,collection,original_query,prefix,numdocs,index_pa
     <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../resources/style.css" />
+        <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link

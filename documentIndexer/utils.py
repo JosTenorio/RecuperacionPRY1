@@ -71,6 +71,28 @@ def copy_file(content, target):
         f.write(line + " ")
 
     f.close()
+    f = open(target + "/style.css", "w", encoding="utf-8")
+    f.write(""".title {
+  font-family: "Roboto";
+  text-align: left;
+}
+.label-box {
+  font-family: "Roboto";
+  float: left;
+  margin-left: 3px;
+}
+.query-box {
+  font-family: "Roboto";
+  float: left;
+  margin-left: 5px;
+  margin-bottom: -10px;
+}
+.ranking-box {
+  font-family: "Roboto";
+  float: left;
+  margin-left: 8px;
+}
+""")
     return
 
 
