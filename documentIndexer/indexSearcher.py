@@ -6,7 +6,6 @@ from shlex import split
 from os import path
 from collections import Counter
 import operator
-import numpy as np
 from datetime import datetime
 import numpy as np
 
@@ -21,6 +20,8 @@ sys.path.insert(0, './Structures')
 k = 1.2
 b = 0.75
 
+
+# Function
 
 # Parameter validation
 def validate_parameters(line):
@@ -140,10 +141,6 @@ def write_ranking(ranking, collection, original_query, result_prefix, index_path
         print("Error: No ha sido posible guardar el resultado de la búsqueda en el directorio de índice dado")
 
 
-# indizar 'C:\Users\JOS\Desktop\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\stopWords\stopWords1.txt' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\directorio pruebas'
-# buscar 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\directorio pruebas' bm25 query11 25 impuestos y depreciación
-
-
 # Function that cleans and normalizes the input given in a query
 def clean_query(query, stopwords):
     cleaned_query = []
@@ -219,7 +216,7 @@ def write_html_ranking(ranking, collection, original_query, prefix, numdocs, ind
             break
         doc_path = collection.documents[result[0]].address
         doc_file = open_file(doc_path)
-        doc_Text = remove_tags(doc_file.read())
+        doc_text = remove_tags(doc_file.read())
         ranking_text = f"""
         <div style="clear:left">
             <div>
@@ -255,7 +252,7 @@ def write_html_ranking(ranking, collection, original_query, prefix, numdocs, ind
                 </div>
             </div>
             <div style="clear:left;margin-left:40px;width:70%">
-            <p>{doc_Text[:200]}</p>
+            <p>{doc_text[:200]}</p>
             </div>
         </div>
         """

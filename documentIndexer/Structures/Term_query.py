@@ -9,7 +9,5 @@ class Term_query:
         self.frequency = frequency
         self.weight = weight
 
-
-
     def __str__(self):
         return (f"Termino {self.term} | Frecuencia {self.frequency} | Peso {self.weight} ")

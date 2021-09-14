@@ -24,14 +24,14 @@ global_stopwords = ['a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde',
                     'tras', 'u', 'un', 'una', 'unas', 'uno', 'unos', 'y']
 
 
-# Start of functions
+# Functions
 
 
 # Argument validation
 def validate_arguments(line):
     try:
         args = split(line)
-    except ValueError as exc:
+    except ValueError:
         print("Error: Se han abierto comillas simples sin el respectivo cierre" + ", por favor reintentar")
         return [True, None, None, None]
     if len(args) != 3:
@@ -114,7 +114,6 @@ def start_indexing(line):
     calc_weight(collection)
     write_index(collection, target_path)
 
-#indizar 'C:\Users\JOS\Desktop\RecuperacionPRY1\Archivos_de_prueba\xml-es' 'C:\Users\JOS\Desktop\RecuperacionPRY1\documentIndexer\stopWords\originalStopwords.txt' 'C:\Users\JOS\Desktop\RecuperacionPRY1\indx1'
 
 # Function that calculates the inverted document frequency of each term in both the vector based and bm25 models.
 def calc_inv_frequency(collection):
@@ -142,4 +141,3 @@ def calc_weight(collection):
                 total_doc_weight += np.square(weight)
         norm = np.sqrt(total_doc_weight)
         collection.documents[docid].norm = norm
-

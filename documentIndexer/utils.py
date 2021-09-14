@@ -24,15 +24,18 @@ def normalize_word(word):
 
     return word
 
+
 # Validation for paths
 def is_path(path):
     return bool(re.match(regex_paths, path))
+
 
 # Validation for files
 def is_file(path):
     return bool(re.match(regex_files, path))
 
-# Fucntion that returns a file given a path
+
+# Function that returns a file given a path
 def open_file(path):
     try:
         file = open(path, encoding="utf-8")
@@ -46,10 +49,12 @@ def open_file(path):
         raise FileNotFoundError("No se encontró el archivo")
 
 
+# Function that loads into memory all the files in the given directory
 def load_directory_files(path):
     return glob.glob(path + "/**/*.xml", recursive=True)
 
 
+# Function that saves the index file to the designated collection
 def write_index(collection, destination):
     f = open(destination + "/file.pkl", "wb")
     pickle.dump(collection, f)
@@ -63,6 +68,7 @@ def load_index(location):
     f.close()
     return index
 
+
 # Function that copies a file from one directory to another
 def copy_file(content, target):
     f = open(target + "/stopwords.txt", "w", encoding="utf-8")
@@ -71,26 +77,26 @@ def copy_file(content, target):
     f.close()
     f = open(target + "/style.css", "w", encoding="utf-8")
     f.write(""".title {
-  font-family: "Roboto";
-  text-align: left;
-}
-.label-box {
-  font-family: "Roboto";
-  float: left;
-  margin-left: 3px;
-}
-.query-box {
-  font-family: "Roboto";
-  float: left;
-  margin-left: 5px;
-  margin-bottom: -10px;
-}
-.ranking-box {
-  font-family: "Roboto";
-  float: left;
-  margin-left: 8px;
-}
-""")
+                    font-family: "Roboto";
+                    text-align: left;
+                }
+                .label-box {
+                    font-family: "Roboto";
+                    float: left;
+                    margin-left: 3px;
+                }
+                .query-box {
+                     font-family: "Roboto";
+                     float: left;
+                     margin-left: 5px;
+                     margin-bottom: -10px;
+                }
+                .ranking-box {
+                     font-family: "Roboto";
+                    float: left;
+                    margin-left: 8px;
+                }
+        """)
     return
 
 
@@ -101,5 +107,5 @@ def remove_tags(text):
     non_empty_lines = [line for line in lines if line.strip() != ""]
     clean_text = ""
     for line in non_empty_lines:
-      clean_text += line + "\n"
+        clean_text += line + "\n"
     return clean_text
